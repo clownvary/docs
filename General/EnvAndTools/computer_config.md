@@ -8,3 +8,7 @@ sudo scutil --set HostName Tmp
 
 [参考这个](http://blog.csdn.net/z3512498/article/details/51245853)
 ```
+
+### 相关工具
+
+- tree,目录树生成，`brew install tree`即可

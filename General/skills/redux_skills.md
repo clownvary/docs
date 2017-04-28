@@ -48,7 +48,11 @@ connect 只是返回一个绑定了自定义state和reducer到props的心的组�
 
 
 ### 中间件
+- 多读[这个](http://www.redux.org.cn/docs/advanced/Middleware.html)
 - middleWare,签名为（store)=>next=>action的方法，thunk是一种实现
+- 注意本质上我们的目的是要重新包装dispatch，替换dispatch方法，next指代的是dispatch,只不过不是简单的指向系统的store.dispatch,而是下一个被包装过的dispatch，如图
+![dispatch](https://pic3.zhimg.com/v2-e5b8f433fec45c09260759fb12e90bb6_r.png)
+
 - applyMiddleware（...middlewares）,是用来串联各个middleware的方法，这样所有的middleware就可以以next()的机制来层层调用dispatch
   - compose,是applyMiddleware中最核心的一个方法，使用它才实现了串联，
     - compose的实现，其实就是一个柯里化得过程，
@@ -66,9 +70,72 @@ connect 只是返回一个绑定了自定义state和reducer到props的心的组�
       const rest = funcs.slice(0, -1)
       return (...args) => rest.reduceRight((composed, f) => f(composed), last(...args))
     //就是一个函数执行完后又是另一个函数的参数
+    // 如[A,B,C],compose第一次是C，f是B，即B（C），第二次，compose是B（C），f是1，则结果A（B（C））
     }
     ```
 - thunk,是一种中间件，只是*让action可以传递方法*，但它没有提供异步方法，一般还得使用ajax或者fetch来实现，像redux-promise就提供了自己的实现
+
+### reducer
+
+- state 设计：想象成数据库，每个对象想象成单独的表，利用这种扁平的结构，使用引用，而不要使用嵌套的，如下
+  ```
+  //不要这样
+  state:[
+    {post1:{
+      author:{name:'',age:''},
+      comments:[{
+        content:'xxxx',
+        date:2016/09/12
+      },
+      {
+        content:'xxxx2',
+        date:2016/09/12
+      }
+      ]
+    },
+    {post2:{
+      author:{name:'',age:''},
+      comments:[{
+        content:'xxxx',
+        date:2016/09/12
+      },
+      {
+        content:'xxxx2',
+        date:2016/09/12
+      }
+      ]
+    }
+    }
+  ]
+  //要使用以下方式,范式设计，扁平结构，修改一处，多处引用
+  state:[
+    post:{
+      byid:[
+        post1:{
+       author:'user1',
+       comments:['comment1','comment2']
+        },
+        post2:{
+       author:'user2',
+       comments:['comment1','comment2']
+        }
+      ]
+    },
+    authors:{
+      byid:[
+        user1:{},
+        user2:{}
+      ]
+    },
+    comments:{
+      byid:[
+        comment1:{}
+        comment2:{},
+      ]
+    }
+  ]
+  ```
+
 - 
 
 
