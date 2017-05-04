@@ -136,7 +136,11 @@ connect 只是返回一个绑定了自定义state和reducer到props的心的组�
   ]
   ```
 
-- 
+- state的初始值
+
+有两种方法设置初始值，一种是在creatStore的第二个预设参数上设置，另一种是在具体的reducer中使用state= initState，来设置[强烈参考](http://cn.redux.js.org/docs/recipes/reducers/InitializingState.html)
+
+要注意的是优先级的问题，creatStore参数>reducer中initState，如果creatStore没设置，以reducer为准
 
 
 

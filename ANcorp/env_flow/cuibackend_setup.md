@@ -1,5 +1,5 @@
 Cui setup (Osx sys)
-1. Setup Aui backend, read this [doc](./auibackend_setup.md) 
+1. Setup Aui backend, read this [doc](./auibackend_setup.md) ,then start AUI
 2. clone [ActiveNetCui](git@gitlab.dev.activenetwork.com:ActiveNet/activenet-cui.git) into the same folder place as ActiveNetAui
 3. cd ActiveNetCui folder ，run cmd `./ant.sh fullclean main`
 5. replace your local hosts file(u can get it from your mentor)
