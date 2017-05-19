@@ -15,6 +15,8 @@ Cui setup (Osx sys)
 > PS: 
 1. if server has wrong , u need to kill java process then restart server
 2. if occur Server error,u need to open `activenet-cui/src/main/config/service.properties`file,then modify `cui.default.server=https://andev.active.com/`
+3. if u need debug in dev mode, u should run project firstly using dev mode then start cui_backend,
+ u need config cui in it's aui,[https://andev.active.com/cuiuat02/servelet/adminlogin.sdi](https://andev.active.com/cuiuat02/servelet/adminlogin.sdi)
 
 
 

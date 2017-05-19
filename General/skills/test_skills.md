@@ -6,9 +6,17 @@ describe/it.skip(xx)跳过当前用例
 
 - enzyme
 
-	- shallow(shallow<ele>) 只在虚拟dom中渲染第一层
-	- full (mount<ele>)加载到真实dom
-	- static(render<ele>) 渲染成html字符，和shallow区别在于使用了第三方库
+	- shallow(shallow<ele>) 只在虚拟dom中渲染第一层（未使用嵌套组件的情况下），大部分情况下应该使用这种
+	- full (mount<ele>)加载到真实dom,当需要测试liftcycle,或者使用了自定的嵌套组件， 和有DOM交互的地方使用
+	- static(render<ele>) 渲染成html字符，和shallow区别在于使用了第三方库，一般不常用，和shallow功能一样
+
+  1. simulate（‘xx’，{target:{value:text}}）,事件统一没有on前缀，直接是事件名，第二个事件参数是一个模拟对象会和event对象合并到一起传入到事件当中,如：
+
+    ```
+      <input click={(e)=>{testFunc(e.target.value)}}/>
+      input.simulate('click',{target:{value:123}});
+      //用到了哪个属性就模拟哪个属性
+    ```
 - sinon 
 
 spy,stub,mock,称为test double
