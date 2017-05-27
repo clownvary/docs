@@ -6,16 +6,77 @@ describe/it.skip(xx)跳过当前用例
 
 - enzyme
 
-	- shallow(shallow<ele>) 只在虚拟dom中渲染第一层（未使用嵌套组件的情况下），大部分情况下应该使用这种
+	- shallow(shallow<ele>) 只在虚拟dom中渲染第一层（不是第一层节点，而是第一个组件）,不渲染子组件（未使用嵌套组件的情况下），大部分情况下应该使用这种
 	- full (mount<ele>)加载到真实dom,当需要测试liftcycle,或者使用了自定的嵌套组件， 和有DOM交互的地方使用
 	- static(render<ele>) 渲染成html字符，和shallow区别在于使用了第三方库，一般不常用，和shallow功能一样
 
+    ```
+     shallow/mount区别 
+      class CommentList extends Component {
+        render() {
+          return (
+            <ul>
+              <li> Comment One </li>
+            </ul>
+          )
+        }
+      }
+
+     class Root extends Component {
+       render() {
+         return (     
+           <div style={styles}>
+             <h1 className='welcome-header'>Welcome to testing React!</h1>
+             <CommentList/>
+             <h1 className='welcome-header'>Welcome to testing React!</h1>
+           </div>
+         )
+       }
+     }
+     ////
+     const mountWrapper = mount(<Root />);
+     const shallowWrapper = shallow(<Root />);
+
+     mountWrapper 会把所有的渲染，
+     shallowWrapper 只会在内存中渲染Root组件，不会渲染其中的CommonList组件，如果调试输出:
+     
+     shallowWrapper.text() = "Welcome to testing React!<CommentList />Welcome to testing React!"//没有渲染CommnetList
+
+     shallowWrapper.html() = "<div style="height:100%;background:#333;"><h1 class="welcome-header">Welcome to testing React!</h1><ul><li> Comment One </li></ul><h1 class="welcome-header">Welcome to testing React!</h1></div>"
+     //这里注意html（）虽然是最终渲染的结果，但并不是说shallow会进行最终渲染，只是html（）这个方法会最终渲染所有的，一定注意区别
+
+     mountWrapper.text() = "Welcome to testing React! Comment One Welcome to testing React!" // 渲染了CommentList
+
+     mountWrapper.html() = "<div style="height: 100%; background: rgb(51, 51, 51);"><h1 class="welcome-header">Welcome to testing React!</h1><ul><li> Comment One </li></ul><h1 class="welcome-header">Welcome to testing React!</h1></div>"
+
+    ```
   1. simulate（‘xx’，{target:{value:text}}）,事件统一没有on前缀，直接是事件名，第二个事件参数是一个模拟对象会和event对象合并到一起传入到事件当中,如：
 
     ```
       <input click={(e)=>{testFunc(e.target.value)}}/>
       input.simulate('click',{target:{value:123}});
       //用到了哪个属性就模拟哪个属性
+    ```
+  2. 测试组件内部方法或属性，使用component.instance()
+    ```
+     class A extends React.component{
+       handleClick(){
+         xxxx
+       }
+       componentDidMount(){
+         xxx
+       }
+     }
+     // 内部方法测试
+      const { component } = setup();
+      const _ins = component.instance();
+      const spy = expect.spyOn(_ins,'handleClick');//这样就能spy上
+      //_ins.handleClick()就可以访问到
+      ...
+      // 声明周期测试
+     //  需要注意的是一定要在组件中声明的方法或者生命周期方法才可以测试
+     const spy = expect.spyOn(_ins,'componentDidMount');//这样就能spy上
+
     ```
 - sinon 
 
