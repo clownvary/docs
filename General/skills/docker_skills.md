@@ -21,8 +21,6 @@
   `docker port ContainerName 5000`,输出127.0.0.1:49155
 
 
-
-
 ### 命令
 - 运行`docker run -it --name con01 busybox:latest`,和拉取的格式不同
 
