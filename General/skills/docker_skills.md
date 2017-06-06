@@ -40,7 +40,7 @@
   - Commit 创建镜像
     1. 运行一个容器,在容器中进行必要的修改,退出
     2. 运行命令`docker commit -m "Added json gem" -a "Docker Newbee" 0b2616b0e5a8 ouruser/sinatra:v2`, -a 表示作者信息,后面的ID表示以哪个容器为准（容器ID）,后面是标签
-  - push 上传镜像
+  - push 上传镜像
     dockerhub 完成注册,运行命令`docker push xxx:v1`
 - 导出/导入 镜像
   - 导出 `docker save -o ubuntu_14.04.tar ubuntu:14.04`
