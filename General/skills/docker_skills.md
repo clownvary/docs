@@ -20,6 +20,8 @@
   - 查看端口映射配置
   `docker port ContainerName 5000`,输出127.0.0.1:49155
 
+  
+
 
 ### 命令
 - 运行`docker run -it --name con01 busybox:latest`,和拉取的格式不同
@@ -51,6 +53,11 @@
 - logs
   - `docker logs containerName` 打印对应容器的日志
 
+# Dockerfile
+- CMD 类似ENTRYPOINT,容器启动时会执行，只执行一次，
+- RUN, 镜像初始化安装时执行的语句
+- WOOKDIR,为后续的 RUN、CMD、ENTRYPOINT 指令配置工作目录
+- ONBUILD,配置当所创建的镜像作为其它新创建镜像的基础镜像时，所执行的操作指令
 
 
  

@@ -27,10 +27,11 @@
         
         一般都用这种写法
            },
-           {
-      test: /\.json?$/,
-      loader: 'json?name=[path][name].[ext]',
-      include: [path.resolve('test/json/')]//path.resolve（）返回解析的绝对路径，比如这个就会返回cui/test/json/...
+
+        {
+         test: /\.json?$/,
+         loader: 'json?name=[path][name].[ext]',
+         include: [path.resolve('test/json/')]//path.resolve（）返回解析的绝对路径，比如这个就会返回   cui/test/json/...
         },
 
         ```
