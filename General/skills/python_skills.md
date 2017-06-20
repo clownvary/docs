@@ -1,13 +1,18 @@
 - 字符
    * Ascii 最早的只有英文和数字的编码
-    Unicode，统一所有语言的编码，但比较大不便于传输
-    utf-8，方便传输和更小的编码
+
+   * Unicode，统一所有语言的编码，但比较大不便于传输
+
+   * utf-8，方便传输和更小的编码
     一般工作流程是
     ![proess](http://www.liaoxuefeng.com/files/attachments/001387245992536e2ba28125cf04f5c8985dbc94a02245e000/0)
   * 字符拼接，类似c语言
   `print（‘this is my grade %s’ % grade）`
 
     需要注意的是%转义`%%`,同是连接符号不是+，而是%
+
+- 布尔值，and or not,没有‘!’这种表示
+- 空值，None
 
 - list、tuple、dict、set
 
@@ -30,13 +35,19 @@
     t=(1,)//加一个逗号来消除歧义
   ```
   * dict 字典
+
   d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
+
   get：d.get('Bob')/d['Bob'],没有d.Bob这种方式
+
   set：d['new']='new'
+
   delete: d.pop('Bob')
+
   clear: d.clear()
 
   * set 不可重复的序列，和dict相比没有value
+
   可以交、并操作
   ```
    >>> s1 = set([1, 2, 3])

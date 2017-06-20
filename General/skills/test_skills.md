@@ -57,6 +57,8 @@ describe/it.skip(xx)跳过当前用例
       input.simulate('click',{target:{value:123}});
       //用到了哪个属性就模拟哪个属性
     ```
+    模拟非标准dom事件，即自定义事件时，不用找到内部的标准事件去模拟，直接使用wrapper.find(xx).prop('customEvent')//注意不是props,后者是props.customEvent
+    [看这个](https://github.com/airbnb/enzyme/issues/147)
   2. 测试组件内部方法或属性，使用component.instance()
     ```
      class A extends React.component{
@@ -73,7 +75,7 @@ describe/it.skip(xx)跳过当前用例
       const spy = expect.spyOn(_ins,'handleClick');//这样就能spy上
       //_ins.handleClick()就可以访问到
       ...
-      // 声明周期测试
+      // 生命周期测试
      //  需要注意的是一定要在组件中声明的方法或者生命周期方法才可以测试
      const spy = expect.spyOn(_ins,'componentDidMount');//这样就能spy上
 
