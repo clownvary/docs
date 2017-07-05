@@ -57,8 +57,30 @@ describe/it.skip(xx)跳过当前用例
       input.simulate('click',{target:{value:123}});
       //用到了哪个属性就模拟哪个属性
     ```
-    模拟非标准dom事件，即自定义事件时，不用找到内部的标准事件去模拟，直接使用wrapper.find(xx).prop('customEvent')//注意不是props,后者是props.customEvent
+    ***重要***
+    模拟非标准dom事件，即自定义事件时，不用找到内部的标准事件去模拟，直接使用wrapper.find(xx).prop('customEvent')(fakeEvent)//注意不是props,后者是props.customEvent
     [看这个](https://github.com/airbnb/enzyme/issues/147)
+    demo
+    ```
+    <CheckScrollModal
+            onScrollToBottom={() => {
+              this.props.hideWarningAlertAction();
+            }}
+
+    it.only('should trigger modal close correctly', () => {
+      const { component, checkScrollModal, actions } = setup();
+      <!--checkScrollModal.prop('onScrollToBottom')(() => {
+        return actions.hideWarningAlertAction;//函数体内任意代码，只要有模拟的方法就行，默认的那个action就会被执行，很奇怪
+      });-->
+      checkScrollModal.prop('onScrollToBottom')();//什么都不写也可以执行
+      expect(actions.hideWarningAlertAction).toHaveBeenCalled();//这样就可以了
+    });
+    //jest 测试写法
+      const _ins = component.instance();
+      const spy = jest.spyOn(_ins, 'handleClick');
+      xxx.prop('ShowDeleteTransactionAlert')(2);
+      expect(spy).toHaveBeenCalledWith(2);
+    ```
   2. 测试组件内部方法或属性，使用component.instance()
     ```
      class A extends React.component{
@@ -74,6 +96,7 @@ describe/it.skip(xx)跳过当前用例
       const _ins = component.instance();
       const spy = expect.spyOn(_ins,'handleClick');//这样就能spy上
       //_ins.handleClick()就可以访问到
+      
       ...
       // 生命周期测试
      //  需要注意的是一定要在组件中声明的方法或者生命周期方法才可以测试
