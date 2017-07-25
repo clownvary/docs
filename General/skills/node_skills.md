@@ -8,6 +8,8 @@
 - global
 
     1. __filename/__dirname
+    
+    是指当前脚本的模块路径/目录路径，process.cwd()是指node进场的工作目录不一样
     2. process
 
         * process.argv :返回执行当前脚本的命令参数数组，如`node main.js ip`，返回
@@ -25,5 +27,34 @@
     * spawn(command[, args][, options),*没有callback*
      如`spawn('node',['index.js','-ip'])`,就是把所有的参数都和命令分开了。
     * fork(modulePath[, args][, options])是spawn的特殊类型，*注意参数格式，直接是模块名称不是命令*,会创建一个V8实例，出来除了拥有所有的spawn实例方法以外还有一个和父进程通信的信道,通过监听'on','message'方法来通信，*只有fork能通信*
+
+- readline
+    每次读取用户输入的一行，常用来做交互、单行读取文件
+    ```
+    const readline = require('readline');
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout,
+      prompt: '请输入> '
+    });
+    
+    rl.prompt();
+    
+    rl.on('line', (line) => {
+      switch (line.trim()) {
+        case 'hello':
+          console.log('world!');
+          break;
+        default:
+          console.log(`你输入的是：'${line.trim()}'`);
+          break;
+      }
+      rl.prompt();
+    }).on('close', () => {
+      console.log('再见!');
+      process.exit(0);
+    });
+
+    ```
 
 
