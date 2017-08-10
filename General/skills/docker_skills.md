@@ -49,7 +49,7 @@
   - 导入 `docker load -i ubuntu_14.04.tar`,导入时*不用指定名称和标签*,会自动写入保存时的
 - 导出/导入 容器
   - 导出 `docker export 7691a814370e > ubuntu.tar`
-  - 导入 `docker import ubuntu.tar xxx:version` 需要注意的是导入的结果不是在容器中而是作为新的镜像导入,另外和镜像导入不同的是*需要手动指定名称和标签*
+  - 导入 `docker import ubuntu.tar xxx:version` 需要注意的是导入的结果不是在容器中而是作为新的镜像导入,另外和镜  像导入不同的是*需要手动指定名称和标签*
 - logs
   - `docker logs containerName` 打印对应容器的日志
 

@@ -1,3 +1,4 @@
+[练习demo](https://github.com/clownvary/learn-practise/blob/gh-pages/python/hello.py)
 - 字符
    * Ascii 最早的只有英文和数字的编码
 
@@ -57,6 +58,26 @@
    >>> s1 | s2
    {1, 2, 3, 4}
   ```
+  * collestions 模块
+    1. namedtuple,可以自定义tuple名称和属性并靠属性索引
+      ```
+      from collestions import namedtuple
+      Point = namedtuple('Point',['x','y'])
+      p =Point(1,2)
+      p.x
+      p.y
+      ```
+    2.defaultdict,设置没有某个键值时默认值，使其不会抛出keyerror错误
+    3. Counter 计数器
+      ```
+        >>> c = Counter("abcdefgab")
+        >>> c["a"]
+        2
+        >>> c["c"]
+        1
+        >>> c["h"]
+        0
+      ```
 - 条件判断，if-else-elif,注意***不是elseif***
 - 循环
    * for .. x 
@@ -152,6 +173,12 @@
       str = input("请输入：");
       print "你输入的内容是: ", str
     ```
+  2. 读写文件都用with 语句
+    ```
+      with open('/Users/michael/test.txt', 'w') as f:
+      f.write('Hello, world!')
+    ```
+  3. stringIO,BytesIO和文件IO不同的是，这个两者都是从内容中读写内容，而不是从文件中
 - 异常
   1. 捕获语句,*不是catch*,
     ```
@@ -318,7 +345,42 @@
           Fri=4;
       print(Week.Mon);
     ```
-  
+- 进程
+  1. os.fork(),和一般函数不同，它调用一次返回两次，分别在*父进程和子进程分别返回* 
+    > 该方法只能用在unix系统下
+      子进程返回0，父进程返回子进程的pid,子进程只需要调用getppid()就可以拿到父进程的ID。
+    multiprocessing 包可以跨平台
+    > 跨平台
+    ```
+      from multiprocessing import Process
+      import os
+      
+      # 子进程要执行的代码
+      def run_proc(name):
+          print('Run child process %s (%s)...' % (name, os.getpid()))
+      
+      if __name__=='__main__':
+          print('Parent process %s.' % os.getpid())
+          p = Process(target=run_proc, args=('test',))
+          print('Child process will start.')
+          p.start()
+          p.join()
+          print('Child process end.')
+    ```
+  2. 分布式进程，*[看demo文件](https://github.com/clownvary/learn-practise/tree/gh-pages/python/manager)*
+- 正则表达式 
+  1. 以r开头，消除歧义 s = r'ABC\-001' # Python的字符串
+- hashlib,常用的hash和sha1等hash算法
+
+    ```
+      import hashlib
+      md5 = hashlib.md5()
+      md5.update('how to use md5 in python hashlib?'.encode('utf-8'))
+      print(md5.hexdigest())
+    ```
+- 
+
+
 
 
 
