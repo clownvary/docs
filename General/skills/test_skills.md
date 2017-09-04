@@ -7,6 +7,7 @@ describe/it.skip(xx)跳过当前用例
 - enzyme
 
 	- shallow(shallow<ele>) 只在虚拟dom中渲染第一层（不是第一层节点，而是第一个组件）,不渲染子组件（未使用嵌套组件的情况下），大部分情况下应该使用这种
+  - shallow中有个API (dive()),只能用在非dom的元素上，比如包装了多层最后default导出的component,就可以直接使用default的然后在其上使用dive()方法，如果包裹多层就使用多次。
 	- full (mount<ele>)加载到真实dom,当需要测试liftcycle,或者使用了自定的嵌套组件， 和有DOM交互的地方使用
 	- static(render<ele>) 渲染成html字符，和shallow区别在于使用了第三方库，一般不常用，和shallow功能一样
 
