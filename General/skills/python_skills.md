@@ -11,6 +11,8 @@
   `print（‘this is my grade %s’ % grade）`
 
     需要注意的是%转义`%%`,同是也可以使用连接字符+,或者使用多个逗号分隔输出
+- 字符前加'r',表示需要原始字符
+  `name = r"Newlines are indicated by \n"`, 回车会原样输出
 
 - 布尔值，and or not,没有‘!’这种表示
 - 空值，None
@@ -127,8 +129,10 @@
     ```
     def printX(str,str2):
       print(str+str2);
+
     printX('1','2');//必备参数
     printX(str2='1',str1='2');//关键字参数，顺序可以不一样
+
     def printX(str,str2,age=32)://缺省参数，如果不传则使用默认的
     def printX(str,str2,*last)://不定长参数，last表示后面所有的参数  
     ```
@@ -379,7 +383,15 @@
       print(md5.hexdigest())
     ```
 - 
-
+- 异步IO 
+    async/await
+    ```
+    import asyncio
+    async def hello():
+      print("Hello world!")
+      r = await asyncio.sleep(1)
+      print("Hello again!")
+    ```
 
 
 

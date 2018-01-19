@@ -323,3 +323,6 @@ spy,stub,mock,称为test double
 
        sinon.assert.callOrder(a, b);
 	```
+
+### 易错
+1. 测试Error时，该对象是特殊的对象，比如error= new Error（‘ttt’）,如果直接输出console.log(error)，并不会打印出error对象而是打印出error.toString()的相关信息
