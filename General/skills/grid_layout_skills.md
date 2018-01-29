@@ -22,7 +22,24 @@
 
   ```
 定义在网格容器上的属性
+- display
+- grid-template-columns
+- grid-template-rows
+- grid-template-areas
+- grid-column-gap
+- grid-row-gap
 
+- grid-gap
+- justify-items //横轴排列
+- align-items //竖轴排列
+- justify-content 
+- align-content
+- grid-auto-columns
+- grid-auto-rows
+- grid-auto-flow //排列方向
+- grid
+
+=======
 - grid-column-gap/grid-row-gap
 
   网格列间距
