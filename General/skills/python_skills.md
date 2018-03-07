@@ -62,7 +62,7 @@
   ```
   * collestions 模块
     1. namedtuple,可以自定义tuple名称和属性并靠属性索引
-      ```
+      ```python
       from collestions import namedtuple
       Point = namedtuple('Point',['x','y'])
       p =Point(1,2)
@@ -92,7 +92,7 @@
   2. `[:]`,截取字符串，‘hello[1:2]’,截取1到2的字符
   3. `in`/`not in`,是否存在字符串 `h in "hello"`,返回布尔值
   4. `‘’‘` 三引号，用来连接复杂字符
-    ```
+    ```Html
     html = 
     '''
       <HTML><HEAD><TITLE>
@@ -111,14 +111,14 @@
   2. dict.pop([key]),删除某个item
 - datetime/time,一般使用datetime模块即可
   1. 日期获取和转换
-     ```
+     ```python
      import time;
      curtime = time.localtime(time.time());
      print(time.strftime("%Y-%m-%d %H:%M:%S",curtime));
 
      ``` 
   2. 使用datetime,注意datetime下面还有一个datetime的类，如果没有指定导出则应该再访问一层
-    ```
+    ```python
     import timedelta from datetime
     datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")；
     datetime.now() + timedelta(hours=10)//加10小时
@@ -126,7 +126,7 @@
     ```
 - 函数
   1. 参数
-    ```
+    ```python
     def printX(str,str2):
       print(str+str2);
 
@@ -134,7 +134,8 @@
     printX(str2='1',str1='2');//关键字参数，顺序可以不一样
 
     def printX(str,str2,age=32)://缺省参数，如果不传则使用默认的
-    def printX(str,str2,*last)://不定长参数，last表示后面所有的参数  
+    def printX(str,str2,*last)://不定长参数，last表示后面所有的参数
+    def printX(str,str2,**lastKey)://不定长参数，last表示后面所有的关键字参数，形如printX(1,2,name='test',age='20'),**lastKey 即为{name:'test',age:20}
     ```
   2. 匿名函数（lambda）,只能编写简单函数
     lambda [arg1 [,arg2,.....argn]]:expression
@@ -146,7 +147,7 @@
     列表生成式 `[x * x for x in range(1, 11)]`,快速生成一个列表
   3. 全局变量/局部变量
      函数体外面定义的就是全局变量，但要注意的是*内部使用全局变量的时候要加global 关键字声明，不然不能使用*
-     ```
+     ```python
      globvar = 0
 
      def set_globvar_to_one():
@@ -161,7 +162,7 @@
      *可以使用as别名*
      **可以直接导入包**，但默认还是要导出具体的包内模块名，否则使用不了，不像java导入后可以直接package.xx.xxx,
      但可以有个变通的方法就是把具体的导入模块名写在对应的__init__.py文件中,如下
-     ```
+     ```python
      print "__init__"
 
       from pet import name as pet_name, run as pet_run
@@ -185,10 +186,10 @@
   3. stringIO,BytesIO和文件IO不同的是，这个两者都是从内容中读写内容，而不是从文件中
 - 异常
   1. 捕获语句,*不是catch*,
-    ```
+    ```python
      try:
      xxx;
-     except (IOError,ValueError)://只捕获这两种异常类型；
+     except (IOError,ValueError)://只捕获这两种异常类型;
      except :// 不带异常类型则捕获所有的异常
      except ValueType as arg:// 带参数的异常，arg是这个异常类型的对应实例参数 
      xxx
@@ -197,7 +198,7 @@
     ```
   2. 触发异常，`raise`，相当于throw
   3. assert 断言处理异常
-      ```
+      ```python
         try:
          assert 1==2,'this is error';//如果为假就抛出错误
          except AssertionError as e:
@@ -249,7 +250,7 @@
 - 函数式编程
   1. 高阶函数，把函数当成变量传入
   2. 返回函数，函数当成结果返回，返回函数中不要引用任何可能会变化的变量
-    ```
+    ```python
       def lazy_sum(*args):
         def sum():
             ax = 0
@@ -260,7 +261,7 @@
     lazy_sum(1,2,3)();//这样调用
     ```
   3. 装饰器，类似redux中的中间件
-    ```
+    ```python
      import functools;
       def logtext(text):
           @functools.wraps(func)//加上这个相当于执行了wrapper.__name__ = func.__name__，不然pnow的__name__指向会是wrapper
@@ -279,7 +280,7 @@
      pnow();
     ```
   4. 偏函数，就是把某个函数的某个参数给固定住，返回一个新的函数，这样调用起来比较方便
-    ```
+    ```python
       int('123',base=8);
       //使用偏函数
       import functools;
@@ -290,7 +291,7 @@
   1. 实例化没有new关键字，子类同名方法会覆写父类
   2. 类方法都有self参数，一般调用也不用传入，类似js中的this,代表实例。
   3. 继承`class C(A, B):   # 继承类 A 和 B`,注意*初始化时得手动调用父类的初始化方法*，*调用父类方法得加上self参数*
-    ```
+    ```python
       class person:
     
        def __init__(self,age):
@@ -312,7 +313,7 @@
     - 基本类型，if 123==int...
     - isinstance(d, Dog)
   6. __slots__类属性，定义之后可以在实例上动态的添加定义过的属性
-    ```
+    ```python
       class person:
         __slots__=('name','age');# 用tuple定义允许绑定的属性名称
 
@@ -322,12 +323,12 @@
       a.score=21;//出错，因为没定义过
     ```
   7. @property,属性装饰器,注意访问形式，是x.birth//x.birth=120;不是以方法的形式
-    ```
+    ```python
       class Student(object):
 
        @property//代表可读，它会创造一个对应的birth.setter
        def birth(self):
-           return self._birth   
+           return self._birth
 
        @birth.setter
        def birth(self, value):
@@ -338,7 +339,7 @@
            return 2015 - self._birth
     ```
   8. 枚举类，
-    ```
+    ```python
       from enum import Enum,unique;
       @unique
       class Week(Enum):
@@ -355,7 +356,7 @@
       子进程返回0，父进程返回子进程的pid,子进程只需要调用getppid()就可以拿到父进程的ID。
     multiprocessing 包可以跨平台
     > 跨平台
-    ```
+    ```python
       from multiprocessing import Process
       import os
       
@@ -376,7 +377,7 @@
   1. 以r开头，消除歧义 s = r'ABC\-001' # Python的字符串
 - hashlib,常用的hash和sha1等hash算法
 
-    ```
+    ```python
       import hashlib
       md5 = hashlib.md5()
       md5.update('how to use md5 in python hashlib?'.encode('utf-8'))
@@ -385,19 +386,10 @@
 - 
 - 异步IO 
     async/await
-    ```
+    ```python
     import asyncio
     async def hello():
       print("Hello world!")
       r = await asyncio.sleep(1)
       print("Hello again!")
     ```
-
-
-
-
-
-
-
-
-
