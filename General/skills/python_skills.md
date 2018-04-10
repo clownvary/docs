@@ -135,7 +135,7 @@
 
     def printX(str,str2,age=32)://缺省参数，如果不传则使用默认的
     def printX(str,str2,*last)://不定长参数，last表示后面所有的参数
-    def printX(str,str2,**lastKey)://不定长参数，last表示后面所有的关键字参数，形如printX(1,2,name='test',age='20'),**lastKey 即为{name:'test',age:20}
+    def printX(str,str2,**lastKey)://不定长参数，last表示后面所有的关键字参数，形如printX(1,2,name='test',age='20'),lastKey 即为{name:'test',age:20}
     ```
   2. 匿名函数（lambda）,只能编写简单函数
     lambda [arg1 [,arg2,.....argn]]:expression
@@ -264,8 +264,8 @@
     ```python
      import functools;
       def logtext(text):
-          @functools.wraps(func)//加上这个相当于执行了wrapper.__name__ = func.__name__，不然pnow的__name__指向会是wrapper
           def log(func):
+              @functools.wraps(func)//加上这个相当于执行了wrapper.__name__ = func.__name__，不然pnow的__name__指向会是wrapper
               def wrapper(*param):
                   print(text,func.__name__);
                   func(*param);
