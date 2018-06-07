@@ -1,13 +1,14 @@
-> redux 和react-redux不同
+# redux 和react-redux
+
   前者是action,store,reducec这些的概念下的东西，react-redux是***ui绑定库***，只有provider和connect
 
 1.action和*action创建函数*的概念要清楚，创建函数就是返回一个action
  
 action文件中一般有一个type常量，还有一个对应的同名（不同名也行）的action创建方法
-> action.js
 
-```
+## action.js
 
+```js
 
 /*
  * action 类型
@@ -18,11 +19,14 @@ action文件中一般有一个type常量，还有一个对应的同名（不同�
  */export function addTodo(text) {
   return { type: ADD_TODO, text }}
 ```
+
 reduce.js文件中是根据常量的值来计算state,并不调用action创建方法，创建方法是在
 view组件中，互动调用的，一般为事件，不要搞混
 
 2.不要在reducer里修改state,而是返回新的state,一般用object.assign({},state,xx)
+
 3.redux和react进行绑定时用react-redux里的connect方法
+
 每个被provider包裹的组件都能接收store=>前提该组件必须是被connect方法连接了的组件，
 关于connect方法可以参考[这个](http://www.tuicool.com/articles/MrmYN36)和[官方文档](http://cn.redux.js.org/docs/react-redux/api.html)
 
@@ -35,8 +39,8 @@ view组件中，互动调用的，一般为事件，不要搞混
 其实原因是默认store会在整个的state上判断action(actionType必须唯一)，然后触发，这样明显性能不好，所以在(react-redux)connect的时候mapStateToProps方法会返回你定义的想要获取的state,然后优先在这些的reducer里去判断action,如果符合则触发
 [建议看这个](http://www.redux.org.cn/docs/FAQ.html#performance-all-reducers)
 
-******
-  ```
+---
+  ```js
   state的树是由reducer组织起来的，和connect里的没什么关系
   export default connect(
   state => ({
@@ -45,6 +49,7 @@ view组件中，互动调用的，一般为事件，不要搞混
   })}
   ```
 - store.dispatch({type:'add_todo',text:'name'}),本来是要这样触发action,但写法不方便，有了actionAcreator,就可以`store.dispatch(addTodo('name'))`;
+
 4.用了redux后，所有的state都被store管理，原则上组件中就不再出现state,store计算出state,然后以prop的形式往下传
 如果不用redux,原生的react 还是得配合state才行
 5.官方建议的只在顶层connect是不对的，目前的最佳实践是将组件按照 “展现层（presentational）” 或者 “容器（container）” 分类，并在合理的地方抽象出一个连接的容器组件：
@@ -58,8 +63,11 @@ connect 只是返回一个绑定了自定义state和reducer到props的心的组�
 
 
 ### 中间件
+
 - 多读[这个](http://www.redux.org.cn/docs/advanced/Middleware.html)
+
 - middleWare,签名为（store)=>next=>action的方法，thunk是一种实现
+
 - 注意本质上我们的目的是要重新包装dispatch，替换dispatch方法，next指代的是dispatch,只不过不是简单的指向系统的store.dispatch,而是下一个被包装过的dispatch，如图
 ![dispatch](https://pic3.zhimg.com/v2-e5b8f433fec45c09260759fb12e90bb6_r.png)
 

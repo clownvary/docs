@@ -3,7 +3,9 @@
 ## Prepare
 
 1. Setup Aui backend, read this [doc](./auibackend_setup.md) ,then start AUI
+
 2. clone [ActiveNetCui](git@gitlab.dev.activenetwork.com:ActiveNet/activenet-cui.git) into the same folder place as ActiveNetAui
+
 3. goto ActiveNetCui folder ，run cmd `git pull`, `./ant.sh fullclean main`
 
 ## Debug
@@ -24,5 +26,7 @@ e.g.[https://andev.active.com/cuiuat02/servelet/adminlogin.sdi](https://andev.ac
 ## Tips
 
 1. if server has wrong , u need to kill java process then restart server
+
 2. if u need debug in dev mode, u should run project firstly using dev mode then start cui_backend
+
 3. cmd `full clean` compile CUI in prod mode,`npm run build:dev` compile CUI in dev mode, prod mode files has hash code ,dev has nothing. when u debug CUI, u just need compile CUI then start it in dev mode, if start in prod mode , it can't using hot reload;

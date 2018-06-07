@@ -13,7 +13,7 @@
     2. process
 
         * process.argv :返回执行当前脚本的命令参数数组，如`node main.js ip`，返回
-    ```node
+    ```js
     [ '/usr/local/bin/node',
     '/Users/garywang/work/learn/python/node/global.js',
     'ip' ]
@@ -23,17 +23,17 @@
 - child_process 子进程，一般用来开启新的shell,执行命令等。[参考](http://www.runoob.com/nodejs/nodejs-process.html)
     每个子进程带有三个流，child.stdin, child.stdout 和child.stderr，
 
-    * exec(command[, options], callback),有callback,会把子进程命令的结果以stdout的形式返回，如`callback(err,stdout,stderr)
+    1 exec(command[, options], callback),有callback,会把子进程命令的结果以stdout的形式返回，如`callback(err,stdout,stderr)
     `,注意option对象可以设置一些环境变量之类的配置 适合返回数据量不大的命令
 
-    * spawn(command[, args][, options),*没有callback*
+    2 spawn(command[, args][, options),*没有callback*
      如`spawn('node',['index.js','-ip'])`,就是把所有的参数都和命令分开了。
 
-    * fork(modulePath[, args][, options])是spawn的特殊类型，*注意参数格式，直接是模块名称不是命令*,会创建一个V8实例，出来除了拥有所有的spawn实例方法以外还有一个和父进程通信的信道,通过监听'on','message'方法来通信，*只有fork能通信*
+    3 fork(modulePath[, args][, options])是spawn的特殊类型，*注意参数格式，直接是模块名称不是命令*,会创建一个V8实例，出来除了拥有所有的spawn实例方法以外还有一个和父进程通信的信道,通过监听'on','message'方法来通信，*只有fork能通信*
 
     > parent.js
 
-    ```node
+    ```js
     console.log('parent pid: ' + process.pid);
     var fork = require('child_process').fork;
     //fork方法返回的是子进程
@@ -48,7 +48,7 @@
 
     > child.js
 
-    ```node
+    ```js
 
     console.log('child pid: ' + process.pid);
     process.on('message', function(msg){
@@ -60,16 +60,16 @@
 - readline
 
     每次读取用户输入的一行，常用来做交互、单行读取文件
-    ```node
+    ```js
     const readline = require('readline');
     const rl = readline.createInterface({
       input: process.stdin,
       output: process.stdout,
       prompt: '请输入> '
     });
-    
+
     rl.prompt();
-    
+
     rl.on('line', (line) => {
       switch (line.trim()) {
         case 'hello':
