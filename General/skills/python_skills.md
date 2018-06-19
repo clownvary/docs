@@ -100,7 +100,7 @@ print（‘this is my grade %s’ % grade）`
     ```
 * 条件判断，if-else-elif,注意***不是elseif***
 * 循环
-   * for .. x
+   * for ..in x
    * while
    * break 跳出循环
    * continue 结束本轮循环，开始下一轮
@@ -192,7 +192,7 @@ print（‘this is my grade %s’ % grade）`
      ```
 
      `dir（xx）`,返回一个模块里定义的所有模块，变量和函数
-    * 如果要导入的自定义模块和程序文件不在一个目录，需要追加sys.path，这样才能找到
+    * 如果要导入的自定义模块和程序文件不在一个目录，需要追加sys.path，这样才能找到[看这个](https://www.cnblogs.com/Sumomo0516/p/6010575.html)
 
     ```python
     moduleA
@@ -372,10 +372,16 @@ print（‘this is my grade %s’ % grade）`
     ```
   4. private变量`__xxx`,表示只能在类内部使用self.xxx访问，protected变量`_xxx`,只允许内部和子类访问,`__init__`,类似这样的是特殊方法
   5. 判断类型
-    * import types, types.FunctionType....,判断函数等复杂类型
+    * ~~import types, types.FunctionType....,判断函数等复杂类型~~
     * 基本类型，if 123==int...
-    * ==,is 前置比较内容，后者比较Id(内存地址)
+    * ==,is 前者比较内容，后者比较Id(内存地址)
     * isinstance(d, Dog)
+    * hasattr(methodA,'__call__')判断是否是函数类型
+
+    ```py
+    if(type(1)==type(3))
+    if(isinstance(1,int))
+    ```
   6. __slots__类属性，定义之后可以在实例上动态的添加定义过的属性
     ```python
       class person:
@@ -479,7 +485,7 @@ print（‘this is my grade %s’ % grade）`
   ```python
   import sys, getopt
   arg = sys.argv;
-  opts, args = getopt.getopt(arg[1:],'hi:o:',['version='])
+  opts, args = getopt.getopt(arg[1:],'hi:o:',['version=']) //'i: 代表后面是有值的'
 
   for op,value in opts:
       if op == "-i":
@@ -503,9 +509,20 @@ print（‘this is my grade %s’ % grade）`
 
 ## 常用库
 
-* [getopt](https://www.jianshu.com/p/a877e5b46b2d)
-* [subprocess](https://www.cnblogs.com/yyds/p/7288916.html)
+* [getopt](https://www.jianshu.com/p/a877e5b46b2d)获取命令行参数
+* [subprocess](https://www.cnblogs.com/yyds/p/7288916.html)子进程command
 * [多版本管理-pyenv-virtualenv](https://www.jianshu.com/p/a877e5b46b2d)或者终极方案[pipenv](https://www.jianshu.com/p/00af447f0005)
+* [chardet](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001510905171877ca6fdf08614e446e835ea5d9bce75cf5000)字符编码检测
 
+## 使用注意
+
+* pipenv 使用流程
+
+  1. `cd project`
+  2. `pipenv --python 3.x | pipenv --python 2.xx` 这样就创建了一个虚拟的开发环境，如果不使用此命令默认创建基于当前的python版本的环境
+  3. `pipenv shell` 激活虚拟环境的shell,不激活的话还是想当于在系统默认的环境下去操作，安装的包在全局，
+  4. `pipenv install xxx --dev` 这样这个模块就被安装在了虚拟环境中，和全局的就没有冲突，程序执行时也会从虚拟环境下去寻找
+  5. `python index.py` (或者不进入shell,在外层执行 `pipenv run python index.py`)执行具体的脚本或命令
+  > 可以做一个实验，在虚拟环境下装的包在pipenv shell之后可以正常导入，但一旦退出运行就会报错 
 ## 其他
-* [练习demo](https://github.com/clownvary/learn-practise/blob/gh-pages/python/hello.py)
+* [练习demo](https://github.com/clownvary/learn-practise/blob/gh-pages/pyt/hello.py)
