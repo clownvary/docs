@@ -124,7 +124,7 @@ print（‘this is my grade %s’ % grade）`
       </BODY></HTML>
     '''
     ```
-* 元组
+* 元组[参考这个](https://github.com/jackfrued/Python-100-Days/blob/master/Day01-15/Day07/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)
   1. 不允许删除，但可以删除整个元组，`del tup`
 * 字典
   1. dict.items()/keys()/values(),返回对应的值和键，可以遍历
@@ -366,11 +366,11 @@ print（‘this is my grade %s’ % grade）`
          def getSex(self):
              print(person.getAge(self));//调用父类方法得加上self参数
              return self.sex;
-        @classmethod   //类似静态方法（类方法），调用时直接person.getClassName()
+        @classmethod   //类似静态方法（类方法),调用时直接person.getClassName()
         def getClassName():
             ....
     ```
-  4. private变量`__xxx`,表示只能在类内部使用self.xxx访问，protected变量`_xxx`,只允许内部和子类访问,`__init__`,类似这样的是特殊方法
+  4. private变量`__xxx`,表示只能在类内部使用self.xxx访问，protected变量`_xxx`,只允许内部和子类访问,`__init__`,类似这样的是特殊方法,这只是从语法层面进行的一种约定限制，如果知道约定直接访问也可以访问得到
   5. 判断类型
     * ~~import types, types.FunctionType....,判断函数等复杂类型~~
     * 基本类型，if 123==int...
@@ -523,6 +523,8 @@ print（‘this is my grade %s’ % grade）`
   3. `pipenv shell` 激活虚拟环境的shell,不激活的话还是想当于在系统默认的环境下去操作，安装的包在全局，
   4. `pipenv install xxx --dev` 这样这个模块就被安装在了虚拟环境中，和全局的就没有冲突，程序执行时也会从虚拟环境下去寻找
   5. `python index.py` (或者不进入shell,在外层执行 `pipenv run python index.py`)执行具体的脚本或命令
-  > 可以做一个实验，在虚拟环境下装的包在pipenv shell之后可以正常导入，但一旦退出运行就会报错 
+  > 可以做一个实验，在虚拟环境下装的包在pipenv shell之后可以正常导入，但一旦退出运行就会报错
+
 ## 其他
+
 * [练习demo](https://github.com/clownvary/learn-practise/blob/gh-pages/pyt/hello.py)
