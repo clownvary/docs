@@ -366,7 +366,9 @@ print（‘this is my grade %s’ % grade）`
          def getSex(self):
              print(person.getAge(self));//调用父类方法得加上self参数
              return self.sex;
-        @classmethod   //类似静态方法（类方法),调用时直接person.getClassName()
+        @classmethod   //类方法,第一个参数是类本身，调用时直接person.getClassName()
+        def getClassName(cls):
+        @staticmethod   //静态方法，调用时直接person.getClassName()
         def getClassName():
             ....
     ```
