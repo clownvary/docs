@@ -34,7 +34,7 @@ view组件中，互动调用的，一般为事件，不要搞混
 
 > 组件的props就是property（属性）的缩写，父组件给它穿什么就有有什么，也可以在组件中定义，父组件如果不传就是undefined
 
-- creatStore(reducer, [initialState], enhancer),第一个参数是一个reducer,但一般是传递的一个合并过的reduderApp,(reducer不是state,它只是定义了***不同的state***在***不同的action***下如果产生的而已)，相当于一张statet树，当dispatch以后如下（只是传入了action,并没有具体的指明要哪个reducer调用，store怎么知道在哪个reducer上触发action呢？）
+- creatStore(reducer, [initialState], enhancer),第一个参数是一个reducer,但一般是传递的一个合并过的reduderApp,(reducer不是state,它只是定义了***不同的state***在***不同的action***下如果产生的而已)，相当于一张state树，当dispatch以后如下（只是传入了action,并没有具体的指明要哪个reducer调用，store怎么知道在哪个reducer上触发action呢？）
 
 其实原因是默认store会在整个的state上判断action(actionType必须唯一)，然后触发，这样明显性能不好，所以在(react-redux)connect的时候mapStateToProps方法会返回你定义的想要获取的state,然后优先在这些的reducer里去判断action,如果符合则触发
 [建议看这个](http://www.redux.org.cn/docs/FAQ.html#performance-all-reducers)
