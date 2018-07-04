@@ -139,3 +139,14 @@
     immediate1_then
     immediate2_then
    ```
+
+* escape、encodeURI、encodeURIComponent
+  - 区别
+    * escape 是对字符串编码，其他两个是对URL编码。其中 ASCII字母、数字、@*/+ ，这几个字符不会被编码，其余的都会。
+    * encodeURI,不会对下列字符编码  ASCII字母、数字、~!@#$&*()=:/,;?+'
+    * encodeURIComponent方法不会对下列字符编码 ASCII字母、数字、~!*()'
+- 使用场景
+   * 字符串编码使用`escape`
+   * URL编码使用`encodeURI`,如`encodeURI('http://')`=>`http://`,但如果使用`encodeURIComponent('http://')`=>`http%3A%2F%2F`
+   * URL中的参数用`encodeURIComponent`,这样如果参数中有'http://'这样的字符时就会被编码
+
