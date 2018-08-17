@@ -11,13 +11,13 @@
     micro-task包括：process.nextTick（就是then,或者catch）, Promises, Object.observe, MutationObserver 
     **执行顺序**：函数调用栈清空只剩全局执行上下文，然后开始执行所有的micro-task。当**所有可执行**的micro-task执行完毕之后。循环再次执行macro-task中的**一种**任务队列（可能有settimeout队列，settimmediate队列，指的是执行完其中的一种全部队列，不是一种队列中的一个），执行完之后再执行**所有的micro-task**，就这样一直循环
 
-   1.当调用栈中的代码都执行完毕后再把任务队列中的压入调用栈，然后执行。[参考](https://blog.csdn.net/qq_31628337/article/details/71056294) 
+   1. 当调用栈中的代码都执行完毕后再把任务队列中的压入调用栈，然后执行。[参考](https://blog.csdn.net/qq_31628337/article/details/71056294) 
 
    ```js
     console.log(1);
     setTimeout(function(){console.log(2);}, 0);
     console.log(3);
-    //输出1，2，3
+    //输出1，3, 2
    ```
 
    `settimeout（xx,0)`，就是要把该函数块放入队列，等待其他的调用栈中的都执行完毕，再去把任务队列中的压入调用栈，然后再执行**调用栈**中的代码
@@ -145,8 +145,30 @@
     * escape 是对字符串编码，其他两个是对URL编码。其中 ASCII字母、数字、@*/+ ，这几个字符不会被编码，其余的都会。
     * encodeURI,不会对下列字符编码  ASCII字母、数字、~!@#$&*()=:/,;?+'
     * encodeURIComponent方法不会对下列字符编码 ASCII字母、数字、~!*()'
-- 使用场景
-   * 字符串编码使用`escape`
-   * URL编码使用`encodeURI`,如`encodeURI('http://')`=>`http://`,但如果使用`encodeURIComponent('http://')`=>`http%3A%2F%2F`
-   * URL中的参数用`encodeURIComponent`,这样如果参数中有'http://'这样的字符时就会被编码
+  - 使用场景
+    * 字符串编码使用`escape`
+    * URL编码使用`encodeURI`,如`encodeURI('http://')`=>`http://`,但如果使用`encodeURIComponent('http://')`=>`http%3A%2F%2F`
+    * URL中的参数用`encodeURIComponent`,这样如果参数中有'http://'这样的字符时就会被编码
 
+* npm 包依赖
+
+    > Project A package.json
+    ```js
+    { devDependencies: { libA:'xxx' },
+      dependencies: { libB:'xxx' }
+    }
+    ```
+    > Project B package.json
+    ```js
+    { 
+      dependencies: { ProjectA:'xxx' }
+    }
+
+    ```
+    > Project B/test.js
+    ```js
+    B = require('libB');//虽然项目B中没有直接依赖，但是依赖的项目A中已经有了libB，这样就可以访问到.
+
+    A = require('libA');//undefined
+    必须是dependencies
+    ```
