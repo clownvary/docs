@@ -12,7 +12,7 @@ install:
 script:
   - npm run updateReadme
 after_success:
-  - git config user.name "travis"
+  - git config user.name "clownvary"
   - git config user.password $GITHUB_API_KEY
   - git add README.md
   - git commit --allow-empty -m "updated README.md"
