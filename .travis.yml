@@ -1,3 +1,4 @@
+os: osx
 language: node_js
 cache:
   directories:
@@ -5,6 +6,7 @@ cache:
 node_js:
   - 'lts/*'
 install:
+  - brew install tree
   - npm install
 script:
   - npm run updateReadme
