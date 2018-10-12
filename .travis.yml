@@ -1,2 +1,15 @@
+os: osx
 language: node_js
-node_js: stable
+cache:
+  directories:
+    - node_modules
+node_js:
+  - 'lts/*'
+install:
+  - brew install tree
+  - npm install
+script:
+  - npm run updateReadme
+  - git add README.md
+  - git commit --allow-empty -m "updated README.md"
+  - git push origin HEAD:master
