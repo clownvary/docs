@@ -5,8 +5,9 @@ cache:
     - node_modules
 node_js:
   - 'lts/*'
-install:
+before_install:
   - brew install tree
+install:
   - npm install
 script:
   - npm run updateReadme
