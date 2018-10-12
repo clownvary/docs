@@ -10,3 +10,4 @@ script:
   - npm run updateReadme
   - git add README.md
   - git commit --allow-empty -m "updated README.md"
+  - git push origin HEAD:master
