@@ -172,3 +172,55 @@
     A = require('libA');//undefined
     必须是dependencies
     ```
+## webpack
+1. commonChunk/external/entry(vendor)/dll
+
+```js
+ entry: {
+      index: './src/index.js',
+      another: './src/another-module.js'
+    },
+    plugins: [
+      new HTMLWebpackPlugin({
+        title: 'Code Splitting'
+     })
+     }),
+     new webpack.optimize.CommonsChunkPlugin({
+       name: 'common' // 指定公共 bundle 的名称。
+     })
+    ],
+    externals: {
+      jquery: 'jQuery'
+    }
+
+```
+
+ - commonChunk 用来提取entry里所有入口的公用模块(一般是非第三方库），生成一个名为common的bundle文件，最后被添加到html文件
+ - externals 外部扩展是用来把第三方库和自有代码分离，这样webpack打包时会忽略该第三方包，注意，这种方式必须自己手动在html页面引入该第三方包，一般使用cdn方式
+ - entry(vendor)针对第三方库,如下
+
+ ```js
+   entry: {
+        index: './app/main.jsx',
+        vendor: ['react', 'react-dom', 'react-router', 'classnames']
+    },
+    plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            names: ['vendor', 'manifest'],
+        }),
+    ]
+
+ ```
+  这种方式会把所有的第三方库打包到名为vendor的bundle中，然后添加进html文件。
+  
+  指定manifest会修复每次打包vendor的hash值会变的问题。
+- dll针对第三方库[参考](https://www.jianshu.com/p/a5b3c2284bb6)
+
+在用 Webpack 打包的时候，对于一些不经常更新的第三方库，比如 react，lodash，我们希望能和自己的代码分离开，Webpack 社区有两种方案
+
+a.CommonsChunkPlugin
+
+b.DLLPlugin
+
+对于 CommonsChunkPlugin，webpack 每次打包实际还是需要去处理这些第三方库，只是打包完之后，能把第三方库和我们自己的代码分开。而
+DLLPlugin 则是能把第三方代码完全分离开，即每次只打包项目自身的代码。
