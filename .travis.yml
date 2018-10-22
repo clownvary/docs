@@ -6,6 +6,7 @@ cache:
 node_js:
   - 'lts/*'
 before_install:
+  - git remote set-url origin https://${GH_REF}
   - git pull
   - brew install tree
 install:
