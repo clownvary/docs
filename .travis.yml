@@ -16,5 +16,5 @@ script:
 after_success:
   - git add README.md
   - git commit --allow-empty -m "updated README.md"
-  - git remote set-url origin https://${GH_REF}
+  - git remote set-url origin "https://${GH_REF}"
   - git push --force --quiet "https://${GITHUB_API_KEY}@${GH_REF}" master:master
