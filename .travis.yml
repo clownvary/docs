@@ -6,14 +6,14 @@ cache:
 node_js:
   - 'lts/*'
 before_install:
+  - git pull
   - brew install tree
 install:
   - npm install
 script:
   - npm run updateReadme
+
 after_success:
-  - git config user.name "clownvary"
-  - git config user.password $GITHUB_API_KEY
   - git add README.md
   - git commit --allow-empty -m "updated README.md"
-  - git push origin HEAD:master
+  - git push --force --quiet "https://${GITHUB_API_KEY}@${GH_REF}" master:master
