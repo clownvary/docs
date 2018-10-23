@@ -13,9 +13,8 @@ install:
 script:
   - npm run updateReadme
 after_success:
-  - git config credential.helper 'cache --timeout=120'
   - git config user.email "travis@travis.org"
   - git config user.name "travis"
   - git add README.md
   - git commit --allow-empty -m "updated README.md"
-  - git push https://${GITHUB_API_KEY}@${GH_REF} master
+  - git push https://clownvary:${GITHUB_API_KEY}@${GH_REF} master
