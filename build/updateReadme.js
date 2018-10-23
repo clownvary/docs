@@ -3,7 +3,11 @@ const path = require('path');
 const exec = require('child_process').execSync;
 
 function genContent() {
-    let content = ['# A markdown doc for work and study', '## File Tree'];
+    let content = [
+        '[![Build Status](https://travis-ci.org/clownvary/docs.svg?branch=master)](https://travis-ci.org/clownvary/docs)',
+        '# A markdown doc for work and study',
+        '## File Tree'
+    ];
     try {
         const rawTree = exec("tree -P '*.md' -I 'build|README.md'").toString();
         const arrTree = rawTree.split('\n');
