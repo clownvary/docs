@@ -78,3 +78,10 @@
    // test reject
     API.fetch = jest,fn(()=>Promie.reject());
     ```
+
+  4. mock document event手动触发
+    ```js
+      const evt = document.createEvent("HTMLEvents");
+      evt.initEvent("scroll", false, true);
+      document.dispatchEvent(evt);
+    ```
