@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/clownvary/docs.svg?branch=master)](https://travis-ci.org/clownvary/docs)
 # A markdown doc for work and study
 ## File Tree
 ```
