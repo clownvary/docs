@@ -8,9 +8,9 @@ node_js:
   - 'lts/*'
 before_install:
   - git pull
-  - brew install tree
 install:
   - npm install
+  - brew install tree
 script:
   - npm run updateReadme
 after_success:
