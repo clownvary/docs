@@ -9,7 +9,7 @@ function genContent() {
         '## File Tree'
     ];
     try {
-        const rawTree = exec("tree -P '*.md' -I 'build|README.md'").toString();
+        const rawTree = exec("tree -P '*.md' -I 'build|README.md|node_modules'").toString();
         const arrTree = rawTree.split('\n');
         arrTree.unshift('```');
         arrTree.push('```');
