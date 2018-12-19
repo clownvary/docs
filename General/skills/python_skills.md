@@ -20,7 +20,7 @@ print（‘this is my grade %s’ % grade）`
 * 字符前加'r',表示需要原始字符
   `name = r"Newlines are indicated by \n"`, 回车会原样输出
 
-* 布尔值，and or not,没有‘!’这种表示
+* 布尔值，and or not, '==','! ='
 * 空值，None
 
 * list、tuple、dict、set
@@ -139,7 +139,7 @@ print（‘this is my grade %s’ % grade）`
      ```
   2. 使用datetime,注意datetime下面还有一个datetime的类，如果没有指定导出则应该再访问一层
     ```python
-    import timedelta from datetime
+    from datetime import timedelta 
     datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")；
     datetime.now() + timedelta(hours=10)//加10小时
     datetime.now() + timedelta(days=-1)//减去1天
@@ -525,6 +525,7 @@ print（‘this is my grade %s’ % grade）`
   3. `pipenv shell` 激活虚拟环境的shell,不激活的话还是想当于在系统默认的环境下去操作，安装的包在全局，
   4. `pipenv install xxx --dev` 这样这个模块就被安装在了虚拟环境中，和全局的就没有冲突，程序执行时也会从虚拟环境下去寻找
   5. `python index.py` (或者不进入shell,在外层执行 `pipenv run python index.py`)执行具体的脚本或命令
+  6. `exit` 退出虚拟环境
   > 可以做一个实验，在虚拟环境下装的包在pipenv shell之后可以正常导入，但一旦退出运行就会报错
 
 ## 其他
