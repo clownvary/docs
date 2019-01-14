@@ -11,6 +11,8 @@
     micro-task包括：process.nextTick（就是then,或者catch）, Promises, Object.observe, MutationObserver 
     **执行顺序**：函数调用栈清空只剩全局执行上下文，然后开始执行所有的micro-task。当**所有可执行**的micro-task执行完毕之后。循环再次执行macro-task中的**一种**任务队列（可能有settimeout队列，settimmediate队列，指的是执行完其中的一种全部队列，不是一种队列中的一个），执行完之后再执行**所有的micro-task**，就这样一直循环
 
+    **new Promise()内的代码是立即执行, nextTrick 和 promise then的是单独的队列，且nextTick比then队列先执行**
+
    1. 当调用栈中的代码都执行完毕后再把任务队列中的压入调用栈，然后执行。[参考](https://blog.csdn.net/qq_31628337/article/details/71056294) 
 
    ```js
@@ -172,7 +174,35 @@
     A = require('libA');//undefined
     必须是dependencies
     ```
+- window.URL.createObjectURL / revokeObjectURL
+  用于临时创建一个url给某个文件或二进制对象，一般用于下载，使用完后revokeObjectURL(...)释放文件的引用。
+  例子：
+
+  ```js
+    const a = document.createElement('a');
+    a.style.display = 'none';
+    a.href = window.URL.createObjectURL(blob);
+    a.download = filename;// download 指定下周的文件名
+
+    document.body.appendChild(a);
+    a.click();
+
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(a.href);
+  ```
+
+- SSE(server-sent event)
+
+  Html5引入的服务端发送消息机制，比socket 更加轻量，只能单向发送
+
+- 路径动画()
+
+  1. css 中使用`motion-path`.
+  2. svg里的path.
+  3. smil.
+
 ## webpack
+
 1. commonChunk/external/entry(vendor)/dll
 
 ```js
@@ -195,18 +225,18 @@
 
 ```
 
- - commonChunk 用来提取entry里所有入口的公用模块(一般是非第三方库），生成一个名为common的bundle文件，最后被添加到html文件
+ - commonChunk(webpack4 已经废弃，建议使用SplitChunksPlugin) 用来提取entry里所有入口的公用模块(一般是非第三方库），生成一个名为common的bundle文件，最后被添加到html文件
  - externals 外部扩展是用来把第三方库和自有代码分离，这样webpack打包时会忽略该第三方包，注意，这种方式必须自己手动在html页面引入该第三方包，一般使用cdn方式
  - entry(vendor)针对第三方库,如下
 
  ```js
    entry: {
         index: './app/main.jsx',
-        vendor: ['react', 'react-dom', 'react-router', 'classnames']
+        vendorx: ['react', 'react-dom', 'react-router', 'classnames']
     },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
-            names: ['vendor', 'manifest'],
+            names: ['vendorx', 'manifest'],//注意这里的names 可以配置entry里的name,比如现在有个vendorx, 它就只会提取vendorx入口里文件的公告模块，如果不配置name,默认提取所有入口的公共模块
         }),
     ]
 
