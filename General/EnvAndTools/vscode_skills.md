@@ -82,7 +82,7 @@ cmd+shift+p ,输入snippets选择一种语言，设置对应的代码片段，�
 - Debugger For Chrome
 > 和浏览器下直接调试一样，好处就是不用开浏览器的调试，可以再vscode里直接调试
 
-1. 项目必须server, 然后配置launch configuration 断点启动调试
+1. 项目必须被server(npm run start), 然后配置launch configuration 断点启动调试
 
 ```json
     {
