@@ -58,9 +58,26 @@ cmd+shift+p ,输入snippets选择一种语言，设置对应的代码片段，�
 
 5. debug, 使用vscode内置debug,不用该插件在it...上显示的debug link, 配置launch.json文件如下
 
+> 如果有提示说找不到静态的json文件，是因为需要运行npm run test:server，这样就会把json文件全部server
+
 ```json
+//调试当前文件， 一般用这个
+  {
+      "type": "node",
+      "request": "launch",
+      "name": "vscode-jest-tests",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": ["${relativeFile}","--config=jest.config.json"],
+      "console": "internalConsole",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+      }
+    },
+// 调试全部测试
    {
-        "name": "test jest vscode",
+        "name": "vscode-jest-tests",// jest 插件规定必须命名成这个，这样点击debug link才能正确launch.
         "type": "node",
         "request": "launch",
         "env": { "NODE_ENV": "test" },

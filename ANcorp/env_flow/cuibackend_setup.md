@@ -18,6 +18,8 @@
 
 4. visit[https://apm.activecommunities.com/cuiuat01/activenet_login](https://apm.activecommunities.com/cuiuat01/activenet_login)
 
+> gwang2/1
+
 5. click myCart link in page,then instead *http* of *https*,and append port *8099* to url
 
 If you can open cui page correctly, means it works,then you can config settings in corresponding aui site.

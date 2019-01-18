@@ -88,7 +88,7 @@ connect 只是返回一个绑定了自定义state和reducer到props的心的组�
       const rest = funcs.slice(0, -1)
       return (...args) => rest.reduceRight((composed, f) => f(composed), last(...args))
     //就是一个函数执行完后又是另一个函数的参数
-    // 如[A,B,C],compose第一次是C，f是B，即B（C），第二次，compose是B（C），f是1，则结果A（B（C））
+    // 如[A,B,C],compose第一次是C，f是B，即B（C），第二次，compose是B（C），f是A，则结果A（B（C））
     }
     ```
 - thunk,是一种中间件，只是*让action可以传递方法*，但它没有提供异步方法，一般还得使用ajax或者fetch来实现，像redux-promise就提供了自己的实现

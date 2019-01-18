@@ -28,4 +28,4 @@
     ```
 
 6. `infofar == alert alert-info alert-info-inverse`
-7. 
+

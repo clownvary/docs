@@ -96,3 +96,19 @@
           const spy = expect.spyOn(_ins,'componentDidMount');//这样就能spy上           
 
          ``` 
+
+- 内置样式
+
+在开发时应优先使用
+
+```css
+.an-grid 相当于初始felx布局
+.an-col
+.an-col-x-x
+.flex-order-x
+@media @media-query-small/@media-query-medium/@media-query-large 
+```
+
+- 编码tips
+
+1. FormattedMessage / translation.id, 前者主要用于输出国际化文本，有着用于wcag 一般常用于aria-label， FormattedDyncMessage 用于输出静态文本， formatI18n 用于替换文本中的自定义key
