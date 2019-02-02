@@ -22,6 +22,8 @@
 
 5. click myCart link in page,then instead *http* of *https*,and append port *8099* to url
 
+> for better experience of development, you should install a plugin of chrome [requestly-redirect-url-mo](https://chrome.google.com/webstore/detail/requestly-redirect-url-mo/mdnleldcmiljblolnjhpnblkcekpdkpa)
+
 If you can open cui page correctly, means it works,then you can config settings in corresponding aui site.
 e.g.[https://andev.active.com/cuiuat02/servelet/adminlogin.sdi](https://andev.active.com/cuiuat02/servelet/adminlogin.sdi)
 
