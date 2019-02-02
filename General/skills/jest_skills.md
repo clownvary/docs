@@ -84,4 +84,8 @@
       const evt = document.createEvent("HTMLEvents");
       evt.initEvent("scroll", false, true);
       document.dispatchEvent(evt);
+    ====
+      const event = new CustomEvent('message');
+      event.xxx  = {xxx}//任何自定义对象
+      window.dispatch(event)/document.dispatchEvent(event);
     ```
