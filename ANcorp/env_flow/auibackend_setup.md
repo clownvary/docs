@@ -36,7 +36,7 @@
   select * from dbo.system_users where SYSTEMUSER_ID=2
   ```
 
-  then set **RETIRED**,**FAILED_LOGON_COUNT** to 0,**NERVER_EXOIRED** to 1, and using this user's **PASSWORDID** into below sql  
+  then set **RETIRED**,**FAILED_LOGON_COUNT** to 0,**NERVER_EXPIRED** to 1, and using this user's **PASSWORDID** into below sql  
 
   ```sql
   select * from dbo.passwords where PASSWORD_ID=548
