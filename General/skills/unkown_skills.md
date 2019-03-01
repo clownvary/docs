@@ -9,7 +9,7 @@
 
   > macro-task包括：script(整体代码), setTimeout, setInterval, setImmediate, I/O, UI rendering。 
     micro-task包括：process.nextTick（就是then,或者catch）, Promises, Object.observe, MutationObserver 
-    **执行顺序**：函数调用栈清空只剩全局执行上下文，然后开始执行所有的micro-task。当**所有可执行**的micro-task执行完毕之后。循环再次执行macro-task中的**一种**任务队列（可能有settimeout队列，settimmediate队列，指的是执行完其中的一种全部队列，不是一种队列中的一个），执行完之后再执行**所有的micro-task**，就这样一直循环
+    **执行顺序**：函数调用栈清空只剩全局执行上下文，然后开始执行*所有*的micro-task。当**所有可执行**的micro-task执行完毕之后。循环再次执行macro-task中的**一种**任务队列（可能有settimeout队列，settimmediate队列，指的是执行完其中的一种全部队列，不是一种队列中的一个），执行完之后再执行**所有的micro-task**，就这样一直循环
 
     **new Promise()内的代码是立即执行, nextTrick 和 promise then的是单独的队列，且nextTick比then队列先执行**
 
@@ -175,6 +175,12 @@
   2. svg里的path.
   3. smil.
 
+## 浏览器缓存
+
+因为last-modified 只能精确到秒，不如etag精确，所以在优先级上etag更优先
+
+比较顺序cache-control->etag-last-modified
+
 ## Web Api
 
 - window.URL.createObjectURL / revokeObjectURL
@@ -185,7 +191,7 @@
     const a = document.createElement('a');
     a.style.display = 'none';
     a.href = window.URL.createObjectURL(blob);
-    a.download = filename;// download 指定下周的文件名
+    a.download = 'filename';// download 指定下周的文件名
 
     document.body.appendChild(a);
     a.click();
@@ -281,3 +287,4 @@ b.DLLPlugin
 
 对于 CommonsChunkPlugin，webpack 每次打包实际还是需要去处理这些第三方库，只是打包完之后，能把第三方库和我们自己的代码分开。而
 DLLPlugin 则是能把第三方代码完全分离开，即每次只打包项目自身的代码。
+
