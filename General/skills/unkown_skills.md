@@ -11,7 +11,7 @@
     micro-task包括：process.nextTick（就是then,或者catch）, Promises, Object.observe, MutationObserver 
     **执行顺序**：函数调用栈清空只剩全局执行上下文，然后开始执行*所有*的micro-task。当**所有可执行**的micro-task执行完毕之后。循环再次执行macro-task中的**一种**任务队列（可能有settimeout队列，settimmediate队列，指的是执行完其中的一种全部队列，不是一种队列中的一个），执行完之后再执行**所有的micro-task**，就这样一直循环
 
-    **new Promise()内的代码是立即执行, nextTrick 和 promise then的是单独的队列，且nextTick比then队列先执行**
+    **new Promise()内的代码是立即执行, nextTick 和 promise then的是单独的队列，且nextTick比then队列先执行**
 
    1. 当调用栈中的代码都执行完毕后再把任务队列中的压入调用栈，然后执行。[参考](https://blog.csdn.net/qq_31628337/article/details/71056294) 
 
@@ -175,6 +175,14 @@
   2. svg里的path.
   3. smil.
 
+- css
+
+  1. pointer-events: none; 类似a标签不响应事件
+  2. x:nth-child(n)/x:nth-of-type(n)， n可以是表达式或关键字‘odd‘/'even'（单复数）
+  
+  前者是选择父元素下第n个子元素，且这个元素类型是x.
+  前者是选择父元素下的所有x类型的元素中的第n个.（其实自己以前用的nth-child大部分是错的，当成nth-0f-type在用了。
+
 ## 浏览器缓存
 
 因为last-modified 只能精确到秒，不如etag精确，所以在优先级上etag更优先
@@ -253,7 +261,7 @@ if (window.Notification){
      })
     ],
     externals: {
-      jquery: 'jQuery'
+      jquery: 'jQuery' //key 是jquery 表示应该排除 import $ from 'jquery' 中的 jquery 模块。为了替换这个模块，jQuery 的值将被用来检索一个全局的 jQuery 变量，因为静态引入jquery后是生成了一个全局变量jQuery,所以value是jQuery.
     }
 
 ```
@@ -288,3 +296,13 @@ b.DLLPlugin
 对于 CommonsChunkPlugin，webpack 每次打包实际还是需要去处理这些第三方库，只是打包完之后，能把第三方库和我们自己的代码分开。而
 DLLPlugin 则是能把第三方代码完全分离开，即每次只打包项目自身的代码。
 
+2. webpack-dev-server
+
+ 开启热加载，自带监听,打开网页等功能，需要注意的是有了webpack-dev-server之后，启动命令就可以不用`webpack --watch`了，直接`webpack-dev-server`即可,`webpack-dev-server` build的文件在dist中看不见，`webpack` build的可以看见。
+
+3. htmlWebpackPlugin
+
+ 如果不配置该插件，要手动把index.htmln挪动到dist文件夹，不然localhost:port不显示任何内容，使用该插件后，会自动依据模板生成index.html文件到dist目录，这时候localhost:port就有内容了。
+4. workbox-webpack-plugin
+
+progressive web application - PWA, 离线依然可使用， 注意需要vpn（访问谷歌）
