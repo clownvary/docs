@@ -15,6 +15,7 @@
 │       └── cui_architecture_issues.md
 └── General
     ├── EnvAndTools
+    │   ├── chrome_skills.md
     │   ├── computer_config.md
     │   ├── jenkins.md
     │   └── vscode_skills.md
@@ -33,6 +34,6 @@
         ├── test_skills.md
         └── unkown_skills.md
 
-6 directories, 23 files
+6 directories, 24 files
 
 ```
