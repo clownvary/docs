@@ -1,6 +1,6 @@
 # redux 和react-redux
 
-  前者是action,store,reducec这些的概念下的东西，react-redux是***ui绑定库***，只有provider和connect
+  前者是action,store,reducer这些的概念下的东西，react-redux是***ui绑定库***，只有provider和connect
 
 1.action和*action创建函数*的概念要清楚，创建函数就是返回一个action
  

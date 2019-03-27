@@ -16,7 +16,7 @@
 
 3. in cui project , run `npm run build:dev`, then goto ActiveNetCui folder,run cmd `./ant.sh debug`
 
-4. visit[https://apm.activecommunities.com/cuiuat01/activenet_login](https://apm.activecommunities.com/cuiuat01/activenet_login)
+4. visit[https://apm.activecommunities.com/jettytest11/activenet_login](https://apm.activecommunities.com/jettytest11/activenet_login)
 
 > gwang2/1
 
