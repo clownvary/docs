@@ -29,6 +29,25 @@
     2 spawn(command[, args][, options),*没有callback*
      如`spawn('node',['index.js','-ip'])`,就是把所有的参数都和命令分开了。
 
+     ```
+        const ls = spawn('ls',['-a'], {
+        stdio: 'inherit'// 可以是'ignore'/'pipe'/'inherit'([0,1,2]) ,默认‘pipe’
+         });
+
+        ls.on('data', (data) => {
+            console.log(`stdout: ${data}`);
+        });// 当时inherit时，对应的stdio 流传给父进程，就是ls.on, 而不是 *ls.stdout.on*, 如果是‘pipe’，就是ls.stdout.on(xx)来接收流了
+        
+        ls.on('data', (data) => {
+            console.log(`stderr: ${data}`);
+        });
+        
+        ls.on('close', (code) => {
+            console.log(`子进程退出码：${code}`);
+        });
+
+     ```
+
     3 fork(modulePath[, args][, options])是spawn的特殊类型，*注意参数格式，直接是模块名称不是命令*,会创建一个V8实例，出来除了拥有所有的spawn实例方法以外还有一个和父进程通信的信道,通过监听'on','message'方法来通信，*只有fork能通信*
 
     > parent.js

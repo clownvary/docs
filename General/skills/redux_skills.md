@@ -20,17 +20,17 @@ action文件中一般有一个type常量，还有一个对应的同名（不同�
   return { type: ADD_TODO, text }}
 ```
 
-reduce.js文件中是根据常量的值来计算state,并不调用action创建方法，创建方法是在
+reducer.js文件中是根据常量的值来计算state,并不调用action创建方法，创建方法是在
 view组件中，互动调用的，一般为事件，不要搞混
 
 2.不要在reducer里修改state,而是返回新的state,一般用object.assign({},state,xx)
 
-3.redux和react进行绑定时用react-redux里的connect方法
+3.redux和react进行绑定时用react-redux里的connect方法,这样只订阅需要的state
 
 每个被provider包裹的组件都能接收store=>前提该组件必须是被connect方法连接了的组件，
 关于connect方法可以参考[这个](http://www.tuicool.com/articles/MrmYN36)和[官方文档](http://cn.redux.js.org/docs/react-redux/api.html)
 
->其实就是注入state(或者选择对应的state),注入action,最后都合并成***组件的props***,方法有些怪异，多看看 
+> 其实就是注入state(或者选择对应的state),注入action,最后都合并成***组件的props***,方法有些怪异，多看看 
 
 > 组件的props就是property（属性）的缩写，父组件给它穿什么就有有什么，也可以在组件中定义，父组件如果不传就是undefined
 
@@ -63,7 +63,12 @@ connect 只是返回一个绑定了自定义state和reducer到props的心的组�
 
 
 ### 中间件
-
+```js
+//签名如下
+function md(extraArgs) {
+return ({dispatch, state})=> next => action {xxx}
+}
+```
 - 多读[这个](http://www.redux.org.cn/docs/advanced/Middleware.html)
 
 - middleWare,签名为（store)=>next=>action的方法，thunk是一种实现
@@ -94,6 +99,11 @@ connect 只是返回一个绑定了自定义state和reducer到props的心的组�
 - thunk,是一种中间件，只是*让action可以传递方法*，但它没有提供异步方法，一般还得使用ajax或者fetch来实现，像redux-promise就提供了自己的实现
 
 ### reducer
+
+```js
+   //签名如下
+  function (state, action) {xxx}
+```
 
 - state 设计：想象成数据库，每个对象想象成单独的表，利用这种扁平的结构，使用引用，而不要使用嵌套的，如下
   ```

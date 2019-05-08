@@ -112,3 +112,9 @@
 - 编码tips
 
 1. FormattedMessage / translation.id, 前者主要用于输出国际化文本，有着用于wcag 一般常用于aria-label， FormattedDyncMessage 用于输出静态文本， formatI18n 用于替换文本中的自定义key
+2. API 传参
+
+```js
+1. API.get({id:xxx})// 这种会把api声明文件中的url中的参数替换掉，无论是query string(/?id={{id}}) 还是restful(/{{id}})
+2. API.post({body: {id:xxx}})//这种一般使用在post 等方法中，会把参数设置在请求的body中
+```
