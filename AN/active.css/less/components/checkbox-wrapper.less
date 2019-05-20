@@ -1,0 +1,180 @@
+// Checkbox
+// -------------------------
+
+.checkbox-wrapper {
+  cursor: pointer;
+  position: relative;
+  .checkbox {
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    position: relative;
+    > * {
+      vertical-align: middle;
+    }
+    > .checkbox__input {
+      display: block;
+    }
+  }
+
+  .checkbox__text {
+    padding-right: 6px;
+    padding-left: 6px;
+    word-wrap: break-word;
+    &::before {
+      display: none;
+    }
+  }
+
+  .checkbox__input {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  //Base style for checkbox__inner(box)
+  .checkbox__inner {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    border: 1px solid @gray-medium;
+    background-color: @checkbox-background-color;
+  }
+
+  //Box size, radius - m(default)
+  .checkbox__inner {
+    width: @checkbox-size-base;
+    height: @checkbox-size-base;
+    border-radius: @checkbox-border-radius-base;
+  }
+
+  //Box size, radius - sm
+  .checkbox--sm .checkbox__inner {
+    width: @checkbox-size-sm;
+    height: @checkbox-size-sm;
+    border-radius: @checkbox-border-radius-sm;
+  }
+
+  //Box size, radius - lg
+  .checkbox--lg .checkbox__inner {
+    width: @checkbox-size-lg;
+    height: @checkbox-size-lg;
+    border-radius: @checkbox-border-radius-lg;
+  }
+
+  //Font size for text - m(default)
+  .checkbox__text {
+    font-size: @checkbox-label-font-size-base;
+  }
+
+  //Box size for text - sm
+  .checkbox--sm .checkbox__text {
+    font-size: @checkbox-label-font-size-sm;
+  }
+
+  //Box size for text - lg
+  .checkbox--lg .checkbox__text {
+    font-size: @checkbox-label-font-size-lg;
+  }
+
+  //Base style for checkbox__inner::after(check icon)
+  .checkbox__inner::after {
+    transform: rotate(45deg) scale(1);
+    position: absolute;
+    border-style: solid;
+    border-color: @checkbox-checked-color;
+    border-top: 0;
+    border-left: 0;
+    display: none;
+    content: ' ';
+  }
+
+  //Check icon size - m(default)
+  .checkbox__inner::after {
+    left: 6px;
+    top: 1px;
+    width: 7px;
+    height: 12px;
+    border-width: 3px;
+  }
+
+  //Check icon size - sm
+  .checkbox--sm .checkbox__inner::after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 8px;
+    border-width: 2px;
+  }
+
+  //Check icon size - lg
+  .checkbox--lg .checkbox__inner::after {
+    left: 9px;
+    top: 2px;
+    width: 11px;
+    height: 18px;
+    border-width: 4px;
+  }
+
+  //Show check icon after check
+  .checkbox--checked .checkbox__inner::after,
+  .checkbox__input:checked + .checkbox__inner::after {
+    display: table;
+  }
+
+  //Disable color for text
+  .checkbox--disabled .checkbox__text,
+  .checkbox__input:disabled + .checkbox__inner + .checkbox__text {
+    color: @checkbox-disabled-checked-color;
+  }
+
+  //Disable cursor for all needed elements
+  .checkbox--disabled,
+  .checkbox--disabled .checkbox__text,
+  .checkbox--disabled .checkbox__input,
+  .checkbox__input:disabled,
+  .checkbox__input:disabled + .checkbox__inner + .checkbox__text {
+    cursor: not-allowed;
+  }
+
+  //Hover and focus style
+  .checkbox-wrapper:hover .checkbox__inner,
+  .checkbox:hover .checkbox__inner,
+  .checkbox__input:focus + .checkbox__inner {
+    border: solid 1px @picton-blue;
+    box-shadow: 0 0 4px 0 rgba(77, 189, 233, 0.5);
+  }
+
+  //Disable style for checkbox__inner(box)
+  .checkbox--disabled .checkbox__inner,
+  .checkbox-wrapper:hover .checkbox--disabled .checkbox__inner,
+  .checkbox__input:disabled + .checkbox__inner {
+    border-color: @checkbox-border-color;
+    background-color: @checkbox-disabled-background-color;
+  }
+
+  //Disable style for checkbox__inner::after(check icon)
+  .checkbox--disabled .checkbox__inner::after,
+  .checkbox__input:disabled + .checkbox__inner::after {
+    border-color: @checkbox-disabled-checked-color;
+  }
+}
+
+.has-error .checkbox-wrapper {
+  .checkbox__inner {
+    border-color: @checkbox-error-color;
+    background-color: @checkbox-error-background-color;
+  }
+  .checkbox__inner::after,
+  .checkbox__inner:hover::after {
+    border-color: @checkbox-error-color;
+  }
+}

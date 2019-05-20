@@ -1,0 +1,37 @@
+//
+// Grid mixin
+// --------------------------------------------------
+
+/*
+  generate unit width styles
+*/
+.m-grid-generate-rules(@count, @responsiveConfig) {
+  .m-grid-generate-units(@count);
+  .m-grid-generate-responsive-rules(length(@responsiveConfig), @responsiveConfig, @count);
+}
+
+/*
+  generate responsive styles
+*/
+.m-grid-generate-responsive-rules(@n, @responsiveConfig, @count, @i: 1) when(@i <= @n) {
+  .m-grid-parseResponsiveConfig(extract(@responsiveConfig, @i));
+  @media @mediaQuery {
+    .m-grid-generate-units(@count, e("grid-u-@{prefix}"));
+  }
+  .m-grid-generate-responsive-rules(@n, @responsiveConfig, @count, @i + 1);
+}
+
+.m-grid-generate-units(@n, @prefix: grid-u,@i: 1) when (@i <= @n) {
+  .@{prefix}-@{i}-@{n} {
+    width: (@i * 100% / @n);
+  }
+  .m-grid-generate-units(@n, @prefix, (@i + 1));
+}
+
+/*
+  return the responsive class prefix and media query setting
+*/
+.m-grid-parseResponsiveConfig(@configStr) {
+  @prefix: e(replace(@configStr, "@.+", "",));
+  @mediaQuery: e(replace(@configStr, "[a-z]+@media ", "", "i"));
+}

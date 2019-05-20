@@ -1,0 +1,141 @@
+//
+// Progress Steps
+// --------------------------------------------------
+
+.progress-steps {
+  line-height: 38px;
+
+  display: flex;
+
+  height: 40px;
+  margin: 30px 0 30px 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.progress-steps__step {
+  color: @ghost;
+  background-color: @mystic;
+
+  border-bottom:1px solid @ghost;
+  border-top:1px solid @ghost;
+
+  position: relative;
+
+  display: inline-block;
+
+  text-align: center;
+
+        flex: 1;
+
+  &::before,
+  &::after {
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+  }
+
+  &::before {
+    left: 0;
+    top: -1px;
+
+    border-top: @progress-steps-before-border-width solid transparent;
+    border-bottom: @progress-steps-before-border-width solid transparent;
+    border-left: 16px solid #ccc;
+  }
+
+  &::after {
+    z-index: @zIndex-1;
+    top: 0;
+    right: -15px;
+
+    border-top: @progress-steps-after-border-width solid transparent;
+    border-bottom: @progress-steps-after-border-width solid transparent;
+    border-left: 15px solid @mystic;
+  }
+
+  &:first-child {
+    border-left:    1px solid @ghost;
+    border-bottom-left-radius: 5px;
+       border-top-left-radius: 5px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &:last-child {
+    border-right:  1px solid @ghost;
+    border-bottom-right-radius: 5px;
+       border-top-right-radius: 5px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.progress-steps__step-text {
+  overflow: hidden;
+
+  padding: 0 6px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.progress-steps__step.past {
+  color: @progress-steps-step-past-color;
+  background-color: @white;
+
+  &::after {
+    border-left-color: @white;
+  }
+}
+
+.progress-steps__step.active {
+  color: @white;
+  background: @picton-blue;
+}
+
+.progress-steps__step.active::after {
+  border-left-color: @picton-blue;
+}
+
+.progress-steps--sm {
+  line-height: 28px;
+
+  font-size: @font-size-sm;
+
+  height: 30px;
+
+  .progress-steps__step {
+    &::before {
+      border-top: @progress-steps-sm-before-border-width solid transparent;
+      border-bottom: @progress-steps-sm-before-border-width solid transparent;
+      border-left: 11px solid #ccc;
+    }
+
+    &::after {
+      z-index: @zIndex-1;
+      top: 0;
+      right: -10px;
+
+      border-top: @progress-steps-sm-after-border-width solid transparent;
+      border-bottom: @progress-steps-sm-after-border-width solid transparent;
+      border-left: 10px solid @mystic;
+    }
+
+    &.past::after {
+      border-left-color: @white;
+    }
+
+    &.active::after {
+      border-left-color: @picton-blue;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+//
+// Avatar
+// --------------------------------------------------
+
+.avatar {
+  background: @avatar-bg-color;
+  border-radius:@avatar-border-radius;
+  color: @avatar-font-color;
+  display: inline-block;
+  text-align: center;
+
+  .m-avatar-size(@avatar-font-size);
+}
+
+.avatar--lg {
+  .m-avatar-size(@avatar-font-size-lg);
+}
+
+.avatar--md {
+  .m-avatar-size(@avatar-font-size-md);
+}
+
+.avatar--sm {
+  .m-avatar-size(@avatar-font-size-sm);
+}

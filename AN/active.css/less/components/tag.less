@@ -1,0 +1,71 @@
+//
+// Tags
+// --------------------------------------------------
+
+.badge {
+  background-color: @cerulean;
+  border-radius: @tags-default-border-radius;
+  color: @white;
+  display: inline-block;
+  font-size: @tags-default-font-size;
+  font-weight: normal;
+  line-height: 1;
+  margin-left: @tags-default-margin;
+  min-width: @tags-default-min-width;
+  padding: 3px 4px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+
+  &:hover,
+  &:focus {
+    color: @white;
+    cursor: pointer;
+    background: @tags-hover-background-color;
+    text-decoration: none;
+  }
+}
+
+.tag-input {
+  min-height: @input-height-default;
+  height: auto;
+
+  input {
+    line-height: 1;
+
+    display: inline-block;
+
+    width: auto;
+
+    outline: none;
+  }
+
+  .badge {
+    font-size: @tags-input-font-size;
+    background: @tags-input-background-color;
+    margin: 0;
+
+    &:after {
+      color: @tags-input-icon-color;
+      font-size: @tags-input-font-size;
+      content: ' x';
+    }
+
+    &:hover,
+    &:focus {
+      background: @tags-input-hover-background-color;
+      cursor: pointer;
+    }
+  }
+
+  .badge--with-close-icon {
+    [class*='icon-'] {
+      color: @tags-input-icon-color;
+      font-size: @tags-input-font-size;
+    }
+
+    &:after {
+      content: '';
+    }
+  }
+}

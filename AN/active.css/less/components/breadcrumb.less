@@ -1,0 +1,66 @@
+//
+// Breadcrumb
+// --------------------------------------------------
+
+// Has default divider
+.breadcrumb {
+  background-color: @white;
+  border-radius: 0px;
+  font-size: @font-size-xs;
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 8px 0px;
+
+  > li {
+    display: inline-block;
+
+    // default divider
+    + li:before {
+      color: @rolling-stone;
+      content: "/\00a0";
+      padding: 0 5px;
+    }
+  }
+
+  > .active {
+    color: @river-bed;
+  }
+
+  a {
+    color:@rolling-stone;
+
+    &:hover {
+      color:@river-bed;
+    }
+  }
+}
+
+// No default divider
+.crumb {
+  &:extend(.breadcrumb);
+
+  > li {
+    &:extend(.breadcrumb > li);
+
+    &:last-of-type {
+      .crumb__divider {
+        display: none;
+      }
+      a {
+        &:extend(.breadcrumb > .active);
+      }
+    }
+  }
+
+  a {
+    &:extend(.breadcrumb a);
+
+    &:hover {
+      &:extend(.breadcrumb a:hover);
+    }
+  }
+
+  &__divider {
+    padding: 0 5px;
+  }
+}

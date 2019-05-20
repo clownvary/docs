@@ -1,0 +1,91 @@
+// Sidebar
+// -------------------------
+
+.sidebar {
+  text-align: left;
+
+  ul,
+  ol {
+    line-height: 1.125em;
+
+    padding: 0;
+
+    list-style: none;
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+
+    li.disabled {
+      a {
+        color: #999;
+
+        &:hover,
+        &:focus {
+          color: #999;
+          text-decoration: none;
+          background-color: transparent;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  a {
+    padding: 0.8125em 0.9375em 0.9375em;
+    color: @river-bed;
+    background-color: @mystic;
+    font-weight: 600;
+    font-size: @font-size-base;
+    text-decoration: none;
+    display: block;
+
+    &:hover,
+    &:focus {
+      cursor: default;
+      text-decoration: none;
+    }
+  }
+
+  .past,
+  .active {
+    color: @picton-blue;
+  }
+
+  .past {
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: @white;
+      background-color: @picton-blue;
+    }
+  }
+
+  .active {
+    background-color: @white;
+
+    &:hover,
+    &:focus {
+      color: @picton-blue;
+      background-color: @white;
+    }
+  }
+}
+
+.sidebar__title {
+  padding: 0 12px;
+}
+
+.sidebar--links {
+  a {
+    color: @picton-blue;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: @white;
+      background-color: @picton-blue;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+//
+// More Button
+// --------------------------------------------------
+
+.more-button,
+.more-button.dropdown,
+.more-button.dropdown--lg,
+.more-button.dropdown--with-search{
+  width: auto;
+  .dropdown__button{
+    background-color: @more-button-background-color;
+    border-color: darken(@more-button-background-color, 5%);
+    color: @more-button-color;
+    width:auto;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &.show {
+      background-color: darken(@more-button-background-color, 10%);
+      border-color: darken(@more-button-background-color, 15%);
+    }
+
+    &.disabled,
+    &[disabled]{
+      background-color:@more-button-background-color;
+      border-color: darken(@more-button-background-color, 5%);
+      cursor: @cursor-disabled;
+      color: fade(@more-button-color, 45%);
+      opacity: .45;
+      box-shadow: none
+    }
+
+    .dropdown__button-text{
+        width: auto;
+    }
+  }
+
+  .dropdown__menu{
+      width: auto;
+  }
+
+  [class*=" icon-"], [class^="icon-"] {
+    text-align: right;
+  }
+}

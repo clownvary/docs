@@ -1,0 +1,199 @@
+// Typography
+// -------------------------
+
+@import './variables';
+
+// Headings
+// -------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: Arial, sans-serif;
+  line-height: @headings-line-height;
+  font-weight: @headings-font-weight;
+  color: @river-bed;
+  margin: 0;
+
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color: @gray-light;
+  }
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: @line-height-computed; // 20px
+  margin-bottom: (@line-height-computed / 2); // 10px
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: (@line-height-computed / 2); // 10px
+  margin-bottom: (@line-height-computed / 2); // 10px
+
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+.ProximaNova--loaded {
+  body&,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: @font-family-base, Arial, sans-serif;
+  }
+}
+
+* {
+  font-family: inherit;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 24px 0;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+// Body text
+// -------------------------
+
+p {
+  margin: 0 0 (@line-height-computed / 2);
+}
+
+// Emphasis & misc
+// -------------------------
+
+// Ex: (12px small font / 16px base font) * 100% = about 75%
+small,
+.small {
+  font-size: floor((100% * @font-size-sm / @font-size-base));
+}
+
+b,
+strong,
+.strong {
+  font-weight: bold;
+}
+
+// Text align
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+// Text font attributes
+.text-light {
+  color: @rolling-stone;
+}
+
+.text-hint {
+  color: @loblolly;
+}
+
+.text-xs {
+  font-size: @font-size-xs;
+  line-height: @line-height-xs;
+}
+
+.text-sm {
+  font-size: @font-size-sm;
+  line-height: @line-height-sm;
+}
+
+.text-md {
+  font-size: @font-size-md;
+  line-height: @line-height-md;
+}
+
+.text-lg {
+  font-size: @font-size-lg;
+  line-height: @line-height-lg;
+}
+
+.text-xl {
+  font-size: @font-size-xl;
+  line-height: @line-height-xl;
+}
+
+.lead {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: @gray;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 1em;
+  color: #777;
+  border-left: 0.25em solid #ddd;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

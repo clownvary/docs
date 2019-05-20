@@ -1,0 +1,49 @@
+//
+// Navigation tabs
+// --------------------------------------------------
+
+.nav-tabs {
+  border-bottom: 1px solid @nav-tabs-border-color;
+  margin: 0;
+  padding: 0;
+  &:extend(.u-clearfix all);
+
+  > li {
+    list-style: none;
+    float: left;
+    padding: 0;
+
+    > a {
+      // Make the list-items overlay the bottom border
+      margin-bottom: -1px;
+      text-decoration: none;
+      display: block;
+      padding: @nav-link-padding;;
+      line-height: @line-height-base;
+      border: 1px solid transparent;
+      cursor: pointer;
+      outline: none;
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+        border: 1px solid transparent;
+      }
+
+      &.active {
+        color: @river-bed;
+        border: 1px solid @nav-tabs-border-color;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-color: @white;
+        background-color: @white;
+
+        &:hover,
+        &:focus {
+          cursor: default;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

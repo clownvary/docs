@@ -242,6 +242,12 @@ if (window.Notification){
 
 ```
 
+- offset/scroll 属性
+    - offsetHeight, 每个元素的高度，包括border, 但不包括margin
+    - clienHeight, 每个元素的高度，**不包括border,margin**
+    - offsetTop， 每个元素距离其最近父元素的距离
+    - scrollHeight，代表当前滚动区域内元素整个的高度，包括不可见的高度
+    - scrollTop, 当A元素内的B元素的高度 > A 元素的高度，会出现滚动条，B元素向下滚动的距离(即被遮住的高度)就是scrollTop
 ## webpack
 
 1. commonChunk/external/entry(vendor)/dll

@@ -1,0 +1,19 @@
+.tageditor {
+  border: 1px solid;
+  border-radius: 4px;
+  .tageditor-input-border-color(@tageditor-input-border-color, @tageditor-input-border-highlight-color, @tageditor-default-border-color);
+  height: 60px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  overflow: auto;
+
+  .badge {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  &.is-errored {
+    background-color: @tageditor-error-bgcolor;
+    .tageditor-input-border-color(@tageditor-error-border-color, @tageditor-error-border-color, darken(@tageditor-error-border-color, 10%));
+  }
+}

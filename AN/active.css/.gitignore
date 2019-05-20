@@ -1,0 +1,11 @@
+node_modules
+.vscode
+.DS_Store
+_site
+docs/docs.css
+docs/.jekyll-metadata
+dist/poms
+*.zip
+npm-debug.log
+aui_icons
+dist

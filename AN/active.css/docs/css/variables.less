@@ -1,0 +1,108 @@
+// These are our margin and padding utility spacers. The default step size we
+// use is 6px. This gives us a key of:
+//    0 => 0px
+//    1 => 3px
+//    2 => 6px
+//    3 => 12px
+//    4 => 24px
+//    5 => 36px
+@spacer: 6px;
+
+// Aliases for easy use
+@spacer1: 3px;
+@spacer2: 6px;
+@spacer3: 12px;
+@spacer4: 24px;
+@spacer5: 36px;
+@spacer6: 48px;
+
+@container-width: 980px;
+@grid-gutter:     10px;
+
+// ---- Colors ----
+
+// Brand
+@blue:              #4078c0;
+@gray-dark:         #333   ;
+@gray-light:        #999   ;
+@gray:              #767676;
+@green:             #6cc644;
+@orange:            #c9510c;
+@purple:            #6e5494;
+@red:               #bd2c00;
+@white:             #fff;
+
+// State indicators.
+@status-renamed:    #fffa5d;
+@status-pending:    #cea61b;
+
+// Repository type colors
+@repo-private-text: #4c4a42;
+@repo-private-bg:   #fff9ea;
+@repo-private-icon: #e9dba5;
+
+// Alerts
+@flash-border-blue: #bac6d3;
+@flash-bg-blue: #e2eef9;
+@flash-text-blue: #246;
+
+@flash-border-yellow: #dfd8c2;
+@flash-bg-yellow: #fff9ea;
+@flash-text-yellow: #4c4a42;
+
+@flash-border-red: #d2b2b2;
+@flash-bg-red:     #fcdede;
+@flash-text-red:   #911;
+
+// Border colors
+@border-blue:       #c5d5dd;
+@border-gray-dark:  #ddd;
+@border-gray-light: #eee;
+@border-gray:       #e5e5e5;
+
+// Background colors
+@bg-black:          #222;
+@bg-blue-light:     #f2f8fa;
+@bg-blue:           @blue;
+@bg-gray-dark:      @gray-dark;
+@bg-gray-light:     #fafafa;
+@bg-gray:           #f5f5f5;
+@bg-green:          @green;
+@bg-orange:         @orange;
+@bg-purple:         @purple;
+@bg-red:            @red;
+@bg-white:          @white;
+
+// Text colors
+@text-blue:         @blue;
+@text-gray-dark:    @gray-dark;
+@text-gray-light:   @gray-light;
+@text-gray:         @gray;
+@text-green:        darken(@green, 10%);
+@text-orange:       @orange;
+@text-purple:       @purple;
+@text-red:          @red;
+@text-white:        @white;
+
+// Border size
+@border-width: 1px;
+@border-color: @border-gray;
+@border-style: solid;
+@border: @border-width @border-color @border-style;
+@border-radius: 3px;
+
+// Font stacks
+@body-font: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// Monospace font stack
+@mono-font: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+// The base body size
+@body-font-size: 13px;
+
+// Tooltips
+@tooltip-max-width: 250px;
+@tooltip-background-color: rgba(0, 0, 0, 0.8);
+@tooltip-text-color: #fff;
+@tooltip-delay: 0.4s;
+@tooltip-duration: 0.1s;

@@ -1,0 +1,57 @@
+//
+// Toggle
+// --------------------------------------------------
+
+.toggle {
+  &.toggle--block {
+    display: block;
+  }
+
+  input {
+    display: none;
+  }
+
+  input:checked + .toggle__text::before {
+    background-color: @toggle-checked-color;
+  }
+
+  input:checked + .toggle__text::after {
+    transform: translateX(@toggle-width - @toggle-slider-size - (@toggle-height - @toggle-slider-size));
+  }
+}
+
+.toggle__text {
+  position: relative;
+  display: inline;
+  padding-left: @toggle-width + 5;
+}
+
+.toggle--empty .toggle__text {
+  padding-left: @toggle-width;
+}
+
+.toggle__text::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: @toggle-width;
+  height: @toggle-height;
+  border-radius: @toggle-slider-radius;
+  background-color: @toggle-unchecked-color;
+  transition: background-color @toggle-transition;
+}
+
+.toggle__text::after {
+  content: '';
+  position: absolute;
+  top: (@toggle-height - @toggle-slider-size) / 2;
+  bottom: 0;
+  height: @toggle-slider-size;
+  width: @toggle-slider-size;
+  left: (@toggle-height - @toggle-slider-size) / 2;
+  background-color: white;
+  transition: transform @toggle-transition;
+  border-radius: 50%;
+}

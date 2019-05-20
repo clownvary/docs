@@ -1,0 +1,123 @@
+// Checkbox
+// -------------------------
+
+.checkbox {
+  outline: none;
+  input[type='checkbox'] {
+    display: none;
+    /* IE8 will not have styled checkboxes and checkbox buttons */
+    display: inline\9;
+    padding: 5px 5px 0 20px\9;
+  }
+}
+
+.checkbox .checkbox__text,
+.checkbox label {
+  word-wrap: break-word;
+  display: inline;
+  cursor: pointer;
+  &::before {
+    display: inline-block;
+    display: none\9; /* IE8 will not have styled checkbox buttons */
+    border-radius: @input-border-radius;
+    width: 20px;
+    height: 20px;
+    line-height: 16px;
+    margin-right: 5px;
+    content: '';
+    text-align: center;
+    vertical-align: middle;
+    color: #009dda;
+    border: 1px solid @gray-medium;
+    background-color: @white;
+  }
+}
+
+.checkbox.checkbox--empty {
+  .checkbox__text,
+  label {
+    &::before {
+      margin-right: 0;
+    }
+  }
+}
+
+.checkbox .checkbox__text:hover::before,
+.checkbox label:hover::before {
+  border-color: darken(@ghost, 15%);
+}
+
+.has-error .checkbox {
+  label::before,
+  label:hover::before {
+    border-color: @checkbox-error-color;
+    background-color: @checkbox-error-background-color;
+  }
+}
+
+.checkbox input[type=checkbox]:checked + .checkbox__text::before,
+.checkbox input[type=checkbox]:checked + label::before {
+  font-family: 'aui_icons';
+  content: '\f00c';
+  text-align: center;
+  color: @cerulean;
+  border-color: darken(@ghost, 15%);
+}
+
+.checkbox input[type=checkbox]:disabled + .checkbox__text::before,
+.checkbox input[type=checkbox]:disabled + label::before {
+  cursor: not-allowed;
+  border-color: @gray-medium;
+  background-color: @mystic;
+  color: @ghost;
+}
+
+.checkbox__input {
+  float: left;
+}
+
+.checkbox .checkbox__label {
+  display: block;
+  display: inline\9;
+  overflow: hidden;
+  max-width: none\9;
+  word-wrap: break-word;
+}
+
+.checkbox .checkbox__label::before {
+  display: none;
+}
+
+// Sizing
+.checkbox--sm.checkbox {
+  .m-input-size(@input-height-sm; 0; 0; @font-size-xs; @line-height-xs; @input-border-radius-sm);
+  .checkbox__text,
+  label {
+    &::before {
+      line-height: 12px;
+      width: 14px;
+      height: 14px;
+      border-radius: @input-border-radius-sm;
+    }
+  }
+}
+
+.checkbox--lg.checkbox {
+  .m-input-size(@input-height-lg; 0; 0; @font-size-lg; @line-height-lg; @input-border-radius-lg);
+  .checkbox__text,
+  label {
+    &::before {
+      line-height: 28px;
+      width: 30px;
+      height: 30px;
+      border-radius: @input-border-radius-lg;
+    }
+  }
+}
+
+// tabIndex
+.checkbox:focus {
+  .checkbox__text::before {
+    outline: 5px auto rgb(125, 173, 217);
+  }
+}

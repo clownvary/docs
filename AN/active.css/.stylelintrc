@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-standard",
+  "ignoreFiles": [
+    "less/normalize.css",
+    "less/components/**/*.less",
+    "less/mixins/**/*.less"
+  ],
+  "rules": {
+    "selector-pseudo-element-colon-notation": "single"
+  }
+}

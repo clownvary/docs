@@ -1,0 +1,59 @@
+// For the reason we reset the global `box-sizing`
+// See https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+
+html {
+  box-sizing: border-box;
+  // `-webkit-tap-highlight-color` is a non-standard CSS property that sets the color of the highlight that appears over a link while it's being tapped.
+  // Here we want to prevent tap highlight color
+  // See https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-tap-highlight-color
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  // For better font rendering
+  // See https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: @font-size-base;
+  font-weight: normal;
+  line-height: @line-height-base;
+  color: @river-bed;
+}
+
+// Reset global link styles
+a {
+  background: transparent;
+  color: @link-color;
+  text-decoration: none;
+
+  &:active,
+  &:hover,
+  &:focus a {
+    // Hover state: underline and darken link colour by 15%
+    // See visual spec: http://sgd.dev.activenetwork.com:3000/aui/typography/links;
+    text-decoration: underline;
+    color: darken(@link-color, 15%);
+    outline: 0;
+  }
+
+  &:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+}
+
+// Reset global horizontal rules
+hr {
+  margin-top: @line-height-computed;
+  margin-bottom: @line-height-computed;
+  border: 0;
+  border-top: 1px solid #eee;
+}

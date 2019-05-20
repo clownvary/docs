@@ -1,0 +1,13 @@
+.tageditor-input-border-color(@normal, @hover, @focus) {
+  border-color: @normal;
+
+  &:hover,
+  &:active {
+    border-color: @hover;
+  }
+
+  &:focus {
+    border-color: @focus;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px fade(@focus, 60%);
+  }
+}

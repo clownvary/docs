@@ -1,0 +1,13 @@
+version: 0.8.34
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  auto_ids: true
+
+permalink: pretty
+source: docs
+baseurl: ""
+
+github:
+  repo: https://gitlab.dev.activenetwork.com/fee/active.css

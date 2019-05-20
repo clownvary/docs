@@ -1,0 +1,43 @@
+//
+// Alert mixin
+// --------------------------------------------------
+
+.alert-variant(@background; @border; @text-color) {
+  background-color: @background;
+  border-color: @border;
+  color: @text-color;
+
+  .close {
+    opacity: 1;
+    color: @text-color;
+
+    &:hover {
+      color: darken(@border, 15%);
+    }
+  }
+}
+
+.m-alert-inverse(@background-color, @box-shadow) {
+  color: @white;
+  font-size: @font-size-base;
+  font-weight: 600;
+
+  background: @background-color;
+  border-color: @background-color;
+  box-shadow: @box-shadow;
+
+  [class*=icon-]::before {
+    margin-right: 5px;
+  }
+
+  .close {
+    opacity: 0.5;
+    color: @white;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      color: darken(@background-color, 15%);
+    }
+  }
+}

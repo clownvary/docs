@@ -1,0 +1,117 @@
+//
+// Date Picker
+// --------------------------------------------------
+
+.date-picker {
+  display: inline-block;
+  position: relative;
+  font-size: @date-picker-font-size;
+  box-sizing: border-box;
+  width: 100%;
+
+  .input {
+    width: 100%;
+  }
+
+  .date-picker__calendar {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 100%;
+  }
+
+  .date-picker__calendar--show-on-top {
+    top: auto;
+    bottom: 100%;
+  }
+
+  .date-picker__calendar--show-on-left {
+    left: auto;
+    right: 0;
+  }
+
+  .input .input-posttext {
+    font-family: @font-family-base;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.date-picker__calendar {
+  background-color: white;
+  border: 1px solid @input-border;
+  border-radius: 5px;
+  padding: 10px 5px;
+  width: 246px;
+}
+
+.date-picker__table {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  border-spacing: 1px;
+  color: @river-bed;
+}
+
+.date-picker__table td {
+  box-sizing: border-box;
+  width: 14.28571429%;
+  padding: 3px 0;
+  line-height: 1em;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @date-picker-calendar-highlight;
+    color: white;
+  }
+}
+
+.date-picker__table td:not(:last-child) {
+  border-right: 2px solid #fff;
+}
+
+.date-picker--today {
+  background-color: @date-picker-calendar-today;
+}
+
+.date-picker--selected {
+  background-color: @date-picker-calendar-selected;
+}
+
+.date-picker--other-month {
+  color: @date-picker-calendar-other-month;
+}
+
+.date-picker__calendar .date-picker__header {
+  color: @date-picker-calendar-header;
+  text-align: center;
+}
+
+.date-picker__header .date-picker__calendar-title {
+  font-size: @font-size-sm;
+  margin: .7em;
+  line-height: @date-picker-font-size;
+}
+
+.date-picker__left-arrow,
+.date-picker__right-arrow {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.date-picker__left-arrow {
+  float: left;
+  margin-left: 10px;
+}
+
+.date-picker__right-arrow {
+  float: right;
+  margin-right: 10px;
+}
