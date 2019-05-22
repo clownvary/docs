@@ -1,0 +1,11 @@
+export const FREE = 0;
+export const PHONE = 1;
+export const DATE = 2;
+export const TIME = 3;
+export const SSNTB = 4;
+export const POSTAL = 5;
+export const UPPERCASE = 6;
+export const LOWERCASE = 7;
+export const NUMBER = 8;
+export const ALPHA = 9;
+export const DURATION = 10;

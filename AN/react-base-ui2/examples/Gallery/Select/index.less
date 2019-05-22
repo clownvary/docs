@@ -1,0 +1,130 @@
+@import '../../../src/less/variables/index.less';
+
+@renderer-line-height: 1.2;
+
+@color-silver: #cccccc;
+@color-mine-shaft: #333333;
+@color-alabaster: #f7f7f7;
+@color-dove-gray: #707070;
+@color-alto: #d8d8d8;
+@color-blue: #0070d9;
+
+.select-group {
+  display: flex;
+  margin-bottom: 20px;
+
+  & > span {
+    width: 60px;
+    margin-right: 15px;
+    text-align: right;
+  }
+}
+
+.an-select {
+  width: 260px;
+
+  &-renderer {
+    line-height: @renderer-line-height;
+  }
+
+  &-placeholder {
+    padding: 5px 0;
+  }
+
+  &-search__field {
+    height: 20px;
+  }
+
+  &-selection {
+    li {
+      margin: 5px 0;
+    }
+
+    li&-choice {
+      margin-right: 10px;
+    }
+  }
+
+  &-option {
+    box-shadow: 0 2px 4px 0 @color-silver;
+    margin-top: 2px;
+    background: @white;
+    border-radius: 3px;
+
+    .coupon-item {
+      .an-select-option-item__content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      &__text {
+        font-size: 14px;
+        color: @color-mine-shaft;
+      }
+
+      &__desc {
+        font-size: 12px;
+      }
+
+      &__type {
+        font-size: 12px;
+        text-align: center;
+        color: @color-dove-gray;
+      }
+
+      &__rebate {
+        font-size: 24px;
+        color: @color-blue;
+      }
+    }
+  }
+
+  &-option-list ul {
+    padding: 6px 0;
+  }
+
+  &-option-item {
+    padding: 6px 12px;
+
+    &__selected {
+      background: transparent;
+    }
+
+    &__active {
+      color: @color-mine-shaft;
+      background-color: @color-alabaster;
+    }
+
+    &__selection {
+      width: 14px;
+      margin-right: 9px;
+    }
+
+    &__text {
+      margin-bottom: 2px;
+    }
+
+    &__secondary {
+      font-size: 12px;
+      color: @color-dove-gray;
+    }
+
+    &__selection,
+    &__text,
+    &__secondary {
+      line-height: 1;
+    }
+  }
+
+  &-option-footer {
+    display: flex;
+    width: 100%;
+    padding: 10px 12px;
+    border-top: 1px solid @color-alto;
+
+    &__add-icon {
+      margin-right: 9px;
+    }
+  }
+}

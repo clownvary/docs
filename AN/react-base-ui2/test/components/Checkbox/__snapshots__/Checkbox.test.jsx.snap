@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Checkbox Checkbox renders fine 1`] = `
+<label
+  aria-disabled={undefined}
+  className="checkbox-wrapper toggle snapshot-checkbox-class"
+  htmlFor="snapshot-checkbox-id"
+  style={undefined}
+>
+  <span
+    className="checkbox--md"
+  >
+    <input
+      aria-checked={true}
+      checked={true}
+      className="checkbox__input"
+      disabled={undefined}
+      id="snapshot-checkbox-id"
+      onChange={[Function]}
+      role="checkbox"
+      type="checkbox"
+    />
+    <span
+      className="toggle__text"
+    />
+    <span
+      className="checkbox__text"
+    >
+      snapshot checkbox
+    </span>
+  </span>
+</label>
+`;
+
+exports[`components/Checkbox DefaultChecked checkbox renders fine 1`] = `
+<label
+  aria-disabled={undefined}
+  className="checkbox-wrapper"
+  htmlFor="checkbox_attr_for_1"
+  style={undefined}
+>
+  <span
+    className="checkbox checkbox--checked"
+  >
+    <input
+      aria-checked={true}
+      checked={true}
+      className="checkbox__input"
+      defaultChecked={true}
+      disabled={undefined}
+      id="checkbox_attr_for_1"
+      onChange={[Function]}
+      role="checkbox"
+      type="checkbox"
+    />
+    <span
+      className="checkbox__inner"
+    />
+  </span>
+</label>
+`;

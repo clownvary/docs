@@ -1,0 +1,54 @@
+/* stylelint-disable */
+
+.message-pad {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  .message-content {
+    flex: 1;
+    padding-left: 10px;
+    word-break: break-word;
+    word-wrap: break-word;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .icon {
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  ul {
+    padding-left: 16px;
+
+    li {
+      text-indent: -4px;
+      list-style-position: outside;
+    }
+  }
+
+  .single-line {
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    color: inherit;
+  }
+}

@@ -1,0 +1,342 @@
+@import '../../less/variables/index.less';
+
+@aaui-dropdown-expanded-bgcolor: @mystic;
+@aaui-dropdown-disabled-color: @loblolly;
+/* stylelint-disable */
+
+.aaui-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+
+  &__button {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    font-size: @font-size-md;
+    line-height: @input-line-height;
+    cursor: default;
+    background-color: white;
+    border: 1px solid @input-border;
+    border-radius: @input-border-radius-sm;
+    outline: none;
+
+    &:hover,
+    &:active {
+      border-color: @input-border-hover;
+    }
+
+    &:focus {
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px fade(@input-border-focus, 60%);
+      border-color: @input-border-focus;
+    }
+
+    &::-moz-focus-inner {
+      border: 0;
+    }
+
+    &.is-expanded,
+    &.is-disabled {
+      background-color: @aaui-dropdown-expanded-bgcolor;
+    }
+
+    &.is-disabled {
+      pointer-events: none;
+      color: @aaui-dropdown-disabled-color;
+    }
+
+    &.is-error {
+      color: @state-danger-text;
+      background-color: @state-danger-bg;
+      border-color: @state-danger-border;
+
+      &:hover,
+      &:active {
+        border-color: @state-danger-border;
+      }
+
+      &:focus {
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px fade(darken(@state-danger-border, 10%), 60%);
+        border-color: darken(@state-danger-border, 10%);
+      }
+    }
+
+    &-text {
+      margin: 0 20px 0 10px;
+      overflow: hidden;
+      text-align: left;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: black;
+    }
+
+    &-icon {
+      position: absolute;
+      top: ~'calc(50% - .5em)';
+      right: 5px;
+      color: @cerulean;
+    }
+
+    &.is-disabled &-icon {
+      color: @aaui-dropdown-disabled-color;
+    }
+
+    &.is-error &-icon,
+    &.is-error &-text {
+      color: inherit;
+    }
+  }
+
+  &__filter {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 0.3em 0 0.8em;
+    margin-top: 2px;
+    line-height: 28px;
+    white-space: nowrap;
+    cursor: default;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px dotted #dedede;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+
+    &:hover {
+      background-color: white;
+    }
+
+    &.is-remove {
+      padding-right: 1.5em;
+    }
+
+    .icon-search {
+      position: absolute;
+      padding: 5px 0;
+      pointer-events: none;
+      cursor: text;
+      color: @rolling-stone;
+    }
+
+    .icon-close {
+      display: none;
+      color: #748288;
+
+      &:hover {
+        color: #748288;
+      }
+    }
+
+    &-input {
+      box-sizing: border-box;
+      width: 100%;
+      height: 28px;
+      padding-left: 25px;
+      font-size: @font-size-sm;
+      line-height: 28px;
+      color: #aaa;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      outline: none;
+
+      &::-ms-clear {
+        display: none;
+      }
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: @zindex-dropdown-menu;
+    box-shadow: none;
+    box-sizing: border-box;
+    width: auto;
+    max-height: none;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    list-style: none;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-clip: padding-box;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    &:focus,
+    &:active,
+    &:hover {
+      box-shadow: none;
+      border-color: @input-border-hover;
+      outline: none;
+    }
+
+    ul {
+      box-shadow: none;
+      max-height: 150px;
+      min-width: 100%;
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      list-style: none;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    li {
+      flex-wrap: nowrap;
+      box-sizing: border-box;
+      padding: 0 1.5em 0 1em;
+      margin-bottom: 1px;
+      line-height: 28px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      cursor: pointer;
+      color: @river-bed;
+
+      &:hover {
+        color: white;
+        background-color: @picton-blue;
+      }
+
+      &.is-selected {
+        background-color: #b0e6fc;
+
+        &:hover {
+          color: white;
+          background-color: @picton-blue;
+        }
+      }
+
+      &.is-active {
+        color: white;
+        background-color: @picton-blue;
+      }
+
+      &.is-divider {
+        border-bottom: 1px dotted #dedede;
+      }
+
+      .dropdown-item__label {
+        flex-grow: 1;
+        padding-left: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .checkbox__text > span {
+      display: inline-block;
+      max-width: 94%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+
+    &-loading {
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &__menu-footer {
+    display: flex;
+    justify-content: space-between;
+
+    &.dropdown-status {
+      padding: 10px 0;
+    }
+
+    div {
+      line-height: 40px;
+    }
+
+    .dropdown-results {
+      padding-right: 19px;
+      font-size: 12px;
+      color: #748288;
+    }
+
+    .dropdown-error {
+      padding-right: 19px;
+      color: red;
+    }
+
+    .dropdown-spiner {
+      padding-left: 15px;
+      color: #939393;
+    }
+
+    .dropdown-noResult {
+      width: 100%;
+      min-height: 120px;
+      font-size: 14px;
+      line-height: 120px;
+      text-align: center;
+    }
+
+    .deSelectAll {
+      padding-left: 15px;
+      cursor: pointer;
+      color: #9b9b9b;
+      border: none;
+    }
+
+    .enabledDeSelectAll {
+      color: #109bbb;
+    }
+  }
+
+  // IE 10 and 11 hack.
+  _:-ms-lang(x),
+  &__menu {
+    top: 90%;
+  }
+
+  &__filter + &&__menu {
+    top: 100%;
+    border-top-width: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+
+    ul {
+      margin-top: 2px;
+    }
+  }
+
+  &__menu-wrapper {
+    position: absolute;
+    min-width: 100%;
+    outline: 0;
+
+    .aaui-dropdown__menu:only-child {
+      margin-top: 2px;
+    }
+
+    &.is-right-align {
+      right: 0;
+      left: inherit;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.dropdown-spiner .loading-spiner-icon {
+  animation: spin 2000ms infinite linear;
+}

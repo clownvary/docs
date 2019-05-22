@@ -1,0 +1,40 @@
+@import './variables';
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    visibility: visible;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.an-slide-enter {
+  animation-duration: @enter-duration;
+  animation-name: slideInDown;
+  animation-timing-function: @enter-timing-function;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.an-slide-exit {
+  animation-duration: @exit-duration;
+  animation-name: slideInUp;
+  animation-timing-function: @exit-timing-function;
+  animation-fill-mode: forwards;
+}

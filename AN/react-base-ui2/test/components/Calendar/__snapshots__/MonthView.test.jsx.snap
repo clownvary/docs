@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Calendar/MonthView MonthView renders fine 1`] = `
+<table
+  className="snapshot-month-view-calendar-table"
+>
+  <tbody>
+    <tr
+      className="snapshot-month-view-calendar-row"
+    >
+      <td>
+        <div
+          className="undefinedcalendar-table-cell snapshot-month-view-calendar-month"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          Jan
+        </div>
+      </td>
+      <td>
+        <div
+          className="undefinedcalendar-table-cell snapshot-month-view-calendar-month"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          Feb
+        </div>
+      </td>
+      <td>
+        <div
+          className="undefinedcalendar-table-cell snapshot-month-view-calendar-month"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          Mar
+        </div>
+      </td>
+      <td>
+        <div
+          className="undefinedcalendar-table-cell snapshot-month-view-calendar-month"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          Apr
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="snapshot-month-view-calendar-row"
+    >
+      <td>
+        <div
+          className="undefinedcalendar-table-cell snapshot-month-view-calendar-month"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          May
+        </div>
+      </td>
+      <td>
+        <div
+          className="undefinedcalendar-table-cell snapshot-month-view-calendar-month snapshot-month-view-calendar-month-current snapshot-month-view-calendar-month-selected"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          Jun
+        </div>
+      </td>
+      <td>
+        <div
+          className="undefinedcalendar-table-cell snapshot-month-view-calendar-month"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          Jul
+        </div>
+      </td>
+      <td>
+        <div
+          className="undefinedcalendar-table-cell snapshot-month-view-calendar-month"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          Aug
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="snapshot-month-view-calendar-row"
+    >
+      <td>
+        <div
+          className="undefinedcalendar-table-cell snapshot-month-view-calendar-month"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          Sep
+        </div>
+      </td>
+      <td>
+        <div
+          className="undefinedcalendar-table-cell snapshot-month-view-calendar-month"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          Oct
+        </div>
+      </td>
+      <td>
+        <div
+          className="undefinedcalendar-table-cell snapshot-month-view-calendar-month"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          Nov
+        </div>
+      </td>
+      <td>
+        <div
+          className="undefinedcalendar-table-cell snapshot-month-view-calendar-month"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          Dec
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

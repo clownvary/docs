@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`services/menu attachPopupMenu and clearPopupMenu 1`] = `"<div class=\\"test-target\\"></div>"`;
+
+exports[`services/menu attachPopupMenu and clearPopupMenu 2`] = `"<div class=\\"test-target\\"></div><div class=\\"an-popup an-popup-List-service\\" id=\\"List_popup_container_1\\"><div data-reactroot=\\"\\"><div class=\\"an-popup-desk\\"></div><div class=\\"an-popup-wrapper an-popup-shadow\\" style=\\"left: 0px; top: 0px;\\"><div class=\\"an-list an-list__wrapper \\" role=\\"listbox\\" data-qa-id=\\"\\"><!-- react-empty: 5 --><div class=\\"an-list__body\\"><ul class=\\"an-list__body-single\\" role=\\"group\\"></ul></div><!-- react-empty: 8 --></div></div></div></div>"`;

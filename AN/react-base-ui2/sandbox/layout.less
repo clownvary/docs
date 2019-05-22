@@ -1,0 +1,113 @@
+
+.app{
+  position: relative;
+}
+
+.sample{
+  &-content{
+    position: relative;
+    margin: 20px 400px 20px 20px;
+  }
+
+  &-code{
+    height: 600px;
+    overflow: auto;
+    border: solid 1px gray;
+  }
+
+  &-form{
+    width: 600px;
+    border: solid 1px lightgray;
+    padding: 10px 40px;
+    background-color: white;
+    margin-bottom: 10px;
+
+    .row{
+      margin-bottom: 6px;
+      display: flex;
+      flex-direction: row;
+      .label{
+        color: gray;
+        width: 120px;
+      }
+
+      .field-label{
+        color: gray;
+        width: 160px;
+        display: inline-block;
+        margin-top: 4px;
+        margin-right: 6px;
+      }
+
+      .field{
+        width: 350px;
+      }
+
+      .field-date{
+        width: 160px;
+      }
+    }
+  }
+
+  &-form.small{
+    width: 400px;
+  }
+
+}
+
+.side-bar{
+  width: 300px;
+  background-color: lightsteelblue;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 12px;
+  padding: 20px;
+  font-size: 14px;
+
+  .dropdown{
+    margin-left: 10px;
+  }
+
+  button{
+    margin-right: 8px;
+  }
+
+  .options{
+    .row{
+      margin-bottom: 12px;
+    }
+    margin-bottom: 8px;
+  }
+
+  .log{
+    width: 100%;
+    border: solid 1px gray;
+    height: 400px;
+    overflow-y: auto;
+    background-color: white;
+    margin-bottom: 12px;
+
+    li{
+      list-style: none;
+    }
+  }
+}
+
+.bottom-bar{
+  margin: 20px;
+  background-color: lightsteelblue;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 12px;
+  padding: 20px;
+
+  button{
+    margin-right: 8px;
+  }
+}
+
+

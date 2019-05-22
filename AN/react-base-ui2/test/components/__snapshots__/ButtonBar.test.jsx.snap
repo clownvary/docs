@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ButtonBar ButtonBar renders fine 1`] = `
+<div
+  className="button-bar undefined"
+>
+  <button
+    className="btn btn-secondary"
+    disabled={false}
+    id="btn1"
+    onClick={[Function]}
+    onMenuSelect={undefined}
+    onMouseEnter={[Function]}
+    onMouseHover={undefined}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    type="submit"
+  >
+    <span>
+      button1
+    </span>
+  </button>
+  <button
+    class="button2-with-icon"
+    className="btn btn-secondary"
+    disabled={false}
+    id="btn2"
+    onClick={[Function]}
+    onMenuSelect={undefined}
+    onMouseEnter={[Function]}
+    onMouseHover={undefined}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    type="submit"
+  >
+    <span>
+      <i
+        className="icon icon-list-m"
+      />
+    </span>
+  </button>
+  <button
+    className="btn btn-secondary"
+    disabled={true}
+    id="btn3"
+    onClick={[Function]}
+    onMenuSelect={undefined}
+    onMouseEnter={[Function]}
+    onMouseHover={undefined}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    type="submit"
+  >
+    <span />
+  </button>
+</div>
+`;

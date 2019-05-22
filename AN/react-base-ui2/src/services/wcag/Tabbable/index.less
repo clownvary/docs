@@ -1,0 +1,13 @@
+/* stylelint-disable declaration-no-important */
+.an-tabbable {
+  &__fake-link {
+    &:active,
+    &:focus,
+    &:hover,
+    &:link,
+    &:visited {
+      text-decoration: none !important;
+      color: inherit !important;
+    }
+  }
+}

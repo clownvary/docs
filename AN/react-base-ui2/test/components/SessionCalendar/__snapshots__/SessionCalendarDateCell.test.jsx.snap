@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/SessionCalendar/SessionCalendarDateCell component renders fine 1`] = `
+<td
+  className="test-an-sc-day test-an-sc-day__today test-an-sc-day__disabled test-an-sc-day__waiting test-an-sc-day__selected test-an-sc-day__block-start test-an-sc-day__block-end"
+>
+  <div>
+    2
+  </div>
+</td>
+`;
+
+exports[`components/SessionCalendar/SessionCalendarDateCell component renders fine with default props 1`] = `
+<td
+  className="-day"
+>
+  <div>
+    2
+  </div>
+</td>
+`;

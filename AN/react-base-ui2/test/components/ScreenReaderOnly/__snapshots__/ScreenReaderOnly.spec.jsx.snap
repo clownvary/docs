@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ScreenReaderOnly render className 1`] = `
+<div
+  className="u-screen-reader-only test-class-01"
+  id={undefined}
+>
+  abc
+</div>
+`;
+
+exports[`components/ScreenReaderOnly render id and className 1`] = `
+<div
+  className="u-screen-reader-only test-class-02"
+  id="testId"
+>
+  def
+</div>
+`;

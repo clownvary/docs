@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ColumnList/ListItem ListItem renders fine 1`] = `
+<li
+  aria-selected={true}
+  className="item disabled selected focused"
+  onClick={[Function]}
+  onFocus={[Function]}
+  role="option"
+  tabIndex={0}
+  title={undefined}
+>
+  <div>
+    1234
+  </div>
+  <div>
+    question-1
+  </div>
+</li>
+`;

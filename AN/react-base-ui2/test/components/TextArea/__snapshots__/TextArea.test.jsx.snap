@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing and don't change unexpected 1`] = `
+<textarea
+  className="input"
+  onChange={[Function]}
+  value="Hello, World!"
+/>
+`;

@@ -1,0 +1,168 @@
+@calendar-border-focus: 1px dotted @tango;
+@dark-sky-blue: #40b0dc;
+
+.an-calendar {
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  table-layout: auto;
+  width: 246px;
+  height: 258px;
+  min-width: 246px;
+  min-height: 258px;
+  padding: 10px 5px;
+  font-family: @font-family-base;
+  font-size: @font-size-sm;
+  color: @river-bed;
+  background-color: white;
+  border: 1px solid @gray-medium;
+  border-radius: @border-radius-lg;
+  column-count: auto;
+
+  &-header {
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 12px;
+    font-weight: 600;
+    color: @picton-blue;
+
+    i,
+    span {
+      cursor: pointer;
+    }
+  }
+
+  &-table {
+    width: 100%;
+    height: 90%;
+    padding: 0;
+    margin: 0;
+
+    td {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      vertical-align: middle;
+
+      div {
+        text-align: center;
+      }
+    }
+
+    th {
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+
+  &-day {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+
+    &:hover {
+      color: @white;
+      background-color: @dark-sky-blue;
+      border-radius: @border-radius-xs;
+    }
+
+    &-selected {
+      background-color: fadeout(@dark-sky-blue, 80);
+      border-radius: @border-radius-xs;
+    }
+
+    &-today {
+      font-weight: 600;
+      color: @picton-blue;
+    }
+
+    &-disable {
+      height: 18px;
+      margin: 6px 0;
+      line-height: 18px;
+      cursor: not-allowed;
+      color: @rolling-stone;
+      background-color: @gray-lighter;
+    }
+
+    &-disable:hover {
+      color: @rolling-stone;
+      background-color: @gray-lighter;
+    }
+
+    &-othermonth {
+      color: fadeout(@river-bed, 80);
+    }
+  }
+
+  &-month {
+    width: 40px;
+    height: 40px;
+    font-size: @font-size-md;
+    line-height: 40px;
+    cursor: pointer;
+
+    &-current {
+      font-weight: 600;
+      color: @picton-blue;
+    }
+
+    &-selected {
+      background-color: fadeout(@dark-sky-blue, 80);
+      border-radius: @border-radius-xs;
+    }
+
+    &-disable {
+      cursor: not-allowed;
+      color: @gray-light;
+      background-color: @gray-lighter;
+    }
+
+    &:hover {
+      color: @white;
+      background-color: @dark-sky-blue;
+      border-radius: @border-radius-xs;
+    }
+  }
+
+  &-year {
+    width: 40px;
+    height: 40px;
+    font-size: @font-size-md;
+    line-height: 40px;
+    cursor: pointer;
+
+    &-current {
+      font-weight: 600;
+      color: @picton-blue;
+    }
+
+    &-selected {
+      background-color: fadeout(@dark-sky-blue, 80);
+      border-radius: @border-radius-xs;
+    }
+
+    &-disable {
+      cursor: not-allowed;
+      color: @gray-light;
+      background-color: @gray-lighter;
+    }
+
+    &-first,
+    &-last {
+      color: fadeout(@river-bed, 80);
+    }
+
+    &:hover {
+      color: @white;
+      background-color: @dark-sky-blue;
+      border-radius: @border-radius-xs;
+    }
+  }
+}

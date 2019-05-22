@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Calendar/Header CalendarHeader renders fine 1`] = `
+<div
+  className="snapshot-calendar-prefix-calendar-header"
+>
+  <i
+    className="icon icon-chevron-left"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    tabIndex={0}
+  />
+  <span
+    className="snapshot-calendar-prefix-calendar-header-today"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    tabIndex={0}
+  >
+    Today
+  </span>
+  <span
+    className="snapshot-calendar-prefix-calendar-header-title"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    tabIndex={0}
+  >
+    2018-06-05
+  </span>
+  <i
+    className="icon icon-chevron-right"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    tabIndex={0}
+  />
+</div>
+`;

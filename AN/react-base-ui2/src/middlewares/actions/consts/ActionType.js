@@ -1,0 +1,3 @@
+const PREFIX = 'React-Base-UI/';
+
+export const BASE_REPORT_ERROR_ACTION = `${PREFIX}BASE_REPORT_ERROR_ACTION`;

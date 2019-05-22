@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/AsyncContent createAsyncContent 1`] = `
+<asyncContent>
+  <div
+    className="anasynccontent"
+    data-qa-id="test"
+  >
+    <div
+      className="text-loader"
+    >
+      <span
+        className="text-loader__text"
+      >
+        loading
+      </span>
+      <span
+        className="text-loader__dot"
+      >
+        .
+      </span>
+      <span
+        className="text-loader__dot"
+      >
+        .
+      </span>
+      <span
+        className="text-loader__dot"
+      >
+        .
+      </span>
+    </div>
+  </div>
+</asyncContent>
+`;
+
+exports[`src/components/AsyncContent createAsyncContent 2`] = `
+<asyncContent>
+  <div
+    className="anasynccontent"
+    data-qa-id="test"
+  >
+    <div
+      className="text-loader"
+    >
+      <span
+        className="text-loader__text"
+      >
+        loading
+      </span>
+      <span
+        className="text-loader__dot"
+      >
+        .
+      </span>
+      <span
+        className="text-loader__dot"
+      >
+        .
+      </span>
+      <span
+        className="text-loader__dot"
+      >
+        .
+      </span>
+    </div>
+  </div>
+</asyncContent>
+`;
+
+exports[`src/components/AsyncContent createAsyncContent 3`] = `
+<asyncContent>
+  <div
+    className="anasynccontent"
+    data-qa-id="test"
+  >
+    <div
+      className="text-loader"
+    >
+      <span
+        className="text-loader__text"
+      >
+        loading
+      </span>
+      <span
+        className="text-loader__dot"
+      >
+        .
+      </span>
+      <span
+        className="text-loader__dot"
+      >
+        .
+      </span>
+      <span
+        className="text-loader__dot"
+      >
+        .
+      </span>
+    </div>
+  </div>
+</asyncContent>
+`;
+
+exports[`src/components/AsyncContent rendering 1`] = `
+<AsyncContent
+  component={
+    <div>
+      test
+    </div>
+  }
+  data-qa-id="AsyncContent"
+  loader={[Function]}
+  placeHolder="loading"
+  placeHolderType="text"
+  prefix="an-"
+>
+  <asyncContent>
+    <div
+      className="an-asynccontent"
+      data-qa-id="AsyncContent"
+    >
+      <div
+        className="text-loader"
+      >
+        <span
+          className="text-loader__text"
+        >
+          loading
+        </span>
+        <span
+          className="text-loader__dot"
+        >
+          .
+        </span>
+        <span
+          className="text-loader__dot"
+        >
+          .
+        </span>
+        <span
+          className="text-loader__dot"
+        >
+          .
+        </span>
+      </div>
+    </div>
+  </asyncContent>
+</AsyncContent>
+`;
+
+exports[`src/components/AsyncContent rendering 2`] = `
+<AsyncContent
+  component={
+    <div>
+      test
+    </div>
+  }
+  data-qa-id="AsyncContent"
+  loader={[Function]}
+  placeHolder="loading"
+  placeHolderType="icon"
+  prefix="an-"
+>
+  <asyncContent>
+    <div
+      className="an-asynccontent"
+      data-qa-id="AsyncContent"
+    >
+      <div
+        className="icon-loader"
+      >
+        <div
+          className="icon-loader__icon"
+        >
+          <i
+            className="icon icon-loading-m icon-spin"
+          />
+          <div
+            className="icon-loader__text"
+          >
+            loading
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
+  </asyncContent>
+</AsyncContent>
+`;

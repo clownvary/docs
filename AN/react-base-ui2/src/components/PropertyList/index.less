@@ -1,0 +1,49 @@
+/* stylelint-disable */
+
+.an-property-list {
+  font-size: 14px;
+
+  &__item {
+    & > span {
+      display: inline-block;
+      margin-right: 20px;
+
+      &:first-child {
+        line-height: 18px;
+        vertical-align: top;
+      }
+
+      &:last-child {
+        width: 260px;
+        line-height: 20px;
+        word-wrap: break-word;
+      }
+    }
+
+    &__list {
+      display: inline-block;
+      line-height: 18px;
+
+      & > span {
+        display: block;
+      }
+    }
+  }
+
+  &.label-align-right {
+    & > .an-property-list__item {
+      & > span:first-child {
+        width: 160px;
+        text-align: right;
+      }
+    }
+  }
+
+  &.label-bold {
+    & > .an-property-list__item {
+      & > span:first-child {
+        font-weight: 600;
+      }
+    }
+  }
+}

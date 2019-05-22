@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/InputDate/InputDate.jsx rendering 1`] = `
+<InputDate
+  allowBlank={true}
+  allowKeySpin={true}
+  allowMouseSpin={false}
+  ariaLabel="Input box"
+  className=""
+  currency="USD"
+  data-qa-id=""
+  disabled={false}
+  flexibleCalendar={false}
+  format="d"
+  icon=""
+  iconHint=""
+  id=""
+  items={Array []}
+  listClassName=""
+  listConfig={Object {}}
+  listMaxHeight="300px"
+  listPopupOptions={Object {}}
+  listWidth="auto"
+  name=""
+  onBlur={[Function]}
+  onCalendarClose={[Function]}
+  onCalendarOpen={[Function]}
+  onFocus={[Function]}
+  onListClose={[Function]}
+  onListOpen={[Function]}
+  onTextChange={[Function]}
+  onValueChange={[Function]}
+  placeHolder=""
+  prefix="an"
+  showClear={true}
+  showSpinner={false}
+  showTrigger={true}
+  showTrigger2={false}
+  size="md"
+  textAlign="left"
+  timeStep={30}
+  triggerIcon="icon-calendar-m"
+  triggerIcon2="icon-clock-m"
+  triggerIconHint=""
+  triggerIconHint2=""
+  triggerIconToggle=""
+  triggerIconToggle2=""
+  value={"2018-01-01T00:00:00.000Z"}
+>
+  <div
+    className="an-input-date input-group buttons-1 input-group--md"
+  >
+    <input
+      aria-label="Input box"
+      className="input input-group__field textalign-left input__field"
+      data-qa-id=""
+      disabled={false}
+      id=""
+      name=""
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragEnter={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onKeyUp={[Function]}
+      onMouseUp={[Function]}
+      onPaste={[Function]}
+      placeholder=""
+      type="text"
+    />
+    <a
+      aria-label=""
+      className="input-group__item button-toggler"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <i
+        aria-label="chevron icon"
+        className="icon icon-calendar-m"
+      />
+    </a>
+  </div>
+</InputDate>
+`;

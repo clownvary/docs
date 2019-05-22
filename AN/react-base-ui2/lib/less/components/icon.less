@@ -1,0 +1,48 @@
+@import '../variables/color.less';
+
+.icon-svg {
+  &-size-md {
+    width: 20px;
+    height: 20px;
+  }
+
+  &-size-sm {
+    width: 16px;
+    height: 16px;
+  }
+
+  &-size-lg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &-type-link {
+    color: @cerulean;
+  }
+
+  &-type-warning {
+    color: @state-warning-text;
+  }
+
+  &-type-error,
+  &-type-danger {
+    color: @state-danger-text;
+  }
+
+  &-type-normal {
+    color: @black;
+  }
+
+  &-type-info {
+    color: @state-info-text;
+  }
+
+  &-type-success {
+    color: @state-success-text;
+  }
+}
+
+.svg-size(@size) {
+  width: @size;
+  height: @size;
+}

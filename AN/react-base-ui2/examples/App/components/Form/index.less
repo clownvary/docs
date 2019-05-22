@@ -1,0 +1,100 @@
+
+
+.an-form{
+
+  width: 450px;
+  padding: 20px;
+  border: solid 1px #bbb;
+  border-radius: 5px;
+  margin: 12px 12px 40px 12px;
+  position: relative;
+
+  &__title{
+    position: absolute;
+    left: 20px;
+    top: -18px;
+    font-size: 18px;
+    background: white;
+    font-weight: 700;
+  }
+
+  &.center{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.sm{
+    width: 450px;
+  }
+
+  &.md{
+    width: 650px;
+    .an-form__group label,
+    .an-form__group .field-label {
+      width: 225px;
+    }
+  }
+
+  &.lg{
+    width: 900px;
+    .an-form__group label,
+    .an-form__group .field-label {
+      width: 350px;
+    }
+  }
+
+  /* form specific formatting */
+  &__group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__group label,
+  &__group .field-label {
+    flex: none;
+    display: block;
+    width: 125px;
+  }
+
+  &__group label.right-inline,
+  &__group .field-label.right-inline {
+    text-align: right;  
+    padding-right: 8px;
+    padding-left: 10px;
+    width: auto;
+  }
+
+  &__group .field {
+    flex: 1 1 auto;
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    padding: 4px 30px 4px 4px;
+    margin-top: -4px;
+  }
+
+  .bold{
+    font-weight: 700;
+  }
+
+  button {
+    padding: 5px 15px;
+    margin: 5px;
+    min-width: 100px
+  }
+
+  @media (max-width: 768px) {
+    &__group {
+      flex-direction: column;
+    }
+    &__group .field {
+      margin-top: 2px;
+    }
+    &__group label.right-inline {
+      text-align: left;  
+      padding-right: 0;
+      padding-left: 0;   
+    }
+  }
+}
+

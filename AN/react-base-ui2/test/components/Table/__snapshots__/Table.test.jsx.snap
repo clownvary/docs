@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Table component should render well 1`] = `
+<Table
+  ariaLableCollapse=""
+  ariaLableExpand=""
+  className=""
+  columns={Array []}
+  fixed="bottom"
+  minWidth={30}
+  onCollapse={[Function]}
+  onExpand={[Function]}
+  prefix="an-"
+  resizable={false}
+  rowSeperator={true}
+  rows={Array []}
+  sortable={false}
+  striped={true}
+>
+  <table
+    className="table an-table noMarginBottom an-table"
+    role="grid"
+  >
+    <thead>
+      <tr
+        className="striped"
+      />
+    </thead>
+    <tbody />
+  </table>
+</Table>
+`;

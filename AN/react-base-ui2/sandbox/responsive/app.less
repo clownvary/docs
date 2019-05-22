@@ -1,0 +1,41 @@
+.responsive_demo{
+  .console{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .label{
+      margin: 20px;
+      font-size: 48px;
+      color: gray;
+    }
+  }
+
+  .resize{
+    .buttons{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      button{
+        margin-right: 12px;
+      }
+    }
+   
+    position: static;
+    left: 0;
+    right: 0;
+    top: 0;
+    border: solid 1px gray;
+
+    &.expanded{
+      height: 300px;
+    }
+
+    &.collapsed{
+      height: 150px;
+    }
+  }
+}

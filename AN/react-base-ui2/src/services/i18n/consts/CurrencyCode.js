@@ -1,0 +1,22 @@
+export const AUD = 'AUD';
+export const BRL = 'BRL';
+export const CAD = 'CAD';
+export const CNY = 'CNY';
+export const EUR = 'EUR';
+export const GBP = 'GBP';
+export const HKD = 'HKD';
+export const ILR = 'ILR';
+export const ILS = 'ILS';
+export const INR = 'INR';
+export const JPY = 'JPY';
+export const KRW = 'KRW';
+export const MXN = 'MXN';
+export const NZD = 'NZD';
+export const TWD = 'TWD';
+export const USD = 'USD';
+export const VND = 'VND';
+export const XAF = 'XAF';
+export const XCD = 'XCD';
+export const XOF = 'XOF';
+export const XPF = 'XPF';
+

@@ -1,0 +1,48 @@
+@import '../../less/variables/index.less';
+
+.alert-bar.show {
+  z-index: @zindex-alert;
+  animation-name: fadeInDown;
+}
+
+.alert-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  animation-duration: 1s;
+  animation-name: fadeOutUp;
+  animation-fill-mode: both;
+}
+
+// Thanks! @animate.css
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutUp {
+  animation-name: fadeOutUp;
+}

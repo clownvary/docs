@@ -1,0 +1,11 @@
+"use strict";Object.defineProperty(exports, "__esModule", { value: true });var FREE = exports.FREE = 0;
+var PHONE = exports.PHONE = 1;
+var DATE = exports.DATE = 2;
+var TIME = exports.TIME = 3;
+var SSNTB = exports.SSNTB = 4;
+var POSTAL = exports.POSTAL = 5;
+var UPPERCASE = exports.UPPERCASE = 6;
+var LOWERCASE = exports.LOWERCASE = 7;
+var NUMBER = exports.NUMBER = 8;
+var ALPHA = exports.ALPHA = 9;
+var DURATION = exports.DURATION = 10;

@@ -1,0 +1,53 @@
+.svg-example {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .cell {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 140px;
+    margin: 2em;
+
+    &:first-child {
+      .icon-svg-check-circle-c {
+        fill: #0070d9;
+      }
+    }
+
+    &:nth-child(2) {
+      .icon-svg-check-circle-o {
+        fill: #eee;
+      }
+    }
+
+    .image {
+      width: 40em;
+      height: 40em;
+    }
+
+    .icon-svg {
+      width: 5em;
+      height: 5em;
+
+      &-size-sm {
+        width: 3em;
+        height: 3em;
+      }
+
+      &-size-md {
+        width: 5em;
+        height: 5em;
+      }
+
+      &-size-lg {
+        width: 7em;
+        height: 7em;
+      }
+    }
+
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+}

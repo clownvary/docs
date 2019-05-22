@@ -1,0 +1,61 @@
+@import '../../less/variables/index.less';
+/* stylelint-disable */
+
+.col-resize-container {
+  position: relative;
+  height: 0;
+
+  & + .table-col-resizer:first-of-type {
+    table-layout: fixed;
+  }
+
+  .last-handle {
+    display: none;
+  }
+
+  .drag-handle {
+    position: absolute;
+    z-index: @zindex-col-resizeable;
+    width: 10px;
+    margin-left: -5px;
+    cursor: col-resize;
+
+    .icon {
+      position: absolute;
+      top: -1px;
+      color: #40b0dc;
+      visibility: hidden;
+
+      &:first-child {
+        left: -2px;
+      }
+
+      &:last-child {
+        left: 6px;
+      }
+    }
+
+    &:hover .icon {
+      visibility: visible;
+    }
+
+    &.disabled-drag {
+      display: none;
+      cursor: default;
+    }
+
+    .col-resizer {
+      position: absolute;
+      top: 0;
+      left: 3px;
+      width: 1px;
+      height: 100%;
+    }
+  }
+
+  .active-drag {
+    .icon {
+      visibility: visible;
+    }
+  }
+}

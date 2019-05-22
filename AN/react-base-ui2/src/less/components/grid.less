@@ -1,0 +1,89 @@
+@import '../mixins/grid.less';
+
+/* stylelint-disable */
+
+/**
+* afx - aaui flex.
+*/
+.afx-col {
+  .m-flex-col;
+}
+
+/**
+ * Grid column styles by the average distribution.
+ * Example:
+ * 	.afx-xl-1 > * {
+ *  	width: 100%;
+ *  }
+ *  .afx-xl-12 > * {
+ *  	width: 8.33333333%;
+ *  }
+ */
+.create-grid-col-avg(@name: xl, @n, @i: 1) when (@i <= @n) {
+  .afx-@{name}-@{i} > *{
+    .m-flex-width(@i);
+    box-sizing: border-box;
+  }
+  .create-grid-col-avg(@name, @n, (@i + 1));
+}
+.create-grid-col-avg(xl, 24);
+
+
+/**
+ * Grid column styles by specified grid col settings.
+ * Example:
+ * 	afx-xl-1-1 {
+ * 		width: 100%;
+ * 	}
+ * 	afx-xl-1-2{
+ * 		width: 50%;
+ * 	}
+ * 	afx-xl-1-3{
+ * 		width: 33.33333333%;
+ * 	}
+ * 	afx-xl-2-3{
+ * 		width: 66.66666667%;
+ * 	}
+ * 	afx-xl-3-4{
+ * 		width: 75%;
+ * 	}...
+ */
+.create-grid-col(@name: xl, @n, @x: 1, @y: 1) when ((@x <= @n) and (@y <= @n) and (@x <= @y)) {
+  .afx-@{name}-@{x}-@{y} {
+    .m-flex-col(@x, @y);
+    box-sizing: border-box;
+  };
+  .create-grid-col-rise-x(@name, @n, @x, @y);
+  .create-grid-col-rise-y(@name, @n, @x, @y);
+}
+.create-grid-col-rise-x(@name: xl, @n, @x:1, @y: 1) when (@y = @n) {
+  .create-grid-col(@name, @n, (@x + 1), (@x + 2));
+}
+.create-grid-col-rise-y(@name: xl, @n, @x:1, @y: 1) when (@y < @n) {
+  .create-grid-col(@name, @n, @x, (@y + 1));
+}
+.create-grid-col(xl, 24);
+
+
+/**
+ * Set margin for flex cell.
+ * Example:
+ * 	.afx-xl-mg-8 {
+ *  	width: calc(100% + 8px);
+ *   	margin-left: -4px;
+ *    margin-right: -4px;
+ *    padding-left: 0;
+ *    padding-right: 0;
+ *  }
+ *  .afx-xl-mg-8 > * {
+ *  	padding-left: 4px;
+ *   	padding-right: 4px;
+ *  }
+ */
+.create-grid-col-margin(@name: xl, @n, @i: 0) when (@i <= @n) {
+  .afx-@{name}-mg-@{i} {
+    .m-flex("margin", @i);
+  }
+  .create-grid-col-margin(@name, @n, (@i + 8));
+}
+.create-grid-col-margin(xl, 48);

@@ -1,0 +1,59 @@
+.an-progress {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  .outer {
+    display: inline-block;
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  .inner {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    background-color: @color-gray-lighter;
+    border-radius: 100px;
+  }
+
+  .meter {
+    position: relative;
+    height: 100%;
+    background-color: @color-blue;
+    border-radius: 5px;
+  }
+
+  &__text {
+    display: inline-block;
+    margin-left: 8px;
+    line-height: 1;
+    text-align: left;
+    word-break: normal;
+    vertical-align: middle;
+  }
+
+  &.an-progress--show-info .outer {
+    padding-right: 45px;
+    margin-right: -50px;
+  }
+
+  &.an-progress--sm {
+    .inner {
+      height: 6px;
+    }
+  }
+
+  &.an-progress--md {
+    .inner {
+      height: 10px;
+    }
+  }
+
+  &.an-progress--lg {
+    .inner {
+      height: 14px;
+    }
+  }
+}

@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Survey/Question Question renders fine 1`] = `
+<div
+  className="question aaui-flex"
+>
+  <div
+    className="afx-col question-label afx-xl-6-12"
+  >
+    <div
+      className="question-label__name"
+      id="an-question-1_label_id"
+    >
+      <span
+        className="icon icon-circle"
+      />
+      <span
+        className=""
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Free to answer something.",
+          }
+        }
+        data-qa-id=""
+      />
+    </div>
+    <div
+      className="question-label__hint"
+    >
+      <span
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "question hint",
+          }
+        }
+        data-qa-id=""
+      />
+    </div>
+  </div>
+  <div
+    className="afx-col question-answer-container afx-xl-5-12"
+  >
+    <div
+      className="question-answer"
+    >
+      <div
+        className="input-group input-group--md"
+        style={undefined}
+      >
+        <input
+          aria-label="Input box Free to answer something."
+          className="input input-group__field input__field"
+          disabled={undefined}
+          maxLength=""
+          onBlur={[Function]}
+          onChange={[Function]}
+          onInput={[Function]}
+          onKeyPress={[Function]}
+          onPaste={[Function]}
+          placeholder={undefined}
+          type="text"
+          value={undefined}
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="afx-col afx-xl-1-12 question-icon"
+  />
+</div>
+`;
+
+exports[`components/Survey/Question Question renders fine with error messages 1`] = `
+<div
+  className="question aaui-flex question-error"
+>
+  <div
+    className="afx-col question-label afx-xl-6-12"
+  >
+    <div
+      className="question-label__name"
+      id="an-question-2_label_id"
+    >
+      <span
+        className="icon icon-asterisk"
+      />
+      <span
+        className="question-label__name-required"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Say something plz",
+          }
+        }
+        data-qa-id=""
+      />
+    </div>
+    <div
+      className="question-label__hint"
+    >
+      <span
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "question hint",
+          }
+        }
+        data-qa-id=""
+      />
+    </div>
+  </div>
+  <div
+    className="afx-col question-answer-container afx-xl-5-12"
+  >
+    <div
+      className="question-answer"
+    >
+      <div
+        className="input-group input-group--md"
+        style={undefined}
+      >
+        <input
+          aria-label="Input box Say something plz"
+          className="input input-group__field input__field"
+          disabled={undefined}
+          maxLength=""
+          onBlur={[Function]}
+          onChange={[Function]}
+          onInput={[Function]}
+          onKeyPress={[Function]}
+          onPaste={[Function]}
+          placeholder={undefined}
+          type="text"
+          value={undefined}
+        />
+      </div>
+      <div
+        className="question-answer__error"
+      >
+        <span
+          className="icon icon-times-circle"
+        />
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "The answer is required.",
+            }
+          }
+          data-qa-id=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="afx-col afx-xl-1-12 question-icon"
+  >
+    <span
+      className="icon icon-check link is-disabled"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;

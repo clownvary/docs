@@ -1,0 +1,161 @@
+
+.flex() {
+  display: block;
+  width: 100%;
+  font-size: 0;
+  letter-spacing: 0;
+  text-align: left;
+  box-sizing: border-box;
+  > * {
+    display: inline-block;
+  }
+}
+
+.flex(@prop) when (@prop = "flexbox") {
+  display: flex;
+  table-layout: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  column-count: auto;
+  > * {
+    display: inline-block;
+  }
+}
+
+.flex(@prop) when (@prop = "table") {
+  display: table;
+  table-layout: fixed;
+  flex-direction: initial;
+  flex-wrap: initial;
+  justify-content: initial;
+  align-content: initial;
+  align-items: initial;
+  column-count: auto;
+  > * {
+    display: table-cell;
+  }
+}
+
+.flex(@prop, @val) when (@prop = "margin") {
+  width: calc(~"100% + @{val}px");
+  margin-left: -@val / 2px;
+  margin-right: -@val / 2px;
+  padding-left: 0;
+  padding-right: 0;
+  > * {
+    padding-left: @val / 2px;
+    padding-right: @val / 2px;
+  }
+}
+
+.flex-width(@prop) when (isnumber(@prop)) {
+  width: 100% / @prop;
+}
+
+.flex-layout(@prop) when (@prop = "left") {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.flex-layout(@prop) when (@prop = "center") {
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-layout(@prop) when (@prop = "right") {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.flex-layout(@prop) when (@prop = "top") {
+  align-items: flex-start;
+  > * {
+    vertical-align: top;
+  }
+}
+
+.flex-layout(@prop) when (@prop = "middle") {
+  align-items: center;
+  > * {
+    vertical-align: middle;
+  }
+}
+
+.flex-layout(@prop) when (@prop = "bottom") {
+  align-items: flex-end;
+  > * {
+    vertical-align: bottom;
+  }
+}
+
+.flex-layout(@prop) when (@prop = "between") {
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.flex-layout(@prop) when (@prop = "around") {
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.flex-layout(@prop) when (@prop = "baseline") {
+  align-items: baseline;
+}
+
+.create-flex-all-layout(@name) {
+  .afx-@{name}-left {
+    .flex-layout("left");
+  }
+  .afx-@{name}-center {
+    .flex-layout("center");
+  }
+  .afx-@{name}-right {
+    .flex-layout("right");
+  }
+  .afx-@{name}-top {
+    .flex-layout("top");
+  }
+  .afx-@{name}-middle {
+    .flex-layout("middle");
+  }
+  .afx-@{name}-bottom {
+    .flex-layout("bottom");
+  }
+  .afx-@{name}-between {
+    .flex-layout("between");
+  }
+  .afx-@{name}-around {
+    .flex-layout("around");
+  }
+  .afx-@{name}-baseline {
+    .flex-layout("baseline");
+  }
+}
+
+.create-flex-order(@name: xl, @n, @i: 1) when (@i <= @n) {
+  .afx-@{name}-order-@{i} {
+    order: @i;
+  }
+  .create-flex-order(@name, @n, (@i + 1));
+}
+
+.create-flex-grow(@name: xl, @n, @i: 1) when (@i <= @n) {
+  .afx-@{name}-grow-@{i} {
+    flex-grow: @i;
+  }
+  .create-flex-grow(@name, @n, (@i + 1));
+}
+
+/* Grid column styles */
+.flex-col() {
+  min-height: 1px;
+  // font-size: @font-size-md;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.flex-col(@prop, @val) when (isnumber(@prop)) {
+  width: 100% / @val * @prop;
+}

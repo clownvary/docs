@@ -1,0 +1,2 @@
+'use strict';Object.defineProperty(exports, "__esModule", { value: true });var JSON = exports.JSON = 'application/json;charset=utf-8';
+var URL_ENCODED = exports.URL_ENCODED = 'application/x-www-form-urlencoded;charset=utf-8';

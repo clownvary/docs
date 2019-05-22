@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing and do nott change unexpected 1`] = `
+<div
+  className="alert-bar"
+>
+  <div
+    className="alert alert-info alert-dismissable"
+    role="alert"
+    style={undefined}
+  >
+    <span
+      aria-label="info icon"
+      className="icon icon-info-circle"
+    />
+    <span />
+    <button
+      className="close"
+      onClick={[Function]}
+      type="button"
+    >
+      ×
+    </button>
+  </div>
+</div>
+`;

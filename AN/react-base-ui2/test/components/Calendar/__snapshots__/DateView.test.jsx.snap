@@ -1,0 +1,500 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Calendar/DateView DateView renders fine 1`] = `
+<table
+  className="snapshot-date-view-calendar-table"
+>
+  <tbody>
+    <tr
+      className="snapshot-date-view-calendar-table-header"
+    >
+      <th
+        className="snapshot-date-view-calendar-table-header-cell"
+        title="Monday"
+      >
+        M
+      </th>
+      <th
+        className="snapshot-date-view-calendar-table-header-cell"
+        title="Tuesday"
+      >
+        T
+      </th>
+      <th
+        className="snapshot-date-view-calendar-table-header-cell"
+        title="Wednesday"
+      >
+        W
+      </th>
+      <th
+        className="snapshot-date-view-calendar-table-header-cell"
+        title="Thursday"
+      >
+        T
+      </th>
+      <th
+        className="snapshot-date-view-calendar-table-header-cell"
+        title="Friday"
+      >
+        F
+      </th>
+      <th
+        className="snapshot-date-view-calendar-table-header-cell"
+        title="Saturday"
+      >
+        S
+      </th>
+      <th
+        className="snapshot-date-view-calendar-table-header-cell"
+        title="Sunday"
+      >
+        S
+      </th>
+    </tr>
+    <tr
+      className="snapshot-date-view-calendar-table-row"
+    >
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-othermonth"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          28
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-othermonth"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          29
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-othermonth"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          30
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-othermonth"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          31
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          1
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-weekend"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          2
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-weekend"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          3
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="snapshot-date-view-calendar-table-row"
+    >
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          4
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-today"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          5
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          6
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          7
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          8
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-weekend"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          9
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-weekend snapshot-date-view-calendar-day-disable"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          10
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="snapshot-date-view-calendar-table-row"
+    >
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-disable"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          11
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          12
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          13
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          14
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          15
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-weekend"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          16
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-weekend"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          17
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="snapshot-date-view-calendar-table-row"
+    >
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          18
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          19
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          20
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          21
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          22
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-weekend"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          23
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-weekend"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          24
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="snapshot-date-view-calendar-table-row"
+    >
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          25
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          26
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          27
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          28
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          29
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-weekend"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          30
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-othermonth snapshot-date-view-calendar-day-weekend"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          1
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="snapshot-date-view-calendar-table-row"
+    >
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-othermonth"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          2
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-othermonth"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          3
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-othermonth"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          4
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-othermonth"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          5
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-othermonth"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          6
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-othermonth snapshot-date-view-calendar-day-weekend"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          7
+        </div>
+      </td>
+      <td>
+        <div
+          className="snapshot-date-view-calendar-table-cell snapshot-date-view-calendar-day snapshot-date-view-calendar-day-othermonth snapshot-date-view-calendar-day-weekend"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          8
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Select/SelectOptionMenu component renders fine 1`] = `
+<div
+  className="test-select-option"
+  style={Object {}}
+>
+  <div
+    className="test-select-option-list"
+    onKeyDown={[Function]}
+    style={
+      Object {
+        "maxHeight": "300px",
+      }
+    }
+  >
+    <ul>
+      <li>
+        <div
+          className="test-select-option-item"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          option 1
+        </div>
+      </li>
+      <li>
+        <div
+          className="test-select-option-item"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          option 2
+        </div>
+      </li>
+      <li>
+        <div
+          className="test-select-option-item"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          option 3
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="test-select-footer"
+  >
+    Footer
+  </div>
+</div>
+`;
+
+exports[`components/Select/SelectOptionMenu component renders fine without menuWidth 1`] = `
+<div
+  className="test-select-option"
+  style={Object {}}
+>
+  <div
+    className="test-select-option-list"
+    onKeyDown={[Function]}
+    style={
+      Object {
+        "maxHeight": "300px",
+      }
+    }
+  >
+    <ul>
+      <li>
+        <div
+          className="test-select-option-item"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          option 1
+        </div>
+      </li>
+      <li>
+        <div
+          className="test-select-option-item"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          option 2
+        </div>
+      </li>
+      <li>
+        <div
+          className="test-select-option-item"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          option 3
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="test-select-footer"
+  >
+    Footer
+  </div>
+</div>
+`;

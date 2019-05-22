@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/ResourceCalendar/horizontal/Band should render well 1`] = `
+<table
+  className="an-rc-grid an-rc-grid-band an-rc-band-resource"
+>
+  <tbody />
+</table>
+`;

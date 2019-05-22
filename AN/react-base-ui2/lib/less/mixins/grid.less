@@ -1,0 +1,27 @@
+.m-flex(@prop, @val) when (@prop = "margin") {
+  width: calc(~'100% + @{val}px');
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: -@val / 2px;
+  margin-left: -@val / 2px;
+
+  > * {
+    padding-right: @val / 2px;
+    padding-left: @val / 2px;
+  }
+}
+
+.m-flex-col() {
+  box-sizing: border-box;
+  min-height: 1px;
+  font-size: @font-size-xl;
+  vertical-align: middle;
+}
+
+.m-flex-col(@prop, @val) when (isnumber(@prop)) {
+  width: 100% / @val * @prop;
+}
+
+.m-flex-width(@prop) when (isnumber(@prop)) {
+  width: 100% / @prop;
+}

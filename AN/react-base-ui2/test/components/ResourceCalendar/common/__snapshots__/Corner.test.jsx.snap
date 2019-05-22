@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ResourceCalendar/common/Corner should render well 1`] = `
+<div
+  className="an-rc-grid an-rc-grid-corner"
+>
+  <div
+    className="grid-cell"
+  >
+    <div
+      className="cell-content"
+    >
+      <span>
+        test label
+      </span>
+    </div>
+  </div>
+</div>
+`;

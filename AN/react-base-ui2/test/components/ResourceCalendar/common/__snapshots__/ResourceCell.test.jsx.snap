@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ResourceCalendar/common/ResourceCell should render well 1`] = `
+<th
+  className="grid-cell resource-cell"
+>
+  <div
+    className="cell-content"
+  >
+    <span
+      className="resource-tag resource-tag-facility"
+    >
+      T
+    </span>
+    <span
+      className="resource-name an-rc-clickable"
+      onClick={[Function]}
+    />
+  </div>
+</th>
+`;

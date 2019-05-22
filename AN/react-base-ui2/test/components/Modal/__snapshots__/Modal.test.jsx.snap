@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal should render right thing and don't change unexpected 1`] = `
+<div
+  style={
+    Object {
+      "fontFamily": "sans-serif",
+    }
+  }
+>
+  <button
+    className="btn btn-primary"
+    id="show-modal"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    type="submit"
+  >
+    <span>
+      Show Modal
+    </span>
+  </button>
+  <div
+    className="modal-wrap"
+    role="dialog"
+  >
+    <div
+      className="modal"
+      onKeyDown={[Function]}
+      style={undefined}
+    >
+      <section
+        className="modal-box"
+      >
+        <header
+          className="modal-header"
+        >
+          <h3
+            className="modal-title"
+          >
+            Hello World
+          </h3>
+          <span
+            aria-label="close-dialog"
+            className="icon icon-close modal-close"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex="0"
+          />
+        </header>
+        <div
+          className="modal-body"
+        >
+          <strong>
+            Lorem Ipsum
+          </strong>
+          <br />
+          Amet aperiam molestiae quo perspiciatis explicabo recusandae, beatae? Impedit dolore nihil fugiat dolores laborum deleniti? Harum tempore voluptates maiores quisquam quisquam porro aperiam! Architecto et dignissimos deserunt quisquam dolores, nobis.
+          <a
+            href="#show-modal"
+            style={
+              Object {
+                "display": "none",
+              }
+            }
+          >
+            123
+          </a>
+          <a
+            href="#show-modal"
+          >
+            123
+          </a>
+          <a>
+            123
+          </a>
+        </div>
+        <div
+          className="modal-footer"
+        >
+          <button
+            className="btn btn-secondary"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            type="submit"
+          >
+            <span>
+              Cancel
+            </span>
+          </button>
+          <button
+            className="btn btn-strong"
+            id="close-modal"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            type="submit"
+          >
+            <span>
+              OK
+            </span>
+          </button>
+        </div>
+      </section>
+    </div>
+    <div
+      className="modal-mask"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Tag component renders fine if closeable 1`] = `
+<div
+  className="an-tag an-tag__pending an-tag__size-s an-tag__closable"
+  closable={true}
+  prefixCls="an-tag"
+  size="s"
+  type="pending"
+>
+  <i
+    className="icon icon-close"
+    onMouseDown={[Function]}
+  />
+</div>
+`;
+
+exports[`components/Tag component renders fine with default props 1`] = `
+<div
+  className="an-tag an-tag__default an-tag__size-m"
+  prefixCls="an-tag"
+  size="m"
+  type="default"
+/>
+`;

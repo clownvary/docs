@@ -1,0 +1,469 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`services/message showMessage 1`] = `
+<MessageBoard>
+  <div
+    className="message-board"
+  >
+    <MessagePad
+      message={
+        Message {
+          "details": Array [
+            "test success",
+          ],
+          "id": "messages_1",
+          "title": "",
+          "type": "success",
+        }
+      }
+      onClose={[Function]}
+    >
+      <Alert
+        className="message-pad"
+        inverse={false}
+        key="messages_1"
+        noClose={true}
+        onClose={[Function]}
+        type="success"
+      >
+        <div
+          className="alert alert-success message-pad"
+          role="alert"
+        >
+          <span
+            aria-label="success icon"
+            className="icon icon-check-circle"
+          />
+          <div
+            className="message-content single-line"
+          >
+            <ul>
+              <SafeText
+                dangerMode={true}
+                data-qa-id=""
+                decode={true}
+                key="0"
+                tagName="li"
+                text="test success"
+              >
+                <li
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "test success",
+                    }
+                  }
+                  data-qa-id=""
+                />
+              </SafeText>
+            </ul>
+          </div>
+        </div>
+      </Alert>
+    </MessagePad>
+    <MessagePad
+      message={
+        Message {
+          "details": Array [
+            "test info",
+          ],
+          "id": "messages_2",
+          "title": "",
+          "type": "info",
+        }
+      }
+      onClose={[Function]}
+    >
+      <Alert
+        className="message-pad"
+        inverse={false}
+        key="messages_2"
+        noClose={true}
+        onClose={[Function]}
+        type="info"
+      >
+        <div
+          className="alert alert-info message-pad"
+          role="alert"
+        >
+          <span
+            aria-label="info icon"
+            className="icon icon-info-circle"
+          />
+          <div
+            className="message-content single-line"
+          >
+            <ul>
+              <SafeText
+                dangerMode={true}
+                data-qa-id=""
+                decode={true}
+                key="0"
+                tagName="li"
+                text="test info"
+              >
+                <li
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "test info",
+                    }
+                  }
+                  data-qa-id=""
+                />
+              </SafeText>
+            </ul>
+          </div>
+        </div>
+      </Alert>
+    </MessagePad>
+    <MessagePad
+      message={
+        Message {
+          "details": Array [
+            "test warning",
+          ],
+          "id": "messages_3",
+          "title": "",
+          "type": "warning",
+        }
+      }
+      onClose={[Function]}
+    >
+      <Alert
+        className="message-pad"
+        inverse={false}
+        key="messages_3"
+        noClose={true}
+        onClose={[Function]}
+        type="warning"
+      >
+        <div
+          className="alert alert-warning message-pad"
+          role="alert"
+        >
+          <span
+            aria-label="warning icon"
+            className="icon icon-exclamation-circle"
+          />
+          <div
+            className="message-content single-line"
+          >
+            <ul>
+              <SafeText
+                dangerMode={true}
+                data-qa-id=""
+                decode={true}
+                key="0"
+                tagName="li"
+                text="test warning"
+              >
+                <li
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "test warning",
+                    }
+                  }
+                  data-qa-id=""
+                />
+              </SafeText>
+            </ul>
+          </div>
+        </div>
+      </Alert>
+    </MessagePad>
+    <MessagePad
+      message={
+        Message {
+          "details": Array [
+            "test error",
+          ],
+          "id": "messages_4",
+          "title": "error",
+          "type": "error",
+        }
+      }
+      onClose={[Function]}
+    >
+      <Alert
+        className="message-pad"
+        inverse={false}
+        key="messages_4"
+        noClose={true}
+        onClose={[Function]}
+        type="error"
+      >
+        <div
+          className="alert alert-error message-pad"
+          role="alert"
+        >
+          <span
+            aria-label="error icon"
+            className="icon icon-times-circle"
+          />
+          <div
+            className="message-content single-line"
+          >
+            <span
+              className="title"
+            >
+              error
+            </span>
+            <ul>
+              <SafeText
+                dangerMode={true}
+                data-qa-id=""
+                decode={true}
+                key="0"
+                tagName="li"
+                text="test error"
+              >
+                <li
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "test error",
+                    }
+                  }
+                  data-qa-id=""
+                />
+              </SafeText>
+            </ul>
+          </div>
+        </div>
+      </Alert>
+    </MessagePad>
+  </div>
+</MessageBoard>
+`;
+
+exports[`services/message showMessage 2`] = `
+<MessageBoard>
+  <div
+    className="message-board"
+  >
+    <MessagePad
+      message={
+        Message {
+          "details": Array [
+            "test success",
+          ],
+          "id": "messages_1",
+          "title": "",
+          "type": "success",
+        }
+      }
+      onClose={[Function]}
+    >
+      <Alert
+        className="message-pad"
+        inverse={false}
+        key="messages_1"
+        noClose={true}
+        onClose={[Function]}
+        type="success"
+      >
+        <div
+          className="alert alert-success message-pad"
+          role="alert"
+        >
+          <span
+            aria-label="success icon"
+            className="icon icon-check-circle"
+          />
+          <div
+            className="message-content single-line"
+          >
+            <ul>
+              <SafeText
+                dangerMode={true}
+                data-qa-id=""
+                decode={true}
+                key="0"
+                tagName="li"
+                text="test success"
+              >
+                <li
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "test success",
+                    }
+                  }
+                  data-qa-id=""
+                />
+              </SafeText>
+            </ul>
+          </div>
+        </div>
+      </Alert>
+    </MessagePad>
+    <MessagePad
+      message={
+        Message {
+          "details": Array [
+            "test info",
+          ],
+          "id": "messages_2",
+          "title": "",
+          "type": "info",
+        }
+      }
+      onClose={[Function]}
+    >
+      <Alert
+        className="message-pad"
+        inverse={false}
+        key="messages_2"
+        noClose={true}
+        onClose={[Function]}
+        type="info"
+      >
+        <div
+          className="alert alert-info message-pad"
+          role="alert"
+        >
+          <span
+            aria-label="info icon"
+            className="icon icon-info-circle"
+          />
+          <div
+            className="message-content single-line"
+          >
+            <ul>
+              <SafeText
+                dangerMode={true}
+                data-qa-id=""
+                decode={true}
+                key="0"
+                tagName="li"
+                text="test info"
+              >
+                <li
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "test info",
+                    }
+                  }
+                  data-qa-id=""
+                />
+              </SafeText>
+            </ul>
+          </div>
+        </div>
+      </Alert>
+    </MessagePad>
+    <MessagePad
+      message={
+        Message {
+          "details": Array [
+            "test warning",
+          ],
+          "id": "messages_3",
+          "title": "",
+          "type": "warning",
+        }
+      }
+      onClose={[Function]}
+    >
+      <Alert
+        className="message-pad"
+        inverse={false}
+        key="messages_3"
+        noClose={true}
+        onClose={[Function]}
+        type="warning"
+      >
+        <div
+          className="alert alert-warning message-pad"
+          role="alert"
+        >
+          <span
+            aria-label="warning icon"
+            className="icon icon-exclamation-circle"
+          />
+          <div
+            className="message-content single-line"
+          >
+            <ul>
+              <SafeText
+                dangerMode={true}
+                data-qa-id=""
+                decode={true}
+                key="0"
+                tagName="li"
+                text="test warning"
+              >
+                <li
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "test warning",
+                    }
+                  }
+                  data-qa-id=""
+                />
+              </SafeText>
+            </ul>
+          </div>
+        </div>
+      </Alert>
+    </MessagePad>
+    <MessagePad
+      message={
+        Message {
+          "details": Array [
+            "test error",
+          ],
+          "id": "messages_4",
+          "title": "error",
+          "type": "error",
+        }
+      }
+      onClose={[Function]}
+    >
+      <Alert
+        className="message-pad"
+        inverse={false}
+        key="messages_4"
+        noClose={true}
+        onClose={[Function]}
+        type="error"
+      >
+        <div
+          className="alert alert-error message-pad"
+          role="alert"
+        >
+          <span
+            aria-label="error icon"
+            className="icon icon-times-circle"
+          />
+          <div
+            className="message-content single-line"
+          >
+            <span
+              className="title"
+            >
+              error
+            </span>
+            <ul>
+              <SafeText
+                dangerMode={true}
+                data-qa-id=""
+                decode={true}
+                key="0"
+                tagName="li"
+                text="test error"
+              >
+                <li
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "test error",
+                    }
+                  }
+                  data-qa-id=""
+                />
+              </SafeText>
+            </ul>
+          </div>
+        </div>
+      </Alert>
+    </MessagePad>
+  </div>
+</MessageBoard>
+`;
