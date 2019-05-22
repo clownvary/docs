@@ -1,0 +1,51 @@
+<div class="fc-header" tabindex="-1">
+  {{^isRTL}}
+    {{>headerIntor}}
+  {{/isRTL}}
+    <div class="fc-header-container">
+      <div class="fc-row fc-scroll">
+        <div class="fc-scroll-bars fc-scroll-hide">
+          <div class="fc-header-output {{widgetContentClass}}"></div>
+        </div>
+      </div>
+    </div>
+  {{#isRTL}}
+    {{>headerIntor}}
+  {{/isRTL}}
+</div>
+<table>
+  <tbody class="fc-body">
+    {{^hideAllDaySlot}}
+      <tr>
+      {{^isRTL}}
+      	{{>dayIntro}}
+      {{/isRTL}}
+        <td class="fc-day-grid-container">
+          <div class="fc-row fc-scroll">
+            <div class="fc-scroll-bars">
+              <div class="fc-day-grid fc-day-grid-output {{widgetContentClass}}"></div>
+            </div>
+          </div>
+        </td>
+      {{#isRTL}}
+      	{{>dayIntro}}
+      {{/isRTL}}
+      </tr>
+    {{/hideAllDaySlot}}
+    <tr>
+    {{^isRTL}}
+    	{{>timeIntro}}
+    {{/isRTL}}
+      <td class="fc-time-grid-container">
+        <div class="fc-row fc-scroll">
+          <div class="fc-scroll-bars">
+            <div class="fc-time-grid fc-time-grid-output {{widgetContentClass}}"></div>
+          </div>
+        </div>
+      </td>
+    {{#isRTL}}
+    	{{>timeIntro}}
+    {{/isRTL}}
+    </tr>
+  </tbody>
+</div>

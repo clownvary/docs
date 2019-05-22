@@ -1,0 +1,6 @@
+#dist
+/dist
+
+
+# npm modules
+node_modules

@@ -1,0 +1,39 @@
+<div class="fc-row fc-header-split-rs fc-scroll">
+  <div class="fc-scroll-bars fc-scroll-x fc-scroll-hide">
+    <div class="fc-header-split-rs-container">
+      <table>
+        <colgroup>
+        {{#totalColIterator}}
+          <col {{limitColWidthAttr}}></col>
+        {{/totalColIterator}}
+        </colgroup>
+        <thead>
+        {{#hasResources}}
+          <tr>
+          {{#resources}}
+            <th class="fc-rs-cell {{#isAllowed}}fc-rs-cell-allowed{{/isAllowed}}" rs-cell-id="{{resource.id}}">{{{getResourceHtml}}}</th>
+          {{/resources}}
+          </tr>
+        {{/hasResources}}
+        {{^hasResources}}
+          <tr>
+            <th class="fc-rs-day-header {{widgetHeaderClass}} fc-no-resource-text">{{getTextWidthNoResource}}</th>
+          </tr>
+        {{/hasResources}}
+        </thead>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="fc-row fc-header-split-dates">
+  <table>
+    <thead>
+      <tr>
+      {{#daysMoment}}
+        <th class="fc-rs-day-header {{widgetHeaderClass}} fc-{{dateFormat}}">{{dateFormat}}</th>
+      {{/daysMoment}}
+      </tr>
+    </thead>
+  </table>
+</div>

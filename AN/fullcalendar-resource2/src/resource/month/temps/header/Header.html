@@ -1,0 +1,21 @@
+<table>
+  <colgroup>
+  {{#totalColIterator}}
+    <col {{limitColWidthAttr}}></col>
+  {{/totalColIterator}}
+  </colgroup>
+  <thead>
+  {{#hasResources}}
+    <tr>
+    {{#resources}}
+      <th class="fc-rs-cell {{#isAllowed}}fc-rs-cell-allowed{{/isAllowed}}" rs-cell-id="{{resource.id}}">{{{getResourceHtml}}}</th>
+    {{/resources}}
+    </tr>
+  {{/hasResources}}
+  {{^hasResources}}
+    <tr>
+      <th class="fc-rs-day-header {{widgetHeaderClass}} fc-no-resource-text">{{getTextWidthNoResource}}</th>
+    </tr>
+  {{/hasResources}}
+  </thead>
+</table>
