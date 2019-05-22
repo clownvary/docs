@@ -1,0 +1,37 @@
+@import '../variables.less';
+
+.@{an-basename}-bubble {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 26px;
+  background: @bubble-background;
+  border-radius: 12px;
+
+  &:after {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    content: '';
+  }
+  .bubble-arrow('left');
+
+  &-top {
+    .bubble-arrow('top');
+  }
+
+  &-right {
+    .bubble-arrow('right');
+  }
+
+  &-bottom {
+    .bubble-arrow('bottom');
+  }
+
+  &-left {
+    .bubble-arrow('left');
+  }
+}

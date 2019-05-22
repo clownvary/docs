@@ -1,0 +1,112 @@
+@import '~shared/styles/variables.less';
+/* stylelint-disable max-nesting-depth */
+.transactions-layouts {
+  .payment-plan-wrapper {
+    margin-top: 14px;
+
+    .paymentplan-detail-table {
+      &.an-simple-table:not(.an-sm-simple-table) {
+        .paymentplan-thead,
+        .paymentplan-tbody {
+          &__count {
+            flex: none;
+            width: 80px;
+          }
+
+          &__due-date {
+            flex: 2;
+            flex-basis: 240px;
+            padding-left: 0;
+            text-align: left;
+
+            .week-text {
+              margin-left: 2px;
+              color: @dove-gray;
+            }
+          }
+
+          &__amount-due-date {
+            flex: 1;
+            flex-basis: 120px;
+            padding-right: 10px;
+          }
+        }
+
+        .paymentplan-thead__count {
+          visibility: hidden;
+        }
+
+        .transaction__gather {
+          display: flex;
+          flex-basis: 100%;
+          flex-wrap: nowrap;
+          justify-content: flex-end;
+          padding-right: 10px;
+
+          > b {
+            flex: 0 0 30px;
+          }
+
+          > span.format-number {
+            flex: 0 0 auto;
+            max-width: 300px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    .format-number {
+      word-break: break-all;
+      word-wrap: break-word;
+    }
+  }
+}
+
+@media @media-query-small {
+  .transactions-layouts {
+    .payment-plan-wrapper {
+      .paymentplan-detail-table:not(.an-sm-simple-table) {
+        &.an-simple-table {
+          tr {
+            flex-wrap: nowrap;
+          }
+
+          th,
+          td {
+            padding: 8px;
+
+            span {
+              padding: 0;
+            }
+          }
+
+          .paymentplan-thead,
+          .paymentplan-tbody {
+            &__count {
+              flex: 0 0 60px;
+              font-weight: @new-gd-font-weight-600;
+            }
+
+            &__due-date {
+              flex: 0 0 120px;
+            }
+
+            &__amount-due-date {
+              flex: 1 1 auto;
+              padding-left: 0;
+              white-space: normal;
+            }
+          }
+
+          .transaction__gather {
+            > span.format-number {
+              max-width: 100px;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

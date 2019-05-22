@@ -1,0 +1,141 @@
+@import '~shared/styles/variables.less';
+
+.coupon-wrapper {
+  &.is-unexpanded {
+    display: none;
+  }
+}
+
+.coupon-panel {
+  margin-top: 18px;
+  margin-bottom: 0;
+
+  &.an-panel {
+    padding: 0;
+    margin-bottom: 10px;
+    border: 0;
+  }
+
+  &.hide-panel {
+    margin-top: 0;
+  }
+
+  .coupon-panel__form {
+    .flex('flexbox');
+    .flex-layout('left');
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    & > .input-group {
+      display: inline-flex;
+      flex-wrap: nowrap;
+      width: 100%;
+
+      .coupon-select {
+        overflow: hidden;
+      }
+
+      .coupon-input,
+      .coupon-select {
+        display: flex;
+        width: 224px;
+        height: 30px;
+        margin-right: 10px;
+      }
+
+      .coupon-btn-container {
+        flex: 0 0 64px;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .coupon-btn-container button {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+  .coupon-select.is-error {
+    .an-select-renderer {
+      background-color: @new-gd-color-attention-60;
+      border: 1px solid @new-gd-color-attention-100;
+
+      .an-select-search__field {
+        color: @new-gd-color-attention-100;
+        background-color: @new-gd-color-attention-60;
+      }
+    }
+  }
+}
+
+.coupon-select-item {
+  display: inline-flex;
+  width: 100%;
+  padding: 12px 12px;
+  border-bottom: 1px solid @custom-option-border-lightgray;
+
+  .coupon-code,
+  .coupon-title,
+  .coupon-participants,
+  .coupon-digital-label {
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+
+  .coupon-title {
+    margin-bottom: 4px;
+  }
+
+  .coupon-title,
+  .coupon-digital-label {
+    line-height: 1;
+  }
+
+  .coupon-content {
+    flex-grow: 1;
+    padding-right: 40px;
+  }
+
+  .coupon-digital-label {
+    display: flex;
+    align-items: flex-start;
+    flex: 0 0 100px;
+    justify-content: flex-end;
+  }
+
+  &__active {
+    color: @white;
+    background: @new-gd-color-primary-100;
+
+    * {
+      color: @white;
+    }
+  }
+}
+
+.cui-style-hook .an-select-option {
+  z-index: 8;
+
+  li:last-child .coupon-select-item {
+    border-bottom: none;
+  }
+}
+
+@media @media-query-medium, @media-query-small {
+  .coupon-panel {
+    .coupon-input,
+    .coupon-select {
+      flex: 1 0;
+    }
+  }
+}
+
+@media @media-query-small {
+  .coupon-select-item {
+    .coupon-content {
+      padding-right: 10px;
+    }
+  }
+}

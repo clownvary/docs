@@ -1,0 +1,210 @@
+@import '~react-base-ui/lib/less/variables/color.less';
+@import '~shared/styles/variables.less';
+
+.an-select {
+  &-renderer {
+    padding: 3px 8px;
+  }
+
+  &-selection {
+    li {
+      margin: 2px 0;
+    }
+
+    li&-choice {
+      margin-right: 10px;
+    }
+  }
+
+  &-option {
+    z-index: 10;
+    box-shadow: 0 2px 4px 0 #ccc;
+    padding-top: 6px;
+  }
+
+  &-placeholder {
+    padding: 2px 0;
+    color: @dove-gray;
+  }
+}
+
+.enroll-pickup-select {
+  .enroll-pickup-option-item__tertiary {
+    word-break: break-all;
+  }
+
+  .an-select-search__field-mirror {
+    display: inline-block;
+    padding-left: 4px;
+  }
+
+  .an-select-search__field {
+    text-align: center;
+  }
+
+  .an-select-renderer {
+    padding-left: 2px;
+  }
+}
+
+.enroll-pickup {
+  padding: 20px 20px 5px  20px;
+
+  > * {
+    width: 100%;
+  }
+
+  &-title {
+    margin-bottom: 4px;
+    font-weight: @font-weight-semiBold;
+    color: @color-text-dark;
+  }
+
+  &-select__error {
+    background-color: @fair-pink;
+
+    input {
+      background-color: @fair-pink;
+    }
+
+    .an-select-renderer {
+      border: solid 1px @outrageous-orange;
+    }
+  }
+
+  &__error {
+    margin-top: 4px;
+    color: @error-red;
+  }
+
+  &-option {
+    &-item {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 6px 12px;
+
+      &__text {
+        margin-bottom: 2px;
+      }
+
+      &__extra {
+        display: flex;
+        font-size: @font-size-less-base;
+        color: @dove-gray;
+      }
+
+      &__secondary {
+        margin-right: 10px;
+      }
+
+      &__selected {
+        color: @cyan-blue;
+        background-color: @white;
+      }
+
+      &__selected &__extra {
+        color: @cyan-blue;
+      }
+
+      &__active {
+        color: @white;
+        background-color: @cyan-blue;
+      }
+
+      &__active &__extra {
+        color: @white;
+      }
+    }
+
+    &-footer {
+      border-top: solid 1px @iron;
+
+      &__text {
+        display: block;
+        height: 100%;
+        padding: 15px 12px 10px 12px;
+        cursor: pointer;
+      }
+
+      &__text:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.enroll-pickup-option-item-hover() {
+  color: @white;
+  background-color: @cyan-blue;
+
+  .enroll-pickup-option-item__extra,
+  .enroll-pickup-option-item__tertiary {
+    color: @white;
+  }
+}
+
+@media @media-query-small {
+  .enroll-pickup {
+    width: 100%;
+  }
+
+  .enroll-pickup-select {
+    .an-select-search__container {
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+
+    .an-select-search__field {
+      padding-left: 0;
+    }
+
+    .an-select-renderer {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 3px;
+      border-radius: 2px;
+    }
+
+    .an-select-option-list {
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .an-select-placeholder {
+      max-width: 224px;
+      padding-top: 6px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .enroll-pickup-option-item {
+      &__extra {
+        flex-direction: column;
+      }
+
+      &:hover {
+        .enroll-pickup-option-item-hover;
+      }
+    }
+
+    .an-select-option {
+      z-index: 6;
+    }
+
+    .an-tag__closable .icon-close {
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+  }
+}
+
+@media @media-query-medium {
+  .enroll-pickup-select {
+    .enroll-pickup-option-item {
+      &:hover {
+        .enroll-pickup-option-item-hover;
+      }
+    }
+  }
+}

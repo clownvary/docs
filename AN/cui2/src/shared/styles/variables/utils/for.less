@@ -1,0 +1,158 @@
+/* stylelint-disable */
+
+/// @name each
+/// @description
+///   provides each loops
+/// @argument {Array} @list      List to iterate
+/// @argument {Rule}  @callback  Calls the content of the loop
+.each(@list, @callback) when (default()) {
+  .return(@i, @callback) when (@i > 1) {
+    .return((@i - 1), @callback); }
+  .return(@i, @callback) {
+    .callback(...) when (default()) {};
+    @callback();
+    .callback(extract(@list, @i), @i);
+  }
+  .return(length(@list), @callback);
+}
+/// @name for
+/// @description
+///   provides for loops
+/// @argument {Integer} @i         Start of iterations (optional)
+/// @argument {Integer} @n         End or number of iterations
+/// @argument {Rule}    @callback  Calls the content of the loop
+._for(@i, @n, @callback) {
+  @callback();
+  .callback(@i); }
+._for(@n, @callback) when (isnumber(@n)) {
+  ._for(0, @n, @callback); }
+._for(@i, @n, @callback) when not (@i = @n - 1) {
+  ._for((@i + ((@n - @i) / abs(@n - @i))), @n, @callback); }
+/// @name if
+/// @description
+///   provides if-then-else statements
+/// @argument {Condition} @condition  the condition to match
+/// @argument {Rule}  @callback  Calls the content of the loop
+.if(...) {}
+.if(@condition, @callback) when (@condition) {
+  @callback();
+  .then();
+}
+.if(@condition, @callback) when not(@condition) {
+  .else(...){};
+  @callback();
+  @one:    extract(@condition, 1);
+  @two:    extract(@condition, 3);
+  @operator: extract(@condition, 2);
+  .return(lt) {
+    & when (@one < @two) {
+      .if(true, @callback);
+    }
+    & when not (@one < @two) {
+      .else();
+    }
+  }
+  .return(lte) {
+    & when (@one <= @two) {
+      .if(true, @callback);
+    }
+    & when not(@one <= @two) {
+      .else();
+    }
+  }
+  .return(gt) {
+    & when (@one > @two) {
+      .if(true, @callback);
+    }
+    & when not(@one > @two) {
+      .else();
+    }
+  }
+  .return(gte) {
+    & when (@one >= @two) {
+      .if(true, @callback);
+    }
+    & when not(@one >= @two) {
+      .else();
+    }
+  }
+  .return(eq) {
+    & when (@one = @two) {
+      .if(true, @callback);
+    }
+    & when not(@one = @two) {
+      .else();
+    }
+  }
+  .return(neq) {
+    & when not(@one = @two) {
+      .if(true, @callback);
+    }
+    & when (@one = @two) {
+      .else();
+    }
+  }
+  .return(...) when (default()) {
+    .else();
+  }
+  .return(@operator);
+}
+/// @name index
+/// @description
+///   find index of keyword
+/// @argument {Array}    @list     List to iterate
+/// @argument {Keyword}  @keyword  Keyword to find
+// .index(@list, @keyword) {
+//   .fallback() {
+//     @return: -1;
+//   }
+//   .each(@list, {
+//     .callback(~'@{keyword}',@index) {
+//       @return: @index;
+//     }
+//   });
+//   .fallback;
+// }
+/// @name join
+/// @description
+///   repeat a string with an optional glue
+/// @argument {String} @list      the list to join
+/// @argument {String} @glue      string to use as a glue (optional)
+/// @argument {Rule}   @callback  Calls the content of the loop
+.join(...) {}
+.join(@list, @callback) {
+  .join(@list, '', @callback);
+}
+.join(@list, @glue, @callback) {
+  .join(@string, @list, @glue, @n, @callback) when (@n >= 0) {
+    .return(@return, @n) when (@n = 0) {
+      @callback();
+    }
+    .return(e(@string), @n);
+    @add: extract(@list, @n);
+    .join('@{add}@{glue}@{string}', @list, @glue, (@n - 1), @callback);
+  }
+  @string: extract(@list, length(@list));
+  .join(@string, @list, @glue, (length(@list) - 1), @callback);
+}
+/// @name repeat
+/// @description
+///   repeat a string with an optional glue
+/// @argument {String} @string  the string to repeat
+/// @argument {Srting} @glue    string to use as a glue
+/// @argument {Number} @n       number of repeats
+.repeat(...) {}
+.repeat(@string, @n, @callback) {
+  .repeat(@string, '', @n, @callback);
+}
+.repeat(@string, @glue, @n, @callback) {
+  .repeat(@string, @add, @glue, @n, @callback) when (@n > 0) {
+    .return(@return, @n) when (@n = 1) {
+      @callback();
+    }
+    .return(e(@string), @n);
+    .repeat('@{string}@{glue}@{add}', @add, @glue, @n - 1, @callback);
+  }
+  .repeat(@string, @string, @glue, @n, @callback);
+}
+.repeat(@string, @glue, @n, @callback) when (@n < 1) {}

@@ -1,0 +1,23 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Succeesul",
+    "page_info": {
+      "order_by": "",
+      "total_records_per_page": 30,
+      "total_records": 0,
+      "page_number": 1,
+      "total_page": 1,
+      "order_option": "ASC"
+    }
+  },
+  "body": {
+    "fee_summary": {
+      "reno": 1,
+      "subtotal": 1888888888880.0,
+      "tax": 2222222222222,
+      "total": 333355.95,
+      "refund": -1
+    }
+  }
+}

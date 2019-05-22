@@ -1,0 +1,98 @@
+{
+    "headers": {
+        "response_code": "0000",
+        "response_message": "Succeesul",
+        "page_info": {
+            "order_by": "",
+            "page_number": 1,
+            "total_records_per_page": 30,
+            "total_page": 1,
+            "order_option": "ASC",
+            "total_records": 0
+        }
+    },
+    "body": {
+        "no_vacancy": false,
+        "program_sessions": [{
+            "session_id": 53,
+            "session_name": "Week 1109",
+            "description": "week 1109 to week 1115",
+            "first_date": "2018 Nov 9",
+            "last_date": "2018 Nov 15",
+            "beginning_time": "8:00 AM",
+            "ending_time": "10:00 AM",
+            "days_of_week": "Everyday",
+            "weeks_of_month": ""
+        }, {
+            "session_id": 50,
+            "session_name": "Week 1116",
+            "description": "week 1116 to 1122",
+            "first_date": "2018 Nov 16",
+            "last_date": "2018 Nov 22",
+            "beginning_time": "8:00 AM",
+            "ending_time": "11:00 AM",
+            "days_of_week": "Everyday",
+            "weeks_of_month": "1st, 2nd, 3rd, 4th week of every month"
+        }, {
+            "session_id": 51,
+            "session_name": "week 1123",
+            "description": "week 1123 to 1129",
+            "first_date": "2018 Nov 23",
+            "last_date": "2018 Nov 29",
+            "beginning_time": "8:00 AM",
+            "ending_time": "11:00 AM",
+            "days_of_week": "Everyday",
+            "weeks_of_month": ""
+        }, {
+            "session_id": 52,
+            "session_name": "week 1130",
+            "description": "week 1130 to 1205",
+            "first_date": "2018 Nov 30",
+            "last_date": "2018 Dec 5",
+            "beginning_time": "8:00 AM",
+            "ending_time": "11:00 AM",
+            "days_of_week": "Sun., Mon., Tues., Wed., Thurs., Fri.",
+            "weeks_of_month": ""
+        }, {
+          "session_id": 63,
+          "session_name": "Week 1109",
+          "description": "week 1109 to week 1115",
+          "first_date": "2018 Nov 9",
+          "last_date": "2018 Nov 15",
+          "beginning_time": "8:00 AM",
+          "ending_time": "10:00 AM",
+          "days_of_week": "Everyday",
+          "weeks_of_month": ""
+      }, {
+          "session_id": 60,
+          "session_name": "Week 1116",
+          "description": "week 1116 to 1122",
+          "first_date": "2018 Nov 16",
+          "last_date": "2018 Nov 22",
+          "beginning_time": "8:00 AM",
+          "ending_time": "11:00 AM",
+          "days_of_week": "Everyday",
+          "weeks_of_month": "1st, 2nd, 3rd, 4th week of every month"
+      }, {
+          "session_id": 61,
+          "session_name": "week 1123",
+          "description": "week 1123 to 1129",
+          "first_date": "2018 Nov 23",
+          "last_date": "2018 Nov 29",
+          "beginning_time": "8:00 AM",
+          "ending_time": "11:00 AM",
+          "days_of_week": "Everyday",
+          "weeks_of_month": ""
+      }, {
+          "session_id": 62,
+          "session_name": "week 1130",
+          "description": "week 1130 to 1205",
+          "first_date": "2018 Nov 30",
+          "last_date": "2018 Dec 5",
+          "beginning_time": "8:00 AM",
+          "ending_time": "11:00 AM",
+          "days_of_week": "Sun., Mon., Tues., Wed., Thurs., Fri.",
+          "weeks_of_month": ""
+      }]
+    }
+}

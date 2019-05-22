@@ -1,0 +1,33 @@
+@import '~shared/styles/variables.less';
+
+.empty-shoppingcart {
+  .flex('flexbox');
+  .flex-layout('center');
+
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding-top: 90px;
+  padding-bottom: 150px;
+
+  span {
+    font-size: 24px;
+    text-align: center;
+    word-break: break-word;
+    word-wrap: break-word;
+  }
+
+  .icon-svg-empty-cart {
+    margin-bottom: 20px;
+    cursor: default;
+    color: #d9e1e4;
+    .svg-size(58px);
+  }
+}
+
+@media @media-query-small {
+  .empty-shoppingcart {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}

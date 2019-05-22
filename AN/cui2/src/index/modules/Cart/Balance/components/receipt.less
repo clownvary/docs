@@ -1,0 +1,320 @@
+@import '~shared/styles/variables.less';
+/* stylelint-disable max-nesting-depth, no-descending-specificity */
+
+@receipt-title-color: #313741;
+@receipt-last-item-border-color: #eff5f8;
+
+.module-balance {
+  &__info {
+    margin: 5px 0;
+  }
+
+  &__list {
+    padding: 10px;
+    border: solid 1px @an-panel-border-color;
+    border-radius: 5px;
+
+    table.an-simple-table {
+      background-color: @white;
+    }
+  }
+
+  &__receipt {
+    width: 15%;
+    padding-left: 10px;
+    text-align: left;
+
+    span {
+      margin-top: -1px;
+    }
+
+    a {
+      padding-right: 4px;
+    }
+
+    .icon-svg {
+      color: @rolling-stone;
+    }
+  }
+
+  &__date-issued {
+    width: 12%;
+    padding-left: 10px;
+  }
+
+  &__next-payment-date {
+    width: 13%;
+  }
+
+  &__original-balance {
+    width: 14%;
+  }
+
+  &__current-balance {
+    width: 14%;
+  }
+
+  &__payment-amount {
+    width: 15%;
+
+    span > span {
+      display: inline-block;
+      padding-top: 7px;
+      vertical-align: top;
+    }
+
+    div {
+      display: inline-block;
+      width: 84px;
+    }
+
+    input {
+      display: inline-block;
+      width: 80px;
+      margin-left: 2px;
+      font-weight: @font-weight-Reg;
+    }
+  }
+
+  &__remaining-balance {
+    width: 17%;
+    padding-right: 10px;
+  }
+
+  &-error {
+    > div:first-child {
+      flex: 0 1 50%;
+    }
+
+    > div:last-child {
+      flex: 0 1 50%;
+      padding-right: 10px;
+      padding-left: 15px;
+      text-align: left;
+    }
+  }
+
+  &__input-error {
+    input {
+      color: @state-danger-text;
+      background-color: @state-danger-bg;
+      border-color: @state-danger-border;
+    }
+  }
+
+  &__subtotal {
+    padding-left: 69.6%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+
+    > span:first-child {
+      padding-right: 10px;
+      font-weight: @font-weight-Sbold;
+      color: @receipt-title-color;
+    }
+  }
+
+  &__footer {
+    margin-bottom: 40px;
+    text-align: right;
+  }
+
+  .an-simple-table {
+    thead {
+      td {
+        padding: 6px 0;
+        font-weight: @font-weight-Bold;
+        vertical-align: top;
+        color: @receipt-title-color;
+      }
+    }
+
+    tbody:last-child {
+      border: 0;
+    }
+
+    td {
+      padding: 8px  0;
+      word-break: break-word;
+      white-space: normal;
+      vertical-align: middle;
+
+      a {
+        font-weight: @font-weight-semiBold;
+      }
+    }
+
+    td:first-child {
+      text-align: left;
+    }
+
+    td:nth-child(2) {
+      text-align: left;
+    }
+
+    td:nth-child(3) {
+      text-align: left;
+    }
+
+    td.module-balance-error {
+      padding-top: 0;
+
+      &:before {
+        flex: 0;
+      }
+
+      div {
+        padding: 0;
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media @media-query-medium {
+  .module-balance {
+    &__receipt {
+      width: 17%;
+    }
+
+    &__date-issued {
+      width: 16%;
+    }
+
+    &__next-payment-date {
+      width: 15%;
+    }
+
+    &__original-balance {
+      width: 12%;
+    }
+
+    &__current-balance {
+      width: 12%;
+    }
+
+    &__payment-amount {
+      width: 14%;
+    }
+
+    &__remaining-balance {
+      width: 16%;
+    }
+
+    &__subtotal {
+      padding-left: 67.5%;
+    }
+  }
+}
+
+@media @media-query-small {
+  .module-balance {
+    margin-bottom: 20px;
+
+    &__content {
+      padding: 1px 15px 20px 15px;
+      border: 1px solid @an-panel-border-color;
+      border-radius: 5px;
+    }
+
+    &__receipt {
+      width: inherit;
+      padding-left: 0;
+    }
+
+    &__date-issued {
+      width: inherit;
+      padding-left: 0;
+    }
+
+    &__next-payment-date {
+      width: inherit;
+    }
+
+    &__original-balance {
+      width: inherit;
+    }
+
+    &__current-balance {
+      width: inherit;
+    }
+
+    &__payment-amount {
+      width: inherit;
+      margin-top: -7px;
+
+      &:before {
+        padding-top: 7px;
+      }
+    }
+
+    &__remaining-balance {
+      width: inherit;
+      padding-right: 0;
+    }
+
+    &-error {
+      > div:last-child {
+        padding-left: 10px;
+      }
+    }
+
+    &__list {
+      padding: 0;
+      border: 0;
+      border-bottom: 1px solid @receipt-last-item-border-color;
+    }
+
+    &__subtotal {
+      display: flex;
+      padding-left: 0;
+
+      span {
+        flex: 0 1 50%;
+      }
+
+      span:first-child {
+        padding-right: 0;
+        text-align: right;
+      }
+
+      span:last-child {
+        padding-left: 5px;
+      }
+    }
+
+    &__footer {
+      margin-bottom: 0;
+
+      button {
+        width: 100%;
+      }
+    }
+
+    .an-simple-table {
+      tbody {
+        td,
+        th {
+          > span {
+            flex: 0 1 50%;
+            word-break: break-all;
+          }
+
+          &:before {
+            flex: 0 1 50%;
+            font-weight: @font-weight-Bold;
+            color: @receipt-title-color;
+          }
+        }
+
+        td.module-balance-error {
+          padding: 0;
+
+          div {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

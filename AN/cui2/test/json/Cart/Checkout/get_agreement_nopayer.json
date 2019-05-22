@@ -1,0 +1,76 @@
+{
+    "headers": {
+        "response_code": "0000",
+        "response_message": "Succeesul",
+        "page_info": {
+            "order_by": "",
+            "total_records": 0,
+            "total_records_per_page": 30,
+            "page_number": 1,
+            "total_page": 1,
+            "order_option": "ASC"
+        }
+    },
+    "body": {
+        "ecp_agreement": {
+            "payer_name": "",
+            "payment_plans": [
+                {
+                    "schedule_details": [
+                        {
+                            "due_date": "23 Jul 2017",
+                            "amount_due": 1.60
+                        },
+                        {
+                            "due_date": "30 Jul 2017",
+                            "amount_due": 1.60
+                        },
+                        {
+                            "due_date": "6 Aug 2017",
+                            "amount_due": 1.60
+                        },
+                        {
+                            "due_date": "13 Aug 2017",
+                            "amount_due": 1.60
+                        }
+                    ],
+                    "sub_total": 6.40,
+                    "description": "Payment Plan for ACM - Membership-New5 (Tom Qin)"
+                },
+                {
+                    "schedule_details": [
+                        {
+                            "due_date": "23 Jul 2017",
+                            "amount_due": 1.60
+                        },
+                        {
+                            "due_date": "30 Jul 2017",
+                            "amount_due": 1.60
+                        },
+                        {
+                            "due_date": "6 Aug 2017",
+                            "amount_due": 1.60
+                        },
+                        {
+                            "due_date": "13 Aug 2017",
+                            "amount_due": 1.60
+                        }
+                    ],
+                    "sub_total": 6.40,
+                    "description": "Payment Plan for ACM - Membership-New3 (Tom Qin)"
+                }
+            ],
+            "current_due_amount": 5.26,
+            "current_due_date": "16 Jul 2017",
+            "total_payment_plan": 12.80,
+            "site_info": {
+                "address1": "937 Enterprise Dr",
+                "address2": "",
+                "city": "Sacramento",
+                "state": "CA",
+                "zip": "95825",
+                "phone": "(916) 925-9096"
+            }
+        }
+    }
+}

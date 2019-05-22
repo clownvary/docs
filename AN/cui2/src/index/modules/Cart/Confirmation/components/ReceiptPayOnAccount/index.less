@@ -1,0 +1,99 @@
+@import '~shared/styles/variables.less';
+@dev-icon-arrows-color: #748288;
+/* stylelint-disable max-nesting-depth,no-descending-specificity */
+
+.receipt-pay-on-account__pannel {
+  .receipt__content {
+    padding-left: 20px;
+
+    .receipt__content__title {
+      padding-top: 15px;
+
+      &--left {
+        flex: 1 0 60%;
+        flex-wrap: wrap;
+        word-break: break-word;
+        word-wrap: break-word;
+      }
+
+      .receipt-price {
+        flex: 1 0 40%;
+        flex-wrap: wrap;
+        text-align: right;
+        word-break: break-word;
+        word-wrap: break-word;
+      }
+    }
+
+    .pay-on-account__title {
+      padding: 20px 0 5px 0;
+    }
+
+    .pay-on-account__balances {
+      display: inline-block;
+      padding-bottom: 15px;
+
+      .pay-on-account__receipts {
+        display: inline-block;
+        padding-left: 4px;
+
+        .icon-balances-arrow {
+          color: @rolling-stone;
+        }
+      }
+    }
+
+    .transaction-detail {
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+
+    .receipt__label {
+      margin-bottom: 15px;
+    }
+
+    .receipt__line {
+      padding-top: 5px;
+    }
+  }
+
+  .transaction-detail {
+    text-transform: uppercase;
+  }
+}
+
+@media @media-query-medium {
+  .receipt-pay-on-account__pannel {
+    .receipt__content {
+      .receipt__content__title {
+        padding-top: 5px;
+      }
+
+      .pay-on-account__title {
+        padding: 20px 0 10px 0;
+      }
+    }
+  }
+}
+
+@media @media-query-small {
+  .receipt-pay-on-account__pannel {
+    .receipt__content {
+      padding-left: 0;
+
+      .receipt__content__title {
+        padding-top: 15px;
+      }
+
+      .pay-on-account__balances {
+        display: block;
+        margin-top: 5px;
+
+        .pay-on-account__receipts {
+          display: block;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+}

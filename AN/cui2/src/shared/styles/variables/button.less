@@ -1,0 +1,21 @@
+@import '../variables.less';
+
+.button-size-default() {
+  .m-button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base; 40px; 100px; @btn-font-weight-semiBold);
+}
+
+.button-size-xs() {
+  .m-button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-xs; 16px; @btn-border-radius-xs; 20px; 50px; @btn-font-weight);
+}
+
+.button-size-sm() {
+  .m-button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-sm; 18px; @btn-border-radius-sm; 30px; 50px; @btn-font-weight);
+}
+
+.button-size-lg() {
+  .m-button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-lg; 24px; @btn-border-radius-lg; 50px; 150px; @btn-font-weight-semiBold);
+}
+
+.button-size-xl() {
+  .m-button-size(@padding-xl-vertical; @padding-xl-horizontal; @font-size-xl; 36px; @btn-border-radius-xl; 60px; 170px; @btn-font-weight-semiBold);
+}

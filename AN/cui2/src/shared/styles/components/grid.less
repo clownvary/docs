@@ -1,0 +1,32 @@
+@import '../variables.less';
+
+.an-grid {
+  .flex('flexbox');
+
+  align-items: flex-start;
+}
+
+.an-col {
+  .flex-col;
+}
+
+/**
+ * Normal scale as default.
+ * Not affected for media breakpoint.
+ */
+.create-grid(@an-grid-basename, @an-grid-maximum-column-count);
+
+//Viewport breakpoints: sm
+@media @media-query-small {
+  .create-grid(@an-grid-sm-basename, @an-grid-maximum-column-count);
+}
+
+//Viewport breakpoints: md
+@media @media-query-medium {
+  .create-grid(@an-grid-md-basename, @an-grid-maximum-column-count);
+}
+
+//Viewport breakpoints: lg
+@media @media-query-large {
+  .create-grid(@an-grid-lg-basename, @an-grid-maximum-column-count);
+}

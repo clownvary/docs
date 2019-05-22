@@ -1,0 +1,82 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Succeesul",
+    "page_info": {
+      "order_by": "",
+      "page_number": 1,
+      "total_records_per_page": 30,
+      "total_page": 1,
+      "order_option": "ASC",
+      "total_records": 0
+    }
+  },
+  "body": {
+    "future_payments": {
+      "customer_id": 0,
+      "payment_source": 0,
+      "payments": [{
+          "index": 1,
+          "description": "Recurring Donation for Fiona Campaign111 - All Sites test test test test test test testtesteststsetsetsetsetsetsetsetsetssafasdfasd ",
+          "next_payment_date": 1495954800000,
+          "last_payment_date": 1525590000000,
+          "next_payment_date_string": "28 May 2017",
+          "last_payment_date_string": "6 May 2018",
+          "automatic_payment": false,
+          "reno": 1,
+          "disallow_user_auto_charge_option_modify": true,
+          "future_payment_id": "id1"
+        },
+        {
+          "index": 2,
+          "description": "Recurring Donation for Fiona Campaign111 - All Sites 2",
+          "next_payment_date": null,
+          "last_payment_date": null,
+          "next_payment_date_string": "On expiration",
+          "last_payment_date_string": "Until user cancels",
+          "automatic_payment": false,
+          "reno": 1,
+          "disallow_user_auto_charge_option_modify": false,
+          "future_payment_id": "id2"
+        },
+         {
+          "index": 3,
+          "description": "Recurring Donation for Fiona Campaign111 - All Sites 3",
+          "next_payment_date": 1495954800000,
+          "last_payment_date": 1525590000000,
+          "next_payment_date_string": "28 May 2017",
+          "last_payment_date_string": "6 May 2018",
+          "automatic_payment": false,
+          "reno": 2,
+          "disallow_user_auto_charge_option_modify": true,
+          "future_payment_id": "id3"
+        },
+         {
+          "index": 4,
+          "description": "Recurring Donation for Fiona Campaign111 - All Sites 4",
+          "next_payment_date": 1495954800000,
+          "last_payment_date": 1525590000000,
+          "next_payment_date_string": "28 May 2017",
+          "last_payment_date_string": "6 May 2018",
+          "automatic_payment": false,
+          "reno": 2,
+          "disallow_user_auto_charge_option_modify": false,
+          "future_payment_id": "id4"
+        }
+      ],
+      "secondary_future_payment_id": -1,
+      "saved_electronic_payment": {
+        "ams_account_id": null,
+        "card_name": null,
+        "card_number": null,
+        "card_expiration": null,
+        "card_type_id": 0,
+        "card_security_number": null,
+        "card_id": 0,
+        "account_number": null,
+        "routing_number": null,
+        "account_type": null
+      }
+    }
+  }
+}

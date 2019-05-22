@@ -1,0 +1,104 @@
+@import '~shared/styles/variables.less';
+/* stylelint-disable max-nesting-depth */
+
+.pay-on-account {
+  &__header {
+    flex-wrap: nowrap;
+    padding: 10px 10px 0 10px;
+
+    .an-col:first-child {
+      flex: 0 0 70%;
+      flex-wrap: wrap;
+      word-break: break-word;
+      word-wrap: break-word;
+    }
+
+    .an-col:last-child {
+      flex: 0 0 30%;
+      text-align: right;
+    }
+  }
+
+  &__footer {
+    padding: 0 10px 20px 10px;
+
+    &__detail {
+      .pay-on-account__title {
+        margin-top: 15px;
+        text-transform: uppercase;
+        color: @rolling-stone;
+      }
+
+      .pay-on-account__balances {
+        display: inline-block;
+        margin-top: 5px;
+      }
+
+      .label {
+        display: inline-block;
+        margin-top: 10px;
+
+        + .label {
+          margin-left: 5px;
+        }
+      }
+
+      .pay-on-account__receipts {
+        display: inline-block;
+        padding-left: 4px;
+
+        .arrows {
+          color: @rolling-stone;
+        }
+      }
+    }
+
+    &__operation {
+      a {
+        text-decoration: none;
+        cursor: pointer;
+
+        + a {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  @media @media-query-medium {
+    &__header {
+      padding: 0;
+    }
+
+    &__footer {
+      padding: 0 0 20px 0;
+    }
+  }
+
+  @media @media-query-small {
+    &__header {
+      padding: 0;
+    }
+
+    &__footer {
+      padding: 0 0 20px 0;
+
+      div:first-child {
+        align-items: flex-start;
+      }
+
+      &__detail {
+        width: 100%;
+      }
+
+      &__operation {
+        align-self: flex-end;
+        margin-top: 10px;
+      }
+
+      &__operation.mod-label {
+        margin-top: -16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import '~shared/styles/variables.less';
+
+.receipt-summary__pannel {
+  width: 100%;
+
+  .an-panel {
+    padding: 20px 20px 2px 20px;
+  }
+
+  .receipt-summary__header {
+    span {
+      display: block;
+    }
+
+    .receipt-sub__title {
+      span {
+        padding-bottom: 10px;
+      }
+    }
+
+    .receipt__title__information {
+      span {
+        display: inline-block;
+        padding-right: 4px;
+      }
+    }
+
+    .receipt__title {
+      padding-bottom: 20px;
+    }
+
+    .receipt-creditcard__information {
+      padding-bottom: 20px;
+
+      span {
+        display: inline-block;
+      }
+    }
+  }
+
+  .boundary {
+    padding-top: 15px;
+  }
+}
+
+@media @media-query-medium {
+  .receipt-summary__pannel {
+    .an-panel {
+      padding: 20px 20px 14px 20px;
+
+      .receipt__title {
+        padding-bottom: 20px;
+      }
+
+      .receipt-sub__title {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media @media-query-small {
+  .receipt-summary__pannel {
+    .an-panel {
+      padding: 10px 15px 14px 15px;
+
+      .receipt__title {
+        padding-bottom: 20px;
+      }
+
+      .receipt-sub__title {
+        padding-bottom: 10px;
+      }
+
+      .receipt-creditcard__information {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

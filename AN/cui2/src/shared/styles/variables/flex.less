@@ -1,0 +1,174 @@
+.flex() {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 0;
+  letter-spacing: 0;
+  text-align: left;
+
+  > * {
+    display: inline-block;
+  }
+}
+
+.flex(@prop) when (@prop = "flexbox") {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  table-layout: auto;
+  column-count: auto;
+
+  > * {
+    display: inline-block;
+  }
+}
+
+.flex(@prop) when (@prop = "table") {
+  display: table;
+  align-content: initial;
+  align-items: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  justify-content: initial;
+  table-layout: fixed;
+  column-count: auto;
+
+  > * {
+    display: table-cell;
+  }
+}
+
+.flex(@prop, @val) when (@prop = "margin") {
+  width: calc(~'100% + @{val}px');
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: -@val / 2px;
+  margin-left: -@val / 2px;
+
+  > * {
+    padding-right: @val / 2px;
+    padding-left: @val / 2px;
+  }
+}
+
+.flex-col() {
+  box-sizing: border-box;
+  min-height: 1px;
+  vertical-align: middle;
+}
+
+.flex-col(@prop, @val) when (isnumber(@prop)) {
+  width: 100% / @val * @prop;
+}
+
+.flex-width(@prop) when (isnumber(@prop)) {
+  width: 100% / @prop;
+}
+
+.flex-layout(@prop) when (@prop = "left") {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.flex-layout(@prop) when (@prop = "center") {
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-layout(@prop) when (@prop = "right") {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.flex-layout(@prop) when (@prop = "top") {
+  align-items: flex-start;
+
+  > * {
+    vertical-align: top;
+  }
+}
+
+.flex-layout(@prop) when (@prop = "middle") {
+  align-items: center;
+
+  > * {
+    vertical-align: middle;
+  }
+}
+
+.flex-layout(@prop) when (@prop = "bottom") {
+  align-items: flex-end;
+
+  > * {
+    vertical-align: bottom;
+  }
+}
+
+.flex-layout(@prop) when (@prop = "between") {
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.flex-layout(@prop) when (@prop = "around") {
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.flex-layout(@prop) when (@prop = "baseline") {
+  align-items: baseline;
+}
+
+.create-flex-all-layout(@name: flex) {
+  .@{name}-left {
+    .flex-layout('left');
+  }
+
+  .@{name}-center {
+    .flex-layout('center');
+  }
+
+  .@{name}-right {
+    .flex-layout('right');
+  }
+
+  .@{name}-top {
+    .flex-layout('top');
+  }
+
+  .@{name}-middle {
+    .flex-layout('middle');
+  }
+
+  .@{name}-bottom {
+    .flex-layout('bottom');
+  }
+
+  .@{name}-between {
+    .flex-layout('between');
+  }
+
+  .@{name}-around {
+    .flex-layout('around');
+  }
+
+  .@{name}-baseline {
+    .flex-layout('baseline');
+  }
+}
+
+.create-flex-order(@name: flex, @n, @i: 1) when (@i =< @n) {
+  .@{name}-order-@{i} {
+    order: @i;
+  }
+  .create-flex-order(@name, @n, (@i + 1));
+}
+
+.create-flex-grow(@name: flex, @n, @i: 1) when (@i =< @n) {
+  .@{name}-grow-@{i} {
+    flex-grow: @i;
+  }
+  .create-flex-grow(@name, @n, (@i + 1));
+}

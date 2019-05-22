@@ -1,0 +1,18 @@
+@import '../variables.less';
+
+.@{an-basename}-panel {
+  padding: @an-panel-padding;
+  margin-bottom: @an-panel-margin-bottom;
+  border: 1px solid @an-panel-border-color;
+  border-radius: @an-panel-border-radius-width;
+
+  @media @media-query-small {
+    padding: @an-panel-xs-padding;
+    margin-bottom: @an-panel-xs-margin-bottom;
+  }
+
+  @media @media-query-medium {
+    padding: @an-panel-sm-padding;
+    margin-bottom: @an-panel-sm-margin-bottom;
+  }
+}

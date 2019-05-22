@@ -1,0 +1,57 @@
+@import '~shared/styles/variables.less';
+
+.override-breadcrumb {
+  margin-bottom: 10px;
+}
+
+.enrollform {
+  &.an-panel {
+    padding: 0;
+    border: none;
+  }
+
+  &__sections {
+    margin-top: 20px;
+  }
+
+  .an-collapse {
+    margin-bottom: 10px;
+  }
+}
+
+@media @media-query-medium {
+  .enrollform {
+    &__primary-header {
+      margin: 20px 0;
+      font-size: @new-gd-font-size-xl;
+    }
+
+    &__sections {
+      margin-top: 0;
+    }
+  }
+}
+
+@media @media-query-small {
+  .override-breadcrumb {
+    position: relative;
+    width: ~'calc(100% - 80px)';
+    margin-top: -30px;
+  }
+
+  .enrollform {
+    .an-collapse-item__header div {
+      padding: 0 2px 0 16px;
+      font-size: @new-gd-font-size-m;
+    }
+
+    &__primary-header {
+      margin: 10px 0 8px;
+      font-size: @new-gd-font-size-m;
+    }
+
+    &__sections {
+      margin-top: 0;
+    }
+  }
+}

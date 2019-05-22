@@ -1,0 +1,68 @@
+{
+  "browser": true,
+  "testEnvironment": "jsdom",
+  "cacheDirectory": "./node_modules/.cache",
+  "verbose": true,
+  "globals": {
+    "__STATIC__": true,
+    "__DEV__": false,
+    "__TESTING__": true,
+    "__TESTINGHOST__": "localhost",
+    "__TESTINGPORT__": 3337
+  },
+  "transformIgnorePatterns": [
+    "/node_modules/(?!react-base-ui).+\\.js$"
+  ],
+  "moduleNameMapper": {
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/__mocks__/fileMock.js",
+    "\\.(css|less)$": "<rootDir>/test/__mocks__/styleMock.js",
+    "^imports": "<rootDir>/test/__mocks__/jestImportsMock.js"
+  },
+  "testRegex": "(\\.(test|spec))\\.(jsx|js)$",
+  "moduleFileExtensions": [
+    "json",
+    "jsx",
+    "js"
+  ],
+  "moduleDirectories": [
+    "src",
+    "i18n",
+    "test/json",
+    "test/specs",
+    "node_modules"
+  ],
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "<rootDir>/src/**/*.{js,jsx}",
+    "!**/__mocks__/**"
+  ],
+  "coverageReporters": [
+    "json-summary",
+    "html",
+    "lcov"
+  ],
+  "coverageDirectory": "test/coverage",
+  "coverageThreshold": {
+    "global": {
+      "branches": 91.4,
+      "functions": 95.5,
+      "lines": 96.2,
+      "statements": 96.1
+    }
+  },
+  "setupFiles": [
+    "./test/tests.initialState.jest.js"
+  ],
+  "testPathIgnorePatterns": [
+    "/build/",
+    "/etc/",
+    "/i18n/",
+    "/node/",
+    "/node_modules/",
+    "/tasks/"
+  ],
+  "roots": [
+    "<rootDir>/test/",
+    "<rootDir>/src/"
+  ]
+}

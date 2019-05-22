@@ -1,0 +1,85 @@
+@import '~shared/styles/variables.less';
+/* stylelint-disable max-nesting-depth,declaration-block-semicolon-newline-after */
+
+.creat-base-layout(header);
+
+.an-header {
+  &__wrapper {
+    padding: 6px 0;
+    font-size: 14px; //for matching old style.
+    color: #999;
+    .flex('flexbox');
+  }
+
+  &__logo {
+    width: 50%;
+  }
+
+  &__user-profiles {
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: right;
+
+    > span,
+    a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #999;
+    }
+
+    a {
+      padding: 0 5px;
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+        color: #005580;
+      }
+    }
+
+    > span:last-child {
+      a {
+        padding-right: 0;
+      }
+    }
+
+    > b {
+      margin-right: 18px;
+      font-size: 12px;
+      color: #717171;
+    }
+
+    .active {
+      color: #f28500;
+    }
+  }
+}
+
+.an-app--theme-new {
+  .an-header {
+    &__wrapper {
+      font-size: 13px;
+
+      img {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+.an-app--theme-legacy {
+  .an-header {
+    &__wrapper {
+      padding: 5px 0 8px 0;
+
+      img {
+        max-width: 460px;
+        max-height: 80px;
+        padding: 0;
+        margin: 0;
+        border-radius: 4px;
+      }
+      .legacy-cui-font-family;
+    }
+  }
+}

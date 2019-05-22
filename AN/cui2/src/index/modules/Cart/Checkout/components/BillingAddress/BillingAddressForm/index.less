@@ -1,0 +1,102 @@
+@import '~shared/styles/variables.less';
+/* stylelint-disable max-nesting-depth */
+
+.billingaddress-wrapper__form {
+  margin-top: 15px;
+
+  .title {
+    display: inline-block;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    .icon-svg {
+      margin-left: 5px;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .form__wraper {
+    .flex('flexbox');
+
+    .form__filed__error {
+      width: 100%;
+      padding: 5px 0 0 0;
+    }
+
+    .form__label {
+      text-align: right;
+    }
+  }
+
+  .zipcode {
+    width: 125px;
+  }
+
+  .button-row-update {
+    button.btn {
+      margin-right: 10px;
+    }
+  }
+
+  @media @media-query-small {
+    .billingaddress-form {
+      .form__wraper {
+        .form__label {
+          text-align: left;
+        }
+      }
+
+      .btn-primary {
+        width: 100%;
+        padding: 10px 14px;
+        font-weight: @font-weight-Sbold;
+      }
+
+      .city-zipcode-wrapper {
+        .flex('flexbox');
+        .flex-layout('between');
+
+        .form__wraper {
+          align-items: flex-start;
+          align-self: flex-start;
+          flex: 0 0 48%;
+
+          .input-group--m {
+            width: 100%;
+          }
+        }
+      }
+
+      .button-row-update {
+        .flex-layout('between');
+
+        .btn {
+          width: 48%;
+          padding: 10px 14px;
+          margin-right: 0;
+          font-weight: @font-weight-Sbold;
+        }
+      }
+    }
+  }
+
+  @media @media-query-medium {
+    .billingaddress-form {
+      .form__wraper {
+        .btn-add {
+          width: 120px;
+          font-weight: @font-weight-Sbold;
+        }
+      }
+
+      .button-row-update {
+        .btn {
+          width: 120px;
+        }
+      }
+    }
+  }
+}

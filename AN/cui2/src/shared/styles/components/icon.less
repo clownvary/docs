@@ -1,0 +1,60 @@
+@import '../variables.less';
+
+/**
+ * Fix loading bar icon after switch to 'aui_icons'.
+ */
+.@{icon-spin-name} {
+  animation: @icon-spin-name 2s infinite linear;
+}
+
+@keyframes @icon-spin-name {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button.icon-with-popover {
+  font-family: 'aui_icons';
+  background: transparent;
+  border: 0;
+
+  &:focus .popover {
+    display: block;
+  }
+}
+
+.icon-cc-visa:before {
+  content: '\f1f0';
+}
+
+.icon-cc-mastercard:before {
+  content: '\f1f1';
+}
+
+.icon-cc-diners-club:before {
+  content: '\f24c';
+}
+
+.icon-cc-discover:before {
+  content: '\f1f2';
+}
+
+.icon-cc-amex:before {
+  content: '\f1f3';
+}
+
+.icon-cc-jcb:before {
+  content: '\f24b';
+}
+
+.icon-file-o:before {
+  content: '\f016';
+}
+
+.icon-info-circle:before {
+  content: '\f05a';
+}
+
+.icon-question-circle:before {
+  content: '\f059';
+}

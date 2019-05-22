@@ -1,0 +1,68 @@
+@import '~shared/styles/variables.less';
+/* stylelint-disable max-nesting-depth */
+
+.waiver-panel {
+  > h2 {
+    margin-bottom: 20px;
+  }
+
+  .waiver-body {
+    margin: 20px 0 15px 0;
+  }
+
+  .alert-warning {
+    padding: 5px 10px;
+    margin: 10px 0 20px 0;
+  }
+
+  .modal-body {
+    & > h3 {
+      margin-bottom: 20px;
+    }
+
+    .checkScrollModal-container {
+      word-break: break-word;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+
+      > a {
+        text-decoration: none;
+        cursor: default;
+        color: inherit;
+      }
+    }
+
+    .waiver-dialog__scroll-br {
+      margin-bottom: 5px;
+    }
+  }
+
+  @media @media-query-large {
+    &.an-panel {
+      padding: 0;
+      border: 0;
+    }
+  }
+}
+
+@media @media-query-medium {
+  .waiver-panel {
+    padding: 20px 15px 15px 15px;
+    margin-bottom: 30px;
+
+    h2 {
+      display: none;
+    }
+  }
+}
+
+@media @media-query-small {
+  .waiver-panel {
+    padding: 10px 15px 5px 15px;
+    margin-bottom: 30px;
+
+    h2 {
+      display: none;
+    }
+  }
+}

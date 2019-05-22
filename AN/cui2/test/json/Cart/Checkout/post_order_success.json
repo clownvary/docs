@@ -1,0 +1,15 @@
+{
+    "headers": {
+        "response_code": "0000",
+        "response_message": "Success",
+        "page_info": {
+            "order_by": "",
+            "total_records_per_page": 30,
+            "total_records": 0,
+            "total_page": 1,
+            "order_option": "ASC",
+            "page_number": 1
+        }
+    },
+    "body": {}
+}

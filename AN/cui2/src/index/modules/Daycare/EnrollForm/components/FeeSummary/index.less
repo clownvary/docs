@@ -1,0 +1,145 @@
+@import '~shared/styles/variables.less';
+
+.daycare-ordersummary {
+  .ordersummary-panel {
+    .flex('flexbox');
+
+    flex-direction: column;
+    padding: 16px;
+    margin-top: 14px;
+    background-color: @white;
+
+    > * {
+      width: 100%;
+    }
+
+    .fee-summary {
+      &-list {
+        margin-top: 6px;
+      }
+
+      &-total {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media @media-query-medium {
+  .ordersummary-wrapper.daycare-ordersummary {
+    .an-panel {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 0;
+    }
+
+    .ordersummary-title {
+      flex: 0 0 40%;
+    }
+
+    .ordersummary-total {
+      flex: 1 1 30%;
+      margin-right: 20px;
+      font-size: @new-gd-font-size-l;
+
+      &__value {
+        margin-left: 10px;
+        font-size: @new-gd-font-size-l;
+      }
+    }
+
+    .btn.btn-strong {
+      width: 120px;
+      margin: 0;
+    }
+
+    .fee-summary {
+      order: 1;
+      margin-top: 5px;
+      text-align: right;
+
+      &-list {
+        margin-top: 12px;
+        font-size: @new-gd-font-size-m;
+
+        > li {
+          justify-content: flex-start;
+          margin-top: 0;
+          margin-bottom: 4px;
+        }
+
+        .field-label {
+          flex: 1;
+          margin-right: 10px;
+          font-weight: @new-gd-font-weight-600;
+          color: @color-text-dark;
+        }
+
+        .field-value {
+          flex: 0 0 180px;
+          color: @new-gd-color-gray-100;
+        }
+      }
+
+      &-total {
+        font-size: @new-gd-font-size-xl;
+
+        strong {
+          flex: 1;
+          margin-right: 10px;
+        }
+
+        > b {
+          flex: 0 0 180px;
+        }
+      }
+    }
+  }
+}
+
+@media @media-query-small {
+  .daycare-ordersummary {
+    .ordersummary-panel.an-panel {
+      flex-direction: row;
+      margin-top: 0;
+
+      .ordersummary-title {
+        flex: 0 0 126px;
+      }
+
+      .ordersummary-total {
+        display: flex;
+        align-items: flex-end;
+        flex: 1 0 40%;
+        flex-direction: column;
+      }
+
+      .fee-summary-list {
+        li {
+          margin: 4px 0;
+        }
+
+        .field-label {
+          flex: 0 0 30%;
+        }
+
+        .field-value {
+          flex: 1 0 70%;
+        }
+      }
+
+      .fee-summary-total {
+        margin: 6px 0 0;
+
+        strong {
+          flex: 0 0 30%;
+        }
+
+        b {
+          flex: 1 0 70%;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

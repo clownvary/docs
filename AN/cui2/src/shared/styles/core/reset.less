@@ -1,0 +1,64 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  padding: 0;
+  margin: 0;
+}
+
+// [‎9/‎12/‎2016 2:03 PM] Zhang, Ethan (Chengdu):
+// H1 36-24
+// H2 24-16
+// H3 20-16
+// H5 14-14
+// H4 16-14
+
+.ProximaNova--loaded {
+  body {
+    font: @font-size-base/@line-height-base @font-family-base;
+  }
+
+  .system-font-family {
+    font-family: @font-family-base;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  &::-ms-clear {
+    display: none;
+  }
+
+  &::-ms-reveal {
+    display: none;
+  }
+}
+
+li {
+  list-style-position: inside;
+}
+
+// Reset global link styles for svg
+a {
+  &:active,
+  &:hover,
+  &:focus a {
+    .icon-svg-type-link {
+      text-decoration: underline;
+      color: darken(@link-color, 15%);
+      outline: 0;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+@import '~shared/styles/variables.less';
+
+.section__body {
+  position: relative;
+
+  li.disabled:hover {
+    cursor: default;
+  }
+
+  .participant__text {
+    margin-left: 70px;
+    font-weight: @font-weight-semiBold;
+    line-height: 40px;
+  }
+
+  .add-member {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 12px;
+
+    &:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  .participant__dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 435px;
+    outline: none;
+
+    .dropdown__button {
+      padding: 5px 0;
+    }
+
+    .dropdown__menu {
+      max-height: 200px;
+    }
+
+    .dropdown__footer {
+      display: none;
+      padding: 0;
+    }
+
+    span.icon-chevron-down {
+      transform: rotate(0);
+    }
+
+    &__error {
+      .dropdown__button {
+        background-color: @fair-pink;
+        border: solid 1px @outrageous-orange;
+      }
+    }
+
+    li {
+      .name {
+        padding: 4px 12px;
+      }
+
+      .error {
+        padding: 0 12px 5px;
+        font-size: @font-size-xs;
+        line-height: @font-size-xs;
+      }
+    }
+  }
+
+  .participant__error {
+    display: flex;
+    margin: 4px 0 0 151px;
+    color: @error-red;
+
+    &__icon {
+      margin-right: 2px;
+    }
+  }
+}
+
+@media @media-query-medium {
+  .section__body {
+    .participant {
+      &__text {
+        display: inline-block;
+        width: 20%;
+        padding-right: 14px;
+        margin: 0;
+        text-align: right;
+      }
+
+      &__dropdown {
+        width: 80%;
+      }
+
+      &__error {
+        margin-left: 20%;
+      }
+    }
+  }
+}
+
+@media @media-query-small {
+  .section__body {
+    .flex('flexbox');
+
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .participant {
+      &__text {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+      }
+
+      &__content {
+        width: 100%;
+      }
+
+      &__dropdown {
+        position: relative;
+        width: 100%;
+      }
+
+      &__error {
+        margin-left: 0;
+      }
+    }
+  }
+}

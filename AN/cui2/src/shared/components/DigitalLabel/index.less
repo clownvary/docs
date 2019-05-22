@@ -1,0 +1,36 @@
+@import '~shared/styles/variables.less';
+
+.an-dgt-label {
+  position: relative;
+  padding-top: 0;
+
+  &--with-hint {
+    padding-top: 14px;
+  }
+
+  .an-text {
+    &--type-seconday {
+      color: @new-gd-color-primary-100;
+    }
+  }
+
+  &__hint {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-size: @new-gd-font-size-xs;
+    color: @new-gd-color-gray-90;
+  }
+
+  &--align-left {
+    text-align: left;
+  }
+
+  &--align-center {
+    text-align: center;
+  }
+
+  &--align-right {
+    text-align: right;
+  }
+}

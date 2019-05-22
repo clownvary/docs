@@ -1,0 +1,47 @@
+{
+  "headers": {
+      "response_code": "0000",
+      "response_message": "Successful",
+      "page_info": {
+          "order_by": "",
+          "total_records_per_page": 30,
+          "total_records": 0,
+          "page_number": 1,
+          "total_page": 1,
+          "order_option": "ASC"
+      }
+  },
+  "body": {
+      "payment_plan": {
+          "reno": 124,
+          "total_due_amount": 991991991864991991991864991991991.5,
+          "payment_schedule": [
+              {
+                  "count": "12/52",
+                  "due_date": "29 Sep 2019, Sun",
+                  "due_amount": 133
+              },
+              {
+                  "count": "13/52",
+                  "due_date": "26 Oct 2019, Sun",
+                  "due_amount": 19919919.5
+              },
+              {
+                  "count": "14/52",
+                  "due_date": "13 Oct 2019, Sun",
+                  "due_amount": 199.5
+              },
+              {
+                  "count": "15/52",
+                  "due_date": "20 Oct 2019, Sun",
+                  "due_amount": 199.5
+              },
+              {
+                  "count": "16/52",
+                  "due_date": "27 Oct 2019, Sun",
+                  "due_amount": 133
+              }
+          ]
+      }
+  }
+}

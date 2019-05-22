@@ -1,0 +1,97 @@
+@import '~shared/styles/variables.less';
+@receipt-tax-color:#748288;
+/* stylelint-disable max-nesting-depth */
+
+.receipt-total-amount__pannel {
+  margin-right: 0;
+  margin-left: auto;
+
+  .receipt-sub {
+    .flex('flexbox');
+
+    justify-content: flex-end;
+
+    &__list {
+      display: table;
+      margin-right: -10px;
+      border-collapse: separate;
+      border-spacing: 10px 6px;
+
+      li {
+        display: table-row;
+        list-style: none;
+
+        .receipt-sub--label,
+        .receipt-sub--value {
+          display: table-cell;
+        }
+
+        .receipt-sub--label {
+          font-weight: @font-weight-semiBold;
+          text-align: right;
+        }
+
+        .receipt-sub--value {
+          text-align: right;
+          word-break: break-all;
+        }
+
+        strong {
+          font-size: 21px;
+        }
+      }
+
+      div.receipt-sub__list--taxes {
+        display: block;
+        padding-top: 5px;
+        margin-top: -5px;
+        font-size: 12px;
+        text-align: left;
+        color: @receipt-tax-color;
+
+        > span:last-child {
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media @media-query-small {
+  .receipt-total-amount__pannel {
+    width: 100%;
+
+    .receipt-sub {
+      &__list {
+        display: inline-block;
+        width: 100%;
+        margin-right: 0;
+
+        li {
+          .flex('flexbox');
+          .flex-layout('top');
+          .flex-layout('between');
+
+          flex-wrap: nowrap;
+          margin: 6px 0;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          .receipt-sub--label,
+          .receipt-sub--value {
+            display: block;
+          }
+
+          .receipt-sub--label {
+            flex-grow: 1;
+            flex-shrink: 1;
+            margin-right: 16px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

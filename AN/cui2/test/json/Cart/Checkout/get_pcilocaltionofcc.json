@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "page_number": 1,
+      "total_page": 1,
+      "order_option": "ASC",
+      "total_records_per_page": 30,
+      "total_records": 0
+    }
+  },
+  "body": {
+    "iframe_url": "https://checkoutcui-vip.qa.aw.dev.activenetwork.com/checkout/index/payment-method?code=cc4b9aa0-3d36-4166-ba07-698e95e2dff5"
+  }
+}

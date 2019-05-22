@@ -1,0 +1,158 @@
+@import '~shared/styles/variables.less';
+
+.an-sc-body.an-calendar {
+  width: auto;
+  height: auto;
+  min-width: auto;
+  min-height: auto;
+}
+
+.enroll-calendar-container {
+  padding: 20px;
+
+  .sessions-in-month {
+    margin-top: 24px;
+  }
+}
+
+.enroll-calendar {
+  padding: 0;
+  border-bottom: 1px solid @goose-gray;
+
+  .an-sc-action-btn {
+    color: @cyan-blue;
+
+    &__disabled {
+      color: @cloudy-gray;
+    }
+  }
+
+  .an-sc-day__today {
+    color: @cyan-blue;
+  }
+
+  .an-sc-day__selected {
+    color: @white;
+    background-color: @cyan-blue;
+    border-color: @cyan-blue;
+  }
+
+  .an-sc-day__waiting {
+    color: @error-red;
+  }
+
+  .an-sc-day__disabled {
+    color: @cloudy-gray;
+    background: @white;
+  }
+
+  .an-sc-day__selected.an-sc-day__block-start {
+    border-left-color: @white;
+  }
+
+  .an-sc-day__selected.an-sc-day__block-end {
+    border-right-color: @white;
+  }
+
+  .an-sc-day__selected.an-sc-day__waiting {
+    color: #333;
+    background-color: @kournikova-yellow;
+    border-color: @kournikova-yellow;
+  }
+
+  .an-sc-day__selected.an-sc-day__disabled {
+    border-color: @white;
+  }
+}
+
+.an-sc-action-customize {
+  flex: 1;
+  text-align: right;
+}
+
+button.btn {
+  &.select-all-btn {
+    margin-right: 10px;
+    color: @white;
+    background-color: @cyan-blue;
+  }
+
+  &.remove-all-btn {
+    color: @shuttle-gray;
+    background-color: @white;
+  }
+
+  &.select-all-btn,
+  &.remove-all-btn {
+    font-weight: @font-weight-Sbold;
+  }
+}
+
+@media @media-query-small {
+  .enroll-calendar-container {
+    padding: 16px;
+
+    .an-sc-action {
+      flex-direction: column;
+
+      &__control {
+        .flex('flexbox');
+
+        justify-content: space-between;
+        width: 100%;
+        margin: 26px 20px 24px 20px;
+      }
+
+      &-customize {
+        flex: 1 1 auto;
+        width: 100%;
+
+        .btn {
+          flex: 1;
+        }
+
+        .customize-actions {
+          .flex('flexbox');
+
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .an-calendar.an-sc-body {
+      margin-bottom: 14px;
+    }
+  }
+}
+
+@media @media-query-medium {
+  .enroll-calendar-container {
+    padding: 26px 24px 0 20px;
+
+    .an-sc-action {
+      margin-bottom: 30px;
+
+      &__control {
+        padding: 0 14px 0;
+      }
+
+      &-btn {
+        padding: 0 14px;
+      }
+
+      &-customize {
+        .btn:first-of-type {
+          margin-right: 12px;
+        }
+      }
+    }
+
+    .an-calendar.an-sc-body {
+      margin-bottom: 38px;
+    }
+
+    .sessions-in-month {
+      padding-left: 4px;
+    }
+  }
+}

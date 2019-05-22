@@ -1,0 +1,103 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Succeesul",
+    "page_info": {
+      "order_by": "",
+      "total_records_per_page": 30,
+      "total_records": 0,
+      "page_number": 1,
+      "total_page": 1,
+      "order_option": "ASC"
+    }
+  },
+  "body": {
+    "selected_session_validation": {
+      "reno": 1,
+      "sessions_message_code": 1,
+      "is_schedule_conflict": true,
+      "selected_session_date_summary": [
+        {
+          "start_date": "Dec 30",
+          "start_time": "8:00 AM",
+          "end_date": "Jan 5",
+          "end_time": "9:00 AM",
+          "days_of_week": "Mon, Tue",
+          "dc_session_date_ids": [
+            23490,
+            23291
+          ]
+        }
+      ],
+      "sessions_status": [ {
+        "session_id": 37,
+        "session_status": 9,
+        "partially_full_dates": [
+          "18,19,20 Jul 2018",
+          "21 Aug 2019"
+        ],
+        "waitlisted_enrolled_dates": [
+          "18,19 Jul 2019",
+          "21 Aug 2019"
+        ],
+        "is_check": true,
+        "is_enable": false
+      },
+      {
+        "is_check" : false,
+        "session_id": 34,
+        "is_enable" : true,
+        "session_name": "2019 Aug 16-24 Sun,Mon,Wed,Sat  9:30 am - 11:00 am",
+        "description": "Duration:\r\n2019 Aug 16-24\r\nSun,Mon,Wed,Sat  9:30 am - 11:00 am",
+        "first_date": "Aug 16, 2019",
+        "last_date": "Aug 24, 2019",
+        "beginning_time": "9:30 AM",
+        "ending_time": "11:00 AM",
+        "days_of_week": "Sun, Mon, Wed, Sat",
+        "weeks_of_month": ""
+      },
+      {
+        "session_id": 35,
+        "session_status": 5,
+        "partially_full_dates": [
+          "18,19,20 Jul 2018",
+          "21 Aug 2019"
+        ],
+        "waitlisted_enrolled_dates": [
+          "18,19 Jul 2019",
+          "21 Aug 2019"
+        ],
+        "is_check": true,
+        "is_enable": true
+      },
+      {
+        "session_id": 33,
+        "is_check": false,
+        "is_enable": false,
+        "session_name": "2019 Aug.16 - Aug.24 Weekday 1:00 pm - 3:20 pm",
+        "description": "Durantion:\r\n2019 Aug.16 - Aug.24\r\nWeekday 1:00 pm - 3:20 pm",
+        "first_date": "Aug 16, 2019",
+        "last_date": "Aug 24, 2019",
+        "beginning_time": "1:00 PM",
+        "ending_time": "3:20 PM",
+        "days_of_week": "Weekday",
+        "weeks_of_month": ""
+      },
+      {
+        "session_id": 32,
+        "is_check": true,
+        "is_enable": false,
+        "session_name": "2019 Aug.16 - Aug.24 Everyday  3:40 pm - 6:00 pm",
+        "description": "Duration:\r\n2019 Aug.16 - Aug.24\r\nEveryday  3:40 pm - 6:00 pm",
+        "first_date": "Aug 16, 2019",
+        "last_date": "Aug 24, 2019",
+        "beginning_time": "3:40 PM",
+        "ending_time": "6:00 PM",
+        "days_of_week": "Everyday",
+        "weeks_of_month": ""
+      }
+    ],
+      "unavailable_session_ids": [ ]
+    }
+  }
+}

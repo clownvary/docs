@@ -1,0 +1,91 @@
+@import '~shared/styles/variables.less';
+/* stylelint-disable max-nesting-depth */
+
+.payment-comp {
+  &-methods {
+    .flex('flexbox');
+    .flex('margin', 20);
+
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
+
+  &__tab {
+    flex: 1 1;
+
+    > .tab-box {
+      width: 100%;
+      height: 100px;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      cursor: pointer;
+      background-color: @white;
+      border: 1px solid @an-panel-border-color;
+      border-radius: 5px;
+
+      > div {
+        .flex('flexbox');
+        .flex-layout('center');
+
+        flex-direction: column;
+
+        > .icon-svg {
+          margin-bottom: 6px;
+          .svg-size(28px);
+        }
+      }
+
+      &:hover {
+        border-color: @tags-input-icon-color;
+      }
+      .m-input-focus;
+    }
+  }
+
+  &__tab.is-active {
+    > .tab-box {
+      h4,
+      .icon-svg {
+        color: @cerulean;
+      }
+
+      cursor: default;
+      background-color: @state-info-bg;
+      border-color: @cerulean;
+      border-width: 2px;
+
+      &:hover {
+        border-color: @cerulean;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@media @media-query-small {
+  .payment-comp {
+    &-methods {
+      .flex('margin', 10);
+    }
+
+    &__tab > .tab-box h4 {
+      padding: 0 10px;
+    }
+  }
+}
+
+@media @media-query-small {
+  .payment-comp {
+    &-methods {
+      .flex('flexbox');
+      .flex('margin', 10);
+
+      flex-wrap: nowrap;
+      margin-bottom: 20px;
+    }
+  }
+}

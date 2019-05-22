@@ -1,0 +1,52 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Succeesul",
+    "page_info": {
+      "order_by": "",
+      "total_records": 0,
+      "total_page": 1,
+      "total_records_per_page": 30,
+      "page_number": 1,
+      "order_option": "ASC"
+    }
+  },
+  "body": {
+    "card_types": [{
+      "id": 11,
+      "card_type": "Visa",
+      "selected": false,
+      "card_type_id": 1
+    }, {
+      "id": 21,
+      "card_type": "Visa2",
+      "selected": false,
+      "card_type_id": 1
+    }, {
+      "id": 9,
+      "card_type": "Diners - lin",
+      "selected": false,
+      "card_type_id": 4
+    }, {
+      "id": 4,
+      "card_type": "Discover",
+      "selected": false,
+      "card_type_id": 5
+    }, {
+      "id": 14,
+      "card_type": "Other",
+      "selected": false,
+      "card_type_id": 3
+    }, {
+      "id": 2,
+      "card_type": "JCB",
+      "selected": false,
+      "card_type_id": 6
+    }, {
+      "id": 13,
+      "card_type": "Other CC",
+      "selected": false,
+      "card_type_id": 0
+    }]
+  }
+}

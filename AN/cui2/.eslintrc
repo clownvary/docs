@@ -1,0 +1,24 @@
+{
+  "extends": "an",
+  "rules": {
+    "no-param-reassign": "off",
+    "import/no-extraneous-dependencies": "off"
+  },
+  "globals": {
+    "window": true,
+    "__TESTING__": true,
+    "__SERVERRENDER__": true,
+    "__STATIC__": true,
+    "__TESTINGHOST__": true,
+    "__TESTINGPORT__": true,
+    "__DEV__": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./build/webpack.config.eslint"
+      }
+    }
+  }
+}

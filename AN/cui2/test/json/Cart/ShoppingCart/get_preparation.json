@@ -1,0 +1,20 @@
+{
+    "headers": {
+        "response_code": "0000",
+        "response_message": "Succeesul",
+        "page_info": {
+            "order_by": "",
+            "total_records": 0,
+            "total_records_per_page": 30,
+            "page_number": 1,
+            "total_page": 1,
+            "order_option": "ASC"
+        }
+    },
+    "body": {
+        "cart_common_info": {
+          "show_coupon_section": true
+        },
+        "success": true
+    }
+}

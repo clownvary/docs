@@ -1,0 +1,255 @@
+@import '~react-base-ui/lib/less/variables/index.less';
+@import '~shared/styles/variables.less';
+/* stylelint-disable max-nesting-depth,no-descending-specificity, order/properties-order */
+
+.ordersummary-panel {
+  background-color: @white;
+
+  .flex('flexbox');
+
+  > * {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+  > .ordersummary-title {
+    > h3 {
+      .ordersummary-title__collapse-trigger {
+        text-decoration: none;
+        color: @river-bed;
+      }
+
+      .ordersummary-title__icon-trigger {
+        margin-top: -2px;
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+@media @media-query-large {
+  .ordersummary-panel {
+    button {
+      width: 90%;
+    }
+
+    &.an-panel {
+      padding: 0;
+      margin-bottom: 60px;
+      border: 0;
+    }
+
+    > .ordersummary-title {
+      &__split-line {
+        display: none;
+      }
+
+      > h3 {
+        margin-top: -8px;
+
+        .ordersummary-title__icon-trigger {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media @media-query-medium {
+  .ordersummary-donation-wrapper {
+    .ordersummary-panel {
+      flex-direction: row;
+      padding: 17px 20px 20px 15px;
+      margin-bottom: 20px;
+      .flex-layout('between');
+
+      text-align: left;
+
+      &.is-sticky {
+        padding-right: 44px;
+        padding-left: 39px;
+        border-radius: 0;
+      }
+
+      .ordersummary-title {
+        flex: 1;
+        flex-wrap: wrap;
+        order: 0;
+        word-break: break-all;
+        word-wrap: break-word;
+
+        &__split-line {
+          display: none;
+          order: 2;
+          margin: 20px 0 -5px 0;
+        }
+
+        &__split-line.is-show {
+          display: inline-block;
+        }
+
+        > h3 {
+          .ordersummary-title__collapse-trigger {
+            text-decoration: none;
+            cursor: pointer;
+            color: @cerulean;
+          }
+
+          .ordersummary-title__icon-trigger {
+            display: inline-block;
+            vertical-align: baseline;
+            color: @cerulean;
+          }
+        }
+      }
+
+      .common-ordersummary.is-unexpanded {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        margin-top: 0;
+        margin-right: 20px;
+      }
+
+      .common-ordersummary {
+        display: flex;
+        align-self: flex-start;
+        flex: 0 0 42%;
+        flex-direction: column;
+        order: 4;
+      }
+
+      > .coupon-wrapper {
+        order: 3;
+        flex: 0 0 50%;
+      }
+
+      > .coupon-wrapper + .btn-strong {
+        display: flex;
+
+        .flex-layout('center');
+
+        align-items: center;
+        flex: 0 0 15%;
+        justify-content: center;
+        order: 1;
+        margin-top: 5px;
+      }
+
+      > .coupon-wrapper.is-unexpanded + .btn-strong {
+        display: flex;
+
+        .flex-layout('center');
+
+        flex: 0 0 15%;
+        align-items: center;
+        justify-content: center;
+        order: 5;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media @media-query-small {
+  .ordersummary-donation-wrapper {
+    .ordersummary-panel {
+      flex-direction: row;
+      padding-bottom: 20px;
+
+      .ordersummary-title {
+        flex: 0 0 70%;
+        flex-wrap: wrap;
+        word-break: break-all;
+        word-wrap: break-word;
+
+        &__split-line {
+          display: none;
+          margin: 10px 0 -5px 0;
+        }
+
+        &__split-line.is-show {
+          display: inline-block;
+          margin-bottom: 0;
+        }
+
+        > h3 {
+          font-size: 16px;
+
+          .ordersummary-title__collapse-trigger {
+            text-decoration: none;
+            cursor: pointer;
+            color: @cerulean;
+          }
+
+          .ordersummary-title__icon-trigger {
+            display: inline-block;
+            vertical-align: baseline;
+            color: @cerulean;
+          }
+        }
+      }
+
+      .common-ordersummary.is-unexpanded {
+        display: flex;
+        flex: 0 0 30%;
+        flex-direction: column;
+        margin-top: 0;
+
+        .common-ordersummary-duenow {
+          margin-top: 0;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+
+      .common-ordersummary {
+        margin-top: 0;
+
+        &-list {
+          font-size: 14px;
+        }
+
+        &-duenow {
+          margin-top: 12px;
+          font-size: 21px;
+        }
+      }
+
+      .coupon-wrapper + button {
+        margin: 20px 0 0 0;
+      }
+
+      .coupon-wrapper.is-unexpanded + button {
+        margin: 12px 0 0 0;
+      }
+    }
+  }
+
+  .ordersummary--sm-and-md-mod {
+    .ordersummary-donation-wrapper {
+      .ordersummary-panel {
+        padding: 10px 15px 20px 15px;
+        margin-bottom: 20px;
+
+        &.is-sticky {
+          padding-right: 30px;
+          padding-left: 30px;
+          border-radius: 0;
+
+          .coupon-wrapper + button {
+            margin: 20px 0 0 0;
+          }
+
+          .coupon-wrapper.is-unexpanded + button {
+            margin: 12px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}

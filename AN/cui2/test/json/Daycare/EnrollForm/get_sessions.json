@@ -1,0 +1,89 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Succeesul",
+    "page_info": {
+      "order_by": "",
+      "total_records_per_page": 30,
+      "total_records": 0,
+      "page_number": 1,
+      "total_page": 1,
+      "order_option": "ASC"
+    }
+  },
+  "body": {
+    "program_sessions_result": {
+      "allow_individual_selection": true,
+      "reservation_unit": 0,
+      "sessions_message_code" : 1,
+      "program_sessions": [
+        {
+          "session_id": 37,
+          "session_name": "UAT SESSION",
+          "description": "LIKE U SEE IT'S USED FOR UAT.",
+          "first_date": "Feb 1, 2019",
+          "last_date": "Feb 28, 2019",
+          "beginning_time": "10:00 AM",
+          "ending_time": "10:20 AM",
+          "days_of_week": "Sun, Mon, Tues, Wed, Thurs, Sat",
+          "weeks_of_month": "1st, 2nd, 3rd, last week of every month",
+          "session_status" : 12,
+          "is_check" : true,
+          "is_enable" : true
+        },
+        {
+          "session_id": 35,
+          "session_name": "Only NoChoice 8:00am - 9:00am",
+          "description": "Duration:\r\nJul 29, 2019 - Aug 11, 2019,\r\nOnly Tue 8:00am - 9:00am",
+          "first_date": "Jul 29, 2019",
+          "last_date": "Aug 11, 2019",
+          "beginning_time": "8:00 AM",
+          "ending_time": "9:00 AM",
+          "days_of_week": "Tues",
+          "weeks_of_month": "",
+          "session_status" : 2,
+          "is_check" : false,
+          "is_enable" : true
+        },
+        {
+          "is_check" : false,
+          "session_id": 34,
+          "is_enable" : true,
+          "session_name": "2019 Aug 16-24 Sun,Mon,Wed,Sat  9:30 am - 11:00 am",
+          "description": "Duration:\r\n2019 Aug 16-24\r\nSun,Mon,Wed,Sat  9:30 am - 11:00 am",
+          "first_date": "Aug 16, 2019",
+          "last_date": "Aug 24, 2019",
+          "beginning_time": "9:30 AM",
+          "ending_time": "11:00 AM",
+          "days_of_week": "Sun, Mon, Wed, Sat",
+          "weeks_of_month": ""
+        },
+        {
+          "session_id": 33,
+          "session_name": "2019 Aug.16 - Aug.24 Weekday 1:00 pm - 3:20 pm",
+          "description": "Durantion:\r\n2019 Aug.16 - Aug.24\r\nWeekday 1:00 pm - 3:20 pm",
+          "first_date": "Aug 16, 2019",
+          "last_date": "Aug 24, 2019",
+          "beginning_time": "1:00 PM",
+          "ending_time": "3:20 PM",
+          "days_of_week": "Weekday",
+          "weeks_of_month": ""
+        },
+        {
+          "session_id": 32,
+          "is_check": true,
+          "is_enable": false,
+          "session_name": "2019 Aug.16 - Aug.24 Everyday  3:40 pm - 6:00 pm",
+          "description": "Duration:\r\n2019 Aug.16 - Aug.24\r\nEveryday  3:40 pm - 6:00 pm",
+          "first_date": "Aug 16, 2019",
+          "last_date": "Aug 24, 2019",
+          "beginning_time": "3:40 PM",
+          "ending_time": "6:00 PM",
+          "days_of_week": "Everyday",
+          "weeks_of_month": ""
+        }
+      ],
+      "dc_enroll_dates": null
+    }
+  }
+}

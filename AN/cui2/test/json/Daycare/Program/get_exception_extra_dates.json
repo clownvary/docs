@@ -1,0 +1,46 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Succeesul",
+    "page_info": {
+      "order_by": "",
+      "page_number": 1,
+      "total_page": 1,
+      "order_option": "ASC",
+      "total_records": 0,
+      "total_records_per_page": 30
+    }
+  },
+  "body": {
+    "program_exceptionandextradates": [
+      {
+        "session_id": 60,
+        "extra_dates": [
+          "22 Nov 2018"
+        ],
+        "exception_dates": []
+      },
+      {
+        "session_id": 61,
+        "exception_dates": [
+          "25,26,27 Nov 2018"
+        ]
+      },
+      {
+        "session_id": 62,
+        "exception_dates": [
+          "01 Dec 2018"
+        ],
+        "extra_dates": [
+          "21 Sep 2018",
+          "21,22 Oct 2018",
+          "21,22,23 Nov 2018",
+          "21,22,23,24,25 Dec 2018",
+          "01 Jan 2019",
+          "01,02 Feb 2019",
+          "01,02,03 Mar 2019"
+        ]
+      }
+    ]
+  }
+}

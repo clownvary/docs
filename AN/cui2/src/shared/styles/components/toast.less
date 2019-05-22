@@ -1,0 +1,35 @@
+@import '../variables.less';
+
+.an-toast-wrapper.an-toast-wrapper--bottom {
+  right: 220px;
+  left: 220px;
+
+  .an-toast {
+    padding: 12px 40px;
+    font-weight: @new-gd-font-weight-400;
+    background-color: @new-gd-color-gray-100;
+    opacity: 0.9;
+  }
+}
+
+@media @media-query-medium {
+  .an-toast-wrapper.an-toast-wrapper--bottom {
+    right: 88px;
+    left: 88px;
+
+    .an-toast {
+      padding: 12px;
+    }
+  }
+}
+
+@media @media-query-small {
+  .an-toast-wrapper.an-toast-wrapper--bottom {
+    right: 20px;
+    left: 20px;
+
+    .an-toast {
+      padding: 12px 24px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+export const CUSTOMERID = 'customer_id';
+export const FIRST = 'first_name';
+export const LAST = 'last_name';
+export const MAILINGNAME = 'mailing_name';
+export const ADDRESS1 = 'address1';
+export const ADDRESS2 = 'address2';
+export const COUNTRY = 'country';
+export const CITY = 'city';
+export const STATE = 'state';
+export const ZIPCODE = 'zip_code';
+export const ZIPCODE_SERVICE = 'zip_code_service';

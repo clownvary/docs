@@ -1,0 +1,276 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "total_records_per_page": 30,
+      "total_records": 0,
+      "page_number": 1,
+      "total_page": 1,
+      "order_option": "ASC"
+    }
+  },
+  "body": {
+    "program_userentry": {
+      "reno": 1,
+      "program_name": "Morgan - Maximum#allow waiting",
+      "allow_individual_selection": true,
+      "reservation_unit": 0,
+      "sessions_message_code": 0,
+      "logined_customer_id" : "EAD2332",
+      "has_required_question": true,
+      "program_sessions": [
+        {
+          "session_id": 46,
+          "session_name": "Fri.of.LastWeek(max: 5)",
+          "description": "Fri.of.LastWeek(max: 5)",
+          "first_date": "2019 Apr 1",
+          "last_date": "2019 May 31",
+          "beginning_time": "9:00 AM",
+          "ending_time": "11:00 AM",
+          "days_of_week": "Fri",
+          "weeks_of_month": "last week of every month",
+          "session_status": null,
+          "is_enable": false,
+          "is_check": false
+        },
+        {
+          "session_id": 43,
+          "session_name": "Mon.of.FirstWeek(max: 1)",
+          "description": "Mon.of.FirstWeek(max: 1)",
+          "first_date": "2019 Apr 1",
+          "last_date": "2019 May 31",
+          "beginning_time": "9:00 AM",
+          "ending_time": "11:00 AM",
+          "days_of_week": "Mon",
+          "weeks_of_month": "1st week of every month",
+          "session_status": null,
+          "is_enable": false,
+          "is_check": false
+        },
+        {
+          "session_id": 44,
+          "session_name": "Mon,Tue.of.FirstWeek(max: 2)",
+          "description": "Mon,Tue.of.FirstWeek(max: 2)",
+          "first_date": "2019 Apr 1",
+          "last_date": "2019 May 31",
+          "beginning_time": "2:00 PM",
+          "ending_time": "3:00 PM",
+          "days_of_week": "Mon, Tues",
+          "weeks_of_month": "1st week of every month",
+          "session_status": null,
+          "is_enable": false,
+          "is_check": false
+        },
+        {
+          "session_id": 45,
+          "session_name": "Wed.of.FirstWeek(max: 3)",
+          "description": "Wed.of.FirstWeek(max: 3)",
+          "first_date": "2019 Apr 1",
+          "last_date": "2019 May 31",
+          "beginning_time": "3:00 PM",
+          "ending_time": "4:00 PM",
+          "days_of_week": "Wed",
+          "weeks_of_month": "1st week of every month",
+          "session_status": null,
+          "is_enable": false,
+          "is_check": false
+        }
+      ],
+      "dc_enroll_dates": null,
+      "sessions_status": [
+        {
+          "session_id": 46,
+          "session_status": 0,
+          "partially_full_dates": [],
+          "waitlisted_enrolled_dates": [],
+          "is_enable": true,
+          "is_check": true
+        },
+        {
+          "session_id": 43,
+          "session_status": 0,
+          "partially_full_dates": [],
+          "waitlisted_enrolled_dates": [],
+          "is_enable": true,
+          "is_check": false
+        },
+        {
+          "session_id": 44,
+          "session_status": 0,
+          "partially_full_dates": [],
+          "waitlisted_enrolled_dates": [],
+          "is_enable": true,
+          "is_check": false
+        },
+        {
+          "session_id": 45,
+          "session_status": 0,
+          "partially_full_dates": [],
+          "waitlisted_enrolled_dates": [],
+          "is_enable": false,
+          "is_check": true
+        }
+      ],
+      "program_exceptionandextradates": [
+        {
+          "session_id": 46,
+          "exception_dates": [
+            "31 May 2019"
+          ],
+          "extra_dates": [
+            "30 May 2019"
+          ]
+        }
+      ],
+      "selected_session_date_summary": null,
+      "questions": [
+        {
+          "questions": [
+            {
+              "title": "DC Morgan - Lowercase Alpha",
+              "question": "DC Morgan - Lowercase Alpha Question",
+              "hint": "",
+              "answers": [],
+              "customquestion_index": "1",
+              "customquestion_id": 1035,
+              "use_answer_code": false,
+              "answer_type": "userEntry",
+              "answer_required": true,
+              "answer_format": "lowerCaseAlpha",
+              "answer_max_length": 100,
+              "default_answer": "",
+              "postal_code_type": 1,
+              "answer": "lowercase by morgan",
+              "permit_question": false,
+              "read_only": false
+            },
+            {
+              "title": "DC Morgan - Only Alpha",
+              "question": "DC Morgan - Only Alpha Question",
+              "hint": "",
+              "answers": [],
+              "customquestion_index": "2",
+              "customquestion_id": 1036,
+              "use_answer_code": false,
+              "answer_type": "userEntry",
+              "answer_required": true,
+              "answer_format": "alphaOnly",
+              "answer_max_length": 100,
+              "default_answer": "",
+              "postal_code_type": 1,
+              "answer": "oaq",
+              "permit_question": false,
+              "read_only": false
+            },
+            {
+              "title": "DC Morgan - Uppercase Alpha",
+              "question": "DC Morgan - Uppercase Alpha Question",
+              "hint": "",
+              "answers": [],
+              "customquestion_index": "3",
+              "customquestion_id": 1034,
+              "use_answer_code": false,
+              "answer_type": "userEntry",
+              "answer_required": true,
+              "answer_format": "upperCaseAlpha",
+              "answer_max_length": 100,
+              "default_answer": "",
+              "postal_code_type": 1,
+              "answer": "UUU  BY MORGAN",
+              "permit_question": false,
+              "read_only": false
+            }
+          ],
+          "group_id": 5,
+          "group_order": 1,
+          "group_header": "DC Morgan - User Entry Alpha Header Text",
+          "customquestion_index": null,
+          "postal_code_type": 0,
+          "answer": null
+        }
+      ],
+      "fee_summary": {
+        "reno": 1,
+        "subtotal": 0,
+        "tax": 0,
+        "total": -13.2
+      },
+      "program_pickups": {
+        "enable_authorized_pickups": false,
+        "show_authorized_pickups": true,
+        "authorized_pickups": [
+          {
+            "name": "Corey ANE-74796",
+            "email": "",
+            "phone": "",
+            "customer_id": 1200057
+          }
+        ],
+        "pickups": [
+          {
+            "name": "Becky 180604",
+            "email": "becky.peng@activenetwork.com",
+            "phone": "",
+            "customer_id": 1200150
+          },
+          {
+            "name": "Corey ANE-74796",
+            "email": "",
+            "phone": "",
+            "customer_id": 1200057
+          },
+          {
+            "name": "Corey CopyToTrainer",
+            "email": "corey.he@testcopy.com",
+            "phone": "",
+            "customer_id": 1200055
+          },
+          {
+            "name": "Corey He",
+            "email": "corey.he@test.com",
+            "phone": "+1 (123) 211-1231",
+            "customer_id": 1200056
+          },
+          {
+            "name": "Sally Zhang",
+            "email": "xx_sw@887.com",
+            "phone": "(445) 556-7665",
+            "customer_id": 91
+          },
+          {
+            "name": "Summer Wei",
+            "email": "xx_summerw@active.com",
+            "phone": "(232) 232-3232",
+            "customer_id": 23
+          },
+          {
+            "name": "Summer Zhang",
+            "email": "xx_222@163.com",
+            "phone": "(222) 222-2222",
+            "customer_id": 158
+          }
+        ]
+      },
+      "select_participant_id": 2,
+      "participants": [
+        {
+          "id": 1,
+          "name": "Bo Xu",
+          "validation_msg": null
+        },
+        {
+          "id": 2,
+          "name": "Bo Xu Valid",
+          "validation_msg": null
+        },
+        {
+          "id": 3,
+          "name": "Flora1 Xu",
+          "validation_msg": "Does not meet gender qualification."
+        }
+      ]
+    }
+  }
+}

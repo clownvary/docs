@@ -1,0 +1,46 @@
+@import '~shared/styles/variables.less';
+/* stylelint-disable max-nesting-depth, font-weight-notation, declaration-block-no-duplicate-properties */
+
+.an-theme-GreenGray {
+  .an-navigation {
+    .GreenGray-bar {
+      background: linear-gradient(to bottom, #f7f7f7 0%, #dbdbdb 100%);
+      border-bottom: 1px solid #ccc;
+
+      > li:not(.mycart) {
+        text-shadow: 0 0 0 rgba(000, 000, 000, 0), 0 1px 0 rgba(255, 255, 255, 1);
+        color: #5e5e5e;
+
+        > a {
+          color: #5c5c5c;
+
+          &.active {
+            box-shadow: 0 0 0 rgba(000, 000, 000, 0), inset 0 6px 30px rgba(087, 087, 087, 0.4);
+            font-weight: bold;
+            text-shadow: 0 -1px 0 rgba(000, 000, 000, 0.4), 0 1px 0 rgba(255, 255, 255, 0.3);
+            color: #fff;
+            background: linear-gradient(to top, #adadad 0%, #bcbcbc);
+            background: -webkit-gradient(linear, left top, left bottom, from(#adadad), to(#bcbcbc));
+          }
+
+          &:hover {
+            box-shadow: 0 0 0 rgba(000, 000, 000, 0), inset 0 0 10px rgba(168, 168, 168, 1);
+            text-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8), 0 1px 0 rgba(255, 255, 255, 0.3);
+            background: linear-gradient(to top, #c7c7c7 0%, #bcbcbc);
+            background: -webkit-gradient(linear, left top, left bottom, from(#c7c7c7), to(#dcdcdc));
+          }
+        }
+      }
+
+      .mycart {
+        background: linear-gradient(to bottom, #86a830 0%, #6e9037 100%);
+      }
+    }
+  }
+
+  .create-app-theme-main(@app-theme-gray-dark-color,@app-theme-gray-light-color,green);
+
+  .an-footer__separation-line {
+    border-color: #ccc;
+  }
+}

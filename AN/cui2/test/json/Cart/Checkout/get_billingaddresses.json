@@ -1,0 +1,91 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Succeesul",
+    "page_info": {
+      "order_by": "",
+      "total_records": 0,
+      "page_number": 1,
+      "total_records_per_page": 30,
+      "total_page": 1,
+      "order_option": "ASC"
+    }
+  },
+  "body": {
+    "billing_infos": {
+      "payers": [{
+        "customer_id": 12000040,
+        "name": "Luo&gt;&lt;10010 Luo&gt;&lt;10010",
+        "first_name": "Luo&gt;&lt;10010",
+        "last_name": "Luo&gt;&lt;10010",
+        "middle_name": "Luo&gt;&lt;10010 Luo&gt;&lt;10010",
+        "mailing_name": "Luo&gt;&lt;10010 Luo&gt;&lt;10010",
+        "real_mailing_name": "Luo&gt;&lt;10010 Luo&gt;&lt;10010",
+        "zip_code": "65983",
+        "address1": "Grwgwg",
+        "address2": "",
+        "country": null,
+        "city": "Wegwe",
+        "state": "AA"
+      }, {
+        "customer_id": 166,
+        "name": "Evan Zhou",
+        "first_name": "Evan1",
+        "last_name": "Evan2",
+        "middle_name": "",
+        "mailing_name": "Evan Zhou",
+        "real_mailing_name": "mailing name1usgsddsajdsajdsajgsadjhgasjdhgasjhdgasjhgdasjhgdjsahgjahsgdjashgdjashgdjashgdjashgdjasgjdsagjshagjas",
+        "zip_code": "12345",
+        "address1": "523 E Florida St",
+        "address2": "hkjshdk hjdsh hjs",
+        "country": "US",
+        "city": "Van Nuys",
+        "state": "TX"
+      }, {
+        "customer_id": 4367,
+        "name": "Add Zhou",
+        "first_name": "Add1",
+        "last_name": "Add2",
+        "middle_name": "",
+        "mailing_name": "Add Zhou",
+        "real_mailing_name": "mailing name2",
+        "zip_code": "11111",
+        "address1": "Keji Rd.2nd, No.68",
+        "address2": "",
+        "country": "CA",
+        "city": "Nuys",
+        "state": "AB"
+      }, {
+        "customer_id": 2359,
+        "name": "Newff Zhou",
+        "first_name": "Newff1",
+        "last_name": "Newff2",
+        "middle_name": "",
+        "mailing_name": "Newff Zhou",
+        "real_mailing_name": "",
+        "zip_code": "",
+        "address1": "",
+        "address2": "",
+        "country": "",
+        "city": "",
+        "state": ""
+      }, {
+        "customer_id": 2399,
+        "name": "",
+        "first_name": "empty",
+        "last_name": "empty",
+        "middle_name": "",
+        "mailing_name": "",
+        "real_mailing_name": "",
+        "zip_code": "",
+        "address1": "",
+        "address2": "",
+        "country": "",
+        "city": "",
+        "state": ""
+      }],
+      "payer_id": 166,
+      "new_payer_id": 0
+    }
+  }
+}

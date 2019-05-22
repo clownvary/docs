@@ -1,0 +1,62 @@
+@import '~shared/styles/variables.less';
+
+.program__program-info {
+  margin-bottom: 24px;
+
+  .listbox {
+    margin: 4px 0;
+
+    .listbox-item {
+      width: 39%;
+      margin-right: 12px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.session-facility,
+      &.associated-category {
+        flex: 1;
+      }
+
+      .grade-age-restriction,
+      .associated-category__primary {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media @media-query-medium {
+  .program__program-info {
+    margin-top: 24px;
+
+    .listbox {
+      margin: 0 0 4px;
+
+      .listbox-item {
+        width: 33%;
+      }
+    }
+  }
+}
+
+@media @media-query-small {
+  .program__program-info {
+    margin: 16px 0 8px;
+
+    .listbox {
+      margin: 0;
+
+      .listbox-item {
+        width: 100%;
+        margin: 0 0 4px;
+
+        &.session-facility,
+        &.associated-category {
+          flex: auto;
+        }
+      }
+    }
+  }
+}

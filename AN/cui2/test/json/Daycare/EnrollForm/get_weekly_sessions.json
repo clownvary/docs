@@ -1,0 +1,243 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Succeesul",
+    "page_info": {
+      "order_by": "",
+      "total_records_per_page": 30,
+      "total_records": 0,
+      "page_number": 1,
+      "total_page": 1,
+      "order_option": "ASC"
+    }
+  },
+  "body": {
+    "program_sessions_result": {
+      "allow_individual_selection": true,
+      "reservation_unit": 3,
+      "program_sessions": null,
+      "dc_enroll_dates": [
+        {
+          "dc_session_date_id": 3738,
+          "dc_session_id": 38,
+          "session_date": "Feb 17, 2019"
+        },
+        {
+          "dc_session_date_id": 3739,
+          "dc_session_id": 38,
+          "session_date": "Feb 23, 2019"
+        },
+        {
+          "dc_session_date_id": 3740,
+          "dc_session_id": 38,
+          "session_date": "Mar 2, 2019"
+        },
+        {
+          "dc_session_date_id": 3741,
+          "dc_session_id": 38,
+          "session_date": "Mar 4, 2019"
+        },
+        {
+          "dc_session_date_id": 3742,
+          "dc_session_id": 38,
+          "session_date": "Mar 25, 2019"
+        },
+        {
+          "dc_session_date_id": 3743,
+          "dc_session_id": 38,
+          "session_date": "Mar 30, 2019"
+        },
+        {
+          "dc_session_date_id": 3744,
+          "dc_session_id": 38,
+          "session_date": "Apr 1, 2019"
+        },
+        {
+          "dc_session_date_id": 3745,
+          "dc_session_id": 38,
+          "session_date": "Apr 6, 2019"
+        },
+        {
+          "dc_session_date_id": 3746,
+          "dc_session_id": 38,
+          "session_date": "Apr 27, 2019"
+        },
+        {
+          "dc_session_date_id": 3747,
+          "dc_session_id": 38,
+          "session_date": "Apr 29, 2019"
+        },
+        {
+          "dc_session_date_id": 3748,
+          "dc_session_id": 38,
+          "session_date": "May 4, 2019"
+        },
+        {
+          "dc_session_date_id": 3749,
+          "dc_session_id": 38,
+          "session_date": "May 6, 2019"
+        },
+        {
+          "dc_session_date_id": 3750,
+          "dc_session_id": 38,
+          "session_date": "May 25, 2019"
+        },
+        {
+          "dc_session_date_id": 3751,
+          "dc_session_id": 38,
+          "session_date": "May 27, 2019"
+        },
+        {
+          "dc_session_date_id": 3752,
+          "dc_session_id": 38,
+          "session_date": "Jun 1, 2019"
+        },
+        {
+          "dc_session_date_id": 3753,
+          "dc_session_id": 38,
+          "session_date": "Jun 3, 2019"
+        },
+        {
+          "dc_session_date_id": 3754,
+          "dc_session_id": 38,
+          "session_date": "Jun 24, 2019"
+        },
+        {
+          "dc_session_date_id": 3755,
+          "dc_session_id": 38,
+          "session_date": "Jun 29, 2019"
+        },
+        {
+          "dc_session_date_id": 3756,
+          "dc_session_id": 38,
+          "session_date": "Jul 1, 2019"
+        },
+        {
+          "dc_session_date_id": 3757,
+          "dc_session_id": 38,
+          "session_date": "Jul 6, 2019"
+        },
+        {
+          "dc_session_date_id": 3758,
+          "dc_session_id": 38,
+          "session_date": "Jul 27, 2019"
+        },
+        {
+          "dc_session_date_id": 3759,
+          "dc_session_id": 38,
+          "session_date": "Jul 29, 2019"
+        },
+        {
+          "dc_session_date_id": 3760,
+          "dc_session_id": 38,
+          "session_date": "Aug 3, 2019"
+        },
+        {
+          "dc_session_date_id": 3761,
+          "dc_session_id": 38,
+          "session_date": "Aug 5, 2019"
+        },
+        {
+          "dc_session_date_id": 3762,
+          "dc_session_id": 38,
+          "session_date": "Aug 26, 2019"
+        },
+        {
+          "dc_session_date_id": 3763,
+          "dc_session_id": 38,
+          "session_date": "Aug 31, 2019"
+        },
+        {
+          "dc_session_date_id": 3764,
+          "dc_session_id": 38,
+          "session_date": "Sep 2, 2019"
+        },
+        {
+          "dc_session_date_id": 3765,
+          "dc_session_id": 38,
+          "session_date": "Sep 7, 2019"
+        },
+        {
+          "dc_session_date_id": 3766,
+          "dc_session_id": 38,
+          "session_date": "Sep 28, 2019"
+        },
+        {
+          "dc_session_date_id": 3767,
+          "dc_session_id": 38,
+          "session_date": "Sep 30, 2019"
+        },
+        {
+          "dc_session_date_id": 3768,
+          "dc_session_id": 38,
+          "session_date": "Oct 5, 2019"
+        },
+        {
+          "dc_session_date_id": 3769,
+          "dc_session_id": 38,
+          "session_date": "Oct 7, 2019"
+        },
+        {
+          "dc_session_date_id": 3770,
+          "dc_session_id": 38,
+          "session_date": "Oct 26, 2019"
+        },
+        {
+          "dc_session_date_id": 3771,
+          "dc_session_id": 38,
+          "session_date": "Oct 28, 2019"
+        },
+        {
+          "dc_session_date_id": 3772,
+          "dc_session_id": 38,
+          "session_date": "Nov 2, 2019"
+        },
+        {
+          "dc_session_date_id": 3773,
+          "dc_session_id": 38,
+          "session_date": "Nov 4, 2019"
+        },
+        {
+          "dc_session_date_id": 3774,
+          "dc_session_id": 38,
+          "session_date": "Nov 25, 2019"
+        },
+        {
+          "dc_session_date_id": 3775,
+          "dc_session_id": 38,
+          "session_date": "Nov 30, 2019"
+        },
+        {
+          "dc_session_date_id": 3776,
+          "dc_session_id": 38,
+          "session_date": "Dec 2, 2019"
+        },
+        {
+          "dc_session_date_id": 3777,
+          "dc_session_id": 38,
+          "session_date": "Dec 7, 2019"
+        },
+        {
+          "dc_session_date_id": 3778,
+          "dc_session_id": 38,
+          "session_date": "Dec 28, 2019"
+        },
+        {
+          "dc_session_date_id": 3779,
+          "dc_session_id": 38,
+          "session_date": "Dec 30, 2019"
+        },
+        {
+          "dc_session_date_id": 3780,
+          "dc_session_id": 38,
+          "session_date": "Jan 4, 2020"
+        },
+        {
+          "dc_session_date_id": 3781,
+          "dc_session_id": 38,
+          "session_date": "Jan 6, 2020"
+        }
+      ]
+    }
+  }
+}

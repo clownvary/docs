@@ -1,0 +1,58 @@
+@import '~shared/styles/variables.less';
+
+.coupon-list-wrapper {
+  .icon-svg {
+    .svg-size(16px);
+  }
+
+  .listWrapper {
+    margin-top: 10px;
+  }
+
+  .error-message {
+    flex: 1 0 100%;
+    margin: 0;
+    margin-top: -8px;
+    word-break: break-word;
+
+    .icon-svg {
+      padding: 2px;
+      padding-top: 1px;
+      margin-right: 4px;
+
+      &:hover {
+        cursor: default;
+      }
+    }
+  }
+
+  .listbox-item {
+    padding: 6px 0;
+    margin-bottom: 0;
+
+    &__content {
+      display: inline-flex;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      width: 100%;
+
+      .code {
+        flex: 0 1 180px;
+        padding-right: 10px;
+        color: @dove-gray;
+      }
+
+      .discount {
+        flex: 1 0 80px;
+        text-align: right;
+        color: @color-text-dark;
+      }
+
+      .remove {
+        flex: 0 0 24px;
+        text-align: center;
+      }
+    }
+  }
+}

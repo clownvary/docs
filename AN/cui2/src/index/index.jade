@@ -1,0 +1,55 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page isELIgnored="false" %>
+doctype html
+
+<% String appPath = request.getContextPath(); %>
+
+- var diff = htmlWebpackPlugin.options.diff;
+- var linkExtraPrefix = htmlWebpackPlugin.options.linkExtraPrefix;
+- var baseUrl = "/<%=appPath%>" + linkExtraPrefix + "${site_name}";
+- var akamaiUrl = "${akamai_url}" + baseUrl;
+- var akamaiSecurityUrl = "${akamai_security_url}" + baseUrl;
+
+html(lang="en" class="cui-style-hook")
+
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1")
+    title ${public_url_tab_wording}
+    link(href!=akamaiUrl + htmlWebpackPlugin.files.favicon rel="shortcut icon" type="image/x-icon")
+    script.
+        window.__WEBPACK_ASSETS_PATH__ = function(path) {
+          var regexp = /\/js\/chunk\.intl-polyfill/;
+          if (path.match(regexp)) {
+            return path.replace(regexp, "!{baseUrl}" + '/js/chunk.intl-polyfill');
+          }
+          return path;
+        };
+
+    if diff !== "static"
+      each val, index in htmlWebpackPlugin.files.css
+        if val.indexOf("vendor") !== -1
+          link(href!=baseUrl + val rel="stylesheet")
+        else
+          link(href!=akamaiUrl + val rel="stylesheet")
+    script.
+        window.__version = "${cui_version}";
+        window.__akamaiUrl = "!{akamaiUrl}";
+        window.__siteBaseName = "/${site_name}";
+        window.__reduxInitialState = {
+          currentSite: "/${site_name}",
+          systemSettings: ${originalConfig},
+          configurations: ${configuration}
+        };
+  body
+
+    #app-root.
+      ${content}
+
+    script(src!=akamaiSecurityUrl + "/js/jquery.min.js")
+    script(src!=akamaiSecurityUrl + "/js/tealium-${tealium_service_mode}.js")
+    script(src!=akamaiSecurityUrl + "/js/ams-security-api.js")
+
+    each val, index in htmlWebpackPlugin.files.chunks
+      script(src!=akamaiUrl + val.entry)

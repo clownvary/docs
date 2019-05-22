@@ -1,0 +1,242 @@
+@import '~shared/styles/variables.less';
+@import '~react-base-ui/lib/less/variables/color.less';
+
+.session-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  &__body {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 54px;
+    padding: 7px 0 7px 20px;
+  }
+
+  &__footer {
+    padding: 4px 14px 4px 60px;
+    font-size: @font-size-less-base;
+    color: @dove-gray;
+    background-color: @alabaster;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    .session-times__status {
+      align-self: center;
+      padding: 0 2px 0 1px;
+      margin-left: 10px;
+      line-height: 14px;
+    }
+
+    .session-times__status span {
+      display: inline-block;
+      font-size: @font-size-less-base;
+      white-space: nowrap;
+      transform: scale(0.83, 0.83);
+    }
+
+    &__item {
+      display: flex;
+    }
+
+    &__label {
+      margin-right: 4px;
+      font-weight: @font-weight-semiBold;
+      white-space: nowrap;
+    }
+  }
+
+  &__selectable {
+    cursor: pointer;
+  }
+
+  &__selectable &__body {
+    padding-left: 6px;
+  }
+
+  &__selectable &__footer {
+    padding-left: 22px;
+  }
+
+  &__order {
+    display: inline-block;
+    align-self: center;
+    width: 30px;
+    margin-bottom: 2px;
+  }
+
+  &__selection {
+    display: flex;
+    align-items: center;
+    margin: 6px 0 6px -18px;
+
+    .icon-svg {
+      background-color: @white;
+      .svg-size(24px);
+    }
+
+    .icon-svg-check-circle-o {
+      color: @white;
+      fill: @new-gd-color-gray-60;
+    }
+
+    .icon-svg-check-circle-c {
+      color: @cyan-blue;
+      fill: @white;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__disabled {
+    cursor: not-allowed;
+    color: @dove-gray;
+
+    .icon-svg {
+      cursor: not-allowed;
+      background-color: transparent;
+    }
+
+    .icon-svg-check-circle-o {
+      color: @new-gd-color-gray-40;
+      fill: @new-gd-color-gray-60;
+    }
+
+    .icon-svg-check-circle-c {
+      color: @new-gd-color-gray-60;
+      fill: @white;
+    }
+  }
+
+  &__disabled &__body {
+    background-color: @alabaster;
+    border-bottom: solid 1px @gray-lighter;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10px;
+
+    .session-times {
+      display: flex;
+      flex-direction: row;
+      padding-left: 10px;
+
+      & > div {
+        padding-top: 1px;
+      }
+    }
+
+    .session-dates {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      &__date {
+        display: flex;
+      }
+
+      &__text {
+        display: inline-block;
+        max-width: 223px;
+        font-size: @font-size-less-base;
+        color: @dove-gray;
+      }
+    }
+
+    .icon-svg {
+      .svg-size(14px);
+
+      flex-shrink: 0;
+      margin-top: 2px;
+      margin-right: 6px;
+      cursor: default;
+      color: @river-bed;
+    }
+  }
+
+  &__status {
+    position: absolute;
+    top: -9px;
+    right: -1px;
+  }
+
+  .icon-svg-cancel-circle {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    cursor: pointer;
+    color: @cyan-blue;
+    .svg-size(20px);
+  }
+}
+
+@media @media-query-medium {
+  .session-card {
+    &__content {
+      color: @dark-charcoal;
+    }
+
+    &__footer {
+      background-color: @new-gd-color-gray-40;
+    }
+  }
+
+  .session-card__disabled {
+    .session-card__content {
+      color: @dove-gray;
+    }
+  }
+}
+
+@media @media-query-small {
+  .session-card {
+    &.is-tag {
+      .session-card__body {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: 54px;
+        padding-top: 16px;
+      }
+    }
+
+    &__content {
+      flex-direction: column;
+      margin-left: 6px;
+
+      .session-dates__text {
+        margin-left: 20px;
+      }
+
+      .session-times {
+        flex: 1 1 auto;
+        padding-left: 0;
+      }
+    }
+
+    &__footer {
+      padding-left: 56px;
+      background-color: @new-gd-color-gray-40;
+
+      &__item {
+        flex-direction: column;
+
+        .session-times__status {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

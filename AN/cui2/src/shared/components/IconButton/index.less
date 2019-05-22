@@ -1,0 +1,44 @@
+@import '~shared/styles/variables.less';
+
+.btn {
+  &&-minimal {
+    color: @picton-blue;
+    background: transparent;
+    border: none;
+
+    .icon {
+      font-size: inherit;
+    }
+
+    &:hover,
+    &:active {
+      background-color: @mystic;
+    }
+  }
+
+  &&-icon-only {
+    min-width: auto;
+    min-height: auto;
+    padding: 10px 12px;
+
+    &.btn-xs,
+    &.btn--xs {
+      padding: 2px 4px;
+    }
+
+    &.btn-sm,
+    &.btn--sm {
+      padding: 6px 8px;
+    }
+
+    &.btn-lg,
+    &.btn--lg {
+      padding: 13px 15px;
+    }
+
+    &.btn-xl,
+    &.btn--xl {
+      padding: 12px 18px;
+    }
+  }
+}

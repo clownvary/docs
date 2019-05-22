@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Succeesul",
+    "page_info": {
+      "order_by": "",
+      "page_number": 1,
+      "total_page": 1,
+      "total_records": 0,
+      "total_records_per_page": 30,
+      "order_option": "ASC"
+    }
+  },
+  "body": {
+    "need_pay": true
+  }
+}

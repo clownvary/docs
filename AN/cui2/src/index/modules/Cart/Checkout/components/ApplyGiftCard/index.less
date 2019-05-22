@@ -1,0 +1,152 @@
+@import '~shared/styles/variables.less';
+@temp_text_color: #748288;
+@temp_title_color: #313741;
+/* stylelint-disable max-nesting-depth, no-descending-specificity */
+
+.applygiftcard-panel {
+  margin-top: 18px;
+  margin-bottom: 0;
+
+  &.an-panel {
+    padding: 0;
+    border: 0;
+  }
+
+  &.hide-panel {
+    margin-top: 0;
+  }
+
+  .applygiftcard-panel__form {
+    .flex('flexbox');
+    .flex-layout('left');
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    & > .input-group {
+      .flex('flexbox');
+
+      flex: 1;
+
+      .giftcard-combobox {
+        display: flex;
+        flex: 1;
+        height: 30px;
+        margin-right: 10px;
+      }
+
+      button {
+        flex: 0 0 64px;
+        margin: 0;
+      }
+    }
+  }
+
+  .applieditems-box {
+    .flex('flexbox');
+
+    align-items: flex-start;
+    flex-direction: row;
+
+    .error-message {
+      flex: 1 0 100%;
+      margin: 0;
+      word-break: break-word;
+
+      .icon-svg {
+        margin-right: 6px;
+        .svg-size(16px);
+
+        &:hover {
+          cursor: default;
+        }
+      }
+    }
+
+    .items-list {
+      width: 100%;
+      list-style: none;
+
+      li {
+        .flex('flexbox');
+        .flex-layout('left');
+
+        align-items: flex-start;
+        flex-direction: row;
+        margin: 10px 0;
+        word-break: break-word;
+
+        .item-list__title {
+          flex: 1 0;
+          color: @temp_title_color;
+        }
+
+        .item-list__amount {
+          margin-right: 2px;
+          margin-left: 10px;
+        }
+
+        .item-list__number {
+          flex: 1 1 100%;
+          margin-top: 10px;
+        }
+
+        .item-list__remove {
+          .icon-svg {
+            color: @temp_text_color;
+          }
+        }
+      }
+
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.giftcard-combobox__list {
+  .an-list__body-single > li {
+    padding: 0;
+
+    &:last-child .custom-option-render {
+      border-bottom: none;
+    }
+  }
+
+  .custom-option-render {
+    .flex('flexbox');
+
+    flex-direction: row;
+    padding: 5px 0;
+    list-style: none;
+    border-bottom: solid 1px @custom-option-border-lightgray;
+
+    li {
+      flex: 1 1 100%;
+      margin: 5px 10px;
+      line-height: 16px;
+      word-break: break-word;
+      word-wrap: break-word;
+      white-space: initial;
+
+      &.cus_title {
+        color: @temp_title_color;
+      }
+
+      &.cus_text {
+        word-break: break-all;
+        color: @temp_text_color;
+      }
+    }
+
+    &:hover {
+      background-color: @cerulean;
+
+      li {
+        color: @white;
+        background-color: @cerulean;
+      }
+    }
+  }
+}
