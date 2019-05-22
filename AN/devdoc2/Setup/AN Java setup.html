@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>AN Java setup</title>
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:Location msdt:dt="string">Development</mso:Location>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">O&#39;Flaherty, Bridget</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Bailey, Jay (CWE)</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+<h2>Overview</h2>
+
+<p>The document covers local environment setup for following projects:</p>
+
+<ul>
+<li>APDInterface [lib]</li>
+<li>APDInterfaceEMV [lib]</li>
+<li>APDInterfaceMoneris [lib]</li>
+<li>ActiveNetPackage [web]</li>
+<li>ActiveNetServlet [lib]</li>
+<li>EntryPoint [lib]</li>
+<li>EntryPointApplet [lib]</li>
+<li>PassProduction [lib]</li>
+<li>PointOfSale [lib]</li>
+</ul>
+
+
+<p><strong>[lib]</strong> indicates the project is not a runnable project but generates jar files to be referred  by other projects.</p>
+
+<p><strong>[web]</strong> indicates the project is runnable.</p>
+
+<h3>Preparation</h3>
+
+<ol>
+<li>svn checkout buildtools at: <a href="https://fndsvn.dev.activenetwork.com/foundations/core/buildtools/trunk">https://fndsvn.dev.activenetwork.com/foundations/core/buildtools/trunk</a>, the folder name has to be exact <strong>buildtools</strong>.</li>
+<li>svn checkout projects mentioned in overview into same directory, or 
+alternatively, checkout buildtools into existing projects dir. The 
+structure is like:</li>
+</ol>
+
+
+<pre><code>├── AN
+│&nbsp;&nbsp; ├── APDInterface
+│&nbsp;&nbsp; ├── APDInterfaceEMV
+│&nbsp;&nbsp; ├── APDInterfaceMoneris
+│&nbsp;&nbsp; ├── ActiveNetClients
+│&nbsp;&nbsp; ├── ActiveNetPackage
+│&nbsp;&nbsp; ├── ActiveNetServlet
+│&nbsp;&nbsp; ├── EntryPoint
+│&nbsp;&nbsp; ├── EntryPointApplet
+│&nbsp;&nbsp; ├── PassProduction
+│&nbsp;&nbsp; ├── PointOfSale
+│&nbsp;&nbsp; ├── buildtools
+│&nbsp;&nbsp; ├── JReport
+│&nbsp;&nbsp; └── cert
+</code></pre>
+
+<p>Note: cert/ is needed to sign jars locally, Third\ Party\ Stuff is no longer needed to build these projects.</p>
+
+<p>Note: checkout JReport if you want to run with jreport-servlet locally</p>
+
+<h3>Build from command line</h3>
+
+<h4>Install Cygwin[windows only]</h4>
+
+<p>The preparation is needed on windows only, for OS X or linux, jump to next section. Download and install cygwin at: <a href="http://cygwin.com/install.html">http://cygwin.com/install.html</a>,
+ do remember to add cygwin bin/ dir to system path, with cygwin 
+installed, unix commands are available in windows command line, e.g try <em>ls</em> to verify the installation.</p>
+
+<h4>Add JAVA_HOME</h4>
+
+<p>Windows:
+add java home folder which should contains bin/ as JAVA_HOME to environment variables.</p>
+
+<p>*nix Based:
+add JAVA_HOME to .profile or bash profile like: <code>export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/HOME</code>, then <code>source ~/.profile</code> to take effect, try <code>echo $JAVA_HOME</code> to verify, it should print out the correct path</p>
+
+<h4>Build a project</h4>
+
+<ol>
+<li>open up command line, change directory to project you want to build, e.g
+<code>cd ActiveNetServlet</code></li>
+<li>commands on windows all start with <code>ant</code>, it starts with <code>./ant.sh</code> on OS X or linux.
+
+<ol>
+<li>to build on windows: <code>ant fullclean main startup</code>
+
+<ul>
+<li><code>fullclean</code>: is to do a full clean up for previous build</li>
+<li><code>main</code>: is to compile source code</li>
+<li><code>startup</code>: is to start the application in debug mode 
+after compilation, note the command applies to web server project only, 
+for AN it's ActiveNetServlet project</li>
+</ul>
+</li>
+<li>to build on OS X: <code>./ant.sh fullclean main debug</code>, run <code>chmod +x *.sh</code> if it gives permission denied error</li>
+</ol>
+</li>
+<li>More on <code>main</code>: it compiles the project and also package 
+and copy the executable to a specific location, on windows it's 
+C:\active{project}, on OS X it's ~/active/{project}, it is also same 
+runtime structure on other environments include Production.</li>
+<li>web server can be reached via: <a href="http://localhost:8080/linux01/servlet/processAdminLogin.sdi">http://localhost:8080/linux01/servlet/processAdminLogin.sdi</a>, <em>linux01</em> is site name can be configured in config/service.properties: <code>moreJavaOptions=-Dsite.name=/linux01/</code>, the url structures are same cross environments.</li>
+</ol>
+
+
+<h4>Available commands</h4>
+
+<ul>
+<li><code>fullclean</code>: remove executable structure from previous build</li>
+<li><code>main</code>: compilation</li>
+<li><code>debug</code>: *nix only, to startup web application in debug mode, default debug port is 5005</li>
+<li><code>startup</code>: windows only, to startup web application in debug mode, default debug port is 5005</li>
+<li><code>run</code>: *nix only, to startup web application in non-debug mode</li>
+<li><code>jreport</code>: integrate AUI with jreport-servlet, make sure jreport/jreport-servlet-dist exists, refer to <code>Run with Jreport-servlet</code> for more details below</li>
+<li><code>test</code>: run unit test</li>
+<li><code>coverage</code>: run test coverage, coverage report will be generated when there's no unit test failure</li>
+<li><code>dependencies</code>: generate dependencies report</li>
+<li><code>pmd</code>: run PMD check</li>
+<li><code>findbugs</code>: run findbugs check</li>
+<li><code>install</code>: for lib project only, install api jar to local repository, on windows it's C:\ivy2, on OS X it's ~/.ivy2</li>
+<li><code>checkstyle</code>: run checkstyle, which uses an embedded style rule in buildtools</li>
+</ul>
+
+
+<p>All above commands can be combined into a single one like: <code>ant fullclean main test coverage pmd checkstyle findbugs debug</code></p>
+
+<h4>Run executable</h4>
+
+<p>Other than build and run a project at same time, the executable structure allows to run separately as well.</p>
+
+<p>runtime structure:</p>
+
+<pre><code>├── ActiveNetServlet
+│&nbsp;&nbsp; ├── config
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── btrace
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── lib
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── xsd
+│&nbsp;&nbsp; ├── jetty
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── servlet
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── webapps
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── work
+│&nbsp;&nbsp; ├── lib
+│&nbsp;&nbsp; ├── logs
+│&nbsp;&nbsp; └── ui
+</code></pre>
+
+<p>This is also the exact structure gets deployed onto environments 
+include Production, the web application can be started by 
+start_service.sh/bat in config.</p>
+
+<ul>
+<li>config: all kinds of configuration files include start-stop batch/shell scripts, spring configuration files, sdi.ini</li>
+<li>jetty: web files, includes html, jsp, static resource files</li>
+<li>lib: dependency jars</li>
+<li>logs: log files include application log, gc log, tracer log</li>
+<li>ui: used to be empty</li>
+</ul>
+
+
+<h3>Setup Eclipse</h3>
+
+<h4>IvyDE[required]</h4>
+
+<h5>Install from update site</h5>
+
+<ol>
+<li>Follow instruction on <a href="https://ant.apache.org/ivy/ivyde/download.html">https://ant.apache.org/ivy/ivyde/download.html</a> to install plugin via update site.</li>
+</ol>
+
+
+<h5>Install manually</h5>
+
+<ol>
+<li>download ivyDE.zip from <a href="https://fndsvn.dev.activenetwork.com/foundations/infrastructure/ivyde-eclipse-plugin/ivyde.zip">https://fndsvn.dev.activenetwork.com/foundations/infrastructure/ivyde-eclipse-plugin/ivyde.zip</a>, unzip it.</li>
+<li>For windows, go to eclipse install path, copy features/ and plugins/ to same folders.</li>
+<li>For OS X, goto applications, find eclipse.app, right click -&gt; 
+show content -&gt; Contents -&gt; Eclipse, merge features/ and plugins/ 
+to same folders</li>
+</ol>
+
+
+<h5>Configuration</h5>
+
+<ol>
+<li>Eclipse File -&gt; Import -&gt; Existing Projects into Workspace 
+-&gt; Next -&gt; Browse to find buildtools -&gt; Finish to import 
+buildtools</li>
+<li>Eclipse -&gt; Preference -&gt; Ivy -&gt; Settings -&gt; Workspace -&gt; find buildtools/ivy/ivysettings.xml -&gt; OK</li>
+<li>do #4 first, go back here if projects cannot be imported into 
+eclipse, this step is not needed as long as project can be imported. cd 
+to project dir to be imported, run <code>g eclipse</code> to generate eclipse .project and .classpath file if the project was never imported into eclipse</li>
+<li>Eclipse -&gt; File -&gt; Import -&gt; Existing Project into 
+Workspace -&gt; Next -&gt; Browse to find projects to be imported -&gt; 
+Finish</li>
+<li>Right click on imported project -&gt; Build path -&gt; Configure 
+build path -&gt; Java build path -&gt; Libraries, remove all libs except
+ JRE System Library; Add Library -&gt; IvyDE Managed Dependencies -&gt; 
+Next -&gt; Browser ivy.xml in project root -&gt; checked runtime and 
+test if they're not -&gt; Finish -&gt; OK; this is to switch to use 
+IvyDE to manage dependencies in IDE</li>
+<li>To resolve dependencies in eclipse, right click on the project -&gt;
+ Ivy -&gt; Resolve, recommend to resolve from command line first before</li>
+<li>Repeat above steps to import all ANET java projects</li>
+</ol>
+
+
+<h4>EclEmma</h4>
+
+<ol>
+<li>download latest plugin at <a href="http://eclemma.org/download.html">http://eclemma.org/download.html</a>, unzip it and merge features/ plugins/ into eclipse installation directory, then restart to take effect</li>
+<li>to run with coverage, select a junit java in Project explorer, right click -&gt; Coverage As -&gt; Unit test</li>
+</ol>
+
+
+<h4>FindBugs</h4>
+
+<ol>
+<li>download latest plugin at <a href="http://sourceforge.net/projects/findbugs/files/findbugs%20eclipse%20plugin/">http://sourceforge.net/projects/findbugs/files/findbugs%20eclipse%20plugin/</a>, unzip and copy the entire folder into eclipse plugins/, then restart to take effect</li>
+<li>to scan code with findbugs, right click on a project -&gt; Find Bugs -&gt; Find Bugs</li>
+</ol>
+
+
+<h4>PMD</h4>
+
+<ol>
+<li>Eclipse Help -&gt; Eclipse Marketplace -&gt; Find: pmd to find pmd -&gt; Install</li>
+</ol>
+
+
+<h3>Daily development</h3>
+
+<h4>Code changes in ActiveNetServlet</h4>
+
+<ol>
+<li><code>ant fullclean main debug</code> to startup ActiveNetServlet locally with default debug port 5005</li>
+<li>commit code changes to SVN after testing locally</li>
+<li>execute build job in <a href="http://anjenkinsm.dev.activenetwork.com:8080/view/Linux-View/">http://anjenkinsm.dev.activenetwork.com:8080/view/Linux-View/</a>
+
+<ol>
+<li>001-BUILD-AUI-1540: build 15.40</li>
+<li>001-BUILD-AUI-1600: build 16.0</li>
+<li>001-BUILD-AUI-NFS-TRUNK: build trunk</li>
+</ol>
+</li>
+</ol>
+
+<h4>DB Schema Change for ActiveNetServlet with Kit Manager</h4>
+
+<ol>
+<li>Refer to ActiveNetServlet Kit Manager help: <a href="https://fndsvn.dev.activenetwork.com/ActiveNet/trunk/ActiveNetServlet/KitManager/README.md">https://fndsvn.dev.activenetwork.com/ActiveNet/trunk/ActiveNetServlet/KitManager/README.md</a></li>
+<li>Quick overview for schema changes in Trunk:
+<ol>
+<li>Make your changes to the files in your local trunk\ActiveNetServlet\KitManager folder, and commit it to SVN.</li>
+<li>Request to DBE ActiveNet_PDE@activenetwork.com (.ActiveNet Product Database Engineering) to be reviewed.</li>
+<li>Once the review is passed, add your script into the kit for Trunk.</li>
+<ul>
+<li>Go to <a href="https://kitmanager.dev.activenetwork.com">https://kitmanager.dev.activenetwork.com/</a>, locate the release type 'ActiveNet'. Note: If new release, may need to create a new release and kit.</li>
+<li>Click `Add File(s)` link, then copy the SVN URL into the text-box field line by line for any new files to be added to the kit</li>
+<li>Click `Submit` button and then click `Refresh Kit` link</li>
+<li>After refresh, the new files should show in the list</li>
+<li>You can also check this file, it should include the new added files: https://fndsvn.dev.activenetwork.com/ActiveNet/Trunk/ActiveNetServlet/KitManager/Deployment/<version>_ERD_ActiveNet_DDL.sql.</li>
+
+</ul>
+</ol>
+</li>
+</ol>
+
+
+<h3>Code changes in lib projects[take ActiveNetPackage as an example]</h3>
+
+<ol>
+<li>make sure the changes is unit tested</li>
+<li><code>cd ActiveNetPackage</code></li>
+<li><code>ant fullclean main install</code>: this would build ActiveNetPackage into a versioned jar, the version # is displayed in console after <code>install</code>, which can also read from build-ivy.xml in project root, say the version # is 16.1.0.1-SNAPSHOT</li>
+<li>open ActiveNetServlet/ivy.xml, find ActiveNetPackage, update the version to be above</li>
+<li><code>cd ActiveNetServlet</code>, <code>ant fullclean main debug</code> to test Servlet with latest ActiveNetPackage</li>
+<li>when changes is tested locally, commit ActiveNetPackage changes to SVN</li>
+<li>go to <a href="http://anjenkinsm.dev.activenetwork.com:8080/view/Linux-View/job/Release-Lib/">http://anjenkinsm.dev.activenetwork.com:8080/view/Linux-View/job/Release-Lib/</a>
+ -&gt; Build with Parameters, select APP, fill in SVNPATH, note you 
+don't have to specify lib project in SVNPATH, e.g APP = 
+ActiveNetPackage, SVNPATH = 
+https://fndsvn.dev.activenetwork.com/ActiveNet/trunk/ instead of <del>https://fndsvn.dev.activenetwork.com/ActiveNet/trunk/ActiveNetPackage</del> is to release trunk ActiveNetPackage</li>
+<li>release email will be sent with a formal version #, update the 
+version # into ActiveNetServlet/ivy.xml to let servlet use latest 
+ActiveNetPackage, then retest and commit ivy.xml into SVN and release 
+ActiveNetServlet</li>
+</ol>
+
+
+<h4>Run with Jreport-servlet</h4>
+
+<ol>
+<li>checkout jreport-servlet-dist from svn: 
+trunk[branches]/JReport/jreport-servlet-dist to be in same directory 
+with ActiveNetServlet</li>
+<li><p>update ActiveNetServlet/config/service.properties for following 
+values, in which jrs.remote.host indicates remote JReport server 
+address, jrs.remote.rmiport indicates JReport server rmi port, both are 
+required, make sure remote host with port is telnet-able</p>
+
+<pre><code> jrs.remote.host=10.119.164.211
+ jrs.remote.rmiport=1129
+</code></pre></li>
+<li><p>update systeminfo to correct jreport_jsp_path like:</p>
+
+<pre><code> update systeminfo
+ set keywordvalue = '/jreport/'
+ where keyword = 'jreport_jsp_path'
+</code></pre></li>
+<li><p><code>cd ActiveNetServlet</code>, inject <code>jreport</code> after <code>main</code> like <code>./ant.sh fullclean main jreport debug</code> on OS X, <code>ant fullclean main jreport startup</code> for windows</p></li>
+<li>jreport console is available at /jreport</li>
+</ol>
+
+
+</body></html>
