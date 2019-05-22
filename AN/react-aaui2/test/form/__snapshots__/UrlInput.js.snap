@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing and don't change unexpected 1`] = `
+<div
+  className="input-group input-group--m"
+  style={undefined}
+>
+  <input
+    className="input input-group__field"
+    disabled={undefined}
+    name="url"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onInput={[Function]}
+    type="url"
+  />
+</div>
+`;

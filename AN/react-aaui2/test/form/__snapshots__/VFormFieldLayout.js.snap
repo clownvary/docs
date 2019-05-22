@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing and don't change unexpected 1`] = `
+<div
+  className="row-fluid row-gutter row-align-start row-justify-start form__group form__group--error form__group--vertical"
+  style={Object {}}
+>
+  <div
+    className="col col-12 col-sm-12 form__label"
+  >
+    <label>
+      <span>
+        label
+      </span>
+    </label>
+  </div>
+  <div
+    className="col col-12 col-sm-12 form__control"
+  />
+  <div
+    className="col col-12 col-sm-12 form__validate"
+  >
+    <i
+      className="icon-times-circle"
+    />
+    <span>
+      error
+    </span>
+  </div>
+</div>
+`;

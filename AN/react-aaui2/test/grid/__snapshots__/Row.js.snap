@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing and don't change unexpected 1`] = `
+<div
+  className="row row-align-start row-justify-start"
+  style={Object {}}
+>
+  <div>
+    Col
+  </div>
+</div>
+`;
+
+exports[`should support gutter with number type 1`] = `
+<div
+  className="row row-align-start row-justify-start"
+  style={
+    Object {
+      "marginLeft": -15,
+      "marginRight": -15,
+    }
+  }
+>
+  <div
+    className="col col-12"
+    style={
+      Object {
+        "paddingLeft": 15,
+        "paddingRight": 15,
+      }
+    }
+  >
+    Col1
+  </div>
+</div>
+`;
+
+exports[`should support gutter with string type 1`] = `
+<div
+  className="row row-align-start row-justify-start"
+  style={
+    Object {
+      "marginLeft": -15,
+      "marginRight": -15,
+    }
+  }
+>
+  <div
+    className="col col-12"
+    style={
+      Object {
+        "paddingLeft": 15,
+        "paddingRight": 15,
+      }
+    }
+  >
+    Col1
+  </div>
+</div>
+`;

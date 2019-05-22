@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing and don't change unexpected 1`] = `
+<label
+  className="radio-wrapper"
+  style={undefined}
+>
+  <span
+    className="radio"
+  >
+    <input
+      aria-hidden={true}
+      checked={false}
+      className="radio__input"
+      disabled={undefined}
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      aria-checked={false}
+      aria-disabled={undefined}
+      className="radio__inner"
+      role="radio"
+    />
+    <span />
+  </span>
+</label>
+`;

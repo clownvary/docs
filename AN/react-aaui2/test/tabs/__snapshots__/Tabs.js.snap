@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing and don't change unexpected 1`] = `
+<div
+  className=""
+  onKeyDown={[Function]}
+  style={undefined}
+>
+  <ul
+    className="nav-tabs"
+    role="tablist"
+    style={undefined}
+  >
+    <li
+      role="presentation"
+    >
+      <a
+        aria-selected={false}
+        className="first"
+        onClick={[Function]}
+        role="tab"
+        style={undefined}
+        tabIndex="-1"
+      >
+        First
+      </a>
+    </li>
+    <li
+      role="presentation"
+    >
+      <a
+        aria-selected={true}
+        className="active"
+        onClick={[Function]}
+        role="tab"
+        style={undefined}
+        tabIndex="0"
+      >
+        Second
+      </a>
+    </li>
+  </ul>
+  <div
+    aria-hidden={true}
+    className="u-hidden"
+    onKeyDown={[Function]}
+    role="tabpanel"
+    style={undefined}
+  >
+    <p>
+      This is Hello!
+    </p>
+  </div>
+  <div
+    aria-hidden={false}
+    className=""
+    onKeyDown={[Function]}
+    role="tabpanel"
+    style={undefined}
+  >
+    <p>
+      This is World!
+    </p>
+  </div>
+</div>
+`;

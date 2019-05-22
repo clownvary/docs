@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing and don't change unexpected 1`] = `
+<ul
+  className="crumb myCls"
+>
+  <li
+    className="hasHref"
+  >
+    <a
+      href="/a"
+    >
+      a
+    </a>
+    <span
+      className="crumb__divider"
+    >
+      /
+    </span>
+  </li>
+  <li
+    className="noHref"
+  >
+    <span>
+      b
+    </span>
+    <span
+      className="crumb__divider"
+    >
+      /
+    </span>
+  </li>
+</ul>
+`;

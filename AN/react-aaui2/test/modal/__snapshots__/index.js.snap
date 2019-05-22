@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal.confirm Modal#onClose 1`] = `""`;
+
+exports[`Modal.confirm Modal.confirm#close 1`] = `""`;
+
+exports[`Modal.confirm confirm 1`] = `"<div><div class=\\"modal-wrap\\" role=\\"dialog\\"><div class=\\"modal\\"><section class=\\"modal-box\\"><header class=\\"modal-header\\"><h3 class=\\"modal-title\\">Remove</h3><span role=\\"button\\" class=\\"icon-close modal-close\\" tabindex=\\"0\\" aria-label=\\"close-dialog\\"></span></header><div class=\\"modal-body\\">Do you really want to remove it?</div><div class=\\"modal-footer\\"><button type=\\"submit\\" class=\\"btn btn-secondary\\"><span>Cancel</span></button><button type=\\"submit\\" class=\\"btn btn-primary\\"><span>Confirm</span></button></div></section></div><div class=\\"modal-mask\\"></div></div></div>"`;
+
+exports[`Modal.confirm custom props 1`] = `"<div><div class=\\"modal-wrap\\" role=\\"dialog\\"><div class=\\"modal my-custom-classname\\"><section class=\\"modal-box\\"><header class=\\"modal-header\\"><h3 class=\\"modal-title\\">Remove</h3><span role=\\"button\\" class=\\"icon-close modal-close\\" tabindex=\\"0\\" aria-label=\\"close-dialog\\"></span></header><div class=\\"modal-body\\">Do you really want to remove it?</div><div class=\\"modal-footer\\"><button type=\\"submit\\" class=\\"btn btn-secondary\\"><span>Cancel</span></button><button type=\\"submit\\" class=\\"btn btn-primary\\"><span>Confirm</span></button></div></section></div><div class=\\"modal-mask\\"></div></div></div>"`;
+
+exports[`Modal.confirm onCancel 1`] = `""`;
+
+exports[`Modal.confirm onCancel with returnning value as promise 1`] = `""`;
+
+exports[`Modal.confirm onOk 1`] = `""`;
+
+exports[`Modal.confirm onOk with returnning value as promise 1`] = `""`;
+
+exports[`Modal.confirm suppressCancel 1`] = `"<div><div class=\\"modal-wrap\\" role=\\"dialog\\"><div class=\\"modal\\"><section class=\\"modal-box\\"><header class=\\"modal-header\\"><h3 class=\\"modal-title\\">Remove</h3><span role=\\"button\\" class=\\"icon-close modal-close\\" tabindex=\\"0\\" aria-label=\\"close-dialog\\"></span></header><div class=\\"modal-body\\">Do you really want to remove it?</div><div class=\\"modal-footer\\"><button type=\\"submit\\" class=\\"btn btn-primary\\"><span>Confirm</span></button></div></section></div><div class=\\"modal-mask\\"></div></div></div>"`;
+
+exports[`Modal.confirm suppressOk 1`] = `"<div><div class=\\"modal-wrap\\" role=\\"dialog\\"><div class=\\"modal\\"><section class=\\"modal-box\\"><header class=\\"modal-header\\"><h3 class=\\"modal-title\\">Remove</h3><span role=\\"button\\" class=\\"icon-close modal-close\\" tabindex=\\"0\\" aria-label=\\"close-dialog\\"></span></header><div class=\\"modal-body\\">Do you really want to remove it?</div><div class=\\"modal-footer\\"><button type=\\"submit\\" class=\\"btn btn-secondary\\"><span>Cancel</span></button></div></section></div><div class=\\"modal-mask\\"></div></div></div>"`;
+
+exports[`Modal.confirm with default values 1`] = `"<div><div class=\\"modal-wrap\\" role=\\"dialog\\"><div class=\\"modal\\"><section class=\\"modal-box\\"><header class=\\"modal-header\\"><h3 class=\\"modal-title\\"></h3><span role=\\"button\\" class=\\"icon-close modal-close\\" tabindex=\\"0\\" aria-label=\\"close-dialog\\"></span></header><div class=\\"modal-body\\"></div><div class=\\"modal-footer\\"><button type=\\"submit\\" class=\\"btn btn-secondary\\"><span>Cancel</span></button><button type=\\"submit\\" class=\\"btn btn-primary\\"><span>Confirm</span></button></div></section></div><div class=\\"modal-mask\\"></div></div></div>"`;

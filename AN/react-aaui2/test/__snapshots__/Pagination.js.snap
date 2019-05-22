@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination should render right thing and don't change unexpected 1`] = `
+<ul
+  className="pagination"
+>
+  <li>
+    <a
+      aria-label="Previous Page"
+      href="myUrl?keywords=running&location=everywhere&page=9"
+    >
+      <span
+        className="icon-chevron-left"
+      />
+    </a>
+  </li>
+  <li>
+    <a
+      aria-label={undefined}
+      href="myUrl?keywords=running&location=everywhere&page=1"
+    >
+      1
+    </a>
+  </li>
+  <li
+    aria-label={undefined}
+    className=""
+  >
+    <span>
+      ...
+    </span>
+  </li>
+  <li>
+    <a
+      aria-label={undefined}
+      href="myUrl?keywords=running&location=everywhere&page=6"
+    >
+      6
+    </a>
+  </li>
+  <li>
+    <a
+      aria-label={undefined}
+      href="myUrl?keywords=running&location=everywhere&page=7"
+    >
+      7
+    </a>
+  </li>
+  <li>
+    <a
+      aria-label={undefined}
+      href="myUrl?keywords=running&location=everywhere&page=8"
+    >
+      8
+    </a>
+  </li>
+  <li>
+    <a
+      aria-label={undefined}
+      href="myUrl?keywords=running&location=everywhere&page=9"
+    >
+      9
+    </a>
+  </li>
+  <li
+    aria-label={undefined}
+    className="active"
+  >
+    <span>
+      10
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`Pagination should render right with current page index 1`] = `
+<ul
+  className="pagination"
+>
+  <li
+    aria-label={undefined}
+    className="active"
+  >
+    <span>
+      1
+    </span>
+  </li>
+  <li>
+    <a
+      aria-label={undefined}
+      href="sdjfskl?page=2"
+    >
+      2
+    </a>
+  </li>
+  <li>
+    <a
+      aria-label={undefined}
+      href="sdjfskl?page=3"
+    >
+      3
+    </a>
+  </li>
+  <li>
+    <a
+      aria-label={undefined}
+      href="sdjfskl?page=4"
+    >
+      4
+    </a>
+  </li>
+  <li>
+    <a
+      aria-label={undefined}
+      href="sdjfskl?page=5"
+    >
+      5
+    </a>
+  </li>
+  <li
+    aria-label={undefined}
+    className=""
+  >
+    <span>
+      ...
+    </span>
+  </li>
+  <li>
+    <a
+      aria-label={undefined}
+      href="sdjfskl?page=10"
+    >
+      10
+    </a>
+  </li>
+  <li>
+    <a
+      aria-label="Next Page"
+      href="sdjfskl?page=2"
+    >
+      Next
+    </a>
+  </li>
+</ul>
+`;

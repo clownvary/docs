@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert.clear 1`] = `"<div><div class=\\"alert-bar show\\"><div class=\\"alert alert-success alert-success--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-check-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div><div><div class=\\"alert-bar show\\"><div class=\\"alert alert-success alert-success--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-check-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div><div><div class=\\"alert-bar show\\"><div class=\\"alert alert-success alert-success--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-check-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div><div><div class=\\"alert-bar show\\"><div class=\\"alert alert-success alert-success--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-check-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div>"`;
+
+exports[`Alert.clear 2`] = `""`;
+
+exports[`Alert.error 1`] = `"<div><div class=\\"alert-bar\\"><div class=\\"alert alert-danger alert-danger--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-times-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div>"`;
+
+exports[`Alert.info 1`] = `"<div><div class=\\"alert-bar\\"><div class=\\"alert alert-info alert-info--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-info-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div>"`;
+
+exports[`Alert.success 1`] = `"<div><div class=\\"alert-bar\\"><div class=\\"alert alert-success alert-success--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-check-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div>"`;
+
+exports[`Alert.success with concise syntax 1`] = `"<div><div class=\\"alert-bar\\"><div class=\\"alert alert-success alert-success--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-check-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div>"`;
+
+exports[`Alert.success with timeout: 3s 1`] = `"<div><div class=\\"alert-bar\\"><div class=\\"alert alert-success alert-success--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-check-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div>"`;
+
+exports[`Alert.success#close 1`] = `""`;
+
+exports[`Alert.warning 1`] = `"<div><div class=\\"alert-bar\\"><div class=\\"alert alert-warning alert-warning--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-exclamation-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div>"`;

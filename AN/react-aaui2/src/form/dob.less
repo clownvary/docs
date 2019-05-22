@@ -1,0 +1,23 @@
+.dob {
+  display: flex;
+
+  .dropdown,
+  .dropdown.dropdown--lg {
+    .dropdown__menu {
+      overflow-x: visible;
+      width: auto;
+    }
+
+    .dropdown__button .dropdown__button-text,
+    .dropdown__menu a {
+      white-space: nowrap;
+      word-break: keep-all;
+      word-wrap: normal;
+      overflow: visible;
+    }
+  }
+
+  .dropdown:not(:last-child) {
+    margin-right: 10px;
+  }
+}

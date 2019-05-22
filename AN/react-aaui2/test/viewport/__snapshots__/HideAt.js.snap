@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing and don't change unexpected 1`] = `null`;
+
+exports[`should render right thing and don't change unexpected 2`] = `
+Object {
+  "children": <p>
+    Hide Me
+  </p>,
+  "query": "not screen and (min-width: 768px)",
+  "values": Object {
+    "width": 900,
+  },
+}
+`;

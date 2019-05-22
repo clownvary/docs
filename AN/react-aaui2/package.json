@@ -1,0 +1,208 @@
+{
+  "name": "react-aaui",
+  "version": "1.16.9",
+  "description": "Active AUI implemented using React.",
+  "author": "Front End China <FrontEndChina@activenetwork.com>",
+  "license": "UNLICENSED",
+  "main": "lib/index.js",
+  "jsnext:main": "es/index.js",
+  "module": "es/index.js",
+  "files": [
+    "amd",
+    "dist",
+    "es",
+    "i18n",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://gitlab.dev.activenetwork.com/fee/react-aaui.git"
+  },
+  "keywords": [
+    "AUI",
+    "AAUI",
+    "React",
+    "component",
+    "components"
+  ],
+  "scripts": {
+    "commit": "git-cz",
+    "clean": "rimraf amd dist lib es",
+    "build": "yarn clean && better-npm-run build",
+    "build-es": "better-npm-run build-es",
+    "build-cjs": "better-npm-run build-cjs",
+    "build-umd": "better-npm-run build-umd",
+    "build-umd:min": "better-npm-run build-umd:min",
+    "release": "better-npm-run release",
+    "sample": "better-npm-run sample",
+    "compileI18nProperties": "rimraf i18n && better-npm-run compileI18nProperties",
+    "test": "better-npm-run test",
+    "test:watch": "jest --watch --coverage",
+    "test:a11y": "jest --config=./a11y-test/jest.json",
+    "lint": "eslint src test",
+    "lint:checkstyle": "eslint src test -f checkstyle > react-aaui-eslint-checkstyle.xml",
+    "lint:msg": "commitlint -e",
+    "prepush": "yarn lint && yarn lint:msg && npm test"
+  },
+  "betterScripts": {
+    "test": {
+      "command": "jest --coverage",
+      "env": {
+        "NODE_ENV": "test"
+      }
+    },
+    "compileI18nProperties": {
+      "command": "babel-node scripts/compileI18nProperties.js",
+      "env": {
+        "SRC": "src/i18n,src/form/validation/i18n,src/i18n/components",
+        "DIST": "i18n"
+      }
+    },
+    "build": {
+      "command": "babel-node scripts/build",
+      "env": {
+        "NODE_ENV": "production",
+        "DEBUG": "react-aaui:*"
+      }
+    },
+    "build-es": {
+      "command": "babel ./src -d es --copy-files",
+      "env": {
+        "NODE_ENV": "production",
+        "BABEL_ENV": "es",
+        "DEBUG": "react-aaui:*"
+      }
+    },
+    "build-cjs": {
+      "command": "babel ./src -d lib --copy-files",
+      "env": {
+        "NODE_ENV": "production",
+        "BABEL_ENV": "cjs",
+        "DEBUG": "react-aaui:*"
+      }
+    },
+    "build-umd": {
+      "command": "babel-node scripts/compile --copy-files",
+      "env": {
+        "NODE_ENV": "production",
+        "BABEL_ENV": "umd",
+        "DEBUG": "react-aaui:*"
+      }
+    },
+    "build-umd:min": {
+      "command": "babel-node scripts/compile --copy-files",
+      "env": {
+        "NODE_ENV": "production",
+        "BABEL_ENV": "umd",
+        "DEBUG": "react-aaui:*"
+      }
+    },
+    "release": {
+      "command": "babel-node scripts/release",
+      "env": {
+        "NODE_ENV": "production",
+        "DEBUG": "react-aaui:*"
+      }
+    },
+    "sample": {
+      "command": "webpack-dev-server --config ./build/webpack.sample.config.js",
+      "env": {
+        "NODE_ENV": "development",
+        "DEBUG": "react-aaui:*"
+      }
+    }
+  },
+  "dependencies": {
+    "classnames": "2.2.5",
+    "lodash": "4.17.4",
+    "prop-types": "15.5.8",
+    "react-responsive": "1.3.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^3.2.0",
+    "@commitlint/config-angular": "^3.1.1",
+    "active.css": "git+ssh://git@gitlab.dev.activenetwork.com:fee/active.css.git#v0.8.57",
+    "axe-core": "2.1.7",
+    "babel-cli": "6.18.0",
+    "babel-core": "6.21.0",
+    "babel-eslint": "7.1.1",
+    "babel-jest": "20.0.3",
+    "babel-loader": "7.0.0",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-dynamic-import-node": "1.0.1",
+    "babel-plugin-transform-runtime": "6.15.0",
+    "babel-plugin-webpack-loaders": "0.8.0",
+    "babel-preset-env": "1.3.3",
+    "babel-preset-react": "6.3.13",
+    "babel-preset-stage-0": "6.3.13",
+    "babel-runtime": "6.11.6",
+    "better-npm-run": "0.0.11",
+    "child-process-promise": "2.1.3",
+    "colors": "1.1.2",
+    "commitizen": "2.9.6",
+    "copy-promise": "0.0.1",
+    "css-loader": "0.23.0",
+    "cssnano": "3.10.0",
+    "cz-conventional-changelog": "2.0.0",
+    "deasync-promise": "1.0.1",
+    "debug": "2.2.0",
+    "enzyme": "3.1.0",
+    "enzyme-adapter-react-16": "1.0.1",
+    "eslint": "3.12.2",
+    "eslint-config-airbnb": "13.0.0",
+    "eslint-config-prettier": "2.4.0",
+    "eslint-import-resolver-webpack": "0.8.1",
+    "eslint-plugin-babel": "4.0.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jest": "20.0.3",
+    "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-prettier": "2.2.0",
+    "eslint-plugin-react": "6.8.0",
+    "extract-text-webpack-plugin": "2.1.0",
+    "file-loader": "0.8.5",
+    "fs-extra": "0.30.0",
+    "fs-promise": "0.5.0",
+    "glob": "7.0.6",
+    "html-webpack-plugin": "2.22.0",
+    "html-webpack-template": "6.0.1",
+    "husky": "0.13.1",
+    "inquirer": "3.0.6",
+    "jest": "21.2.1",
+    "jsdom": "9.8.0",
+    "json-loader": "0.5.4",
+    "less": "2.7.1",
+    "less-loader": "2.2.2",
+    "mkdirp": "0.5.1",
+    "moment": "2.13.0",
+    "null-loader": "0.1.1",
+    "postcss-custom-media": "6.0.0",
+    "postcss-loader": "2.0.5",
+    "postcss-reporter": "3.0.0",
+    "prettier": "1.6.1",
+    "properties-parser": "0.3.1",
+    "react": "16.0.0",
+    "react-a11y": "0.3.3",
+    "react-addons-perf": "15.4.2",
+    "react-addons-test-utils": "15.4.1",
+    "react-axe": "2.1.1",
+    "react-dom": "16.0.0",
+    "react-test-renderer": "16.0.0",
+    "readline-sync": "1.4.5",
+    "rimraf": "2.5.4",
+    "sinon": "2.1.0",
+    "style-loader": "0.13.0",
+    "webpack": "3.0.0",
+    "webpack-dev-server": "2.4.5",
+    "yargs": "5.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
+  },
+  "private": true,
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

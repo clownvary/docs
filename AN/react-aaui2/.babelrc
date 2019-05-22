@@ -1,0 +1,9 @@
+{
+  "presets": ["./build/envPreset", "react", "stage-0"],
+  "plugins": ["transform-runtime", "./build/addModuleExports"],
+  "env": {
+    "test": {
+      "plugins": ["dynamic-import-node"],
+    },
+  },
+}

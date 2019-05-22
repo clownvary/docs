@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`hide 1`] = `""`;
+
+exports[`show 1`] = `"<div><div class=\\"loading\\"><img alt=\\"\\" src=\\"[object Object]\\"></div></div>"`;

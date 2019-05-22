@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`alert 1`] = `"<div><div class=\\"alert-bar\\"><div class=\\"alert alert-success alert-success--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-check-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div>"`;
+
+exports[`alert 2`] = `""`;
+
+exports[`clear 1`] = `"<div><div class=\\"alert-bar show\\"><div class=\\"alert alert-success alert-success--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-check-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div><div><div class=\\"alert-bar show\\"><div class=\\"alert alert-success alert-success--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-check-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div><div><div class=\\"alert-bar show\\"><div class=\\"alert alert-success alert-success--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-check-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div><div><div class=\\"alert-bar show\\"><div class=\\"alert alert-success alert-success--inverse alert-dismissable\\" role=\\"alert\\"><span class=\\"icon-check-circle\\"></span><span>I AM A GLOBAL MESSAGE</span><button type=\\"button\\" class=\\"close\\">×</button></div></div></div>"`;
+
+exports[`clear 2`] = `""`;

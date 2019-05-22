@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`define mdAndAbove 1`] = `
+<Viewport
+  lgAndAbove={false}
+  mdAndAbove={true}
+  not={false}
+  smAndAbove={false}
+  type="screen"
+  viewports={
+    Object {
+      "mdAndAbove": Object {
+        "minWidth": "1000px",
+      },
+    }
+  }
+>
+  <p>
+    Show Me
+  </p>
+</Viewport>
+`;
+
+exports[`define mdAndAbove 2`] = `
+Object {
+  "children": <p>
+    Show Me
+  </p>,
+  "query": " (min-width: 1000px)",
+  "values": Object {},
+}
+`;
+
+exports[`define mdAndAbove with not 1`] = `
+<Viewport
+  lgAndAbove={false}
+  mdAndAbove={true}
+  not={true}
+  smAndAbove={false}
+  type="screen"
+  viewports={
+    Object {
+      "mdAndAbove": Object {
+        "minWidth": "1000px",
+      },
+    }
+  }
+>
+  <p>
+    Show Me
+  </p>
+</Viewport>
+`;
+
+exports[`define mdAndAbove with not 2`] = `
+Object {
+  "children": <p>
+    Show Me
+  </p>,
+  "query": "not screen and (min-width: 1000px)",
+  "values": Object {},
+}
+`;
+
+exports[`define smAndAbove 1`] = `
+<Viewport
+  lgAndAbove={false}
+  mdAndAbove={false}
+  not={false}
+  smAndAbove={true}
+  type="screen"
+  viewports={
+    Object {
+      "smAndAbove": Object {
+        "minWidth": "900px",
+      },
+    }
+  }
+>
+  <p>
+    Show Me
+  </p>
+</Viewport>
+`;
+
+exports[`define smAndAbove 2`] = `
+Object {
+  "children": <p>
+    Show Me
+  </p>,
+  "query": " (min-width: 900px)",
+  "values": Object {},
+}
+`;
+
+exports[`lgAndAbove 1`] = `
+<Viewport
+  lgAndAbove={true}
+  mdAndAbove={false}
+  not={false}
+  smAndAbove={false}
+  type="screen"
+  viewports={Object {}}
+>
+  <p>
+    Show Me
+  </p>
+</Viewport>
+`;
+
+exports[`lgAndAbove 2`] = `
+Object {
+  "children": <p>
+    Show Me
+  </p>,
+  "query": " (min-width: 1200px)",
+  "values": Object {},
+}
+`;
+
+exports[`lgAndAbove with not 1`] = `
+<Viewport
+  lgAndAbove={true}
+  mdAndAbove={false}
+  not={true}
+  smAndAbove={false}
+  type="screen"
+  viewports={Object {}}
+>
+  <p>
+    Show Me
+  </p>
+</Viewport>
+`;
+
+exports[`lgAndAbove with not 2`] = `
+Object {
+  "children": <p>
+    Show Me
+  </p>,
+  "query": "not screen and (min-width: 1200px)",
+  "values": Object {},
+}
+`;
+
+exports[`mdAndAbove 1`] = `
+<Viewport
+  lgAndAbove={false}
+  mdAndAbove={true}
+  not={false}
+  smAndAbove={false}
+  type="screen"
+  viewports={Object {}}
+>
+  <p>
+    Show Me
+  </p>
+</Viewport>
+`;
+
+exports[`mdAndAbove 2`] = `
+Object {
+  "children": <p>
+    Show Me
+  </p>,
+  "query": " (min-width: 992px)",
+  "values": Object {},
+}
+`;
+
+exports[`mdAndAbove with not 1`] = `
+<Viewport
+  lgAndAbove={false}
+  mdAndAbove={true}
+  not={true}
+  smAndAbove={false}
+  type="screen"
+  viewports={Object {}}
+>
+  <p>
+    Show Me
+  </p>
+</Viewport>
+`;
+
+exports[`mdAndAbove with not 2`] = `
+Object {
+  "children": <p>
+    Show Me
+  </p>,
+  "query": "not screen and (min-width: 992px)",
+  "values": Object {},
+}
+`;
+
+exports[`should render right thing and don't change unexpected 1`] = `
+<p>
+  Show Me
+</p>
+`;
+
+exports[`smAndAbove && mdAndAbove && lgAndAbove 1`] = `
+<Viewport
+  lgAndAbove={true}
+  mdAndAbove={true}
+  not={false}
+  smAndAbove={true}
+  type="screen"
+  viewports={Object {}}
+>
+  <p>
+    Show Me
+  </p>
+</Viewport>
+`;
+
+exports[`smAndAbove && mdAndAbove && lgAndAbove 2`] = `
+Object {
+  "children": <p>
+    Show Me
+  </p>,
+  "query": " (min-width: 1200px)",
+  "values": Object {},
+}
+`;
+
+exports[`smAndAbove 1`] = `
+<Viewport
+  lgAndAbove={false}
+  mdAndAbove={false}
+  not={false}
+  smAndAbove={true}
+  type="screen"
+  viewports={Object {}}
+>
+  <p>
+    Show Me
+  </p>
+</Viewport>
+`;
+
+exports[`smAndAbove 2`] = `
+Object {
+  "children": <p>
+    Show Me
+  </p>,
+  "query": " (min-width: 768px)",
+  "values": Object {},
+}
+`;
+
+exports[`smAndAbove with not 1`] = `
+<Viewport
+  lgAndAbove={false}
+  mdAndAbove={false}
+  not={true}
+  smAndAbove={true}
+  type="screen"
+  viewports={Object {}}
+>
+  <p>
+    Show Me
+  </p>
+</Viewport>
+`;
+
+exports[`smAndAbove with not 2`] = `
+Object {
+  "children": <p>
+    Show Me
+  </p>,
+  "query": "not screen and (min-width: 768px)",
+  "values": Object {},
+}
+`;

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing and don't change unexpected 1`] = `
+<div
+  className="accordion-group "
+>
+  <div
+    className="accordion    "
+  >
+    <div
+      className="accordion__header"
+      onKeyDown={[Function]}
+      tabIndex={0}
+    >
+      <div
+        className="accordion__header-text"
+      >
+        title
+      </div>
+      <div
+        className="accordion__header-icon"
+      >
+        <a
+          onClick={[Function]}
+        >
+          <i
+            className="icon-plus"
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="accordion__body-container"
+      onTransitionEnd={[Function]}
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+          "transition": "height 0.2s ease",
+        }
+      }
+    >
+      <div
+        className="accordion__body"
+      >
+        1
+      </div>
+    </div>
+  </div>
+</div>
+`;

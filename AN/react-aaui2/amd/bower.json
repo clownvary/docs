@@ -1,0 +1,23 @@
+{
+  "name": "react-aaui",
+  "version": "1.16.8",
+  "homepage": "",
+  "author": "Front End China <FrontEndChina@activenetwork.com>",
+  "license": "UNLICENSED",
+  "main": [
+    "react-aaui.min.js"
+  ],
+  "keywords": [
+    "AUI",
+    "AAUI",
+    "React",
+    "component",
+    "components"
+  ],
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "react": ""
+  }
+}

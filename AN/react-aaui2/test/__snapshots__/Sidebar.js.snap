@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing with data and don't change unexpected 1`] = `
+<aside
+  className="sidebar"
+  style={
+    Object {
+      "width": 250,
+    }
+  }
+>
+  <h5>
+    Progress steps to add a Family Member
+  </h5>
+  <ul>
+    <li>
+      <a
+        className="past"
+        href="#"
+      >
+        1.
+         
+        Enter the age
+      </a>
+    </li>
+    <li>
+      <a
+        className="active"
+        href="#"
+      >
+        2.
+         
+        Select the gender
+      </a>
+    </li>
+    <li>
+      <a
+        className=""
+        href="#"
+      >
+        3.
+         
+        Select the interests
+      </a>
+    </li>
+    <li>
+      <a
+        className=""
+        href="#"
+      >
+        4.
+         
+        Enter a nickname
+      </a>
+    </li>
+    <li>
+      <a
+        className=""
+        href="#"
+      >
+        5.
+         
+        Save and view results
+      </a>
+    </li>
+  </ul>
+</aside>
+`;

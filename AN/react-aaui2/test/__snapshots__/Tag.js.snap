@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing and don't change unexpected 1`] = `
+<span
+  className="tag-input"
+>
+  <span
+    className="badge badge--with-close-icon"
+  >
+    <span
+      onClick={[Function]}
+    />
+    <i
+      className="icon-close-thin"
+      onClick={[Function]}
+    />
+  </span>
+</span>
+`;

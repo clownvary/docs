@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing and don't change unexpected 1`] = `
+<div
+  className="radio-group"
+>
+  <label
+    className="radio-wrapper"
+    style={undefined}
+  >
+    <span
+      className="radio"
+    >
+      <input
+        aria-hidden={true}
+        checked={false}
+        className="radio__input"
+        disabled={undefined}
+        name="sports"
+        onChange={[Function]}
+        type="radio"
+        value="basketball"
+      />
+      <span
+        aria-checked={false}
+        aria-disabled={undefined}
+        className="radio__inner"
+        role="radio"
+      />
+      <span>
+        Basketball
+      </span>
+    </span>
+  </label>
+  <label
+    className="radio-wrapper"
+    style={undefined}
+  >
+    <span
+      className="radio radio--checked"
+    >
+      <input
+        aria-hidden={true}
+        checked={true}
+        className="radio__input"
+        disabled={undefined}
+        name="sports"
+        onChange={[Function]}
+        type="radio"
+        value="tennis"
+      />
+      <span
+        aria-checked={true}
+        aria-disabled={undefined}
+        className="radio__inner"
+        role="radio"
+      />
+      <span>
+        Tennis
+      </span>
+    </span>
+  </label>
+  <label
+    className="radio-wrapper"
+    style={undefined}
+  >
+    <span
+      className="radio"
+    >
+      <input
+        aria-hidden={true}
+        checked={false}
+        className="radio__input"
+        disabled={undefined}
+        name="sports"
+        onChange={[Function]}
+        type="radio"
+        value="swimming"
+      />
+      <span
+        aria-checked={false}
+        aria-disabled={undefined}
+        className="radio__inner"
+        role="radio"
+      />
+      <span>
+        Swimming
+      </span>
+    </span>
+  </label>
+  <button />
+</div>
+`;

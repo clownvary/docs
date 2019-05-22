@@ -1,0 +1,42 @@
+.table-container {
+  position: relative;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.table-container--fixed {
+  .table {
+    margin-bottom: 0;
+  }
+}
+
+.table--fixed {
+  table-layout: fixed;
+}
+
+.table {
+  .table__hidden-header {
+    visibility: hidden;
+
+    height: 0;
+
+    tr th {
+      line-height: 0;
+
+      height: 0;
+      margin: 0;
+      padding: 0;
+
+      border: 0;
+
+      * {
+        display: none;
+
+        height: 0;
+
+        border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing and don't change unexpected 1`] = `
+<div
+  className="input-group input-group--m"
+  style={undefined}
+>
+  <input
+    aauiFormStore={
+      Store {
+        "asyncReducers": Object {
+          "postalCode": [Function],
+          "undefined": [Function],
+        },
+        "childStoreList": Array [],
+        "currentState": Object {
+          "postalCode": Object {
+            "value": undefined,
+          },
+          "undefined": Object {
+            "value": undefined,
+          },
+        },
+        "getError": [Function],
+        "getValue": [Function],
+        "initialState": Object {},
+        "listeners": Object {
+          "clear": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "setError": [Function],
+        "setValue": [Function],
+        "validators": Object {
+          "postalCode": [Function],
+          "undefined": [Function],
+        },
+      }
+    }
+    className="input input-group__field"
+    disabled={undefined}
+    name="postalCode"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onInput={[Function]}
+    type="postalCode"
+  />
+</div>
+`;

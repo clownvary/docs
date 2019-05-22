@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render right thing and don't change unexpected 1`] = `
+<div>
+  <form
+    className="form--horizontal"
+    onSubmit={[Function]}
+  >
+    <div
+      className="row row-gutter row-align-center row-justify-start form__group form__group--horizontal"
+      style={Object {}}
+    >
+      <div
+        className="col col-3 form__label form__label--require"
+      >
+        <label>
+          <span>
+            Name
+          </span>
+        </label>
+      </div>
+      <div
+        className="col col-6 form__control"
+      >
+        <div
+          className="input-group input-group--m"
+          style={undefined}
+        >
+          <input
+            className="input input-group__field"
+            disabled={undefined}
+            label="Name"
+            name="name"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onInput={[Function]}
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
