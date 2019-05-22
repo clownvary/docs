@@ -1,0 +1,162 @@
+@import '~shared/style/variables/index.less';
+@dynamagImagePath: '~shared/images/magtek-scra-Dynamag-1.jpg';
+@pinpadImagePath: '~shared/images/magtek-pin-ipad-1.jpg';
+/* stylelint-disable */
+
+.magtekDynamag {
+  .msgInfo {
+    height: 150px;
+  }
+
+  .warnInfo {
+    height: 140px;
+  }
+
+  .info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #748288;
+  }
+
+  .deviceIcon {
+    display: inline-block;
+    width: 190px;
+  }
+
+  .messageSection {
+    float: right;
+    width: 355px;
+  }
+
+  .errorContainer {
+    height: 150px;
+  }
+
+  .errorSection {
+    position: relative;
+    max-height: 105px;
+    padding: 8px 8px 10px 10px;
+    margin-bottom: 30px;
+    overflow-y: auto;
+    font-size: 14px;
+    color: #d93a20;
+    background-color: #ffefed;
+    border: 1px solid #ff6046;
+    border-radius: 5px;
+
+    .icon-times-circle {
+      position: absolute;
+      top: 13px;
+    }
+
+    .errorMsg {
+      margin-left: 20px;
+    }
+  }
+
+  .cancelBtn {
+    text-align: right;
+  }
+
+  .card-fee {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: @semibold;
+    line-height: 1.5;
+    color: #313741;
+  }
+
+  .horitalLine {
+    height: 1px;
+    margin: 10px 0 20px 0;
+    background-color: #d6d7da;
+  }
+
+  .card-body {
+    height: 190px;
+  }
+
+  .afx-col {
+    font-size: 16px;
+  }
+
+  .modal-body {
+    .cardInfo {
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+          margin: 0;
+          border: 0;
+        }
+
+        .saveCardInfo {
+          padding-left: 135px;
+          margin-top: 10px;
+        }
+
+        .btns {
+          padding-left: 135px;
+          margin-top: 24px;
+          text-align: right;
+        }
+
+        div {
+          display: inline-block;
+        }
+
+        .cardInfo__label {
+          width: 115px;
+          margin-right: 20px;
+          font-size: 16px;
+          font-weight: @semibold;
+          line-height: 1.88;
+          text-align: right;
+          color: #313741;
+        }
+
+        .cardType {
+          vertical-align: top;
+        }
+
+        .cardType-icon {
+          font-size: 30px;
+
+          &:hover {
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+
+  .modal-footer {
+    padding: 15px;
+  }
+
+  .modal-header {
+    .modal-close {
+      display: none;
+    }
+  }
+}
+
+.payment-magtek-img {
+  width: 190px;
+  height: 190px;
+  background-position: -20px 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  &--dynamag {
+    background-image: url(@dynamagImagePath);
+    background-position: 0 0;
+  }
+
+  &--pinpad {
+    background-image: url(@pinpadImagePath);
+  }
+}

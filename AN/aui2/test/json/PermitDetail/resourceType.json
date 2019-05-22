@@ -1,0 +1,20 @@
+{
+  "result": [
+    {
+      "text": "resourceType1",
+      "value": "resourceType1"
+    },
+    {
+      "text": "resourceType2",
+      "value": "resourceType2"
+    },
+    {
+      "text": "resourceType3",
+      "value": "resourceType3"
+    },
+    {
+      "text": "resourceType4",
+      "value": "resourceType4"
+    }
+  ]
+}

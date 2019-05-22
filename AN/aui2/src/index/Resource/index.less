@@ -1,0 +1,156 @@
+@import '~shared/style/variables/index.less';
+
+/* stylelint-disable */
+
+html,
+body,
+#app-root,
+#app-root > div {
+  height: 100%;
+}
+
+.resource-calendar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &&--month {
+    padding-bottom: 0;
+  }
+
+  .modal-wrap {
+    position: relative;
+    z-index: 1004;
+  }
+
+  .page-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    margin-bottom: 0;
+
+    h1 {
+      margin: 0;
+      font-size: @page-title-font-size;
+      line-height: @page-title-line-height;
+      color: @river-bed;
+    }
+  }
+
+  .filterSection {
+    display: flex;
+    justify-content: space-between;
+    height: 34px;
+
+    .datepickerSection {
+      display: inline-block;
+    }
+  }
+
+  .searchBarWrapper {
+    position: relative;
+    z-index: 10;
+    padding-top: 8px;
+    background-color: #fff;
+  }
+
+  .static {
+    position: static;
+  }
+
+  .toolBar {
+    display: flex;
+
+    .help-link {
+      align-items: center;
+      margin-bottom: 0;
+      margin-left: 16px;
+    }
+  }
+
+  .button-bar {
+    display: inline-block;
+    margin-left: 10px;
+
+    button {
+      width: 59px;
+      height: 30px;
+      min-width: auto;
+      min-height: auto;
+      padding: 0;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 0;
+    }
+
+    button:first-child {
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
+    }
+
+    button:last-child {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+
+    .selected {
+      color: #fff;
+      background-color: #40b0dc;
+      border: solid 1px #40b0dc;
+    }
+  }
+
+  .hide-scroll {
+    overflow: hidden !important;
+  }
+}
+
+.intro {
+  .intro-step3-tooltip {
+    width: 28px;
+    height: 126px;
+
+    .intro-tooltip {
+      width: 400px;
+      margin-right: 20px !important;
+      white-space: pre-wrap;
+    }
+
+    & + .intro-step-mask {
+      width: 28px;
+      height: 126px;
+    }
+  }
+
+  .intro-step2-tooltip {
+    .intro-tooltip {
+      top: 35px !important;
+      width: 350px;
+      margin-right: 20px !important;
+    }
+  }
+
+  .aaui-button {
+    top: 450px;
+    right: 580px;
+    left: auto;
+  }
+
+  .intro-control-btn {
+    top: 450px;
+    right: 294px;
+    left: auto;
+    width: 100px;
+    height: 40px;
+  }
+}
+
+.no-resource-selected {
+  padding-top: 48px;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: #748288;
+  border-top: solid 2px #d6d7da;
+}

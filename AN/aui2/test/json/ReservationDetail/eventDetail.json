@@ -1,0 +1,1872 @@
+{
+    "headers": {
+        "response_code": "0000",
+        "response_message": "Successful",
+        "page_info": {
+            "order_by": "",
+            "total_records_per_page": 30,
+            "order_option": "ASC",
+            "total_page": 1,
+            "total_records": 0,
+            "page_number": 1
+        }
+    },
+    "body": {
+        "event_detail": {
+            "event_detail_config": {
+              "hideReservationCharges": false,
+              "hideNotesSection": false,
+              "hideChecklistItemsSection": false,
+              "hideCustomQuestionsSection": false
+            },
+            "addable_questions_loaded": false,
+            "addable_questions": {
+                "has_required_question": true,
+                "list": [{
+                  "title": "CoreyQuestion_SingleSelection_Dropdown_2",
+                  "question": "CoreyQuestion_SingleSelection_Dropdown",
+                  "hint": "",
+                  "answers": [{
+                    "answer": "1",
+                    "code": 0,
+                    "selected": true,
+                    "disabled": false,
+                    "answer_id": 1209,
+                    "sub_question": {
+                      "title": "CoreyQuestion_UserEntry_Freeform",
+                      "question": "CoreyQuestion_UserEntry_Freeform",
+                      "hint": "",
+                      "answers": [],
+                      "customquestion_index": "(3693_0)_1_1",
+                      "customquestion_id": 321,
+                      "use_answer_code": false,
+                      "answer_type": "userEntry",
+                      "answer_required": true,
+                      "answer_format": "freeForm",
+                      "answer_max_length": 100,
+                      "default_answer": "Free form default answer",
+                      "postal_code_type": 0,
+                      "answer": "Free form default answer",
+                      "permit_question": false,
+                      "read_only": false
+                    }
+                  }, {
+                    "answer": "2",
+                    "code": 0,
+                    "selected": false,
+                    "disabled": false,
+                    "answer_id": 1210,
+                    "sub_question": {
+                      "title": "CoreyQuestion_MultiSelection-Listbox",
+                      "question": "CoreyQuestion_MultiSelection-Listbox",
+                      "hint": "",
+                      "answers": [{
+                        "answer": "1",
+                        "code": 0,
+                        "selected": false,
+                        "disabled": false,
+                        "answer_id": 1178,
+                        "sub_question": null
+                      }, {
+                        "answer": "2",
+                        "code": 0,
+                        "selected": false,
+                        "disabled": false,
+                        "answer_id": 1179,
+                        "sub_question": null
+                      }, {
+                        "answer": "3",
+                        "code": 0,
+                        "selected": false,
+                        "disabled": false,
+                        "answer_id": 1180,
+                        "sub_question": null
+                      }],
+                      "customquestion_index": "(3693_0)_1_2",
+                      "customquestion_id": 312,
+                      "use_answer_code": false,
+                      "answer_type": "multiSelectionListbox",
+                      "answer_required": true,
+                      "answer_format": "freeForm",
+                      "answer_max_length": 100,
+                      "default_answer": "",
+                      "postal_code_type": 0,
+                      "answer": null,
+                      "permit_question": false,
+                      "read_only": false
+                    }
+                  }],
+                  "customquestion_index": "(3693_0)_1",
+                  "customquestion_id": 317,
+                  "use_answer_code": false,
+                  "answer_type": "singleSelectionDropdown",
+                  "answer_required": false,
+                  "answer_format": "freeForm",
+                  "answer_max_length": 100,
+                  "default_answer": "",
+                  "postal_code_type": 0,
+                  "answer": null,
+                  "permit_question": false,
+                  "read_only": false
+                }]
+              },
+            "event_id":1,
+            "new_entry_id": 1,
+            "event_index": "1_1",
+            "fee_summary": {
+              "sub_total": 127.5,
+              "taxes": [{
+                "name": "Tax8",
+                "amount": 12.75
+              }, {
+                "name": "test1",
+                "amount": 12.75
+              }, {
+                "name": "test2",
+                "amount": 12.75
+              }, {
+                "name": "test3",
+                "amount": 4.78
+              }],
+              "total": 170.53,
+              "amount_paid": null,
+              "due_now": null,
+              "refund_amount": null
+            },
+            "event_fee": {
+              "event_id": 0,
+              "event_name": "adsaa",
+              "permit_id": 0,
+              "resource_count": 2,
+              "booking_count": 3,
+              "event_fee_total": 127.5,
+              "facility_fees": [{
+                "facility_id": 36,
+                "transaction_id": 0,
+                "facility_name": "Gym 1",
+                "center_name":"sdsddsds",
+                "schedule_fees": [{
+                  "facility_schedule_id": 23522,
+                  "master_facility_schedule_id": 0,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "14 Feb 2017",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 0,
+                  "facility_charges": []
+                }, {
+                  "facility_schedule_id": 23524,
+                  "master_facility_schedule_id": 23522,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "14 Feb 2017",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": -10,
+                  "facility_charges": []
+                }, {
+                  "facility_schedule_id": 2312,
+                  "master_facility_schedule_id": 23522,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 20,
+                  "facility_charges": []
+                },{
+                  "facility_schedule_id": 23121,
+                  "master_facility_schedule_id": 23522,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 20,
+                  "facility_charges": []
+                },{
+                  "facility_schedule_id": 23122,
+                  "master_facility_schedule_id": 23522,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 20,
+                  "facility_charges": []
+                },{
+                  "facility_schedule_id": 23122,
+                  "master_facility_schedule_id": 23522,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 20,
+                  "facility_charges": []
+                },{
+                  "facility_schedule_id": 23123,
+                  "master_facility_schedule_id": 23522,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 20,
+                  "facility_charges": []
+                },{
+                  "facility_schedule_id": 23124,
+                  "master_facility_schedule_id": 23522,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 20,
+                  "facility_charges": []
+                },{
+                  "facility_schedule_id": 23125,
+                  "master_facility_schedule_id": 23522,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 20,
+                  "facility_charges": []
+                }
+                , {
+                  "facility_schedule_id": 23526,
+                  "master_facility_schedule_id": 23522,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 0,
+                  "facility_charges": [{
+                    "facility_charge_id": 4,
+                    "charge_name": "Fee_1",
+                    "quantity": 1,
+                    "unit_fee": 100,
+                    "abbrev_unit_of_measure": "ea",
+                    "amount": 83.34,
+                    "permit_id": 0,
+                    "receipt_detail_id": 0,
+                    "facility_schedule_id": 0,
+                    "is_percentage_discount": false
+                  }, {
+                    "facility_charge_id": 6,
+                    "charge_name": "Dis_Per_1",
+                    "quantity": 1,
+                    "unit_fee": -15,
+                    "abbrev_unit_of_measure": "ea",
+                    "amount": -22.5,
+                    "permit_id": 0,
+                    "receipt_detail_id": 0,
+                    "facility_schedule_id": 0,
+                    "is_percentage_discount": true
+                  }]
+                }],
+                "additional_fees": {
+                  "facility_schedule_id": 0,
+                  "master_facility_schedule_id": 0,
+                  "facility_schedule": null,
+                  "schedule_amount": 0,
+                  "facility_charges": []
+                }
+              }, {
+                "facility_id": 37,
+                "transaction_id": 0,
+                "facility_name": "Gym 2",
+                "center_name":"Ac_Center",
+                "schedule_fees": [{
+                  "facility_schedule_id": 23527,
+                  "master_facility_schedule_id": 0,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "6:00 AM",
+                    "end_date": "14 Feb 2017",
+                    "end_time": "7:00 AM"
+                  },
+                  "schedule_amount": 16.66,
+                  "facility_charges": [{
+                    "facility_charge_id": 5,
+                    "charge_name": "Faciltiy_per hour",
+                    "quantity": 1,
+                    "unit_fee": 20,
+                    "abbrev_unit_of_measure": "/ hr",
+                    "amount": 16.66,
+                    "permit_id": 0,
+                    "receipt_detail_id": 0,
+                    "facility_schedule_id": 23524,
+                    "is_percentage_discount": false
+                  }]
+                }, {
+                  "facility_schedule_id": 23528,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "10:00 AM",
+                    "end_date": "14 Feb 2017",
+                    "end_time": "1:00 PM"
+                  },
+                  "schedule_amount": 50,
+                  "facility_charges": [{
+                    "facility_charge_id": 5,
+                    "charge_name": "Faciltiy_per hour",
+                    "quantity": 3,
+                    "unit_fee": 20,
+                    "abbrev_unit_of_measure": "/ hr",
+                    "amount": 50,
+                    "permit_id": 0,
+                    "receipt_detail_id": 0,
+                    "facility_schedule_id": 23525,
+                    "is_percentage_discount": false
+                  }]
+                }],
+                "additional_fees": {
+                  "facility_schedule_id": 0,
+                  "master_facility_schedule_id": 0,
+                  "facility_schedule": null,
+                  "schedule_amount": 60.84,
+                  "facility_charges": [{
+                    "facility_charge_id": 4,
+                    "charge_name": "Fee_1",
+                    "quantity": 1,
+                    "unit_fee": 100,
+                    "abbrev_unit_of_measure": "ea",
+                    "amount": 83.34,
+                    "permit_id": 0,
+                    "receipt_detail_id": 0,
+                    "facility_schedule_id": 0,
+                    "is_percentage_discount": false
+                  }, {
+                    "facility_charge_id": 6,
+                    "charge_name": "Dis_Per_1",
+                    "quantity": 1,
+                    "unit_fee": -15,
+                    "abbrev_unit_of_measure": "ea",
+                    "amount": -22.5,
+                    "permit_id": 0,
+                    "receipt_detail_id": 0,
+                    "facility_schedule_id": 0,
+                    "is_percentage_discount": true
+                  }]
+                }
+              }]
+            },
+            "questions": {
+                "list": [{
+                        "title": "whyy-radio",
+                        "question": "whyy-radio",
+                        "hint": "whyy-radio whyy-radio whyy-radio whyy-ra",
+                        "answers": [
+                            {
+                                "answer": "1",
+                                "code": 0,
+                                "selected": true,
+                                "disabled": false,
+                                "answer_id": 471,
+                                "sub_question": {
+                                    "title": "SUB: Marketing: Other Specification",
+                                    "question": "Please specify:",
+                                    "hint": "",
+                                    "answers": [],
+                                    "customquestion_index": "(-1_8)_1_1",
+                                    "customquestion_id": 14,
+                                    "use_answer_code": false,
+                                    "answer_type": "userEntry",
+                                    "answer_required": false,
+                                    "answer_format": "freeForm",
+                                    "answer_max_length": 100,
+                                    "default_answer": "",
+                                    "postal_code_type": 0,
+                                    "permit_question": false,
+                                    "read_only": false
+                                }
+                            },
+                            {
+                                "answer": "2",
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 472,
+                                "sub_question": null
+                            },
+                            {
+                                "answer": "3",
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 473,
+                                "sub_question": null
+                            },
+                            {
+                                "answer": "4",
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 474,
+                                "sub_question": null
+                            },
+                            {
+                                "answer": "5",
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 475,
+                                "sub_question": null
+                            }
+                        ],
+                        "customquestion_index": "(-1_8)_1",
+                        "customquestion_id": 66,
+                        "use_answer_code": false,
+                        "answer_type": "singleSelectionRadio",
+                        "answer_required": false,
+                        "answer_format": "freeForm",
+                        "answer_max_length": 100,
+                        "default_answer": "",
+                        "postal_code_type": 0,
+                        "permit_question": false,
+                        "read_only": false
+                    },
+                    {
+                        "title": "whyy-single-select",
+                        "question": "whyy-single-select",
+                        "hint": "whyy-single-select whyy-single-select",
+                        "answers": [
+                            {
+                                "answer": "111",
+                                "code": 0,
+                                "selected": true,
+                                "disabled": false,
+                                "answer_id": 496,
+                                "sub_question": {
+                                    "title": "SUB: General: Needs Specification",
+                                    "question": "Please explain:",
+                                    "hint": "",
+                                    "answers": [
+                                        {
+                                            "answer": "lklkl",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 0,
+                                            "sub_question": null
+                                        }
+                                    ],
+                                    "customquestion_index": "(-1_8)_2_1",
+                                    "customquestion_id": 3,
+                                    "use_answer_code": false,
+                                    "answer_type": "userEntry",
+                                    "answer_required": true,
+                                    "answer_format": "freeForm",
+                                    "answer_max_length": 100,
+                                    "default_answer": "",
+                                    "postal_code_type": 0,
+                                    "permit_question": false,
+                                    "read_only": false
+                                }
+                            },
+                            {
+                                "answer": "222",
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 497,
+                                "sub_question": null
+                            },
+                            {
+                                "answer": "333",
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 498,
+                                "sub_question": null
+                            }
+                        ],
+                        "customquestion_index": "(-1_8)_2",
+                        "customquestion_id": 67,
+                        "use_answer_code": false,
+                        "answer_type": "singleSelectionDropdown",
+                        "answer_required": false,
+                        "answer_format": "freeForm",
+                        "answer_max_length": 100,
+                        "default_answer": "",
+                        "postal_code_type": 0,
+                        "permit_question": false,
+                        "read_only": false
+                    },
+                    {
+                        "title": "whyy-test-duration",
+                        "question": "whyy-test-duration",
+                        "hint": "whyy-test-durationwhyy-test-durationwhyy",
+                        "answers": [
+                            {
+                                "answer": {
+                                    "hours": [
+                                        {
+                                            "answer": "00",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 0,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "01",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 1,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "02",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 2,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "03",
+                                            "code": 0,
+                                            "selected": true,
+                                            "disabled": false,
+                                            "answer_id": 3,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "04",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 4,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "05",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 5,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "06",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 6,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "07",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 7,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "08",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 8,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "09",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 9,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "10",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 10,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "11",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 11,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "12",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 12,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "13",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 13,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "14",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 14,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "15",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 15,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "16",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 16,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "17",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 17,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "18",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 18,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "19",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 19,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "20",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 20,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "21",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 21,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "22",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 22,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "23",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 23,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "24",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 24,
+                                            "sub_question": null
+                                        }
+                                    ],
+                                    "minutes": [
+                                        {
+                                            "answer": "00",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 0,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "01",
+                                            "code": 0,
+                                            "selected": true,
+                                            "disabled": false,
+                                            "answer_id": 1,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "02",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 2,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "03",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 3,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "04",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 4,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "05",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 5,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "06",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 6,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "07",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 7,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "08",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 8,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "09",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 9,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "10",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 10,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "11",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 11,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "12",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 12,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "13",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 13,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "14",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 14,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "15",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 15,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "16",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 16,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "17",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 17,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "18",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 18,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "19",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 19,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "20",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 20,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "21",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 21,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "22",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 22,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "23",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 23,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "24",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 24,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "25",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 25,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "26",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 26,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "27",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 27,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "28",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 28,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "29",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 29,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "30",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 30,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "31",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 31,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "32",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 32,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "33",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 33,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "34",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 34,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "35",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 35,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "36",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 36,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "37",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 37,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "38",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 38,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "39",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 39,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "40",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 40,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "41",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 41,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "42",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 42,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "43",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 43,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "44",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 44,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "45",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 45,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "46",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 46,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "47",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 47,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "48",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 48,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "49",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 49,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "50",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 50,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "51",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 51,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "52",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 52,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "53",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 53,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "54",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 54,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "55",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 55,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "56",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 56,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "57",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 57,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "58",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 58,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "59",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 59,
+                                            "sub_question": null
+                                        }
+                                    ],
+                                    "seconds": [
+                                        {
+                                            "answer": "00",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 0,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "01",
+                                            "code": 0,
+                                            "selected": true,
+                                            "disabled": false,
+                                            "answer_id": 1,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "02",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 2,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "03",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 3,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "04",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 4,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "05",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 5,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "06",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 6,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "07",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 7,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "08",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 8,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "09",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 9,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "10",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 10,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "11",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 11,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "12",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 12,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "13",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 13,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "14",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 14,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "15",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 15,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "16",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 16,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "17",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 17,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "18",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 18,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "19",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 19,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "20",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 20,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "21",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 21,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "22",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 22,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "23",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 23,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "24",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 24,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "25",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 25,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "26",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 26,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "27",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 27,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "28",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 28,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "29",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 29,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "30",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 30,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "31",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 31,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "32",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 32,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "33",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 33,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "34",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 34,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "35",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 35,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "36",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 36,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "37",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 37,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "38",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 38,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "39",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 39,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "40",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 40,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "41",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 41,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "42",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 42,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "43",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 43,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "44",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 44,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "45",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 45,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "46",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 46,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "47",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 47,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "48",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 48,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "49",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 49,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "50",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 50,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "51",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 51,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "52",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 52,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "53",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 53,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "54",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 54,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "55",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 55,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "56",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 56,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "57",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 57,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "58",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 58,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "59",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 59,
+                                            "sub_question": null
+                                        }
+                                    ]
+                                },
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 0,
+                                "sub_question": null
+                            }
+                        ],
+                        "customquestion_index": "(-1_8)_3",
+                        "customquestion_id": 72,
+                        "use_answer_code": false,
+                        "answer_type": "userEntry",
+                        "answer_required": true,
+                        "answer_format": "duration",
+                        "answer_max_length": 100,
+                        "default_answer": "",
+                        "postal_code_type": 0,
+                        "permit_question": false,
+                        "read_only": false
+                    },
+                    {
+                        "title": "whyy-test-radio",
+                        "question": "whyy-test-radio",
+                        "hint": "whyy-test-radiowhyy-test-radiowhyy-test-",
+                        "answers": [
+                            {
+                                "answer": "1sfddfsafdsfdsfdsfdsfdsafdsafdsfdsfdsa fdsfdsa fds",
+                                "code": 0,
+                                "selected": true,
+                                "disabled": false,
+                                "answer_id": 499,
+                                "sub_question": null
+                            },
+                            {
+                                "answer": "2afdsfdsafdsa f fdsafdsafdsafdsa   fdsafdsafdsa  f",
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 500,
+                                "sub_question": null
+                            },
+                            {
+                                "answer": "3fdsafasd   fdssaa  fdsfdsaa fdddddddddddddddddddd",
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 501,
+                                "sub_question": null
+                            }
+                        ],
+                        "customquestion_index": "(-1_8)_4",
+                        "customquestion_id": 74,
+                        "use_answer_code": false,
+                        "answer_type": "singleSelectionRadio",
+                        "answer_required": true,
+                        "answer_format": "freeForm",
+                        "answer_max_length": 100,
+                        "default_answer": "",
+                        "postal_code_type": 0,
+                        "permit_question": false,
+                        "read_only": false
+                    }
+                ],
+                "has_required_question": false
+            },
+            "transactions": [],
+            "waiver_list": [
+                {
+                    "waiver_index": "124",
+                    "transactionstage_id": -1,
+                    "attachedchecklistitem_id": 33,
+                    "stage_id": 24,
+                    "stage_version": 6,
+                    "stage_type": 1,
+                    "description": "Test Jack Waiver",
+                    "attachment_id": 110,
+                    "attachment_name": "New Waiver PD",
+                    "show_display_permit": true,
+                    "display_permit_selected": false,
+                    "disable_agreetowaiver": false,
+                    "agreetowaiver_selected": false,
+                    "can_modify_signature": true,
+                    "signature_base64": "",
+                    "item_text": "test waiver",
+                    "uploadfile_href_text": "test pad",
+                    "is_required": true
+                },
+                {
+                    "waiver_index": "18",
+                    "transactionstage_id": -1,
+                    "attachedchecklistitem_id": -3,
+                    "stage_id": 8,
+                    "stage_version": 0,
+                    "stage_type": 1,
+                    "description": "Global waiver",
+                    "attachment_id": -1,
+                    "attachment_name": "",
+                    "show_display_permit": true,
+                    "display_permit_selected": false,
+                    "disable_agreetowaiver": false,
+                    "agreetowaiver_selected": false,
+                    "can_modify_signature": true,
+                    "signature_base64": "",
+                    "item_text": "It is a global waiver\r\nThis should be a new line.\r\nThe end.",
+                    "uploadfile_href_text": null,
+                    "is_required": false
+                },
+                {
+                    "waiver_index": "19",
+                    "transactionstage_id": -1,
+                    "attachedchecklistitem_id": 34,
+                    "stage_id": 9,
+                    "stage_version": 0,
+                    "stage_type": 0,
+                    "description": "Policy Information",
+                    "attachment_id": -1,
+                    "attachment_name": "",
+                    "show_display_permit": true,
+                    "display_permit_selected": false,
+                    "disable_agreetowaiver": false,
+                    "agreetowaiver_selected": false,
+                    "can_modify_signature": true,
+                    "signature_base64": "",
+                    "item_text": "An information only checklist item",
+                    "uploadfile_href_text": null,
+                    "is_required": false
+                },
+                {
+                    "waiver_index": "110",
+                    "transactionstage_id": -1,
+                    "attachedchecklistitem_id": 32,
+                    "stage_id": 10,
+                    "stage_version": 1,
+                    "stage_type": 1,
+                    "description": "photo release adult",
+                    "attachment_id": -1,
+                    "attachment_name": "",
+                    "show_display_permit": true,
+                    "display_permit_selected": false,
+                    "disable_agreetowaiver": false,
+                    "agreetowaiver_selected": false,
+                    "can_modify_signature": true,
+                    "signature_base64": "",
+                    "item_text": "i grant waiver",
+                    "uploadfile_href_text": null,
+                    "is_required": false
+                },
+                {
+                    "waiver_index": "113",
+                    "transactionstage_id": -1,
+                    "attachedchecklistitem_id": -2,
+                    "stage_id": 13,
+                    "stage_version": 4,
+                    "stage_type": 1,
+                    "description": "A Global Waiver",
+                    "attachment_id": 84,
+                    "attachment_name": "1Foo",
+                    "show_display_permit": true,
+                    "display_permit_selected": false,
+                    "disable_agreetowaiver": false,
+                    "agreetowaiver_selected": false,
+                    "can_modify_signature": true,
+                    "signature_base64": "",
+                    "item_text": "Just accept it.",
+                    "uploadfile_href_text": "1Foo Test",
+                    "is_required": true
+                }
+            ],
+            "staff_notes": "stuff notes11",
+            "customer_notes": "customer notes11",
+            "event_summary": {
+				"event_index": "92_0",
+				"new_entry_id": 0,
+				"event_id": 92,
+				"permit_id": 174,
+				"event_name": "a",
+				"resource_count": 1,
+				"booking_count": 1,
+				"total_amount": 11.00,
+				"is_booking_updated": false,
+				"creation_date": "2018-05-13 23:54:23",
+				"last_modify_date": "2018-05-13 23:54:23",
+				"is_last_modified": false,
+				"is_event_updated": false,
+				"allow_reset_fees": true
+			}
+        }
+    }
+}

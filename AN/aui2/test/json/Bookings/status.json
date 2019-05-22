@@ -1,0 +1,53 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "1 Unauthorized access permissions"
+  },
+  "body": {
+    "items": [{
+      "name": "Approved",
+      "id": 0,
+      "selected": true
+    },
+    {
+      "name": "Denied",
+      "id": 1,
+      "selected": false
+    },
+    {
+      "name": "Tentative",
+      "id": 2,
+      "selected": false
+    },
+    {
+      "name": "Stage Denied",
+      "id": 3,
+      "selected": false
+    },
+    {
+      "name": "Issued",
+      "id": 4,
+      "selected": true
+    },
+    {
+      "name": "Cancelled",
+      "id": 5,
+      "selected": false
+    },
+    {
+      "name": "Waiting Decision",
+      "id": 6,
+      "selected": false
+    },
+    {
+      "name": "Completed",
+      "id": 7,
+      "selected": true
+    },
+    {
+      "name": "On Hold",
+      "id": 8,
+      "selected": false
+    }]
+  }
+}

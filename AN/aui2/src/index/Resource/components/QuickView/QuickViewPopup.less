@@ -1,0 +1,67 @@
+@import '~shared/style/variables/index.less';
+/* stylelint-disable */
+
+@model-color: #313741;
+@error-color: #d93a20;
+@color-white: #fff;
+
+.quick-view {
+  .modal-box {
+    color: @model-color;
+  }
+
+  .modal-body {
+    padding-bottom: 35px;
+  }
+
+  .desc {
+    margin-bottom: 30px;
+  }
+
+  .quick-view-label {
+    display: inline-block;
+    padding-bottom: 10px;
+    font-weight: @semibold;
+  }
+
+  .error-message {
+    margin-top: 5px;
+    color: @error-color;
+  }
+
+  .quick-view-type__wrapper{
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .icon-info-circle {
+    margin-right: 32px;
+    vertical-align: middle;
+    font-size: @font-size-xs;
+    color: @color-blue;
+  }
+
+  .view-type-label {
+    display: inline-block;
+    width: 14px;
+    line-height: 14px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: -5px;
+    font-size: 11px;
+    color: @color-white;
+    border-radius: 2px;
+  }
+
+  .radio-label {
+    padding-left: 5px;
+  }
+
+  .global-label {
+    background-color: @staus-purple;
+  }
+
+  .local-label {
+    background-color: @staus-blue;
+  }
+}

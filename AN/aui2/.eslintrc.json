@@ -1,0 +1,49 @@
+{
+  "extends": "an",
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "build/webpack.config.eslint.js"
+      }
+    }
+  },
+  "rules": {
+    "no-param-reassign": "off",
+    "no-tabs": "off",
+    "import/no-extraneous-dependencies": "off",
+    "default-case":"off"
+  },
+  "globals": {
+    "window": true,
+    "setTabLabel": true,
+    "setTabAttr": true,
+    "addStaticBreadcrumb": true,
+    "addRootBreadCrumbForFacilityRedesign": true,
+    "setFunctionPageBreadcrumb": true,
+    "__initialState__": true,
+    "__STATIC__": true,
+    "__DEV__": true,
+    "__TESTING__": true,
+    "__TESTINGHOST__": true,
+    "__TESTINGPORT__": true,
+
+    "__cart__": true,
+    "__resourceCalender__": true,
+    "__permitDetail__": true,
+    "__sites__": true,
+    "__centers__": true,
+    "__facilityTypes__": true,
+    "__resourceTypes__": true,
+    "__eventTypes__": true,
+    "__facilityTypeLabel__": true,
+    "__paymentOptions__": true,
+    "__payer__": true,
+    "__paymentPlanInitData__": true,
+    "__paymentSummary__": true,
+    "__status__": true,
+    "__reservationDetailAuthorities__": true,
+    "__initData__": true,
+    "__savedData__": true,
+    "__customerror__": true
+  }
+}

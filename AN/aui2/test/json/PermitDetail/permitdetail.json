@@ -1,0 +1,24 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "total_records_per_page": 30,
+      "order_option": "ASC",
+      "total_page": 1,
+      "total_records": 0,
+      "page_number": 1
+    }
+  },
+  "body": {
+    "payment_or_refund": {
+      "batch_id": 0,
+      "receipt_id": 2,
+      "amount_due": -16.23,
+      "non_monetary_receipt": false,
+      "receipt_header_id": 0,
+      "is_refund": true
+    }
+  }
+}

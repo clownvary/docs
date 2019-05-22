@@ -1,0 +1,43 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "pageCount": 1,
+      "recordCount": 0,
+      "multiplePage": false,
+      "order_by": "",
+      "total_records_per_page": 30,
+      "total_records": 0,
+      "page_number": 1,
+      "order_option": "ASC",
+      "total_page": 1
+    }
+  },
+  "body": {
+    "echeck_list": [
+      {
+        "echeck_id": 125,
+        "eft_account_type": "C",
+        "eft_routing_number": "xxx123",
+        "eft_ams_account_id": "14656977401004859844YQBTNUHOFJYRAKLBLLJWOOMXGJQXUWSI",
+        "eft_account_number": "xxx123",
+        "eft_account_type_name": "Checking"
+      }, {
+        "echeck_id": 127,
+        "eft_account_type": "C",
+        "eft_routing_number": "xxx0574",
+        "eft_ams_account_id": "14688052513000516628AEEUOHXWDSOHBRPXKMRAIGIEDSXVNRUW",
+        "eft_account_number": "xxx5236",
+        "eft_account_type_name": "Checking"
+      }, {
+        "echeck_id": 128,
+        "eft_account_type": "S",
+        "eft_routing_number": "xxx0574",
+        "eft_ams_account_id": "14688052513000516628AEEUOHXWDSOHBRPXKMRAIGIEDSXVNRUW",
+        "eft_account_number": "xxx5236",
+        "eft_account_type_name": "Saving"
+      }
+    ]
+  }
+}

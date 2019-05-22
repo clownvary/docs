@@ -1,0 +1,153 @@
+@import '../variables/index.less';
+/* stylelint-disable */
+
+@date-picker-prefix: date-picker;
+@date-picker-bg-hover: darken(@picton-blue, 10%);
+@river-bed-fade-20: fade(@river-bed, 20%);
+@dark-sky-blue-fade-20: fade(@color-blue, 20%);
+
+.@{date-picker-prefix} {
+  font-size: 0;
+
+  .@{date-picker-prefix}__calendar {
+    font-size: 14px;
+
+    .@{date-picker-prefix}__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+
+      span:nth-child(2) {
+        order: 2;
+      }
+
+      &:before,
+      &:after {
+        display: none;
+      }
+
+      .@{date-picker-prefix}__calendar-title {
+        margin: 0;
+        line-height: 24px;
+      }
+    }
+
+    .@{date-picker-prefix}__table td {
+      height: 30px;
+      padding: 0;
+      line-height: 30px;
+      border-right: 2px solid @white;
+      border-radius: 3px;
+
+      &:last-child {
+        border-right-width: 0;
+      }
+
+      &:hover {
+        border-radius: 3px;
+      }
+    }
+
+    .@{date-picker-prefix}--other-month {
+      color: @river-bed-fade-20;
+    }
+
+    .@{date-picker-prefix}--selected {
+      background: @dark-sky-blue-fade-20;
+      border-radius: 3px;
+
+      &:hover {
+        color: @white;
+        background: @date-picker-bg-hover;
+      }
+
+      &.@{date-picker-prefix}--today {
+        font-weight: bold;
+        color: @picton-blue;
+        background: @dark-sky-blue-fade-20;
+
+        &:hover {
+          color: @white;
+          background: @date-picker-bg-hover;
+        }
+      }
+    }
+
+    .@{date-picker-prefix}--today {
+      font-weight: bold;
+      color: @picton-blue;
+      background: @white;
+
+      &:hover {
+        background: @date-picker-bg-hover;
+      }
+    }
+
+    .@{date-picker-prefix}--disabled {
+      position: relative;
+      padding: 3px 0;
+      cursor: default;
+      color: @avatar-bg-color;
+      background: none;
+      border-right: 0;
+      border-radius: 0;
+
+      &:before {
+        position: absolute;
+        top: 5px;
+        left: -1px;
+        z-index: -1;
+        display: block;
+        width: 32px;
+        height: 20px;
+        background: @gray-lighter;
+        content: ' ';
+      }
+
+      &:after {
+        position: absolute;
+        top: 5px;
+        right: -2px;
+        z-index: 0;
+        display: block;
+        width: 4px;
+        height: 20px;
+        background: @gray-lighter;
+        content: ' ';
+      }
+
+      &.@{date-picker-prefix}--selected {
+        font-weight: bold;
+        background: none;
+
+        &:hover {
+          color: @avatar-bg-color;
+          background: none;
+        }
+      }
+
+      &.@{date-picker-prefix}--other-month {
+        color: @river-bed-fade-20;
+
+        &:hover {
+          background: none;
+        }
+      }
+
+      &.@{date-picker-prefix}--today {
+        color: @avatar-bg-color;
+
+        &:hover {
+          background: none;
+        }
+      }
+    }
+
+    .@{date-picker-prefix}--range-cell {
+      display: inline-block;
+      width: 100%;
+      line-height: 1.14;
+    }
+  }
+}

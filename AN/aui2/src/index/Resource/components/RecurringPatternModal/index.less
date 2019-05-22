@@ -1,0 +1,174 @@
+@import '~shared/style/variables/color';
+/* stylelint-disable */
+
+.resource-calendar {
+  .loading-bar-mask {
+    z-index: 10000;
+  }
+
+  .loading-bar-outer-box {
+    z-index: 10000;
+  }
+}
+
+.recurring-pattern-modal {
+  .modal-body {
+    padding-top: 15px;
+
+    .date-picker {
+      line-height: 0;
+
+      .date-picker__calendar {
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  .error-box {
+    display: flex;
+    padding: 5px 10px;
+    margin: 5px 0 15px;
+
+    &.multiple > .aaui-alert-error-icon {
+      display: none;
+    }
+
+    .aaui-alert-error-icon {
+      margin-top: 0;
+    }
+
+    ul {
+      padding: 0 0 0 3px;
+      margin: -3px 0 0;
+      list-style-type: none;
+    }
+
+    li {
+      span {
+        height: 24px;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      .message {
+        display: inline-block;
+        width: 520px;
+      }
+    }
+  }
+
+  label {
+    display: inline-block;
+    height: 30px;
+    min-width: 130px;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: top;
+  }
+
+  span.desc {
+    display: inline-block;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    vertical-align: top;
+
+    &.tail {
+      margin-left: 10px;
+    }
+  }
+
+  .input-group {
+    input {
+      font-size: 14px;
+      color: @color-black-lighter;
+    }
+  }
+
+  .form-group {
+    margin-top: 12px;
+    vertical-align: top;
+
+    > label {
+      padding-right: 15px;
+      text-align: right;
+    }
+  }
+
+  .radios {
+    display: inline-block;
+
+    .pattern-ends__selection:nth-last-child(1) {
+      margin-top: 12px;
+    }
+  }
+
+  .pattern-type {
+    .aaui-dropdown {
+      width: 273px;
+      font-size: 14px;
+      color: @color-black-lighter;
+
+      .aaui-dropdown__button-text {
+        font-size: 14px;
+        color: @color-black-lighter;
+      }
+    }
+  }
+
+  .pattern-frequency {
+    .input-group {
+      width: 112px;
+    }
+
+    label.radio {
+      width: auto;
+    }
+
+    a.dates-clear {
+      margin-left: 10px;
+      font-size: 14px;
+      cursor: pointer;
+
+      &.hidden {
+        display: none;
+      }
+    }
+
+    &.monthly {
+      .input-group {
+        width: 80px;
+      }
+    }
+
+    &.on-selected-dates {
+      margin-top: 15px;
+
+      .date-picker {
+        width: 273px;
+
+        .input-group {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .pattern-ends {
+    label.radio {
+      width: 80px;
+      text-align: left;
+    }
+
+    .input-group {
+      width: 146px;
+    }
+
+    .date-picker {
+      width: 200px;
+    }
+  }
+}

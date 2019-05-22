@@ -1,0 +1,36 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "total_page": 1,
+      "order_option": "ASC",
+      "page_number": 0,
+      "total_records": 0,
+      "total_records_per_page": 20
+    }
+  },
+  "body": {
+    "payer": {
+      "companies": [{
+        "id": 1,
+        "name": "company test",
+        "selected": false
+      }],
+      "customers": [
+        {
+          "id": 1,
+          "name": "payer test 1",
+          "selected": false
+        }, {
+          "id": 2,
+          "name": "payer test 2",
+          "selected": true
+        }
+      ],
+      "payer_type": 1,
+      "show_payer_type" : true
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import '~shared/style/variables/index.less';
+/* stylelint-disable */
+
+.customer-info {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid @color-gray-border;
+
+  & > div > div {
+    span:last-child {
+      margin-right: 0;
+    }
+
+    &:first-child {
+      float: left;
+    }
+
+    &:last-child {
+      float: right;
+    }
+  }
+
+  & > div:first-child,
+  .customer-content {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted @ghost;
+  }
+
+  .address {
+    & > span:first-child {
+      line-height: 16px;
+    }
+  }
+
+  .customer-content {
+    .an-property-list:nth-child(2) {
+      &&__item:not(:last-child) {
+        span {
+          a {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  .company-phone {
+    span {
+      a {
+        display: none !important;
+      }
+    }
+  }
+
+  .email-item {
+    span:first-child {
+      line-height: 20px;
+    }
+
+    span:last-child {
+      width: 280px;
+    }
+  }
+}

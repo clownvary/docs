@@ -1,0 +1,31 @@
+doctype html
+- var opts = htmlWebpackPlugin.options;
+- var diff = opts.diff;
+- var linkExtraPrefix = opts.linkExtraPrefix;
+include ../../../build/helper/templates/variables.jade
+
+html(lang="en")
+
+  head
+    include ../../../build/helper/templates/head.jade
+
+  body
+    if diff !== "static"
+      script.
+        window.__customerror__ = {};
+        window.__customerror__.__initialState__ = {
+          "errorMessage": "${error_message}",
+          "dateFormat" : "${dateFormat}",
+          "timeFormat" : "${timeFormat}",
+          "timeZoneOffset": parseInteger(${time_zone_offset})
+        };
+    else
+      script.
+        window.__customerror__ = {};
+        window.__customerror__.__initialState__ = {
+          "errorMessage": "this is a error",
+          "dateFormat" : "DD/MM/YYYY",
+          "timeFormat" : "h:mm a",
+          "timeZoneOffset": -8
+        };
+    include ../../../build/helper/templates/body.jade

@@ -1,0 +1,5 @@
+{
+  "filename": "Cart",
+  "isModule": true,
+  "template": "./index.jade"
+}

@@ -1,0 +1,87 @@
+@import '~shared/style/variables/index.less';
+/* stylelint-disable */
+
+.permit-type-set {
+  display: inline-flex;
+
+  .permit-user-dropdown {
+    width: 160px;
+  }
+
+  .aaui-dropdown {
+    .aaui-dropdown__menu {
+      width: 190px;
+      height: 345px;
+      max-height: 345px;
+
+      ul {
+        max-height: 300px;
+      }
+    }
+  }
+
+  .permit-type-set-user,
+  .permit-type-set-date {
+    span.permit-type-set-title {
+      display: inline-flex;
+      padding-top: 2px;
+      padding-right: 20px;
+      font-size: 16px;
+      font-weight: @semibold;
+      line-height: 150%;
+    }
+
+    display: inline-flex;
+    padding-left: 30px;
+    line-height: 150%;
+    white-space: nowrap;
+  }
+
+  .permit-type-set-date {
+    .timepicker-wrap {
+      position: relative;
+      padding-top: 2px;
+
+      .icon-calendar-m {
+        color: @color-blue;
+
+        &:hover {
+          cursor: pointer;
+          color: @color-blue-darker;
+        }
+      }
+
+      .timepicker {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-weight: normal;
+      }
+
+      .input {
+        position: absolute;
+        top: 0;
+        margin-top: -9999999px;
+      }
+    }
+
+    .expiration-date {
+      padding-left: 10px;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 180%;
+    }
+  }
+
+  .icon-close {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 180%;
+    cursor: pointer;
+    color: #748288;
+  }
+}

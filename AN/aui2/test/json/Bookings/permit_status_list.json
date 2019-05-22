@@ -1,0 +1,51 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "page_number": 0,
+      "order_option": "ASC",
+      "total_records_per_page": 20,
+      "total_records": 0,
+      "total_page": 1
+    }
+  },
+  "body": {
+    "statusitems": [{
+      "status_type": 0,
+      "status_text": "Issue",
+      "stage_id": -1,
+      "status_id": 4,
+      "permit_status_action": -1,
+      "transaction_stage_id": -1
+    }, {
+      "status_type": 0,
+      "status_text": "Deny",
+      "stage_id": -1,
+      "status_id": 5,
+      "permit_status_action": -1,
+      "transaction_stage_id": -1
+    },{
+      "status_type": 0,
+      "status_text": "Complete",
+      "stage_id": -1,
+      "status_id": 7,
+      "permit_status_action": -1,
+      "transaction_stage_id": -1
+    }],
+    "extrainfo": {
+      "permit_id": 866,
+      "permit_number": 866,
+      "event_name": "Test event #866",
+      "can_be_cancelled": true,
+      "can_be_completed": true,
+      "is_expired": false,
+      "permit_status": "Approved",
+      "status_id": 0,
+      "is_pending_recalculation": false,
+      "can_be_modified": false,
+      "is_modifying": false
+    }
+  }
+}

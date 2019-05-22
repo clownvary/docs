@@ -1,0 +1,137 @@
+@import '~shared/style/variables/index.less';
+/* stylelint-disable */
+
+.payment-payer {
+  h2 {
+    margin: 0 0 15px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #313741;
+  }
+
+  &-item {
+    height: 30px;
+    margin: 0 0 10px 0;
+    line-height: 30px;
+
+    &.aaui-flexbox {
+      flex-wrap: nowrap;
+    }
+
+    .prt-srch-itm-radio {
+      padding-right: 20px;
+    }
+
+    .prt-srch-itm-link {
+      height: 30px;
+      padding-left: 20px;
+      margin-right: 30px;
+      line-height: 30px;
+
+      & + .prt-srch-itm-agent {
+        margin-left: 0;
+      }
+
+      .payment-payer-link {
+        cursor: pointer;
+        color: @color-blue;
+
+        &:hover {
+          text-decoration: none;
+          color: @color-blue-darker;
+        }
+
+        i {
+          display: inline-block;
+          margin-right: 4px;
+        }
+
+        &-disabled {
+          color: #eee;
+
+          &:hover {
+            cursor: default;
+            color: #eee;
+          }
+        }
+      }
+    }
+
+    .prt-srch-itm-showName {
+      height: 30px;
+      font-weight: @semibold;
+      line-height: 30px;
+    }
+
+    .prt-srch-itm-agent {
+      margin-left: 30px;
+
+      label {
+        margin-right: 20px;
+      }
+
+      .noAgents {
+        font-size: 14px;
+        color: #738187;
+      }
+    }
+
+    form {
+      input {
+        display: none;
+      }
+    }
+  }
+
+  &-link-des {
+    padding-right: 16px;
+    color: #748288;
+  }
+
+  &-custom-list,
+  &-agents-list,
+  &-company-list {
+    width: 190px;
+    max-height: 280px;
+    font-size: 0;
+
+    .aaui-dropdown__menu {
+      font-size: 16px;
+    }
+
+    .aaui-dropdown__menu-wrapper {
+      top: 30px;
+    }
+  }
+
+  &-custom-list {
+    height: 30px;
+    line-height: 30px;
+  }
+
+  &-agents-list {
+    height: 30px;
+    padding-left: 20px;
+    line-height: 30px;
+    vertical-align: top;
+  }
+
+  .payment-payer-company {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .prt-srch-itm-agent {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+
+  .payment-payer-item-company {
+    align-items: flex-start;
+  }
+
+  .company-label {
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "headers_success_list",
+  "type": "object",
+  "properties": {
+    "response_code": {
+      "enum": [
+        "0000"
+      ]
+    },
+    "response_message": {
+      "enum": [
+        "ok"
+      ]
+    },
+    "page_info": {
+      "type": "object",
+      "properties": {
+        "total_page": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "page_number": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "total_records": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "total_page",
+        "page_number",
+        "total_records"
+      ]
+    }
+  },
+  "required": [
+    "response_code",
+    "response_message",
+    "page_info"
+  ]
+}

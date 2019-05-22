@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shared/components/Error Error component should render correctly if no error 1`] = `
+<Connect(Error)
+  display={true}
+  error={
+    Object {
+      "list": Array [],
+    }
+  }
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Error
+    clearError={[Function]}
+    display={true}
+    error={
+      Object {
+        "list": Array [],
+      }
+    }
+    locationReload={[Function]}
+    redirect={[Function]}
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "subscribe": [Function],
+      }
+    }
+  >
+    <Modal
+      className="error-bar"
+      onClose={[Function]}
+      shown={false}
+      title="System Message"
+    >
+      <div
+        className="modal-wrap"
+        role="dialog"
+      >
+        <div
+          className="modal error-bar"
+          onKeyDown={[Function]}
+        >
+          <section
+            className="modal-box"
+          >
+            <header
+              className="modal-header"
+            >
+              <h3
+                className="modal-title"
+              >
+                System Message
+              </h3>
+              <span
+                aria-label="close-dialog"
+                className="icon icon-close modal-close"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex="0"
+              />
+            </header>
+            <div
+              className="error-bar-body u-clearfix"
+            >
+              <div
+                className="error-content"
+              >
+                <ul />
+              </div>
+              <Button
+                className="error-bar-button"
+                loading={false}
+                menuData={Array []}
+                noSubmit={false}
+                onClick={[Function]}
+                size="sm"
+                type="strong"
+              >
+                <button
+                  className="btn btn-strong btn--sm error-bar-button"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="submit"
+                >
+                  <span>
+                    OK
+                  </span>
+                </button>
+              </Button>
+            </div>
+          </section>
+        </div>
+        <div
+          className="modal-mask"
+        />
+      </div>
+    </Modal>
+  </Error>
+</Connect(Error)>
+`;
+
+exports[`shared/components/Error Error component should render correctly with errors 1`] = `
+<Connect(Error)
+  display={true}
+  error={
+    Object {
+      "list": Array [
+        Object {
+          "message": "error message1",
+        },
+        Object {
+          "message": "error message2",
+        },
+        Object {
+          "message": "error message3",
+        },
+      ],
+    }
+  }
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "subscribe": [Function],
+    }
+  }
+  title="Error for snapshot"
+>
+  <Error
+    clearError={[Function]}
+    display={true}
+    error={
+      Object {
+        "list": Array [
+          Object {
+            "message": "error message1",
+          },
+          Object {
+            "message": "error message2",
+          },
+          Object {
+            "message": "error message3",
+          },
+        ],
+      }
+    }
+    locationReload={[Function]}
+    redirect={[Function]}
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "subscribe": [Function],
+      }
+    }
+    title="Error for snapshot"
+  >
+    <Modal
+      className="error-bar"
+      onClose={[Function]}
+      shown={false}
+      title="Error for snapshot"
+    >
+      <div
+        className="modal-wrap"
+        role="dialog"
+      >
+        <div
+          className="modal error-bar"
+          onKeyDown={[Function]}
+        >
+          <section
+            className="modal-box"
+          >
+            <header
+              className="modal-header"
+            >
+              <h3
+                className="modal-title"
+              >
+                Error for snapshot
+              </h3>
+              <span
+                aria-label="close-dialog"
+                className="icon icon-close modal-close"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex="0"
+              />
+            </header>
+            <div
+              className="error-bar-body u-clearfix"
+            >
+              <div
+                className="error-content"
+              >
+                <ul>
+                  <li
+                    key="0"
+                  >
+                    error message1
+                  </li>
+                  <li
+                    key="1"
+                  >
+                    error message2
+                  </li>
+                  <li
+                    key="2"
+                  >
+                    error message3
+                  </li>
+                </ul>
+              </div>
+              <Button
+                className="error-bar-button"
+                loading={false}
+                menuData={Array []}
+                noSubmit={false}
+                onClick={[Function]}
+                size="sm"
+                type="strong"
+              >
+                <button
+                  className="btn btn-strong btn--sm error-bar-button"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="submit"
+                >
+                  <span>
+                    OK
+                  </span>
+                </button>
+              </Button>
+            </div>
+          </section>
+        </div>
+        <div
+          className="modal-mask"
+        />
+      </div>
+    </Modal>
+  </Error>
+</Connect(Error)>
+`;

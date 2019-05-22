@@ -1,0 +1,27 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "pageCount": 1,
+      "recordCount": 0,
+      "multiplePage": false,
+      "order_by": "",
+      "total_page": 1,
+      "order_option": "ASC",
+      "total_records": 0,
+      "total_records_per_page": 30,
+      "page_number": 1
+    }
+  },
+  "body": {
+    "echeck_obj": {
+      "echeck_id": -1,
+      "eft_account_type": "C",
+      "eft_routing_number": "xxx0574",
+      "eft_ams_account_id": "14694416952002713148RIASBGTOMRYRRLXGYIBJMLTOWNHWIMBB",
+      "eft_account_number": "xxx5236",
+      "eft_account_type_name": "Checking"
+    }
+  }
+}

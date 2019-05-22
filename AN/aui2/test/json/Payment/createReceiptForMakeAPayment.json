@@ -1,0 +1,20 @@
+{
+  "headers" : {
+    "response_code" : "0000",
+    "response_message" : "Successful",
+    "page_info" : {
+      "order_by" : "",
+      "page_number" : 1,
+      "total_records_per_page" : 30,
+      "total_page" : 1,
+      "order_option" : "ASC",
+      "total_records" : 0
+    }
+  },
+  "body" : {
+    "receipt": {
+    "receipt_id": 1,
+    "receipt_entry_id": 1
+    }
+  }
+}

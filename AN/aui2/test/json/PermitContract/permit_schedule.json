@@ -1,0 +1,161 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "total_page": 1,
+      "order_option": "ASC",
+      "page_number": 0,
+      "total_records_per_page": 20,
+      "total_records": 0
+    }
+  },
+  "body": {
+    "permit_schedules": [
+      {
+        "resource_name": "zack facility minutes",
+        "center_name": "",
+        "event_name": "Test Recurring",
+        "start_date": "29 Jul 2017",
+        "end_date": "30 Jul 2017",
+        "schedules": [
+          {
+            "resource_name": "zack facility minutes",
+            "center_name": "*lillian_center1",
+            "event_name": "Test Recurring",
+            "start_date": "30 Jul 2017",
+            "end_date": "30 Jul 2017",
+            "end_day_of_week": "Sun",
+            "start_time": "1:00 AM",
+            "end_time": "1:30 AM",
+            "start_day_of_week": "Sun",
+            "recurring_indicator": false,
+            "occurrences": 0
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "8 Aug 2017"
+          }
+        ],
+        "end_day_of_week": "Sun",
+        "start_time": "1:00 AM",
+        "end_time": "1:30 AM",
+        "start_day_of_week": "Sun",
+        "recurring_indicator": true,
+        "occurrences": 9
+      },
+      {
+        "resource_name": "zack facility minutes",
+        "center_name": "*lillian_center2",
+        "event_name": "Test Recurring",
+        "start_date": "8 Jul 2017",
+        "end_date": "17 Jul 2017",
+        "schedules": [],
+        "exceptions": [],
+        "end_day_of_week": "Sun",
+        "start_time": "2:00 AM",
+        "end_time": "1:30 AM",
+        "start_day_of_week": "Sun",
+        "recurring_indicator": false,
+        "occurrences": 0
+      },
+      {
+        "resource_name": "zack facility minutes",
+        "center_name": "",
+        "event_name": "Test Recurring",
+        "start_date": "10 Jul 2017",
+        "end_date": "18 Jul 2017",
+        "schedules": [],
+        "exceptions": [],
+        "end_day_of_week": "Sun",
+        "start_time": "4:00 AM",
+        "end_time": "1:30 AM",
+        "start_day_of_week": "Sun",
+        "recurring_indicator": false,
+        "occurrences": 0
+      },
+      {
+        "resource_name": "zack facility minutes",
+        "center_name": "*lillian_center3",
+        "event_name": "Test Recurring",
+        "start_date": "20 Jul 2017",
+        "end_date": "20 Jul 2017",
+        "schedules": [],
+        "exceptions": [],
+        "end_day_of_week": "Sun",
+        "start_time": "3:00 PM",
+        "end_time": "1:30 AM",
+        "start_day_of_week": "Sun",
+        "recurring_indicator": false,
+        "occurrences": 0
+      },
+      {
+        "resource_name": "zack facility minutes",
+        "center_name": "*lillian_center1",
+        "event_name": "Test Recurring",
+        "start_date": "30 Jul 2017",
+        "end_date": "30 Jul 2017",
+        "schedules": [
+          {
+            "resource_name": "zack facility minutes",
+            "center_name": "*lillian_center1",
+            "event_name": "Test Recurring",
+            "start_date": "30 Jul 2017",
+            "end_date": "30 Jul 2017",
+            "end_day_of_week": "Sun",
+            "start_time": "9:00 AM",
+            "end_time": "1:30 AM",
+            "start_day_of_week": "Sun",
+            "recurring_indicator": false,
+            "occurrences": 0
+          },
+          {
+            "resource_name": "zack facility minutes",
+            "center_name": "*lillian_center1",
+            "event_name": "Test Recurring",
+            "start_date": "31 Jul 2017",
+            "end_date": "31 Jul 2017",
+            "end_day_of_week": "Mon",
+            "start_time": "1:00 AM",
+            "end_time": "1:30 AM",
+            "start_day_of_week": "Mon",
+            "recurring_indicator": false,
+            "occurrences": 0
+          },
+          {
+            "resource_name": "zack facility minutes",
+            "center_name": "*lillian_center1",
+            "event_name": "Test Recurring",
+            "start_date": "1 Aug 2017",
+            "end_date": "1 Aug 2017",
+            "end_day_of_week": "Tue",
+            "start_time": "1:00 AM",
+            "end_time": "1:30 AM",
+            "start_day_of_week": "Tue",
+            "recurring_indicator": false,
+            "occurrences": 0
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "8 Aug 2017"
+          },
+          {
+            "date": "9 Aug 2017"
+          },
+          {
+            "date": "10 Aug 2017"
+          }
+        ],
+        "end_day_of_week": "Sun",
+        "start_time": "1:00 AM",
+        "end_time": "1:30 AM",
+        "start_day_of_week": "Sun",
+        "recurring_indicator": true,
+        "occurrences": 9
+      }
+    ]
+  }
+}

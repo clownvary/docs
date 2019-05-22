@@ -1,0 +1,22 @@
+{
+  "headers" : {
+    "response_code" : "0000",
+    "response_message" : "Successful",
+    "page_info" : {
+      "multiplePage" : false,
+      "recordCount" : 0,
+      "pageCount" : 1,
+      "order_by" : "",
+      "total_records" : 0,
+      "total_records_per_page" : 30,
+      "order_option" : "ASC",
+      "page_number" : 1,
+      "total_page" : 1
+    }
+  },
+  "body" : {
+    "result": {
+      "receipt_header_id" : 2224  
+    }
+  }
+}

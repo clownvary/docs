@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReservationDetail/components/modals/AmendmentReason.jsx basic usage 1`] = `
+<AmendmentReasonModal>
+  <Modal
+    className="amendment-modal"
+    shown={false}
+    title="Enter amendment reason (Optional)"
+  >
+    <div
+      className="modal-wrap"
+      role="dialog"
+    >
+      <div
+        className="modal amendment-modal"
+        onKeyDown={[Function]}
+      >
+        <section
+          className="modal-box"
+        >
+          <header
+            className="modal-header"
+          >
+            <h3
+              className="modal-title"
+            >
+              Enter amendment reason (Optional)
+            </h3>
+            <span
+              aria-label="close-dialog"
+              className="icon icon-close modal-close"
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex="0"
+            />
+          </header>
+          <div
+            className="modal-body"
+          >
+            <textarea
+              className="input"
+              onChange={[Function]}
+              rows={4}
+            />
+          </div>
+          <div
+            className="modal-footer"
+          >
+            <Button
+              loading={false}
+              menuData={Array []}
+              noSubmit={false}
+              type="strong"
+            >
+              <button
+                className="btn btn-strong"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                type="submit"
+              >
+                <span>
+                  OK
+                </span>
+              </button>
+            </Button>
+          </div>
+        </section>
+      </div>
+      <div
+        className="modal-mask"
+      />
+    </div>
+  </Modal>
+</AmendmentReasonModal>
+`;
+
+exports[`ReservationDetail/components/modals/AmendmentReason.jsx basic usage 2`] = `
+<AmendmentReasonModal
+  required={true}
+  value=""
+>
+  <Modal
+    className="amendment-modal"
+    shown={false}
+    title="Enter amendment reason (Required)"
+  >
+    <div
+      className="modal-wrap"
+      role="dialog"
+    >
+      <div
+        className="modal amendment-modal"
+        onKeyDown={[Function]}
+      >
+        <section
+          className="modal-box"
+        >
+          <header
+            className="modal-header"
+          >
+            <h3
+              className="modal-title"
+            >
+              Enter amendment reason (Required)
+            </h3>
+            <span
+              aria-label="close-dialog"
+              className="icon icon-close modal-close"
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex="0"
+            />
+          </header>
+          <div
+            className="modal-body"
+          >
+            <textarea
+              className="input"
+              onChange={[Function]}
+              rows={4}
+              value=""
+            />
+          </div>
+          <div
+            className="modal-footer"
+          >
+            <Button
+              disabled={true}
+              loading={false}
+              menuData={Array []}
+              noSubmit={false}
+              type="strong"
+            >
+              <button
+                className="btn btn-strong"
+                disabled={true}
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                type="submit"
+              >
+                <span>
+                  OK
+                </span>
+              </button>
+            </Button>
+          </div>
+        </section>
+      </div>
+      <div
+        className="modal-mask"
+      />
+    </div>
+  </Modal>
+</AmendmentReasonModal>
+`;

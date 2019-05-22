@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "2 Unauthorized access permissions",
+    "page_info": {
+          "orderBy": null,
+          "multiplePage": false,
+          "pageSize": 30,
+          "orderOption": "ASC",
+          "pageCount": 1,
+          "recordCount": 0,
+          "page_number": 1,
+          "total_records": 10,
+          "total_page": 12
+      }
+  },
+  "body": {
+    "selectedItems": [1,2,3, 4, 5, 6]
+  }
+}

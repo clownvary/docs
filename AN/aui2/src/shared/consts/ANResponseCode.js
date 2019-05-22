@@ -1,0 +1,1 @@
+export const NO_CUSTOMER_COMPANY_SELECTED = '5001';

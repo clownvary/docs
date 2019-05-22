@@ -1,0 +1,29 @@
+@import '~shared/style/variables/index.less';
+
+@search-thin-color: #bcbcbc;
+
+@emptyStatePrefixCls: empty-state;
+
+.@{emptyStatePrefixCls} {
+  &--lg {
+    margin-top: 107px;
+    text-align: center;
+
+    & > .icon {
+      margin-bottom: 28px;
+      font-size: @empty-state-lg-font-size;
+      color: @search-thin-color;
+    }
+
+    .@{emptyStatePrefixCls}__title {
+      margin-bottom: 10px;
+      font-size: @font-size-base;
+      font-weight: @headings-font-weight;
+    }
+
+    .@{emptyStatePrefixCls}__desc {
+      margin-bottom: 20px;
+      font-size: @font-size-sm;
+    }
+  }
+}

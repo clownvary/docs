@@ -1,0 +1,385 @@
+@import '~shared/style/variables/index.less';
+/* stylelint-disable */
+
+.amendment {
+  font-size: 14px;
+
+  &-header {
+    padding: 10px 20px;
+    line-height: 20px;
+    border-top: solid 1px @ghost;
+  }
+
+  &-title {
+    float: left;
+    font-size: 20px;
+    font-weight: @semibold;
+    color: #222;
+  }
+
+  &-info {
+    float: right;
+    font-style: italic;
+
+    span {
+      padding-left: 20px;
+      font-size: 14px;
+    }
+  }
+
+  &-reason {
+    padding: 8px 20px;
+    line-height: 20px;
+    border-top: dotted 1px @ghost;
+
+    span {
+      font-weight: @semibold;
+    }
+  }
+
+  &-total-fee {
+    padding: 8px;
+    padding-right: 20px;
+    line-height: 22px;
+    text-align: right;
+    border-top: solid 1px @ghost;
+
+    &-name {
+      padding-right: 20px;
+    }
+
+    &-name,
+    &-info {
+      display: inline-block;
+
+      > div:first-child {
+        padding-bottom: 8px;
+      }
+    }
+  }
+
+  .green {
+    color: @color-green;
+  }
+
+  table.table.an-table.amendment-action-table {
+    table-layout: fixed;
+
+    th > div,
+    td > div {
+      width: 100%;
+    }
+
+    > tbody > tr {
+      > td {
+        padding-top: 8px;
+        border-top: 1px solid @ghost;
+      }
+
+      &:first-child {
+        > td {
+          border-top: 0;
+        }
+      }
+    }
+
+    .event-action {
+      width: 158px;
+
+      > div {
+        padding-left: 30px;
+      }
+    }
+
+    .event-information {
+      min-width: 778px;
+    }
+
+    td.event-information {
+      padding-bottom: 0;
+
+      .drag-handle {
+        margin-left: -5px;
+      }
+
+      div {
+        padding: 0;
+
+        .table-status {
+          &-name {
+            width: 160px;
+          }
+
+          &-info {
+            width: 776px;
+          }
+
+          tbody {
+            .table-status-info {
+              > div,
+              > div > div {
+                padding: 0;
+              }
+            }
+          }
+
+          &-content > div {
+            display: flex;
+            flex-direction: row;
+
+            .desc {
+              flex-shrink: 0;
+              width: 128px;
+            }
+          }
+
+          &-from {
+            padding: 0 20px 8px 20px;
+          }
+
+          &-to {
+            padding: 8px 20px;
+            border-top: dotted 1px @ghost;
+          }
+        }
+
+        .event-header {
+          &-name {
+            font-weight: @semibold;
+          }
+
+          &-name,
+          &-note {
+            padding: 0 20px;
+            margin-bottom: 8px;
+          }
+
+          &-name-revised-from {
+            color: @color-black-lighter;
+          }
+
+          &-name-to {
+            color: @color-green;
+          }
+
+          &-to {
+            padding-top: 8px;
+            border-top: 1px dotted @ghost;
+          }
+        }
+
+        .event-detail {
+          &-header {
+            zoom: 1;
+            padding: 0 20px;
+            overflow: hidden;
+            font-weight: @semibold;
+            line-height: 24px;
+            background-color: @cyan-blue;
+
+            > div {
+              line-height: 24px;
+              color: #fff;
+
+              &:first-child {
+                float: left;
+                width: 55%;
+                padding-right: 20px;
+                text-align: left;
+              }
+
+              &:last-child {
+                float: right;
+                width: 42%;
+                text-align: right;
+              }
+            }
+          }
+        }
+
+        .table.table.an-table.amendment-action-resource-table {
+          table-layout: fixed;
+          width: 100%;
+
+          th div,
+          td div {
+            width: 100%;
+          }
+
+          tr {
+            &.extra-row {
+              td {
+                border-top: 1px dotted @ghost;
+
+                &:first-child {
+                  border-top: none;
+                }
+              }
+
+              div {
+                font-size: 14px;
+                font-style: normal;
+              }
+            }
+
+            &.delete div {
+              color: @river-bed;
+            }
+
+            &.add div {
+              color: @color-green;
+            }
+          }
+
+          td div {
+            & > .update {
+              color: @color-green;
+            }
+          }
+
+          &.add-question div {
+            color: @color-green;
+          }
+
+          .event-detail-action,
+          .event-detail-time {
+            width: 100px;
+
+            > div {
+              padding-left: 20px;
+            }
+          }
+
+          .start-time {
+            > div {
+              padding-left: 15px;
+            }
+          }
+
+          .event-detail-date {
+            width: 120px;
+
+            & > div {
+              padding-left: 20px;
+            }
+          }
+
+          .event-detail-attendee {
+            width: 110px;
+          }
+
+          .event-detail-amount {
+            width: 128px;
+          }
+
+          .event-detail-attendee > div {
+            padding-right: 10px;
+            text-align: right;
+          }
+
+          .event-detail-amount > div {
+            padding-right: 20px;
+            text-align: right;
+          }
+        }
+
+        .table.table.an-table.amendment-action-question-table {
+          table-layout: fixed;
+          width: 100%;
+
+          th div,
+          td div {
+            width: 100%;
+          }
+
+          tr {
+            &.extra-row div {
+              font-size: 14px;
+              font-style: normal;
+            }
+
+            & > td {
+              border-top: 1px dotted @ghost;
+            }
+
+            &:first-child > td {
+              border-top: none;
+            }
+
+            &.edit-question {
+              &-new > td {
+                &:first-child {
+                  border-top: none;
+                }
+
+                &:last-child div {
+                  color: @color-green;
+                }
+              }
+            }
+
+            &.add-question div {
+              color: @color-green;
+            }
+
+            &.del-question div {
+              color: @river-bed;
+            }
+          }
+
+          .event-question-action {
+            width: 100px;
+
+            > div {
+              padding-left: 20px;
+            }
+          }
+
+          .event-question-desc {
+            width: 377px;
+
+            > div {
+              padding-left: 20px;
+            }
+          }
+
+          .event-question-answer {
+            width: 297px;
+
+            > div {
+              padding: 0 20px;
+            }
+          }
+        }
+
+        .amendment-additional-fee {
+          padding: 8px 20px 8px 8px;
+          line-height: 22px;
+          text-align: right;
+          border-top: solid 1px @ghost;
+
+          div {
+            width: auto;
+          }
+
+          &-name {
+            padding-right: 20px;
+          }
+
+          &-name,
+          &-info {
+            display: inline-block;
+
+            > div:first-child {
+              padding-bottom: 8px;
+            }
+
+            .green {
+              color: @color-green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

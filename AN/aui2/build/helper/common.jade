@@ -1,0 +1,43 @@
+doctype html
+
+if diff !== "static"
+  <% String appPath = request.getContextPath(); %>
+  <%@ page isELIgnored="false" %>
+  
+- var opts = htmlWebpackPlugin.options;
+- var diff = opts.diff;
+- var linkExtraPrefix = opts.linkExtraPrefix;
+- var finalOrgSiteRootURL = "${orgSiteName}" ? "/${orgSiteName}" : "<%=appPath%>";
+
+html(lang="en")
+
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1")
+    title
+
+    if diff !== "static"
+      each val, index in htmlWebpackPlugin.files.css
+        link(href!="<%=appPath%>/" + linkExtraPrefix + val rel="stylesheet")
+
+  body
+
+    #app-root
+
+    if diff !== "static"
+      script.
+        window.__environment__ = {
+          ROOT_URL: "<%=appPath%>"
+        }
+    else
+      script.
+        window.__environment__ = {
+          ROOT_URL: "test/"
+        }
+
+    each val, index in htmlWebpackPlugin.files.chunks
+      if diff !== "static"
+        script(src!="<%=appPath%>/" + linkExtraPrefix + val.entry)
+      else
+        script(src=val.entry)

@@ -1,0 +1,476 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index/Payment/components/Modals/PinPad/components/Pinpad/mutiplePays component should render correctly 1`] = `
+<MutiplePays
+  communicatingWithDevice={[Function]}
+  pinpad={
+    Object {
+      "payment": Immutable.Map {
+        receiptHeaderId: 1234,
+        agentId: 0,
+        isRefund: false,
+        currentPayIndex: 0,
+        promptMessage: "",
+        isNewCard: false,
+        cardHolderInfo: Immutable.Map {
+            cardholderZip: null,
+            cardholderAddr: null,
+        },
+        pays: Immutable.List [
+            Immutable.Map {
+                ams_account_id: "APD AccountID",
+                payment_type_id: 3,
+                hasError: true,
+                index: 0,
+                payName: "Credit Card",
+                amount: "123.00",
+                apd_input_type: 1,
+                paymentTypeId: 3,
+                errorMessage: "error occur when swip card by pinpad with Debit Card",
+            },
+            Immutable.Map {
+                ams_account_id: "APD AccountID",
+                payment_type_id: 4,
+                swipeSuccess: true,
+                hasError: false,
+                successInfo: "Debit Card in xxx 1234",
+                index: 1,
+                payName: "Debit Card",
+                amount: "247.00",
+                apd_input_type: 1,
+                paymentTypeId: 4,
+            },
+        ],
+        communicating: false,
+        debitCardId: 4,
+        companyId: 0,
+        customerId: 1,
+        apdAppletInfo: Immutable.Map {
+            pinpad_data_entry_timeout: 20,
+            avs_zip: false,
+            avs_full_addr: true,
+            write_to_log: "Yes",
+            merchant_user: "AMS34VbVMSCRealDivId",
+            device_id: 999888,
+            merchant_descriptor: "ActiveNetTrainer",
+            pinpad_pin_entry_timeout: 40,
+            ams_timeout: 100,
+            terminal_location_state: "CA",
+            terminal_number: "007",
+            terminal_location_address: "937 Enterprise Dr",
+            usb_port_name: "COM5",
+            card_acceptor_name: "YMCA OF METROPOLITAN LOS ANGELES",
+            applet_name: "APDInterfaceApplet",
+            terminal_location_city: "Sacramento",
+            merchant_password: "AMS34VbVMSCRealDivId",
+            ams_url: "mstest.active.com",
+            device_type_id: 1,
+            pinpad_swipe_card_timeout: 50,
+            applets: "codebase=/device-libs/",
+            pinpad_device_timeout: 300,
+            ams_port: 443,
+            terminal_location_zip: "95825",
+        },
+        errorMessage: "error occur when swipe card by pinpad",
+        apdPaymentInfo: Immutable.Map {
+            receiptNumber: 1000778.005,
+            hasImmediatePaymentDue: false,
+            orderId: "Receipt ID 22916",
+            receiptPaymentId: 20423,
+            rno: 1,
+            committedReceiptId: 22916,
+            canCancelApdPayment: true,
+            isPayerCashCustomer: false,
+            orderDescriptor: "YMCA OF METROPOLITAN LOS ANGELES",
+            key: 1,
+        },
+    },
+      "pinpadFail": Immutable.Map {
+        shown: false,
+    },
+      "pinpadModal": Immutable.Map {
+        title: "Processing Transaction",
+        shown: true,
+        apdInterfaceApplet: Immutable.Map {
+            APDInputStart: [Function],
+        },
+    },
+    }
+  }
+  showFailActionBtns={[Function]}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "subscribe": [Function],
+    }
+  }
+  updateCurrentPayIndex={[Function]}
+  updateErrorMessage={[Function]}
+>
+  <div
+    className="pinpad-mutiple-pays"
+  >
+    <div
+      className="pinpad-wrapper"
+    >
+      <div
+        className="payment-pinpad-error-wrapper aaui-flexbox payment-credit-debit-error"
+      >
+        <Alert
+          className="payment-pinpad-error-alert"
+          inverse={false}
+          noClose={true}
+          type="error"
+        >
+          <div
+            className="alert alert-error payment-pinpad-error-alert"
+            role="alert"
+          >
+            <span
+              aria-label="error icon"
+              className="icon icon-times-circle"
+            />
+            <div
+              className="error-content"
+            >
+              <div
+                className="payment-pinpad-error-message"
+              >
+                <div>
+                  error occur when swipe card by pinpad
+                </div>
+              </div>
+            </div>
+          </div>
+        </Alert>
+      </div>
+      <Pinpad
+        key="pay_0"
+        onClick={[Function]}
+        pay={
+          Object {
+            "amount": "123.00",
+            "ams_account_id": "APD AccountID",
+            "apd_input_type": 1,
+            "className": " pinpad-collapse pinpad-fail",
+            "errorMessage": "error occur when swip card by pinpad with Debit Card",
+            "hasError": true,
+            "headerHtml": "No card information",
+            "index": 0,
+            "payName": "Credit Card",
+            "paymentTypeId": 3,
+            "payment_type_id": 3,
+          }
+        }
+        pinpad={
+          Object {
+            "payment": Immutable.Map {
+              receiptHeaderId: 1234,
+              agentId: 0,
+              isRefund: false,
+              currentPayIndex: 0,
+              promptMessage: "",
+              isNewCard: false,
+              cardHolderInfo: Immutable.Map {
+                  cardholderZip: null,
+                  cardholderAddr: null,
+              },
+              pays: Immutable.List [
+                  Immutable.Map {
+                      ams_account_id: "APD AccountID",
+                      payment_type_id: 3,
+                      hasError: true,
+                      index: 0,
+                      payName: "Credit Card",
+                      amount: "123.00",
+                      apd_input_type: 1,
+                      paymentTypeId: 3,
+                      errorMessage: "error occur when swip card by pinpad with Debit Card",
+                  },
+                  Immutable.Map {
+                      ams_account_id: "APD AccountID",
+                      payment_type_id: 4,
+                      swipeSuccess: true,
+                      hasError: false,
+                      successInfo: "Debit Card in xxx 1234",
+                      index: 1,
+                      payName: "Debit Card",
+                      amount: "247.00",
+                      apd_input_type: 1,
+                      paymentTypeId: 4,
+                  },
+              ],
+              communicating: false,
+              debitCardId: 4,
+              companyId: 0,
+              customerId: 1,
+              apdAppletInfo: Immutable.Map {
+                  pinpad_data_entry_timeout: 20,
+                  avs_zip: false,
+                  avs_full_addr: true,
+                  write_to_log: "Yes",
+                  merchant_user: "AMS34VbVMSCRealDivId",
+                  device_id: 999888,
+                  merchant_descriptor: "ActiveNetTrainer",
+                  pinpad_pin_entry_timeout: 40,
+                  ams_timeout: 100,
+                  terminal_location_state: "CA",
+                  terminal_number: "007",
+                  terminal_location_address: "937 Enterprise Dr",
+                  usb_port_name: "COM5",
+                  card_acceptor_name: "YMCA OF METROPOLITAN LOS ANGELES",
+                  applet_name: "APDInterfaceApplet",
+                  terminal_location_city: "Sacramento",
+                  merchant_password: "AMS34VbVMSCRealDivId",
+                  ams_url: "mstest.active.com",
+                  device_type_id: 1,
+                  pinpad_swipe_card_timeout: 50,
+                  applets: "codebase=/device-libs/",
+                  pinpad_device_timeout: 300,
+                  ams_port: 443,
+                  terminal_location_zip: "95825",
+              },
+              errorMessage: "error occur when swipe card by pinpad",
+              apdPaymentInfo: Immutable.Map {
+                  receiptNumber: 1000778.005,
+                  hasImmediatePaymentDue: false,
+                  orderId: "Receipt ID 22916",
+                  receiptPaymentId: 20423,
+                  rno: 1,
+                  committedReceiptId: 22916,
+                  canCancelApdPayment: true,
+                  isPayerCashCustomer: false,
+                  orderDescriptor: "YMCA OF METROPOLITAN LOS ANGELES",
+                  key: 1,
+              },
+          },
+            "pinpadFail": Immutable.Map {
+              shown: false,
+          },
+            "pinpadModal": Immutable.Map {
+              title: "Processing Transaction",
+              shown: true,
+              apdInterfaceApplet: Immutable.Map {
+                  APDInputStart: [Function],
+              },
+          },
+          }
+        }
+      />
+      <Pinpad
+        key="pay_1"
+        onClick={[Function]}
+        pay={
+          Object {
+            "amount": "247.00",
+            "ams_account_id": "APD AccountID",
+            "apd_input_type": 1,
+            "className": "pinpad-success pinpad-collapse",
+            "hasError": false,
+            "headerHtml": "Debit Card in xxx 1234",
+            "index": 1,
+            "payName": "Debit Card",
+            "paymentTypeId": 4,
+            "payment_type_id": 4,
+            "successInfo": "Debit Card in xxx 1234",
+            "swipeSuccess": true,
+          }
+        }
+        pinpad={
+          Object {
+            "payment": Immutable.Map {
+              receiptHeaderId: 1234,
+              agentId: 0,
+              isRefund: false,
+              currentPayIndex: 0,
+              promptMessage: "",
+              isNewCard: false,
+              cardHolderInfo: Immutable.Map {
+                  cardholderZip: null,
+                  cardholderAddr: null,
+              },
+              pays: Immutable.List [
+                  Immutable.Map {
+                      ams_account_id: "APD AccountID",
+                      payment_type_id: 3,
+                      hasError: true,
+                      index: 0,
+                      payName: "Credit Card",
+                      amount: "123.00",
+                      apd_input_type: 1,
+                      paymentTypeId: 3,
+                      errorMessage: "error occur when swip card by pinpad with Debit Card",
+                  },
+                  Immutable.Map {
+                      ams_account_id: "APD AccountID",
+                      payment_type_id: 4,
+                      swipeSuccess: true,
+                      hasError: false,
+                      successInfo: "Debit Card in xxx 1234",
+                      index: 1,
+                      payName: "Debit Card",
+                      amount: "247.00",
+                      apd_input_type: 1,
+                      paymentTypeId: 4,
+                  },
+              ],
+              communicating: false,
+              debitCardId: 4,
+              companyId: 0,
+              customerId: 1,
+              apdAppletInfo: Immutable.Map {
+                  pinpad_data_entry_timeout: 20,
+                  avs_zip: false,
+                  avs_full_addr: true,
+                  write_to_log: "Yes",
+                  merchant_user: "AMS34VbVMSCRealDivId",
+                  device_id: 999888,
+                  merchant_descriptor: "ActiveNetTrainer",
+                  pinpad_pin_entry_timeout: 40,
+                  ams_timeout: 100,
+                  terminal_location_state: "CA",
+                  terminal_number: "007",
+                  terminal_location_address: "937 Enterprise Dr",
+                  usb_port_name: "COM5",
+                  card_acceptor_name: "YMCA OF METROPOLITAN LOS ANGELES",
+                  applet_name: "APDInterfaceApplet",
+                  terminal_location_city: "Sacramento",
+                  merchant_password: "AMS34VbVMSCRealDivId",
+                  ams_url: "mstest.active.com",
+                  device_type_id: 1,
+                  pinpad_swipe_card_timeout: 50,
+                  applets: "codebase=/device-libs/",
+                  pinpad_device_timeout: 300,
+                  ams_port: 443,
+                  terminal_location_zip: "95825",
+              },
+              errorMessage: "error occur when swipe card by pinpad",
+              apdPaymentInfo: Immutable.Map {
+                  receiptNumber: 1000778.005,
+                  hasImmediatePaymentDue: false,
+                  orderId: "Receipt ID 22916",
+                  receiptPaymentId: 20423,
+                  rno: 1,
+                  committedReceiptId: 22916,
+                  canCancelApdPayment: true,
+                  isPayerCashCustomer: false,
+                  orderDescriptor: "YMCA OF METROPOLITAN LOS ANGELES",
+                  key: 1,
+              },
+          },
+            "pinpadFail": Immutable.Map {
+              shown: false,
+          },
+            "pinpadModal": Immutable.Map {
+              title: "Processing Transaction",
+              shown: true,
+              apdInterfaceApplet: Immutable.Map {
+                  APDInputStart: [Function],
+              },
+          },
+          }
+        }
+      />
+    </div>
+    <PinpadTransactionFail
+      pinpad={
+        Object {
+          "payment": Immutable.Map {
+            receiptHeaderId: 1234,
+            agentId: 0,
+            isRefund: false,
+            currentPayIndex: 0,
+            promptMessage: "",
+            isNewCard: false,
+            cardHolderInfo: Immutable.Map {
+                cardholderZip: null,
+                cardholderAddr: null,
+            },
+            pays: Immutable.List [
+                Immutable.Map {
+                    ams_account_id: "APD AccountID",
+                    payment_type_id: 3,
+                    hasError: true,
+                    index: 0,
+                    payName: "Credit Card",
+                    amount: "123.00",
+                    apd_input_type: 1,
+                    paymentTypeId: 3,
+                    errorMessage: "error occur when swip card by pinpad with Debit Card",
+                },
+                Immutable.Map {
+                    ams_account_id: "APD AccountID",
+                    payment_type_id: 4,
+                    swipeSuccess: true,
+                    hasError: false,
+                    successInfo: "Debit Card in xxx 1234",
+                    index: 1,
+                    payName: "Debit Card",
+                    amount: "247.00",
+                    apd_input_type: 1,
+                    paymentTypeId: 4,
+                },
+            ],
+            communicating: false,
+            debitCardId: 4,
+            companyId: 0,
+            customerId: 1,
+            apdAppletInfo: Immutable.Map {
+                pinpad_data_entry_timeout: 20,
+                avs_zip: false,
+                avs_full_addr: true,
+                write_to_log: "Yes",
+                merchant_user: "AMS34VbVMSCRealDivId",
+                device_id: 999888,
+                merchant_descriptor: "ActiveNetTrainer",
+                pinpad_pin_entry_timeout: 40,
+                ams_timeout: 100,
+                terminal_location_state: "CA",
+                terminal_number: "007",
+                terminal_location_address: "937 Enterprise Dr",
+                usb_port_name: "COM5",
+                card_acceptor_name: "YMCA OF METROPOLITAN LOS ANGELES",
+                applet_name: "APDInterfaceApplet",
+                terminal_location_city: "Sacramento",
+                merchant_password: "AMS34VbVMSCRealDivId",
+                ams_url: "mstest.active.com",
+                device_type_id: 1,
+                pinpad_swipe_card_timeout: 50,
+                applets: "codebase=/device-libs/",
+                pinpad_device_timeout: 300,
+                ams_port: 443,
+                terminal_location_zip: "95825",
+            },
+            errorMessage: "error occur when swipe card by pinpad",
+            apdPaymentInfo: Immutable.Map {
+                receiptNumber: 1000778.005,
+                hasImmediatePaymentDue: false,
+                orderId: "Receipt ID 22916",
+                receiptPaymentId: 20423,
+                rno: 1,
+                committedReceiptId: 22916,
+                canCancelApdPayment: true,
+                isPayerCashCustomer: false,
+                orderDescriptor: "YMCA OF METROPOLITAN LOS ANGELES",
+                key: 1,
+            },
+        },
+          "pinpadFail": Immutable.Map {
+            shown: false,
+        },
+          "pinpadModal": Immutable.Map {
+            title: "Processing Transaction",
+            shown: true,
+            apdInterfaceApplet: Immutable.Map {
+                APDInputStart: [Function],
+            },
+        },
+        }
+      }
+    />
+  </div>
+</MutiplePays>
+`;

@@ -1,0 +1,59 @@
+@import '~shared/style/variables/index.less';
+/* stylelint-disable */
+
+.payment-schedules {
+  margin-top: 20px;
+
+  .table {
+    thead th {
+      border-top: 1px solid @color-gray-border !important;
+    }
+
+    .due-date {
+      width: 190px;
+
+      div {
+        padding-left: 30px;
+      }
+    }
+
+    .amount,
+    .paid {
+      width: 200px;
+
+      div {
+        padding-right: 20px;
+        text-align: right;
+      }
+    }
+
+    .adjustment {
+      width: 242px;
+
+      div {
+        padding-right: 20px;
+        text-align: right;
+      }
+    }
+
+    .balance {
+      text-align: right;
+    }
+  }
+}
+
+.payment-schedules-summary {
+  display: flex;
+
+  p {
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    span {
+      line-height: 24px;
+    }
+  }
+}

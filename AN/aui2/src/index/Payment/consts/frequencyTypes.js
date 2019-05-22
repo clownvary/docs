@@ -1,0 +1,8 @@
+export default {
+  WEEKLY: 1,
+  EVERY_OTHER_WEEK: 2,
+  TWICE_A_MONTH: 3,
+  MONTHLY: 4,
+  QUARTERLY: 5,
+  EVERY_FOUR_WEEKS: 6
+};

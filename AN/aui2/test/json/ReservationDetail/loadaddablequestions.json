@@ -1,0 +1,95 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "total_records": 0,
+      "page_number": 1,
+      "total_records_per_page": 20,
+      "order_option": "ASC",
+      "total_page": 1
+    }
+  },
+  "body": {
+    "event_detail": {
+      "current_event_fee_updated": true,
+      "addable_questions": {
+        "has_required_question": true,
+        "list": [{
+          "title": "CoreyDropdown",
+          "question": "CoreyDropdown",
+          "hint": "",
+          "answers": [{
+            "answer": "#1",
+            "code": 0,
+            "selected": true,
+            "disabled": false,
+            "answer_id": 1222,
+            "sub_question": {
+              "title": "CoreyQuestion_UserEntry_PhoneNumber",
+              "question": "CoreyQuestion_UserEntry_PhoneNumber",
+              "hint": "",
+              "answers": [],
+              "customquestion_index": "(3704_0)_4_1",
+              "customquestion_id": 315,
+              "use_answer_code": false,
+              "answer_type": "userEntry",
+              "answer_required": true,
+              "answer_format": "phoneNumber",
+              "answer_max_length": 100,
+              "default_answer": "1111111111",
+              "postal_code_type": 0,
+              "answer": "111-1111111-",
+              "permit_question": false,
+              "read_only": false
+            }
+          }, {
+            "answer": "#2",
+            "code": 0,
+            "selected": false,
+            "disabled": false,
+            "answer_id": 1223,
+            "sub_question": null
+          }],
+          "customquestion_index": "(3704_0)_4",
+          "customquestion_id": 324,
+          "use_answer_code": false,
+          "answer_type": "singleSelectionDropdown",
+          "answer_required": false,
+          "answer_format": "freeForm",
+          "answer_max_length": 100,
+          "default_answer": "",
+          "postal_code_type": 0,
+          "answer": null,
+          "permit_question": false,
+          "read_only": false
+        }]
+      },
+      "event_infor": {
+        "event_index": "3704_0",
+        "new_entry_id": 0,
+        "event_id": 3704,
+        "permit_id": 4718,
+        "event_name": "tesfat",
+        "resource_count": 1,
+        "booking_count": 1,
+        "total_amount": 1.00,
+        "is_booking_updated": false,
+        "creation_date": "2018-07-23 01:11:36",
+        "last_modify_date": "2018-07-23 01:11:36",
+        "is_last_modified": false,
+        "is_event_updated": true,
+        "allow_reset_fees": false
+      },
+      "fee_summary": {
+        "sub_total": 1.00,
+        "taxes": [],
+        "total": 1.00,
+        "amount_paid": 0,
+        "due_now": 1.00,
+        "refund_amount": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "headers" : {
+    "response_code" : "0000",
+    "response_message" : "Successful",
+    "page_info" : {
+      "multiplePage" : false,
+      "pageCount" : 1,
+      "recordCount" : 0,
+      "order_by" : "",
+      "total_records" : 0,
+      "total_records_per_page" : 30,
+      "page_number" : 1,
+      "order_option" : "ASC",
+      "total_page" : 1
+    }
+  },
+  "body" : {
+    "items" : [{
+      "id" : 3,
+      "name" : "2016 Jun 01 to 2016 Jun 03",
+      "selected" : false,
+      "parent_id" : 4
+    }, {
+      "id" : 9,
+      "name" : "2016 Jun 05 to 2016 Jun 07",
+      "selected" : false,
+      "parent_id" : 3
+    }, {
+      "id" : 8,
+      "name" : "2016 Jun 10 to 2016 Jun 13",
+      "selected" : false,
+      "parent_id" : 4
+    }, {
+      "id" : 4,
+      "name" : "2016 Jun 16 to 2016 Jun 20",
+      "selected" : false,
+      "parent_id" : 3
+    }, {
+      "id" : 1,
+      "name" : "2016 Jun 23 to 2016 Jun 24",
+      "selected" : false,
+      "parent_id" : 4
+    }]
+  }
+}

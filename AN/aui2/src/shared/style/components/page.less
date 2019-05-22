@@ -1,0 +1,51 @@
+@import '../variables/index.less';
+
+.@{an-basename}-page {
+  position: relative;
+  min-width: @page-width;
+  padding: @page-padding-vertical @page-padding-horizontal;
+  padding-top: @page-padding-top;
+
+  &__placeholder {
+    min-height: @page-footer-min-height;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: @page-header-margin-bottom;
+    font-weight: @headings-font-weight;
+    line-height: @page-header-line-height;
+
+    h1,
+    .h1 {
+      margin: 0;
+      font-size: @page-header-font-size;
+      line-height: @page-header-line-height;
+    }
+  }
+
+  &__footer {
+    &__content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &.fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+
+      .@{an-basename}-page__footer__content {
+        box-shadow: 0 1px 0 0 #fff inset;
+        padding: @page-footer-padding;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-top: 1px solid @page-footer-border-top-color;
+        backdrop-filter: blur(4.5px);
+      }
+    }
+  }
+}

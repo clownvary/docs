@@ -1,0 +1,37 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "page_number": 0,
+      "total_records": 0,
+      "total_records_per_page": 20,
+      "order_option": "ASC",
+      "total_page": 1
+    }
+  },
+  "body": {
+    "items": [{
+      "id": 34,
+      "name": "South West Hub",
+      "selected": false,
+      "available_resources": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    }, {
+      "id": 35,
+      "name": "deserunt et",
+      "selected": false,
+      "available_resources": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    }, {
+      "id": 36,
+      "name": "incididunt irure",
+      "selected": false,
+      "available_resources": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    }, {
+      "id": 56,
+      "name": "lillian_eventype",
+      "selected": false,
+      "available_resources": [1, 2, 3]
+    }]
+  }
+}

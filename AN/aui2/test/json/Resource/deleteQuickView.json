@@ -1,0 +1,84 @@
+{
+    "headers": {
+        "response_code": "0000",
+        "response_message": "Successful"
+    },
+    "body": {
+        "quick_view_list": [
+            {
+                "id": 6,
+                "name": "test1",
+                "selected": false,
+                "resource_ids": [
+                    10,
+                    11
+                ]
+            },
+            {
+                "id": 8,
+                "name": "test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3",
+                "selected": true,
+                "resource_ids": [
+                    10,
+                    11
+                ]
+            },
+            {
+                "id": 9,
+                "name": "test4",
+                "selected": false,
+                "resource_ids": [
+                    10,
+                    11
+                ]
+            },
+            {
+                "id": 10,
+                "name": "test5",
+                "selected": false,
+                "resource_ids": []
+            },
+            {
+                "id": 11,
+                "name": "test6",
+                "selected": false,
+                "resource_ids": []
+            },
+            {
+                "id": 12,
+                "name": "test7",
+                "selected": false,
+                "resource_ids": [
+                    10,
+                    11,
+                    12,
+                    14
+                ]
+            },
+            {
+                "id": 13,
+                "name": "test8",
+                "selected": false,
+                "resource_ids": [
+                    10,
+                    11,
+                    12,
+                    14,
+                    13
+                ]
+            },
+            {
+                "id": 14,
+                "name": "test9",
+                "selected": true,
+                "resource_ids": [
+                    10,
+                    11,
+                    12,
+                    14,
+                    13
+                ]
+            }
+        ]
+    }
+}

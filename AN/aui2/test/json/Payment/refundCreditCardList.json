@@ -1,0 +1,84 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "total_records_per_page": 20,
+      "total_records": 0,
+      "page_number": 0,
+      "total_page": 1,
+      "order_option": "ASC"
+    }
+  },
+  "body": {
+    "credit_card_refund": {
+      "allow_cc_refund": true,
+      "allow_new_card": true,
+      "credit_card_list": [{
+        "customer_id": 34741,
+        "company_id": 0,
+        "ams_account_id": "14724542205035060494WUSFOCVZRJEDSQQNEGFQIYSJFAJRBWJR",
+        "saved_name": "K_CC_AE_1",
+        "card_number": "xxx0005",
+        "card_expiration": "01/2017",
+        "cardtype_id": 3,
+        "cardtype": "American Express",
+        "bank_routing_number": "",
+        "bank_account_number": "",
+        "bank_account_type": "",
+        "exclude": false,
+        "retired": false,
+        "is_secondary_payment": false,
+        "ams_retention_date": 1485936000000,
+        "remaining_refund_amount": 80,
+        "validate_cc_refund_amount": true,
+        "other_number": "",
+        "selected": false,
+        "is_saved_card": true
+      }, {
+        "customer_id": 34741,
+        "company_id": 0,
+        "ams_account_id": "14724546434035038186TNFWSSQEDRITEWXWOWZSIXZBUZJTOZKY",
+        "saved_name": "K_CC_DC_1",
+        "card_number": "xxx1000",
+        "card_expiration": "01/2017",
+        "cardtype_id": 3,
+        "cardtype": "American Express",
+        "bank_routing_number": "",
+        "bank_account_number": "",
+        "bank_account_type": "",
+        "exclude": false,
+        "retired": false,
+        "is_secondary_payment": false,
+        "ams_retention_date": 1485936000000,
+        "remaining_refund_amount": 0,
+        "validate_cc_refund_amount": false,
+        "other_number": "",
+        "selected": false,
+        "is_saved_card": true
+      }, {
+        "customer_id": 34741,
+        "company_id": 0,
+        "ams_account_id": "14724544355035078314EINXOAHZSETQKPYPINCCOYVXOTNPOWXB",
+        "saved_name": "K_CC_MC_1",
+        "card_number": "xxx5100",
+        "card_expiration": "01/2017",
+        "cardtype_id": 2,
+        "cardtype": "MasterCard",
+        "bank_routing_number": "",
+        "bank_account_number": "",
+        "bank_account_type": "",
+        "exclude": false,
+        "retired": false,
+        "is_secondary_payment": false,
+        "ams_retention_date": 1485936000000,
+        "remaining_refund_amount": 0,
+        "validate_cc_refund_amount": false,
+        "other_number": "",
+        "selected": true,
+        "is_saved_card": true
+      }]
+    }
+  }
+}

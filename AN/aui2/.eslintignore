@@ -1,0 +1,25 @@
+gulpfile.js
+node
+#############################################
+#
+# remove these directories once linting
+# errors are fixed within them
+#
+#############################################
+examples/**
+
+tasks
+test
+test/coverage
+test/specs/index/Cart
+test/specs/index/Payment
+test/specs/index/Reservation
+test/specs/index/Resource
+test/specs/index/ReservationDetail
+test/specs/index/RefundDeposits
+
+test/specs/shared/api
+test/specs/shared/components
+test/utils
+
+#test/specs/shared/reducers

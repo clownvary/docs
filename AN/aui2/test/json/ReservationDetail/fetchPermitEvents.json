@@ -1,0 +1,32 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "order_option": "ASC",
+      "total_page": 1,
+      "total_records": 0,
+      "total_records_per_page": 30,
+      "page_number": 1
+    }
+  },
+  "body": {
+      "events": [{
+        "id": 21,
+        "name": "event1",
+        "selected": false
+      },
+      {
+        "id": 22,
+        "name": "event2",
+        "selected": false
+      },
+      {
+        "id": 23,
+        "name": "event3",
+        "selected": false
+      }
+    ]
+  }
+}

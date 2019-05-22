@@ -1,0 +1,625 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index/Payment/components/Modals/MagTek/MagtekDynamag component should render correctly when has show modal and is in refund workflow 1`] = `
+<MagtekDynamag
+  cardType="Credit Card"
+  generateWalletID={[Function]}
+  hideModalAction={[Function]}
+  isShowSaveCardInformation={true}
+  payAccmount="0.00"
+  payment={[Function]}
+  renderWSIHelper={[Function]}
+  serverError=""
+  setCardInfo={[Function]}
+  setServerError={[Function]}
+  showModal={true}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <div
+    className="magtekDynamag"
+  >
+    <div
+      className="plugins"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<object id=\\"USBHID\\" name=\\"USBHID\\" classid=\\"CLSID:22571E97-956A-4CDD-AF8D-AE9C26597683\\" codebase=\\"/MagTekUSBHID.CAB#version=1,18,0,1\\"></object>",
+        }
+      }
+    />
+    <Modal
+      onClose={[Function]}
+      shown={true}
+      title="Processing Transaction"
+    >
+      <div
+        className="modal-body"
+      >
+        <div
+          className="card-fee"
+        >
+          <div
+            className="aaui-flex afx-xl-mg-12"
+          >
+            <span
+              className="afx-col afx-xl-6-12"
+            >
+              Credit Card
+            </span>
+            <span
+              className="afx-col afx-xl-6-12"
+              style={
+                Object {
+                  "textAlign": "right",
+                }
+              }
+            >
+              $ 0.00
+            </span>
+          </div>
+        </div>
+        <div
+          className="horitalLine"
+        />
+        <div
+          className="card-body"
+        >
+          <div>
+            <div
+              className="deviceIcon"
+            >
+              <div
+                className="payment-magtek-img payment-magtek-img--dynamag"
+                title="MagTek Dynamag Device"
+              />
+            </div>
+            <div
+              className="messageSection"
+            >
+              <SafeText
+                className="info msgInfo"
+                dangerMode={true}
+                data-qa-id=""
+                decode={true}
+                tagName="div"
+                text="Initializing device..."
+              >
+                <div
+                  className="info msgInfo"
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "Initializing device...",
+                    }
+                  }
+                  data-qa-id=""
+                />
+              </SafeText>
+              <div
+                className="u-hidden"
+              >
+                <div
+                  className="errorContainer"
+                >
+                  <div
+                    className="errorSection"
+                  >
+                    <span
+                      className="icon icon-times-circle"
+                    />
+                    <div
+                      className="errorMsg"
+                    >
+                      <SafeText
+                        dangerMode={true}
+                        data-qa-id=""
+                        decode={true}
+                        tagName="div"
+                        text=""
+                      >
+                        <div
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "",
+                            }
+                          }
+                          data-qa-id=""
+                        />
+                      </SafeText>
+                      <div
+                        className="hide"
+                      >
+                        <input
+                          id="magtek_ipad_input_manual"
+                          type="hidden"
+                        />
+                        <a
+                          href="#"
+                          onClick={[Function]}
+                        >
+                          Swipe card
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="cancelBtn"
+              >
+                <Button
+                  loading={false}
+                  menuData={Array []}
+                  noSubmit={false}
+                  onClick={[Function]}
+                  type="secondary"
+                >
+                  <button
+                    className="btn btn-secondary"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseOver={[Function]}
+                    type="submit"
+                  >
+                    <span>
+                      Cancel
+                    </span>
+                  </button>
+                </Button>
+              </div>
+              <div
+                className="u-hidden"
+              >
+                <ul>
+                  <li>
+                    <div
+                      className="cardInfo__label"
+                    >
+                      Card Number
+                    </div>
+                    <div />
+                  </li>
+                  <li>
+                    <div
+                      className="cardInfo__label cardType"
+                    >
+                      Card Type
+                    </div>
+                    <div>
+                      <span
+                        className="icon cardType-icon icon-undefined"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="cardInfo__label"
+                    >
+                      Expiration Date
+                    </div>
+                    <div />
+                  </li>
+                  <li
+                    className="saveCardInfo"
+                  >
+                    <div>
+                      <Checkbox
+                        checked={true}
+                        onChange={[Function]}
+                      >
+                        <CheckboxComponent
+                          checked={true}
+                          onChange={[Function]}
+                        >
+                          <label
+                            className="checkbox-wrapper"
+                            htmlFor="checkbox_attr_for_2"
+                          >
+                            <span
+                              className="checkbox checkbox--checked"
+                            >
+                              <input
+                                aria-checked={true}
+                                checked={true}
+                                className="checkbox__input"
+                                id="checkbox_attr_for_2"
+                                onChange={[Function]}
+                                role="checkbox"
+                                type="checkbox"
+                              />
+                              <span
+                                className="checkbox__inner"
+                              />
+                            </span>
+                          </label>
+                        </CheckboxComponent>
+                      </Checkbox>
+                       Save card information
+                    </div>
+                  </li>
+                  <li
+                    className="btns"
+                  >
+                    <Button
+                      loading={false}
+                      menuData={Array []}
+                      noSubmit={false}
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "marginRight": "10px",
+                        }
+                      }
+                      type="secondary"
+                    >
+                      <button
+                        className="btn btn-secondary"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                        type="submit"
+                      >
+                        <span>
+                          Cancel
+                        </span>
+                      </button>
+                    </Button>
+                    <Button
+                      loading={false}
+                      menuData={Array []}
+                      noSubmit={false}
+                      onClick={[Function]}
+                      type="strong"
+                    >
+                      <button
+                        className="btn btn-strong"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseOver={[Function]}
+                        type="submit"
+                      >
+                        <span>
+                          OK
+                        </span>
+                      </button>
+                    </Button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal-footer"
+      />
+    </Modal>
+  </div>
+</MagtekDynamag>
+`;
+
+exports[`index/Payment/components/Modals/MagTek/MagtekDynamag component should render correctly when hasn\`t shown modal 1`] = `
+<MagtekDynamag
+  cardType="Credit Card"
+  generateWalletID={[Function]}
+  hideModalAction={[Function]}
+  isShowSaveCardInformation={false}
+  payAccmount="0.00"
+  payment={[Function]}
+  renderWSIHelper={[Function]}
+  serverError=""
+  setCardInfo={[Function]}
+  setServerError={[Function]}
+  showModal={false}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <div
+    className="magtekDynamag"
+  >
+    <div
+      className="plugins"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<object id=\\"USBHID\\" name=\\"USBHID\\" classid=\\"CLSID:22571E97-956A-4CDD-AF8D-AE9C26597683\\" codebase=\\"/MagTekUSBHID.CAB#version=1,18,0,1\\"></object>",
+        }
+      }
+    />
+    <Modal
+      onClose={[Function]}
+      shown={false}
+      title="Processing Transaction"
+    >
+      <div
+        className="modal-body"
+      >
+        <div
+          className="card-fee"
+        >
+          <div
+            className="aaui-flex afx-xl-mg-12"
+          >
+            <span
+              className="afx-col afx-xl-6-12"
+            >
+              Credit Card
+            </span>
+            <span
+              className="afx-col afx-xl-6-12"
+              style={
+                Object {
+                  "textAlign": "right",
+                }
+              }
+            >
+              $ 0.00
+            </span>
+          </div>
+        </div>
+        <div
+          className="horitalLine"
+        />
+        <div
+          className="card-body"
+        >
+          <div>
+            <div
+              className="deviceIcon"
+            >
+              <div
+                className="payment-magtek-img payment-magtek-img--dynamag"
+                title="MagTek Dynamag Device"
+              />
+            </div>
+            <div
+              className="messageSection"
+            >
+              <SafeText
+                className="info msgInfo"
+                dangerMode={true}
+                data-qa-id=""
+                decode={true}
+                tagName="div"
+                text="Initializing device..."
+              >
+                <div
+                  className="info msgInfo"
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "Initializing device...",
+                    }
+                  }
+                  data-qa-id=""
+                />
+              </SafeText>
+              <div
+                className="u-hidden"
+              >
+                <div
+                  className="errorContainer"
+                >
+                  <div
+                    className="errorSection"
+                  >
+                    <span
+                      className="icon icon-times-circle"
+                    />
+                    <div
+                      className="errorMsg"
+                    >
+                      <SafeText
+                        dangerMode={true}
+                        data-qa-id=""
+                        decode={true}
+                        tagName="div"
+                        text=""
+                      >
+                        <div
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "",
+                            }
+                          }
+                          data-qa-id=""
+                        />
+                      </SafeText>
+                      <div
+                        className="hide"
+                      >
+                        <input
+                          id="magtek_ipad_input_manual"
+                          type="hidden"
+                        />
+                        <a
+                          href="#"
+                          onClick={[Function]}
+                        >
+                          Swipe card
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="cancelBtn"
+              >
+                <Button
+                  loading={false}
+                  menuData={Array []}
+                  noSubmit={false}
+                  onClick={[Function]}
+                  type="secondary"
+                >
+                  <button
+                    className="btn btn-secondary"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseOver={[Function]}
+                    type="submit"
+                  >
+                    <span>
+                      Cancel
+                    </span>
+                  </button>
+                </Button>
+              </div>
+              <div
+                className="u-hidden"
+              >
+                <ul>
+                  <li>
+                    <div
+                      className="cardInfo__label"
+                    >
+                      Card Number
+                    </div>
+                    <div />
+                  </li>
+                  <li>
+                    <div
+                      className="cardInfo__label cardType"
+                    >
+                      Card Type
+                    </div>
+                    <div>
+                      <span
+                        className="icon cardType-icon icon-undefined"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="cardInfo__label"
+                    >
+                      Expiration Date
+                    </div>
+                    <div />
+                  </li>
+                  <li
+                    className="u-hidden"
+                  >
+                    <div>
+                      <Checkbox
+                        checked={false}
+                        onChange={[Function]}
+                      >
+                        <CheckboxComponent
+                          checked={false}
+                          onChange={[Function]}
+                        >
+                          <label
+                            className="checkbox-wrapper"
+                            htmlFor="checkbox_attr_for_1"
+                          >
+                            <span
+                              className="checkbox"
+                            >
+                              <input
+                                aria-checked={false}
+                                checked={false}
+                                className="checkbox__input"
+                                id="checkbox_attr_for_1"
+                                onChange={[Function]}
+                                role="checkbox"
+                                type="checkbox"
+                              />
+                              <span
+                                className="checkbox__inner"
+                              />
+                            </span>
+                          </label>
+                        </CheckboxComponent>
+                      </Checkbox>
+                       Save card information
+                    </div>
+                  </li>
+                  <li
+                    className="btns"
+                  >
+                    <Button
+                      loading={false}
+                      menuData={Array []}
+                      noSubmit={false}
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "marginRight": "10px",
+                        }
+                      }
+                      type="secondary"
+                    >
+                      <button
+                        className="btn btn-secondary"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                        type="submit"
+                      >
+                        <span>
+                          Cancel
+                        </span>
+                      </button>
+                    </Button>
+                    <Button
+                      loading={false}
+                      menuData={Array []}
+                      noSubmit={false}
+                      onClick={[Function]}
+                      type="strong"
+                    >
+                      <button
+                        className="btn btn-strong"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseOver={[Function]}
+                        type="submit"
+                      >
+                        <span>
+                          OK
+                        </span>
+                      </button>
+                    </Button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal-footer"
+      />
+    </Modal>
+  </div>
+</MagtekDynamag>
+`;

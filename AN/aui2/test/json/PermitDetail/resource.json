@@ -1,0 +1,44 @@
+{
+  "result": {
+    "resourceType1": [
+      {
+        "text": "resource1",
+        "value": "resource11"
+      },
+      {
+        "text": "resource2",
+        "value": "resource12"
+      }
+    ],
+    "resourceType2": [
+      {
+        "text": "resource21",
+        "value": "resource21"
+      },
+      {
+        "text": "resource22",
+        "value": "resource22"
+      }
+    ],
+    "resourceType3": [
+      {
+        "text": "resource31",
+        "value": "resource31"
+      },
+      {
+        "text": "resource32",
+        "value": "resource32"
+      }
+    ],
+    "resourceType4": [
+      {
+        "text": "resource41",
+        "value": "resource41"
+      },
+      {
+        "text": "resource42",
+        "value": "resource42"
+      }
+    ]
+  }
+}

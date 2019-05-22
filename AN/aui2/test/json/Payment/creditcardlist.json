@@ -1,0 +1,88 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "recordCount": 0,
+      "multiplePage": false,
+      "pageCount": 1,
+      "order_by": "",
+      "page_number": 1,
+      "order_option": "ASC",
+      "total_page": 1,
+      "total_records": 0,
+      "total_records_per_page": 30
+    }
+  },
+  "body": {
+    "items": {
+      "is_not_use_payment_device": false,
+      "saved_credit_card_list": [{
+        "cardtype": "MasterCard",
+        "customer_id": 33,
+        "company_id": 0,
+        "ams_account_id": "Demo AccountID",
+        "saved_name": "xxx5454",
+        "card_number": "5454",
+        "card_expiration": "12/2030",
+        "cardtype_id": 2,
+        "bank_routing_number": "",
+        "bank_account_number": "",
+        "bank_account_type": "",
+        "exclude": false,
+        "retired": false,
+        "is_secondary_payment": false,
+        "ams_retention_date": 1483257600000
+      }, {
+        "cardtype": "MasterCard",
+        "customer_id": 33,
+        "company_id": 0,
+        "ams_account_id": "Demo AccountID",
+        "saved_name": "MasterCard ends in 5100",
+        "card_number": "5100",
+        "card_expiration": "12/2016",
+        "cardtype_id": 2,
+        "bank_routing_number": "",
+        "bank_account_number": "",
+        "bank_account_type": "",
+        "exclude": false,
+        "retired": false,
+        "is_secondary_payment": false,
+        "ams_retention_date": 1483257600000
+      }, {
+        "cardtype": "Discover",
+        "customer_id": 33,
+        "company_id": 0,
+        "ams_account_id": "Demo AccountID",
+        "saved_name": "xxx1117",
+        "card_number": "1117",
+        "card_expiration": "12/2016",
+        "cardtype_id": 5,
+        "bank_routing_number": "",
+        "bank_account_number": "",
+        "bank_account_type": "",
+        "exclude": false,
+        "retired": false,
+        "is_secondary_payment": false,
+        "ams_retention_date": 1483257600000
+      }, {
+        "cardtype": "wfsdafsdf",
+        "customer_id": 33,
+        "company_id": 0,
+        "ams_account_id": "14473722263001232104HMMXOWXNAFEUMMPKMZUQJYJAHHAQFTBP",
+        "saved_name": "4788250000028291",
+        "card_number": "8291",
+        "card_expiration": "12/2017",
+        "cardtype_id": 1,
+        "bank_routing_number": "",
+        "bank_account_number": "",
+        "bank_account_type": "",
+        "exclude": false,
+        "retired": false,
+        "is_secondary_payment": false,
+        "ams_retention_date": 1514793600000
+      }],
+      "is_show_credit_card": true
+    }
+  }
+}

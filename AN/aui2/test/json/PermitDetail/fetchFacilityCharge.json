@@ -1,0 +1,197 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "recordCount": 0,
+      "multiplePage": false,
+      "pageCount": 1,
+      "order_by": "",
+      "page_number": 1,
+      "total_records_per_page": 30,
+      "total_records": 0,
+      "order_option": "ASC",
+      "total_page": 1
+    }
+  },
+  "body": {
+    "reservation_fee": {
+      "facility_fees": [
+        {
+          "facility_id": 74,
+          "facility_name": "flora test1",
+          "facility_schedules": [
+            {
+              "start_date": "Jun 18, 2016",
+              "start_time": "8:00 AM",
+              "end_date": "Jun 18, 2016",
+              "end_time": "9:00 AM"
+            },
+            {
+              "start_date": "Jun 18, 2016",
+              "start_time": "4:00 AM",
+              "end_date": "Jun 10, 2016",
+              "end_time": "11:00 AM"
+            }
+          ],
+          "facility_amount": 72.98,
+          "facility_detail_fees": [
+            {
+              "facility_charge_id": 25,
+              "charge_name": "DS Deposit",
+              "quantity": 1.00,
+              "unit_fee": 20.00,
+              "abbrev_unit_of_measure": "/ hr",
+              "amount": 20.00,
+              "is_percentage_discount": false
+            },
+            {
+              "facility_charge_id": 26,
+              "charge_name": "Faciltiy_each",
+              "quantity": 1.00,
+              "unit_fee": 30.00,
+              "abbrev_unit_of_measure": "ea",
+              "amount": 30.00,
+              "is_percentage_discount": false
+            },
+            {
+              "facility_charge_id": 27,
+              "charge_name": "Faciltiy_each",
+              "quantity": 1.00,
+              "unit_fee": 50.00,
+              "abbrev_unit_of_measure": "ea",
+              "amount": 41.67,
+              "is_percentage_discount": false
+            },
+            {
+              "facility_charge_id": 23,
+              "charge_name": "Discount - fixed",
+              "quantity": 1.00,
+              "unit_fee": -10.00,
+              "abbrev_unit_of_measure": "/ dy",
+              "amount": -8.69,
+              "is_percentage_discount": false
+            },
+            {
+              "facility_charge_id": 24,
+              "charge_name": "DS Discount",
+              "quantity": 0,
+              "unit_fee": -10.00,
+              "abbrev_unit_of_measure": "ea",
+              "amount": -10.00,
+              "is_percentage_discount": true
+            }
+          ]
+        },
+        {
+          "facility_id": 75,
+          "facility_name": "kaely test1",
+          "facility_schedules": [
+            {
+              "start_date": "Jun 18, 2016",
+              "start_time": "4:00 AM",
+              "end_date": "Jun 10, 2016",
+              "end_time": "11:00 AM"
+            },
+            {
+              "start_date": "Jun 18, 2016",
+              "start_time": "8:00 AM",
+              "end_date": "Jun 18, 2016",
+              "end_time": "9:00 AM"
+            }
+          ],
+          "facility_amount": 72.98,
+          "facility_detail_fees": [
+            {
+              "facility_charge_id": 25,
+              "charge_name": "DS Deposit",
+              "quantity": 1.00,
+              "unit_fee": 20.00,
+              "abbrev_unit_of_measure": "ea",
+              "amount": 20.00,
+              "is_percentage_discount": false
+            },
+            {
+              "facility_charge_id": 26,
+              "charge_name": "Faciltiy_each",
+              "quantity": 1.00,
+              "unit_fee": 30.00,
+              "abbrev_unit_of_measure": "ea",
+              "amount": 30.00,
+              "is_percentage_discount": false
+            },
+            {
+              "facility_charge_id": 27,
+              "charge_name": "Faciltiy_each",
+              "quantity": 1.00,
+              "unit_fee": 50.00,
+              "abbrev_unit_of_measure": "ea",
+              "amount": 41.67,
+              "is_percentage_discount": false
+            },
+            {
+              "facility_charge_id": 23,
+              "charge_name": "Discount - fixed",
+              "quantity": 1.00,
+              "unit_fee": -10.00,
+              "abbrev_unit_of_measure": "ea",
+              "amount": -8.69,
+              "is_percentage_discount": false
+            },
+            {
+              "facility_charge_id": 24,
+              "charge_name": "DS Discount",
+              "quantity": 0,
+              "unit_fee": -10.00,
+              "abbrev_unit_of_measure": "ea",
+              "amount": -10.00,
+              "is_percentage_discount": true
+            }
+          ]
+        },
+        {
+          "facility_id": 79,
+          "facility_name": "kaely test2",
+          "facility_schedules": [
+            {
+              "start_date": "Jun 18, 2016",
+              "start_time": "4:00 AM",
+              "end_date": "Jun 10, 2016",
+              "end_time": "11:00 AM"
+            }
+          ],
+          "facility_amount": 72.98,
+          "facility_detail_fees": []
+        }
+      ],
+      "sub_total": 72.98,
+      "taxes": [
+        {
+          "name": "test1",
+          "amount": 1.64
+        },
+        {
+          "name": "test2",
+          "amount": 3.30
+        },
+        {
+          "name": "tax3",
+          "amount": 3.30
+        },
+        {
+          "name": "tax4",
+          "amount": 2.08
+        },
+        {
+          "name": "Tax8",
+          "amount": 4.17
+        }
+      ],
+      "total": 87.47,
+      "description": "mock description data",
+      "amount_paid": 10,
+      "due_now": 77.47,
+      "refund_amount": 0
+    }
+  }
+}

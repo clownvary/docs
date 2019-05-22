@@ -1,0 +1,20 @@
+{
+  "headers" : {
+    "response_code" : "0000",
+    "response_message" : "Successful",
+    "page_info" : {
+      "order_by" : "",
+      "page_number" : 1,
+      "total_records_per_page" : 30,
+      "total_records" : 0,
+      "order_option" : "ASC",
+      "total_page" : 1
+    }
+  },
+  "body" : {
+    "cancel_card_payment_result" : {
+      "redirect_url" : "",
+      "launch_pos" : false
+    }
+  }
+}

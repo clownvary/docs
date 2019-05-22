@@ -1,0 +1,71 @@
+@import '~shared/style/variables/index.less';
+/* stylelint-disable */
+
+.new-giftCard-modal {
+  .alert {
+    margin-bottom: 30px;
+
+    .only-one-error {
+      display: inline-block;
+      width: 520px;
+      padding-left: 10px;
+      margin: 0;
+      line-height: 1.4;
+      vertical-align: top;
+      list-style: none;
+    }
+
+    .new-override {
+      display: block;
+      padding-top: 10px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #313741;
+    }
+  }
+
+  .form-group {
+    .form-row {
+      align-items: flex-start;
+      min-height: 34px;
+      margin: 10px 0 0;
+    }
+
+    .form-error {
+      .checkbox__text:before,
+      .input-group > input,
+      .aaui-dropdown > button,
+      .aaui-dropdown .aaui-dropdown__button-text {
+        color: #d93a20 !important;
+        background-color: #ffefed !important;
+        border-color: #ff6046 !important;
+      }
+
+      .checkbox {
+        color: #d93a20 !important;
+      }
+    }
+
+    .form-label-col {
+      flex: 0 0 141px;
+      padding-right: 16px;
+      margin-top: 2px;
+      font-weight: @semibold;
+      text-align: right;
+    }
+
+    .form-entry-col {
+      flex: 0 0 300px;
+    }
+
+    .input-group {
+      width: 300px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: #db3811;
+    }
+  }
+}

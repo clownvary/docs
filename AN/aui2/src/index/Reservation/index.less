@@ -1,0 +1,56 @@
+@import '~shared/style/variables/index.less';
+
+.reservation-page {
+  .reservation-running-cart {
+    z-index: 7;
+  }
+
+  .an-page {
+    padding-top: 0;
+    margin-top: -1px;
+  }
+
+  .sticky-element.fixed-header {
+    background-color: #fff;
+  }
+
+  .page-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-bottom: @page-title-margin-bottom;
+
+    h1 {
+      margin: 0;
+      font-size: @page-title-font-size;
+      line-height: @page-title-line-height;
+      color: @river-bed;
+    }
+
+    .tool-bar {
+      display: flex;
+
+      .help-link {
+        align-items: center;
+        margin-bottom: 0;
+        margin-left: 16px;
+      }
+    }
+
+    .action-icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .runningCart-wrapper {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .permit-access-message {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+}

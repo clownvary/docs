@@ -1,0 +1,21 @@
+{
+  "headers" : {
+    "response_code" : "0000",
+    "response_message" : "Successful",
+    "page_info" : {
+      "pageCount" : 1,
+      "multiplePage" : false,
+      "recordCount" : 0,
+      "order_by" : "",
+      "order_option" : "ASC",
+      "total_records_per_page" : 30,
+      "total_records" : 0,
+      "total_page" : 1,
+      "page_number" : 1
+    }
+  },
+  "body" : {
+    "incart": "false"
+  }
+}
+

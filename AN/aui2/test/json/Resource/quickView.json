@@ -1,0 +1,44 @@
+{
+    "headers": {
+        "response_code": "0000",
+        "response_message": "Successful",
+        "page_info": {
+            "order_by": "",
+            "page_number": 1,
+            "order_option": "ASC",
+            "total_records": 0,
+            "total_records_per_page": 20,
+            "total_page": 1
+        }
+    },
+    "body": {
+        "quick_view_list": [
+            {
+                "id": 6,
+                "name": "test1",
+                "selected": false,
+                "resource_ids": [
+                  1,2,3,4,5,6,7
+                ]
+            },
+            {
+                "id": 7,
+                "name": "test2 ",
+                "selected": false,
+                "resource_ids": [
+                    10,
+                    11
+                ]
+            },
+            {
+                "id": 8,
+                "name": "test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3",
+                "selected": false,
+                "resource_ids": [
+                    10,
+                    11
+                ]
+            }
+        ]
+    }
+}

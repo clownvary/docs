@@ -1,0 +1,10 @@
+{
+  "headers": {
+      "response_code": "0000",
+      "response_message": "Successful"
+  },
+  "body": {
+      "permit_status": 2,
+      "stage_sequence_count": "1/12"
+   }
+}

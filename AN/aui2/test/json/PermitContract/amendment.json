@@ -1,0 +1,586 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "order_option": "ASC",
+      "total_page": 1,
+      "total_records": 0,
+      "total_records_per_page": 30,
+      "page_number": 1
+    }
+  },
+  "body": {
+    "amendments": [{
+      "amendment_id": 8,
+      "amendment_time": "30 Dec 2017 12:00 AM",
+      "old_total_fee": 20.16,
+      "new_total_fee": 11.17,
+      "amendment_note": " Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "amendment_details": {
+        "change_permit_holder": [{
+          "old_permit_holder": "Customer: A",
+          "new_permit_holder": "Organization: B",
+          "action_type": 64
+        }],
+        "change_agent": [{
+          "old_customer_name": "Alisa Alisa",
+          "new_customer_name": "Alisa2 Agent-2",
+          "action_type": 32
+        }],
+        "delete_event": [{
+          "amendment_permit_event_id": 3,
+          "permit_amendment_id": 8,
+          "permit_event_id": 3,
+          "action_type": 8,
+          "old_event_name": "old evnent2",
+          "new_event_name": "",
+          "old_customer_notes": "old n2",
+          "new_customer_notes": "n",
+          "resource_list": [{
+            "amendment_transaction_id": 6,
+            "amendment_permit_event_id": 3,
+            "permit_amendment_id": 8,
+            "transaction_id": 49225,
+            "resource_id": 9,
+            "resource_name": "Court 23",
+            "center_id": 47,
+            "center_name": "Parklands Sports Centre",
+            "action_type": 3,
+            "old_event_type_id": 7,
+            "old_event_type_name": "Maintenance",
+            "new_event_type_id": 0,
+            "new_event_type_name": "",
+            "old_additional_fee": 12.12,
+            "new_additional_fee": 0,
+            "booking_list": [{
+              "amendment_booking_id": 10,
+              "amendment_transaction_id": 6,
+              "permit_amendment_id": 8,
+              "facility_schedule_id": 19095,
+              "action_type": 3,
+              "old_attendee": 2,
+              "new_attendee": 0,
+              "old_fee": 12.12,
+              "new_fee": 0,
+              "old_start_schedule_date": "11 Jul 2017",
+              "old_start_schedule_time": "12:00 AM",
+              "old_end_schedule_date": "10 Jul 2017",
+              "old_end_schedule_time": "12:01 AM",
+              "new_start_schedule_date": "1 Jan 1900",
+              "new_start_schedule_time": "12:00 AM",
+              "new_end_schedule_date": "1 Jan 1900",
+              "new_end_schedule_time": "12:00 AM"
+            }]
+          }],
+          "question_list": [{
+            "action_type": 3,
+            "amendment_permit_event_id": 27,
+            "amendment_question_answer_id": 21,
+            "new_answers": [],
+            "new_question": "",
+            "new_question_id": 281,
+            "old_answers": [
+              "MultipleAnswers"
+            ],
+            "old_question": "62118_alpha_only - Only displays if the given codes that associated with the user specified answer for the given question (No visual style)",
+            "old_question_id": 0,
+            "permit_amendment_id": 36
+          }, {
+            "action_type": 3,
+            "amendment_permit_event_id": 27,
+            "amendment_question_answer_id": 22,
+            "new_answers": [],
+            "new_question": "",
+            "new_question_id": 283,
+            "old_answers": [
+              "02:04:00"
+            ],
+            "old_question": "62118_duration - The custom questions section shall list the custom question(s) that attached to the given permit? event.",
+            "old_question_id": 0,
+            "permit_amendment_id": 36
+          }, {
+            "action_type": 3,
+            "amendment_permit_event_id": 27,
+            "amendment_question_answer_id": 23,
+            "new_answers": [],
+            "new_question": "",
+            "new_question_id": 284,
+            "old_answers": [
+              "15442"
+            ],
+            "old_question": "62118_numbers - * Always displays the specified answer that answered to the given question",
+            "old_question_id": 0,
+            "permit_amendment_id": 36
+          }]
+        }],
+        "add_event": [{
+          "amendment_permit_event_id": 27,
+          "new_customer_notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "new_event_name": "Aug.10 16:18",
+          "old_customer_notes": "",
+          "old_event_name": "",
+          "permit_amendment_id": 36,
+          "permit_event_id": 1371,
+          "action_type": 2,
+          "question_list": [{
+            "action_type": 1,
+            "amendment_permit_event_id": 27,
+            "amendment_question_answer_id": 21,
+            "new_answers": [
+              "MultipleAnswers"
+            ],
+            "new_question": "62118_alpha_only - Only displays if the given codes that associated with the user specified answer for the given question (No visual style)",
+            "new_question_id": 281,
+            "old_answers": [],
+            "old_question": "",
+            "old_question_id": 0,
+            "permit_amendment_id": 36
+          }, {
+            "action_type": 1,
+            "amendment_permit_event_id": 27,
+            "amendment_question_answer_id": 22,
+            "new_answers": [
+              "02:04:00"
+            ],
+            "new_question": "62118_duration - The custom questions section shall list the custom question(s) that attached to the given permit? event.",
+            "new_question_id": 283,
+            "old_answers": [],
+            "old_question": "",
+            "old_question_id": 0,
+            "permit_amendment_id": 36
+          }, {
+            "action_type": 1,
+            "amendment_permit_event_id": 27,
+            "amendment_question_answer_id": 23,
+            "new_answers": [
+              "15442"
+            ],
+            "new_question": "62118_numbers - * Always displays the specified answer that answered to the given question",
+            "new_question_id": 284,
+            "old_answers": [],
+            "old_question": "",
+            "old_question_id": 0,
+            "permit_amendment_id": 36
+          }],
+          "resource_list": [{
+            "action_type": 1,
+            "amendment_permit_event_id": 27,
+            "amendment_transaction_id": 22,
+            "booking_list": [{
+              "action_type": 1,
+              "amendment_booking_id": 34,
+              "amendment_transaction_id": 22,
+              "facility_schedule_id": 21469,
+              "new_attendee": 15,
+              "new_end_schedule_date": "2017 Jul 31",
+              "new_end_schedule_time": "2:00 PM",
+              "new_fee": 100,
+              "new_start_schedule_date": "2017 Jul 31",
+              "new_start_schedule_time": "1:00 PM",
+              "old_attendee": 0,
+              "old_end_schedule_date": "1899 Dec 30",
+              "old_end_schedule_time": "12:00 AM",
+              "old_fee": 0,
+              "old_start_schedule_date": "1899 Dec 30",
+              "old_start_schedule_time": "12:00 AM",
+              "permit_amendment_id": 36
+            }, {
+              "action_type": 1,
+              "amendment_booking_id": 35,
+              "amendment_transaction_id": 22,
+              "facility_schedule_id": 21470,
+              "new_attendee": 1,
+              "new_end_schedule_date": "2017 Aug 1",
+              "new_end_schedule_time": "2:00 PM",
+              "new_fee": 10,
+              "new_start_schedule_date": "2017 Aug 1",
+              "new_start_schedule_time": "1:00 PM",
+              "old_attendee": 0,
+              "old_end_schedule_date": "1899 Dec 30",
+              "old_end_schedule_time": "12:00 AM",
+              "old_fee": 0,
+              "old_start_schedule_date": "1899 Dec 30",
+              "old_start_schedule_time": "12:00 AM",
+              "permit_amendment_id": 36
+            }, {
+              "action_type": 1,
+              "amendment_booking_id": 36,
+              "amendment_transaction_id": 22,
+              "facility_schedule_id": 21471,
+              "new_attendee": 8,
+              "new_end_schedule_date": "2017 Aug 10",
+              "new_end_schedule_time": "4:00 AM",
+              "new_fee": 9,
+              "new_start_schedule_date": "2017 Aug 10",
+              "new_start_schedule_time": "3:00 AM",
+              "old_attendee": 0,
+              "old_end_schedule_date": "1899 Dec 30",
+              "old_end_schedule_time": "12:00 AM",
+              "old_fee": 0,
+              "old_start_schedule_date": "1899 Dec 30",
+              "old_start_schedule_time": "12:00 AM",
+              "permit_amendment_id": 36
+            }, {
+              "action_type": 1,
+              "amendment_booking_id": 37,
+              "amendment_transaction_id": 22,
+              "facility_schedule_id": 21472,
+              "new_attendee": 20,
+              "new_end_schedule_date": "2017 Aug 10",
+              "new_end_schedule_time": "7:00 PM",
+              "new_fee": 11,
+              "new_start_schedule_date": "2017 Aug 10",
+              "new_start_schedule_time": "6:00 PM",
+              "old_attendee": 0,
+              "old_end_schedule_date": "1899 Dec 30",
+              "old_end_schedule_time": "12:00 AM",
+              "old_fee": 0,
+              "old_start_schedule_date": "1899 Dec 30",
+              "old_start_schedule_time": "12:00 AM",
+              "permit_amendment_id": 36
+            }, {
+              "action_type": 1,
+              "amendment_booking_id": 38,
+              "amendment_transaction_id": 22,
+              "facility_schedule_id": 21473,
+              "new_attendee": 35,
+              "new_end_schedule_date": "2017 Aug 11",
+              "new_end_schedule_time": "12:30 PM",
+              "new_fee": 8,
+              "new_start_schedule_date": "2017 Aug 11",
+              "new_start_schedule_time": "11:30 AM",
+              "old_attendee": 0,
+              "old_end_schedule_date": "1899 Dec 30",
+              "old_end_schedule_time": "12:00 AM",
+              "old_fee": 0,
+              "old_start_schedule_date": "1899 Dec 30",
+              "old_start_schedule_time": "12:00 AM",
+              "permit_amendment_id": 36
+            }],
+            "center_id": 121,
+            "center_name": "zack long name center zack long name center zack l",
+            "resource_id": 788,
+            "resource_name": "zack facility minutes long name zack fac",
+            "resource_type": 20,
+            "new_additional_fee": 30,
+            "new_event_type_id": 78,
+            "new_event_type_name": "62118-2",
+            "old_additional_fee": 0,
+            "old_event_type_id": 0,
+            "old_event_type_name": "",
+            "permit_amendment_id": 36,
+            "transaction_id": 49388
+          }]
+        }],
+        "edit_event": [{
+          "action_type": 4,
+          "amendment_permit_event_id": 8,
+          "new_customer_notes": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+          "new_event_name": "kaely_amendment_changed",
+          "old_customer_notes": "",
+          "old_event_name": "kaely_amendment",
+          "permit_amendment_id": 80,
+          "permit_event_id": 1389,
+          "resource_list": [{
+            "amendment_transaction_id": 5,
+            "amendment_permit_event_id": 2,
+            "permit_amendment_id": 8,
+            "transaction_id": 49226,
+            "resource_id": 9,
+            "resource_name": "Court 23",
+            "center_id": 47,
+            "center_name": "Parklands Sports Centre",
+            "action_type": 2,
+            "old_event_type_id": 3,
+            "old_event_type_name": "Internal Use",
+            "new_event_type_id": 7,
+            "new_event_type_name": "Maintenance",
+            "old_additional_fee": 12.12,
+            "new_additional_fee": 11.11,
+            "booking_list": [{
+              "amendment_booking_id": 9,
+              "amendment_transaction_id": 5,
+              "permit_amendment_id": 8,
+              "facility_schedule_id": 19092,
+              "action_type": 2,
+              "old_attendee": 1,
+              "new_attendee": 2,
+              "old_fee": 12.12,
+              "new_fee": 13.13,
+              "old_start_schedule_date": "10 Jul 2017",
+              "old_start_schedule_time": "12:00 AM",
+              "old_end_schedule_date": "10 Jul 2017",
+              "old_end_schedule_time": "12:01 AM",
+              "new_start_schedule_date": "10 Jul 2017",
+              "new_start_schedule_time": "12:01 AM",
+              "new_end_schedule_date": "10 Jul 2017",
+              "new_end_schedule_time": "12:02 AM"
+            }]
+          }],
+          "question_list": [{
+            "amendment_question_answer_id": 1,
+            "amendment_permit_event_id": 2,
+            "permit_amendment_id": 8,
+            "permit_event_id": 1,
+            "question_type": 1,
+            "action_type": 1,
+            "old_question_id": 1,
+            "old_question": "What is your shirt size?",
+            "old_answers": [
+              "22",
+              "2"
+            ],
+            "new_question_id": 2,
+            "new_question": "Do you have any special needs or medical concerns/limitations that we need to be aware of?",
+            "new_answers": []
+          }]
+        }],
+        "change_status": [{
+          "old_permit_status_text": "Stage Denied",
+          "new_permit_status_text": "Denied"
+        }],
+        "change_expiration_date": [{
+					"old_expiration_date": "2018 Jun 20",
+					"new_expiration_date": "2018 Jun 21"
+				}]
+      },
+      "modify_user_name": "Trainer User",
+      "employee_id": "employee_id Trainer User"
+
+    }, {
+      "amendment_id": 10,
+      "amendment_time": "1 Aug 2017 7:51 PM",
+      "old_total_fee": 44,
+      "new_total_fee": 44,
+      "amendment_note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.",
+      "amendment_details": {
+        "change_permit_holder": [],
+        "change_agent": [],
+        "delete_event": [],
+        "add_event": [{
+          "amendment_permit_event_id": 4,
+          "permit_amendment_id": 10,
+          "permit_event_id": 232,
+          "action_type": 2,
+          "old_event_name": "22",
+          "new_event_name": "22",
+          "old_customer_notes": "33",
+          "new_customer_notes": "33",
+          "resource_list": [{
+            "amendment_transaction_id": 13,
+            "amendment_permit_event_id": 4,
+            "permit_amendment_id": 10,
+            "transaction_id": 49229,
+            "resource_id": 9,
+            "resource_name": "Court 23",
+            "center_id": 47,
+            "center_name": "Parklands Sports Centre",
+            "action_type": 1,
+            "old_event_type_id": 1,
+            "old_event_type_name": "",
+            "new_event_type_id": 1,
+            "new_event_type_name": "",
+            "old_additional_fee": 2,
+            "new_additional_fee": 2,
+            "booking_list": []
+          }],
+          "question_list": []
+        }],
+        "edit_event": [
+          {
+            "amendment_permit_event_id": 12,
+            "permit_amendment_id": 83,
+            "permit_event_id": 1399,
+            "action_type": 4,
+            "old_event_name": "old test question",
+            "new_event_name": "new test question",
+            "old_customer_notes": "old customer notes",
+            "new_customer_notes": "new customer notes",
+            "resource_list": [
+              {
+                "amendment_transaction_id": 27,
+                "amendment_permit_event_id": 26,
+                "permit_amendment_id": 98,
+                "transaction_id": 49559,
+                "resource_id": 672,
+                "resource_name": "*lillian_equipment",
+                "resource_type": 1,
+                "center_id": 67,
+                "center_name": "*lillian_center3",
+                "action_type": 2,
+                "old_event_type_id": 51,
+                "old_event_type_name": "15.4 demo - Event Type - Lin Test",
+                "new_event_type_id": 51,
+                "new_event_type_name": "15.4 demo - Event Type - Lin Test",
+                "old_additional_fee": 0,
+                "new_additional_fee": 0,
+                "booking_list": [
+                  {
+                      "amendment_booking_id": 34,
+                      "amendment_transaction_id": 27,
+                      "permit_amendment_id": 98,
+                      "facility_schedule_id": 21988,
+                      "action_type": 2,
+                      "old_attendee": 5,
+                      "new_attendee": 4,
+                      "old_fee": 50,
+                      "new_fee": 60,
+                      "old_start_schedule_date": "2017 Aug 24",
+                      "old_start_schedule_time": "5:00 AM",
+                      "old_end_schedule_date": "2017 Aug 24",
+                      "old_end_schedule_time": "6:00 AM",
+                      "new_start_schedule_date": "2017 Aug 15",
+                      "new_start_schedule_time": "5:00 AM",
+                      "new_end_schedule_date": "2017 Aug 16",
+                      "new_end_schedule_time": "7:00 AM"
+                  },
+                  {
+                      "amendment_booking_id": 35,
+                      "amendment_transaction_id": 27,
+                      "permit_amendment_id": 98,
+                      "facility_schedule_id": 21994,
+                      "action_type": 1,
+                      "old_attendee": 0,
+                      "new_attendee": 5,
+                      "old_fee": 0,
+                      "new_fee": 5,
+                      "old_start_schedule_date": null,
+                      "old_start_schedule_time": null,
+                      "old_end_schedule_date": null,
+                      "old_end_schedule_time": null,
+                      "new_start_schedule_date": "2017 Aug 23",
+                      "new_start_schedule_time": "11:00 AM",
+                      "new_end_schedule_date": "2017 Aug 16",
+                      "new_end_schedule_time": "12:00 PM"
+                  },
+                  {
+                    "amendment_booking_id": 35,
+                    "amendment_transaction_id": 27,
+                    "permit_amendment_id": 98,
+                    "facility_schedule_id": 21994,
+                    "action_type": 1,
+                    "old_attendee": 0,
+                    "new_attendee": 2,
+                    "old_fee": 0,
+                    "new_fee": 10,
+                    "old_start_schedule_date": null,
+                    "old_start_schedule_time": null,
+                    "old_end_schedule_date": null,
+                    "old_end_schedule_time": null,
+                    "new_start_schedule_date": "2017 Aug 23",
+                    "new_start_schedule_time": "10:00 AM",
+                    "new_end_schedule_date": "2017 Aug 23",
+                    "new_end_schedule_time": "12:00 PM"
+                  },
+                  {
+                    "amendment_booking_id": 38,
+                    "amendment_transaction_id": 29,
+                    "permit_amendment_id": 100,
+                    "facility_schedule_id": 21999,
+                    "action_type": 3,
+                    "old_attendee": 3,
+                    "new_attendee": 0,
+                    "old_fee": 20,
+                    "new_fee": 0,
+                    "old_start_schedule_date": "2017 Aug 16",
+                    "old_start_schedule_time": "6:30 PM",
+                    "old_end_schedule_date": "2017 Aug 25",
+                    "old_end_schedule_time": "3:30 PM",
+                    "new_start_schedule_date": null,
+                    "new_start_schedule_time": null,
+                    "new_end_schedule_date": null,
+                    "new_end_schedule_time": null
+                  }
+                ]
+              }
+            ],
+            "question_list": [
+              {
+                "action_type": 1,
+                "amendment_permit_event_id": 27,
+                "amendment_question_answer_id": 22,
+                "new_answers": [
+                  "02:04:00"
+                ],
+                "new_question": "62118_duration - The custom questions section shall list the custom question(s) that attached to the given permit? event.",
+                "new_question_id": 283,
+                "old_answers": [],
+                "old_question": "",
+                "old_question_id": 0,
+                "permit_amendment_id": 36
+              },
+              {
+                "amendment_question_answer_id": 30,
+                "amendment_permit_event_id": 12,
+                "permit_amendment_id": 83,
+                "action_type": 2,
+                "old_question_id": 211,
+                "old_question": "I am a cat1?",
+                "old_answers": [
+                  "asdfasdf", "given codes"
+                ],
+                "new_question_id": 211,
+                "new_question": "I am a cat2?",
+                "new_answers": [
+                  "asdfasdf edit question",
+                  "given codes new"
+                ]
+              },
+              {
+                "amendment_question_answer_id": 30,
+                "amendment_permit_event_id": 12,
+                "permit_amendment_id": 83,
+                "action_type": 2,
+                "old_question_id": 211,
+                "old_question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.",
+                "old_answers": [
+                  "Whatever happens tomorrow", "given codes"
+                ],
+                "new_question_id": 211,
+                "new_question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.?",
+                "new_answers": [
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor?"
+                ]
+              },
+              {
+                "amendment_question_answer_id": 10,
+                "amendment_permit_event_id": 9,
+                "permit_amendment_id": 34,
+                "action_type": 3,
+                "old_question_id": 1047,
+                "old_question": "RL-Free",
+                "old_answers": [
+                  "cccccc"
+                ],
+                "new_question_id": 0,
+                "new_question": "",
+                "new_answers": []
+              },
+              {
+                "amendment_question_answer_id": 10,
+                "amendment_permit_event_id": 9,
+                "permit_amendment_id": 34,
+                "action_type": 3,
+                "old_question_id": 1047,
+                "old_question": "RL-Free",
+                "old_answers": [
+                  "cccccc"
+                ],
+                "new_question_id": 0,
+                "new_question": "",
+                "new_answers": []
+              }
+            ]
+          }
+        ],
+        "change_status": [],
+        "change_expiration_date": []
+      },
+      "modify_user_name": "Kaely",
+      "employee_id": ""
+    }]
+  }
+}

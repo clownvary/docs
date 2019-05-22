@@ -1,0 +1,125 @@
+@import '~shared/style/variables/index.less';
+/* stylelint-disable */
+
+.runningCart-wrapper {
+  position: relative;
+  float: right;
+
+  .cart-list-count {
+    padding-left: 5px;
+  }
+
+  .runningCart {
+    position: absolute;
+    top: 32px;
+    right: 0;
+    z-index: 1003;
+    width: 340px;
+    cursor: default;
+    background-color: #fff;
+    border: solid 1px #d6d7da;
+    border-radius: 3px;
+
+    .cart-list-wrapper {
+      max-height: 380px;
+      padding: 20px 20px 20px 15px;
+      overflow: auto;
+    }
+
+    .cart-empty,
+    .cart-loading,
+    .cart-error {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .cart-empty {
+      color: #748288;
+
+      .icon-cart-m {
+        display: block;
+        height: 40px;
+        padding: 0 0 10px;
+        font-size: 36px;
+        line-height: 40px;
+        color: #b3bdc1;
+      }
+    }
+
+    .cart-error {
+      font-size: 14px;
+      color: #d93a20;
+
+      &-icon {
+        display: block;
+        height: 40px;
+        padding: 0 0 10px;
+        font-size: 36px;
+        line-height: 40px;
+        color: #b3bdc1;
+
+        .icon-cart-m {
+          position: relative;
+          color: #ddd;
+
+          .icon-times-circle {
+            position: absolute;
+            right: -7px;
+            bottom: 0;
+            font-size: 14px;
+            color: #d93a20;
+            border: 2px solid #fff;
+            border-radius: 16px;
+          }
+        }
+      }
+    }
+
+    .cart-loading {
+      .loading-bar__outer-box {
+        position: initial;
+      }
+    }
+
+    .cart-list {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    .list {
+      display: table-row;
+
+      &:last-child {
+        .col-description,
+        .col-amount {
+          border-bottom-width: 0;
+        }
+      }
+    }
+
+    .col-description,
+    .col-amount {
+      display: table-cell;
+      padding: 10px 0;
+      font-size: 14px;
+      vertical-align: top;
+      color: #333;
+      border-bottom: dotted 1px #d6d7da;
+    }
+
+    .col-description {
+      width: 65%;
+      padding-right: 5px;
+      text-align: left;
+      word-wrap: break-word;
+    }
+
+    .col-amount {
+      width: 35%;
+      font-weight: bold;
+      text-align: right;
+      word-wrap: break-word;
+    }
+  }
+}

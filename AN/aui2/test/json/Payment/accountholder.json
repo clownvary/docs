@@ -1,0 +1,25 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "page_number": 1,
+      "total_records": 0,
+      "total_records_per_page": 30,
+      "order_option": "ASC",
+      "total_page": 1
+    }
+  },
+  "body": {
+    "account_holder": {
+      "account_holder_name": null,
+      "account_holder_zip": null,
+      "account_holder_addr": null,
+      "ams_account_id_modulus": "8865f806468a10ef3ef2139d58aca3e93777d36bf429687b83cc056c43208f20af9185559870368dbe728591a2a1e89ea7bc2960b127ee7e9b3b7e0824b396fccbb32c17c95c4c7176aa072cebb5a19f41691cda0d2091a5afc6321a5fcb944c739df97ec5e33a97fe7f23841abbc53a52b653b02ab59376e078fb3df04aea88e0ddb278cf8fa46974aa4b63247f208ccf11ed59e650caad13a56ed24cc5be8c7374de657baf31d7ffbd7e7ef33b13471210d40b9869cdbfc7a80172a9cb53b1e5cb7d62f79257d10d85804d855d7e0db8e656e9527504e9e5ea17543ad9a9414c923032753cdd6bdb3e6b2b767c0ebe3c31b345a993c3726a7f1c18c0ee0ba1",
+      "ams_account_id_exponent": "10001",
+      "cc_ams_account_id_modulus": "8865f806468a10ef3ef2139d58aca3e93777d36bf429687b83cc056c43208f20af9185559870368dbe728591a2a1e89ea7bc2960b127ee7e9b3b7e0824b396fccbb32c17c95c4c7176aa072cebb5a19f41691cda0d2091a5afc6321a5fcb944c739df97ec5e33a97fe7f23841abbc53a52b653b02ab59376e078fb3df04aea88e0ddb278cf8fa46974aa4b63247f208ccf11ed59e650caad13a56ed24cc5be8c7374de657baf31d7ffbd7e7ef33b13471210d40b9869cdbfc7a80172a9cb53b1e5cb7d62f79257d10d85804d855d7e0db8e656e9527504e9e5ea17543ad9a9414c923032753cdd6bdb3e6b2b767c0ebe3c31b345a993c3726a7f1c18c0ee0ba1",
+      "cc_ams_account_id_exponent": "10001"
+    }
+  }
+}

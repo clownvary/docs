@@ -1,0 +1,2650 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index/Payment/components/PaymentOptions component should render correctly 1`] = `
+<PaymentOptions
+  cancelSelectGiftCard={[Function]}
+  catchResetAction={[Function]}
+  changeGiftCardOption={[Function]}
+  changePayNowAmountAction={[Function]}
+  changePaymentAction={[Function]}
+  changePaymentPlanAmount={[Function]}
+  changeRemaining={[Function]}
+  clearErrors={[Function]}
+  clearOptionErrorAction={[Function]}
+  deletePaymentOptionAction={[Function]}
+  fetchAutoPaymentMethodList={[Function]}
+  fetchGiftCardList={[Function]}
+  initialData={
+    Object {
+      "paymentPlanInitData": Object {
+        "auto_payment_types": Array [
+          Object {
+            "id": 1,
+            "name": "Credit Card",
+            "selected": true,
+          },
+          Object {
+            "id": 2,
+            "name": "Electronic Check",
+            "selected": false,
+          },
+        ],
+        "auto_schedule_read_only": true,
+        "backup_payment_info": Object {
+          "backup_payment_card_name": "Visa ends in 2323",
+          "backup_payment_type": "Credit Card",
+          "show_backup_payment": true,
+        },
+        "billing_types": Array [
+          Object {
+            "id": 1,
+            "name": "Weekly",
+            "selected": true,
+          },
+          Object {
+            "id": 2,
+            "name": "Every other week",
+            "selected": false,
+          },
+          Object {
+            "id": 3,
+            "name": "Twice a month",
+            "selected": false,
+          },
+          Object {
+            "id": 4,
+            "name": "Monthly",
+            "selected": false,
+          },
+          Object {
+            "id": 5,
+            "name": "Quarterly",
+            "selected": false,
+          },
+          Object {
+            "id": 6,
+            "name": "Every four weeks",
+            "selected": false,
+          },
+        ],
+        "first_payment_date": "2017 Feb 05",
+        "max_payment_plan_amount": 12.4,
+        "number_of_payments": Array [
+          Object {
+            "id": 1,
+            "name": "1",
+            "selected": true,
+          },
+          Object {
+            "id": 2,
+            "name": "2",
+            "selected": false,
+          },
+          Object {
+            "id": 3,
+            "name": "3",
+            "selected": false,
+          },
+          Object {
+            "id": 4,
+            "name": "4",
+            "selected": false,
+          },
+          Object {
+            "id": 5,
+            "name": "5",
+            "selected": false,
+          },
+          Object {
+            "id": 6,
+            "name": "6",
+            "selected": false,
+          },
+          Object {
+            "id": 7,
+            "name": "7",
+            "selected": false,
+          },
+          Object {
+            "id": 8,
+            "name": "8",
+            "selected": false,
+          },
+          Object {
+            "id": 9,
+            "name": "9",
+            "selected": false,
+          },
+          Object {
+            "id": 10,
+            "name": "10",
+            "selected": false,
+          },
+          Object {
+            "id": 11,
+            "name": "11",
+            "selected": false,
+          },
+          Object {
+            "id": 12,
+            "name": "12",
+            "selected": false,
+          },
+          Object {
+            "id": 13,
+            "name": "13",
+            "selected": false,
+          },
+          Object {
+            "id": 14,
+            "name": "14",
+            "selected": false,
+          },
+          Object {
+            "id": 15,
+            "name": "15",
+            "selected": false,
+          },
+          Object {
+            "id": 16,
+            "name": "16",
+            "selected": false,
+          },
+          Object {
+            "id": 17,
+            "name": "17",
+            "selected": false,
+          },
+          Object {
+            "id": 18,
+            "name": "18",
+            "selected": false,
+          },
+          Object {
+            "id": 19,
+            "name": "19",
+            "selected": false,
+          },
+          Object {
+            "id": 20,
+            "name": "20",
+            "selected": false,
+          },
+          Object {
+            "id": 21,
+            "name": "21",
+            "selected": false,
+          },
+          Object {
+            "id": 22,
+            "name": "22",
+            "selected": false,
+          },
+          Object {
+            "id": 23,
+            "name": "23",
+            "selected": false,
+          },
+          Object {
+            "id": 24,
+            "name": "24",
+            "selected": false,
+          },
+          Object {
+            "id": 25,
+            "name": "25",
+            "selected": false,
+          },
+          Object {
+            "id": 26,
+            "name": "26",
+            "selected": false,
+          },
+          Object {
+            "id": 27,
+            "name": "27",
+            "selected": false,
+          },
+          Object {
+            "id": 28,
+            "name": "28",
+            "selected": false,
+          },
+          Object {
+            "id": 29,
+            "name": "29",
+            "selected": false,
+          },
+          Object {
+            "id": 30,
+            "name": "30",
+            "selected": false,
+          },
+          Object {
+            "id": 31,
+            "name": "31",
+            "selected": false,
+          },
+          Object {
+            "id": 32,
+            "name": "32",
+            "selected": false,
+          },
+          Object {
+            "id": 33,
+            "name": "33",
+            "selected": false,
+          },
+          Object {
+            "id": 34,
+            "name": "34",
+            "selected": false,
+          },
+          Object {
+            "id": 35,
+            "name": "35",
+            "selected": false,
+          },
+          Object {
+            "id": 36,
+            "name": "36",
+            "selected": false,
+          },
+          Object {
+            "id": 37,
+            "name": "37",
+            "selected": false,
+          },
+          Object {
+            "id": 38,
+            "name": "38",
+            "selected": false,
+          },
+          Object {
+            "id": 39,
+            "name": "39",
+            "selected": false,
+          },
+          Object {
+            "id": 40,
+            "name": "40",
+            "selected": false,
+          },
+          Object {
+            "id": 41,
+            "name": "41",
+            "selected": false,
+          },
+          Object {
+            "id": 42,
+            "name": "42",
+            "selected": false,
+          },
+          Object {
+            "id": 43,
+            "name": "43",
+            "selected": false,
+          },
+          Object {
+            "id": 44,
+            "name": "44",
+            "selected": false,
+          },
+          Object {
+            "id": 45,
+            "name": "45",
+            "selected": false,
+          },
+          Object {
+            "id": 46,
+            "name": "46",
+            "selected": false,
+          },
+          Object {
+            "id": 47,
+            "name": "47",
+            "selected": false,
+          },
+          Object {
+            "id": 48,
+            "name": "48",
+            "selected": false,
+          },
+          Object {
+            "id": 49,
+            "name": "49",
+            "selected": false,
+          },
+          Object {
+            "id": 50,
+            "name": "50",
+            "selected": false,
+          },
+        ],
+        "payment_plan_wording": "Payment Plan",
+        "payment_type_id": 8,
+        "reservation_payment_plans": Array [
+          Object {
+            "description": "deposit3&quot;&#126;",
+            "id": 0,
+            "name": "Custom",
+            "selected": true,
+          },
+          Object {
+            "description": "deposit2&quot;&#096;",
+            "id": 4,
+            "name": "each booking",
+            "selected": false,
+          },
+          Object {
+            "description": "deposit1&gt;&lt;&amp;",
+            "id": 2,
+            "name": "Monthly at start of month",
+            "selected": false,
+          },
+          Object {
+            "description": "Facility damage&gt;&lt;&amp;&#096;",
+            "id": 5,
+            "name": "total due first date",
+            "selected": false,
+          },
+          Object {
+            "description": "Facility damage2&quot;test&quot;&#126;Test long description 001. Test long description 002. Test long description 003.. Test long description 004. Test long description 005. Test long description 006. Test long description 007.",
+            "id": 3,
+            "name": "weekly",
+            "selected": false,
+          },
+        ],
+        "show_auto_payment_method": false,
+        "show_prior_cc": true,
+        "show_prior_ecp": true,
+      },
+      "permitID": -1,
+    }
+  }
+  isRefund={false}
+  payer={
+    Immutable.Map {
+      params: Immutable.Map {
+        customerId: -1,
+        companyId: 15,
+      },
+    }
+  }
+  payment={
+    Immutable.Map {
+      total: 500,
+      successPay: false,
+      paymentPlanAmount: 500,
+      paymentPlanWording: "PaymentPlanX",
+      isPaymentActionValid: true,
+      payNow: 500,
+      minimumPayNowAmount: 100,
+      isDistributePayment: true,
+      paymentPageIndex: 2,
+    }
+  }
+  paymentAction={
+    Immutable.Map {
+      isSelectMakeAPayment: false,
+    }
+  }
+  paymentOptions={
+    Object {
+      "eCheck": Immutable.Map {
+        eCheckConfig: Immutable.Map {
+            show_ach_agreement_for_ecp: true,
+        },
+    },
+      "giftCard": Immutable.Map {
+        giftCardId: 113,
+    },
+      "options": Immutable.Map {
+        data: Immutable.List [
+            Immutable.Map {
+                ComponentName: "Check",
+                activeVal: 1,
+            },
+            Immutable.Map {
+                ComponentName: "Cash",
+                activeVal: 2,
+            },
+            Immutable.Map {
+                ComponentName: "Credit",
+                activeVal: 3,
+            },
+            Immutable.Map {
+                ComponentName: "CreditCard",
+                activeVal: 4,
+            },
+            Immutable.Map {
+                ComponentName: "ElectronicCheck",
+                activeVal: 5,
+            },
+            Immutable.Map {
+                ComponentName: "GiftCard",
+                activeVal: 6,
+            },
+            Immutable.Map {
+                ComponentName: "DebitCard",
+                activeVal: 7,
+            },
+            Immutable.Map {
+                ComponentName: "PaymentPlan",
+                activeVal: 8,
+                disabled: true,
+            },
+            Immutable.Map {
+                ComponentName: "Account",
+                activeVal: 9,
+            },
+            Immutable.Map {
+                ComponentName: "",
+                activeVal: 0,
+            },
+        ],
+        availableSplitIds: Immutable.List [
+        ],
+        deleteAPayment: true,
+    },
+    }
+  }
+  removeNewGiftCardAsyncAction={[Function]}
+  resetGiftCardList={[Function]}
+  resetPaymentDeleteFlagAction={[Function]}
+  showAuthorizationDetails={[Function]}
+  showErrors={[Function]}
+  splitPaymentAction={[Function]}
+>
+  <div
+    className="payment-options panel "
+  >
+    <h2>
+      payment option
+    </h2>
+    <div
+      className="payment-paynow"
+    >
+      <span
+        className="paynow-label"
+      >
+        Pay Now
+      </span>
+      <span
+        className="payment-symbol"
+      >
+        $
+      </span>
+      <InputNumeric
+        allowBlank={true}
+        allowKeySpin={true}
+        allowMouseSpin={false}
+        className=""
+        currency="USD"
+        data-qa-id="payment-paymentOption-payNow"
+        decimals={2}
+        disabled={true}
+        icon=""
+        iconHint=""
+        id=""
+        increment={1}
+        items={Array []}
+        listClass="input-numeric-list"
+        listClassName=""
+        listConfig={Object {}}
+        listMaxHeight="300px"
+        listPopupOptions={Object {}}
+        listWidth="auto"
+        max={9999999999.99}
+        min={0}
+        name=""
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onListClose={[Function]}
+        onListOpen={[Function]}
+        onTextChange={[Function]}
+        onValueChange={[Function]}
+        placeHolder=""
+        prefix="an"
+        showClear={false}
+        showGroup={false}
+        showSpinner={false}
+        showTrigger={false}
+        showTrigger2={false}
+        size="md"
+        textAlign="right"
+        triggerIcon="icon-chevron-down"
+        triggerIcon2="icon-chevron-down"
+        triggerIconHint=""
+        triggerIconHint2=""
+        triggerIconToggle="icon-chevron-up"
+        triggerIconToggle2="icon-chevron-up"
+        value={500}
+      >
+        <div
+          className="an-input-numeric input-group buttons-0 input-group--md disabled"
+        >
+          <input
+            className="input input-group__field textalign-right input__field"
+            data-qa-id="payment-paymentOption-payNow"
+            disabled={true}
+            id=""
+            name=""
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragEnter={[Function]}
+            onDragOver={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            onMouseUp={[Function]}
+            onPaste={[Function]}
+            placeholder=""
+            type="text"
+          />
+        </div>
+      </InputNumeric>
+      <span>
+        <span
+          className="paymentplan-label"
+        >
+          PaymentPlanX
+        </span>
+        <span
+          className="payment-symbol"
+        >
+          $
+        </span>
+        <InputNumeric
+          allowBlank={false}
+          allowKeySpin={true}
+          allowMouseSpin={false}
+          className=""
+          currency="USD"
+          data-qa-id=""
+          decimals={2}
+          disabled={false}
+          icon=""
+          iconHint=""
+          id=""
+          increment={1}
+          items={Array []}
+          listClass="input-numeric-list"
+          listClassName=""
+          listConfig={Object {}}
+          listMaxHeight="300px"
+          listPopupOptions={Object {}}
+          listWidth="auto"
+          max={9999999999.99}
+          min={0}
+          name=""
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onListClose={[Function]}
+          onListOpen={[Function]}
+          onTextChange={[Function]}
+          onValueChange={[Function]}
+          placeHolder=""
+          prefix="an"
+          showClear={false}
+          showGroup={false}
+          showSpinner={false}
+          showTrigger={false}
+          showTrigger2={false}
+          size="md"
+          textAlign="right"
+          triggerIcon="icon-chevron-down"
+          triggerIcon2="icon-chevron-down"
+          triggerIconHint=""
+          triggerIconHint2=""
+          triggerIconToggle="icon-chevron-up"
+          triggerIconToggle2="icon-chevron-up"
+          value={500}
+        >
+          <div
+            className="an-input-numeric input-group buttons-0 input-group--md"
+          >
+            <input
+              className="input input-group__field textalign-right input__field"
+              data-qa-id=""
+              disabled={false}
+              id=""
+              name=""
+              onBlur={[Function]}
+              onChange={[Function]}
+              onDragEnter={[Function]}
+              onDragOver={[Function]}
+              onDrop={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onKeyUp={[Function]}
+              onMouseUp={[Function]}
+              onPaste={[Function]}
+              placeholder=""
+              type="text"
+            />
+          </div>
+        </InputNumeric>
+      </span>
+    </div>
+    <div
+      className="aaui-flexbox payment-action"
+    >
+      <div
+        className="payment-title"
+      >
+        payment method
+      </div>
+      <div
+        className="payment-splition payment-splition-disabled"
+        onClick={[Function]}
+      >
+        <i
+          className="icon icon-split-m"
+        />
+         
+        Split payment
+      </div>
+    </div>
+    <div
+      className="payment-list-new"
+    >
+      <div
+        className="payment-list-new__item"
+        key="1-0"
+      >
+        <Check
+          clearOptionAndPaymentErrs={[Function]}
+          hasManuallySplitOption={0}
+          index={0}
+          isRefund={false}
+          item={
+            Object {
+              "ComponentName": "Check",
+              "activeVal": 1,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          value={1}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </Check>
+      </div>
+      <div
+        className="payment-list-new__item"
+        key="2-0"
+      >
+        <Cash
+          clearOptionAndPaymentErrs={[Function]}
+          hasManuallySplitOption={0}
+          index={1}
+          initialData={
+            Object {
+              "paymentPlanInitData": Object {
+                "auto_payment_types": Array [
+                  Object {
+                    "id": 1,
+                    "name": "Credit Card",
+                    "selected": true,
+                  },
+                  Object {
+                    "id": 2,
+                    "name": "Electronic Check",
+                    "selected": false,
+                  },
+                ],
+                "auto_schedule_read_only": true,
+                "backup_payment_info": Object {
+                  "backup_payment_card_name": "Visa ends in 2323",
+                  "backup_payment_type": "Credit Card",
+                  "show_backup_payment": true,
+                },
+                "billing_types": Array [
+                  Object {
+                    "id": 1,
+                    "name": "Weekly",
+                    "selected": true,
+                  },
+                  Object {
+                    "id": 2,
+                    "name": "Every other week",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 3,
+                    "name": "Twice a month",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 4,
+                    "name": "Monthly",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 5,
+                    "name": "Quarterly",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 6,
+                    "name": "Every four weeks",
+                    "selected": false,
+                  },
+                ],
+                "first_payment_date": "2017 Feb 05",
+                "max_payment_plan_amount": 12.4,
+                "number_of_payments": Array [
+                  Object {
+                    "id": 1,
+                    "name": "1",
+                    "selected": true,
+                  },
+                  Object {
+                    "id": 2,
+                    "name": "2",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 3,
+                    "name": "3",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 4,
+                    "name": "4",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 5,
+                    "name": "5",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 6,
+                    "name": "6",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 7,
+                    "name": "7",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 8,
+                    "name": "8",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 9,
+                    "name": "9",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 10,
+                    "name": "10",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 11,
+                    "name": "11",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 12,
+                    "name": "12",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 13,
+                    "name": "13",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 14,
+                    "name": "14",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 15,
+                    "name": "15",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 16,
+                    "name": "16",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 17,
+                    "name": "17",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 18,
+                    "name": "18",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 19,
+                    "name": "19",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 20,
+                    "name": "20",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 21,
+                    "name": "21",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 22,
+                    "name": "22",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 23,
+                    "name": "23",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 24,
+                    "name": "24",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 25,
+                    "name": "25",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 26,
+                    "name": "26",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 27,
+                    "name": "27",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 28,
+                    "name": "28",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 29,
+                    "name": "29",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 30,
+                    "name": "30",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 31,
+                    "name": "31",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 32,
+                    "name": "32",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 33,
+                    "name": "33",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 34,
+                    "name": "34",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 35,
+                    "name": "35",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 36,
+                    "name": "36",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 37,
+                    "name": "37",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 38,
+                    "name": "38",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 39,
+                    "name": "39",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 40,
+                    "name": "40",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 41,
+                    "name": "41",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 42,
+                    "name": "42",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 43,
+                    "name": "43",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 44,
+                    "name": "44",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 45,
+                    "name": "45",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 46,
+                    "name": "46",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 47,
+                    "name": "47",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 48,
+                    "name": "48",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 49,
+                    "name": "49",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 50,
+                    "name": "50",
+                    "selected": false,
+                  },
+                ],
+                "payment_plan_wording": "Payment Plan",
+                "payment_type_id": 8,
+                "reservation_payment_plans": Array [
+                  Object {
+                    "description": "deposit3&quot;&#126;",
+                    "id": 0,
+                    "name": "Custom",
+                    "selected": true,
+                  },
+                  Object {
+                    "description": "deposit2&quot;&#096;",
+                    "id": 4,
+                    "name": "each booking",
+                    "selected": false,
+                  },
+                  Object {
+                    "description": "deposit1&gt;&lt;&amp;",
+                    "id": 2,
+                    "name": "Monthly at start of month",
+                    "selected": false,
+                  },
+                  Object {
+                    "description": "Facility damage&gt;&lt;&amp;&#096;",
+                    "id": 5,
+                    "name": "total due first date",
+                    "selected": false,
+                  },
+                  Object {
+                    "description": "Facility damage2&quot;test&quot;&#126;Test long description 001. Test long description 002. Test long description 003.. Test long description 004. Test long description 005. Test long description 006. Test long description 007.",
+                    "id": 3,
+                    "name": "weekly",
+                    "selected": false,
+                  },
+                ],
+                "show_auto_payment_method": false,
+                "show_prior_cc": true,
+                "show_prior_ecp": true,
+              },
+              "permitID": -1,
+            }
+          }
+          isRefund={false}
+          item={
+            Object {
+              "ComponentName": "Cash",
+              "activeVal": 2,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          value={2}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </Cash>
+      </div>
+      <div
+        className="payment-list-new__item"
+        key="3-0"
+      >
+        <Credit
+          clearOptionAndPaymentErrs={[Function]}
+          hasManuallySplitOption={0}
+          index={2}
+          isRefund={false}
+          item={
+            Object {
+              "ComponentName": "Credit",
+              "activeVal": 3,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          paymentOptions={
+            Object {
+              "eCheck": Object {
+                "eCheckConfig": Object {
+                  "show_ach_agreement_for_ecp": true,
+                },
+              },
+              "giftCard": Object {
+                "giftCardId": 113,
+              },
+              "options": Object {
+                "availableSplitIds": Array [],
+                "data": Array [
+                  Object {
+                    "ComponentName": "Check",
+                    "activeVal": 1,
+                  },
+                  Object {
+                    "ComponentName": "Cash",
+                    "activeVal": 2,
+                  },
+                  Object {
+                    "ComponentName": "Credit",
+                    "activeVal": 3,
+                  },
+                  Object {
+                    "ComponentName": "CreditCard",
+                    "activeVal": 4,
+                  },
+                  Object {
+                    "ComponentName": "ElectronicCheck",
+                    "activeVal": 5,
+                  },
+                  Object {
+                    "ComponentName": "GiftCard",
+                    "activeVal": 6,
+                  },
+                  Object {
+                    "ComponentName": "DebitCard",
+                    "activeVal": 7,
+                  },
+                  Object {
+                    "ComponentName": "PaymentPlan",
+                    "activeVal": 8,
+                    "disabled": true,
+                  },
+                  Object {
+                    "ComponentName": "Account",
+                    "activeVal": 9,
+                  },
+                  Object {
+                    "ComponentName": "",
+                    "activeVal": 0,
+                  },
+                ],
+                "deleteAPayment": true,
+              },
+            }
+          }
+          value={3}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </Credit>
+      </div>
+      <div
+        className="payment-list-new__item"
+        key="4-0"
+      >
+        <CreditCard
+          clearOptionAndPaymentErrs={[Function]}
+          hasManuallySplitOption={0}
+          index={3}
+          isRefund={false}
+          item={
+            Object {
+              "ComponentName": "CreditCard",
+              "activeVal": 4,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          value={4}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </CreditCard>
+      </div>
+      <div
+        className="payment-list-new__item"
+        key="5-0"
+      >
+        <ElectronicCheck
+          clearOptionAndPaymentErrs={[Function]}
+          data={
+            Object {
+              "eCheckConfig": Object {
+                "show_ach_agreement_for_ecp": true,
+              },
+            }
+          }
+          hasManuallySplitOption={0}
+          index={4}
+          isRefund={false}
+          item={
+            Object {
+              "ComponentName": "ElectronicCheck",
+              "activeVal": 5,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          value={5}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </ElectronicCheck>
+      </div>
+      <div
+        className="payment-list-new__item"
+        key="6-0"
+      >
+        <GiftCard
+          clearOptionAndPaymentErrs={[Function]}
+          data={
+            Object {
+              "giftCardId": 113,
+            }
+          }
+          hasManuallySplitOption={0}
+          index={5}
+          isRefund={false}
+          item={
+            Object {
+              "ComponentName": "GiftCard",
+              "activeVal": 6,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          options={
+            Object {
+              "availableSplitIds": Array [],
+              "data": Array [
+                Object {
+                  "ComponentName": "Check",
+                  "activeVal": 1,
+                },
+                Object {
+                  "ComponentName": "Cash",
+                  "activeVal": 2,
+                },
+                Object {
+                  "ComponentName": "Credit",
+                  "activeVal": 3,
+                },
+                Object {
+                  "ComponentName": "CreditCard",
+                  "activeVal": 4,
+                },
+                Object {
+                  "ComponentName": "ElectronicCheck",
+                  "activeVal": 5,
+                },
+                Object {
+                  "ComponentName": "GiftCard",
+                  "activeVal": 6,
+                },
+                Object {
+                  "ComponentName": "DebitCard",
+                  "activeVal": 7,
+                },
+                Object {
+                  "ComponentName": "PaymentPlan",
+                  "activeVal": 8,
+                  "disabled": true,
+                },
+                Object {
+                  "ComponentName": "Account",
+                  "activeVal": 9,
+                },
+                Object {
+                  "ComponentName": "",
+                  "activeVal": 0,
+                },
+              ],
+              "deleteAPayment": true,
+            }
+          }
+          value={6}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </GiftCard>
+      </div>
+      <div
+        className="payment-list-new__item"
+        key="7-0"
+      >
+        <DebitCard
+          clearOptionAndPaymentErrs={[Function]}
+          hasManuallySplitOption={0}
+          index={6}
+          isRefund={false}
+          item={
+            Object {
+              "ComponentName": "DebitCard",
+              "activeVal": 7,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          value={7}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </DebitCard>
+      </div>
+      <div
+        className="payment-list-new__payment-plan-item"
+        key="8-0"
+      >
+        <PaymentPlan
+          clearOptionAndPaymentErrs={[Function]}
+          index={7}
+          item={
+            Object {
+              "ComponentName": "PaymentPlan",
+              "activeVal": 8,
+              "disabled": true,
+            }
+          }
+          newECheckData={
+            Object {
+              "eCheckConfig": Object {
+                "show_ach_agreement_for_ecp": true,
+              },
+            }
+          }
+          payer={
+            Immutable.Map {
+              params: Immutable.Map {
+                customerId: -1,
+                companyId: 15,
+              },
+            }
+          }
+          showPPPriorCC={true}
+        >
+          <i
+            className="icon icon-trash icon-trash-disabled icon-trash-paymentplan"
+            onClick={[Function]}
+          />
+        </PaymentPlan>
+      </div>
+      <div
+        className="payment-list-new__item"
+        key="9-0"
+      >
+        <Account
+          clearOptionAndPaymentErrs={[Function]}
+          hasManuallySplitOption={0}
+          index={8}
+          item={
+            Object {
+              "ComponentName": "Account",
+              "activeVal": 9,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          value={9}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </Account>
+      </div>
+      <div
+        className="payment-list-new__item"
+        key="0-0"
+      />
+    </div>
+    <AuthorizationDetails />
+  </div>
+</PaymentOptions>
+`;
+
+exports[`index/Payment/components/PaymentOptions component should render correctly if it's modify 1`] = `
+<PaymentOptions
+  cancelSelectGiftCard={[Function]}
+  catchResetAction={[Function]}
+  changeGiftCardOption={[Function]}
+  changePayNowAmountAction={[Function]}
+  changePaymentAction={[Function]}
+  changePaymentPlanAmount={[Function]}
+  changeRemaining={[Function]}
+  clearErrors={[Function]}
+  clearOptionErrorAction={[Function]}
+  deletePaymentOptionAction={[Function]}
+  fetchAutoPaymentMethodList={[Function]}
+  fetchGiftCardList={[Function]}
+  initialData={
+    Object {
+      "paymentPlanInitData": Object {
+        "auto_payment_types": Array [
+          Object {
+            "id": 1,
+            "name": "Credit Card",
+            "selected": true,
+          },
+          Object {
+            "id": 2,
+            "name": "Electronic Check",
+            "selected": false,
+          },
+        ],
+        "auto_schedule_read_only": true,
+        "backup_payment_info": Object {
+          "backup_payment_card_name": "Visa ends in 2323",
+          "backup_payment_type": "Credit Card",
+          "show_backup_payment": true,
+        },
+        "billing_types": Array [
+          Object {
+            "id": 1,
+            "name": "Weekly",
+            "selected": true,
+          },
+          Object {
+            "id": 2,
+            "name": "Every other week",
+            "selected": false,
+          },
+          Object {
+            "id": 3,
+            "name": "Twice a month",
+            "selected": false,
+          },
+          Object {
+            "id": 4,
+            "name": "Monthly",
+            "selected": false,
+          },
+          Object {
+            "id": 5,
+            "name": "Quarterly",
+            "selected": false,
+          },
+          Object {
+            "id": 6,
+            "name": "Every four weeks",
+            "selected": false,
+          },
+        ],
+        "first_payment_date": "2017 Feb 05",
+        "max_payment_plan_amount": 12.4,
+        "number_of_payments": Array [
+          Object {
+            "id": 1,
+            "name": "1",
+            "selected": true,
+          },
+          Object {
+            "id": 2,
+            "name": "2",
+            "selected": false,
+          },
+          Object {
+            "id": 3,
+            "name": "3",
+            "selected": false,
+          },
+          Object {
+            "id": 4,
+            "name": "4",
+            "selected": false,
+          },
+          Object {
+            "id": 5,
+            "name": "5",
+            "selected": false,
+          },
+          Object {
+            "id": 6,
+            "name": "6",
+            "selected": false,
+          },
+          Object {
+            "id": 7,
+            "name": "7",
+            "selected": false,
+          },
+          Object {
+            "id": 8,
+            "name": "8",
+            "selected": false,
+          },
+          Object {
+            "id": 9,
+            "name": "9",
+            "selected": false,
+          },
+          Object {
+            "id": 10,
+            "name": "10",
+            "selected": false,
+          },
+          Object {
+            "id": 11,
+            "name": "11",
+            "selected": false,
+          },
+          Object {
+            "id": 12,
+            "name": "12",
+            "selected": false,
+          },
+          Object {
+            "id": 13,
+            "name": "13",
+            "selected": false,
+          },
+          Object {
+            "id": 14,
+            "name": "14",
+            "selected": false,
+          },
+          Object {
+            "id": 15,
+            "name": "15",
+            "selected": false,
+          },
+          Object {
+            "id": 16,
+            "name": "16",
+            "selected": false,
+          },
+          Object {
+            "id": 17,
+            "name": "17",
+            "selected": false,
+          },
+          Object {
+            "id": 18,
+            "name": "18",
+            "selected": false,
+          },
+          Object {
+            "id": 19,
+            "name": "19",
+            "selected": false,
+          },
+          Object {
+            "id": 20,
+            "name": "20",
+            "selected": false,
+          },
+          Object {
+            "id": 21,
+            "name": "21",
+            "selected": false,
+          },
+          Object {
+            "id": 22,
+            "name": "22",
+            "selected": false,
+          },
+          Object {
+            "id": 23,
+            "name": "23",
+            "selected": false,
+          },
+          Object {
+            "id": 24,
+            "name": "24",
+            "selected": false,
+          },
+          Object {
+            "id": 25,
+            "name": "25",
+            "selected": false,
+          },
+          Object {
+            "id": 26,
+            "name": "26",
+            "selected": false,
+          },
+          Object {
+            "id": 27,
+            "name": "27",
+            "selected": false,
+          },
+          Object {
+            "id": 28,
+            "name": "28",
+            "selected": false,
+          },
+          Object {
+            "id": 29,
+            "name": "29",
+            "selected": false,
+          },
+          Object {
+            "id": 30,
+            "name": "30",
+            "selected": false,
+          },
+          Object {
+            "id": 31,
+            "name": "31",
+            "selected": false,
+          },
+          Object {
+            "id": 32,
+            "name": "32",
+            "selected": false,
+          },
+          Object {
+            "id": 33,
+            "name": "33",
+            "selected": false,
+          },
+          Object {
+            "id": 34,
+            "name": "34",
+            "selected": false,
+          },
+          Object {
+            "id": 35,
+            "name": "35",
+            "selected": false,
+          },
+          Object {
+            "id": 36,
+            "name": "36",
+            "selected": false,
+          },
+          Object {
+            "id": 37,
+            "name": "37",
+            "selected": false,
+          },
+          Object {
+            "id": 38,
+            "name": "38",
+            "selected": false,
+          },
+          Object {
+            "id": 39,
+            "name": "39",
+            "selected": false,
+          },
+          Object {
+            "id": 40,
+            "name": "40",
+            "selected": false,
+          },
+          Object {
+            "id": 41,
+            "name": "41",
+            "selected": false,
+          },
+          Object {
+            "id": 42,
+            "name": "42",
+            "selected": false,
+          },
+          Object {
+            "id": 43,
+            "name": "43",
+            "selected": false,
+          },
+          Object {
+            "id": 44,
+            "name": "44",
+            "selected": false,
+          },
+          Object {
+            "id": 45,
+            "name": "45",
+            "selected": false,
+          },
+          Object {
+            "id": 46,
+            "name": "46",
+            "selected": false,
+          },
+          Object {
+            "id": 47,
+            "name": "47",
+            "selected": false,
+          },
+          Object {
+            "id": 48,
+            "name": "48",
+            "selected": false,
+          },
+          Object {
+            "id": 49,
+            "name": "49",
+            "selected": false,
+          },
+          Object {
+            "id": 50,
+            "name": "50",
+            "selected": false,
+          },
+        ],
+        "payment_plan_wording": "Payment Plan",
+        "payment_type_id": 8,
+        "reservation_payment_plans": Array [
+          Object {
+            "description": "deposit3&quot;&#126;",
+            "id": 0,
+            "name": "Custom",
+            "selected": true,
+          },
+          Object {
+            "description": "deposit2&quot;&#096;",
+            "id": 4,
+            "name": "each booking",
+            "selected": false,
+          },
+          Object {
+            "description": "deposit1&gt;&lt;&amp;",
+            "id": 2,
+            "name": "Monthly at start of month",
+            "selected": false,
+          },
+          Object {
+            "description": "Facility damage&gt;&lt;&amp;&#096;",
+            "id": 5,
+            "name": "total due first date",
+            "selected": false,
+          },
+          Object {
+            "description": "Facility damage2&quot;test&quot;&#126;Test long description 001. Test long description 002. Test long description 003.. Test long description 004. Test long description 005. Test long description 006. Test long description 007.",
+            "id": 3,
+            "name": "weekly",
+            "selected": false,
+          },
+        ],
+        "show_auto_payment_method": false,
+        "show_prior_cc": true,
+        "show_prior_ecp": true,
+      },
+      "permitID": 1862,
+    }
+  }
+  isRefund={false}
+  payer={
+    Immutable.Map {
+      params: Immutable.Map {
+        customerId: -1,
+        companyId: 15,
+      },
+    }
+  }
+  payment={
+    Immutable.Map {
+      total: 500,
+      successPay: false,
+      paymentPlanAmount: 500,
+      paymentPlanWording: "PaymentPlanX",
+      isPaymentActionValid: true,
+      payNow: 500,
+      minimumPayNowAmount: 100,
+      isDistributePayment: true,
+      paymentPageIndex: 2,
+    }
+  }
+  paymentAction={
+    Immutable.Map {
+      isSelectMakeAPayment: false,
+    }
+  }
+  paymentOptions={
+    Object {
+      "eCheck": Immutable.Map {
+        eCheckConfig: Immutable.Map {
+            show_ach_agreement_for_ecp: true,
+        },
+    },
+      "giftCard": Immutable.Map {
+        giftCardId: undefined,
+    },
+      "options": Immutable.Map {
+        data: Immutable.List [
+            Immutable.Map {
+                ComponentName: "Check",
+                activeVal: 1,
+            },
+            Immutable.Map {
+                ComponentName: "Cash",
+                activeVal: 2,
+            },
+            Immutable.Map {
+                ComponentName: "Credit",
+                activeVal: 3,
+            },
+            Immutable.Map {
+                ComponentName: "CreditCard",
+                activeVal: 4,
+            },
+            Immutable.Map {
+                ComponentName: "ElectronicCheck",
+                activeVal: 5,
+            },
+            Immutable.Map {
+                ComponentName: "GiftCard",
+                activeVal: 6,
+            },
+            Immutable.Map {
+                ComponentName: "DebitCard",
+                activeVal: 7,
+            },
+            Immutable.Map {
+                ComponentName: "PaymentPlan",
+                activeVal: 8,
+                disabled: true,
+            },
+            Immutable.Map {
+                ComponentName: "Account",
+                activeVal: 9,
+            },
+            Immutable.Map {
+                ComponentName: "",
+                activeVal: 0,
+            },
+        ],
+        availableSplitIds: Immutable.List [
+        ],
+        deleteAPayment: true,
+    },
+    }
+  }
+  removeNewGiftCardAsyncAction={[Function]}
+  resetGiftCardList={[Function]}
+  resetPaymentDeleteFlagAction={[Function]}
+  showAuthorizationDetails={[Function]}
+  showErrors={[Function]}
+  splitPaymentAction={[Function]}
+>
+  <div
+    className="payment-options panel "
+  >
+    <h2>
+      payment option
+    </h2>
+    <div
+      className="payment-paynow"
+    >
+      <span
+        className="paynow-label"
+      >
+        Pay Now
+      </span>
+      <span
+        className="payment-symbol"
+      >
+        $
+      </span>
+      <InputNumeric
+        allowBlank={true}
+        allowKeySpin={true}
+        allowMouseSpin={false}
+        className=""
+        currency="USD"
+        data-qa-id="payment-paymentOption-payNow"
+        decimals={2}
+        disabled={true}
+        icon=""
+        iconHint=""
+        id=""
+        increment={1}
+        items={Array []}
+        listClass="input-numeric-list"
+        listClassName=""
+        listConfig={Object {}}
+        listMaxHeight="300px"
+        listPopupOptions={Object {}}
+        listWidth="auto"
+        max={9999999999.99}
+        min={0}
+        name=""
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onListClose={[Function]}
+        onListOpen={[Function]}
+        onTextChange={[Function]}
+        onValueChange={[Function]}
+        placeHolder=""
+        prefix="an"
+        showClear={false}
+        showGroup={false}
+        showSpinner={false}
+        showTrigger={false}
+        showTrigger2={false}
+        size="md"
+        textAlign="right"
+        triggerIcon="icon-chevron-down"
+        triggerIcon2="icon-chevron-down"
+        triggerIconHint=""
+        triggerIconHint2=""
+        triggerIconToggle="icon-chevron-up"
+        triggerIconToggle2="icon-chevron-up"
+        value={500}
+      >
+        <div
+          className="an-input-numeric input-group buttons-0 input-group--md disabled"
+        >
+          <input
+            className="input input-group__field textalign-right input__field"
+            data-qa-id="payment-paymentOption-payNow"
+            disabled={true}
+            id=""
+            name=""
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragEnter={[Function]}
+            onDragOver={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            onMouseUp={[Function]}
+            onPaste={[Function]}
+            placeholder=""
+            type="text"
+          />
+        </div>
+      </InputNumeric>
+    </div>
+    <div
+      className="aaui-flexbox payment-action"
+    >
+      <div
+        className="payment-title"
+      >
+        payment method
+      </div>
+      <div
+        className="payment-splition payment-splition-disabled"
+        onClick={[Function]}
+      >
+        <i
+          className="icon icon-split-m"
+        />
+         
+        Split payment
+      </div>
+    </div>
+    <div
+      className="payment-list"
+    >
+      <div
+        className=""
+        key="1-0"
+      >
+        <Check
+          clearOptionAndPaymentErrs={[Function]}
+          hasManuallySplitOption={0}
+          index={0}
+          isRefund={false}
+          item={
+            Object {
+              "ComponentName": "Check",
+              "activeVal": 1,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          value={1}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </Check>
+      </div>
+      <div
+        className=""
+        key="2-0"
+      >
+        <Cash
+          clearOptionAndPaymentErrs={[Function]}
+          hasManuallySplitOption={0}
+          index={1}
+          initialData={
+            Object {
+              "paymentPlanInitData": Object {
+                "auto_payment_types": Array [
+                  Object {
+                    "id": 1,
+                    "name": "Credit Card",
+                    "selected": true,
+                  },
+                  Object {
+                    "id": 2,
+                    "name": "Electronic Check",
+                    "selected": false,
+                  },
+                ],
+                "auto_schedule_read_only": true,
+                "backup_payment_info": Object {
+                  "backup_payment_card_name": "Visa ends in 2323",
+                  "backup_payment_type": "Credit Card",
+                  "show_backup_payment": true,
+                },
+                "billing_types": Array [
+                  Object {
+                    "id": 1,
+                    "name": "Weekly",
+                    "selected": true,
+                  },
+                  Object {
+                    "id": 2,
+                    "name": "Every other week",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 3,
+                    "name": "Twice a month",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 4,
+                    "name": "Monthly",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 5,
+                    "name": "Quarterly",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 6,
+                    "name": "Every four weeks",
+                    "selected": false,
+                  },
+                ],
+                "first_payment_date": "2017 Feb 05",
+                "max_payment_plan_amount": 12.4,
+                "number_of_payments": Array [
+                  Object {
+                    "id": 1,
+                    "name": "1",
+                    "selected": true,
+                  },
+                  Object {
+                    "id": 2,
+                    "name": "2",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 3,
+                    "name": "3",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 4,
+                    "name": "4",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 5,
+                    "name": "5",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 6,
+                    "name": "6",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 7,
+                    "name": "7",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 8,
+                    "name": "8",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 9,
+                    "name": "9",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 10,
+                    "name": "10",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 11,
+                    "name": "11",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 12,
+                    "name": "12",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 13,
+                    "name": "13",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 14,
+                    "name": "14",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 15,
+                    "name": "15",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 16,
+                    "name": "16",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 17,
+                    "name": "17",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 18,
+                    "name": "18",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 19,
+                    "name": "19",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 20,
+                    "name": "20",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 21,
+                    "name": "21",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 22,
+                    "name": "22",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 23,
+                    "name": "23",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 24,
+                    "name": "24",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 25,
+                    "name": "25",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 26,
+                    "name": "26",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 27,
+                    "name": "27",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 28,
+                    "name": "28",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 29,
+                    "name": "29",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 30,
+                    "name": "30",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 31,
+                    "name": "31",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 32,
+                    "name": "32",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 33,
+                    "name": "33",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 34,
+                    "name": "34",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 35,
+                    "name": "35",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 36,
+                    "name": "36",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 37,
+                    "name": "37",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 38,
+                    "name": "38",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 39,
+                    "name": "39",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 40,
+                    "name": "40",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 41,
+                    "name": "41",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 42,
+                    "name": "42",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 43,
+                    "name": "43",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 44,
+                    "name": "44",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 45,
+                    "name": "45",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 46,
+                    "name": "46",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 47,
+                    "name": "47",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 48,
+                    "name": "48",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 49,
+                    "name": "49",
+                    "selected": false,
+                  },
+                  Object {
+                    "id": 50,
+                    "name": "50",
+                    "selected": false,
+                  },
+                ],
+                "payment_plan_wording": "Payment Plan",
+                "payment_type_id": 8,
+                "reservation_payment_plans": Array [
+                  Object {
+                    "description": "deposit3&quot;&#126;",
+                    "id": 0,
+                    "name": "Custom",
+                    "selected": true,
+                  },
+                  Object {
+                    "description": "deposit2&quot;&#096;",
+                    "id": 4,
+                    "name": "each booking",
+                    "selected": false,
+                  },
+                  Object {
+                    "description": "deposit1&gt;&lt;&amp;",
+                    "id": 2,
+                    "name": "Monthly at start of month",
+                    "selected": false,
+                  },
+                  Object {
+                    "description": "Facility damage&gt;&lt;&amp;&#096;",
+                    "id": 5,
+                    "name": "total due first date",
+                    "selected": false,
+                  },
+                  Object {
+                    "description": "Facility damage2&quot;test&quot;&#126;Test long description 001. Test long description 002. Test long description 003.. Test long description 004. Test long description 005. Test long description 006. Test long description 007.",
+                    "id": 3,
+                    "name": "weekly",
+                    "selected": false,
+                  },
+                ],
+                "show_auto_payment_method": false,
+                "show_prior_cc": true,
+                "show_prior_ecp": true,
+              },
+              "permitID": 1862,
+            }
+          }
+          isRefund={false}
+          item={
+            Object {
+              "ComponentName": "Cash",
+              "activeVal": 2,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          value={2}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </Cash>
+      </div>
+      <div
+        className=""
+        key="3-0"
+      >
+        <Credit
+          clearOptionAndPaymentErrs={[Function]}
+          hasManuallySplitOption={0}
+          index={2}
+          isRefund={false}
+          item={
+            Object {
+              "ComponentName": "Credit",
+              "activeVal": 3,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          paymentOptions={
+            Object {
+              "eCheck": Object {
+                "eCheckConfig": Object {
+                  "show_ach_agreement_for_ecp": true,
+                },
+              },
+              "giftCard": Object {
+                "giftCardId": undefined,
+              },
+              "options": Object {
+                "availableSplitIds": Array [],
+                "data": Array [
+                  Object {
+                    "ComponentName": "Check",
+                    "activeVal": 1,
+                  },
+                  Object {
+                    "ComponentName": "Cash",
+                    "activeVal": 2,
+                  },
+                  Object {
+                    "ComponentName": "Credit",
+                    "activeVal": 3,
+                  },
+                  Object {
+                    "ComponentName": "CreditCard",
+                    "activeVal": 4,
+                  },
+                  Object {
+                    "ComponentName": "ElectronicCheck",
+                    "activeVal": 5,
+                  },
+                  Object {
+                    "ComponentName": "GiftCard",
+                    "activeVal": 6,
+                  },
+                  Object {
+                    "ComponentName": "DebitCard",
+                    "activeVal": 7,
+                  },
+                  Object {
+                    "ComponentName": "PaymentPlan",
+                    "activeVal": 8,
+                    "disabled": true,
+                  },
+                  Object {
+                    "ComponentName": "Account",
+                    "activeVal": 9,
+                  },
+                  Object {
+                    "ComponentName": "",
+                    "activeVal": 0,
+                  },
+                ],
+                "deleteAPayment": true,
+              },
+            }
+          }
+          value={3}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </Credit>
+      </div>
+      <div
+        className=""
+        key="4-0"
+      >
+        <CreditCard
+          clearOptionAndPaymentErrs={[Function]}
+          hasManuallySplitOption={0}
+          index={3}
+          isRefund={false}
+          item={
+            Object {
+              "ComponentName": "CreditCard",
+              "activeVal": 4,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          value={4}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </CreditCard>
+      </div>
+      <div
+        className=""
+        key="5-0"
+      >
+        <ElectronicCheck
+          clearOptionAndPaymentErrs={[Function]}
+          data={
+            Object {
+              "eCheckConfig": Object {
+                "show_ach_agreement_for_ecp": true,
+              },
+            }
+          }
+          hasManuallySplitOption={0}
+          index={4}
+          isRefund={false}
+          item={
+            Object {
+              "ComponentName": "ElectronicCheck",
+              "activeVal": 5,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          value={5}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </ElectronicCheck>
+      </div>
+      <div
+        className=""
+        key="6-0"
+      >
+        <GiftCard
+          clearOptionAndPaymentErrs={[Function]}
+          data={
+            Object {
+              "giftCardId": undefined,
+            }
+          }
+          hasManuallySplitOption={0}
+          index={5}
+          isRefund={false}
+          item={
+            Object {
+              "ComponentName": "GiftCard",
+              "activeVal": 6,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          options={
+            Object {
+              "availableSplitIds": Array [],
+              "data": Array [
+                Object {
+                  "ComponentName": "Check",
+                  "activeVal": 1,
+                },
+                Object {
+                  "ComponentName": "Cash",
+                  "activeVal": 2,
+                },
+                Object {
+                  "ComponentName": "Credit",
+                  "activeVal": 3,
+                },
+                Object {
+                  "ComponentName": "CreditCard",
+                  "activeVal": 4,
+                },
+                Object {
+                  "ComponentName": "ElectronicCheck",
+                  "activeVal": 5,
+                },
+                Object {
+                  "ComponentName": "GiftCard",
+                  "activeVal": 6,
+                },
+                Object {
+                  "ComponentName": "DebitCard",
+                  "activeVal": 7,
+                },
+                Object {
+                  "ComponentName": "PaymentPlan",
+                  "activeVal": 8,
+                  "disabled": true,
+                },
+                Object {
+                  "ComponentName": "Account",
+                  "activeVal": 9,
+                },
+                Object {
+                  "ComponentName": "",
+                  "activeVal": 0,
+                },
+              ],
+              "deleteAPayment": true,
+            }
+          }
+          value={6}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </GiftCard>
+      </div>
+      <div
+        className=""
+        key="7-0"
+      >
+        <DebitCard
+          clearOptionAndPaymentErrs={[Function]}
+          hasManuallySplitOption={0}
+          index={6}
+          isRefund={false}
+          item={
+            Object {
+              "ComponentName": "DebitCard",
+              "activeVal": 7,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          value={7}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </DebitCard>
+      </div>
+      <div
+        className=""
+        key="8-0"
+      >
+        <PaymentPlan
+          clearOptionAndPaymentErrs={[Function]}
+          index={7}
+          item={
+            Object {
+              "ComponentName": "PaymentPlan",
+              "activeVal": 8,
+              "disabled": true,
+            }
+          }
+          newECheckData={
+            Object {
+              "eCheckConfig": Object {
+                "show_ach_agreement_for_ecp": true,
+              },
+            }
+          }
+          payer={
+            Immutable.Map {
+              params: Immutable.Map {
+                customerId: -1,
+                companyId: 15,
+              },
+            }
+          }
+          showPPPriorCC={true}
+        >
+          <i
+            className="icon icon-trash icon-trash-disabled icon-trash-paymentplan"
+            onClick={[Function]}
+          />
+        </PaymentPlan>
+      </div>
+      <div
+        className=""
+        key="9-0"
+      >
+        <Account
+          clearOptionAndPaymentErrs={[Function]}
+          hasManuallySplitOption={0}
+          index={8}
+          item={
+            Object {
+              "ComponentName": "Account",
+              "activeVal": 9,
+            }
+          }
+          onChange={[Function]}
+          optionLen={10}
+          value={9}
+        >
+          <i
+            className="icon icon-trash  "
+            onClick={[Function]}
+          />
+        </Account>
+      </div>
+      <div
+        className=""
+        key="0-0"
+      />
+    </div>
+    <AuthorizationDetails />
+  </div>
+</PaymentOptions>
+`;

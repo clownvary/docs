@@ -1,0 +1,5 @@
+{
+  "filename": "ReservationDetail",
+  "isModule": true,
+  "template": "./index.jade"
+}

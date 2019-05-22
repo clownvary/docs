@@ -1,0 +1,62 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "page_number": 1,
+      "total_page": 1,
+      "order_option": "ASC",
+      "total_records_per_page": 20,
+      "total_records": 0
+    }
+  },
+  "body": {
+    "results": {
+      "customquestion_index": "(-1_4)_1",
+      "current_event_fee_updated": true,
+      "event_list": [
+        {
+          "event_index": "-1_4",
+          "new_entry_id": 4,
+          "event_id": -1,
+          "permit_id": 0,
+          "event_name": "aaa",
+          "resource_count": 1,
+          "booking_count": 1,
+          "total_amount": 0,
+          "is_booking_updated": false,
+          "creation_date": "2017-11-15T06:02:33.275Z",
+          "last_modify_date": "2017-11-15T04:02:33.275Z",
+          "is_last_modified": true,
+          "is_event_updated": false,
+          "is_fee_updated": false
+        },
+        {
+          "event_index": "6484_0",
+          "new_entry_id": 0,
+          "event_id": 6484,
+          "permit_id": 12033,
+          "event_name": "asd",
+          "resource_count": 1,
+          "booking_count": 1,
+          "total_amount": 0,
+          "is_booking_updated": false,
+          "creation_date": "2017-11-14T04:37:08.000Z",
+          "last_modify_date": "2017-11-14T04:37:08.000Z",
+          "is_last_modified": false,
+          "is_event_updated": true,
+          "is_fee_updated": false
+        }
+      ],
+      "fee_summary": {
+        "sub_total": 0,
+        "taxes": [],
+        "total": 0,
+        "amount_paid": 0,
+        "due_now": 0,
+        "refund_amount": 0
+      }
+    }
+  }
+}

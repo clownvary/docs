@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful"
+  },
+  "body": {
+    "customer_alert_info": {
+      "customer_notes": "The test warning notes shown in this area. Total owed on account $405",
+      "customer_id": 34933,
+      "customer_name": "Amy Chen",
+      "customer_medical_alert": "",
+      "customer_medical_alert_permission": false,
+      "customer_general_alert": "The test warning general alert shown in this area. Total owed on account $405"
+    }
+  }
+}

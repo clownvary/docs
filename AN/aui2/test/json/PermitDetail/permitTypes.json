@@ -1,0 +1,16 @@
+{
+	"permitTypes": [
+		{
+			"permitTypeName": "Normal",
+			"permitTypeCode": "0"
+		},
+		{
+			"permitTypeName": "Tentative",
+			"permitTypeCode": "1"
+		},
+		{
+			"permitTypeName": "Temporary",
+			"permitTypeCode": "2"
+		}
+	]
+}

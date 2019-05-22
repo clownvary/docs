@@ -1,0 +1,686 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index/Payment/components/PaymentOptions/Account Account component in refund workflow should render without error 1`] = `
+<Account
+  addError={[Function]}
+  changeRefundAccountAmount={[Function]}
+  changeRefundOtherReason={[Function]}
+  changeRefundReason={[Function]}
+  changeRemaining={[Function]}
+  clearOptionAndPaymentErrs={[Function]}
+  fetchAccountConfig={[Function]}
+  index={0}
+  item={
+    Object {
+      "activeVal": "173",
+      "amount": "230",
+      "list": Array [
+        Object {
+          "name": "Cash",
+          "value": "172",
+        },
+        Object {
+          "name": "Account",
+          "value": "173",
+        },
+      ],
+    }
+  }
+  onChange={[Function]}
+  optionLen={3}
+  refundConfig={
+    Object {
+      "display": true,
+      "reasons": Object {
+        "data": Array [
+          Object {
+            "name": "plan changes",
+            "value": "255",
+          },
+          Object {
+            "name": "normal modify",
+            "value": "256",
+          },
+          Object {
+            "description": "Other",
+            "id": "other",
+            "name": "Other",
+            "selected": false,
+            "text": "Other",
+            "value": "other",
+          },
+        ],
+        "otherReason": "other refund reason",
+        "selected": -1,
+      },
+      "requestRefund": true,
+    }
+  }
+  toggleRequestRefund={[Function]}
+  value="173"
+>
+  <div>
+    <div
+      className="payment-option refund-account"
+    >
+      <div
+        className="payment-option-list aaui-flexbox"
+      >
+        <div
+          className="aaui-flexbox aaui-flexbox-c1"
+        >
+          <Dropdown
+            autoOpen={false}
+            data={
+              Array [
+                Object {
+                  "name": "Cash",
+                  "value": "172",
+                },
+                Object {
+                  "name": "Account",
+                  "value": "173",
+                },
+              ]
+            }
+            data-qa-id="payment-paymentOption-optionList"
+            disabled={true}
+            filterPlaceholder="Filter..."
+            fuzzyQuery={false}
+            noResult="No results found."
+            onChange={[Function]}
+            placeholder="Select one..."
+            showAll={true}
+            showDeselectall={false}
+            showTxtOnlyCheckedOneItem={true}
+            theme="flat"
+            txtSuffix="selected"
+            value="173"
+            visible={true}
+          >
+            <div
+              className="aaui-dropdown"
+              data-qa-id="payment-paymentOption-optionList"
+            >
+              <button
+                className="aaui-dropdown__button aaui-dropdown-btn-flat is-disabled"
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                onMouseUp={[Function]}
+                role="button"
+                type="button"
+              >
+                <div
+                  className="aaui-dropdown__button-text"
+                  title=""
+                >
+                   Select one...
+                </div>
+                <i
+                  className="icon aaui-dropdown__button-icon icon-chevron-down"
+                />
+              </button>
+              <div
+                aria-expanded={false}
+                className="aaui-dropdown__menu-wrapper  u-hidden"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                role="combobox"
+                tabIndex={0}
+              >
+                <div
+                  className="aaui-dropdown__menu"
+                >
+                  <ul
+                    aria-expanded={false}
+                    className=""
+                    role="listbox"
+                  >
+                    <li
+                      className=""
+                      key="172"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span />
+                    </li>
+                    <li
+                      className=" is-selected"
+                      key="173"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span />
+                    </li>
+                  </ul>
+                  <div>
+                    <div
+                      className="aaui-dropdown__menu-footer"
+                    >
+                      <div
+                        className="u-hidden"
+                      >
+                        <i
+                          className="icon icon-spinner"
+                        />
+                         Loading...
+                      </div>
+                      <div />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Dropdown>
+          <Checkbox
+            checked={true}
+            className="refund-account__request"
+            onChange={[Function]}
+            onClick={[Function]}
+          >
+            <CheckboxComponent
+              checked={true}
+              className="refund-account__request"
+              onChange={[Function]}
+              onClick={[Function]}
+            >
+              <label
+                className="checkbox-wrapper refund-account__request"
+                htmlFor="checkbox_attr_for_1"
+              >
+                <span
+                  className="checkbox checkbox--checked"
+                >
+                  <input
+                    aria-checked={true}
+                    checked={true}
+                    className="checkbox__input"
+                    id="checkbox_attr_for_1"
+                    onChange={[Function]}
+                    onClick={[Function]}
+                    role="checkbox"
+                    type="checkbox"
+                  />
+                  <span
+                    className="checkbox__inner"
+                  />
+                  <span
+                    className="checkbox__text"
+                  >
+                    Request refund
+                  </span>
+                </span>
+              </label>
+            </CheckboxComponent>
+          </Checkbox>
+        </div>
+        <div
+          className="aaui-flexbox aaui-flexbox-c2"
+        >
+          <label
+            className="payment-symbol"
+            htmlFor="accountAmount"
+          >
+            $
+          </label>
+          <InputNumeric
+            allowBlank={true}
+            allowKeySpin={true}
+            allowMouseSpin={false}
+            className=""
+            currency="USD"
+            data-qa-id="payment-paymentOption-optionAmount"
+            decimals={2}
+            disabled={false}
+            icon=""
+            iconHint=""
+            id="accountAmount"
+            increment={1}
+            items={Array []}
+            listClass="input-numeric-list"
+            listClassName=""
+            listConfig={Object {}}
+            listMaxHeight="300px"
+            listPopupOptions={Object {}}
+            listWidth="auto"
+            max={9999999999.99}
+            min={0}
+            name=""
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onListClose={[Function]}
+            onListOpen={[Function]}
+            onTextChange={[Function]}
+            onValueChange={[Function]}
+            placeHolder=""
+            prefix="an"
+            showClear={false}
+            showGroup={false}
+            showSpinner={false}
+            showTrigger={false}
+            showTrigger2={false}
+            size="md"
+            textAlign="right"
+            triggerIcon="icon-chevron-down"
+            triggerIcon2="icon-chevron-down"
+            triggerIconHint=""
+            triggerIconHint2=""
+            triggerIconToggle="icon-chevron-up"
+            triggerIconToggle2="icon-chevron-up"
+            value="230"
+          >
+            <div
+              className="an-input-numeric input-group buttons-0 input-group--md"
+            >
+              <input
+                className="input input-group__field textalign-right input__field"
+                data-qa-id="payment-paymentOption-optionAmount"
+                disabled={false}
+                id="accountAmount"
+                name=""
+                onBlur={[Function]}
+                onChange={[Function]}
+                onDragEnter={[Function]}
+                onDragOver={[Function]}
+                onDrop={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyPress={[Function]}
+                onKeyUp={[Function]}
+                onMouseUp={[Function]}
+                onPaste={[Function]}
+                placeholder=""
+                type="text"
+              />
+            </div>
+          </InputNumeric>
+          <span>
+            account info
+          </span>
+        </div>
+      </div>
+      <div
+        className="refund-account-request aaui-flexbox"
+      >
+        <label
+          className="refund-account-request__label"
+          htmlFor="accountReason"
+        >
+          Reason:
+        </label>
+        <div
+          className="refund-account-request__content"
+        >
+          <Dropdown
+            autoOpen={false}
+            className="refund-account-request__dropdown"
+            data={
+              Array [
+                Object {
+                  "name": "plan changes",
+                  "value": "255",
+                },
+                Object {
+                  "name": "normal modify",
+                  "value": "256",
+                },
+                Object {
+                  "description": "Other",
+                  "id": "other",
+                  "name": "Other",
+                  "selected": false,
+                  "text": "Other",
+                  "value": "other",
+                },
+              ]
+            }
+            filterPlaceholder="Filter..."
+            fuzzyQuery={false}
+            id="accountReason"
+            noResult="No results found."
+            onChange={[Function]}
+            placeholder="Choose a reason"
+            showAll={true}
+            showDeselectall={false}
+            showTxtOnlyCheckedOneItem={true}
+            theme="flat"
+            txtSuffix="selected"
+            value={-1}
+            visible={true}
+          >
+            <div
+              className="aaui-dropdown refund-account-request__dropdown"
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onKeyUp={[Function]}
+            >
+              <button
+                className="aaui-dropdown__button aaui-dropdown-btn-flat"
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                onMouseUp={[Function]}
+                role="button"
+                type="button"
+              >
+                <div
+                  className="aaui-dropdown__button-text"
+                  title=""
+                >
+                   Choose a reason
+                </div>
+                <i
+                  className="icon aaui-dropdown__button-icon icon-chevron-down"
+                />
+              </button>
+              <div
+                aria-expanded={false}
+                className="aaui-dropdown__menu-wrapper  u-hidden"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                role="combobox"
+                tabIndex={0}
+              >
+                <div
+                  className="aaui-dropdown__menu"
+                >
+                  <ul
+                    aria-expanded={false}
+                    className=""
+                    role="listbox"
+                  >
+                    <li
+                      className=""
+                      key="255"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span />
+                    </li>
+                    <li
+                      className=""
+                      key="256"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span />
+                    </li>
+                    <li
+                      className=""
+                      key="other"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span>
+                        Other
+                      </span>
+                    </li>
+                  </ul>
+                  <div>
+                    <div
+                      className="aaui-dropdown__menu-footer"
+                    >
+                      <div
+                        className="u-hidden"
+                      >
+                        <i
+                          className="icon icon-spinner"
+                        />
+                         Loading...
+                      </div>
+                      <div />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Dropdown>
+        </div>
+      </div>
+    </div>
+  </div>
+</Account>
+`;
+
+exports[`index/Payment/components/PaymentOptions/Account Account component should render without error 1`] = `
+<Account
+  addError={[Function]}
+  changeRefundAccountAmount={[Function]}
+  changeRefundOtherReason={[Function]}
+  changeRefundReason={[Function]}
+  changeRemaining={[Function]}
+  clearOptionAndPaymentErrs={[Function]}
+  fetchAccountConfig={[Function]}
+  index={0}
+  item={
+    Object {
+      "list": Array [
+        Object {
+          "name": "Cash",
+          "value": "172",
+        },
+        Object {
+          "name": "Account",
+          "value": "173",
+        },
+      ],
+    }
+  }
+  onChange={[Function]}
+  optionLen={3}
+  refundConfig={
+    Object {
+      "reasons": Object {},
+    }
+  }
+  toggleRequestRefund={[Function]}
+  value="173"
+>
+  <div>
+    <div
+      className="payment-option refund-account"
+    >
+      <div
+        className="payment-option-list aaui-flexbox"
+      >
+        <div
+          className="aaui-flexbox aaui-flexbox-c1"
+        >
+          <Dropdown
+            autoOpen={false}
+            data={
+              Array [
+                Object {
+                  "name": "Cash",
+                  "value": "172",
+                },
+                Object {
+                  "name": "Account",
+                  "value": "173",
+                },
+              ]
+            }
+            data-qa-id="payment-paymentOption-optionList"
+            disabled={true}
+            filterPlaceholder="Filter..."
+            fuzzyQuery={false}
+            noResult="No results found."
+            onChange={[Function]}
+            placeholder="Select one..."
+            showAll={true}
+            showDeselectall={false}
+            showTxtOnlyCheckedOneItem={true}
+            theme="flat"
+            txtSuffix="selected"
+            value="173"
+            visible={true}
+          >
+            <div
+              className="aaui-dropdown"
+              data-qa-id="payment-paymentOption-optionList"
+            >
+              <button
+                className="aaui-dropdown__button aaui-dropdown-btn-flat is-disabled"
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                onMouseUp={[Function]}
+                role="button"
+                type="button"
+              >
+                <div
+                  className="aaui-dropdown__button-text"
+                  title=""
+                >
+                   Select one...
+                </div>
+                <i
+                  className="icon aaui-dropdown__button-icon icon-chevron-down"
+                />
+              </button>
+              <div
+                aria-expanded={false}
+                className="aaui-dropdown__menu-wrapper  u-hidden"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                role="combobox"
+                tabIndex={0}
+              >
+                <div
+                  className="aaui-dropdown__menu"
+                >
+                  <ul
+                    aria-expanded={false}
+                    className=""
+                    role="listbox"
+                  >
+                    <li
+                      className=""
+                      key="172"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span />
+                    </li>
+                    <li
+                      className=" is-selected"
+                      key="173"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span />
+                    </li>
+                  </ul>
+                  <div>
+                    <div
+                      className="aaui-dropdown__menu-footer"
+                    >
+                      <div
+                        className="u-hidden"
+                      >
+                        <i
+                          className="icon icon-spinner"
+                        />
+                         Loading...
+                      </div>
+                      <div />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Dropdown>
+        </div>
+        <div
+          className="aaui-flexbox aaui-flexbox-c2"
+        >
+          <label
+            className="payment-symbol"
+            htmlFor="accountAmount"
+          >
+            $
+          </label>
+          <InputNumeric
+            allowBlank={true}
+            allowKeySpin={true}
+            allowMouseSpin={false}
+            className=""
+            currency="USD"
+            data-qa-id="payment-paymentOption-optionAmount"
+            decimals={2}
+            disabled={false}
+            icon=""
+            iconHint=""
+            id="accountAmount"
+            increment={1}
+            items={Array []}
+            listClass="input-numeric-list"
+            listClassName=""
+            listConfig={Object {}}
+            listMaxHeight="300px"
+            listPopupOptions={Object {}}
+            listWidth="auto"
+            max={9999999999.99}
+            min={0}
+            name=""
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onListClose={[Function]}
+            onListOpen={[Function]}
+            onTextChange={[Function]}
+            onValueChange={[Function]}
+            placeHolder=""
+            prefix="an"
+            showClear={false}
+            showGroup={false}
+            showSpinner={false}
+            showTrigger={false}
+            showTrigger2={false}
+            size="md"
+            textAlign="right"
+            triggerIcon="icon-chevron-down"
+            triggerIcon2="icon-chevron-down"
+            triggerIconHint=""
+            triggerIconHint2=""
+            triggerIconToggle="icon-chevron-up"
+            triggerIconToggle2="icon-chevron-up"
+            value={null}
+          >
+            <div
+              className="an-input-numeric input-group buttons-0 input-group--md"
+            >
+              <input
+                className="input input-group__field textalign-right input__field"
+                data-qa-id="payment-paymentOption-optionAmount"
+                disabled={false}
+                id="accountAmount"
+                name=""
+                onBlur={[Function]}
+                onChange={[Function]}
+                onDragEnter={[Function]}
+                onDragOver={[Function]}
+                onDrop={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyPress={[Function]}
+                onKeyUp={[Function]}
+                onMouseUp={[Function]}
+                onPaste={[Function]}
+                placeholder=""
+                type="text"
+              />
+            </div>
+          </InputNumeric>
+          <span>
+            account info
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</Account>
+`;

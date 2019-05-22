@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shared/components/Intro/step should render without errors 1`] = `
+<Step
+  step={
+    Object {
+      "position": "left-bottom",
+      "target": <div
+        id="intro-step-1"
+        class=" intro-showElement"
+    />,
+      "text": "1. First step...",
+    }
+  }
+>
+  <div
+    className="intro-step-wrapper"
+    style={
+      Object {
+        "display": "none",
+        "height": 0,
+        "left": 0,
+        "top": 0,
+        "width": 0,
+      }
+    }
+  >
+    <div
+      className="intro-step "
+    >
+      <div
+        className="intro-tooltip intro-tooltip-left-bottom"
+      >
+        1. First step...
+        <IntroArrow>
+          <div
+            className="intro-arrow "
+          >
+            <div
+              className="intro-arrow-line-wrapper"
+            >
+              <div
+                className="intro-arrow-line"
+              />
+            </div>
+          </div>
+        </IntroArrow>
+      </div>
+    </div>
+    <div
+      className="intro-step-mask"
+    />
+  </div>
+</Step>
+`;

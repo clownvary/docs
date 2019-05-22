@@ -1,0 +1,9 @@
+{
+    "headers": {
+        "response_code": "0000",
+        "response_message": "Successful"
+    },
+    "body": {
+        "status": "success"
+    }
+}

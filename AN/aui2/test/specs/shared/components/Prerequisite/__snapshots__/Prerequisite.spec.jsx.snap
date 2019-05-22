@@ -1,0 +1,585 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shared/components/Prerequisite Prerequisite component should render correctly if need override and hasn\`t checked override 1`] = `
+<Prerequisite
+  clearPrerequisiteErrsAction={[Function]}
+  display={true}
+  prerequisite={
+    Immutable.Map {
+      errors: Immutable.List [
+      ],
+      needOverride: true,
+      userName: "",
+      userPassword: "",
+      isOverride: false,
+      haveOverrideAuthority: false,
+      overrideMessage: "override message",
+    }
+  }
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "subscribe": [Function],
+    }
+  }
+  updateIsOverrideAction={[Function]}
+  updateUserNameAction={[Function]}
+  updateUserPasswordAction={[Function]}
+>
+  <div>
+    <div
+      className="prerequisite"
+    >
+      <Alert
+        className="prerequisite-warning aaui-flexbox u-flex-nowrap u-align-items-start"
+        inverse={false}
+        noClose={true}
+        type="warning"
+      >
+        <div
+          className="alert alert-warning prerequisite-warning aaui-flexbox u-flex-nowrap u-align-items-start"
+          role="alert"
+        >
+          <span
+            aria-label="warning icon"
+            className="icon icon-exclamation-circle"
+          />
+          <div
+            className="prerequisite-warning-content"
+          >
+            override message
+            <Checkbox
+              checked={false}
+              className="prerequisite-warning-override"
+              onChange={[Function]}
+            >
+              <CheckboxComponent
+                checked={false}
+                className="prerequisite-warning-override"
+                onChange={[Function]}
+              >
+                <label
+                  className="checkbox-wrapper prerequisite-warning-override"
+                  htmlFor="checkbox_attr_for_1"
+                >
+                  <span
+                    className="checkbox"
+                  >
+                    <input
+                      aria-checked={false}
+                      checked={false}
+                      className="checkbox__input"
+                      id="checkbox_attr_for_1"
+                      onChange={[Function]}
+                      role="checkbox"
+                      type="checkbox"
+                    />
+                    <span
+                      className="checkbox__inner"
+                    />
+                    <span
+                      className="checkbox__text"
+                    >
+                      Override
+                    </span>
+                  </span>
+                </label>
+              </CheckboxComponent>
+            </Checkbox>
+          </div>
+        </div>
+      </Alert>
+    </div>
+  </div>
+</Prerequisite>
+`;
+
+exports[`shared/components/Prerequisite Prerequisite component should render correctly if no need override 1`] = `
+<Prerequisite
+  clearPrerequisiteErrsAction={[Function]}
+  display={true}
+  prerequisite={
+    Immutable.Map {
+      errors: Immutable.List [
+      ],
+      needOverride: false,
+      userName: "",
+      userPassword: "",
+      isOverride: false,
+      haveOverrideAuthority: false,
+      overrideMessage: "",
+    }
+  }
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "subscribe": [Function],
+    }
+  }
+  updateIsOverrideAction={[Function]}
+  updateUserNameAction={[Function]}
+  updateUserPasswordAction={[Function]}
+>
+  <div />
+</Prerequisite>
+`;
+
+exports[`shared/components/Prerequisite Prerequisite component should work fine if need override and has checked overrid and has authority 1`] = `
+<Prerequisite
+  clearPrerequisiteErrsAction={[Function]}
+  display={true}
+  prerequisite={
+    Immutable.Map {
+      errors: Immutable.List [
+      ],
+      needOverride: true,
+      userName: "",
+      userPassword: "",
+      isOverride: true,
+      haveOverrideAuthority: true,
+      overrideMessage: "override message",
+    }
+  }
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "subscribe": [Function],
+    }
+  }
+  updateIsOverrideAction={[Function]}
+  updateUserNameAction={[Function]}
+  updateUserPasswordAction={[Function]}
+>
+  <div>
+    <div
+      className="prerequisite"
+    >
+      <Alert
+        className="prerequisite-warning aaui-flexbox u-flex-nowrap u-align-items-start"
+        inverse={false}
+        noClose={true}
+        type="warning"
+      >
+        <div
+          className="alert alert-warning prerequisite-warning aaui-flexbox u-flex-nowrap u-align-items-start"
+          role="alert"
+        >
+          <span
+            aria-label="warning icon"
+            className="icon icon-exclamation-circle"
+          />
+          <div
+            className="prerequisite-warning-content"
+          >
+            override message
+            <Checkbox
+              checked={true}
+              className="prerequisite-warning-override"
+              onChange={[Function]}
+            >
+              <CheckboxComponent
+                checked={true}
+                className="prerequisite-warning-override"
+                onChange={[Function]}
+              >
+                <label
+                  className="checkbox-wrapper prerequisite-warning-override"
+                  htmlFor="checkbox_attr_for_4"
+                >
+                  <span
+                    className="checkbox checkbox--checked"
+                  >
+                    <input
+                      aria-checked={true}
+                      checked={true}
+                      className="checkbox__input"
+                      id="checkbox_attr_for_4"
+                      onChange={[Function]}
+                      role="checkbox"
+                      type="checkbox"
+                    />
+                    <span
+                      className="checkbox__inner"
+                    />
+                    <span
+                      className="checkbox__text"
+                    >
+                      Override
+                    </span>
+                  </span>
+                </label>
+              </CheckboxComponent>
+            </Checkbox>
+          </div>
+        </div>
+      </Alert>
+    </div>
+  </div>
+</Prerequisite>
+`;
+
+exports[`shared/components/Prerequisite Prerequisite component should work fine if need override and has checked override and no authority 1`] = `
+<Prerequisite
+  className="Prerequiste--refund"
+  clearPrerequisiteErrsAction={[Function]}
+  display={true}
+  prerequisite={
+    Immutable.Map {
+      errors: Immutable.List [
+        Immutable.Map {
+          type: "override",
+        },
+        Immutable.Map {
+          type: "user",
+        },
+      ],
+      needOverride: true,
+      userName: "",
+      userPassword: "",
+      isOverride: true,
+      haveOverrideAuthority: false,
+      overrideMessage: "override message",
+    }
+  }
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "subscribe": [Function],
+    }
+  }
+  updateIsOverrideAction={[Function]}
+  updateUserNameAction={[Function]}
+  updateUserPasswordAction={[Function]}
+>
+  <div>
+    <div
+      className="prerequisite Prerequiste--refund"
+    >
+      <Alert
+        className="prerequisite-warning aaui-flexbox u-flex-nowrap u-align-items-start"
+        inverse={false}
+        noClose={true}
+        type="warning"
+      >
+        <div
+          className="alert alert-warning prerequisite-warning aaui-flexbox u-flex-nowrap u-align-items-start"
+          role="alert"
+        >
+          <span
+            aria-label="warning icon"
+            className="icon icon-exclamation-circle"
+          />
+          <div
+            className="prerequisite-warning-content"
+          >
+            override message
+            <Checkbox
+              checked={true}
+              className="prerequisite-warning-override"
+              onChange={[Function]}
+            >
+              <CheckboxComponent
+                checked={true}
+                className="prerequisite-warning-override"
+                onChange={[Function]}
+              >
+                <label
+                  className="checkbox-wrapper prerequisite-warning-override"
+                  htmlFor="checkbox_attr_for_2"
+                >
+                  <span
+                    className="checkbox checkbox--checked"
+                  >
+                    <input
+                      aria-checked={true}
+                      checked={true}
+                      className="checkbox__input"
+                      id="checkbox_attr_for_2"
+                      onChange={[Function]}
+                      role="checkbox"
+                      type="checkbox"
+                    />
+                    <span
+                      className="checkbox__inner"
+                    />
+                    <span
+                      className="checkbox__text"
+                    >
+                      Override
+                    </span>
+                  </span>
+                </label>
+              </CheckboxComponent>
+            </Checkbox>
+          </div>
+        </div>
+      </Alert>
+      <div
+        className="override-field"
+      >
+        <div
+          className="override-field__user-name"
+        >
+          <span
+            className="override-field__label override-field__label-error"
+          >
+            Override User
+          </span>
+          <Input
+            autoComplete="off"
+            className="override-field__value"
+            defaultValue=""
+            errored={1}
+            icon={false}
+            inputRef={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onInput={[Function]}
+            size="md"
+            type="text"
+          >
+            <div
+              className="input-group input-group--md input-group--error override-field__value"
+            >
+              <input
+                autoComplete="off"
+                className="input input-group__field input__field"
+                defaultValue=""
+                onBlur={[Function]}
+                onChange={[Function]}
+                onInput={[Function]}
+                onKeyPress={[Function]}
+                onPaste={[Function]}
+                type="text"
+              />
+            </div>
+          </Input>
+        </div>
+        <div>
+          <span
+            className="override-field__label override-field__label-error"
+          >
+            Password
+          </span>
+          <Input
+            autoComplete="off"
+            className="override-field__value"
+            defaultValue=""
+            errored={1}
+            icon={false}
+            inputRef={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onInput={[Function]}
+            size="md"
+            type="password"
+          >
+            <div
+              className="input-group input-group--md input-group--error override-field__value"
+            >
+              <input
+                autoComplete="off"
+                className="input input-group__field input__field"
+                defaultValue=""
+                onBlur={[Function]}
+                onChange={[Function]}
+                onInput={[Function]}
+                onKeyPress={[Function]}
+                onPaste={[Function]}
+                type="password"
+              />
+            </div>
+          </Input>
+        </div>
+      </div>
+    </div>
+  </div>
+</Prerequisite>
+`;
+
+exports[`shared/components/Prerequisite Prerequisite component should work fine if need override and has checked override and no authority and has no error 1`] = `
+<Prerequisite
+  clearPrerequisiteErrsAction={[Function]}
+  display={true}
+  prerequisite={
+    Immutable.Map {
+      errors: Immutable.List [
+      ],
+      needOverride: true,
+      userName: "",
+      userPassword: "",
+      isOverride: true,
+      haveOverrideAuthority: false,
+      overrideMessage: "override message",
+    }
+  }
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "subscribe": [Function],
+    }
+  }
+  updateIsOverrideAction={[Function]}
+  updateUserNameAction={[Function]}
+  updateUserPasswordAction={[Function]}
+>
+  <div>
+    <div
+      className="prerequisite"
+    >
+      <Alert
+        className="prerequisite-warning aaui-flexbox u-flex-nowrap u-align-items-start"
+        inverse={false}
+        noClose={true}
+        type="warning"
+      >
+        <div
+          className="alert alert-warning prerequisite-warning aaui-flexbox u-flex-nowrap u-align-items-start"
+          role="alert"
+        >
+          <span
+            aria-label="warning icon"
+            className="icon icon-exclamation-circle"
+          />
+          <div
+            className="prerequisite-warning-content"
+          >
+            override message
+            <Checkbox
+              checked={true}
+              className="prerequisite-warning-override"
+              onChange={[Function]}
+            >
+              <CheckboxComponent
+                checked={true}
+                className="prerequisite-warning-override"
+                onChange={[Function]}
+              >
+                <label
+                  className="checkbox-wrapper prerequisite-warning-override"
+                  htmlFor="checkbox_attr_for_3"
+                >
+                  <span
+                    className="checkbox checkbox--checked"
+                  >
+                    <input
+                      aria-checked={true}
+                      checked={true}
+                      className="checkbox__input"
+                      id="checkbox_attr_for_3"
+                      onChange={[Function]}
+                      role="checkbox"
+                      type="checkbox"
+                    />
+                    <span
+                      className="checkbox__inner"
+                    />
+                    <span
+                      className="checkbox__text"
+                    >
+                      Override
+                    </span>
+                  </span>
+                </label>
+              </CheckboxComponent>
+            </Checkbox>
+          </div>
+        </div>
+      </Alert>
+      <div
+        className="override-field"
+      >
+        <div
+          className="override-field__user-name"
+        >
+          <span
+            className="override-field__label "
+          >
+            Override User
+          </span>
+          <Input
+            autoComplete="off"
+            className="override-field__value"
+            defaultValue=""
+            errored={0}
+            icon={false}
+            inputRef={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onInput={[Function]}
+            size="md"
+            type="text"
+          >
+            <div
+              className="input-group input-group--md override-field__value"
+            >
+              <input
+                autoComplete="off"
+                className="input input-group__field input__field"
+                defaultValue=""
+                onBlur={[Function]}
+                onChange={[Function]}
+                onInput={[Function]}
+                onKeyPress={[Function]}
+                onPaste={[Function]}
+                type="text"
+              />
+            </div>
+          </Input>
+        </div>
+        <div>
+          <span
+            className="override-field__label "
+          >
+            Password
+          </span>
+          <Input
+            autoComplete="off"
+            className="override-field__value"
+            defaultValue=""
+            errored={0}
+            icon={false}
+            inputRef={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onInput={[Function]}
+            size="md"
+            type="password"
+          >
+            <div
+              className="input-group input-group--md override-field__value"
+            >
+              <input
+                autoComplete="off"
+                className="input input-group__field input__field"
+                defaultValue=""
+                onBlur={[Function]}
+                onChange={[Function]}
+                onInput={[Function]}
+                onKeyPress={[Function]}
+                onPaste={[Function]}
+                type="password"
+              />
+            </div>
+          </Input>
+        </div>
+      </div>
+    </div>
+  </div>
+</Prerequisite>
+`;

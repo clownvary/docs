@@ -1,0 +1,223 @@
+@import '~shared/style/variables/index.less';
+
+@light-gray: #f8f8f8;
+@black-bed: #222;
+
+/* stylelint-disable */
+.permit-contract-page {
+  width: @page-width;
+  margin: 0 auto;
+  color: @black-bed;
+  .page-container {
+    position: relative;
+  }
+
+  i.icon {
+    font-size: 14px !important;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: 38px;
+
+    &.schedule__title,
+    &.amendment__title {
+      display: none;
+    }
+  }
+
+  .header-right-float {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .permit-help-link {
+    height: 23px;
+  }
+
+  .help-link {
+    line-height: 17px;
+  }
+
+  .permit-logo {
+    width: 345px;
+    height: 60px;
+    overflow: hidden;
+    text-align: right;
+
+    > * {
+      position: relative;
+      display: block;
+      height: 60px;
+    }
+
+    a {
+      position: relative;
+      display: inline-block;
+      height: 60px;
+    }
+
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      max-width: 345px;
+      max-height: 60px;
+    }
+    &.ms-tabbable {
+      a {
+        &:focus {
+          outline: none;
+          img {
+            border: 1px dotted black;
+          }
+        }
+      }
+    }
+  }
+
+  .table {
+    .icon {
+      color: @cyan-blue;
+    }
+
+    tbody {
+      tr {
+        td {
+          vertical-align: top;
+
+          &.fee {
+            div {
+              word-break: break-all;
+            }
+          }
+        }
+
+        &.child {
+          background-color: @light-gray;
+        }
+
+        &.recurring-booking {
+          td {
+            font-weight: 600;
+          }
+        }
+
+        &.extra-row {
+          td {
+            font-size: 12px;
+            font-style: italic;
+          }
+
+          &.exception-dates {
+            td {
+              padding-top: 0;
+              border-top: none;
+            }
+
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-pdf {
+    display: none;
+  }
+
+  .customer-info {
+    .an-property-list__item {
+      > span {
+        margin-right: 0;
+      }
+
+      > span:first-child {
+        padding-right: 5px;
+        padding-left: 10px;
+        margin-right: 15px;
+      }
+
+      > span:last-child {
+        width: 280px;
+      }
+    }
+  }
+
+}
+
+.email {
+  display: inline-block;
+  line-height: 20px;
+  word-break: break-all;
+  vertical-align: top;
+  color: @cyan-blue;
+}
+
+.widget {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: 2px solid @color-gray-border;
+}
+
+.section-container {
+  margin-top: 20px;
+  border: solid 2px @color-gray-border;
+  opacity: 0.8;
+
+  header {
+    padding: 14px 20px;
+    line-height: 24px;
+    color: @cyan-blue;
+
+    span > .icon {
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  }
+
+  table {
+    margin-bottom: 0;
+
+    thead:first-child tr:first-child th {
+      border-top: solid 1px @color-gray-border;
+    }
+
+    tr td {
+      word-break: break-word;
+      word-wrap: break-word;
+      vertical-align: top;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.section-separator {
+  margin: 20px 0;
+  border-top: dotted 1px @color-gray-border;
+}
+
+// wcag contrast styles
+.wcag-contrast-mutations {
+  .help-link,
+  .help-link__icon {
+    color: @cyan-blue;
+  }
+  .help-link__icon{
+    background: @cyan-blue;
+  }
+  .collapse-panel {
+    &__title {
+      color: @cyan-blue;
+    }
+  }
+}
+
+@import 'print.less';

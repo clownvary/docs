@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "response_code": "1050",
+    "response_message": "Total bookings of a permitxxx cannot exceed 700.",
+    "page_info": {
+      "order_by": "",
+      "page_number": 1,
+      "total_records_per_page": 30,
+      "total_page": 1,
+      "order_option": "ASC",
+      "total_records": 0
+    }
+  },
+  "body": {}
+}

@@ -1,0 +1,25 @@
+- var opts = htmlWebpackPlugin.options;
+- var diff = opts.diff;
+- var linkExtraPrefix = opts.linkExtraPrefix;
+- var finalOrgSiteRootURL = "/${orgSiteName}";
+#app-root
+  div(class='an-page-loading')
+    svg(viewBox='0 0 1240 1240', class='icon-loading')
+      path(d='M713.161 710.845c113.057-69.472 183.591-192.558 183.591-328.063 0-212.491-172.26-384.751-384.751-384.751s-384.751 172.26-384.751 384.751c0 139.36 74.61 265.573 193.3 333.836l-0.222 0.385c16.991 11.533 28.153 31.011 28.153 53.094 0 35.415-28.71 64.125-64.125 64.125-14.29 0-27.49-4.675-38.151-12.579-148.197-89.946-247.207-252.842-247.207-438.863 0-283.323 229.679-513.002 513.002-513.002s513.002 229.679 513.002 513.002c0 189.845-103.123 355.605-256.409 444.318l-0.345-0.595c-9.076 4.924-19.476 7.719-30.528 7.719-35.415 0-64.125-28.71-64.125-64.125 0-26.716 16.336-49.615 39.563-59.254z', transform='translate(0,1024) scale(1, -1)' style='fill: #ffb245')
+
+if diff !== "static"
+  script(src!=finalOrgSiteRootURL + "/servlet/sdi_lib.sdi")
+  script.
+    window.__environment__ = {
+      "ROOT_URL": "#{finalOrgSiteRootURL}"
+    };
+else
+  script.
+    window.__environment__ = {
+      ROOT_URL: "test/"
+    };
+each val, index in htmlWebpackPlugin.files.chunks
+  if diff !== "static"
+    script(src!= finalOrgSiteRootURL + "/" + linkExtraPrefix + val.entry)
+  else
+    script(src=val.entry)

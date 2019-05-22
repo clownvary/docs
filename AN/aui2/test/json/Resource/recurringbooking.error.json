@@ -1,0 +1,26 @@
+{
+   "headers":{
+      "response_code":"9008",
+      "response_message":"Validation Error",
+      "page_info":{
+         "order_by":"",
+         "total_records_per_page":20,
+         "total_records":0,
+         "page_number":0,
+         "order_option":"ASC",
+         "total_page":1
+      }
+   },
+   "body":{
+      "errors":[
+         {
+            "key":"1",
+            "value":"Number of recurrence(s) is invalid."
+         },
+         {
+            "key":"2",
+            "value":"The duration of booking must be shorter than how frequently it occurs. Please review your duration and change the recurrence pattern."
+         }
+      ]
+   }
+}

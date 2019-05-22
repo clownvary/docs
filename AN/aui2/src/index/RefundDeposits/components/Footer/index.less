@@ -1,0 +1,45 @@
+@import '~shared/style/variables/index.less';
+
+.refund-deposit-footer {
+  .fee-input {
+    width: 140px;
+    margin-left: 5px;
+    vertical-align: middle;
+
+    input {
+      text-align: right;
+    }
+  }
+
+  .total {
+    align-content: flex-end;
+    justify-content: flex-end;
+    padding: 10px 0 0 0;
+
+    &-label,
+    &-amount {
+      font-size: 20px;
+      font-weight: @semibold;
+    }
+
+    &-amount {
+      color: @tango;
+    }
+
+    &-extra-label,
+    &-extra-amount {
+      font-size: 14px;
+      font-weight: @semibold;
+    }
+
+    &-extra-amount,
+    &-amount {
+      width: 170px;
+      text-align: right;
+    }
+  }
+
+  &__proceed {
+    margin-left: 24px;
+  }
+}

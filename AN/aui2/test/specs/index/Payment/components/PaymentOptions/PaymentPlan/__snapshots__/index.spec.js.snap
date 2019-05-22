@@ -1,0 +1,1944 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index/Payment/components/PaymentOptions/PaymentPlan PaymentPlan component should render without error if no selected payment plan 1`] = `
+<PaymentPlan
+  ccScanWithApdDevice={true}
+  ccScanWithMagesafeDevice={false}
+  changeAutoPaymentStatus={[Function]}
+  changeECheckAccount={[Function]}
+  changeECheckAccountType={[Function]}
+  changeECheckRouting={[Function]}
+  changeECheckSaveInformation={[Function]}
+  changePaymentCard={[Function]}
+  changePaymentPlanSection={[Function]}
+  clearOptionAndPaymentErrs={[Function]}
+  creditCardData={
+    Object {
+      "creditCardLabel": "CreditCardX",
+    }
+  }
+  data={
+    Object {
+      "ppAutoCCList": Object {
+        "data": Array [
+          Object {
+            "card_expiration": "12/2017",
+            "text": "MasterCard ends in 5454",
+            "value": 5454,
+          },
+          Object {
+            "card_expiration": "11/2017",
+            "text": "MasterCard ends in 5411",
+            "value": 5411,
+          },
+        ],
+        "selected": 5454,
+      },
+      "ppAutoEcpList": Object {
+        "data": Array [
+          Object {
+            "text": "Ecp #221",
+            "value": 221,
+          },
+          Object {
+            "text": "Ecp #222",
+            "value": 222,
+          },
+        ],
+        "selected": 221,
+      },
+    }
+  }
+  getBackupPayment={[Function]}
+  getIframeUrlAsyncAction={[Function]}
+  getInstanceAction={[Function]}
+  index={0}
+  item={
+    Object {
+      "activeVal": "173",
+      "amount": 500,
+      "autoPaymentTypes": Object {
+        "1": Object {
+          "id": 193,
+          "valid": true,
+        },
+        "2": Object {
+          "id": 194,
+          "valid": true,
+        },
+        "selected": 194,
+      },
+      "autoScheduleReadOnly": true,
+      "backupPaymentInfo": Object {
+        "backupPaymentCardName": "Backup-Payment-Card-Name",
+        "backupPaymentType": "Backup-Payment-Type",
+      },
+      "errors": undefined,
+      "frequecys": Object {
+        "data": Array [
+          Object {
+            "text": "Weekly",
+            "value": 412,
+          },
+          Object {
+            "text": "Every other week",
+            "value": 413,
+          },
+        ],
+        "selected": 413,
+      },
+      "list": Array [
+        Object {
+          "name": "Cash",
+          "value": "173",
+        },
+        Object {
+          "name": "Credit",
+          "value": "172",
+        },
+      ],
+      "numOfPayments": Object {
+        "data": Array [
+          Object {
+            "text": "1",
+            "value": 711,
+          },
+          Object {
+            "text": "2",
+            "value": 712,
+          },
+          Object {
+            "text": "3",
+            "value": 713,
+          },
+        ],
+      },
+      "paymentPlanWording": "PaymentPlanX",
+      "paymentSchedules": Array [
+        Object {
+          "amount": 150,
+          "dueDate": "2017-02-01",
+          "paid": true,
+        },
+        Object {
+          "amount": 150,
+          "dueDate": "2017-03-01",
+          "paid": false,
+        },
+      ],
+      "reservationPPs": Object {
+        "data": Array [
+          Object {
+            "description": "#1",
+            "name": "PaymentPlan #1",
+            "value": 263,
+          },
+          Object {
+            "description": "#2",
+            "name": "PaymentPlan #2",
+            "value": 264,
+          },
+        ],
+        "selected": 0,
+      },
+      "schedulesEdit": Object {},
+      "showAutoPaymentMethod": true,
+      "totalBlanceAmount": 0,
+    }
+  }
+  newECheckData={
+    Object {
+      "eCheckLabel": "ECheckX",
+    }
+  }
+  onChange={[Function]}
+  payer={
+    Immutable.Map {
+      params: Immutable.Map {
+        customerId: 886,
+      },
+    }
+  }
+  saveNewECheck={[Function]}
+  setECheckError={[Function]}
+  showModalAction={[Function]}
+  updateAutoPaymentTypeAndCCExpStatus={[Function]}
+>
+  <div
+    className="payment-option payment-paymentplan"
+  >
+    <div
+      className="payment-option-list aaui-flexbox"
+    >
+      <Dropdown
+        autoOpen={false}
+        data={
+          Array [
+            Object {
+              "name": "Cash",
+              "value": "173",
+            },
+            Object {
+              "name": "Credit",
+              "value": "172",
+            },
+          ]
+        }
+        data-qa-id="payment-paymentPlan-plan"
+        disabled={true}
+        filterPlaceholder="Filter..."
+        fuzzyQuery={false}
+        noResult="No results found."
+        placeholder="Select one..."
+        showAll={true}
+        showDeselectall={false}
+        showTxtOnlyCheckedOneItem={true}
+        theme="flat"
+        txtSuffix="selected"
+        value="173"
+        visible={true}
+      >
+        <div
+          className="aaui-dropdown"
+          data-qa-id="payment-paymentPlan-plan"
+        >
+          <button
+            className="aaui-dropdown__button aaui-dropdown-btn-flat is-disabled"
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            onMouseUp={[Function]}
+            role="button"
+            type="button"
+          >
+            <div
+              className="aaui-dropdown__button-text"
+              title=""
+            >
+               Select one...
+            </div>
+            <i
+              className="icon aaui-dropdown__button-icon icon-chevron-down"
+            />
+          </button>
+          <div
+            aria-expanded={false}
+            className="aaui-dropdown__menu-wrapper  u-hidden"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            role="combobox"
+            tabIndex={0}
+          >
+            <div
+              className="aaui-dropdown__menu"
+            >
+              <ul
+                aria-expanded={false}
+                className=""
+                role="listbox"
+              >
+                <li
+                  className=" is-selected"
+                  key="173"
+                  onClick={[Function]}
+                  role="option"
+                >
+                  <span />
+                </li>
+                <li
+                  className=""
+                  key="172"
+                  onClick={[Function]}
+                  role="option"
+                >
+                  <span />
+                </li>
+              </ul>
+              <div>
+                <div
+                  className="aaui-dropdown__menu-footer"
+                >
+                  <div
+                    className="u-hidden"
+                  >
+                    <i
+                      className="icon icon-spinner"
+                    />
+                     Loading...
+                  </div>
+                  <div />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Dropdown>
+      <div
+        className="aaui-flexbox"
+      >
+        <label
+          className="payment-symbol"
+        >
+          $
+        </label>
+        <Input
+          defaultValue={500}
+          disabled={true}
+          icon={false}
+          inputRef={[Function]}
+          onChange={[Function]}
+          size="md"
+          type="text"
+        >
+          <div
+            className="input-group input-group--md input-group--disabled"
+          >
+            <input
+              className="input input-group__field input__field"
+              defaultValue={500}
+              disabled={true}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onInput={[Function]}
+              onKeyPress={[Function]}
+              onPaste={[Function]}
+              type="text"
+            />
+          </div>
+        </Input>
+        <span>
+          Payment Plan
+        </span>
+      </div>
+    </div>
+    <div
+      className="paymentplan-details"
+    >
+      <div
+        className="paymentplan-selection"
+      >
+        <div
+          className="paymentplan-selection-item paymentplan-selection-item-c1 paymentplan-selection-definition "
+        >
+          <label>
+            Select 
+            PaymentPlanX
+          </label>
+          <Dropdown
+            autoOpen={false}
+            data={
+              Array [
+                Object {
+                  "description": "#1",
+                  "name": "PaymentPlan #1",
+                  "value": 263,
+                },
+                Object {
+                  "description": "#2",
+                  "name": "PaymentPlan #2",
+                  "value": 264,
+                },
+              ]
+            }
+            data-qa-id="payment-paymentPlan-select"
+            defaultValue={0}
+            filterPlaceholder="Filter..."
+            fuzzyQuery={false}
+            noResult="No results found."
+            onChange={[Function]}
+            placeholder="Select one..."
+            showAll={true}
+            showDeselectall={false}
+            showTxtOnlyCheckedOneItem={true}
+            theme="flat"
+            txtSuffix="selected"
+            value={0}
+            visible={true}
+          >
+            <div
+              className="aaui-dropdown"
+              data-qa-id="payment-paymentPlan-select"
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onKeyUp={[Function]}
+            >
+              <button
+                className="aaui-dropdown__button aaui-dropdown-btn-flat"
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                onMouseUp={[Function]}
+                role="button"
+                type="button"
+              >
+                <div
+                  className="aaui-dropdown__button-text"
+                  title=""
+                >
+                   Select one...
+                </div>
+                <i
+                  className="icon aaui-dropdown__button-icon icon-chevron-down"
+                />
+              </button>
+              <div
+                aria-expanded={false}
+                className="aaui-dropdown__menu-wrapper  u-hidden"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                role="combobox"
+                tabIndex={0}
+              >
+                <div
+                  className="aaui-dropdown__menu"
+                >
+                  <ul
+                    aria-expanded={false}
+                    className=""
+                    role="listbox"
+                  >
+                    <li
+                      className=""
+                      key="263"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span />
+                    </li>
+                    <li
+                      className=""
+                      key="264"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span />
+                    </li>
+                  </ul>
+                  <div>
+                    <div
+                      className="aaui-dropdown__menu-footer"
+                    >
+                      <div
+                        className="u-hidden"
+                      >
+                        <i
+                          className="icon icon-spinner"
+                        />
+                         Loading...
+                      </div>
+                      <div />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Dropdown>
+        </div>
+        <div
+          className="paymentplan-selection-item paymentplan-selection-frequency"
+        >
+          <label>
+            Frequency
+          </label>
+          <Dropdown
+            autoOpen={false}
+            data={
+              Array [
+                Object {
+                  "text": "Weekly",
+                  "value": 412,
+                },
+                Object {
+                  "text": "Every other week",
+                  "value": 413,
+                },
+              ]
+            }
+            data-qa-id="payment-paymentPlan-frequency"
+            filterPlaceholder="Filter..."
+            fuzzyQuery={false}
+            noResult="No results found."
+            onChange={[Function]}
+            placeholder="Select one..."
+            showAll={true}
+            showDeselectall={false}
+            showTxtOnlyCheckedOneItem={true}
+            theme="flat"
+            txtSuffix="selected"
+            value={413}
+            visible={true}
+          >
+            <div
+              className="aaui-dropdown"
+              data-qa-id="payment-paymentPlan-frequency"
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onKeyUp={[Function]}
+            >
+              <button
+                aria-label="Every other week"
+                className="aaui-dropdown__button aaui-dropdown-btn-flat"
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                onMouseUp={[Function]}
+                role="button"
+                type="button"
+              >
+                <div
+                  className="aaui-dropdown__button-text"
+                  title=""
+                >
+                   Every other week
+                </div>
+                <i
+                  className="icon aaui-dropdown__button-icon icon-chevron-down"
+                />
+              </button>
+              <div
+                aria-expanded={false}
+                className="aaui-dropdown__menu-wrapper  u-hidden"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                role="combobox"
+                tabIndex={0}
+              >
+                <div
+                  className="aaui-dropdown__menu"
+                >
+                  <ul
+                    aria-expanded={false}
+                    className=""
+                    role="listbox"
+                  >
+                    <li
+                      className=""
+                      key="412"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span>
+                        Weekly
+                      </span>
+                    </li>
+                    <li
+                      className=" is-selected"
+                      key="413"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span>
+                        Every other week
+                      </span>
+                    </li>
+                  </ul>
+                  <div>
+                    <div
+                      className="aaui-dropdown__menu-footer"
+                    >
+                      <div
+                        className="u-hidden"
+                      >
+                        <i
+                          className="icon icon-spinner"
+                        />
+                         Loading...
+                      </div>
+                      <div />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Dropdown>
+        </div>
+        <div
+          className="paymentplan-selection-item paymentplan-selection-item-c1"
+        >
+          <label>
+            Number of Payment(s)
+          </label>
+          <Dropdown
+            autoOpen={false}
+            data={
+              Array [
+                Object {
+                  "text": "1",
+                  "value": 711,
+                },
+                Object {
+                  "text": "2",
+                  "value": 712,
+                },
+                Object {
+                  "text": "3",
+                  "value": 713,
+                },
+              ]
+            }
+            data-qa-id="payment-paymentPlan-number"
+            filterPlaceholder="Filter..."
+            fuzzyQuery={false}
+            noResult="No results found."
+            onChange={[Function]}
+            placeholder="Select one..."
+            showAll={true}
+            showDeselectall={false}
+            showTxtOnlyCheckedOneItem={true}
+            theme="flat"
+            txtSuffix="selected"
+            visible={true}
+          >
+            <div
+              className="aaui-dropdown"
+              data-qa-id="payment-paymentPlan-number"
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onKeyUp={[Function]}
+            >
+              <button
+                className="aaui-dropdown__button aaui-dropdown-btn-flat"
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                onMouseUp={[Function]}
+                role="button"
+                type="button"
+              >
+                <div
+                  className="aaui-dropdown__button-text"
+                  title=""
+                >
+                   Select one...
+                </div>
+                <i
+                  className="icon aaui-dropdown__button-icon icon-chevron-down"
+                />
+              </button>
+              <div
+                aria-expanded={false}
+                className="aaui-dropdown__menu-wrapper  u-hidden"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                role="combobox"
+                tabIndex={0}
+              >
+                <div
+                  className="aaui-dropdown__menu"
+                >
+                  <ul
+                    aria-expanded={false}
+                    className=""
+                    role="listbox"
+                  >
+                    <li
+                      className=""
+                      key="711"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span>
+                        1
+                      </span>
+                    </li>
+                    <li
+                      className=""
+                      key="712"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span>
+                        2
+                      </span>
+                    </li>
+                    <li
+                      className=""
+                      key="713"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span>
+                        3
+                      </span>
+                    </li>
+                  </ul>
+                  <div>
+                    <div
+                      className="aaui-dropdown__menu-footer"
+                    >
+                      <div
+                        className="u-hidden"
+                      >
+                        <i
+                          className="icon icon-spinner"
+                        />
+                         Loading...
+                      </div>
+                      <div />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Dropdown>
+        </div>
+        <div
+          className="paymentplan-selection-item"
+        >
+          <label>
+            First Payment Date
+          </label>
+          <div
+            className="date-picker"
+          >
+            <InputDate
+              allowBlank={false}
+              allowKeySpin={true}
+              allowMouseSpin={false}
+              className=""
+              currency="USD"
+              data-qa-id="payment-paymentPlan-firstDate"
+              disabled={false}
+              format="d"
+              icon=""
+              iconHint=""
+              id=""
+              items={Array []}
+              listClassName=""
+              listConfig={Object {}}
+              listMaxHeight="300px"
+              listPopupOptions={Object {}}
+              listWidth="auto"
+              name=""
+              onBlur={[Function]}
+              onCalendarClose={[Function]}
+              onCalendarOpen={[Function]}
+              onFocus={[Function]}
+              onListClose={[Function]}
+              onListOpen={[Function]}
+              onTextChange={[Function]}
+              onValueChange={[Function]}
+              placeHolder=""
+              prefix="an"
+              showClear={true}
+              showSpinner={false}
+              showTrigger={true}
+              showTrigger2={false}
+              size="md"
+              textAlign="left"
+              timeStep={30}
+              triggerIcon="icon-calendar-m"
+              triggerIcon2="icon-clock-m"
+              triggerIconHint=""
+              triggerIconHint2=""
+              triggerIconToggle=""
+              triggerIconToggle2=""
+              value={null}
+            >
+              <div
+                className="an-input-date input-group buttons-1 input-group--md"
+              >
+                <input
+                  className="input input-group__field textalign-left input__field"
+                  data-qa-id="payment-paymentPlan-firstDate"
+                  disabled={false}
+                  id=""
+                  name=""
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onDragEnter={[Function]}
+                  onDragOver={[Function]}
+                  onDrop={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyPress={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseUp={[Function]}
+                  onPaste={[Function]}
+                  placeholder=""
+                  type="text"
+                />
+                <a
+                  aria-label=""
+                  className="input-group__item button-toggler"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseDown={[Function]}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <i
+                    aria-label="chevron icon"
+                    className="icon icon-calendar-m"
+                  />
+                </a>
+              </div>
+            </InputDate>
+          </div>
+        </div>
+      </div>
+      <div
+        className="paymentplan-schedule"
+      >
+        <div
+          className="paymentplan-schedule-header"
+        >
+          <span
+            className="paymentplan-schedule-title"
+          >
+            Payment Schedule
+          </span>
+          <span
+            className="paymenmtplan-schedule-edit-btn "
+            onClick={[Function]}
+          >
+            <i
+              className="icon icon-edit-m"
+            />
+            Edit schedule
+          </span>
+          <PaymentSchedulesEdit
+            clearOptionAndPaymentErrs={[Function]}
+            hasError={false}
+            index={0}
+            isSelectCustomForPaymentPlan={true}
+            paymentPlanAmount="500.00"
+            paymentSchedules={
+              Immutable.List [
+                Immutable.Map {
+                  dueDate: "2017-02-01",
+                  amount: 150,
+                  paid: true,
+                },
+                Immutable.Map {
+                  dueDate: "2017-03-01",
+                  amount: 150,
+                  paid: false,
+                },
+              ]
+            }
+            schedulesEdit={Object {}}
+          />
+        </div>
+        <div
+          className="paymentplan-schedule-table"
+        >
+          <div
+            className="paymentplan-schedule-table-head"
+          >
+            <div>
+              DUE DATE
+            </div>
+            <div
+              className="paymentplan-schedule-amount"
+            >
+              AMOUNT
+            </div>
+          </div>
+          <div
+            className="paymentplan-schedule-table-body"
+          >
+            <div
+              className="payment-schedule-detail"
+              key="schedule_0"
+            >
+              <div>
+                2017-02-01
+              </div>
+              <div
+                className="paymentplan-schedule-amount"
+              >
+                $150.00
+                <div
+                  className="paid-amount"
+                >
+                  (Paid 
+                  $NaN
+                  )
+                </div>
+              </div>
+            </div>
+            <div
+              className="payment-schedule-detail"
+              key="schedule_1"
+            >
+              <div>
+                2017-03-01
+              </div>
+              <div
+                className="paymentplan-schedule-amount"
+              >
+                $150.00
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="paymentplan-preauthorized-method"
+      >
+        <div
+          className="paymentplan-method-configuration"
+        >
+          <Checkbox
+            checked={true}
+            data-qa-id="payment-paymentPlan-setup"
+            onChange={[Function]}
+          >
+            <CheckboxComponent
+              checked={true}
+              data-qa-id="payment-paymentPlan-setup"
+              onChange={[Function]}
+            >
+              <label
+                className="checkbox-wrapper"
+                htmlFor="checkbox_attr_for_1"
+              >
+                <span
+                  className="checkbox checkbox--checked"
+                >
+                  <input
+                    aria-checked={true}
+                    checked={true}
+                    className="checkbox__input"
+                    data-qa-id="payment-paymentPlan-setup"
+                    id="checkbox_attr_for_1"
+                    onChange={[Function]}
+                    role="checkbox"
+                    type="checkbox"
+                  />
+                  <span
+                    className="checkbox__inner"
+                  />
+                </span>
+              </label>
+            </CheckboxComponent>
+          </Checkbox>
+          <span
+            className="paymentplan-method-statement"
+          >
+            Setup pre-authorized payment method
+          </span>
+        </div>
+        <div
+          className="paymentplan-method"
+        >
+          <label
+            className="paymentplan-method-label"
+          >
+            Payment Method
+          </label>
+          <div
+            className="payment-methods-list"
+          >
+            <div
+              className="paymentplan-method-cc"
+            >
+              <Radio
+                checked={false}
+                data-qa-id="payment-paymentPlan-creditCard"
+                name="paymentplan-method-type"
+                onChange={[Function]}
+                value={193}
+              >
+                <RadioComponent
+                  checked={false}
+                  data-qa-id="payment-paymentPlan-creditCard"
+                  defaultChecked={false}
+                  name="paymentplan-method-type"
+                  onChange={[Function]}
+                  size="md"
+                  value={193}
+                >
+                  <label
+                    aria-checked={false}
+                    className="radio-wrapper"
+                    htmlFor="radio_attr_for_2"
+                    role="radio"
+                  >
+                    <span
+                      className="radio radio--md"
+                    >
+                      <input
+                        checked={false}
+                        className="radio__input"
+                        data-qa-id="payment-paymentPlan-creditCard"
+                        id="radio_attr_for_2"
+                        name="paymentplan-method-type"
+                        onChange={[Function]}
+                        type="radio"
+                        value={193}
+                      />
+                      <span
+                        className="radio__inner"
+                      />
+                      <span>
+                        Credit Card
+                      </span>
+                    </span>
+                  </label>
+                </RadioComponent>
+              </Radio>
+              <div
+                className="payment-method-card-list"
+              >
+                <Dropdown
+                  autoOpen={false}
+                  className="pay-list-hidden"
+                  data={
+                    Array [
+                      Object {
+                        "card_expiration": "12/2017",
+                        "text": "MasterCard ends in 5454",
+                        "value": 5454,
+                      },
+                      Object {
+                        "card_expiration": "11/2017",
+                        "text": "MasterCard ends in 5411",
+                        "value": 5411,
+                      },
+                    ]
+                  }
+                  data-qa-id="payment-paymentPlan-chooseCard"
+                  errored={false}
+                  filterPlaceholder="Filter..."
+                  fuzzyQuery={false}
+                  noResult="No results found."
+                  onChange={[Function]}
+                  placeholder="Choose CreditCardX"
+                  showAll={true}
+                  showDeselectall={false}
+                  showTxtOnlyCheckedOneItem={true}
+                  theme="flat"
+                  txtSuffix="selected"
+                  value={5454}
+                  visible={true}
+                >
+                  <div
+                    className="aaui-dropdown pay-list-hidden"
+                    data-qa-id="payment-paymentPlan-chooseCard"
+                    onKeyDown={[Function]}
+                    onKeyPress={[Function]}
+                    onKeyUp={[Function]}
+                  >
+                    <button
+                      aria-label="MasterCard ends in 5454"
+                      className="aaui-dropdown__button aaui-dropdown-btn-flat"
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseUp={[Function]}
+                      role="button"
+                      type="button"
+                    >
+                      <div
+                        className="aaui-dropdown__button-text"
+                        title=""
+                      >
+                         MasterCard ends in 5454
+                      </div>
+                      <i
+                        className="icon aaui-dropdown__button-icon icon-chevron-down"
+                      />
+                    </button>
+                    <div
+                      aria-expanded={false}
+                      className="aaui-dropdown__menu-wrapper  u-hidden"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      onMouseDown={[Function]}
+                      role="combobox"
+                      tabIndex={0}
+                    >
+                      <div
+                        className="aaui-dropdown__menu"
+                      >
+                        <ul
+                          aria-expanded={false}
+                          className=""
+                          role="listbox"
+                        >
+                          <li
+                            className=" is-selected"
+                            key="5454"
+                            onClick={[Function]}
+                            role="option"
+                          >
+                            <span>
+                              MasterCard ends in 5454
+                            </span>
+                          </li>
+                          <li
+                            className=""
+                            key="5411"
+                            onClick={[Function]}
+                            role="option"
+                          >
+                            <span>
+                              MasterCard ends in 5411
+                            </span>
+                          </li>
+                        </ul>
+                        <div>
+                          <div
+                            className="aaui-dropdown__menu-footer"
+                          >
+                            <div
+                              className="u-hidden"
+                            >
+                              <i
+                                className="icon icon-spinner"
+                              />
+                               Loading...
+                            </div>
+                            <div />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Dropdown>
+              </div>
+            </div>
+            <div
+              className="paymentplan-method-ecp"
+            >
+              <Radio
+                checked={true}
+                data-qa-id="payment-paymentPlan-electronicCheck"
+                name="paymentplan-method-type"
+                onChange={[Function]}
+                value={194}
+              >
+                <RadioComponent
+                  checked={true}
+                  data-qa-id="payment-paymentPlan-electronicCheck"
+                  defaultChecked={false}
+                  name="paymentplan-method-type"
+                  onChange={[Function]}
+                  size="md"
+                  value={194}
+                >
+                  <label
+                    aria-checked={true}
+                    className="radio-wrapper"
+                    htmlFor="radio_attr_for_3"
+                    role="radio"
+                  >
+                    <span
+                      className="radio radio--checked radio--md"
+                    >
+                      <input
+                        checked={true}
+                        className="radio__input"
+                        data-qa-id="payment-paymentPlan-electronicCheck"
+                        id="radio_attr_for_3"
+                        name="paymentplan-method-type"
+                        onChange={[Function]}
+                        type="radio"
+                        value={194}
+                      />
+                      <span
+                        className="radio__inner"
+                      />
+                      <span>
+                        Electronic Check
+                      </span>
+                    </span>
+                  </label>
+                </RadioComponent>
+              </Radio>
+              <div
+                className="payment-method-card-list"
+              >
+                <Dropdown
+                  autoOpen={false}
+                  className=""
+                  data={
+                    Array [
+                      Object {
+                        "text": "Ecp #221",
+                        "value": 221,
+                      },
+                      Object {
+                        "text": "Ecp #222",
+                        "value": 222,
+                      },
+                    ]
+                  }
+                  data-qa-id="payment-paymentPlan-chooseElectronic"
+                  errored={false}
+                  filterPlaceholder="Filter..."
+                  fuzzyQuery={false}
+                  noResult="No results found."
+                  onChange={[Function]}
+                  placeholder="Choose ECheckX"
+                  showAll={true}
+                  showDeselectall={false}
+                  showTxtOnlyCheckedOneItem={true}
+                  theme="flat"
+                  txtSuffix="selected"
+                  value={221}
+                  visible={true}
+                >
+                  <div
+                    className="aaui-dropdown"
+                    data-qa-id="payment-paymentPlan-chooseElectronic"
+                    onKeyDown={[Function]}
+                    onKeyPress={[Function]}
+                    onKeyUp={[Function]}
+                  >
+                    <button
+                      aria-label="Ecp #221"
+                      className="aaui-dropdown__button aaui-dropdown-btn-flat"
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseUp={[Function]}
+                      role="button"
+                      type="button"
+                    >
+                      <div
+                        className="aaui-dropdown__button-text"
+                        title=""
+                      >
+                         Ecp #221
+                      </div>
+                      <i
+                        className="icon aaui-dropdown__button-icon icon-chevron-down"
+                      />
+                    </button>
+                    <div
+                      aria-expanded={false}
+                      className="aaui-dropdown__menu-wrapper  u-hidden"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      onMouseDown={[Function]}
+                      role="combobox"
+                      tabIndex={0}
+                    >
+                      <div
+                        className="aaui-dropdown__menu"
+                      >
+                        <ul
+                          aria-expanded={false}
+                          className=""
+                          role="listbox"
+                        >
+                          <li
+                            className=" is-selected"
+                            key="221"
+                            onClick={[Function]}
+                            role="option"
+                          >
+                            <span>
+                              Ecp #221
+                            </span>
+                          </li>
+                          <li
+                            className=""
+                            key="222"
+                            onClick={[Function]}
+                            role="option"
+                          >
+                            <span>
+                              Ecp #222
+                            </span>
+                          </li>
+                        </ul>
+                        <div>
+                          <div
+                            className="aaui-dropdown__menu-footer"
+                          >
+                            <div
+                              className="u-hidden"
+                            >
+                              <i
+                                className="icon icon-spinner"
+                              />
+                               Loading...
+                            </div>
+                            <div />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Dropdown>
+              </div>
+            </div>
+          </div>
+          <div
+            className="paymentplan-backup"
+          >
+            <label
+              className="paymentplan-backup-label"
+            >
+              Backup Payment
+              <span
+                className="payment-backup-statement"
+              >
+                (Optional)
+              </span>
+            </label>
+            <div
+              className="payment-backup-details"
+            >
+              <div>
+                <span
+                  className="payment-backup-type"
+                >
+                  Backup-Payment-Type
+                </span>
+                <span
+                  className="payment-backup-info"
+                >
+                  Backup-Payment-Card-Name
+                </span>
+                <span
+                  className="payment-backup-action"
+                  onClick={[Function]}
+                >
+                  <i
+                    className="icon icon-exchange"
+                  />
+                  Change card/account
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <i
+          className="rectangle"
+        />
+      </div>
+    </div>
+  </div>
+</PaymentPlan>
+`;
+
+exports[`index/Payment/components/PaymentOptions/PaymentPlan PaymentPlan component should render without error if selected payment plan 1`] = `
+<PaymentPlan
+  ccScanWithApdDevice={true}
+  ccScanWithMagesafeDevice={false}
+  changeAutoPaymentStatus={[Function]}
+  changeECheckAccount={[Function]}
+  changeECheckAccountType={[Function]}
+  changeECheckRouting={[Function]}
+  changeECheckSaveInformation={[Function]}
+  changePaymentCard={[Function]}
+  changePaymentPlanSection={[Function]}
+  clearOptionAndPaymentErrs={[Function]}
+  creditCardData={
+    Object {
+      "creditCardLabel": "CreditCardX",
+    }
+  }
+  data={
+    Object {
+      "ppAutoCCList": Object {
+        "data": Array [
+          Object {
+            "card_expiration": "12/2017",
+            "text": "MasterCard ends in 5454",
+            "value": 5454,
+          },
+          Object {
+            "card_expiration": "11/2017",
+            "text": "MasterCard ends in 5411",
+            "value": 5411,
+          },
+        ],
+        "selected": 5454,
+      },
+      "ppAutoEcpList": Object {
+        "data": Array [
+          Object {
+            "text": "Ecp #221",
+            "value": 221,
+          },
+          Object {
+            "text": "Ecp #222",
+            "value": 222,
+          },
+        ],
+        "selected": 221,
+      },
+    }
+  }
+  getBackupPayment={[Function]}
+  getIframeUrlAsyncAction={[Function]}
+  getInstanceAction={[Function]}
+  index={0}
+  item={
+    Object {
+      "activeVal": "173",
+      "amount": 500,
+      "autoPaymentTypes": Object {
+        "1": Object {
+          "id": 193,
+          "valid": true,
+        },
+        "2": Object {
+          "id": 194,
+          "valid": true,
+        },
+        "selected": 0,
+      },
+      "autoScheduleReadOnly": true,
+      "backupPaymentInfo": Object {},
+      "errors": undefined,
+      "frequecys": Object {
+        "data": Array [
+          Object {
+            "text": "Weekly",
+            "value": 412,
+          },
+          Object {
+            "text": "Every other week",
+            "value": 413,
+          },
+        ],
+        "selected": 413,
+      },
+      "list": Array [
+        Object {
+          "name": "Cash",
+          "value": "173",
+        },
+        Object {
+          "name": "Credit",
+          "value": "172",
+        },
+      ],
+      "numOfPayments": Object {
+        "data": Array [
+          Object {
+            "text": "1",
+            "value": 711,
+          },
+          Object {
+            "text": "2",
+            "value": 712,
+          },
+          Object {
+            "text": "3",
+            "value": 713,
+          },
+        ],
+      },
+      "paymentPlanWording": "PaymentPlanX",
+      "paymentSchedules": Array [
+        Object {
+          "amount": 150,
+          "dueDate": "2017-02-01",
+          "paid": true,
+        },
+        Object {
+          "amount": 150,
+          "dueDate": "2017-03-01",
+          "paid": false,
+        },
+      ],
+      "reservationPPs": Object {
+        "data": Array [
+          Object {
+            "description": "#1",
+            "name": "PaymentPlan #1",
+            "value": 263,
+          },
+          Object {
+            "description": "#2",
+            "name": "PaymentPlan #2",
+            "value": 264,
+          },
+        ],
+        "selected": 264,
+      },
+      "schedulesEdit": Object {},
+      "showAutoPaymentMethod": true,
+      "totalBlanceAmount": 0,
+    }
+  }
+  newECheckData={
+    Object {
+      "eCheckLabel": "ECheckX",
+    }
+  }
+  onChange={[Function]}
+  payer={
+    Immutable.Map {
+      params: Immutable.Map {
+        customerId: 886,
+      },
+    }
+  }
+  saveNewECheck={[Function]}
+  setECheckError={[Function]}
+  showModalAction={[Function]}
+  updateAutoPaymentTypeAndCCExpStatus={[Function]}
+>
+  <div
+    className="payment-option payment-paymentplan"
+  >
+    <div
+      className="payment-option-list aaui-flexbox"
+    >
+      <Dropdown
+        autoOpen={false}
+        data={
+          Array [
+            Object {
+              "name": "Cash",
+              "value": "173",
+            },
+            Object {
+              "name": "Credit",
+              "value": "172",
+            },
+          ]
+        }
+        data-qa-id="payment-paymentPlan-plan"
+        disabled={true}
+        filterPlaceholder="Filter..."
+        fuzzyQuery={false}
+        noResult="No results found."
+        placeholder="Select one..."
+        showAll={true}
+        showDeselectall={false}
+        showTxtOnlyCheckedOneItem={true}
+        theme="flat"
+        txtSuffix="selected"
+        value="173"
+        visible={true}
+      >
+        <div
+          className="aaui-dropdown"
+          data-qa-id="payment-paymentPlan-plan"
+        >
+          <button
+            className="aaui-dropdown__button aaui-dropdown-btn-flat is-disabled"
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            onMouseUp={[Function]}
+            role="button"
+            type="button"
+          >
+            <div
+              className="aaui-dropdown__button-text"
+              title=""
+            >
+               Select one...
+            </div>
+            <i
+              className="icon aaui-dropdown__button-icon icon-chevron-down"
+            />
+          </button>
+          <div
+            aria-expanded={false}
+            className="aaui-dropdown__menu-wrapper  u-hidden"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            role="combobox"
+            tabIndex={0}
+          >
+            <div
+              className="aaui-dropdown__menu"
+            >
+              <ul
+                aria-expanded={false}
+                className=""
+                role="listbox"
+              >
+                <li
+                  className=" is-selected"
+                  key="173"
+                  onClick={[Function]}
+                  role="option"
+                >
+                  <span />
+                </li>
+                <li
+                  className=""
+                  key="172"
+                  onClick={[Function]}
+                  role="option"
+                >
+                  <span />
+                </li>
+              </ul>
+              <div>
+                <div
+                  className="aaui-dropdown__menu-footer"
+                >
+                  <div
+                    className="u-hidden"
+                  >
+                    <i
+                      className="icon icon-spinner"
+                    />
+                     Loading...
+                  </div>
+                  <div />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Dropdown>
+      <div
+        className="aaui-flexbox"
+      >
+        <label
+          className="payment-symbol"
+        >
+          $
+        </label>
+        <Input
+          defaultValue={500}
+          disabled={true}
+          icon={false}
+          inputRef={[Function]}
+          onChange={[Function]}
+          size="md"
+          type="text"
+        >
+          <div
+            className="input-group input-group--md input-group--disabled"
+          >
+            <input
+              className="input input-group__field input__field"
+              defaultValue={500}
+              disabled={true}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onInput={[Function]}
+              onKeyPress={[Function]}
+              onPaste={[Function]}
+              type="text"
+            />
+          </div>
+        </Input>
+        <span>
+          Payment Plan
+        </span>
+      </div>
+    </div>
+    <div
+      className="paymentplan-details"
+    >
+      <div
+        className="paymentplan-selection"
+      >
+        <div
+          className="paymentplan-selection-item paymentplan-selection-item-c1 paymentplan-selection-definition pre-defined-paymentplan"
+        >
+          <label>
+            Select 
+            PaymentPlanX
+          </label>
+          <Dropdown
+            autoOpen={false}
+            data={
+              Array [
+                Object {
+                  "description": "#1",
+                  "name": "PaymentPlan #1",
+                  "value": 263,
+                },
+                Object {
+                  "description": "#2",
+                  "name": "PaymentPlan #2",
+                  "value": 264,
+                },
+              ]
+            }
+            data-qa-id="payment-paymentPlan-select"
+            defaultValue={264}
+            filterPlaceholder="Filter..."
+            fuzzyQuery={false}
+            noResult="No results found."
+            onChange={[Function]}
+            placeholder="Select one..."
+            showAll={true}
+            showDeselectall={false}
+            showTxtOnlyCheckedOneItem={true}
+            theme="flat"
+            txtSuffix="selected"
+            value={264}
+            visible={true}
+          >
+            <div
+              className="aaui-dropdown"
+              data-qa-id="payment-paymentPlan-select"
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onKeyUp={[Function]}
+            >
+              <button
+                className="aaui-dropdown__button aaui-dropdown-btn-flat"
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                onMouseUp={[Function]}
+                role="button"
+                type="button"
+              >
+                <div
+                  className="aaui-dropdown__button-text"
+                  title=""
+                >
+                   Select one...
+                </div>
+                <i
+                  className="icon aaui-dropdown__button-icon icon-chevron-down"
+                />
+              </button>
+              <div
+                aria-expanded={false}
+                className="aaui-dropdown__menu-wrapper  u-hidden"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                role="combobox"
+                tabIndex={0}
+              >
+                <div
+                  className="aaui-dropdown__menu"
+                >
+                  <ul
+                    aria-expanded={false}
+                    className=""
+                    role="listbox"
+                  >
+                    <li
+                      className=""
+                      key="263"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span />
+                    </li>
+                    <li
+                      className=" is-selected"
+                      key="264"
+                      onClick={[Function]}
+                      role="option"
+                    >
+                      <span />
+                    </li>
+                  </ul>
+                  <div>
+                    <div
+                      className="aaui-dropdown__menu-footer"
+                    >
+                      <div
+                        className="u-hidden"
+                      >
+                        <i
+                          className="icon icon-spinner"
+                        />
+                         Loading...
+                      </div>
+                      <div />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Dropdown>
+          <p
+            className="paymentplan-description"
+          >
+            #2
+          </p>
+        </div>
+      </div>
+      <div
+        className="paymentplan-schedule"
+      >
+        <div
+          className="paymentplan-schedule-header"
+        >
+          <span
+            className="paymentplan-schedule-title"
+          >
+            Payment Schedule
+          </span>
+          <span
+            className="paymenmtplan-schedule-edit-btn pp-schedule-edit-btn-disabled"
+            onClick={[Function]}
+          >
+            <i
+              className="icon icon-edit-m"
+            />
+            Edit schedule
+          </span>
+          <PaymentSchedulesEdit
+            clearOptionAndPaymentErrs={[Function]}
+            hasError={false}
+            index={0}
+            isSelectCustomForPaymentPlan={false}
+            paymentPlanAmount="500.00"
+            paymentSchedules={
+              Immutable.List [
+                Immutable.Map {
+                  dueDate: "2017-02-01",
+                  amount: 150,
+                  paid: true,
+                },
+                Immutable.Map {
+                  dueDate: "2017-03-01",
+                  amount: 150,
+                  paid: false,
+                },
+              ]
+            }
+            schedulesEdit={Object {}}
+          />
+        </div>
+        <div
+          className="paymentplan-schedule-table"
+        >
+          <div
+            className="paymentplan-schedule-table-head"
+          >
+            <div>
+              DUE DATE
+            </div>
+            <div
+              className="paymentplan-schedule-amount"
+            >
+              AMOUNT
+            </div>
+          </div>
+          <div
+            className="paymentplan-schedule-table-body"
+          >
+            <div
+              className="payment-schedule-detail"
+              key="schedule_0"
+            >
+              <div>
+                2017-02-01
+              </div>
+              <div
+                className="paymentplan-schedule-amount"
+              >
+                $150.00
+                <div
+                  className="paid-amount"
+                >
+                  (Paid 
+                  $NaN
+                  )
+                </div>
+              </div>
+            </div>
+            <div
+              className="payment-schedule-detail"
+              key="schedule_1"
+            >
+              <div>
+                2017-03-01
+              </div>
+              <div
+                className="paymentplan-schedule-amount"
+              >
+                $150.00
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="paymentplan-preauthorized-method"
+      >
+        <div
+          className="paymentplan-method-configuration"
+        >
+          <Checkbox
+            checked={true}
+            data-qa-id="payment-paymentPlan-setup"
+            onChange={[Function]}
+          >
+            <CheckboxComponent
+              checked={true}
+              data-qa-id="payment-paymentPlan-setup"
+              onChange={[Function]}
+            >
+              <label
+                className="checkbox-wrapper"
+                htmlFor="checkbox_attr_for_4"
+              >
+                <span
+                  className="checkbox checkbox--checked"
+                >
+                  <input
+                    aria-checked={true}
+                    checked={true}
+                    className="checkbox__input"
+                    data-qa-id="payment-paymentPlan-setup"
+                    id="checkbox_attr_for_4"
+                    onChange={[Function]}
+                    role="checkbox"
+                    type="checkbox"
+                  />
+                  <span
+                    className="checkbox__inner"
+                  />
+                </span>
+              </label>
+            </CheckboxComponent>
+          </Checkbox>
+          <span
+            className="paymentplan-method-statement"
+          >
+            Setup pre-authorized payment method
+          </span>
+        </div>
+        <div
+          className="paymentplan-method"
+        >
+          <div
+            className="paymentplan-backup"
+          >
+            <label
+              className="paymentplan-backup-label"
+            >
+              Backup Payment
+              <span
+                className="payment-backup-statement"
+              >
+                (Optional)
+              </span>
+            </label>
+            <div
+              className="payment-backup-details"
+            >
+              <span
+                className="payment-backup-action"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon icon-search"
+                />
+                Select card/account
+              </span>
+            </div>
+          </div>
+        </div>
+        <i
+          className="rectangle"
+        />
+      </div>
+    </div>
+  </div>
+</PaymentPlan>
+`;

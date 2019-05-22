@@ -1,0 +1,313 @@
+@import '~shared/style/variables/index.less';
+/* stylelint-disable */
+
+.booking-resources {
+  .fc .time-grid-has-scrollbar .fc-slats-labels-container .fc-slats-labels {
+    border-bottom: 0;
+  }
+
+  .fc-time-grid-event {
+    overflow: hidden !important;
+  }
+
+  .fc-slats-labels {
+    .fc-time {
+      border-top-color: #fff;
+    }
+
+    .fc-widget-content {
+      position: relative;
+
+      > span {
+        position: relative;
+        top: -10px;
+        right: 0;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .fc-header-output {
+    height: 21px;
+    overflow: hidden;
+  }
+
+  .fc-slats-labels-container {
+    border-left: 0;
+  }
+
+  .fc-time-grid-container {
+    border-right: 0;
+  }
+
+  .fc-slats-labels-container table tr {
+    td span {
+      font-size: 12px;
+      color: #313741;
+      opacity: 0.6;
+    }
+
+    &:first-child td span {
+      color: #fff;
+    }
+  }
+
+  .fc-event-container {
+    margin: 0 2.5% 0 0 !important;
+  }
+
+  .fc {
+    .fc-resource-view {
+      .fc-slats-labels td,
+      .fc-time-grid .fc-slats td {
+        position: relative;
+        height: 20px;
+        line-height: 18px;
+
+        > span {
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  .fc-rs-cell {
+    position: initial !important;
+  }
+
+  .fc-rs-event-name,
+  .fc-rs-event-close-time,
+  .fc-rs-event-status b,
+  .fc-rs-event-owner {
+    font-weight: @semibold;
+    line-height: 130%;
+    white-space: normal;
+    color: #313741;
+  }
+
+  .fc-time,
+  .fc-rs-event-time,
+  .fc-rs-event-status {
+    line-height: 130%;
+    white-space: normal;
+    color: #313741;
+  }
+
+  .fc-rs-event-close-time {
+    color: #4a4a4a;
+  }
+
+  .fc-rs-event-text {
+    padding-top: 2px;
+    padding-bottom: 3px;
+  }
+
+  .fc-rs-event-close-time {
+    padding-top: 0;
+  }
+
+  .fc-content {
+    padding: 0 5px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 130%;
+  }
+
+  .fc-event,
+  .fc-event:hover,
+  .ui-widget .fc-event {
+    color: #333;
+  }
+
+  .fc-time-grid-event {
+    border-radius: 0;
+
+    .fc-resizer {
+      color: #999;
+    }
+  }
+
+  .fc-toolbar {
+    padding: 10px 10px;
+    margin-bottom: 0;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+  }
+
+  .booking-icon-firm,
+  .booking-icon-pending {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    vertical-align: middle;
+    border-radius: 12px;
+  }
+
+  .booking-icon-firm {
+    background-color: #e6f6d5;
+    border: 1px solid #c7ed9f;
+  }
+
+  .booking-icon-pending {
+    background-color: #fbebd1;
+    border: 1px solid #f5d092;
+  }
+
+  .resource-state {
+    height: 22px;
+    padding-left: 6px;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 22px;
+    text-align: left;
+    white-space: nowrap;
+    cursor: default;
+    color: @color-blue;
+    background-color: #fff;
+
+    a:hover {
+      color: @color-blue;
+    }
+  }
+
+  .rs-state-tag {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    background: #37c680;
+    border-radius: 2px;
+  }
+
+  .rs-state-tag-type0 {
+    background: @staus-purple;
+  }
+
+  .rs-state-tag-type1 {
+    background: @staus-blue;
+  }
+
+  .rs-state-tag-type2 {
+    background: @staus-green;
+  }
+
+  .fc-no-resource-text {
+    height: 22px;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 22px;
+    text-align: left;
+    color: #748288;
+    background-color: #f0f0f0;
+  }
+
+  .fc-left {
+    h2 {
+      font-weight: normal;
+    }
+  }
+
+  /* Temporarily override the buttons style created by fullcalendar */
+  .fc-state-default {
+    box-shadow: none;
+    height: 1.8em;
+    overflow: hidden;
+    text-align: center;
+    text-shadow: none;
+    cursor: pointer;
+    color: #262b32;
+    background-color: #e6eef1;
+    background-image: none;
+    border: 1px solid #d6e3e8;
+    outline: none;
+    user-select: none;
+
+    &:hover:enabled,
+    &:active:enabled {
+      background-color: #c5d8df;
+      border-color: #b5cdd6;
+    }
+
+    &:active:enabled {
+      box-shadow: inset 0 3px 2px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &:disabled {
+      cursor: default;
+      opacity: 0.45;
+    }
+  }
+
+  .fc-state-active {
+    background-color: #c5d8df;
+    border-color: #b5cdd6;
+  }
+
+  .fc-icon-left-single-arrow {
+    font-family: 'aui_icons';
+
+    &:after {
+      top: 0;
+      left: 0;
+      font-size: 14px/1;
+      content: '\f053';
+    }
+  }
+
+  .fc-icon-right-single-arrow {
+    font-family: 'aui_icons';
+
+    &:after {
+      top: 0;
+      left: 0;
+      font-size: 14px/1;
+      content: '\f054';
+    }
+  }
+
+  .fc-header-container {
+    .fc-scroll {
+      height: 22px;
+    }
+
+    .fc-rs-header-close {
+      position: relative !important;
+      top: -22px !important;
+      right: 0 !important;
+      float: right;
+      width: 22px;
+      height: 22px;
+      padding: 0 !important;
+      font-size: 14px;
+      text-align: right;
+      background: none;
+
+      &:hover {
+        background: none !important;
+
+        a {
+          display: inline-block !important;
+        }
+      }
+
+      a {
+        display: none;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        text-decoration: none;
+        color: #748288;
+        background-color: #e6eef1;
+      }
+    }
+  }
+}

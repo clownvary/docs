@@ -1,0 +1,63 @@
+/* stylelint-disable */
+
+html {
+  font-family: sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: @font-family-base;
+  line-height: @line-height-base;
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    padding: 0;
+    margin: 0;
+    font-family: @font-family-base;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+.reset-box-sizing {
+  & {
+    box-sizing: content-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+}

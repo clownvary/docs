@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index/Payment/components/BasePayer payer alert should render without errors 1`] = `
+<BasePayer
+  showChangeAlert={true}
+>
+  <span>
+    BasePayer
+  </span>
+</BasePayer>
+`;

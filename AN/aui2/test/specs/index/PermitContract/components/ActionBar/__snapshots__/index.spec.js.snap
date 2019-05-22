@@ -1,0 +1,920 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index/PermitContract/components/ActionBar/index should render without errors 1`] = `
+<ActionBar
+  showEmail={true}
+  signatures={Object {}}
+>
+  <div
+    className="actions"
+  >
+    <Button
+      className="btn action-item"
+      loading={false}
+      menuData={Array []}
+      noSubmit={false}
+      onClick={[Function]}
+      size="sm"
+      type="secondary"
+    >
+      <button
+        className="btn btn-secondary btn--sm btn action-item"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        type="submit"
+      >
+        <span>
+          Print
+        </span>
+      </button>
+    </Button>
+    <Button
+      className="btn action-item"
+      loading={false}
+      menuData={Array []}
+      noSubmit={false}
+      onClick={[Function]}
+      size="sm"
+      type="secondary"
+    >
+      <button
+        className="btn btn-secondary btn--sm btn action-item"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        type="submit"
+      >
+        <span>
+          Send Email
+        </span>
+      </button>
+    </Button>
+    <Button
+      className="btn action-item"
+      loading={false}
+      menuData={Array []}
+      noSubmit={false}
+      onClick={[Function]}
+      size="sm"
+      type="secondary"
+    >
+      <button
+        className="btn btn-secondary btn--sm btn action-item"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        type="submit"
+      >
+        <span>
+          Save as PDF
+        </span>
+      </button>
+    </Button>
+    <PrintOptionPopup
+      cancelText="Cancel"
+      confirmText="Print"
+      title="Print Options"
+    >
+      <Alert
+        cancelText="Cancel"
+        confirmText="Print"
+        onCancel={[Function]}
+        onClose={[Function]}
+        onConfirm={[Function]}
+        title="Print Options"
+      >
+        <Modal
+          className="modal--alert undefined"
+          onClose={[Function]}
+          shown={false}
+          title="Print Options"
+        >
+          <div
+            className="modal-wrap"
+            role="dialog"
+          >
+            <div
+              className="modal modal--alert undefined"
+              onKeyDown={[Function]}
+            >
+              <section
+                className="modal-box"
+              >
+                <header
+                  className="modal-header"
+                >
+                  <h3
+                    className="modal-title"
+                  >
+                    Print Options
+                  </h3>
+                  <span
+                    aria-label="close-dialog"
+                    className="icon icon-close modal-close"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="button"
+                    tabIndex="0"
+                  />
+                </header>
+                <div
+                  className="modal-body"
+                >
+                  <div
+                    className="options"
+                  >
+                    <Tabbable
+                      aria-label="option1 undefined checked"
+                      onClick={[Function]}
+                      prefixCls="an-tabbable"
+                    >
+                      <span
+                        className="an-tabbable"
+                        onClick={[Function]}
+                      >
+                        <a
+                          aria-label="option1 undefined checked"
+                          className="an-tabbable__fake-link"
+                          href="javascript:void(0)"
+                          onClick={[Function]}
+                          role="button"
+                        >
+                          <div
+                            className="options-option options-option-selected"
+                          >
+                            <div />
+                            <div>
+                              <i
+                                className="icon icon-check-circle"
+                              />
+                            </div>
+                          </div>
+                          <span
+                            style={
+                              Object {
+                                "display": "none",
+                              }
+                            }
+                          >
+                            wcag_hidden_text
+                          </span>
+                        </a>
+                      </span>
+                    </Tabbable>
+                    <Tabbable
+                      aria-label="option2 Schedule unchecked"
+                      onClick={[Function]}
+                      prefixCls="an-tabbable"
+                    >
+                      <span
+                        className="an-tabbable"
+                        onClick={[Function]}
+                      >
+                        <a
+                          aria-label="option2 Schedule unchecked"
+                          className="an-tabbable__fake-link"
+                          href="javascript:void(0)"
+                          onClick={[Function]}
+                          role="button"
+                        >
+                          <div
+                            className="options-option"
+                          >
+                            <div>
+                              Schedule
+                            </div>
+                            <div />
+                          </div>
+                          <span
+                            style={
+                              Object {
+                                "display": "none",
+                              }
+                            }
+                          >
+                            wcag_hidden_text
+                          </span>
+                        </a>
+                      </span>
+                    </Tabbable>
+                    <Tabbable
+                      aria-label="option3 Amendment History unchecked"
+                      onClick={[Function]}
+                      prefixCls="an-tabbable"
+                    >
+                      <span
+                        className="an-tabbable"
+                        onClick={[Function]}
+                      >
+                        <a
+                          aria-label="option3 Amendment History unchecked"
+                          className="an-tabbable__fake-link"
+                          href="javascript:void(0)"
+                          onClick={[Function]}
+                          role="button"
+                        >
+                          <div
+                            className="options-option is-disabled"
+                          >
+                            <div>
+                              Amendment History
+                            </div>
+                            <div />
+                          </div>
+                          <span
+                            style={
+                              Object {
+                                "display": "none",
+                              }
+                            }
+                          >
+                            wcag_hidden_text
+                          </span>
+                        </a>
+                      </span>
+                    </Tabbable>
+                    <div
+                      className="options-recurring"
+                    >
+                      <Checkbox
+                        aria-label="checkbox Display all bookings for recurring unselected"
+                        checked={false}
+                        className="options-recurring-checkbox"
+                        onChange={[Function]}
+                        title="heckbox Display"
+                      >
+                        <CheckboxComponent
+                          aria-label="checkbox Display all bookings for recurring unselected"
+                          checked={false}
+                          className="options-recurring-checkbox"
+                          onChange={[Function]}
+                          title="heckbox Display"
+                        >
+                          <label
+                            className="checkbox-wrapper options-recurring-checkbox"
+                            htmlFor="checkbox_attr_for_1"
+                          >
+                            <span
+                              className="checkbox"
+                            >
+                              <input
+                                aria-checked={false}
+                                aria-label="checkbox Display all bookings for recurring unselected"
+                                checked={false}
+                                className="checkbox__input"
+                                id="checkbox_attr_for_1"
+                                onChange={[Function]}
+                                role="checkbox"
+                                title="heckbox Display"
+                                type="checkbox"
+                              />
+                              <span
+                                className="checkbox__inner"
+                              />
+                              <span
+                                className="checkbox__text"
+                              >
+                                Display all bookings for recurring
+                              </span>
+                            </span>
+                          </label>
+                        </CheckboxComponent>
+                      </Checkbox>
+                    </div>
+                    <div
+                      className="options-recurring"
+                    >
+                      <Checkbox
+                        aria-label="checkbox Show detailed breakdown of fees unselected"
+                        checked={false}
+                        className="options-recurring-checkbox"
+                        onChange={[Function]}
+                      >
+                        <CheckboxComponent
+                          aria-label="checkbox Show detailed breakdown of fees unselected"
+                          checked={false}
+                          className="options-recurring-checkbox"
+                          onChange={[Function]}
+                        >
+                          <label
+                            className="checkbox-wrapper options-recurring-checkbox"
+                            htmlFor="checkbox_attr_for_2"
+                          >
+                            <span
+                              className="checkbox"
+                            >
+                              <input
+                                aria-checked={false}
+                                aria-label="checkbox Show detailed breakdown of fees unselected"
+                                checked={false}
+                                className="checkbox__input"
+                                id="checkbox_attr_for_2"
+                                onChange={[Function]}
+                                role="checkbox"
+                                type="checkbox"
+                              />
+                              <span
+                                className="checkbox__inner"
+                              />
+                              <span
+                                className="checkbox__text"
+                              >
+                                Show detailed breakdown of fees
+                              </span>
+                            </span>
+                          </label>
+                        </CheckboxComponent>
+                      </Checkbox>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="modal-footer"
+                >
+                  <Button
+                    className=""
+                    loading={false}
+                    menuData={Array []}
+                    noSubmit={false}
+                    onClick={[Function]}
+                    type="secondary"
+                  >
+                    <button
+                      className="btn btn-secondary"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      onMouseOver={[Function]}
+                      type="submit"
+                    >
+                      <span>
+                        Cancel
+                      </span>
+                    </button>
+                  </Button>
+                  <Button
+                    className=""
+                    loading={false}
+                    menuData={Array []}
+                    noSubmit={false}
+                    onClick={[Function]}
+                    type="strong"
+                  >
+                    <button
+                      className="btn btn-strong"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      onMouseOver={[Function]}
+                      type="submit"
+                    >
+                      <span>
+                        Print
+                      </span>
+                    </button>
+                  </Button>
+                </div>
+              </section>
+            </div>
+            <div
+              className="modal-mask"
+            />
+          </div>
+        </Modal>
+      </Alert>
+    </PrintOptionPopup>
+    <EmailPopup
+      cancelText="Cancel"
+      confirmText="Send"
+      signatures={Object {}}
+      title="Email Detail"
+    >
+      <Alert
+        cancelText="Cancel"
+        className="emailPopup"
+        confirmText="Send"
+        disableConfirm={true}
+        onConfirm={[Function]}
+        title="Email Detail"
+      >
+        <Modal
+          className="modal--alert emailPopup"
+          onClose={[Function]}
+          shown={false}
+          title="Email Detail"
+        >
+          <div
+            className="modal-wrap"
+            role="dialog"
+          >
+            <div
+              className="modal modal--alert emailPopup"
+              onKeyDown={[Function]}
+            >
+              <section
+                className="modal-box"
+              >
+                <header
+                  className="modal-header"
+                >
+                  <h3
+                    className="modal-title"
+                  >
+                    Email Detail
+                  </h3>
+                  <span
+                    aria-label="close-dialog"
+                    className="icon icon-close modal-close"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="button"
+                    tabIndex="0"
+                  />
+                </header>
+                <div
+                  className="modal-body"
+                >
+                  <div
+                    className="emailPopup__grid"
+                  >
+                    <div
+                      className="emailPopup__label"
+                    >
+                      Recipients
+                    </div>
+                    <div
+                      className="emailPopup__item "
+                    >
+                      <Input
+                        aria-label="Recipients"
+                        icon={false}
+                        inputRef={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        size="md"
+                        type="text"
+                        value=""
+                      >
+                        <div
+                          className="input-group input-group--md"
+                        >
+                          <input
+                            aria-label="Recipients"
+                            className="input input-group__field input__field"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onFocus={[Function]}
+                            onInput={[Function]}
+                            onKeyPress={[Function]}
+                            onPaste={[Function]}
+                            type="text"
+                            value=""
+                          />
+                        </div>
+                      </Input>
+                    </div>
+                  </div>
+                  <div
+                    className="emailPopup__grid"
+                  >
+                    <div
+                      className="emailPopup__label emailPopup__label"
+                    >
+                      Email Subject
+                    </div>
+                    <div
+                      className="emailPopup__item"
+                    >
+                      <Input
+                        aria-label="Email Subject"
+                        icon={false}
+                        inputRef={[Function]}
+                        maxLength={50}
+                        onChange={[Function]}
+                        size="md"
+                        type="text"
+                        value=""
+                      >
+                        <div
+                          className="input-group input-group--md"
+                        >
+                          <input
+                            aria-label="Email Subject"
+                            className="input input-group__field input__field"
+                            maxLength={50}
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onInput={[Function]}
+                            onKeyPress={[Function]}
+                            onPaste={[Function]}
+                            type="text"
+                            value=""
+                          />
+                        </div>
+                      </Input>
+                    </div>
+                  </div>
+                  <div
+                    className="emailPopup__grid"
+                  >
+                    <div
+                      className="emailPopup__label"
+                    >
+                      Email Text
+                    </div>
+                    <div
+                      className="emailPopup__item"
+                    >
+                      <TextArea
+                        aria-label="Email Text"
+                        className="input"
+                        onChange={[Function]}
+                        value=""
+                      >
+                        <textarea
+                          aria-label="Email Text"
+                          className="input"
+                          onChange={[Function]}
+                          value=""
+                        />
+                      </TextArea>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="modal-footer"
+                >
+                  <Button
+                    className=""
+                    loading={false}
+                    menuData={Array []}
+                    noSubmit={false}
+                    onClick={[Function]}
+                    type="secondary"
+                  >
+                    <button
+                      className="btn btn-secondary"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      onMouseOver={[Function]}
+                      type="submit"
+                    >
+                      <span>
+                        Cancel
+                      </span>
+                    </button>
+                  </Button>
+                  <Button
+                    className=""
+                    disabled={true}
+                    loading={false}
+                    menuData={Array []}
+                    noSubmit={false}
+                    onClick={[Function]}
+                    type="strong"
+                  >
+                    <button
+                      className="btn btn-strong"
+                      disabled={true}
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      onMouseOver={[Function]}
+                      type="submit"
+                    >
+                      <span>
+                        Send
+                      </span>
+                    </button>
+                  </Button>
+                </div>
+              </section>
+            </div>
+            <div
+              className="modal-mask"
+            />
+          </div>
+        </Modal>
+      </Alert>
+    </EmailPopup>
+    <PdfOptionPopup
+      cancelText="Cancel"
+      confirmText="Save"
+      title="Save PDF"
+    >
+      <Alert
+        cancelText="Cancel"
+        confirmText="Save"
+        onCancel={[Function]}
+        onClose={[Function]}
+        onConfirm={[Function]}
+        title="Save PDF"
+      >
+        <Modal
+          className="modal--alert undefined"
+          onClose={[Function]}
+          shown={false}
+          title="Save PDF"
+        >
+          <div
+            className="modal-wrap"
+            role="dialog"
+          >
+            <div
+              className="modal modal--alert undefined"
+              onKeyDown={[Function]}
+            >
+              <section
+                className="modal-box"
+              >
+                <header
+                  className="modal-header"
+                >
+                  <h3
+                    className="modal-title"
+                  >
+                    Save PDF
+                  </h3>
+                  <span
+                    aria-label="close-dialog"
+                    className="icon icon-close modal-close"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="button"
+                    tabIndex="0"
+                  />
+                </header>
+                <div
+                  className="modal-body"
+                >
+                  <div
+                    className="options"
+                  >
+                    <Tabbable
+                      aria-label="option1 undefined checked"
+                      onClick={[Function]}
+                      prefixCls="an-tabbable"
+                    >
+                      <span
+                        className="an-tabbable"
+                        onClick={[Function]}
+                      >
+                        <a
+                          aria-label="option1 undefined checked"
+                          className="an-tabbable__fake-link"
+                          href="javascript:void(0)"
+                          onClick={[Function]}
+                          role="button"
+                        >
+                          <div
+                            className="options-option options-option-selected"
+                          >
+                            <div />
+                            <div>
+                              <i
+                                className="icon icon-check-circle"
+                              />
+                            </div>
+                          </div>
+                          <span
+                            style={
+                              Object {
+                                "display": "none",
+                              }
+                            }
+                          >
+                            wcag_hidden_text
+                          </span>
+                        </a>
+                      </span>
+                    </Tabbable>
+                    <Tabbable
+                      aria-label="option2 Schedule unchecked"
+                      onClick={[Function]}
+                      prefixCls="an-tabbable"
+                    >
+                      <span
+                        className="an-tabbable"
+                        onClick={[Function]}
+                      >
+                        <a
+                          aria-label="option2 Schedule unchecked"
+                          className="an-tabbable__fake-link"
+                          href="javascript:void(0)"
+                          onClick={[Function]}
+                          role="button"
+                        >
+                          <div
+                            className="options-option"
+                          >
+                            <div>
+                              Schedule
+                            </div>
+                            <div />
+                          </div>
+                          <span
+                            style={
+                              Object {
+                                "display": "none",
+                              }
+                            }
+                          >
+                            wcag_hidden_text
+                          </span>
+                        </a>
+                      </span>
+                    </Tabbable>
+                    <Tabbable
+                      aria-label="option3 Amendment History unchecked"
+                      onClick={[Function]}
+                      prefixCls="an-tabbable"
+                    >
+                      <span
+                        className="an-tabbable"
+                        onClick={[Function]}
+                      >
+                        <a
+                          aria-label="option3 Amendment History unchecked"
+                          className="an-tabbable__fake-link"
+                          href="javascript:void(0)"
+                          onClick={[Function]}
+                          role="button"
+                        >
+                          <div
+                            className="options-option is-disabled"
+                          >
+                            <div>
+                              Amendment History
+                            </div>
+                            <div />
+                          </div>
+                          <span
+                            style={
+                              Object {
+                                "display": "none",
+                              }
+                            }
+                          >
+                            wcag_hidden_text
+                          </span>
+                        </a>
+                      </span>
+                    </Tabbable>
+                    <div
+                      className="options-recurring"
+                    >
+                      <Checkbox
+                        aria-label="checkbox Display all bookings for recurring unselected"
+                        checked={false}
+                        className="options-recurring-checkbox"
+                        onChange={[Function]}
+                        title="heckbox Display"
+                      >
+                        <CheckboxComponent
+                          aria-label="checkbox Display all bookings for recurring unselected"
+                          checked={false}
+                          className="options-recurring-checkbox"
+                          onChange={[Function]}
+                          title="heckbox Display"
+                        >
+                          <label
+                            className="checkbox-wrapper options-recurring-checkbox"
+                            htmlFor="checkbox_attr_for_3"
+                          >
+                            <span
+                              className="checkbox"
+                            >
+                              <input
+                                aria-checked={false}
+                                aria-label="checkbox Display all bookings for recurring unselected"
+                                checked={false}
+                                className="checkbox__input"
+                                id="checkbox_attr_for_3"
+                                onChange={[Function]}
+                                role="checkbox"
+                                title="heckbox Display"
+                                type="checkbox"
+                              />
+                              <span
+                                className="checkbox__inner"
+                              />
+                              <span
+                                className="checkbox__text"
+                              >
+                                Display all bookings for recurring
+                              </span>
+                            </span>
+                          </label>
+                        </CheckboxComponent>
+                      </Checkbox>
+                    </div>
+                    <div
+                      className="options-recurring"
+                    >
+                      <Checkbox
+                        aria-label="checkbox Show detailed breakdown of fees unselected"
+                        checked={false}
+                        className="options-recurring-checkbox"
+                        onChange={[Function]}
+                      >
+                        <CheckboxComponent
+                          aria-label="checkbox Show detailed breakdown of fees unselected"
+                          checked={false}
+                          className="options-recurring-checkbox"
+                          onChange={[Function]}
+                        >
+                          <label
+                            className="checkbox-wrapper options-recurring-checkbox"
+                            htmlFor="checkbox_attr_for_4"
+                          >
+                            <span
+                              className="checkbox"
+                            >
+                              <input
+                                aria-checked={false}
+                                aria-label="checkbox Show detailed breakdown of fees unselected"
+                                checked={false}
+                                className="checkbox__input"
+                                id="checkbox_attr_for_4"
+                                onChange={[Function]}
+                                role="checkbox"
+                                type="checkbox"
+                              />
+                              <span
+                                className="checkbox__inner"
+                              />
+                              <span
+                                className="checkbox__text"
+                              >
+                                Show detailed breakdown of fees
+                              </span>
+                            </span>
+                          </label>
+                        </CheckboxComponent>
+                      </Checkbox>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="modal-footer"
+                >
+                  <Button
+                    className=""
+                    loading={false}
+                    menuData={Array []}
+                    noSubmit={false}
+                    onClick={[Function]}
+                    type="secondary"
+                  >
+                    <button
+                      className="btn btn-secondary"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      onMouseOver={[Function]}
+                      type="submit"
+                    >
+                      <span>
+                        Cancel
+                      </span>
+                    </button>
+                  </Button>
+                  <Button
+                    className=""
+                    loading={false}
+                    menuData={Array []}
+                    noSubmit={false}
+                    onClick={[Function]}
+                    type="strong"
+                  >
+                    <button
+                      className="btn btn-strong"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      onMouseOver={[Function]}
+                      type="submit"
+                    >
+                      <span>
+                        Save
+                      </span>
+                    </button>
+                  </Button>
+                </div>
+              </section>
+            </div>
+            <div
+              className="modal-mask"
+            />
+          </div>
+        </Modal>
+      </Alert>
+    </PdfOptionPopup>
+  </div>
+</ActionBar>
+`;

@@ -1,0 +1,27 @@
+import './bookable_resources.json';
+import './centers.json';
+import './definedDateRange.json';
+import './eventBookingItems.json';
+import './eventTypes.json';
+import './facilityTypes.json';
+import './onboardingfeature.json';
+import './patternoptions.json';
+import './prepCode.json';
+import './recurringbooking.error.json';
+import './recurringbooking.json';
+import './rentalBlock.json';
+import './resourceBookingInfos.json';
+import './resourceEventTypes.json';
+import './resourceTypes.json';
+import './save_permit_filters.json';
+import './scheduleTypes.json';
+import './setUpCleanUp.json';
+import './sites.json';
+import './status.json';
+import './quickView.json';
+import './deleteQuickView.json';
+import './saveQuickView.json';
+import './updateSelectedQuickView.json';
+import './selectedResources.json';
+import './applyRecurringBookings.json';
+

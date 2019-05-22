@@ -1,0 +1,698 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shared -> components -> Survey render component correctly 1`] = `
+<AUISurvey
+  canDelete={true}
+  changeQuestion={[Function]}
+  containerClassName=""
+  deleteQuestion={[Function]}
+  isQuestionsChanged={false}
+  questions={
+    Array [
+      Object {
+        "answerFormat": "numbersOnly",
+        "answerMaxLength": 100,
+        "answerRequired": false,
+        "answerType": "userEntry",
+        "answers": Array [],
+        "customquestionID": 524,
+        "customquestionIndex": "184",
+        "defaultAnswer": "",
+        "hint": "",
+        "isMainQuestion": true,
+        "parentQuestionID": 0,
+        "parentQuestionIndex": 0,
+        "path": Array [
+          0,
+        ],
+        "permitQuestion": true,
+        "question": "numbersOnly",
+        "readOnly": false,
+        "title": "numbersOnly",
+        "useAnswerCode": false,
+      },
+    ]
+  }
+  readOnly={false}
+  showQuestions={true}
+>
+  <div>
+    <div
+      className="survey-container"
+    >
+      <Collapse
+        activeKey="survey"
+        dataSource={Array []}
+        multiple={true}
+        onChange={[Function]}
+        prefixCls="an-collapse"
+      >
+        <div
+          className="an-collapse"
+        >
+          <Panel
+            Header={
+              <span>
+                <span>
+                  Custom Question
+                </span>
+              </span>
+            }
+            headerButtonId="default"
+            isActive={true}
+            key="survey"
+            onItemClick={[Function]}
+            prefixCls="an-collapse"
+          >
+            <div
+              className="an-collapse-item is-expanded"
+            >
+              <a
+                aria-expanded={true}
+                className="an-collapse-item__header"
+                href="javascript:void(0)"
+                onClick={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  onClick={[Function]}
+                >
+                  <span>
+                    <span>
+                      Custom Question
+                    </span>
+                  </span>
+                  <i
+                    className="icon icon-chevron-down"
+                    onClick={[Function]}
+                    tabIndex={0}
+                  />
+                </div>
+              </a>
+              <div
+                className="an-collapse-item__content"
+              >
+                <div
+                  className="header-section"
+                >
+                  <span>
+                    QUESTION DESCRIPTION
+                  </span>
+                </div>
+                <Survey
+                  data={
+                    Array [
+                      Object {
+                        "answers": Array [],
+                        "errorMsgs": Array [],
+                        "format": 8,
+                        "hint": "",
+                        "icon": "icon-trash",
+                        "id": "184",
+                        "isShown": true,
+                        "maxLength": 100,
+                        "onChange": [Function],
+                        "onIconClick": [Function],
+                        "path": Array [
+                          0,
+                        ],
+                        "placeHolder": "",
+                        "readonly": false,
+                        "required": false,
+                        "text": "numbersOnly",
+                        "type": 0,
+                        "value": "",
+                      },
+                    ]
+                  }
+                  layout="horizontal"
+                  onChange={[Function]}
+                  onIconClick={[Function]}
+                  questionContainerClass="afx-xl-5-12"
+                  questionLabelClass="afx-xl-3-12"
+                >
+                  <div
+                    className="an-survey"
+                  >
+                    <Question
+                      answers={Array []}
+                      errorMsgs={Array []}
+                      format={8}
+                      hint=""
+                      icon="icon-trash"
+                      id="184"
+                      isShown={true}
+                      key="0"
+                      maxLength={100}
+                      onChange={[Function]}
+                      onIconClick={[Function]}
+                      path={
+                        Array [
+                          0,
+                        ]
+                      }
+                      placeHolder=""
+                      questionContainerClass="afx-xl-5-12"
+                      questionLabelClass="afx-xl-3-12"
+                      readonly={false}
+                      required={false}
+                      text="numbersOnly"
+                      type={0}
+                      value=""
+                    >
+                      <div
+                        className="question aaui-flex"
+                        key="question_184"
+                      >
+                        <div
+                          className="afx-col question-label afx-xl-3-12"
+                        >
+                          <div
+                            className="question-label__name"
+                          >
+                            <span
+                              className="icon icon-circle"
+                            />
+                            <SafeText
+                              className=""
+                              dangerMode={true}
+                              data-qa-id=""
+                              decode={true}
+                              tagName="span"
+                              text="numbersOnly"
+                            >
+                              <span
+                                className=""
+                                dangerouslySetInnerHTML={
+                                  Object {
+                                    "__html": "numbersOnly",
+                                  }
+                                }
+                                data-qa-id=""
+                              />
+                            </SafeText>
+                          </div>
+                          <div
+                            className="question-label__hint"
+                          >
+                            <SafeText
+                              dangerMode={true}
+                              data-qa-id=""
+                              decode={true}
+                              tagName="span"
+                              text=""
+                            >
+                              <span
+                                dangerouslySetInnerHTML={
+                                  Object {
+                                    "__html": "",
+                                  }
+                                }
+                                data-qa-id=""
+                              />
+                            </SafeText>
+                          </div>
+                        </div>
+                        <div
+                          className="afx-col question-answer-container afx-xl-5-12"
+                        >
+                          <div
+                            className="question-answer"
+                          >
+                            <Input
+                              disabled={false}
+                              formula={/\\\\d/}
+                              icon={false}
+                              inputRef={[Function]}
+                              maxLength={100}
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              placeholder=""
+                              size="md"
+                              type="text"
+                              value=""
+                            >
+                              <div
+                                className="input-group input-group--md"
+                              >
+                                <input
+                                  className="input input-group__field input__field"
+                                  disabled={false}
+                                  maxLength={100}
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  onInput={[Function]}
+                                  onKeyPress={[Function]}
+                                  onPaste={[Function]}
+                                  placeholder=""
+                                  type="text"
+                                  value=""
+                                />
+                              </div>
+                            </Input>
+                          </div>
+                        </div>
+                        <div
+                          className="afx-col afx-xl-1-12 question-icon"
+                        >
+                          <span
+                            className="icon icon-trash link"
+                            onClick={[Function]}
+                          />
+                        </div>
+                      </div>
+                    </Question>
+                  </div>
+                </Survey>
+              </div>
+            </div>
+          </Panel>
+        </div>
+      </Collapse>
+    </div>
+  </div>
+</AUISurvey>
+`;
+
+exports[`shared -> components -> Survey render component correctly when isQuestionsChanged is true 1`] = `
+<AUISurvey
+  canDelete={true}
+  changeQuestion={[Function]}
+  containerClassName=""
+  deleteQuestion={[Function]}
+  isQuestionsChanged={true}
+  questions={
+    Array [
+      Object {
+        "answerFormat": "numbersOnly",
+        "answerMaxLength": 100,
+        "answerRequired": false,
+        "answerType": "userEntry",
+        "answers": Array [],
+        "customquestionID": 524,
+        "customquestionIndex": "184",
+        "defaultAnswer": "",
+        "hint": "",
+        "isMainQuestion": true,
+        "parentQuestionID": 0,
+        "parentQuestionIndex": 0,
+        "path": Array [
+          0,
+        ],
+        "permitQuestion": true,
+        "question": "numbersOnly",
+        "readOnly": false,
+        "title": "numbersOnly",
+        "useAnswerCode": false,
+      },
+    ]
+  }
+  readOnly={false}
+  showQuestions={true}
+>
+  <div>
+    <div
+      className="survey-container"
+    >
+      <Collapse
+        activeKey="survey"
+        dataSource={Array []}
+        multiple={true}
+        onChange={[Function]}
+        prefixCls="an-collapse"
+      >
+        <div
+          className="an-collapse"
+        >
+          <Panel
+            Header={
+              <span>
+                <span>
+                  Custom Question
+                </span>
+                <span
+                  className="update-changed-label"
+                >
+                  UPDATED
+                </span>
+              </span>
+            }
+            headerButtonId="default"
+            isActive={true}
+            key="survey"
+            onItemClick={[Function]}
+            prefixCls="an-collapse"
+          >
+            <div
+              className="an-collapse-item is-expanded"
+            >
+              <a
+                aria-expanded={true}
+                className="an-collapse-item__header"
+                href="javascript:void(0)"
+                onClick={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  onClick={[Function]}
+                >
+                  <span>
+                    <span>
+                      Custom Question
+                    </span>
+                    <span
+                      className="update-changed-label"
+                    >
+                      UPDATED
+                    </span>
+                  </span>
+                  <i
+                    className="icon icon-chevron-down"
+                    onClick={[Function]}
+                    tabIndex={0}
+                  />
+                </div>
+              </a>
+              <div
+                className="an-collapse-item__content"
+              >
+                <div
+                  className="header-section"
+                >
+                  <span>
+                    QUESTION DESCRIPTION
+                  </span>
+                </div>
+                <Survey
+                  data={
+                    Array [
+                      Object {
+                        "answers": Array [],
+                        "errorMsgs": Array [],
+                        "format": 8,
+                        "hint": "",
+                        "icon": "icon-trash",
+                        "id": "184",
+                        "isShown": true,
+                        "maxLength": 100,
+                        "onChange": [Function],
+                        "onIconClick": [Function],
+                        "path": Array [
+                          0,
+                        ],
+                        "placeHolder": "",
+                        "readonly": false,
+                        "required": false,
+                        "text": "numbersOnly",
+                        "type": 0,
+                        "value": "",
+                      },
+                    ]
+                  }
+                  layout="horizontal"
+                  onChange={[Function]}
+                  onIconClick={[Function]}
+                  questionContainerClass="afx-xl-5-12"
+                  questionLabelClass="afx-xl-3-12"
+                >
+                  <div
+                    className="an-survey"
+                  >
+                    <Question
+                      answers={Array []}
+                      errorMsgs={Array []}
+                      format={8}
+                      hint=""
+                      icon="icon-trash"
+                      id="184"
+                      isShown={true}
+                      key="0"
+                      maxLength={100}
+                      onChange={[Function]}
+                      onIconClick={[Function]}
+                      path={
+                        Array [
+                          0,
+                        ]
+                      }
+                      placeHolder=""
+                      questionContainerClass="afx-xl-5-12"
+                      questionLabelClass="afx-xl-3-12"
+                      readonly={false}
+                      required={false}
+                      text="numbersOnly"
+                      type={0}
+                      value=""
+                    >
+                      <div
+                        className="question aaui-flex"
+                        key="question_184"
+                      >
+                        <div
+                          className="afx-col question-label afx-xl-3-12"
+                        >
+                          <div
+                            className="question-label__name"
+                          >
+                            <span
+                              className="icon icon-circle"
+                            />
+                            <SafeText
+                              className=""
+                              dangerMode={true}
+                              data-qa-id=""
+                              decode={true}
+                              tagName="span"
+                              text="numbersOnly"
+                            >
+                              <span
+                                className=""
+                                dangerouslySetInnerHTML={
+                                  Object {
+                                    "__html": "numbersOnly",
+                                  }
+                                }
+                                data-qa-id=""
+                              />
+                            </SafeText>
+                          </div>
+                          <div
+                            className="question-label__hint"
+                          >
+                            <SafeText
+                              dangerMode={true}
+                              data-qa-id=""
+                              decode={true}
+                              tagName="span"
+                              text=""
+                            >
+                              <span
+                                dangerouslySetInnerHTML={
+                                  Object {
+                                    "__html": "",
+                                  }
+                                }
+                                data-qa-id=""
+                              />
+                            </SafeText>
+                          </div>
+                        </div>
+                        <div
+                          className="afx-col question-answer-container afx-xl-5-12"
+                        >
+                          <div
+                            className="question-answer"
+                          >
+                            <Input
+                              disabled={false}
+                              formula={/\\\\d/}
+                              icon={false}
+                              inputRef={[Function]}
+                              maxLength={100}
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              placeholder=""
+                              size="md"
+                              type="text"
+                              value=""
+                            >
+                              <div
+                                className="input-group input-group--md"
+                              >
+                                <input
+                                  className="input input-group__field input__field"
+                                  disabled={false}
+                                  maxLength={100}
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  onInput={[Function]}
+                                  onKeyPress={[Function]}
+                                  onPaste={[Function]}
+                                  placeholder=""
+                                  type="text"
+                                  value=""
+                                />
+                              </div>
+                            </Input>
+                          </div>
+                        </div>
+                        <div
+                          className="afx-col afx-xl-1-12 question-icon"
+                        >
+                          <span
+                            className="icon icon-trash link"
+                            onClick={[Function]}
+                          />
+                        </div>
+                      </div>
+                    </Question>
+                  </div>
+                </Survey>
+              </div>
+            </div>
+          </Panel>
+        </div>
+      </Collapse>
+    </div>
+  </div>
+</AUISurvey>
+`;
+
+exports[`shared -> components -> Survey render component correctly when questions is empty 1`] = `
+<AUISurvey
+  canDelete={true}
+  changeQuestion={[Function]}
+  containerClassName=""
+  deleteQuestion={[Function]}
+  isQuestionsChanged={false}
+  questions={Array []}
+  readOnly={false}
+  showQuestions={true}
+>
+  <div>
+    <div
+      className="survey-container"
+    >
+      <Collapse
+        activeKey="survey"
+        dataSource={Array []}
+        multiple={true}
+        onChange={[Function]}
+        prefixCls="an-collapse"
+      >
+        <div
+          className="an-collapse"
+        >
+          <Panel
+            Header={
+              <span>
+                <span>
+                  Custom Question
+                </span>
+              </span>
+            }
+            headerButtonId="default"
+            isActive={true}
+            key="survey"
+            onItemClick={[Function]}
+            prefixCls="an-collapse"
+          >
+            <div
+              className="an-collapse-item is-expanded"
+            >
+              <a
+                aria-expanded={true}
+                className="an-collapse-item__header"
+                href="javascript:void(0)"
+                onClick={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  onClick={[Function]}
+                >
+                  <span>
+                    <span>
+                      Custom Question
+                    </span>
+                  </span>
+                  <i
+                    className="icon icon-chevron-down"
+                    onClick={[Function]}
+                    tabIndex={0}
+                  />
+                </div>
+              </a>
+              <div
+                className="an-collapse-item__content"
+              >
+                <div
+                  className="header-section"
+                >
+                  <span>
+                    QUESTION DESCRIPTION
+                  </span>
+                </div>
+                <Survey
+                  data={Array []}
+                  layout="horizontal"
+                  onChange={[Function]}
+                  onIconClick={[Function]}
+                  questionContainerClass="afx-xl-5-12"
+                  questionLabelClass="afx-xl-3-12"
+                >
+                  <div
+                    className="an-survey"
+                  />
+                </Survey>
+              </div>
+            </div>
+          </Panel>
+        </div>
+      </Collapse>
+    </div>
+  </div>
+</AUISurvey>
+`;
+
+exports[`shared -> components -> Survey render component correctly when showQuestions is false 1`] = `
+<AUISurvey
+  canDelete={true}
+  changeQuestion={[Function]}
+  containerClassName=""
+  deleteQuestion={[Function]}
+  isQuestionsChanged={false}
+  questions={
+    Array [
+      Object {
+        "answerFormat": "numbersOnly",
+        "answerMaxLength": 100,
+        "answerRequired": false,
+        "answerType": "userEntry",
+        "answers": Array [],
+        "customquestionID": 524,
+        "customquestionIndex": "184",
+        "defaultAnswer": "",
+        "hint": "",
+        "isMainQuestion": true,
+        "parentQuestionID": 0,
+        "parentQuestionIndex": 0,
+        "path": Array [
+          0,
+        ],
+        "permitQuestion": true,
+        "question": "numbersOnly",
+        "readOnly": false,
+        "title": "numbersOnly",
+        "useAnswerCode": false,
+      },
+    ]
+  }
+  readOnly={false}
+  showQuestions={false}
+>
+  <div />
+</AUISurvey>
+`;

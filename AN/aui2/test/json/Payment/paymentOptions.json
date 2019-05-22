@@ -1,0 +1,44 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "total_page": 0,
+      "page_number": 0,
+      "total_records": 0
+    }
+  },
+  "body": {
+    "payment_options": [
+      {
+        "id": 1,
+        "name": "Cash 1",
+        "selected": true
+      }, {
+        "id": 2,
+        "name": "Check 1",
+        "selected": false
+      }, {
+        "id": 3,
+        "name": "Credit Card 1",
+        "selected": false
+      }, {
+        "id": 7,
+        "name": "Gift Card 1",
+        "selected": false
+      }, {
+        "id": 6,
+        "name": "Credit Account 1",
+        "selected": false
+      }, {
+        "id": 4,
+        "name": "Debit Card 1",
+        "selected": false
+      }, {
+        "id": 5,
+        "name": "Electronic Checkcc 1",
+        "selected": false
+      }
+    ]
+  }
+}

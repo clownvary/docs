@@ -1,0 +1,5 @@
+{
+  "filename": "Payment",
+  "isModule": true,
+  "template": "./index.jade"
+}

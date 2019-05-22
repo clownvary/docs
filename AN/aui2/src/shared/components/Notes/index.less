@@ -1,0 +1,67 @@
+@import '~shared/style/variables/index.less';
+
+.notes-section {
+  color: #313741;
+
+  .title {
+    height: 36px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: @semibold;
+    line-height: 1.5;
+
+    .icon {
+      position: relative;
+      top: -2px;
+      width: 16px;
+      height: 36px;
+      padding-left: 10px;
+      margin: 0;
+      font-size: 16px;
+      line-height: 2.2;
+      cursor: pointer;
+      color: @color-blue;
+
+      &:hover {
+        color: @color-blue-darker;
+      }
+    }
+  }
+
+  .section-container {
+    section {
+      &:first-child {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: inline-block;
+        width: 120px;
+        height: 24px;
+        padding-right: 20px;
+        font-size: 16px;
+        font-weight: @semibold;
+        line-height: 1.5;
+        text-align: right;
+        vertical-align: top;
+      }
+
+      textarea {
+        width: ~'calc(100% - 165px)';
+        height: 130px;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 1;
+        background-color: #fff;
+        border: solid 1px #ccc;
+        border-radius: 3px;
+        resize: none;
+      }
+
+      .textarea-disabled {
+        color: #b3bdc1;
+        background-color: #e6eef1;
+      }
+    }
+  }
+}

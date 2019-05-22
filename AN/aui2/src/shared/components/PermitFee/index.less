@@ -1,0 +1,561 @@
+@import '~shared/style/variables/index.less';
+/* stylelint-disable */
+
+.permit-fee {
+  padding-bottom: 30px;
+  line-height: 24px;
+
+  &__reset {
+    font-weight: @semibold;
+
+    &.disabled {
+      cursor: not-allowed;
+      opacity: 0.45;
+    }
+  }
+
+  &-title {
+    font-size: 20px;
+    font-weight: @semibold;
+  }
+
+  &-list-header {
+    padding: 20px 10px 14px 9px;
+    color: #748288;
+  }
+
+  &-list {
+    border-top: solid 2px #d6d7da;
+    border-bottom: solid 2px #d6d7da;
+
+    .list-wrapper {
+      .item {
+        padding: 10px 1px 10px 9px;
+        padding-right: 10px;
+        border-top: dsdotted 1px #d6d7da;
+      }
+
+      &:first-child {
+        .item {
+          border-top: 0;
+        }
+      }
+    }
+
+    .fee-date {
+      display: inline-block;
+      min-width: 82px;
+    }
+
+    .fee-time {
+      display: inline-block;
+      padding: 0 8px;
+    }
+
+    .fee-padding-left {
+      padding-left: 8px;
+    }
+  }
+
+  &-list-header,
+  &-list,
+  &-total {
+    .afx-col {
+      position: relative;
+      font-size: 14px;
+    }
+
+    .afx-col-name {
+      font-size: 16px;
+      word-break: break-all;
+      word-wrap: break-word;
+
+      > p {
+        margin-top: 6px;
+        margin-right: 12px;
+        font-size: 14px;
+        line-height: 16px;
+        word-break: break-word;
+        word-wrap: break-word;
+        color: #748288;
+      }
+    }
+
+    .fee-amount-right {
+      padding-right: 30px;
+    }
+  }
+
+  .afx-col-right {
+    text-align: right;
+  }
+
+  .item-detail {
+    display: none;
+    padding-left: 20px;
+    background: #eef9fd;
+
+    .item-detail-title {
+      padding: 0 10px;
+      color: #738187;
+
+      .afx-col {
+        font-size: 12px;
+      }
+    }
+
+    .item-detail-list-warpper {
+      display: block;
+
+      .item-detail-list {
+        padding: 10px;
+        vertical-align: middle;
+        border-top: dotted 1px #d6d7da;
+
+        &:first-child {
+          border-top: 0;
+        }
+
+        .afx-col {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .icon-calendar-m,
+  .icon-clock-m {
+    display: inline-block;
+    padding-right: 4px;
+    cursor: default;
+    color: #748288;
+
+    + .fee-time {
+      padding-left: 0;
+    }
+  }
+
+  .icon-info-circle {
+    position: relative;
+    width: 24px;
+    height: 20px;
+    text-align: center;
+    vertical-align: baseline;
+  }
+
+  .icon-chevron-down,
+  .icon-chevron-up {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .icon-plus,
+  .icon-info-circle,
+  .icon-chevron-down,
+  .icon-chevron-up,
+  .icon-trash,
+  .icon-sign-m {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    color: @color-blue;
+
+    &:hover {
+      color: @color-blue-darker;
+    }
+  }
+
+  .icon-info-circle {
+    cursor: default;
+  }
+
+  .info-tooltip {
+    top: auto !important;
+    bottom: ~'calc(100% + 8px)' !important;
+    left: 50% !important;
+    padding: 10px 20px 10px 12px;
+    transform: translate(-50%, 0) !important;
+
+    .info-list {
+      font-size: 14px;
+      line-height: 24px;
+      text-align: left;
+      color: #748288;
+    }
+  }
+
+  .modal-box {
+    width: 350px !important;
+    height: 300px !important;
+  }
+
+  .permit-fee-list-footer {
+    padding-top: 10px;
+
+    .afx-col {
+      font-size: 14px;
+    }
+
+    .fee-amount-right {
+      padding-right: 30px;
+    }
+
+    .afx-col-bold {
+      font-weight: @semibold;
+    }
+
+    .afx-col-total {
+      padding-top: 10px;
+      font-size: 20px;
+      font-weight: @semibold;
+
+      span {
+        display: inline-block;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  .col-name {
+    display: inline-block;
+    padding-right: 28px;
+    font-weight: @semibold;
+    text-align: right;
+  }
+
+  .col-amount {
+    display: inline-block;
+  }
+
+  .afx-col {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+  }
+}
+
+.reservation-fee {
+  .reservartion-panel {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .panel {
+    padding-top: 0;
+    margin-bottom: 0;
+    border-top: 0;
+  }
+
+  .permit-event-fee {
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+    padding: 20px;
+    line-height: 24px;
+    background-color: #eef9fd;
+
+    .event-name {
+      display: inline-flex;
+      font-size: 20px;
+      font-weight: 600px;
+
+      i {
+        position: relative;
+      }
+    }
+
+    .event-information {
+      display: inline-flex;
+      font-size: 16px;
+
+      .event-fee-total {
+        font-weight: 600px;
+      }
+
+      .event-fee-resource,
+      .event-fee-booking,
+      .event-fee-total {
+        margin-right: 20px;
+      }
+
+      .event-fee-edit {
+        margin: 0 20px 0 10px;
+      }
+    }
+
+    .permit-fee-list-footer {
+      padding-top: 20px;
+    }
+  }
+
+  .list-wrapper,
+  .schedule-list {
+    padding: 0;
+    border-top: dotted 1px #d6d7da;
+    border-bottom: 0;
+
+    &:first-child {
+      border-top: 0;
+    }
+  }
+
+  .afx-col-name {
+    padding-top: 10px;
+    padding-left: 10px;
+    vertical-align: top;
+  }
+
+  .schedule-list {
+    padding: 0;
+
+    .afx-col {
+      padding: 10px 0;
+    }
+
+    .icon-chevron-down,
+    .icon-chevron-up {
+      top: 8px;
+    }
+  }
+
+  .recurring-fees {
+    position: relative;
+    overflow: hidden;
+
+    .recurring-title {
+      padding: 0 47px 10px 87px;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: right;
+      cursor: pointer;
+      color: @color-blue;
+
+      span {
+        padding-right: 5px;
+      }
+
+      i {
+        position: relative;
+        top: 2px;
+      }
+    }
+
+    .recurring-list {
+      background-color: #eef9fd;
+      border-top: 0;
+
+      .recurring-datetime {
+        padding: 0;
+        background-color: #fff;
+
+        .datetime {
+          width: 100%;
+          padding: 10px 0 10px 10px;
+          margin-left: 20px;
+          background-color: #eef9fd;
+        }
+      }
+
+      .recurring-border {
+        background-color: #eef9fd;
+        border-top: dotted 1px #d6d7da;
+      }
+    }
+
+    &__show-more {
+      display: flex;
+      justify-content: center;
+      padding: 3px;
+      margin-left: 20px;
+      color: @color-blue;
+      background-color: #f4fcff;
+      border-top: dotted 1px @color-gray-lighter;
+
+      p {
+        margin: 0;
+        cursor: pointer;
+      }
+
+      .icon-chevron-down {
+        position: relative;
+        top: 0;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .schedule-fee {
+    position: relative;
+    display: none;
+    overflow: auto;
+  }
+
+  .item-detail-list {
+    padding: 0;
+    vertical-align: middle;
+    border-top: 0;
+
+    .facility-fee {
+      width: 100%;
+      padding: 10px 0 10px 10px;
+      margin-left: 20px;
+      border-top: dotted 1px #d6d7da;
+    }
+
+    .afx-col {
+      padding: 10px 0;
+      font-size: 14px;
+      color: #748288;
+      border-top: dotted 1px #d6d7da;
+
+      &:first-child {
+        padding: 0;
+        border-top: 0;
+      }
+    }
+
+    .fee-amount {
+      padding-right: 24px;
+    }
+    &.high-light {
+      .afx-col:not(.item-fee-name) {
+        background-color: #f4fcff;
+      }
+      .facility-fee {
+        background-color: #f4fcff;
+      }
+    }
+  }
+
+  .facility-item {
+    display: flex;
+
+    & > div {
+      display: inline-flex;
+    }
+
+    .item-title {
+      width: 70%;
+
+      i.icon {
+        font-size: 14px;
+      }
+    }
+
+    .item-amount {
+      justify-content: flex-end;
+      width: 18%;
+    }
+
+    .item-option {
+      display: block;
+      width: 12%;
+      display: block;
+    }
+
+    .item-fee-name {
+      width: 45%;
+    }
+
+    .item-fee-detail {
+      justify-content: flex-end;
+      width: 25%;
+    }
+  }
+
+  .facility-option {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .apply-to-all {
+    display: flex;
+    justify-content: center;
+    width: 98%;
+    padding-top: 10px;
+    padding-left: 12px;
+
+    .btn {
+      flex: 1;
+    }
+  }
+  .apply-to-all {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    padding-left: 12px;
+    padding-top: 10px;
+    .btn {
+        flex: 1;
+    }
+  }
+}
+
+.extra-fee-tooltip {
+  width: 374px;
+  padding: 20px;
+  font-size: 12px;
+  color: #313741;
+
+  &__content {
+    p {
+      font-weight: bold;
+      word-break: break-word;
+      word-wrap: break-word;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+
+      li {
+        line-height: 20px;
+
+        .icon-calendar-m,
+        .icon-clock-m {
+          display: inline-block;
+          padding-right: 4px;
+          font-size: 12px;
+          cursor: default;
+          color: #748288;
+        }
+
+        .fee-date {
+          display: inline-block;
+          padding-right: 8px;
+        }
+
+        .fee-time {
+          display: inline-block;
+        }
+
+        .connector {
+          padding: 0 6px;
+        }
+      }
+    }
+  }
+}
+
+.delete-confirm-content {
+  color: #313741;
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .checkbox__text {
+    padding-left: 10px;
+  }
+}

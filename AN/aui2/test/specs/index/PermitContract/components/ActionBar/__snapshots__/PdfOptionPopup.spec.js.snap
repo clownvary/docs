@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index/PermitContract/components/ActionBar/PdfOptionPopup should render without errors 1`] = `
+<PdfOptionPopup>
+  <Alert
+    onCancel={[Function]}
+    onClose={[Function]}
+    onConfirm={[Function]}
+  >
+    <Modal
+      className="modal--alert undefined"
+      onClose={[Function]}
+      shown={false}
+    >
+      <div
+        className="modal-wrap"
+        role="dialog"
+      >
+        <div
+          className="modal modal--alert undefined"
+          onKeyDown={[Function]}
+        >
+          <section
+            className="modal-box"
+          >
+            <header
+              className="modal-header"
+            >
+              <h3
+                className="modal-title"
+              />
+              <span
+                aria-label="close-dialog"
+                className="icon icon-close modal-close"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex="0"
+              />
+            </header>
+            <div
+              className="modal-body"
+            >
+              <div
+                className="options"
+              >
+                <Tabbable
+                  aria-label="option1 undefined checked"
+                  onClick={[Function]}
+                  prefixCls="an-tabbable"
+                >
+                  <span
+                    className="an-tabbable"
+                    onClick={[Function]}
+                  >
+                    <a
+                      aria-label="option1 undefined checked"
+                      className="an-tabbable__fake-link"
+                      href="javascript:void(0)"
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      <div
+                        className="options-option options-option-selected"
+                      >
+                        <div />
+                        <div>
+                          <i
+                            className="icon icon-check-circle"
+                          />
+                        </div>
+                      </div>
+                      <span
+                        style={
+                          Object {
+                            "display": "none",
+                          }
+                        }
+                      >
+                        wcag_hidden_text
+                      </span>
+                    </a>
+                  </span>
+                </Tabbable>
+                <Tabbable
+                  aria-label="option2 Schedule unchecked"
+                  onClick={[Function]}
+                  prefixCls="an-tabbable"
+                >
+                  <span
+                    className="an-tabbable"
+                    onClick={[Function]}
+                  >
+                    <a
+                      aria-label="option2 Schedule unchecked"
+                      className="an-tabbable__fake-link"
+                      href="javascript:void(0)"
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      <div
+                        className="options-option"
+                      >
+                        <div>
+                          Schedule
+                        </div>
+                        <div />
+                      </div>
+                      <span
+                        style={
+                          Object {
+                            "display": "none",
+                          }
+                        }
+                      >
+                        wcag_hidden_text
+                      </span>
+                    </a>
+                  </span>
+                </Tabbable>
+                <Tabbable
+                  aria-label="option3 Amendment History unchecked"
+                  onClick={[Function]}
+                  prefixCls="an-tabbable"
+                >
+                  <span
+                    className="an-tabbable"
+                    onClick={[Function]}
+                  >
+                    <a
+                      aria-label="option3 Amendment History unchecked"
+                      className="an-tabbable__fake-link"
+                      href="javascript:void(0)"
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      <div
+                        className="options-option is-disabled"
+                      >
+                        <div>
+                          Amendment History
+                        </div>
+                        <div />
+                      </div>
+                      <span
+                        style={
+                          Object {
+                            "display": "none",
+                          }
+                        }
+                      >
+                        wcag_hidden_text
+                      </span>
+                    </a>
+                  </span>
+                </Tabbable>
+                <div
+                  className="options-recurring"
+                >
+                  <Checkbox
+                    aria-label="checkbox Display all bookings for recurring unselected"
+                    checked={false}
+                    className="options-recurring-checkbox"
+                    onChange={[Function]}
+                    title="heckbox Display"
+                  >
+                    <CheckboxComponent
+                      aria-label="checkbox Display all bookings for recurring unselected"
+                      checked={false}
+                      className="options-recurring-checkbox"
+                      onChange={[Function]}
+                      title="heckbox Display"
+                    >
+                      <label
+                        className="checkbox-wrapper options-recurring-checkbox"
+                        htmlFor="checkbox_attr_for_1"
+                      >
+                        <span
+                          className="checkbox"
+                        >
+                          <input
+                            aria-checked={false}
+                            aria-label="checkbox Display all bookings for recurring unselected"
+                            checked={false}
+                            className="checkbox__input"
+                            id="checkbox_attr_for_1"
+                            onChange={[Function]}
+                            role="checkbox"
+                            title="heckbox Display"
+                            type="checkbox"
+                          />
+                          <span
+                            className="checkbox__inner"
+                          />
+                          <span
+                            className="checkbox__text"
+                          >
+                            Display all bookings for recurring
+                          </span>
+                        </span>
+                      </label>
+                    </CheckboxComponent>
+                  </Checkbox>
+                </div>
+                <div
+                  className="options-recurring"
+                >
+                  <Checkbox
+                    aria-label="checkbox Show detailed breakdown of fees unselected"
+                    checked={false}
+                    className="options-recurring-checkbox"
+                    onChange={[Function]}
+                  >
+                    <CheckboxComponent
+                      aria-label="checkbox Show detailed breakdown of fees unselected"
+                      checked={false}
+                      className="options-recurring-checkbox"
+                      onChange={[Function]}
+                    >
+                      <label
+                        className="checkbox-wrapper options-recurring-checkbox"
+                        htmlFor="checkbox_attr_for_2"
+                      >
+                        <span
+                          className="checkbox"
+                        >
+                          <input
+                            aria-checked={false}
+                            aria-label="checkbox Show detailed breakdown of fees unselected"
+                            checked={false}
+                            className="checkbox__input"
+                            id="checkbox_attr_for_2"
+                            onChange={[Function]}
+                            role="checkbox"
+                            type="checkbox"
+                          />
+                          <span
+                            className="checkbox__inner"
+                          />
+                          <span
+                            className="checkbox__text"
+                          >
+                            Show detailed breakdown of fees
+                          </span>
+                        </span>
+                      </label>
+                    </CheckboxComponent>
+                  </Checkbox>
+                </div>
+              </div>
+            </div>
+            <div
+              className="modal-footer"
+            >
+              <Button
+                className=""
+                loading={false}
+                menuData={Array []}
+                noSubmit={false}
+                onClick={[Function]}
+                type="secondary"
+              >
+                <button
+                  className="btn btn-secondary"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="submit"
+                >
+                  <span>
+                    Cancel
+                  </span>
+                </button>
+              </Button>
+              <Button
+                className=""
+                loading={false}
+                menuData={Array []}
+                noSubmit={false}
+                onClick={[Function]}
+                type="strong"
+              >
+                <button
+                  className="btn btn-strong"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="submit"
+                >
+                  <span>
+                    OK
+                  </span>
+                </button>
+              </Button>
+            </div>
+          </section>
+        </div>
+        <div
+          className="modal-mask"
+        />
+      </div>
+    </Modal>
+  </Alert>
+</PdfOptionPopup>
+`;

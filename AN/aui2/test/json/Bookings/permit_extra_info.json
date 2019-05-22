@@ -1,0 +1,31 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "total_page": 1,
+      "total_records": 0,
+      "order_option": "ASC",
+      "page_number": 1,
+      "total_records_per_page": 30
+    }
+  },
+  "body": {
+    "extrainfo": {
+      "permit_id": 866,
+      "permit_number": 866,
+      "event_name": "Test event #866",
+      "can_be_cancelled": false,
+      "can_be_completed": true,
+      "is_expired": false,
+      "permit_status": "Approved",
+      "status_id": 0,
+      "is_pending_recalculation": false,
+      "can_be_modified": true,
+      "is_modifying": false,
+      "has_paied_amount": false,
+      "has_refund_permission": false
+    }
+  }
+}

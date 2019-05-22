@@ -1,0 +1,928 @@
+{
+    "headers": {
+        "response_code": "0000",
+        "response_message": "Successful",
+        "page_info": {
+            "order_by": "",
+            "total_records_per_page": 30,
+            "order_option": "ASC",
+            "total_page": 1,
+            "total_records": 0,
+            "page_number": 1
+        }
+    },
+    "body": {
+        "event_detail": {
+           "event_detail_config": {
+              "hideReservationCharges": false,
+              "hideNotesSection": false,
+              "hideChecklistItemsSection": false,
+              "hideCustomQuestionsSection": false
+            },
+            "event_id":2,
+            "new_entry_id": 0,
+            "event_index": "2_0",
+            "event_summary": {},
+            "fee_summary": {
+              "sub_total": 127.5,
+              "taxes": [{
+                "name": "Tax8",
+                "amount": 12.75
+              }, {
+                "name": "test1",
+                "amount": 12.75
+              }, {
+                "name": "test2",
+                "amount": 12.75
+              }, {
+                "name": "test3",
+                "amount": 4.78
+              }],
+              "total": 170.53,
+              "amount_paid": null,
+              "due_now": null,
+              "refund_amount": null
+            },
+            "event_fee": {
+              "event_id": 0,
+              "event_name": "adsaa",
+              "permit_id": 0,
+              "resource_count": 2,
+              "booking_count": 3,
+              "event_fee_total": 127.5,
+              "facility_fees": [{
+                "facility_id": 36,
+                "transaction_id": 0,
+                "facility_name": "Gym 1",
+                "center_name":"AC_centername",
+                "schedule_fees": [{
+                  "facility_schedule_id": 23523,
+                  "master_facility_schedule_id": 0,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "14 Feb 2017",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 0,
+                  "facility_charges": []
+                }, {
+                  "facility_schedule_id": 23524,
+                  "master_facility_schedule_id": 23523,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "14 Feb 2017",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": -10,
+                  "facility_charges": []
+                }, {
+                  "facility_schedule_id": 23525,
+                  "master_facility_schedule_id": 23523,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 20,
+                  "facility_charges": []
+                }, {
+                  "facility_schedule_id": 23526,
+                  "master_facility_schedule_id": 23523,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 0,
+                  "facility_charges": [{
+                    "facility_charge_id": 4,
+                    "charge_name": "Fee_1",
+                    "quantity": 1,
+                    "unit_fee": 100,
+                    "abbrev_unit_of_measure": "ea",
+                    "amount": 83.34,
+                    "permit_id": 0,
+                    "receipt_detail_id": 0,
+                    "facility_schedule_id": 0,
+                    "is_percentage_discount": false
+                  }, {
+                    "facility_charge_id": 6,
+                    "charge_name": "Dis_Per_1",
+                    "quantity": 1,
+                    "unit_fee": -15,
+                    "abbrev_unit_of_measure": "ea",
+                    "amount": -22.5,
+                    "permit_id": 0,
+                    "receipt_detail_id": 0,
+                    "facility_schedule_id": 0,
+                    "is_percentage_discount": true
+                  }]
+                }],
+                "additional_fees": {
+                  "facility_schedule_id": 0,
+                  "master_facility_schedule_id": 0,
+                  "facility_schedule": null,
+                  "schedule_amount": 0,
+                  "facility_charges": []
+                }
+              }, {
+                "facility_id": 37,
+                "transaction_id": 0,
+                "facility_name": "Gym 2",
+                "center_name":null,
+                "schedule_fees": [{
+                  "facility_schedule_id": 23527,
+                  "master_facility_schedule_id": 0,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "6:00 AM",
+                    "end_date": "14 Feb 2017",
+                    "end_time": "7:00 AM"
+                  },
+                  "schedule_amount": 16.66,
+                  "facility_charges": [{
+                    "facility_charge_id": 5,
+                    "charge_name": "Faciltiy_per hour",
+                    "quantity": 1,
+                    "unit_fee": 20,
+                    "abbrev_unit_of_measure": "/ hr",
+                    "amount": 16.66,
+                    "permit_id": 0,
+                    "receipt_detail_id": 0,
+                    "facility_schedule_id": 23524,
+                    "is_percentage_discount": false,
+                    "applicable_to_all_bookings": false,
+                    "applied_to_all_bookings": false
+                  }]
+                },{
+                  "facility_schedule_id": 23125,
+                  "master_facility_schedule_id": 23527,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 20,
+                  "facility_charges": []
+                },{
+                  "facility_schedule_id": 23126,
+                  "master_facility_schedule_id": 23527,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 20,
+                  "facility_charges": []
+                },{
+                  "facility_schedule_id": 23127,
+                  "master_facility_schedule_id": 23527,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 20,
+                  "facility_charges": []
+                },{
+                  "facility_schedule_id": 23128,
+                  "master_facility_schedule_id": 23527,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 20,
+                  "facility_charges": []
+                },{
+                  "facility_schedule_id": 23129,
+                  "master_facility_schedule_id": 23527,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "4:00 AM",
+                    "end_date": "2017 Feb 15",
+                    "end_time": "5:00 AM"
+                  },
+                  "schedule_amount": 20,
+                  "facility_charges": []
+                },
+                 {
+                  "facility_schedule_id": 23528,
+                  "facility_schedule": {
+                    "start_date": "14 Feb 2017",
+                    "start_time": "10:00 AM",
+                    "end_date": "14 Feb 2017",
+                    "end_time": "1:00 PM"
+                  },
+                  "schedule_amount": 50,
+                  "facility_charges": [{
+                    "facility_charge_id": 5,
+                    "charge_name": "Faciltiy_per hour",
+                    "quantity": 3,
+                    "unit_fee": 20,
+                    "abbrev_unit_of_measure": "/ hr",
+                    "amount": 50,
+                    "permit_id": 0,
+                    "receipt_detail_id": 0,
+                    "facility_schedule_id": 23525,
+                    "is_percentage_discount": false
+                  }]
+                }],
+                "additional_fees": {
+                  "facility_schedule_id": 0,
+                  "master_facility_schedule_id": 0,
+                  "facility_schedule": null,
+                  "schedule_amount": 60.84,
+                  "facility_charges": [{
+                    "facility_charge_id": 4,
+                    "charge_name": "Fee_1",
+                    "quantity": 1,
+                    "unit_fee": 100,
+                    "abbrev_unit_of_measure": "ea",
+                    "amount": 83.34,
+                    "permit_id": 0,
+                    "receipt_detail_id": 0,
+                    "facility_schedule_id": 0,
+                    "is_percentage_discount": false
+                  }, {
+                    "facility_charge_id": 6,
+                    "charge_name": "Dis_Per_1",
+                    "quantity": 1,
+                    "unit_fee": -15,
+                    "abbrev_unit_of_measure": "ea",
+                    "amount": -22.5,
+                    "permit_id": 0,
+                    "receipt_detail_id": 0,
+                    "facility_schedule_id": 0,
+                    "is_percentage_discount": true
+                  }]
+                }
+              }]
+            },
+            "questions": {
+                "list": [{
+                        "title": "summer question E",
+                        "question": "summer Multi Selection - Checkbox(E)",
+                        "hint": "",
+                        "answers": [{
+                                "answer": "checkbox1",
+                                "code": 0,
+                                "selected": true,
+                                "disabled": false,
+                                "answer_id": 1106,
+                                "sub_question": null
+                            },
+                            {
+                                "answer": "checkbox2",
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 1107,
+                                "sub_question": null
+                            },
+                            {
+                                "answer": "checkbox3",
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 1108,
+                                "sub_question": null
+                            },
+                            {
+                                "answer": "checkbox4",
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 1109,
+                                "sub_question": null
+                            },
+                            {
+                                "answer": "checkbox5",
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 1110,
+                                "sub_question": null
+                            }
+                        ],
+                        "customquestion_index": "92",
+                        "customquestion_id": 211,
+                        "use_answer_code": false,
+                        "answer_type": "multiSelectionCheckbox",
+                        "answer_required": false,
+                        "answer_format": "freeForm",
+                        "answer_max_length": 100,
+                        "default_answer": "",
+                        "postal_code_type": 1,
+                        "permit_question": false,
+                        "read_only": false
+                    },
+                    {
+                        "title": "summer question F",
+                        "question": "Summer Multi Selection - Listbox(F)",
+                        "hint": "",
+                        "answers": [{
+                                "answer": "male",
+                                "code": 1,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 1164,
+                                "sub_question": null
+                            },
+                            {
+                                "answer": "female",
+                                "code": 2,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 1165,
+                                "sub_question": null
+                            },
+                            {
+                                "answer": "others",
+                                "code": 3,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 1166,
+                                "sub_question": null
+                            }
+                        ],
+                        "customquestion_index": "93",
+                        "customquestion_id": 212,
+                        "use_answer_code": true,
+                        "answer_type": "multiSelectionListbox",
+                        "answer_required": false,
+                        "answer_format": "freeForm",
+                        "answer_max_length": 100,
+                        "default_answer": "",
+                        "postal_code_type": 1,
+                        "permit_question": false,
+                        "read_only": false
+                    },
+                    {
+                        "title": "Do you need food during for this event",
+                        "question": "Do you need food during for this event",
+                        "hint": "",
+                        "answers": [{
+                                "answer": "yes",
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 1141,
+                                "sub_question": {
+                                    "title": "what do you need",
+                                    "question": "what do you need",
+                                    "hint": "",
+                                    "answers": [{
+                                            "answer": "milk",
+                                            "code": 0,
+                                            "selected": true,
+                                            "disabled": false,
+                                            "answer_id": 1148,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "coco",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 1149,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "rice",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 1150,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "noodles",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 1151,
+                                            "sub_question": null
+                                        },
+                                        {
+                                            "answer": "other",
+                                            "code": 0,
+                                            "selected": false,
+                                            "disabled": false,
+                                            "answer_id": 1152,
+                                            "sub_question": {
+                                                "title": "sub3-1",
+                                                "question": "sub3-1",
+                                                "hint": "",
+                                                "answers": [{
+                                                        "answer": "male",
+                                                        "code": 1,
+                                                        "selected": false,
+                                                        "disabled": false,
+                                                        "answer_id": 1129,
+                                                        "sub_question": null
+                                                    },
+                                                    {
+                                                        "answer": "female",
+                                                        "code": 2,
+                                                        "selected": false,
+                                                        "disabled": false,
+                                                        "answer_id": 1130,
+                                                        "sub_question": null
+                                                    },
+                                                    {
+                                                        "answer": "other",
+                                                        "code": 3,
+                                                        "selected": false,
+                                                        "disabled": false,
+                                                        "answer_id": 1131,
+                                                        "sub_question": null
+                                                    }
+                                                ],
+                                                "customquestion_index": "97_1_1",
+                                                "customquestion_id": 215,
+                                                "use_answer_code": true,
+                                                "answer_type": "singleSelectionDropdown",
+                                                "answer_required": true,
+                                                "answer_format": "freeForm",
+                                                "answer_max_length": 100,
+                                                "default_answer": "",
+                                                "postal_code_type": 1,
+                                                "permit_question": false,
+                                                "read_only": false
+                                            }
+                                        }
+                                    ],
+                                    "customquestion_index": "97_1",
+                                    "customquestion_id": 220,
+                                    "use_answer_code": false,
+                                    "answer_type": "singleSelectionRadio",
+                                    "answer_required": false,
+                                    "answer_format": "freeForm",
+                                    "answer_max_length": 100,
+                                    "default_answer": "",
+                                    "postal_code_type": 1,
+                                    "permit_question": false,
+                                    "read_only": false
+                                }
+                            },
+                            {
+                                "answer": "no",
+                                "code": 0,
+                                "selected": false,
+                                "disabled": false,
+                                "answer_id": 1142,
+                                "sub_question": null
+                            }
+                        ],
+                        "customquestion_index": "97",
+                        "customquestion_id": 219,
+                        "use_answer_code": false,
+                        "answer_type": "singleSelectionDropdown",
+                        "answer_required": false,
+                        "answer_format": "freeForm",
+                        "answer_max_length": 100,
+                        "default_answer": "",
+                        "postal_code_type": 1,
+                        "permit_question": false,
+                        "read_only": false
+                    },
+                    {
+                        "questions": [{
+                                "title": "summer question B",
+                                "question": "summer required customer question(B)",
+                                "hint": "required",
+                                "answers": [{
+                                        "answer": "milk",
+                                        "code": 0,
+                                        "selected": false,
+                                        "disabled": false,
+                                        "answer_id": 1156,
+                                        "sub_question": null
+                                    },
+                                    {
+                                        "answer": "coco",
+                                        "code": 0,
+                                        "selected": true,
+                                        "disabled": false,
+                                        "answer_id": 1157,
+                                        "sub_question": null
+                                    },
+                                    {
+                                        "answer": "nothing",
+                                        "code": 0,
+                                        "selected": false,
+                                        "disabled": false,
+                                        "answer_id": 1158,
+                                        "sub_question": null
+                                    }
+                                ],
+                                "customquestion_index": "91",
+                                "customquestion_id": 208,
+                                "use_answer_code": false,
+                                "answer_type": "singleSelectionDropdown",
+                                "answer_required": false,
+                                "answer_format": "freeForm",
+                                "answer_max_length": 100,
+                                "default_answer": "",
+                                "postal_code_type": 1,
+                                "permit_question": false,
+                                "read_only": false
+                            },
+                            {
+                                "title": "summer question A",
+                                "question": "summer not required customer question(A)",
+                                "hint": "not required",
+                                "answers": [],
+                                "customquestion_index": "98",
+                                "customquestion_id": 207,
+                                "use_answer_code": false,
+                                "answer_type": "userEntry",
+                                "answer_required": true,
+                                "answer_format": "postalCode",
+                                "answer_max_length": 100,
+                                "default_answer": "",
+                                "postal_code_type": 1,
+                                "permit_question": false,
+                                "read_only": false
+                            }
+                        ],
+                        "group_id": 10,
+                        "group_order": 1,
+                        "group_header": "",
+                        "customquestion_index": null,
+                        "postal_code_type": 0
+                    },
+                    {
+                        "questions": [{
+                                "title": "sub3-1",
+                                "question": "sub3-1",
+                                "hint": "",
+                                "answers": [{
+                                        "answer": "male",
+                                        "code": 1,
+                                        "selected": true,
+                                        "disabled": false,
+                                        "answer_id": 1129,
+                                        "sub_question": null
+                                    },
+                                    {
+                                        "answer": "female",
+                                        "code": 2,
+                                        "selected": false,
+                                        "disabled": false,
+                                        "answer_id": 1130,
+                                        "sub_question": null
+                                    },
+                                    {
+                                        "answer": "other",
+                                        "code": 3,
+                                        "selected": false,
+                                        "disabled": false,
+                                        "answer_id": 1131,
+                                        "sub_question": null
+                                    }
+                                ],
+                                "customquestion_index": "94",
+                                "customquestion_id": 215,
+                                "use_answer_code": true,
+                                "answer_type": "singleSelectionDropdown",
+                                "answer_required": true,
+                                "answer_format": "freeForm",
+                                "answer_max_length": 100,
+                                "default_answer": "",
+                                "postal_code_type": 1,
+                                "permit_question": false,
+                                "read_only": false
+                            },
+                            {
+                                "title": "sub2-1",
+                                "question": "sub2-1",
+                                "hint": "",
+                                "answers": [{
+                                        "answer": "yes",
+                                        "code": 0,
+                                        "selected": false,
+                                        "disabled": false,
+                                        "answer_id": 1132,
+                                        "sub_question": {
+                                            "title": "sub3-1",
+                                            "question": "sub3-1",
+                                            "hint": "",
+                                            "answers": [{
+                                                    "answer": "male",
+                                                    "code": 1,
+                                                    "selected": false,
+                                                    "disabled": false,
+                                                    "answer_id": 1129,
+                                                    "sub_question": null
+                                                },
+                                                {
+                                                    "answer": "female",
+                                                    "code": 2,
+                                                    "selected": false,
+                                                    "disabled": false,
+                                                    "answer_id": 1130,
+                                                    "sub_question": null
+                                                },
+                                                {
+                                                    "answer": "other",
+                                                    "code": 3,
+                                                    "selected": false,
+                                                    "disabled": false,
+                                                    "answer_id": 1131,
+                                                    "sub_question": null
+                                                }
+                                            ],
+                                            "customquestion_index": "95_1",
+                                            "customquestion_id": 215,
+                                            "use_answer_code": true,
+                                            "answer_type": "singleSelectionDropdown",
+                                            "answer_required": true,
+                                            "answer_format": "freeForm",
+                                            "answer_max_length": 100,
+                                            "default_answer": "",
+                                            "postal_code_type": 1,
+                                            "permit_question": false,
+                                            "read_only": false
+                                        }
+                                    },
+                                    {
+                                        "answer": "no",
+                                        "code": 0,
+                                        "selected": true,
+                                        "disabled": false,
+                                        "answer_id": 1133,
+                                        "sub_question": null
+                                    }
+                                ],
+                                "customquestion_index": "95",
+                                "customquestion_id": 216,
+                                "use_answer_code": false,
+                                "answer_type": "singleSelectionRadio",
+                                "answer_required": false,
+                                "answer_format": "freeForm",
+                                "answer_max_length": 100,
+                                "default_answer": "",
+                                "postal_code_type": 1,
+                                "permit_question": false,
+                                "read_only": false
+                            },
+                            {
+                                "title": "sub1-1",
+                                "question": "sub1-1",
+                                "hint": "",
+                                "answers": [{
+                                        "answer": "1",
+                                        "code": 0,
+                                        "selected": false,
+                                        "disabled": false,
+                                        "answer_id": 1119,
+                                        "sub_question": null
+                                    },
+                                    {
+                                        "answer": "2",
+                                        "code": 0,
+                                        "selected": false,
+                                        "disabled": false,
+                                        "answer_id": 1120,
+                                        "sub_question": null
+                                    },
+                                    {
+                                        "answer": "3",
+                                        "code": 0,
+                                        "selected": false,
+                                        "disabled": false,
+                                        "answer_id": 1121,
+                                        "sub_question": null
+                                    },
+                                    {
+                                        "answer": "4",
+                                        "code": 0,
+                                        "selected": false,
+                                        "disabled": false,
+                                        "answer_id": 1122,
+                                        "sub_question": null
+                                    },
+                                    {
+                                        "answer": "5",
+                                        "code": 0,
+                                        "selected": false,
+                                        "disabled": false,
+                                        "answer_id": 1123,
+                                        "sub_question": {
+                                            "title": "sub2-1",
+                                            "question": "sub2-1",
+                                            "hint": "",
+                                            "answers": [{
+                                                    "answer": "yes",
+                                                    "code": 0,
+                                                    "selected": true,
+                                                    "disabled": false,
+                                                    "answer_id": 1132,
+                                                    "sub_question": {
+                                                        "title": "sub3-1",
+                                                        "question": "sub3-1",
+                                                        "hint": "",
+                                                        "answers": [{
+                                                                "answer": "male",
+                                                                "code": 1,
+                                                                "selected": false,
+                                                                "disabled": false,
+                                                                "answer_id": 1129,
+                                                                "sub_question": null
+                                                            },
+                                                            {
+                                                                "answer": "female",
+                                                                "code": 2,
+                                                                "selected": false,
+                                                                "disabled": false,
+                                                                "answer_id": 1130,
+                                                                "sub_question": null
+                                                            },
+                                                            {
+                                                                "answer": "other",
+                                                                "code": 3,
+                                                                "selected": false,
+                                                                "disabled": false,
+                                                                "answer_id": 1131,
+                                                                "sub_question": null
+                                                            }
+                                                        ],
+                                                        "customquestion_index": "96_1_1",
+                                                        "customquestion_id": 215,
+                                                        "use_answer_code": true,
+                                                        "answer_type": "singleSelectionDropdown",
+                                                        "answer_required": true,
+                                                        "answer_format": "freeForm",
+                                                        "answer_max_length": 100,
+                                                        "default_answer": "",
+                                                        "postal_code_type": 1,
+                                                        "permit_question": false,
+                                                        "read_only": false
+                                                    }
+                                                },
+                                                {
+                                                    "answer": "no",
+                                                    "code": 0,
+                                                    "selected": false,
+                                                    "disabled": false,
+                                                    "answer_id": 1133,
+                                                    "sub_question": null
+                                                }
+                                            ],
+                                            "customquestion_index": "96_1",
+                                            "customquestion_id": 216,
+                                            "use_answer_code": false,
+                                            "answer_type": "singleSelectionRadio",
+                                            "answer_required": false,
+                                            "answer_format": "freeForm",
+                                            "answer_max_length": 100,
+                                            "default_answer": "",
+                                            "postal_code_type": 1,
+                                            "permit_question": false,
+                                            "read_only": false
+                                        }
+                                    }
+                                ],
+                                "customquestion_index": "96",
+                                "customquestion_id": 217,
+                                "use_answer_code": false,
+                                "answer_type": "singleSelectionRadio",
+                                "answer_required": false,
+                                "answer_format": "freeForm",
+                                "answer_max_length": 100,
+                                "default_answer": "",
+                                "postal_code_type": 1,
+                                "permit_question": false,
+                                "read_only": false
+                            }
+                        ],
+                        "group_id": 16,
+                        "group_order": 2,
+                        "group_header": "",
+                        "customquestion_index": null,
+                        "postal_code_type": 0
+                    }
+                ],
+                "has_required_question": false
+            },
+            "transactions": [],
+            "waiver_list": [
+                {
+                    "waiver_index": "224",
+                    "transactionstage_id": -1,
+                    "attachedchecklistitem_id": 33,
+                    "stage_id": 24,
+                    "stage_version": 6,
+                    "stage_type": 1,
+                    "description": "Test Jack Waiver",
+                    "attachment_id": 110,
+                    "attachment_name": "New Waiver PD",
+                    "show_display_permit": true,
+                    "display_permit_selected": false,
+                    "disable_agreetowaiver": false,
+                    "agreetowaiver_selected": false,
+                    "can_modify_signature": true,
+                    "signature_base64": "",
+                    "item_text": "test waiver",
+                    "uploadfile_href_text": "test pad",
+                    "is_required": true
+                },
+                {
+                    "waiver_index": "28",
+                    "transactionstage_id": -1,
+                    "attachedchecklistitem_id": -3,
+                    "stage_id": 8,
+                    "stage_version": 0,
+                    "stage_type": 1,
+                    "description": "Global waiver which has a long long waiver title to test the display of too long title of waiver, and at now I think it's long enough.",
+                    "attachment_id": -1,
+                    "attachment_name": "",
+                    "show_display_permit": true,
+                    "display_permit_selected": false,
+                    "disable_agreetowaiver": false,
+                    "agreetowaiver_selected": false,
+                    "can_modify_signature": true,
+                    "signature_base64": "",
+                    "item_text": "It is a global waiver\r\nThis should be a new line.\r\nThe end.",
+                    "uploadfile_href_text": null,
+                    "is_required": false,
+                    "due_date": "2017 Aug 28",
+                    "complete_date": "2017 Aug 23"
+                },
+                {
+                    "waiver_index": "29",
+                    "transactionstage_id": -1,
+                    "attachedchecklistitem_id": 34,
+                    "stage_id": 9,
+                    "stage_version": 0,
+                    "stage_type": 0,
+                    "description": "Policy Information",
+                    "attachment_id": -1,
+                    "attachment_name": "",
+                    "show_display_permit": true,
+                    "display_permit_selected": false,
+                    "disable_agreetowaiver": false,
+                    "agreetowaiver_selected": false,
+                    "can_modify_signature": true,
+                    "signature_base64": "",
+                    "item_text": "An information only checklist item",
+                    "uploadfile_href_text": null,
+                    "is_required": false
+                },
+                {
+                    "waiver_index": "210",
+                    "transactionstage_id": -1,
+                    "attachedchecklistitem_id": 32,
+                    "stage_id": 10,
+                    "stage_version": 1,
+                    "stage_type": 1,
+                    "description": "photo release adult",
+                    "attachment_id": -1,
+                    "attachment_name": "",
+                    "show_display_permit": true,
+                    "display_permit_selected": false,
+                    "disable_agreetowaiver": false,
+                    "agreetowaiver_selected": false,
+                    "can_modify_signature": true,
+                    "signature_base64": "",
+                    "item_text": "i grant waiver",
+                    "uploadfile_href_text": null,
+                    "is_required": false
+                },
+                {
+                    "waiver_index": "213",
+                    "transactionstage_id": -1,
+                    "attachedchecklistitem_id": -2,
+                    "stage_id": 13,
+                    "stage_version": 4,
+                    "stage_type": 1,
+                    "description": "A Global Waiver",
+                    "attachment_id": 84,
+                    "attachment_name": "1Foo",
+                    "show_display_permit": true,
+                    "display_permit_selected": false,
+                    "disable_agreetowaiver": false,
+                    "agreetowaiver_selected": false,
+                    "can_modify_signature": true,
+                    "signature_base64": "",
+                    "item_text": "Just accept it.",
+                    "uploadfile_href_text": "1Foo Test",
+                    "is_required": true,
+                    "due_date": "2017 Aug 28"
+                }
+            ],
+            "staff_notes": "stuff notes22",
+            "customer_notes": "customer notes22"
+        }
+    }
+}

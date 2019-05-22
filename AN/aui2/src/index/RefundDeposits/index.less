@@ -1,0 +1,63 @@
+@import '~shared/style/variables/index.less';
+
+.refundDeposits {
+  .page-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: @page-title-margin-bottom;
+
+    h1 {
+      font-size: @page-title-font-size;
+      line-height: @page-title-line-height;
+      color: @river-bed;
+    }
+  }
+
+  h3 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  .alert-error {
+    &.aaui-flexbox {
+      justify-content: space-between;
+    }
+
+    position: relative;
+    padding: 15px;
+    margin-bottom: @page-title-margin-bottom;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #d93a20;
+    background-color: #ffefed;
+    border: 1px solid #ff6046;
+    border-radius: 5px;
+
+    .content {
+      display: flex;
+
+      i {
+        padding-right: 10px;
+      }
+    }
+
+    .button {
+      i {
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .refund-message {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: @state-warning-text;
+
+    .icon {
+      font-size: inherit;
+    }
+  }
+}

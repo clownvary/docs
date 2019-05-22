@@ -1,0 +1,30 @@
+@import '~shared/style/variables/index.less';
+
+.approval-stages {
+  margin-top: 10px;
+
+  &__item {
+    padding: 10px 1px 10px 9px;
+    border-bottom: 1px dotted @color-gray-lighter;
+  }
+
+  .association {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    line-height: @headings-line-height;
+
+    &-item__value {
+      font-size: @font-size-base;
+      line-height: @headings-line-height;
+      color: @color-blue;
+    }
+
+    &-item__divider {
+      margin-right: 10px;
+      margin-left: 10px;
+      font-size: @font-size-base;
+      color: @color-gray-lighter;
+    }
+  }
+}

@@ -1,0 +1,180 @@
+@import '~shared/style/variables/index.less';
+/* stylelint-disable */
+
+.waiver {
+  .sectionTitle {
+    margin: 0;
+    font-size: 20px;
+    font-weight: @semibold;
+    line-height: 1.5;
+    color: #313741;
+
+    .update-changed-label {
+      left: -2px;
+    }
+
+    .icon {
+      margin-left: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      color: @color-blue;
+    }
+  }
+
+  .dataList{
+    border-bottom: solid 2px @color-gray-lighter;
+
+    &.empty {
+      border-bottom: 0;
+    }
+  }
+
+  .afx-col {
+    font-size: 16px;
+
+    &.afx-xl-8-12 {
+      padding-right: 10px;
+    }
+  }
+
+  .aLink {
+    text-align: justify;
+    word-break: break-word;
+
+    &.desc {
+      display: inline-block;
+      padding-top: 2px;
+      padding-left: 0;
+      font-size: 16px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      color: #0077b4;
+    }
+  }
+
+  .link {
+    font-size: 14px;
+    text-decoration: none;
+    color: @color-blue;
+
+    span {
+      padding-left: 5px;
+    }
+
+    &:hover {
+      color: #0077b4;
+    }
+  }
+
+  .checkbox {
+    padding-right: 9px;
+  }
+
+  .icon-asterisk {
+    padding-top: 3px;
+    font-size: 7px;
+    font-weight: normal;
+    vertical-align: top;
+    cursor: default;
+    color: #ff6046;
+  }
+
+  .item {
+    padding: 10px 1px 10px 9px;
+    border-bottom: dotted 1px #d6d7da;
+
+    &.last-addwaiver-item {
+      border-bottom: 2px solid#d6d7da;
+    }
+
+    &:first-child {
+      padding-top: 20px;
+    }
+
+    .aaui-flex:first-child {
+      padding-bottom: 10px;
+    }
+  }
+
+  .last-item {
+    padding: 10px 1px 10px 9px;
+    border: 0;
+  }
+
+  .waiver-date {
+    display: inline-flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    line-height: 22px;
+    vertical-align: top;
+    color: #738187;
+
+    > div {
+      min-width: 120px;
+      margin-left: 16px;
+    }
+
+    > div + div {
+      min-width: 160px;
+    }
+  }
+
+  .waiver-display-agreement {
+    display: inline-flex;
+
+    > div + div {
+      margin-left: 20px;
+    }
+  }
+
+  .waiver-sign-attachment {
+    display: inline-flex;
+    justify-content: flex-end;
+
+    .waiver-attachment {
+      margin-left: 20px;
+    }
+  }
+
+  .signName {
+    font-size: 14px;
+    color: @color-blue;
+
+    span {
+      padding-left: 5px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: #0077b4;
+    }
+  }
+
+  .errorMsg {
+    margin-left: 15px;
+    color: red;
+  }
+
+  .visibility-hide {
+    visibility: hidden;
+  }
+}
+
+#SNPdialog {
+  height: 362px !important;
+  padding-right: 15px;
+  padding-left: 20px;
+  font-size: 14px;
+
+  hr {
+    padding: 0;
+    margin: 6px 0;
+    border-color: #222;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "headers" : {
+    "response_code" : "0000",
+    "response_message" : "Successful",
+    "page_info" : {
+      "order_by" : "",
+      "page_number" : 1,
+      "total_records_per_page" : 30,
+      "total_records" : 0,
+      "total_page" : 1,
+      "order_option" : "ASC"
+    }
+  },
+  "body" : {
+    "apd_payment_info" : {
+      "is_payer_cash_customer" : false,
+      "has_immediate_payment_due" : false,
+      "can_cancel_apd_payment": true,
+      "key" : 1,
+      "committed_receipt_id" : 22916,
+      "receipt_payment_id" : 20423,
+      "rno" : 1,
+      "receipt_number" : 1000778.005,
+      "order_id" : "Receipt ID 22916",
+      "order_descriptor" : "YMCA OF METROPOLITAN LOS ANGELES"
+    }
+  }
+}

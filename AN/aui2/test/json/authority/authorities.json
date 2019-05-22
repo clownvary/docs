@@ -1,0 +1,53 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "page_number": 1,
+      "total_records": 0,
+      "total_records_per_page": 30,
+      "order_option": "ASC",
+      "total_page": 1
+    }
+  },
+  "body": {
+    "authorities": [
+      {
+        "authorityType": "enabled",
+        "id": "newReservationHome",
+        "name": "New Reservation Home"
+      },
+      {
+        "authorityType": "display",
+        "id": "reservationsPage",
+        "name": "Reservations Page"
+      },
+      {
+        "authorityType": "enabled",
+        "id": "permitActionsOnReservationsPage",
+        "name": "Permit Actions On Reservations Page"
+      },
+      {
+        "authorityType": "display",
+        "id": "calendarPage",
+        "name": "Calendar Page"
+      },
+      {
+        "authorityType": "enabled",
+        "id": "buttonToCalendarPage",
+        "name": "Button To Calendar Page"
+      },
+      {
+        "authorityType": "enabled",
+        "id": "buttonToReservationsPage",
+        "name": "Button To Reservations Page"
+      },
+      {
+        "id": "viewPermitContract", 
+        "authorityType": "hide", 
+        "name": "View Permit Contract"
+      }
+    ]
+  }
+}

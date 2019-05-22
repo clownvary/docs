@@ -1,0 +1,135 @@
+@import '~shared/style/variables/index.less';
+
+/* stylelint-disable */
+
+.payment-summary {
+  .page-title {
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: @page-title-margin-bottom;
+    color: @river-bed;
+
+    h1 {
+      font-size: @page-title-font-size;
+      line-height: @page-title-line-height;
+    }
+
+    .icon-group {
+      line-height: 0;
+      text-align: right;
+    }
+  }
+
+  .payment-aaui-alert {
+    margin-top: 0;
+    margin-bottom: @page-title-margin-bottom;
+  }
+
+  .payment-total {
+    font-size: 24px;
+    font-weight: @semibold;
+    line-height: 1.5;
+    text-align: right;
+  }
+
+  .payment-fees-summary {
+    font-size: 14px;
+    color: #748288;
+
+    .payment-fee-name {
+      padding-left: 20px;
+    }
+
+    .payment-fee-amount {
+      font-weight: @semibold;
+    }
+  }
+
+  .payment-detail {
+    &-section {
+      height: auto;
+
+      .payment-detail-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    &-summary {
+      margin-top: 8px;
+
+      .payment-sum-name,
+      .payment-sum-value {
+        display: inline-block;
+        width: 125px;
+        margin-right: 20px;
+        font-weight: @semibold;
+        text-align: right;
+      }
+
+      .payment-sum-value {
+        font-weight: normal;
+        text-align: left;
+
+        .icon-info-circle {
+          padding-left: 5px;
+          cursor: pointer;
+          color: @color-blue;
+
+          &.icon-disabled {
+            cursor: default;
+            color: #9b9b9b;
+          }
+        }
+      }
+
+      .pop-base {
+        position: relative;
+      }
+
+      ul,
+      li {
+        padding: 0;
+        margin: 0;
+      }
+
+      .popover {
+        width: 380px;
+        font-family: @font-family;
+        font-size: 14px;
+        color: #313741;
+      }
+
+      .payer-refund-detial-item {
+        list-style: none;
+
+        .detail-item-name {
+          display: inline-block;
+          width: 228px;
+          margin-right: 20px;
+          text-align: left;
+        }
+
+        .detail-item-value {
+          display: inline-block;
+          width: 90px;
+          text-align: right;
+          word-break: break-all;
+          vertical-align: top;
+        }
+      }
+
+      .payer-type-header {
+        font-weight: @semibold;
+      }
+
+      .payer-type-refund {
+        padding-top: 4px;
+        margin-top: 4px;
+        border-top: 2px solid #ddd;
+      }
+    }
+  }
+}

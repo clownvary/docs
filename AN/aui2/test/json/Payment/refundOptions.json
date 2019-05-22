@@ -1,0 +1,48 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "total_page": 1,
+      "order_option": "ASC",
+      "page_number": 0,
+      "total_records": 0,
+      "total_records_per_page": 20
+    }
+  },
+  "body": {
+    "refund_options": [
+      {
+        "id": 10,
+        "name": "Cheque Refund",
+        "selected": false
+      },
+      {
+        "id": 11,
+        "name": "Cash Refund",
+        "selected": false
+      },
+      {
+        "id": 12,
+        "name": "CreditCard Refund",
+        "selected": false
+      },
+      {
+        "id": 13,
+        "name": "To Account",
+        "selected": false
+      },
+      {
+        "id": 14,
+        "name": "Gift Certificate Refund",
+        "selected": false
+      },
+      {
+        "id": 15,
+        "name": "DebitCard Refund",
+        "selected": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful"
+  },
+  "body": {
+    "customer_special_handling_info": {
+      "customer_special_handling": true,
+      "customer_id": 34933
+    }
+  }
+}

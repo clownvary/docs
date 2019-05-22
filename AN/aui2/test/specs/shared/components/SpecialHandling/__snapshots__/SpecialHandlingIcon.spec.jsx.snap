@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shared/components/SpecialHandling/SpecialHandlingIcon component renders fine 1`] = `
+<SpecialHandlingIcon
+  customerId="1123"
+>
+  <i
+    className="icon icon-exclamation-triangle special-handling-alert__icon"
+    onClick={[Function]}
+  />
+</SpecialHandlingIcon>
+`;

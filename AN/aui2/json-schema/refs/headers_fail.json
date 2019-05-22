@@ -1,0 +1,20 @@
+{
+  "id": "headers_fail",
+  "type": "object",
+  "properties": {
+    "response_code": {
+      "enum": [
+        "0004"
+      ]
+    },
+    "response_message": {
+      "enum": [
+        "You request function doesn't found"
+      ]
+    }
+  },
+  "required": [
+    "response_code",
+    "response_message"
+  ]
+}

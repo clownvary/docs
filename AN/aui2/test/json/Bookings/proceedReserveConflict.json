@@ -1,0 +1,144 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful"
+  },
+  "body": {
+    "error_result": {
+      "event_name": "aa",
+      "schedule_type_id": 7,
+      "check_for_waitlist_conflict": true,
+      "schedule_type": "3 schedule type",
+      "permit_id": -1,
+      "event_resource": [{
+        "resource_id": 1,
+        "resource_name": "resourceType &apm;",
+        "resource_number": "",
+        "resource_type": 0,
+        "reservation_period_unit": 2,
+        "event_type_id": 6,
+        "event_type": "'South West Hub",
+        "setup_minutes": 3,
+        "cleanup_minutes": 5,
+        "booking_detail": [{
+          "booking_identifier": "pending_1424_4484",
+          "master_booking_identifier": "",
+          "resource_booking_id": 0,
+          "transaction_id": -1,
+          "reservation_type": 0,
+          "rental_block_id": 0,
+          "date_range_id": 0,
+          "attendance": 3,
+          "start_event_datetime": "12/21/2016 2:00 AM",
+          "end_event_datetime": "12/21/2016 3:00 AM",
+          "is_delete_schedule": false,
+          "ignore_conflict": false,
+          "ignore_closetime": false,
+          "ignore_skipdate": false,
+          "pending_id": "pending_1424_4484",
+          "error_results": [{
+            "error_type": "conflict",
+            "error_content": "Conflict with bookings on temporary Permit1.\n "
+          }],
+          "enable_ignore_conflict": false,
+          "recurring_reservation_group": {
+            "recurring_reservation_group_id": 0,
+            "master_facility_schedule_id": 117712,
+            "group_pattern_description": "Daily, 5 times, from 12 Jun 2017",
+            "group_pattern_content": "{\"count\":5,\"frequency\":1,\"type\":1}",
+            "exception_date_list": "[]"
+          },
+          "enable_ignore_conflict": true,
+          "ignore_conflict_type": "enable_ignore",
+          "is_delete_schedule": false
+        }, {
+          "booking_identifier": "pending_1424_4485",
+          "master_booking_identifier": "pending_1424_4484",
+          "resource_booking_id": 0,
+          "transaction_id": -1,
+          "reservation_type": 0,
+          "rental_block_id": 0,
+          "date_range_id": 0,
+          "attendance": 3,
+          "start_event_datetime": "12/21/2016 2:00 AM",
+          "end_event_datetime": "12/21/2016 3:00 AM",
+          "is_delete_schedule": false,
+          "ignore_conflict": false,
+          "ignore_closetime": false,
+          "ignore_skipdate": false,
+          "pending_id": "pending_1424_4485",
+          "error_results": [{
+            "error_type": "conflict",
+            "error_content": "Conflict with bookings on temporary Permit1.\n "
+          }],
+          "enable_ignore_conflict": false,
+          "recurring_reservation_group": null,
+          "ignore_conflict_type": "not_show_ignore",
+          "is_delete_schedule": false
+        }, {
+          "booking_identifier": "pending_1424_4486",
+          "master_booking_identifier": "pending_1424_4484",
+          "resource_booking_id": 0,
+          "transaction_id": -1,
+          "reservation_type": 0,
+          "rental_block_id": 0,
+          "date_range_id": 0,
+          "attendance": 3,
+          "start_event_datetime": "12/21/2016 2:00 AM",
+          "end_event_datetime": "12/21/2016 3:00 AM",
+          "is_delete_schedule": false,
+          "ignore_conflict": false,
+          "ignore_closetime": false,
+          "ignore_skipdate": false,
+          "pending_id": "pending_1424_4486",
+          "error_results": [{
+            "error_type": "conflict",
+            "error_content": "Conflict with bookings on temporary Permit1.\n "
+          }],
+          "enable_ignore_conflict": false,
+          "recurring_reservation_group": null,
+          "ignore_conflict_type": "not_show_ignore",
+          "is_delete_schedule": false
+        }],
+        "prep_code_id": 2
+      }, {
+        "resource_id": 2,
+        "resource_name": "kaely test equipment &amp;",
+        "resource_number": "",
+        "resource_type": 0,
+        "event_type_id": 6,
+        "event_type": "'South West Hub",
+        "setup_minutes": 3,
+        "cleanup_minutes": 5,
+        "reservation_period_unit": 6,
+        "booking_detail": [{
+          "pending_id": "pending_775_7160",
+          "resource_booking_id": 0,
+          "transaction_id": -1,
+          "reservation_type": 0,
+          "rental_block_id": 0,
+          "date_range_id": 4,
+          "attendance": 2,
+          "start_event_datetime": "12/21/2016 2:00 AM",
+          "end_event_datetime": "12/21/2016 3:00 AM",
+          "ignore_skipdate": false,
+          "ignore_closetime": false,
+          "ignore_conflict": false,
+          "pending_id": "pending_775_7160",
+          "error_results": [{
+            "error_type": "holiday",
+            "error_content": "Conflict with Skip Date:\nsummer skip date (From 2017 Feb 18 to 2017 Feb 19).\n"
+          }, {
+            "error_type": "invalid",
+            "error_content": "ANE56423 sally Facility day must be booked at least 2 day(s) in advance."
+          }],
+          "enable_ignore_conflict": false,
+          "ignore_conflict_type": "disable_for_conflict_permisson_and_facility_setting",
+          "is_delete_schedule": false
+        }],
+        "prep_code_id": 10
+      }],
+      "error_msg_summary": "Attendees for *lillian_facility is less than the required minimum (5) .\n"
+    }
+  }
+}

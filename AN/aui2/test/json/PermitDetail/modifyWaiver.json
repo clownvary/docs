@@ -1,0 +1,60 @@
+{
+    "headers": {
+        "response_code": "0000",
+        "response_message": "Successful",
+        "page_info": {
+            "multiplePage": false,
+            "recordCount": 0,
+            "pageCount": 1,
+            "order_by": "",
+            "page_number": 1,
+            "order_option": "ASC",
+            "total_records": 0,
+            "total_records_per_page": 30,
+            "total_page": 1
+        }
+    },
+    "body": {
+        "waiver_list":  [
+          {
+            "transactionstage_id": -1,
+            "attachedchecklistitem_id": 191,
+            "stage_id": 60,
+            "stage_version": 0,
+            "stage_type": 1,
+            "description": "rubing waiver 2",
+            "attachment_id": -1,
+            "attachment_name": "",
+            "show_display_permit": true,
+            "display_permit_selected": false,
+            "disable_agreetowaiver": false,
+            "agreetowaiver_selected": false,
+            "can_modify_signature": true,
+            "signature_base64": "",
+            "item_text": "rubing waiver 2",
+            "uploadfile_href_text": null,
+            "is_required": true
+          },
+          {
+            "transactionstage_id": 3892,
+            "attachedchecklistitem_id": -1,
+            "stage_id": 59,
+            "stage_version": 0,
+            "stage_type": 1,
+            "description": "rubing waiver",
+            "attachment_id": -1,
+            "attachment_name": "",
+            "show_display_permit": true,
+            "display_permit_selected": true,
+            "disable_agreetowaiver": true,
+            "agreetowaiver_selected": true,
+            "can_modify_signature": false,
+            "signature_base64": "",
+            "item_text": "rubing waiver",
+            "uploadfile_href_text": null,
+            "is_required": false
+          }
+        ],
+        "has_new" : "true"
+    }
+}

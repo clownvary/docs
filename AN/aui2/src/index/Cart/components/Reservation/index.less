@@ -1,0 +1,170 @@
+@import '~shared/style/variables/index.less';
+/* stylelint-disable */
+
+.reservation {
+  line-height: 24px;
+
+  .align-right {
+    text-align: right;
+  }
+
+  .reservation-title {
+    font-size: 20px;
+    font-weight: @semibold;
+  }
+
+  .reservation-header,
+  .reservation-list {
+    .afx-col {
+      font-size: 14px;
+    }
+  }
+
+  .reservation-header {
+    padding: 30px 10px 12px;
+    color: @color-black-lighter;
+    border-bottom: solid 2px @color-gray-lighter;
+  }
+
+  .reservation-list {
+    border-bottom: solid 2px @color-gray-lighter;
+
+    .reservation-item {
+      .summary {
+        padding: 10px 10px 0;
+        font-size: 16px;
+        line-height: 1.5;
+
+        .name {
+          font-weight: @semibold;
+        }
+      }
+
+      .action-group {
+        padding: 6px 10px;
+        font-size: 14px;
+        line-height: 24px;
+        color: @color-blue;
+
+        .action {
+          margin-right: 20px;
+          cursor: pointer;
+
+          &:hover {
+            color: @color-blue-darker;
+          }
+
+          .icon {
+            padding: 5px;
+            color: @color-blue;
+          }
+        }
+      }
+
+      .detail-list {
+        padding-left: 20px;
+        background-color: @color-blue-lighter;
+
+        .detail-item {
+          padding: 10px;
+          vertical-align: middle;
+          border-top: dotted 1px @color-gray-lighter;
+
+          .name {
+            font-size: 16px;
+          }
+
+          &__name {
+            width: 325px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+            word-wrap: break-word;
+            white-space: nowrap;
+          }
+
+          &__center {
+            flex: 3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+            word-wrap: break-word;
+            white-space: nowrap;
+
+            > span:first-child {
+              margin-right: 8px;
+              font-weight: bolder;
+            }
+          }
+
+          &__amount {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .modal-box {
+    width: 350px !important;
+    height: 300px !important;
+  }
+
+  .reservation-footer {
+    padding: 10px 10px 0;
+    font-size: 14px;
+    text-align: right;
+
+    .sub-fee {
+      .fee-name {
+        display: inline-block;
+        padding-right: 28px;
+        font-weight: @semibold;
+      }
+
+      .fee-amount {
+        display: inline-block;
+      }
+    }
+
+    .total {
+      padding-top: 10px;
+      font-size: 20px;
+      font-weight: @semibold;
+      line-height: 150%;
+
+      .text-color-strong {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+.cart-empty {
+  padding-top: 50px;
+  margin-top: 100px;
+  text-align: center;
+
+  .icon-cart-m {
+    font-size: 65px;
+    cursor: default;
+    color: #d9e1e4;
+  }
+
+  .message {
+    padding-top: 20px;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #748288;
+  }
+
+  .link {
+    margin-top: 10px;
+    color: @color-blue;
+
+    .icon {
+      margin-right: 5px;
+    }
+  }
+}

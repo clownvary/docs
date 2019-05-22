@@ -1,0 +1,92 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "page_number": 1,
+      "total_records": 0,
+      "total_records_per_page": 30,
+      "order_option": "ASC",
+      "total_page": 1
+    }
+  },
+  "body": {
+    "card_type_list": [{
+      "id": 8,
+      "selected": false,
+      "card_type_id": 1,
+      "card_type": "3 visa"
+    }, {
+      "id": 1,
+      "selected": false,
+      "card_type_id": 1,
+      "card_type": "Visa"
+    }, {
+      "id": 9,
+      "selected": false,
+      "card_type_id": 2,
+      "card_type": "3 Master Card"
+    }, {
+      "id": 2,
+      "selected": false,
+      "card_type_id": 2,
+      "card_type": "MasterCard"
+    }, {
+      "id": 10,
+      "selected": false,
+      "card_type_id": 4,
+      "card_type": "3 Diners"
+    }, {
+      "id": 4,
+      "selected": false,
+      "card_type_id": 5,
+      "card_type": "Discover Card"
+    }, {
+      "id": 17,
+      "selected": false,
+      "card_type_id": 3,
+      "card_type": "0 American Express"
+    }, {
+      "id": 16,
+      "selected": false,
+      "card_type_id": 3,
+      "card_type": "1 American Express"
+    }, {
+      "id": 15,
+      "selected": false,
+      "card_type_id": 3,
+      "card_type": "2 American Express"
+    }, {
+      "id": 6,
+      "selected": false,
+      "card_type_id": 3,
+      "card_type": "3 American Express"
+    }, {
+      "id": 14,
+      "selected": false,
+      "card_type_id": 3,
+      "card_type": "4 American Express"
+    }, {
+      "id": 3,
+      "selected": false,
+      "card_type_id": 3,
+      "card_type": "American Express"
+    }, {
+      "id": 12,
+      "selected": false,
+      "card_type_id": 6,
+      "card_type": "3 JCB"
+    }, {
+      "id": 7,
+      "selected": false,
+      "card_type_id": 0,
+      "card_type": "3 other credit card"
+    }, {
+      "id": 5,
+      "selected": false,
+      "card_type_id": 0,
+      "card_type": "Other Payment Type"
+    }]
+  }
+}

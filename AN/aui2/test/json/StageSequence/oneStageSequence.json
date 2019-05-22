@@ -1,0 +1,115 @@
+{
+	"headers": {
+		"response_code": "0000",
+		"response_message": "Successful",
+		"page_info": {
+			"order_by": "",
+			"order_option": "ASC",
+			"page_number": 1,
+			"total_page": 1,
+			"total_records": 0,
+			"total_records_per_page": 20
+		}
+	},
+	"body": {
+		"stage_sequence": {
+			"stage_sequence_id": 63,
+			"checked": true,
+			"stage_sequence_name": "Test2",
+			"associations": ["RL- EventType 4"],
+			"stage_links": [{
+				"head_stage": {
+					"trasaction_stage_id": 4175,
+					"stage_id": 59,
+					"stage_name": "RL-1",
+					"status": 3,
+					"transaction_id": 61949,
+					"approval_user_id": 272,
+					"comments": "a1",
+					"approval_user_name": "Robyn Admin",
+					"next_stages": [{
+						"trasaction_stage_id": 4176,
+						"stage_id": 60,
+						"stage_name": "RL-2",
+						"status": 3,
+						"transaction_id": 61949,
+						"approval_user_id": 272,
+						"comments": "2",
+						"approval_user_name": "Robyn Admin",
+						"next_stages": [{
+							"trasaction_stage_id": 4177,
+							"stage_id": 62,
+							"stage_name": "RL-4",
+							"status": 3,
+							"transaction_id": 61949,
+							"approval_user_id": 272,
+							"comments": "4",
+							"approval_user_name": "Robyn Admin",
+							"next_stages": [{
+								"trasaction_stage_id": 4178,
+								"stage_id": 63,
+								"stage_name": "RL-5",
+								"status": 1,
+								"transaction_id": 61949,
+								"approval_user_id": 272,
+								"comments": "",
+								"approval_user_name": "Robyn Admin",
+								"next_stages": [{
+									"trasaction_stage_id": 4181,
+									"stage_id": 2,
+									"stage_name": "END",
+									"status": 0,
+									"transaction_id": 61949,
+									"approval_user_id": 0,
+									"comments": "",
+									"approval_user_name": "",
+									"next_stages": []
+								}]
+							}, {
+								"trasaction_stage_id": 4180,
+								"stage_id": 64,
+								"stage_name": "RL-6",
+								"status": 1,
+								"transaction_id": 61949,
+								"approval_user_id": 272,
+								"comments": "",
+								"approval_user_name": "Robyn Admin",
+								"next_stages": [{
+									"trasaction_stage_id": 4181,
+									"stage_id": 2,
+									"stage_name": "END",
+									"status": 0,
+									"transaction_id": 61949,
+									"approval_user_id": 0,
+									"comments": "",
+									"approval_user_name": "",
+									"next_stages": null
+								}]
+							}]
+						}]
+					}, {
+						"trasaction_stage_id": 4179,
+						"stage_id": 61,
+						"stage_name": "RL-3",
+						"status": 3,
+						"transaction_id": 61949,
+						"approval_user_id": 272,
+						"comments": "33",
+						"approval_user_name": "Robyn Admin",
+						"next_stages": [{
+							"trasaction_stage_id": 4177,
+							"stage_id": 62,
+							"stage_name": "RL-4",
+							"status": 3,
+							"transaction_id": 61949,
+							"approval_user_id": 272,
+							"comments": "4",
+							"approval_user_name": "Robyn Admin",
+							"next_stages": null
+						}]
+					}]
+				}
+			}]
+		}
+	}
+}

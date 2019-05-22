@@ -1,0 +1,40 @@
+{
+  "headers": {
+    "response_code": "0000",
+    "response_message": "2 Unauthorized access permissions"
+  },
+  "body": {
+    "items" : [
+        {
+          "name": "cente&amp;rName1",
+          "id": 1,
+          "selected": false
+        },
+        {
+          "name": "centerName2",
+          "id": 2,
+          "selected": false
+        },
+        {
+          "name": "centerName3",
+          "id": 3,
+          "selected": false
+        },
+        {
+          "name": "centerName4",
+          "id": 4,
+          "selected": false
+        },
+        {
+          "name": "centerName5",
+          "id": 5,
+          "selected": false
+        },
+        {
+          "name": "centerName6",
+          "id": 6,
+          "selected": false
+        }
+      ]
+  }
+}
