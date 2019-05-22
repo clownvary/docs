@@ -1,5 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Loading.hide 1`] = `""`;
-
-exports[`Loading.show 1`] = `"<div><div class=\\"loading\\"><img alt=\\"\\" src=\\"[object Object]\\"></div></div>"`;

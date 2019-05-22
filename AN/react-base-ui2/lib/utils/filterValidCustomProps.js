@@ -1,5 +1,0 @@
-"use strict";Object.defineProperty(exports, "__esModule", { value: true });var _defineProperty2 = require("babel-runtime/helpers/defineProperty");var _defineProperty3 = _interopRequireDefault(_defineProperty2);var _extends3 = require("babel-runtime/helpers/extends");var _extends4 = _interopRequireDefault(_extends3);var _keys = require("babel-runtime/core-js/object/keys");var _keys2 = _interopRequireDefault(_keys);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}exports.default = function (obj) {var re = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : /^(required|(aria|data)-.+)/;return obj && (0, _keys2.default)(obj).
-  filter(function (key) {return re && re.test(key);}).
-  reduce(function (res, key) {return (0, _extends4.default)({}, res, (0, _defineProperty3.default)({},
-    key, obj[key]));},
-  {});};module.exports = exports['default'];
