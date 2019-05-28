@@ -1,5 +1,0 @@
-export const SUCCESS = 'SUCCESS';
-export const FAILURE_EXCEPTION = 'FAILURE_EXCEPTION';
-export const FAILURE_HTTP = 'FAILURE_HTTP';
-export const FAILURE_SERVICE = 'FAILURE_SERVICE';
-export const FAILURE_APP = 'FAILURE_APP';

@@ -1,5 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`API formatMessage 1`] = `"Invitation from captain first last"`;
-
-exports[`API formatMessage 2`] = `"Invitation from captain {First name} {Last name}"`;

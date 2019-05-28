@@ -1,1 +1,0 @@
-import './override-time.svg';

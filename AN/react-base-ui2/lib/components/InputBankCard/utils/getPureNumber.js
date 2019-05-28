@@ -1,1 +1,0 @@
-'use strict';Object.defineProperty(exports, "__esModule", { value: true });exports.default = function (number) {return number && number.replace(/[^\d]/g, '');};module.exports = exports['default'];

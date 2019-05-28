@@ -1,1 +1,0 @@
-import './authorities.json';

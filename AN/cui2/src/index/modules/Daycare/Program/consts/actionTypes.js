@@ -1,6 +1,0 @@
-const PREFIX = 'Daycare/Program/';
-
-export const PROGRAM_INFO_UI = `${PREFIX}PROGRAM_INFO_UI`;
-export const SESSIONS_UI = `${PREFIX}SESSIONS_UI`;
-export const EXCEPTION_DATES_UI = `${PREFIX}EXCEPTION_DATES_UI`;
-export const ESTIMATE_PRICE = `${PREFIX}ESTIMATE_PRICE`;

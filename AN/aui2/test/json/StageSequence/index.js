@@ -1,9 +1,0 @@
-import './permitStageSequence.json';
-import './transactionStages.json';
-import './oneStageSequence.json';
-import './countStageSequences.json';
-import './updateAddStageSequence.json';
-import './deletePermitStageSequence.json';
-import './loadaddablestagesequences.json';
-import './processmodifystagesequence.json';
-import './changeStageUser.json';
