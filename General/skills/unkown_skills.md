@@ -179,9 +179,15 @@
 
   1. pointer-events: none; 类似a标签不响应事件
   2. x:nth-child(n)/x:nth-of-type(n)， n可以是表达式或关键字‘odd‘/'even'（单复数）
-  
+
   前者是选择父元素下第n个子元素，且这个元素类型是x.
+
   前者是选择父元素下的所有x类型的元素中的第n个.（其实自己以前用的nth-child大部分是错的，当成nth-0f-type在用了。
+
+  3. vw、vh、vmin、vmax
+
+  > vw、vh、vmin、vmax 是一种视窗单位，也是相对单位。它相对的不是父节点或者页面的根节点。而是由视窗（Viewport）大小来决定的，单位 1，代表类似于 1%。
+
 
 ## 浏览器缓存
 
