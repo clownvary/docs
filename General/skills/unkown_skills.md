@@ -182,7 +182,7 @@
 
   前者是选择父元素下第n个子元素，且这个元素类型是x.
 
-  前者是选择父元素下的所有x类型的元素中的第n个.（其实自己以前用的nth-child大部分是错的，当成nth-0f-type在用了。
+  后者是选择父元素下的所有x类型的元素中的第n个.（其实自己以前用的nth-child大部分是错的，当成nth-0f-type在用了。
 
   3. vw、vh、vmin、vmax
 
@@ -193,7 +193,7 @@
 
 因为last-modified 只能精确到秒，不如etag精确，所以在优先级上etag更优先
 
-比较顺序cache-control->etag-last-modified
+比较顺序cache-control->etag->last-modified
 
 ## Web Api
 
