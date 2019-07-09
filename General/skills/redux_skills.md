@@ -76,10 +76,35 @@ return ({dispatch, state})=> next => action {xxx}
 - 注意本质上我们的目的是要重新包装dispatch，替换dispatch方法，next指代的是dispatch,只不过不是简单的指向系统的store.dispatch,而是下一个被包装过的dispatch，如图
 ![dispatch](https://pic3.zhimg.com/v2-e5b8f433fec45c09260759fb12e90bb6_r.png)
 
+- applyMiddleware : 为了保证你只能应用 middleware 一次，它作用在 createStore() 上而不是 store 本身。因此它的签名不是 `(store, middlewares) => store`， 而是 `(...middlewares) => (createStore) => createStore`
+
+```javascript
+cui 使用符合签名
+const middleware = __DEV__ || __STATIC__ ?
+   composeEnhancers(applyMiddleware(...middlewareList)) : applyMiddleware(...middlewareList);
+
+  const store = middleware(createStore)(rootReducer, initialState);
+```
+
+但是官方文档还有句话： **由于在使用之前需要先应用方法到 createStore() 之上有些麻烦，createStore() 也接受将希望被应用的函数作为“最后“一个可选参数传入**, 所以还有可以当场createStore的第三个参数直接传进去（applyMiddleware只是该可选参数的一种而已，并不是唯一，看官方文档），比较方便，如下
+
+```javascript
+
+import { createStore, combineReducers, applyMiddleware } from 'redux'
+
+let todoApp = combineReducers(reducers)
+let store = createStore(
+  todoApp,
+  // applyMiddleware() 告诉 createStore() 如何处理中间件
+  applyMiddleware(logger, crashReporter)
+)
+
+```
+
 - applyMiddleware（...middlewares）,是用来串联各个middleware的方法，这样所有的middleware就可以以next()的机制来层层调用dispatch
   - compose,是applyMiddleware中最核心的一个方法，使用它才实现了串联，
     - compose的实现，其实就是一个柯里化得过程，
-    ```
+    ```js
      function compose(...funcs) {
       if (funcs.length === 0) {
         return arg => arg
@@ -94,8 +119,72 @@ return ({dispatch, state})=> next => action {xxx}
       return (...args) => rest.reduceRight((composed, f) => f(composed), last(...args))
     //就是一个函数执行完后又是另一个函数的参数
     // 如[A,B,C],compose第一次是C，f是B，即B（C），第二次，compose是B（C），f是A，则结果A（B（C））
+    // 
     }
     ```
+- applyMiddleWare 实现
+
+方法一：
+
+```js
+function applyMiddleware(store, middlewares) {
+  middlewares = middlewares.slice()
+  middlewares.reverse()
+
+  let dispatch = store.dispatch
+  middlewares.forEach(middleware =>
+    dispatch = middleware(store)(dispatch)
+    // 循环执行每次改变dispatch的值
+    // 注意第一次执行的时候的那个middleware拥有最原始的dispatch， 即store.disptach, 后边的都是包装过得dispatch
+
+  )
+
+  return Object.assign({}, store, { dispatch })
+}
+```
+
+方法二：因为方法一是循环的实现，并不是串联，所以真正实现是方法二
+
+```js
+export default function compose(...funcs) {
+  if (funcs.length === 0) {
+    return arg => arg
+  }
+
+  if (funcs.length === 1) {
+    return funcs[0]
+  }
+
+  return funcs.reduce((a, b) => (...args) => a(b(...args)))
+}
+
+//可以看出compose做的事情就是上一个函数的返回结果作为下一个函数的参数传入。
+
+export default function applyMiddleware(...middlewares) {
+   
+  return (createStore) => (...args) => {
+    // 之后就在这里先建立一个store
+    const store = createStore(...args)
+    let dispatch = store.dispatch
+    let chain = []
+    // 将getState 跟dispatch函数暴露出去
+    const middlewareAPI = {
+      getState: store.getState,
+      dispatch: (...args) => dispatch(...args)
+    }
+
+    chain = middlewares.map(middleware => middleware(middlewareAPI))
+    
+    dispatch = compose(...chain)(store.dispatch)
+    // 这里和方法一循环实现不同，实现了串联，然后最右边的middleware接受原始的store.dispatch
+    // 所以执行时候右边先执行，然后层层返回
+    return {
+      ...store,
+      dispatch
+    }
+  }
+}
+```
 - thunk,是一种中间件，只是*让action可以传递方法*，但它没有提供异步方法，一般还得使用ajax或者fetch来实现，像redux-promise就提供了自己的实现
 
 ### reducer
