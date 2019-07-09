@@ -34,8 +34,8 @@
 │       ├── test_skills.md
 │       └── unkown_skills.md
 └── Others
-    ├── �\221\204影.md
-    └── 认�\206�\224�影.md
+    ├── know\ the\ movie.md
+    └── shoot.md
 
 7 directories, 26 files
 
