@@ -71,7 +71,9 @@ return ({dispatch, state})=> next => action {xxx}
 ```
 - 多读[这个](http://www.redux.org.cn/docs/advanced/Middleware.html)
 
-- middleWare,签名为（store)=>next=>action的方法，thunk是一种实现
+- middleWare,签名为（store即{disptch, getState})=>next=>action的方法，thunk是一种实现
+- action , 签名为（）=> (dispatch, getState不是花括号=> {xxx}
+- provider, 是为了解决不用把store层层往下传递的问题，实现本质是context. provider 接受store 之后， 子组件都能在connect 中接收到`state`,从而被动更新。但注意一般只在**container层有选择的选择自己需要的state进行注入**
 
 - 注意本质上我们的目的是要重新包装dispatch，替换dispatch方法，next指代的是dispatch,只不过不是简单的指向系统的store.dispatch,而是下一个被包装过的dispatch，如图
 ![dispatch](https://pic3.zhimg.com/v2-e5b8f433fec45c09260759fb12e90bb6_r.png)
