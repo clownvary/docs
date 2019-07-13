@@ -144,25 +144,31 @@
 
 * npm 包依赖
 
-    > Project A package.json
+  1. 遍历循环所有包，包括包中以来的包
+  2. 扁平化。
+    a.遇到**新包**放到最外层项目树下
+    b.遇到已有的包，判断两个版本是否在同一范围（相同，或者在可兼容的范围内）
+        是：则选择最新的可接受的版本放在外层树下
+        否：各自在自己树下生成，版本不同
+  3. 按照生成的依赖树安装
+
+所有有时候外层项目并没有引用依赖一些包，但可以直接使用，就是因为内部依赖的包的包被提取到了最外层的node_modules里
+
+- peerDependencies
+
+    > peerDependencies的目的是提示宿主环境去安装满足插件peerDependencies所指定依赖的包，然后在插件import或者require所依赖的包的时候，永远都是引用宿主环境统一安装的npm包，最终解决插件与所依赖包不一致的问题。
+  
+  > Project A package.json
     ```js
-    { devDependencies: { libA:'xxx' },
-      dependencies: { libB:'xxx' }
-    }
+    { peerDependencies: { libA:'xxx' } }
     ```
     > Project B package.json
     ```js
     { 
       dependencies: { ProjectA:'xxx' }
     }
+    // B install 后node_module 会有libA
 
-    ```
-    > Project B/test.js
-    ```js
-    B = require('libB');//虽然项目B中没有直接依赖，但是依赖的项目A中已经有了libB，这样就可以访问到.
-
-    A = require('libA');//undefined
-    必须是dependencies
     ```
 
 - SSE(server-sent event)
@@ -289,7 +295,7 @@ if (window.Notification){
     },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
-            names: ['vendorx', 'manifest'],//注意这里的names 可以配置entry里的name,比如现在有个vendorx, 它就只会提取vendorx入口里文件的公告模块，如果不配置name,默认提取所有入口的公共模块
+            names: ['vendorx', 'manifest'],//注意这里的names 可以配置entry里的name,比如现在有个vendorx, 它就只会提取vendorx入口里文件的公共模块，如果不配置name,默认提取所有入口的公共模块
         }),
     ]
 
@@ -318,3 +324,48 @@ DLLPlugin 则是能把第三方代码完全分离开，即每次只打包项目�
 4. workbox-webpack-plugin
 
 progressive web application - PWA, 离线依然可使用， 注意需要vpn（访问谷歌）
+
+## others
+
+1. eslint
+
+```js
+{
+  "extends": "an", //会查找名为eslint-config-an的第三方包配置(要先安装)
+}
+
+```
+
+2. bebel
+
+    转码过程parsing => transforming => generating 
+    > babel只是转译新标准引入的语法，比如ES6的箭头函数转译成ES5的函数；而新标准引入的新的原生对象，部分原生对象新增的原型方法，新增的API等（如Proxy、Set等），这些babel是不会转译的。需要用户自行引入polyfill来解决
+
+
+
+```js
+{
+  "presets": ["react", "es2015", "stage-1"], // preset 就是一些预置的插件集合
+  // stage-0/1/2/3, 涵盖范围逐渐减小
+
+  "plugins": [
+    "transform-runtime",
+    "add-module-exports"
+  ], // 先执行plugins 再执行preset, plugin正顺序执行，preset 倒叙执行
+     // plugins在transforming 阶段执行
+
+  "env": { // env 默认从process.env.BABEL_ENV || process.env.NODE_ENV获取
+    "static": {
+      "plugins": [
+        "react-hot-loader/babel"
+      ]
+    },
+     "test": {
+      "plugins": [
+        ["istanbul"]
+       ]
+    }
+  }
+}
+
+```
