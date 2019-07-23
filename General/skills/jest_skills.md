@@ -37,7 +37,6 @@
       [参考这个库](https://github.com/clownvary/jest-mock-cases)
       [参考2,mock部分](https://github.com/facebook/jest/issues/936)
 
-
      ```js
      // mock es6 的class写法，必须返回一个function 即constructor, 然后内部返回的就是class的实例方法
      // jest.requireActual(xxx)/jest.requireMock(xxx)
@@ -65,3 +64,11 @@
       event.xxx  = {xxx}//任何自定义对象
       window.dispatch(event)/document.dispatchEvent(event);
     ```
+  5.mock 系统变量
+  
+  ```js
+  delete window.location
+  window.location = {xxx}
+  //或者
+  Objeact.defineProperty(window,'location',{xxxx});
+  ```
