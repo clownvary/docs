@@ -5,7 +5,7 @@ const exec = require('child_process').execSync;
 function genContent() {
     let content = [
         '[![Build Status](https://travis-ci.org/clownvary/docs.svg?branch=master)](https://travis-ci.org/clownvary/docs)',
-        '# A markdown doc for work and study',
+        '# Docs and conclusion skills of personal.',
         '## File Tree'
     ];
     try {
