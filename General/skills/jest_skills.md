@@ -72,3 +72,18 @@
   //或者
   Objeact.defineProperty(window,'location',{xxxx});
   ```
+  6.mock 组件
+  
+  ```js
+  import A from '../a';
+  import B from '../b';
+  // 这样就能直接mount(A),而不用去关心B的内部实现了
+  jest.mock('./b',()=>{
+    return jest.fn().mockImplementation(()=>({
+      render:()=>(<div>test node</div>)
+    })))
+  })
+  <A>
+    <B xx={xxx}>
+  </A>
+  ```
