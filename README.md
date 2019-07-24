@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/clownvary/docs.svg?branch=master)](https://travis-ci.org/clownvary/docs)
-# A markdown doc for work and study
+# Docs and conclusion skills of personal.
 ## File Tree
 ```
 .
@@ -15,6 +15,7 @@
 │       └── cui_architecture_issues.md
 ├── General
 │   ├── EnvAndTools
+│   │   ├── browser_cache.md
 │   │   ├── chrome_skills.md
 │   │   ├── computer_config.md
 │   │   ├── jenkins.md
@@ -34,9 +35,10 @@
 │       ├── test_skills.md
 │       └── unkown_skills.md
 └── Others
+    ├── bitcoin.md
     ├── know_the_movie.md
     └── shoot.md
 
-7 directories, 26 files
+7 directories, 28 files
 
 ```
