@@ -194,6 +194,65 @@
 
   > vw、vh、vmin、vmax 是一种视窗单位，也是相对单位。它相对的不是父节点或者页面的根节点。而是由视窗（Viewport）大小来决定的，单位 1，代表类似于 1%。
 
+  4. counter, 用来生成列表的序号，属性如下：
+   
+     `counter-reset` 初始化一个counter
+
+     `counter-increment` 序号如何增长（注意没有 decrement, 可以用负号表示）
+
+     `counter(name,style)` 获取对应名为name的 counter 的当前序号，style是序号样式，默认 decimal,还有罗马字符什么的
+
+     `counters(counter, string, style)`,获取名为name的对应的子序号
+
+     ```html
+     // html
+        <ul>
+          <li>List item</li>
+          <li>List item</li>
+          <li>
+            List item
+            <ul>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+            </ul>
+          </li>
+        </ul>
+     ```
+     ```css
+     // css
+        ul {
+            counter-reset: counter;
+          }
+        li::before {
+            counter-increment: counter;
+            content: counters(counter, '.') ' ';
+        }
+     ```
+     ```
+     // 效果
+
+        1.
+        2. 
+        3.
+            3.1
+            3.2
+     ```
+
+  5. val, css自带变量功能
+
+    变量声明`--variable-name:`
+
+    使用 val(`--variable-name:`)
+
+   ```css
+   .custom-variables {
+   --some-color: #da7800;
+   --some-keyword: italic;
+   color: var(--some-color);
+   font-style: var(--some-keyword);
+   }
+   ```
 
 ## 浏览器缓存
 

@@ -64,6 +64,23 @@
      }
     ```
 
+- useCallback/useMemo
+
+  用来在监听的某些属性改变之后调用，区别是useCallback, 返回的是个**回调函数**，而useMemo返回的是个**值**，参考使用方式。
+  
+  ```js
+   const cb = useCallback(()=>`callback:${name}`,[name]);
+   const memo = useMemo(()=>`memo:${name}`,[name]);
+   return (
+    <div className="App">
+      <h1>Name: {name}</h1>
+      <h2>cb name: {cb()}</h2>
+      <h2>memo name: {memo}</h2>
+      <button onClick={()=>setName(Math.random().toFixed(2)*1000)}>random name</button>
+    </div>
+  );
+  ```
+
 - 自定义hook
     a. 必须usexxx命名函数
     b. 内部必须使用原生的hook
