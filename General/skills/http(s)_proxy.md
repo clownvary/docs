@@ -170,7 +170,7 @@ proxy.listen({
 
 需要注意的有三点：
 
-1. 可能需要关闭代理发https请求到目标站点的安全检查，`ctx.proxyToServerRequestOptions.rejectUnauthorized  =  false;`[参考]([https://github.com/joeferner/node-http-mitm-proxy/issues/60](https://github.com/joeferner/node-http-mitm-proxy/issues/60)
+1. 可能需要关闭代理发https请求到目标站点的安全检查，`ctx.proxyToServerRequestOptions.rejectUnauthorized  =  false;`[参考](https://github.com/joeferner/node-http-mitm-proxy/issues/60)
 
 2. 在运行以上代码后生成的`.http-mitm-proxy`文件夹中我们需要找到`ca.pem`然后导入到系统的根证书列表中，导入方法可自行查询
 
