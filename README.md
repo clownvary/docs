@@ -23,6 +23,7 @@
 │   └── skills
 │       ├── docker_skills.md
 │       ├── grid_layout_skills.md
+│       ├── http(s)_proxy.md
 │       ├── jade_skills.md
 │       ├── jest_skills.md
 │       ├── node_skills.md
@@ -34,11 +35,12 @@
 │       ├── spider_skills.md
 │       ├── test_skills.md
 │       └── unkown_skills.md
-└── Others
-    ├── bitcoin.md
-    ├── know_the_movie.md
-    └── shoot.md
+├── Others
+│   ├── bitcoin.md
+│   ├── know_the_movie.md
+│   └── shoot.md
+└── resource
 
-7 directories, 28 files
+8 directories, 29 files
 
 ```
