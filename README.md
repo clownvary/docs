@@ -38,9 +38,11 @@
 ├── Others
 │   ├── bitcoin.md
 │   ├── know_the_movie.md
-│   └── shoot.md
+│   ├── shoot.md
+│   ├── �\226�\207.md
+│   └── 天�\234\235�\224\237�\230�\230�\215.md
 └── resource
 
-8 directories, 29 files
+8 directories, 31 files
 
 ```
