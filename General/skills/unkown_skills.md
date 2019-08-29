@@ -401,7 +401,36 @@ if (window.Notification){
 
 - commonChunk(webpack4 已经废弃，建议使用SplitChunksPlugin) 用来提取entry里所有入口的公用模块(一般是非第三方库），生成一个名为common的bundle文件，最后被添加到html文件
 
-- externals 外部扩展是用来把第三方库和自有代码分离，这样webpack打包时会忽略该第三方包，注意，这种方式必须自己手动在html页面引入该第三方包，一般使用cdn方式
+- externals 外部扩展是用来把第三方库libary和自有代码分离，这样webpack打包时会忽略该第三方包, 在运行时去使用它的宿主环境去找被忽略的那个包，外部 library 可能是以下任何一种形式：
+  
+  - **root**：可以通过一个全局变量访问 library（例如，通过 script 标签，即cdn这只是一种方式而已）。
+  
+  - **commonjs**：可以将 library 作为一个 CommonJS 模块访问。
+  
+  - **commonjs2**：和上面的类似，但导出的是 `module.exports.default`.
+  
+  - **amd**：类似于 `commonjs`，但使用 AMD 模块系统。
+    
+    
+    
+    
+    ```javascript
+    externals : {
+        lodash : {
+            commonjs: "lodash",//如果我们的库运行在Node.js环境中，import _ from 'lodash'等价于const _ = require('lodash')
+            commonjs2: "lodash",//同上
+            amd: "lodash",//如果我们的库使用require.js等加载,等价于 define(["lodash"], factory);
+            root: "_"//如果我们的库在浏览器中使用，需要提供一个全局的变量‘_’，等价于 var _ = (window._) or (_);所以一般是导入script , 就会给window上绑定一个"_"变量，这样loadsh就能找到了。 这个"_"是不能随便乱写的。如果外部库lodash提供的是全局变量lodash,那你就得使用lodash
+        }
+      }
+    ```
+    
+    
+    此语法用于描述外部 library 所有可用的访问方式。这里 `lodash` 这个外部 library 可以在 AMD 和 CommonJS 模块系统中通过 `lodash` 访问，但在全局变量形式下用 `_` 访问。`subtract` 可以通过全局 `math` 对象下的属性 `subtract` 访问（例如 `window['math']['subtract']`）。
+    
+    > 对于external的依赖模块，通常你可以这样做，例如你使用npm发布你的库，你可以将jquery在`package.json`文件中添加到`dependencies`，这样别人`npm install`你发布的库时，jquery也会被自动下载到node_modules供别人打包使用。
+    
+    
 
 - entry(vendor)针对第三方库,如下
   
