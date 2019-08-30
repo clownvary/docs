@@ -2,6 +2,30 @@
 
 ## js
 
+* export/export default
+  
+  ```javascript
+  // export.js
+  export const func1=()=>{xxx}
+  export {  // 和直接export 一样，可以通过{...}导入
+      func2 :()=>{xxx}
+  }
+  const m = 100;
+  export default {
+      m
+  }
+  
+  //import.js 
+  import { func1 } from './export.js';
+  import { func2 } from './export.js';
+  import { m } from './export.js'; // undefined,这种导入方式会找不到,本质上default是把相关的变量挂在了名为default的属性上，所以以下两种方式可导入：
+  import {default as x } from './export.js';
+  import x from './export.js';
+  x.m //ok
+  ```
+  
+  
+
 * 事件循环机制、调用栈、调用队列
   
   - 调用栈、调用队列（可视图）[参考](https://github.com/xitu/gold-miner/blob/master/TODO/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with.md)
@@ -140,18 +164,20 @@
      immediate1_nextTick
      immediate2_nextTick
      immediate1_then
-     immediate2_then
+     immediate2_then    
      ```
 
 * npm 包依赖
   
   1. 遍历循环所有包，包括包中依赖的包
-  2. 扁平化。
+  2. 扁平化。（redupe）
      a.遇到**新包**放到最外层项目树下
      b.遇到已有的包，判断两个版本是否在同一范围（相同，或者在可兼容的范围内）
         是：则选择最新的可接受的版本放在外层树下
         否：各自在自己树下生成，版本不同
   3. 按照生成的依赖树安装
+
+
 
 所以有时候外层项目并没有引用依赖一些包，但可以直接使用，就是因为内部依赖的包的包被提取到了最外层的node_modules里
 
@@ -430,7 +456,11 @@ if (window.Notification){
     
     > 对于external的依赖模块，通常你可以这样做，例如你使用npm发布你的库，你可以将jquery在`package.json`文件中添加到`dependencies`，这样别人`npm install`你发布的库时，jquery也会被自动下载到node_modules供别人打包使用。
     
+    所以总结如下：
     
+    - 针对正常app, react这些比较大的第三方库我们应该使用dll，然后去引用
+    
+    - 针对 library, 应该使用external让宿主去install然后在宿主环境中去寻找，宿主环境该打包打包
 
 - entry(vendor)针对第三方库,如下
   
