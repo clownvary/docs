@@ -2,6 +2,16 @@
 
 ## js
 
+* es6 解构赋值（destructure）设置默认值
+  
+  在使用 `const { a } = obj`时一般没有什么问题， 但是如果我们想得到a下的b,`const { a :{b}} = obj`,这样写时，在a不存在或者undefined的时候就会报错，block住程序的执行，可以给a设置默认值来避免报错，如下：
+  
+  `const { a: { b } = {b:'this is test'}} = obj`
+  
+  或者
+  
+  `const { a: { b } = {}} = obj`
+
 * export/export default
   
   ```javascript
@@ -23,8 +33,6 @@
   import x from './export.js';
   x.m //ok
   ```
-  
-  
 
 * 事件循环机制、调用栈、调用队列
   
@@ -177,9 +185,7 @@
         否：各自在自己树下生成，版本不同
   3. 按照生成的依赖树安装
 
-
-
-所以有时候外层项目并没有引用依赖一些包，但可以直接使用，就是因为内部依赖的包的包被提取到了最外层的node_modules里
+     所以有时候外层项目并没有引用依赖一些包，但可以直接使用，就是因为内部依赖        的包的包被提取到了最外层的node_modules里
 
 - dependency/devDependency
   
@@ -210,8 +216,6 @@
   
   - libary 场景2:
     使用webpack打包，类似于app, 然后修改package.json中的main 属性， 入口指向dist.他人使用的时候直接import .. from ''即可， 相比场景1，**内部依赖已被打包进去，使用不用安装**，可以配合webpack external优化要打的包，避免过大的bundle.
-  
-  
 
 - peerDependencies
   
@@ -232,7 +236,6 @@
   >   // B install 时如果没有libA1.2会有警告
   >   UNMET PEER DEPENDENCY libA1.2
   >   必须安装该包，否则会有异常 
-  >   
   > ```
 
 - package.json 中的main 和module
@@ -398,12 +401,17 @@ if (window.Notification){
 - offset/scroll 属性
   
   - offsetHeight, 每个元素的高度，包括border, 但不包括margin
+  
   - clienHeight, 每个元素的高度，**不包括border,margin**
+  
   - offsetTop， 每个元素距离其最近父元素的距离
+  
   - scrollHeight，代表当前滚动区域内元素整个的高度，包括不可见的高度
+  
   - scrollTop, 当A元素内的B元素的高度 > A 元素的高度，会出现滚动条，B元素向下滚动的距离(即被遮住的高度)就是scrollTop
-    
-    ## webpack
+
+## webpack
+
 1. commonChunk/external/entry(vendor)/dll
 
 ```js
@@ -437,9 +445,6 @@ if (window.Notification){
   
   - **amd**：类似于 `commonjs`，但使用 AMD 模块系统。
     
-    
-    
-    
     ```javascript
     externals : {
         lodash : {
@@ -450,7 +455,6 @@ if (window.Notification){
         }
       }
     ```
-    
     
     此语法用于描述外部 library 所有可用的访问方式。这里 `lodash` 这个外部 library 可以在 AMD 和 CommonJS 模块系统中通过 `lodash` 访问，但在全局变量形式下用 `_` 访问。`subtract` 可以通过全局 `math` 对象下的属性 `subtract` 访问（例如 `window['math']['subtract']`）。
     
@@ -505,19 +509,54 @@ progressive web application - PWA, 离线依然可使用， 注意需要vpn（�
 
 ## others
 
-1. eslint
+- eslint
+  
+  1. extends 
+     
+     ```javascript
+     
+      {
+      "extends": "an", //会查找名为eslint-config-an的第三方包配置(要先安装)
+      }
+     ```
+  
+  2. env
+     
+     ```javascript
+     {
+         env:{
+            jest: true, // 会开启jest相关的所有全局变量，相关的linter就不会报错了
+            node: true  // 同理      
+         }
+     }
+     ```
+  
+  3. import/resolve
+     
+     当在webpack中配置了`resolve：{module:['src']}`时，代表webpack会从src下去解析module,但eslint不知道，所以相关的linter会报错，解决办法下载`eslint-import-resolver-webpack`插件并如在`.eslintrc`下配置settings 项：
+     
+     ```javascript
+     "settings": {
+           "import/resolver": {
+             "webpack": {
+               "config": {
+                    resolve: {
+                         extensions: ['', '.js', '.jsx'],
+                         modules: ['src', 'node_modules']
+                       }
+               }
+             }
+           }
+         }
+     ```
+  
+  4. xxx
 
-```js
-{
-  "extends": "an", //会查找名为eslint-config-an的第三方包配置(要先安装)
-}
-```
-
-2. bebel
-   
-    转码过程parsing => transforming => generating 
-   
-   > babel只是转译新标准引入的语法，比如ES6的箭头函数转译成ES5的函数；而新标准引入的新的原生对象，部分原生对象新增的原型方法，新增的API等（如Proxy、Set等），这些babel是不会转译的。需要用户自行引入polyfill来解决
+- babel
+  
+   转码过程parsing => transforming => generating 
+  
+  > babel只是转译新标准引入的语法，比如ES6的箭头函数转译成ES5的函数；而新标准引入的新的原生对象，部分原生对象新增的原型方法，新增的API等（如Proxy、Set等），这些babel是不会转译的。需要用户自行引入polyfill来解决
 
 ```js
 {
