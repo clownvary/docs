@@ -3,10 +3,10 @@
   前者是action,store,reducer这些的概念下的东西，react-redux是***ui绑定库***，只有provider和connect
 
 1.action和*action创建函数*的概念要清楚，创建函数就是返回一个action
-
+ 
 action文件中一般有一个type常量，还有一个对应的同名（不同名也行）的action创建方法
 
-## action.js
+## action
 
 ```js
 
@@ -40,23 +40,38 @@ view组件中，互动调用的，一般为事件，不要搞混
 [建议看这个](http://www.redux.org.cn/docs/FAQ.html#performance-all-reducers)
 
 ---
-
-```js
+  ```js
   state的树是由reducer组织起来的，和connect里的没什么关系
   export default connect(
   state => ({
     orderSummary: state.modules.Cart.Checkout.orderSummary,
     applyGiftCardx: state.modules.Cart.Checkout.applyGiftCard//这里的applygitfCardx,只是临时合并到这个组件的props中，总的state树名称还是不变
   })}
-```
-
+  ```
 - store.dispatch({type:'add_todo',text:'name'}),本来是要这样触发action,但写法不方便，有了actionAcreator,就可以`store.dispatch(addTodo('name'))`;
 
-4.用了redux后，所有的state都被store管理，原则上组件中就不再出现state,store计算出state,然后以prop的形式往下传
+4. 用了redux后，所有的state都被store管理，原则上组件中就不再出现state,store计算出state,然后以prop的形式往下传
 如果不用redux,原生的react 还是得配合state才行
-5.官方建议的只在顶层connect是不对的，目前的最佳实践是将组件按照 “展现层（presentational）” 或者 “容器（container）” 分类，并在合理的地方抽象出一个连接的容器组件：
-
+5. 官方建议的只在顶层connect是不对的，目前的最佳实践是将组件按照 “展现层（presentational）” 或者 “容器（container）” 分类，并在合理的地方抽象出一个连接的容器组件：
 > 不要搞混了，store只能有一个，但connect的组件可以有多个，一般建议是在各个组件*容器*connect，
+
+6. 异步action的返回
+  
+  ```js
+  axios.get('http://localhost:9991/api/weather/city')
+    .then((res) => {
+      const { data } = res;
+      return dispatch({ type: WEATHER_SUCCESS, payload: data });
+    })
+    .catch((error) => {
+      // 
+      dispatch({ type: WEATHER_FAIL, payload: error.message });
+      return Promise.reject(error);
+    })
+  ```
+  **resolve**: 因为外部要使用promise.then().then()..的时候要求我们的resolve里必须返回的还是一个promise, dispatch触发后本身就是个promise对象（会把dispatch的参数对象resolve出去）， 所以要return distpatch(....);
+
+  **reject**: 对于异常就不能return dispatch了，以为dispatch本身就是个promise对象，dispatch（...）这一操作本身是会resolve的，所以导致外层的catch根本捕获不到异常，所以对于外层捕获异常这种情况，我们必须在action的异常内部把异常显示的reject出去，
 
 - UI 组件负责 UI 的呈现，容器组件负责管理*数据和逻辑*
 
@@ -64,8 +79,8 @@ connect 只是返回一个绑定了自定义state和reducer到props的心的组�
 
 - [跨reducer共享state](http://www.redux.org.cn/docs/FAQ.html#reducers-share-state)
 
-### 中间件
 
+### 中间件
 ```js
 //签名如下
 function md(extraArgs) {
@@ -77,60 +92,16 @@ return ({dispatch, state})=> next => action {xxx}
 
 - middleWare,签名为（store即{disptch, getState})=>next=>action的方法，thunk是一种实现
 
-- action , 签名为（）=> (dispatch, getState不是花括号=> {xxx}
-  
-  ```javascript
-  1. ====
-  // 比如现在有一个如下的异步action, dispatch和state是怎么传进来的呢？ 往下看
-  export const updateCouponCodeAction = code => (dispatch,state) => {
-    dispatch(uiUpdateErrorAction({ errorMsg: null }));
-    return dispatch(uiSelectCouponAction(code));
-  };
-  2. ====
-  // 调用
-  class DcCoupon {
-      this.props.c/
-  }
-  export default connect(
-      null,
-      {
-        updateCouponCodeAction // 相当于返回key和value都为同名的且绑定过dispatch的方法
-      }
-  )(DcCoupon);
-  
-  // 这里mapDispatchToProps 本身可以有两种方式，对象（如上）或方法， 如下
-  当为方法时，接收一个dispatch参数，返回一个绑定dispatch过得对象
-  function mapDispatchToProps(dispatch) {
-    return { actions: bindActionCreators(actionCreators, dispatch) }
-  }
-  
-  export default connect(mapStateToProps, mapDispatchToProps)(TodoApp)
-  3. ====
-  无论是对象方式还是方法方式，当我们使用this.props.updateCouponCodeAction('test') 时，相当于这个
-  (dispatch,state) => {
-   dispatch(uiUpdateErrorAction({ errorMsg: null }));
-   return dispatch(uiSelectCouponAction(code));
-  };
-  被dispatch触发了，此时就走到了middleware中，同时因为触发的是方法，一般都会用thunkmiddleware, 如下：
-  
-  export default function thunkMiddleware() {
-    return ({ dispatch, getState }) => next => (action) => {
-      if (typeof action === 'function') {
-        return action(dispatch, getState);// 就是中间件这里穿进去了disptch和getState,
-      }
-      return next(action);
-    };
-  }
-  
-  所以就能理解为什么中间件和异步action的签名会是这样了。
-  
-  
+- action(异步) , 签名为（）=> (dispatch, getState不是花括号=> {xxx}
+
+  ```js
+   sd
   ```
 
 - provider, 是为了解决不用把store层层往下传递的问题，实现本质是context. provider 接受store 之后， 子组件都能在connect 中接收到`state`,从而被动更新。但注意一般只在**container层有选择的选择自己需要的state进行注入**
 
 - 注意本质上我们的目的是要重新包装dispatch，替换dispatch方法，next指代的是dispatch,只不过不是简单的指向系统的store.dispatch,而是下一个被包装过的dispatch，如图
-  ![dispatch](https://pic3.zhimg.com/v2-e5b8f433fec45c09260759fb12e90bb6_r.png)
+![dispatch](https://pic3.zhimg.com/v2-e5b8f433fec45c09260759fb12e90bb6_r.png)
 
 - applyMiddleware : 为了保证你只能应用 middleware 一次，它作用在 createStore() 上而不是 store 本身。因此它的签名不是 `(store, middlewares) => store`， 而是 `(...middlewares) => (createStore) => createStore`
 
@@ -154,33 +125,30 @@ let store = createStore(
   // applyMiddleware() 告诉 createStore() 如何处理中间件
   applyMiddleware(logger, crashReporter)
 )
+
 ```
 
 - applyMiddleware（...middlewares）,是用来串联各个middleware的方法，这样所有的middleware就可以以next()的机制来层层调用dispatch
-  
   - compose,是applyMiddleware中最核心的一个方法，使用它才实现了串联，
-    
     - compose的实现，其实就是一个柯里化得过程，
-      
-      ```js
-      function compose(...funcs) {
+    ```js
+     function compose(...funcs) {
       if (funcs.length === 0) {
         return arg => arg
       }    
-      
+
       if (funcs.length === 1) {
         return funcs[0]
       }    
-      
+
       const last = funcs[funcs.length - 1]
       const rest = funcs.slice(0, -1)
       return (...args) => rest.reduceRight((composed, f) => f(composed), last(...args))
-      //就是一个函数执行完后又是另一个函数的参数
-      // 如[A,B,C],compose第一次是C，f是B，即B（C），第二次，compose是B（C），f是A，则结果A（B（C））
-      // 
-      }
-      ```
-
+    //就是一个函数执行完后又是另一个函数的参数
+    // 如[A,B,C],compose第一次是C，f是B，即B（C），第二次，compose是B（C），f是A，则结果A（B（C））
+    // 
+    }
+    ```
 - applyMiddleWare 实现
 
 方法一：
@@ -220,7 +188,7 @@ export default function compose(...funcs) {
 //可以看出compose做的事情就是上一个函数的返回结果作为下一个函数的参数传入。
 
 export default function applyMiddleware(...middlewares) {
-
+   
   return (createStore) => (...args) => {
     // 之后就在这里先建立一个store
     const store = createStore(...args)
@@ -233,7 +201,7 @@ export default function applyMiddleware(...middlewares) {
     }
 
     chain = middlewares.map(middleware => middleware(middlewareAPI))
-
+    
     dispatch = compose(...chain)(store.dispatch)
     // 这里和方法一循环实现不同，实现了串联，然后最右边的middleware接受原始的store.dispatch
     // 所以执行时候右边先执行，然后层层返回
@@ -244,7 +212,6 @@ export default function applyMiddleware(...middlewares) {
   }
 }
 ```
-
 - thunk,是一种中间件，只是*让action可以传递方法*，但它没有提供异步方法，一般还得使用ajax或者fetch来实现，像redux-promise就提供了自己的实现
 
 ### reducer
@@ -255,7 +222,6 @@ export default function applyMiddleware(...middlewares) {
 ```
 
 - state 设计：想象成数据库，每个对象想象成单独的表，利用这种扁平的结构，使用引用，而不要使用嵌套的，如下
-  
   ```
   //不要这样
   state:[
@@ -315,8 +281,12 @@ export default function applyMiddleware(...middlewares) {
   ```
 
 - state的初始值
-  
   - [immutable文档参考](https://yq.aliyun.com/articles/69516)
-    有两种方法设置初始值，一种是在creatStore的第二个预设参数上设置，另一种是在具体的reducer中使用state= initState，来设置[强烈参考](http://cn.redux.js.org/docs/recipes/reducers/InitializingState.html)
+有两种方法设置初始值，一种是在creatStore的第二个预设参数上设置，另一种是在具体的reducer中使用state= initState，来设置[强烈参考](http://cn.redux.js.org/docs/recipes/reducers/InitializingState.html)
 
 要注意的是优先级的问题，creatStore参数>reducer中initState，如果creatStore没设置，以reducer为准
+
+
+
+
+
