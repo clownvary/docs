@@ -521,6 +521,40 @@ DLLPlugin 则是能把第三方代码完全分离开，即每次只打包项目�
 2. webpack-dev-server
    
    开启热加载，自带监听,打开网页等功能，需要注意的是有了webpack-dev-server之后，启动命令就可以不用`webpack --watch`了，直接`webpack-dev-server`即可,`webpack-dev-server` build的文件在dist中看不见，`webpack` build的可以看见。
+   
+   `contentBase` 是server **静态文件**，
+   
+   `publicPath` 是server **打包的文件**
+
+```js
+   src
+    |__base
+         |__a.js
+         |__b.png
+         |__index.html
+    |__dist
+         |_bundle.js
+         |_index.html
+```
+
+```json
+   {
+       webpack-dev-server: {
+           contentBase:['base','xxx']//可以server多个目录
+           publicPath:'dist'// 不配置默认就是dist文件夹，只不过在内存中看不到
+       }，
+       output:{
+           path:'dist'// dev-server模式下，其实没用，还是优先使用wds的publicPath输出目录
+       }
+```
+
+   项目结构如图
+
+    1. contentBase内所有文件被server了,一般存储静态文件，所有都能访问到。
+
+    2. base内部的index.html只是作为模板输出到dist中的index.html.
+
+所以可以利用contentBase的特性server静态文件，同时dist文件夹内的也被server，相当于能同时访问两个地方的文件。
 
 3. htmlWebpackPlugin
    
@@ -534,7 +568,7 @@ DLLPlugin 则是能把第三方代码完全分离开，即每次只打包项目�
    
    **webpack-dev-server.publicPath**: 开发环境中，所有打包文件的**输出目录**，只在开发环境中起效
    
-   **webpack-dev-server.contenBase**: 打包输出的的文件html所在的目录，一般和output.path一样
+   **webpack-dev-server.contenBase**: 静态文件的文件html所在的目录，一般和output.path一样
    
    **output.publicPath**: 设置打包输出的**文件内**静态资源的**引用** 前缀
 
@@ -606,6 +640,84 @@ DLLPlugin 则是能把第三方代码完全分离开，即每次只打包项目�
       ```
    
            要把静态资源也当成模块导入，这样就能正常打包了
+
+7. Jest + webpack 
+   
+   1. 使用jest的时候，因为组件中可以直接使用`import from 'style.less'`导入静态文件（webpck功能），所以在jest下，需要模拟出这种功能，让静态资源的也已模块的形似导入，一般使用`identity-obj-proxy`这个库，可以参考jest文档webpack部分。
+
+8. splitChunk
+   
+   [参考系列文章]([https://www.cnblogs.com/kwzm/p/10314438.html](https://www.cnblogs.com/kwzm/p/10314438.html)
+   
+   - module：就是js的模块化webpack支持commonJS、ES6等模块化规范，简单来说就是你通过import语句引入的代码。
+   - chunk: chunk是webpack根据功能拆分出来的，包含三种情况：
+   
+   　　　　1、你的项目入口（entry）
+   
+   　　　　2、通过import()动态引入的代码
+   
+   　　　　3、通过splitChunks拆分出来的代码
+   
+   　　　　chunk包含着module，可能是一对多也可能是一对一。
+   
+   - bundle：bundle是webpack打包之后的各个文件，一般就是和chunk是一对一的关系，bundle就是对chunk进行编译压缩打包等处理之后的产出。
+     
+     默认splitChunk配置如下，会split node_module里的包和最少引用两次以上的代码块_
+     
+     ```js
+     optimization: {
+         splitChunks: {
+           chunks: 'async',
+           minSize: 30000,
+           minChunks: 1,
+           maxAsyncRequests: 5,
+           maxInitialRequests: 3,
+           automaticNameDelimiter: '~',
+           name: true,
+           cacheGroups: {// cacheGroups里的配置可以覆写splitChunks的外层配置，很重要, 同时其内部的条件必须同时满足才能生效
+             vendors: {
+               test: /[\\/]node_modules[\\/]/,
+               priority: -10
+             },
+             default: {
+               minChunks: 2,
+               priority: -20,
+               reuseExistingChunk: true
+             }
+           }
+         }
+       }
+     ```
+     
+     chunks的含义是拆分模块的范围，它有三个值async、initial和all。
+     
+     - async表示只从异步加载得模块（动态加载import()，不是import xx from xx）里面进行拆分
+     - initial表示只从入口模块进行拆分
+     - all表示以上两者都包括
+       
+       假如只配置了'async',那么入口文件里的vendor的包或者代码块就不会被拆分，都会被打到一个chunk，即入口chunk里
+   - maxInitialRequests
+     
+     它表示允许入口（即initial对应的入口，同理maxAsyncRequests是限制dynamic import的）**并行加载的最大请求数**，之所以有这个配置也是为了对拆分数量进行限制，不至于拆分出太多模块导致请求数量过多而得不偿失
+     
+     拆分规则如下：
+     
+     
+     - 入口文件本身算一个请求
+     - 如果入口里面有动态加载得模块这个不算在内
+     - 通过runtimeChunk拆分出的runtime不算在内
+     - 并不算js以外的公共资源请求比如css
+     - 如果同时又两个模块满足cacheGroup的规则要进行拆分，但是maxInitialRequests的值只能允许再拆分一个模块，那尺寸更大的模块会被拆分出来
+       
+       
+   - maxAsyncRequest
+     - import()文件本身算一个请求
+     
+     - 并不算js以外的公共资源请求比如css
+     
+     - 如果同时有两个模块满足cacheGroup的规则要进行拆分，但是maxInitialRequests的值只能允许再拆分一个模块，那尺寸更大的模块会被拆分出来
+     
+     
 
 ## others
 
