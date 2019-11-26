@@ -204,7 +204,7 @@
   
     1.遍历循环所有包，包括包中依赖的包
   
-    2.扁平化。（redupe）
+    2.扁平化dedupe即 deduplicated，去重
   
         a.遇到**新包**放到最外层项目树下
       
@@ -213,7 +213,34 @@
          是：则选择最新的可接受的版本放在外层树下
          否：各自在自己树下生成，版本不同
   
-    3.按照生成的依赖树安装
+      一般使用如下,(package.json)：
+  
+  ```js
+  scripts:{
+      "postinstall":"npm dedupe" // postinstall 是npm的一个hook会在npm install 之后自动执行，还有一些其他的hook 如prebuild，pretest......
+  }  
+  ```
+  
+  - 统一设置项目依赖的默认前缀    
+  
+  ```swift
+  npm config set save-prefix="~" 
+  ```
+  
+  - 运行此命令，npm会拿你的`package.json`和`node_modules`目录进行比对，然后把那些在`package.json`中没有引用到的package列出来。  
+    还有那些你没有手动添加到`package.json`或者是执行`npm install $package`时没有加`--save`参数的，都会被删掉。
+  
+  ```undefined
+  npm prune
+  ```
+  
+  - 使用`shrinkwrap`命令会在你当前项目中生成一个`npm-shrinkwrap.json`文件。它会将你当前`package.json`中引用的依赖版本锁定，当下次执行`npm install`时，它默认安装的其实是`shrinkwrap.json`中锁定的依赖版本号。  
+  
+  ```undefined
+  npm shrinkwrap
+  ```
+  
+  3.按照生成的依赖树安装
   
    所以有时候外层项目并没有引用依赖一些包，但可以直接使用，就是因为内部依赖        的包的包被提取到了最外层的node_modules里
   
@@ -283,7 +310,9 @@
   
   1. 如果它已经支持 `pkg.module` 字段则会优先使用 ES6 模块规范的版本，这样可以启用 Tree Shaking 机制。
   2. 如果它还不识别 `pkg.module` 字段则会使用我们已经编译成 CommonJS 规范的版本，也不会阻碍打包流程。
-
+- 包版本管理方案
+  
+  使用`npm version patch|minor......`等来直接更改package.json中的version版本号
 - 
 
 ## CSS
@@ -692,32 +721,32 @@ DLLPlugin 则是能把第三方代码完全分离开，即每次只打包项目�
      chunks的含义是拆分模块的范围，它有三个值async、initial和all。
      
      - async表示只从异步加载得模块（动态加载import()，不是import xx from xx）里面进行拆分
+     
      - initial表示只从入口模块进行拆分
+     
      - all表示以上两者都包括
        
        假如只配置了'async',那么入口文件里的vendor的包或者代码块就不会被拆分，都会被打到一个chunk，即入口chunk里
+   
    - maxInitialRequests
      
      它表示允许入口（即initial对应的入口，同理maxAsyncRequests是限制dynamic import的）**并行加载的最大请求数**，之所以有这个配置也是为了对拆分数量进行限制，不至于拆分出太多模块导致请求数量过多而得不偿失
      
      拆分规则如下：
-     
-     
+
      - 入口文件本身算一个请求
      - 如果入口里面有动态加载得模块这个不算在内
      - 通过runtimeChunk拆分出的runtime不算在内
      - 并不算js以外的公共资源请求比如css
      - 如果同时又两个模块满足cacheGroup的规则要进行拆分，但是maxInitialRequests的值只能允许再拆分一个模块，那尺寸更大的模块会被拆分出来
-       
-       
-   - maxAsyncRequest
-     - import()文件本身算一个请求
-     
-     - 并不算js以外的公共资源请求比如css
-     
-     - 如果同时有两个模块满足cacheGroup的规则要进行拆分，但是maxInitialRequests的值只能允许再拆分一个模块，那尺寸更大的模块会被拆分出来
-     
-     
+
+- maxAsyncRequest
+  
+  - import()文件本身算一个请求
+  
+  - 并不算js以外的公共资源请求比如css
+  
+  - 如果同时有两个模块满足cacheGroup的规则要进行拆分，但是maxInitialRequests的值只能允许再拆分一个模块，那尺寸更大的模块会被拆分出来
 
 ## others
 
