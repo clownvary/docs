@@ -29,7 +29,7 @@ http->http
 const http = require('http');
 const httpProxy = require('http-proxy');
 const proxy = httpProxy.createProxyServer(); 
-roxy.on('error', function (err, req, res) {
+proxy.on('error', function (err, req, res) {
     res.writeHead(500, {
         'Content-Type': 'text/plain'
     });
@@ -176,7 +176,7 @@ proxy.listen({
 
 3. 查阅文档可发现，`proxy`实例和`ctx`几乎拥有一模一样的生命周期方法，一开始不理解，后来发现其实就是两者控制范围的不同，前者的范围是所有的请求，后者只是当前请求，所以一般针对某个请求的过滤或者特殊处理，可以放在ctx的生命周期中，全局的一些处理放在proxy中
 
-一般情况，以上实现我们就能拦截到对应的请求，但由于我们的请求必须经过公司的proxyCom,所以还得需要补货到的请求**先转发到proxyCom**，由于`http-mitm-proxy`并没有提供**代理的代理** 这样的功能，这里经过查阅资料找到以下解决方案，`node-https-proxy-agent`
+一般情况，以上实现我们就能拦截到对应的请求，但由于我们的请求必须经过公司的proxyCom,所以还得需要捕获到的请求**先转发到proxyCom**，由于`http-mitm-proxy`并没有提供**代理的代理** 这样的功能，这里经过查阅资料找到以下解决方案，`node-https-proxy-agent`
 
 #### 最终实现如下
 
