@@ -21,6 +21,7 @@
 │   │   ├── jenkins.md
 │   │   └── vscode_skills.md
 │   └── skills
+│       ├── code_review.md
 │       ├── docker_skills.md
 │       ├── grid_layout_skills.md
 │       ├── http(s)_proxy.md
@@ -39,10 +40,12 @@
 │   ├── bitcoin.md
 │   ├── know_the_movie.md
 │   ├── shoot.md
+│   ├── sketch.md
+│   ├── zeplin.md
 │   ├── �\226�\207.md
 │   └── 天�\234\235�\224\237�\230�\230�\215.md
 └── resource
 
-8 directories, 31 files
+8 directories, 34 files
 
 ```
