@@ -6,14 +6,14 @@ function genContent() {
     let content = [
         '[![Build Status](https://travis-ci.org/clownvary/docs.svg?branch=master)](https://travis-ci.org/clownvary/docs)',
         '# Docs and conclusion skills of personal.',
-        '## File Tree'
+        '## TOC'
     ];
     try {
-        const rawTree = exec("tree -P '*.md' -I 'build|README.md|node_modules'").toString();
-        const arrTree = rawTree.split('\n');
-        arrTree.unshift('```');
-        arrTree.push('```');
-        content = content.concat(arrTree);
+        const general = getJsonFiles('General');
+        const others = getJsonFiles('Others');
+        const generalSection = genSection('General',general);
+        const othersSection = genSection('Others',others);
+        content = content.concat(generalSection,othersSection);
     } catch (error) {
         console.error('error occured please check your command');
         console.error(error);
@@ -22,6 +22,37 @@ function genContent() {
     return content.join('\n');
 }
 
+function genSection(sectionName,data) {
+    let mdStr = [];
+    mdStr.unshift(`### ${sectionName}`);
+    data.map(item=>{
+        const str = `- [${item.name}](${item.path})`;
+        mdStr.push(str);
+    });
+    return mdStr;
+}
+
+function getJsonFiles(jsonPath){
+    let jsonFiles = [];
+    function findJsonFile(filePath){
+        let files = fs.readdirSync(filePath);
+        files.forEach(function (item, index) {
+            let fPath = path.join(filePath,item);
+            let stat = fs.statSync(fPath);
+            if(stat.isDirectory() === true) {
+                findJsonFile(fPath);
+            }
+            if (stat.isFile() === true) { 
+                const name = item.split('.')[0];
+                if(name) {
+                    jsonFiles.push({path: fPath, name});
+                }
+            }
+        });
+    }
+    findJsonFile(jsonPath);
+    return jsonFiles;
+}
 function writeFile(path, data) {
     fs.writeFile(path, data, (writeError) => {
         if (writeError) {
