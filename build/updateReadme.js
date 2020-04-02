@@ -11,9 +11,11 @@ function genContent() {
     try {
         const general = getJsonFiles('General');
         const others = getJsonFiles('Others');
+        const ancorp = getJsonFiles('ANcorp');
         const generalSection = genSection('General',general);
         const othersSection = genSection('Others',others);
-        content = content.concat(generalSection,othersSection);
+        const ancorpSection = genSection('Ancorp',ancorp);
+        content = content.concat(generalSection,ancorpSection,othersSection);
     } catch (error) {
         console.error('error occured please check your command');
         console.error(error);
