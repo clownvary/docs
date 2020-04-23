@@ -1,7 +1,7 @@
 {
   "name": "docs",
   "version": "1.0.0",
-  "description": "A markdown doc for work and study",
+  "description": "记录自己工作和学习当中一些经验笔记，包括技术工具、经验总结、兴趣爱好等相关笔记。",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,7 +17,7 @@
     "work",
     "learn"
   ],
-  "author": "clownvary",
+  "author": "gary wang",
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/clownvary/docs/issues"
