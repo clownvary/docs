@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/clownvary/docs.svg?branch=master)](https://travis-ci.org/clownvary/docs)
+
 # docs
 
 记录自己工作和学习当中一些经验笔记，包括技术工具、经验总结、兴趣爱好等相关笔记。
