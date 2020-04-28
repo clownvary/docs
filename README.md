@@ -45,5 +45,5 @@
    * [比特币](hobby/bitcoin.md)
   
 ## Part III - 其他
-* [其他](others/index.md)
-   * [天朝生存秘籍](others/天朝生存秘籍.md)
+* [其他](other/index.md)
+   * [天朝生存秘籍](other/天朝生存秘籍.md)
