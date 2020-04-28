@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "updateReadme": "node ./build/updateReadme.js"
+    "updateReadme": "node ./build/updateReadme.js",
+    "build": "npx gitbook build ./ buildBook"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/clownvary/docs/issues"
   },
-  "homepage": "https://github.com/clownvary/docs#readme"
+  "homepage": "https://github.com/clownvary/docs#readme",
+  "dependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
 }
