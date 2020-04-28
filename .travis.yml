@@ -14,7 +14,7 @@ script:
 after_success:
   - git config user.email "travis@travis.org"
   - git config user.name "travis"
-  - git checkout gh-pages
+  - git checkout gh-pages || git checkout -b gh-pages
   - git pull origin gh-pages:gh-pages
   - ls|grep -v 'node_module'|grep -v 'buildBook'|xargs rm -rf
   - mv buildBook/.** ./ || mv buildBook/** ./ 
