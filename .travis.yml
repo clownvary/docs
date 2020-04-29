@@ -1,5 +1,7 @@
 os: osx
 language: node_js
+git:
+  quite: true
 cache:
   directories:
     - node_modules
@@ -22,3 +24,5 @@ after_success:
   - git add ./
   - git commit --allow-empty -m "deploy gitbook"
   - git push https://clownvary:${GITHUB_API_KEY}@${GH_REF} gh-pages:gh-pages
+after_failure:
+  - echo 'building failure'
