@@ -21,4 +21,4 @@ after_success:
   - rm -rf buildBook
   - git add ./
   - git commit --allow-empty -m "deploy gitbook"
-  - git push https://clownvary:${GITHUB_API_KEY}@${GH_REF} HEAD:gh-pages
+  - git push https://clownvary:${GITHUB_API_KEY}@${GH_REF} gh-pages:gh-pages
