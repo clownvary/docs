@@ -24,6 +24,7 @@
         * [jenkins笔记](technology/tools/jenkins.md)
     
     * [其他](technology/others/index.md)
+        * [蒙版弹幕](technology/others/mask_danmaku.md)
         * [Http/Https代理转发相关知识](technology/others/http_https_proxy.md)
         * [python笔记](technology/others/python.md)
         * [rxjs笔记](technology/others/rxjs.md)
