@@ -31,7 +31,8 @@ jobs:
          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
          restore-keys: |
            ${{ runner.os }}-node-
-    - run: npm ci && gitbook install
+    - run: npm ci
+    - run: npx gitbook install
     - run: npm run build
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.0.1
