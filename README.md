@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/clownvary/docs.svg?branch=master)](https://travis-ci.org/clownvary/docs)
+[![Build Status](https://github.com/clownvary/docs/workflows/gitbook%20deploy/badge.svg)](https://github.com/clownvary/docs/actions)
 
 # docs
 
