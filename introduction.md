@@ -18,6 +18,12 @@
 
 - [更多](https://github.com/clownvary)
 
+## 分享
+
+- [蒙版弹幕原理分享](https://github.com/clownvary/mask-danmaku)
+
+    蒙版弹幕的原理分享。
+
 ## 联系方式
 
 - email: vary_007@163.com

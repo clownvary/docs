@@ -87,6 +87,21 @@
     </div>
   );
   ```
+- React.Memo
+
+  React.Memo不同于useMemo, 前者使用来在组件层级通过**浅比较**props的previous 和 next值来觉得是否渲染从而优化组件性能，后者是在组件中通过判断内部props 或 state的值来优化内部的方法等性能。
+
+  浅比较默认只比较两次对象是否是同一引用，不会逐个遍历对象属性去判断，优点是性能好，缺点是可能比较的结果和我们预期的不同，看例子：
+  
+  ```javascript
+    var a = { name:'java'};
+    var b = { name:'java'};
+    shallowEqual(a,b) 为false, 因为a,b不是同一个对象引用，但其实内部的值是一样的
+  ```
+  所以在使用React.Memo时应该注意，如果是想要优化组件性能，最好使用深比较，lodash.isEqual是深比较，但如果比较的对象层级较深，本身也比较耗性能。
+  > 需要注意props里如果有匿名的函数比如onClick回调，深比较将每次都返回false,因为匿名函数每次都是生成新的
+  所以默认的React.Memo适合那些比较的props比较简单且比较少的情况，要根据不同组件来取舍。
+
 
 - 自定义hook
     a. 必须usexxx命名函数
