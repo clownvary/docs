@@ -389,6 +389,9 @@
    font-style: var(--some-keyword);
    }
    ```
+6. vertical-align
+
+    [强烈参考](https://zhuanlan.zhihu.com/p/60197512)
 
 ## 浏览器缓存
 
