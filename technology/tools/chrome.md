@@ -58,7 +58,7 @@ When your debug is blocking, you can see a variable value, if value is an object
 - console.time(obj)/console.timeEnd(obj)
 - console.table(obj)
 
-### Performance 
+### Performance
 
 [see this](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/)
 
