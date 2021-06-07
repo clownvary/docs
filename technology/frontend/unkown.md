@@ -16,6 +16,62 @@
 
 ## JS
 
+* 变量赋值，数值型、引用型
+
+[参考](https://stackoverflow.com/a/25117245)
+
+- 变量是存储在内存中的一块区域
+- 重新赋值给一个变量会重新指向一个新区域
+- 重新赋值给一个变量不会影响指向同一区域的其他变量
+- func内的餐宿和变量赋值同名时，如下demo1,可以想象成param1就是一个内部变量，`var param1 = myString`
+
+demo1
+
+```js
+function myFunc(param1) {
+    param1 = 'world'; // param1相当于只是个内部私有变量，给它的赋值不会影响外部变量的结果
+
+    console.log(param1);   // Logs 'world'
+}
+
+var myString = 'hello';
+// Calls myFunc and assigns param1 to myString just like param1 = myString
+myFunc(myString);
+
+console.log(myString); // logs 'hello'
+```
+
+demo2
+
+```js
+function myFunc(otherObj) {
+
+    // Let's mutate our object
+    otherObj.firstName = 'Sue'; // 不是reassign, 所以会改变存储区域里的值
+    console.log(otherObj.firstName); // Logs 'Sue'
+
+    // Now let's re-assign
+    otherObj = {
+        firstName: 'Jack',
+        lastName: 'Frost'
+    }; // 是reassign, 所以otherObj得值变了，但不会影响其他指向原区域的变量
+    console.log(otherObj.firstName); // Logs 'Jack'
+
+    // Again, otherObj and myObject are assigned to 2 very different objects
+    // And mutating one object doesn't magically mutate the other
+}
+
+var myObject = {
+    firstName: 'Joe',
+    lastName: 'Smith'
+};
+
+// Calls myFunc and assigns otherObj to myObject just like otherObj = myObject
+myFunc(myObject);
+
+console.log(myObject.firstName); // Logs 'Sue', 因为在内部已经改变了存储区域的值，所以是Sue
+```
+
 * es6 解构赋值（destructure）设置默认值
   
   在使用 `const { a } = obj`时一般没有什么问题， 但是如果我们想得到a下的b,`const { a :{b}} = obj`,这样写时，在a不存在或者undefined的时候就会报错，block住程序的执行，可以给a设置默认值来避免报错，如下：
