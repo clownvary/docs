@@ -8,6 +8,39 @@
   [参考1](https://segmentfault.com/a/1190000011007769);
   [参考2](https://www.jianshu.com/p/a3bec4a50b8d)
 
+
+- setState 合并
+
+当你调用 setState() 的时候，React 会把你提供的对象合并到当前的 state。
+
+```js
+constructor(props) {
+    super(props);
+    this.state = {
+      posts: [],
+      comments: []
+    };
+  }
+```
+然后你可以分别调用 setState() 来单独地更新它们：
+
+
+```js
+componentDidMount() {
+    fetchPosts().then(response => {
+      this.setState({
+        posts: response.posts
+      });
+    });
+
+    fetchComments().then(response => {
+      this.setState({
+        comments: response.comments
+      });
+    });
+  }
+```
+
 - Render Props : 是指一种在 React 组件之间使用一个值为函数的 prop 共享代码的简单技术
   
   ```js
@@ -33,7 +66,7 @@
   
    a. 性能优化，第二个参数接收一个数组，可以只watch数组里的变量，只在更改时触发effect。如果你要使用此优化方式，请确保数组中包含了所有**外部作用域中会随时间变化并且在 effect 中使用**的变量
    
-   b. 如果想执行一次effect（仅在组件挂载和卸载时执行）, 需要给第二个参数传个空数组[]
+   b. 如果想执行一次effect（仅在组件挂载和卸载时执行）, 需要给第二个参数传个空数组[],因为传空数组本质是由于此时effect 内部的 props 和 state 就会一直持有其初始值不会变化。
 
 - userLayoutEffect
   
@@ -76,7 +109,7 @@
   用来在监听的某些属性改变之后调用，区别是useCallback, 返回的是个**回调函数**，而useMemo返回的是个**值**，参考使用方式。
   
   ```js
-   const cb = useCallback(()=>`callback:${name}`,[name]);
+   const cb = useCallback(()=>`callback:${name}`,[name]); // 允许你在重新渲染之间保持对相同的回调引用以使得 shouldComponentUpdate 继续工作， 除非name改变
    const memo = useMemo(()=>`memo:${name}`,[name]);
    return (
     <div className="App">
@@ -151,3 +184,37 @@
        }
      }
      ```
+
+- React性能相关
+
+[参考](https://zhuanlan.zhihu.com/p/101507773)
+
+- React性能优化
+
+> 优化前先关闭chrome所有插件，或直接使用匿名模式，因为插件会影响性能结果
+
+> 建议使用whyDidYouRender库，调试组件reRender状态；建议使用chrome=>performance 页签录制操作查看性能报告
+
+1. 列表添加key,优化虚拟dom 比较
+
+key 必须唯一（列表内唯一），不建议使用遍历的index,当顺序改变时会导致bug产生
+
+2. pureComponent/React.memo, 优化判断shouldComponentUpdate , 配合isEqual实现深对比，配合immer实现不可变对象
+
+对于无状态组件即无props的组件，也要使用React.memo包装，如下
+
+```js
+function Parent(){}
+function Child(){
+  ...
+}
+<Parent>
+<Child/> // 每次parent reRender都会导致Child reRender, 因为child虽然没有props参数声明，但其实其值是一个`{}` ,当Parent reRender时，相当于给child又传递了一个{},虽然两次值一样，但由于{} !== {}, 所以还是会更新，所以需要使用React.memo封装下
+</Parent>
+```
+
+3. useEffect 添加正确依赖，防止非必要触发
+
+4. 使用useMemo/useCallback缓存不是每次都要更新的值，只有在其依赖值变化是才触发
+
+5. 不要使用箭头函数作为事件回调，因为箭头函数每次都会生成新，当作为props传递的时候会触发reRender
