@@ -218,3 +218,7 @@ function Child(){
 4. 使用useMemo/useCallback缓存不是每次都要更新的值，只有在其依赖值变化是才触发
 
 5. 不要使用箭头函数作为事件回调，因为箭头函数每次都会生成新，当作为props传递的时候会触发reRender
+
+6. 不要使用行内对象，如`<A style={{width: 200px}}>`, 每次生成的都是新的对象导致重新渲染
+
+7. 避免使用会引起浏览器回流（reflow）的css, 如隐藏元素可以使用`opacity: 0` 替代`display: none`
