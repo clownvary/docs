@@ -1,0 +1,29 @@
+os: osx
+language: node_js
+git:
+  quite: true
+jobs:
+  fast_finish: true
+cache:
+  directories:
+    - node_modules
+    - $HOME/Library/Caches/Homebrew
+node_js:
+  - 'lts/*'
+before_install:
+  - git pull
+script:
+  - npm install && gitbook install
+  - npm run build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_API_KEY
+  keep_history: true
+  local_dir: 'buildBook'
+  on:
+    branch: master
+after_success:
+  - echo 'building success'  
+after_failure:
+  - echo 'building failure'
