@@ -518,11 +518,12 @@ print（‘this is my grade %s’ % grade）`
 
 ## 使用注意
 
+> pyenv python的版本管理器 pipenv python包的版本管理器，两个不一样
 * pipenv 使用流程
 
   1. `cd project`
   2. `pipenv --python 3.x | pipenv --python 2.xx` 这样就创建了一个虚拟的开发环境，如果不使用此命令默认创建基于当前的python版本的环境
-  3. `pipenv shell` 激活虚拟环境的shell,不激活的话还是想当于在系统默认的环境下去操作，安装的包在全局，
+  3. `pipenv shell` 激活虚拟环境的shell,不激活的话还是相当于在系统默认的环境下去操作，安装的包在全局，
   4. `pipenv install xxx --dev` 这样这个模块就被安装在了虚拟环境中，和全局的就没有冲突，程序执行时也会从虚拟环境下去寻找
   5. `python index.py` (或者不进入shell,在外层执行 `pipenv run python index.py`)执行具体的脚本或命令
   6. `exit` 退出虚拟环境
