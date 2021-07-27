@@ -209,8 +209,9 @@ function Child(){
   ...
 }
 <Parent>
-<Child/> // 每次parent reRender都会导致Child reRender, 因为child虽然没有props参数声明，但其实其值是一个`{}` ,当Parent reRender时，相当于给child又传递了一个{},虽然两次值一样，但由于{} !== {}, 所以还是会更新，所以需要使用React.memo封装下
+<Child/> 
 </Parent>
+// 每次parent reRender都会导致Child reRender, 因为child虽然没有props参数声明，但其实其值是一个`{}` ,当Parent reRender时，相当于给child又传递了一个{},虽然两次值一样，但由于{} !== {}, 所以还是会更新，所以需要使用React.memo封装下
 ```
 
 3. useEffect 添加正确依赖，防止非必要触发
