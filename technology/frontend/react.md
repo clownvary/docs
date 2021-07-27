@@ -206,7 +206,7 @@ key 必须唯一（列表内唯一），不建议使用遍历的index,当顺序�
 ```js
 function Parent(){}
 function Child(){
-  ...
+  xxx
 }
 <Parent>
 <Child/> 
@@ -223,7 +223,8 @@ function Child(){
 6. 不要使用行内对象，如
 
   ```javascript
-   <A style={{width: 200px}} />
+  const style = {width: 200px} ;
+   <A style={style} />
   ``` 
   每次生成的都是新的对象导致重新渲染
 
