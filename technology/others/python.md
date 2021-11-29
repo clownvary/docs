@@ -1,5 +1,5 @@
 
-# Python笔记 
+# Python笔记
 
 ## 字符
 
@@ -518,8 +518,11 @@ print（‘this is my grade %s’ % grade）`
 
 ## 使用注意
 
-> pyenv python的版本管理器 pipenv python包的版本管理器，两个不一样
-* pipenv 使用流程
+> pyenv python的版本管理器 pipenv python中用的包的版本管理器，两个不一样, pyenv+viatualenv插件相当于既有了python的环境管理，也有了第三方包的管理
+当使用pyenv进入虚拟环境比如3.8.8时，就在可以不用输入python3 xxx,执行命令，直接输入python就是当前的解释器版本
+
+
+* pipenv 使用流程 （不推荐使用了）
 
   1. `cd project`
   2. `pipenv --python 3.x | pipenv --python 2.xx` 这样就创建了一个虚拟的开发环境，如果不使用此命令默认创建基于当前的python版本的环境
@@ -528,6 +531,78 @@ print（‘this is my grade %s’ % grade）`
   5. `python index.py` (或者不进入shell,在外层执行 `pipenv run python index.py`)执行具体的脚本或命令
   6. `exit` 退出虚拟环境
   > 可以做一个实验，在虚拟环境下装的包在pipenv shell之后可以正常导入，但一旦退出运行就会报错
+
+# pyenv + viratualenv插件 
+
+- 概念阐述
+在开发Python应用程序的时候，系统安装的Python只有一个版本：如3.4。**所有第三方**的包都会被pip安装到Python的**site-packages**目录下。
+如果我们要同时开发多个应用程序，那这些应用程序都会共用一个Python，就是安装在系统的Python。如果应用A需要jinja 2.7，而应用B需要jinja 2.6怎么办？
+这种情况下，每个应用可能需要各自拥有一套“独立”的Python运行环境。pyenv(配合virtualenv 插件）就是用来为一个应用创建一套“隔离”的Python运行环境。
+
+-  使用
+
+1. 安装pyenv 和virtualenv 插件 [参考](https://www.jianshu.com/p/20cd2fc914c1)
+2. 确定版本
+  ```shell  
+    # 1. 查看正在使用的python版本
+    $ pyenv version 
+      system (set by /usr/local/var/pyenv/version)
+
+    # 2. 查看系统支持的python版本
+    $ pyenv versions
+
+    # 3. 查看系统支持的python版本 （如果系统目前的版本里没有你想要的，可以参考列表安装)
+    $ pyenv install -l
+
+    # 4. 安装指定版本的pyton
+    $ pyenv install 3.6.0
+
+    # 5. pyenv local 设置当前目录使用的python版本
+    $ mkdir py3   && cd py3  && pyenv local 3.6.0
+    
+    # 验证：
+    # MacBookPro in /tmp/py3 
+    $ python -V
+    Python 3.6.0
+    
+    # MacBookPro in /tmp/py3 
+    $ cd
+    
+    $ python -V
+    Python 2.7.10
+    
+    # 6. 全局切换python版本
+    $ pyenv global 3.6.0 （pyenv versions 可查看能使用的版本）
+  ```
+
+3. 创建虚拟环境
+
+  ```shell
+    # 1. 创建虚拟环境
+  $ pyenv virtualenv 3.6.0 py360  (基于3.6.0 别名叫py360)
+  
+  # 2. 进入环境
+  $  pyenv activate py360
+   之后就可以在这里安装各种依赖和包，完全独立的
+  
+  # 验证：
+  $ python -V
+  Python 3.6.0
+  (py360)
+  
+  # 3. 退出环境
+  $ pyenv deactivate py360
+  
+  # 4. 查看系统python环境
+  $ pyenv versions
+  * system (set by /usr/local/var/pyenv/version)
+    3.6.0
+    3.6.0/envs/py360
+    py360  别名显示在第二行
+    
+  # 5. 删除环境
+  $ pyenv virtualenv-delete py360
+  ```
 
 ## 其他
 
