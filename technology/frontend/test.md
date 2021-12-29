@@ -1,12 +1,12 @@
 # 测试相关总结
 
-- mocha
+# mocha
 
   describe/it.only(xx)只执行当前用例
 
   describe/it.skip(xx)跳过当前用例
 
-- enzyme
+# enzyme
 
 	- shallow(shallow<ele>) 只在虚拟dom中渲染第一层（不是第一层节点，而是第一个组件）,不渲染子组件（未使用嵌套组件的情况下），大部分情况下应该使用这种
   - shallow中有个API (dive()),只能用在非dom的元素上，比如包装了多层最后default导出的component,就可以直接使用default的然后在其上使用dive()方法，如果包裹多层就使用多次。
@@ -106,7 +106,7 @@
      const spy = expect.spyOn(_ins,'componentDidMount');//这样就能spy上
 
     ```
-- sinon 
+# sinon 
 
   spy,stub,mock,称为test double
 	1. 都是针对***方法***的测试
@@ -271,8 +271,94 @@
         database.restore();
        });	 
     ```
+# React tesing library(RTL)
 
-3. Tips 
+> RTL从**用户使用角度**帮助测试**UI组件**的**一组**包
+
+几点原则需要注意：
+
+  - RTL vs Enzyme [参考](https://betterprogramming.pub/react-enzyme-vs-react-testing-library-2cac3ad20c52?gi=6a69568c4e6d)
+  - 不关注实现细节，只关注用户交互
+
+  - 避免以下实现细节
+
+    1. 组件内部状态
+    2. 组件内部方法
+    3. 组件生命周期
+    4. 子组件
+
+  - get/query/find 
+
+  ```js
+  import {screen, getByLabelText} from '@testing-library/dom'
+
+  // With screen:
+  const inputNode1 = screen.getByLabelText('Username')
+
+  // Without screen, you need to provide a container:
+  const container = document.querySelector('#app')
+  const inputNode2 = getByLabelText(container, 'Username')
+  ```
+  当get/query/find 选择不到目标节点的时候 推荐使用data-testId 属性
+  
+  -priority
+
+    1. getByRole
+    2. getByLabelText
+    3. getByPlaceholderText
+    4. getByText // 应用于非输入性组件
+    5. getByDisplayValue // 应用于表单输入组件
+    6. getByAltText
+    7. getByTitle
+    8. getByTestId
+
+  - debug
+
+    ```js
+      screen.debug();
+      screen.debug(screen.getByText('test));
+      screen.debug(screen.getAllByText('test));
+    ```
+    or
+
+    ```js
+      console.log(prettyDOM())
+    ```
+    
+    logRoles();
+    
+    ```js
+    import {getRoles} from '@testing-library/dom'
+
+        const nav = document.createElement('nav')
+        nav.innerHTML = `
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ul>`
+        console.log(getRoles(nav))
+
+        // Object {
+        //   navigation: [<nav />],
+        //   list: [<ul />],
+        //   listitem: [<li />, <li />]
+        // }
+    ```
+
+
+
+  > Q: RTL 不关注实现细节，那组件中的实现相关的覆盖率如何保证？
+
+  > A: Any complex logic shouldn’t be living in the components, and that’s why the React Testing Library doesn’t focus on testing at that level. Business logic should be decoupled from the component. By doing so, you can unit-test it using only Jest.
+
+  > 这段话很好解释了测试的原则，组件中不应包含复杂的逻辑，任何的业务逻辑应该从组件中解耦出来，然后进行单独的单元测试，这时候只用jest就可以了
+
+  - 快照测试
+
+  本意是好的（提醒开发者注意组件的变化），但执行时因为代码的更改会频繁的导致快照失败，开发者只是简单的更新快照使其pass而已，在code review的时候也很难去发现变化，所以并不建议使用
+
+
+# Tips 
 
   - 一直使用sinon.test(),可以自动清理sinon.spy,避免连续失败，注意在测试异步方法时，应该设置
 	   ```
