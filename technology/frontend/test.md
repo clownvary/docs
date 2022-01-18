@@ -1,12 +1,6 @@
 # 测试相关总结
 
-# mocha
-
-  describe/it.only(xx)只执行当前用例
-
-  describe/it.skip(xx)跳过当前用例
-
-# enzyme
+## enzyme
 
 	- shallow(shallow<ele>) 只在虚拟dom中渲染第一层（不是第一层节点，而是第一个组件）,不渲染子组件（未使用嵌套组件的情况下），大部分情况下应该使用这种
   - shallow中有个API (dive()),只能用在非dom的元素上，比如包装了多层最后default导出的component,就可以直接使用default的然后在其上使用dive()方法，如果包裹多层就使用多次。
@@ -106,172 +100,7 @@
      const spy = expect.spyOn(_ins,'componentDidMount');//这样就能spy上
 
     ```
-# sinon 
-
-  spy,stub,mock,称为test double
-	1. 都是针对***方法***的测试
-	2. 主要用在有边际效应的方法中（即不是纯方法中中，纯方法给定指定参数会返回相同的结果），比如依赖数据库调用，当前时间，随机变量等
-
-	还有一些应用在耗时比较长（异步），或者需要抛出错误的时候来模拟使用
-  
-  > 一般都是结合chai断言库使用，很少用sinon.assert
-
-
-  ```
-
-     it('should call save once', function () {
-       //save is a method
-          var save = sinon.spy(Database, 'save');
-          setupNewUser({ name: 'test' }, function () { });
-          save.restore();
-          // sinon.assert.calledOnce(save);
-          // these all is properties of spy,not method
-           expect(save.callCount).equal(1);
-
-      });
-
-  ```
-
-  - spy 
-
-	 测试次数，测试调用参数
-
-    - `spy.withArgs(arg1[, arg2, ...]);`,以该参数怎么怎么样之类的
-
-    ```
-        "should call method once with each argument": function () {
-        var object = { method: function () {} };
-        var spy = sinon.spy(object, "method");
-        spy.withArgs(42);
-        spy.withArgs(1);
-
-        object.method(42);
-        object.method(1);
-
-        assert(spy.withArgs(42).calledOnce);
-        assert(spy.withArgs(1).calledOnce);
-       }
-    ```
-
-  - stub
-	 替换原始方法，可以添加自定义的行为或抛出异常,
-
-    - 测异常
-
-      ```
-      it('should pass the error into the callback if save fails', function () {
-        var expectedError = new Error('oops');
-        var save = sinon.stub(Database, 'save');
-        save.throws(expectedError);
-        var callback = sinon.spy();
-
-        setupNewUser({ name: 'foo' }, callback);
-
-        save.restore();
-        //save抛出了错误，try 出错 在catch里捕获到了错误，callback调用了错误，所以要验证catch里的callback
-        //这条路径，不是验证save是否抛出了异常
-        // sinon.assert.calledWith(callback, expectedError);
-         //expect(save.threw(expectedError)).to.be.true;
-        //expect(callback.threw(expectedError)).to.be.false;
-        
-        });
-      ```
-
-    - `stub.onCall`,指定第几次调用后的行为，类似的onFirstCall...
-
-    ```
-    var callback = sinon.stub();
-    callback.onCall(0).returns(1);
-    callback.onCall(1).returns(2);
-    callback.returns(3);
-
-    callback(); // Returns 1
-    callback(); // Returns 2
-    callback(); // All following calls return 3 
-     }
-
-    ```
-    - `stub.yields([arg1,arg2...])`,让stub执行它的第一个回调，如果有参数，以参数执行
-    注意yields以后都必须在后面手动触发下
-
-    ```
-      function saveUser(user, callback) {
-      $.post('/users', {
-        first: user.firstname,
-        last: user.lastname
-      }, callback);
-      }
-
-     it('should call callback after saving', function() {
-
-    //We'll stub $.post so a request is not sent
-    var post = sinon.stub($, 'post');
-    //以www参数执行callback
-    post.yields('www');
-
-    //We can use a spy as the callback so it's easy to verify
-    var callback = sinon.spy();
-
-    saveUser({ firstname: 'Han', lastname: 'Solo' }, callback);
-
-       post.restore();
-       sinon.assert.calledOnce(callback);
-       //注意看这个
-       sinon.assert.calledWith(callback,'www');
-     });
-       
-     
-    ```
-    - `stub.yieldTo`,//以给定的参数行驶指定的回调，后面调用就会按照指定的行为执行，相当于替换了原来的异步方法
-   
-    ```
-       //以参数[1，2，3]触发success
-       sinon.stub(jQuery, "ajax").yieldsTo("success", [1, 2, 3]);
-        jQuery.ajax({
-        success: function (data) {
-            assertEquals([1, 2, 3], data);
-        }
-       });
-
-    ```
-    - `stub.callsFake(fakeFunction);`,模拟新的调用行为
-    
-    ```
-    var myObj = {};
-     myObj.prop = function propFn() {
-         return "foo";
-     };
-
-     sinon.stub(myObj, prop).callsFake(function fakeFn() {
-         return 'bar';
-     });
-
-     myObj.prop(); // 'bar'
-    ```
-
-	- mock 
-	 当你使用stub，包装一个方法后，并且想测试该方法在更多场景下的表现时应该使用mock
-    其实就是在expect里把原来需要多个assert的东西，更简洁的表现了出来，更方便的声明多种条件，因为多次的assert更难理解
-    注意使用时，都是先包装***对象***，再expect（‘method’）.xxx这样
-
-    ```
-       
-	    it('should pass object with correct values to save only once', function() {
-        var info = { name: 'test' };
-        var expectedUser = {
-          name: info.name,
-          nameLowercase: info.name.toLowerCase()
-        };
-        var database = sinon.mock(Database);
-        database.expects('save').once().withArgs(expectedUser);//相当于做了两次assert
-
-        setupNewUser(info, function() { });
-
-        database.verify();
-        database.restore();
-       });	 
-    ```
-# React tesing library(RTL)
+## React tesing library(RTL)
 
 > RTL从**用户使用角度**帮助测试**UI组件**的**一组**包
 
@@ -358,54 +187,74 @@
   本意是好的（提醒开发者注意组件的变化），但执行时因为代码的更改会频繁的导致快照失败，开发者只是简单的更新快照使其pass而已，在code review的时候也很难去发现变化，所以并不建议使用
 
 
-# Tips 
+## Jest
 
-  - 一直使用sinon.test(),可以自动清理sinon.spy,避免连续失败，注意在测试异步方法时，应该设置
-	   ```
-	   sinon.config = {
-         useFakeTimers: false
-        };
-	   ```
-	```    
-	it('should call save once', sinon.test(function() {
-      var save = this.spy(Database, 'save'); //注意变成了this.xx
-      setupNewUser({ name: 'test' }, function() { });    
+  - Snapshot 
 
-      sinon.assert.calledOnce(save);//断言没变
-    }));
-	```
+    快照测试不仅能用于ui组件的dom，它能用来测试一切js对象，所以可以应用到API的快照测试上。
+    
+    ```js
+      it('will check the matchers and pass', () => {
+      const user = {
+        createdAt: new Date(),
+        id: Math.floor(Math.random() * 20),
+        name: 'LeBron James',
+      };
 
-	- Create Shared Stubs in beforeEach,别忘了在afterEach中添加restore方法，不然会在别的测试中引起异常
+      expect(user).toMatchSnapshot({
+        createdAt: expect.any(Date),
+        id: expect.any(Number),
+      });
+    });
 
-	```
-	   describe('Something', function() {
-     var save;
-     beforeEach(function() {
-       save = sinon.stub(Database, 'save');
-     });
+    // Snapshot
+    exports[`will check the matchers and pass 1`] = `
+    Object {
+      "createdAt": Any<Date>,
+      "id": Any<Number>,
+      "name": "LeBron James",
+    }
+    `;
+    ```
 
-     afterEach(function() {
-       save.restore();
-     });
+  API 快照demo
 
-     it('should do something', function() {
-       //you can use the stub in tests by accessing the variable
-       save.yields('something');
-         });
-       });
-	```
-	
-	- 测试执行顺序
+  ```js
+  import * as API from 'api';
 
-	```
-	 var a = sinon.spy();
-       var b = sinon.spy();       
-
-       a();
-       b();       
-
-       sinon.assert.callOrder(a, b);
-	```
-
-### 易错
+  test('failed login (bad password)', async () => {
+    let data;
+    try {
+      data = await API.login('me@example.com', 'wrong_password');
+      fail();
+    } catch(e) {
+      expect(e.response.data.error).toMatchSnapshot();
+    }
+  });
+  ```
+## 易错
 1. 测试Error时，该对象是特殊的对象，比如error= new Error（‘ttt’）,如果直接输出console.log(error)，并不会打印出error对象而是打印出error.toString()的相关信息
+
+## E2E Test
+
+
+阅读[UI-testing-best-practices](https://github.com/NoriSte/ui-testing-best-practices)
+
+> Puppeteer vs Cypress
+
+简单总结： Puppeteer是浏览器自动化处理工具并不是专门的UI测试工具，所以很多特点功能如:
+
+  - skip/only
+  - 超时设置
+  - 截图
+  - 当前测试case状态
+  - 调试
+  - 序列运行
+
+等都需要额外的设置或其他工具辅助，不如cypress来的高效直接和简单。
+
+  - cypress优势总结
+
+    <img width="600" src="../../resource/cypress.png"/>
+
+如果只是用来抓取数据或其他自动化浏览器操作的 cypress并不是最好的选择，它只是用于UI测试
