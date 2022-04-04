@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "updateReadme": "node ./build/updateReadme.js",
+    "updateReadme": "node ./scripts/updateReadme.js",
     "build": "npx gitbook build ./ buildBook"
   },
   "repository": {

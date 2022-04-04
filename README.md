@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/clownvary/docs/workflows/gitbook%20deploy/badge.svg)](https://github.com/clownvary/docs/actions)
+[![gitbook deploy](https://github.com/clownvary/docs/actions/workflows/gitbook.yml/badge.svg)](https://github.com/clownvary/docs/actions/workflows/gitbook.yml)
 
 # docs
 
@@ -20,6 +20,7 @@
         * [测试相关笔记](technology/frontend/test.md)
         * [jade](technology/frontend/jade.md)
         * [jest](technology/frontend/jest.md)
+        * [cypress](technology/frontend/cypress.md)
     
     * [工具经验](technology/tools/index.md)
         * [chrome技巧和调试经验](technology/tools/chrome.md)
@@ -28,6 +29,10 @@
         * [vscode技巧总结](technology/tools/vscode.md)
         * [zeplin技巧总结](technology/tools/zeplin.md)
         * [jenkins笔记](technology/tools/jenkins.md)
+        * [magica_voxel笔记](technology/tools/magica_voxel.md)
+
+    * [DAPP](technology/dapp/index.md)
+        * [智能合约](technology/dapp/contract.md)
     
     * [其他](technology/others/index.md)
         * [最熟悉的“陌生人”---babel](technology/others/babel.md)

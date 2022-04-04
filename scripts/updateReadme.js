@@ -4,18 +4,18 @@ const exec = require('child_process').execSync;
 
 function genContent() {
     let content = [
-        '[![Build Status](https://travis-ci.org/clownvary/docs.svg?branch=master)](https://travis-ci.org/clownvary/docs)',
+        '[![gitbook deploy](https://github.com/clownvary/docs/actions/workflows/gitbook.yml/badge.svg)](https://github.com/clownvary/docs/actions/workflows/gitbook.yml)',
         '# Docs and conclusion skills of personal.',
         '## TOC'
     ];
     try {
-        const general = getJsonFiles('General');
-        const others = getJsonFiles('Others');
-        const ancorp = getJsonFiles('ANcorp');
-        const generalSection = genSection('General',general);
-        const othersSection = genSection('Others',others);
-        const ancorpSection = genSection('Ancorp',ancorp);
-        content = content.concat(generalSection,ancorpSection,othersSection);
+        const technology = getJsonFiles('technology');
+        const hobby = getJsonFiles('hobby');
+        const other = getJsonFiles('other');
+        const technologySection = genSection('Part I - 技术工具',technology);
+        const hobbySection = genSection('Part II - 兴趣爱好',hobby);
+        const otherSection = genSection('Part III - 其他',other);
+        content = content.concat(technologySection,hobbySection,otherSection);
     } catch (error) {
         console.error('error occured please check your command');
         console.error(error);
