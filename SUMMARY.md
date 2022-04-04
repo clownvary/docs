@@ -14,7 +14,8 @@
         * [测试相关笔记](technology/frontend/test.md)
         * [jade](technology/frontend/jade.md)
         * [jest](technology/frontend/jest.md)
-    
+        * [cypress](technology/frontend/cypress.md)
+
     * [工具经验](technology/tools/index.md)
         * [chrome技巧和调试经验](technology/tools/chrome.md)
         * [docker笔记](technology/tools/docker.md)
@@ -22,6 +23,7 @@
         * [vscode技巧总结](technology/tools/vscode.md)
         * [zeplin技巧总结](technology/tools/zeplin.md)
         * [jenkins笔记](technology/tools/jenkins.md)
+        * [magica_voxel笔记](technology/tools/magica_voxel.md)
     
     * [其他](technology/others/index.md)
         * [最熟悉的“陌生人”---babel](technology/others/babel.md)
@@ -43,5 +45,6 @@
    * [比特币](hobby/bitcoin.md)
   
 ## Part III - 其他
+
 * [其他](other/index.md)
    * [天朝生存秘籍](other/天朝生存秘籍.md)
