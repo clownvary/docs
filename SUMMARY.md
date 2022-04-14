@@ -24,6 +24,12 @@
         * [zeplin技巧总结](technology/tools/zeplin.md)
         * [jenkins笔记](technology/tools/jenkins.md)
         * [magica_voxel笔记](technology/tools/magica_voxel.md)
+        * [mac代理](technology/tools/mac_proxy.md)
+
+    * [DAPP](technology/dapp/index.md)
+        * [基础知识](technology/dapp/basic.md)
+        * [智能合约](technology/dapp/contract.md)
+        * [机器人](technology/dapp/bot.md)    
     
     * [其他](technology/others/index.md)
         * [最熟悉的“陌生人”---babel](technology/others/babel.md)
