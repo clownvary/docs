@@ -522,7 +522,7 @@ print（‘this is my grade %s’ % grade）`
 当使用pyenv进入虚拟环境比如3.8.8时，就在可以不用输入python3 xxx,执行命令，直接输入python就是当前的解释器版本
 
 
-* pipenv 使用流程 （不推荐使用了）
+### pipenv 使用流程 （不推荐使用了）
 
   1. `cd project`
   2. `pipenv --python 3.x | pipenv --python 2.xx` 这样就创建了一个虚拟的开发环境，如果不使用此命令默认创建基于当前的python版本的环境
@@ -532,7 +532,7 @@ print（‘this is my grade %s’ % grade）`
   6. `exit` 退出虚拟环境
   > 可以做一个实验，在虚拟环境下装的包在pipenv shell之后可以正常导入，但一旦退出运行就会报错
 
-# pyenv + viratualenv插件 
+### pyenv + viratualenv插件 (不推荐使用了)
 
 - 概念阐述
 在开发Python应用程序的时候，系统安装的Python只有一个版本：如3.4。**所有第三方**的包都会被pip安装到Python的**site-packages**目录下。
@@ -541,7 +541,7 @@ print（‘this is my grade %s’ % grade）`
 
 -  使用
 
-1. 安装pyenv 和virtualenv 插件 [参考](https://www.jianshu.com/p/20cd2fc914c1)
+1. 安装pyenv 和virtualenv 插件 [参考](https://www.jianshu.com/p/20cd2fc914c1)[win](https://www.jianshu.com/p/8aaf2525fa80)
 2. 确定版本
   ```shell  
     # 1. 查看正在使用的python版本
@@ -604,6 +604,10 @@ print（‘this is my grade %s’ % grade）`
   $ pyenv virtualenv-delete py360
   ```
 
+
+### anaconda 推荐使用
+
+包管理器/ python环境管理器 /跨平台非python语言包管理器/gui图形界面
 ## 其他
 
 * [练习demo](https://github.com/clownvary/learn-practise/blob/gh-pages/pyt/hello.py)

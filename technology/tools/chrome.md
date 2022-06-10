@@ -36,6 +36,11 @@ using `overrides`, (chrome->sources tab->overrides)
 
 > Notice `overrides` is different with `Filesystem(workspace)`, workspace like IDE ,it make you can change/save original file in chrome, `overrides` just save temporary.
 
+> Importand, override must apply on real file(js/css/img etc.), which mean those fetch from *network* panel.In most of cases, we run webpack app, if we debug from browser source panel, on a source map file e.g. *test.js*, that will not work , because browser will not load that file, it will load real bundled file or chunk file(see from network panel) . so follow below step to fix it:
+ 1. find wanted debug file in source panel
+ 2. locate real file from network panel
+ 3. edit real file in source panel
+ 4. right click *save as overrides* 
 ### Mobile Capture
 
 > quick start `shift+cmd+p  capture`
