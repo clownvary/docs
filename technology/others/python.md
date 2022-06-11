@@ -608,6 +608,20 @@ print（‘this is my grade %s’ % grade）`
 ### anaconda 推荐使用
 
 包管理器/ python环境管理器 /跨平台非python语言包管理器/gui图形界面
+
+几点概念：
+1. 环境：一个环境就是一个python 版本对应的整个环境，如python 3.8可以有一个环境，3.9可以有一个
+2. 包管理： 不同环境的包相互独立，如3.8环境的conda install之后都是在这个环境里
+3. 安装.whl文件  切换到对应环境后 `pip install --no-deps D:\download\torch-1.11.0+cu115-cp38-cp38-win_amd64.whl`
+
+基本使用：
+
+创建环境：`conda create -n py38 python=3.8`
+
+激活环境：`conda activate py38`
+
+推出环境：`conda deactivate py38`
+
 ## 其他
 
 * [练习demo](https://github.com/clownvary/learn-practise/blob/gh-pages/pyt/hello.py)
