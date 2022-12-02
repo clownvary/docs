@@ -607,6 +607,7 @@ print（‘this is my grade %s’ % grade）`
 
 ### anaconda 推荐使用
 
+> 注意安装包时因为使用国内的镜像，需要关闭vpn代理，否则会有奇怪错误抛出
 包管理器/ python环境管理器 /跨平台非python语言包管理器/gui图形界面
 
 几点概念：
@@ -618,9 +619,18 @@ print（‘this is my grade %s’ % grade）`
 
 创建环境：`conda create -n py38 python=3.8`
 
+查看环境：`conda info -e`
+
 激活环境：`conda activate py38`
 
 推出环境：`conda deactivate py38`
+
+
+
+## 代码美化
+
+[fomatter black](https://stackoverflow.com/questions/65101442/formatter-black-is-not-working-on-my-vscode-but-why)
+
 
 ## 其他
 

@@ -100,16 +100,30 @@ mint和token合约分开，通过一个合约嵌套另一个合约的形式
     b. remix 部署合约技术比较低，业界普遍的做法是hardhat, verify后合约是多个文件
 
 2. 反编译技巧
+
+### 常见的错误
+
+a. 逻辑错误
+b. 数量逻辑错误
+c. 验证逻辑错误
+d. 没有禁止合约交互错误
+
+### 发现漏洞如何操作
+
+1. 准备多钱包
+2. 准备监测代码，开mint触发
+3. 准备发送代码，触发后发送待执行的代码
+4. 如果需要merkleProof，可以在项目网站中登录然后查看localstorage/sessionStorage一般会有
+
+
 ## 合约开发
 
 - Hardhat 
-
 
     a. payable 关键字
     b. token id 自增
     c. revert条件 （require/revert 反编译后都会变成revert）
     d. balanceOf
-
 
 
 
@@ -137,5 +151,5 @@ mint和token合约分开，通过一个合约嵌套另一个合约的形式
     2. 更新合约地址
     3. 更新合约abi
 
-    可以帮助开发者管理重复性任务的一个框架，同时带有一个本地EVM，可以理解为一个local的server只不过这个server是个区块链
+ - Hardhat   可以帮助开发者管理重复性任务的一个框架，同时带有一个本地EVM，可以理解为一个local的server只不过这个server是个区块链
 

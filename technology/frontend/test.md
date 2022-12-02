@@ -174,7 +174,88 @@
         // }
     ```
 
+- 复杂项目使用步骤
 
+ 官网给的示例都比较简单，在实际项目中使用还是有些问题的，如：
+
+ 1. 组件包含异步api请求
+    可将其请求全部代理到本地已存在的api mock server上 
+ 2. 组件依赖父组件传入的props 如onchange事件，如何在测试中直接触发其onchange具体实现而不是简单mock
+    1. 可直接渲染其父组件，从而不用考虑待测组件（子组件）props的问题，前提是父组件并无或者只有简单的props参数要求
+    如`<Application />`直接会渲染其下的所有组件，这样就和用户实际访问的ui一样了，但这样会把不相干的组件都渲染
+    2. 可以直接渲染待测组件，然后手动使用store.dispatch等去触发前置需要的一些数据
+    推荐方法1
+ 3. redux初始/更新的state如何同步到测试中去
+    使用包含store的自定义render去render组件
+ 以下是本人大量调试测试后给出的方案：
+
+
+ 1. 使用自定义render 去render相关测试组件
+
+ ```js
+
+ export const setupStore = (extendStore = {}) => {
+  const nlsReducer = (state = {}) => {
+    return state;
+  };
+  const initState = {
+    [PROJECT_PRESET.STORE_KEY]: {
+      global: globalState,
+      application: applicationState,
+      amendment: amendmentState,
+    },
+    [PROJECT_PRESET.NLS_KEY]: initIntl(),
+    ...extendStore,
+  };
+  const reducers = combineReducers({ [PROJECT_PRESET.STORE_KEY]: rootReducer, [PROJECT_PRESET.NLS_KEY]: nlsReducer });
+  return createStore(reducers, initState, applyMiddleware(thunk));
+};
+
+/**
+ * Render with all providers
+ * @param {*} ui render node
+ * @param {preloadedState, path} options
+ * preloadedState will preload rootReducer
+ * path will change location path
+ * @returns
+ */
+export const renderWithProviders = (ui, options = { preloadedState: {}, path: '' }) => {
+  const { preloadedState, path } = options;
+  const store = setupStore(preloadedState);
+  const history = createMemoryHistory();
+  if (path) {
+    history.push(path);
+  }
+  const wrapperProviders = ({ children }) => {
+    return (
+      <ReduxProvider store={store}>
+        <Router history={history}>{children}</Router>
+      </ReduxProvider>
+    );
+  };
+  // 导出store是为了在某些测试场景中可以直接使用store.dispatch(xx)去触发相关action从而达到更新reducer值的目的 
+  // 参考https://redux.js.org/usage/writing-tests#preparing-initial-test-state
+  // 导出并展开原始render是因为原始render返回的结果里是一个对象，包含container, baseElement等对象，应一一返回
+  return {
+    store, // store could dispatch action later to change reducer state data
+    ...render(ui, {
+      wrapper: wrapperProviders,
+    })
+  };
+};
+ 
+ ```
+ 
+ 2. render 顶层或参数简单的组件
+
+ 3. 组件中有异步请求的使用findByxxx才能正确拿到所需元素
+   ```js
+      it('component should display correct value', async () => {
+     renderWithProviders(<Application />);
+     const dom = await screen.findByText('testIssue');
+     expect(dom).toBeInTheDocument();
+  });
+   ```
 
   > Q: RTL 不关注实现细节，那组件中的实现相关的覆盖率如何保证？
 
