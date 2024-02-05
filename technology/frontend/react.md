@@ -216,6 +216,13 @@ function Child(){
 
 3. useEffect 添加正确依赖，防止非必要触发
 
+  ```js
+   
+  useEffect(()=>{
+     xxx
+  },[a]) // 注意如果这里的a是个对象或者数组，会每次都触发，因为是引用比较，解决方案使用use-deep-effect 库进行深度比较或者使用usePrevious 对上一次的值进行比较
+  ```
+
 4. 使用useMemo/useCallback缓存不是每次都要更新的值，只有在其依赖值变化是才触发
 
 5. 不要使用箭头函数作为事件回调，因为箭头函数每次都会生成新，当作为props传递的时候会触发reRender
@@ -229,3 +236,14 @@ function Child(){
   每次生成的都是新的对象导致重新渲染
 
 7. 避免使用会引起浏览器回流（reflow）的css, 如隐藏元素可以使用`opacity: 0` 替代`display: none`
+
+- React 父-子依赖问题
+
+```javascript
+// 如下，如果parent负责触发通用的一些api并set到reducer, child中有相关的逻辑必须依赖parent中set的数据
+// 正常渲染的顺序会是先渲染child 完了后再渲染parent, 这时候就没法拿到正确的依赖数据了，
+// 正确做法是在渲染child前加条件，其条件就是依赖数据是否已存在
+<Parent>
+<Child/> // => {hasData && <Child/>}
+</Parent>
+```

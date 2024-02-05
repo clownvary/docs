@@ -21,7 +21,7 @@ c. retouch4me 磨皮
 6. 两图对比时，可以先用裁剪工具拉出多余部分，然后复制另一张图层过来，形成对比
 7. 调色（肤色统一）技巧， 把图a的色调应用到图b
 
-  a. 颜色匹配法
+  a. 颜色匹配法 
      截取目标皮肤图层，选择待匹配的图层，然后选择图层-》图像调整-》匹配颜色
   b. 平均模糊颜色曲线法（适合整图色调）
      [参考](https://www.bilibili.com/video/BV15d4y1C7Zw/?spm_id_from=pageDriver&vd_source=f4d92e6fdcf22e13a2e9477d3dfd9751)
